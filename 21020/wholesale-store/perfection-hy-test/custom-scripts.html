@@ -1,0 +1,139 @@
+<script>
+	var infiniteDropdowns = document.querySelectorAll('.infinite-dropdown-title');
+	var infiniteMenus = document.querySelectorAll('.infinite-menu');
+	var i;
+	var menuIsOpen = false;
+	var mouseOverDropdown = false;
+	var mouseOverMenu = false;
+	var tabletBreak = window.matchMedia("(min-width: 992px)");
+	
+	var showInfiniteMenu = function(dropdown) {
+		var dropDownTarget = dropdown.getAttribute('data-target');
+		var menuToShow = document.querySelector('#' + dropDownTarget);
+		var visibleMenu = document.querySelector('infinite-menu.visible');
+	
+		if (visibleMenu) {
+			hideInfiniteMenu(dropdown);
+		};
+		
+		menuToShow.classList.add('visible');
+		menuIsOpen = true;
+	};
+	
+	var hideInfiniteMenu = function(dropdown) {
+		var dropDownTarget = dropdown.getAttribute('data-target');
+		var menuToHide = document.querySelector('#' + dropDownTarget);
+	
+		menuToHide.classList.remove('visible');
+		menuIsOpen = false;
+	};
+	
+	var handleDropdownClick = function(dropdown) {
+		if ( !tabletBreak.matches && menuIsOpen === true ) {
+			document.querySelector('.infinite-menu.visible').classList.remove('visible');
+			menuIsOpen = false;
+		} else {
+			if ( menuIsOpen === false ) {
+				showInfiniteMenu(dropdown);
+			} else {
+				hideInfiniteMenu(dropdown);
+			};
+		};
+	};
+	
+	// Dropdown Event Listeners
+	for ( i = 0; i < infiniteDropdowns.length; i++) {
+		var dropdown = infiniteDropdowns[i];
+		var menu = infiniteMenus[i];
+	
+		if ( tabletBreak.matches ) {
+			dropdown.addEventListener('mouseover', function(e) {
+				var dropdown = e.target;
+				mouseOverDropdown = true;
+		
+				showInfiniteMenu(dropdown);
+			});
+		
+			dropdown.addEventListener('mouseleave', function(e) {
+				var dropdown = e.target;
+				mouseOverDropdown = false;
+		
+				setTimeout(function() {
+					if ( mouseOverMenu === false) {
+						hideInfiniteMenu(dropdown);
+					}
+				}, 10);
+			});
+	
+			menu.addEventListener('mouseleave', function(e) {
+				var id = e.target.getAttribute('id');
+				var dropdown = document.querySelector('[data-target="' + id + '"]');
+				hideInfiniteMenu(dropdown);
+				mouseOverMenu = false;
+			});
+		
+			menu.addEventListener('mouseenter', function() {
+				mouseOverMenu = true;
+			});
+		};
+	
+		dropdown.addEventListener('click', function(e) {
+			var dropdown = e.target;
+			handleDropdownClick(dropdown);
+		}); 
+	};
+</script>
+<script>
+	const mobileHeader = document.getElementById('mobile-header');
+	const mobileToggle = document.getElementById('mobile-toggle');
+	const subNavToggles = document.querySelectorAll('.mobile-sub-nav-toggle');
+	const subNavs = document.querySelectorAll('.mobile-sub-nav');
+	const body = document.body;
+	var i;
+
+	mobileToggle.addEventListener('click', function() {
+		mobileHeader.classList.toggle('open');
+	});
+
+	var setNavHeight = function(index) {
+		var subNav = subNavs[i];
+		var subNavList = subNav.querySelector('.mobile-sub-list');
+		var subNavHeight = subNavList.offsetHeight;
+
+		subNavList.style.height = '0';
+		subNavList.setAttribute('data-height', subNavHeight);
+	};
+
+	var toggleSubNav = function(e) {
+		var subNavToggle = e.target;
+		var subNavList = subNavToggle.nextElementSibling;
+		var subNavListHeight = subNavList.getAttribute('data-height') + 'px';
+		var subNav = subNavList.parentNode;
+		var openSubNav = document.querySelector('.mobile-sub-nav.open');
+
+		if ( !subNav.classList.contains('open') ) {
+			subNav.classList.add('open');
+			subNavList.style.height = subNavListHeight;
+		}
+
+		if ( openSubNav ) {
+			var openSubList = openSubNav.querySelector('.mobile-sub-list');
+			openSubNav.classList.remove('open');
+			openSubList.style.height = '0';
+		};
+	};
+
+	window.addEventListener('load', function() {
+		for ( i = 0; i < subNavToggles.length; i++ ) {
+			setNavHeight(i);
+	
+			subNavToggles[i].addEventListener('click', function(e) {
+				toggleSubNav(e);
+			});
+		};
+	});
+</script>
+<script>
+	var poweredBy = document.querySelector('.powered-by');
+	poweredBy.setAttribute('rel', 'noreferrer');
+</script>
