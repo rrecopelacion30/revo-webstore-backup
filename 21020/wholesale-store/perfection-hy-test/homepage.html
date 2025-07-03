@@ -1,0 +1,29 @@
+<script>
+var heroWrap = document.getElementById('hero-wrap');
+var heroTabsList = heroWrap.querySelectorAll('.nav-link');
+var heroTabsBodyList = heroWrap.querySelectorAll('tab-pane');
+var i;
+var j;
+
+var switchTabs = function(tab) {
+    var activeTab = heroWrap.querySelector('.nav-link.active');
+    var activePane = heroWrap.querySelector('.tab-pane.active');
+    var nextPaneName = tab.getAttribute('data-tab');
+    var nextPane = heroWrap.querySelector('#' + nextPaneName);
+
+    activeTab.classList.remove('active');
+    activePane.classList.remove('active');
+
+    tab.classList.add('active');
+    nextPane.classList.add('active');
+};
+
+for (i = 0; i < heroTabsList.length; i++) {
+    var tab = heroTabsList[i]
+    var tabLink = tab.getAttribute('data-tab');
+
+    tab.addEventListener('click', function() {
+        switchTabs(this);
+    });
+};
+</script>
