@@ -1,0 +1,6840 @@
+/* new page css 030625 */
+#layout_product {
+	margin-bottom: 50px;
+}
+
+#layout_page .themeEquipmentSection .category-children-module .category-tiles {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    list-style: none !important;
+    padding-left: 0 !important;
+}
+
+#layout_page .themeEquipmentSection .category-children-module .category-tile {
+    margin-bottom: 1rem;
+}
+
+#layout_page .themeEquipmentSection .category-children-module .category-tile-image {
+    height: auto;
+}
+
+#layout_page .themeEquipmentSection .category-children-module .category-tile-image img {
+    max-height: none;
+    height: 160px;
+    object-fit: cover;
+    width: 100%;
+}
+
+#layout_page .themeEquipmentSection.themeEquipmentCasual .category-children-module .category-tile-image img {
+	object-fit: contain;
+}
+
+#layout_page .themeEquipmentSection .category-children-module .category-tile a:nth-child(2) {
+	display: block;
+    text-align: left;
+    padding: .75rem 0;
+    font-size: 1rem;
+    color: black;
+    font-family: bmw;
+    font-weight: bold;
+    background: white;
+    transition: all .32s ease;
+}
+
+#layout_page .themeEquipmentSection .category-children-module .category-tile:hover a:nth-child(2) {
+	background: #0562FF;
+    color: white;
+    text-decoration: none;
+    padding-left: 1rem;
+}
+
+/* For mobile View (modified - women's day promo)  */*/
+@media (max-width: 768px) { 
+    .promotional-banner-wrap{
+    	margin-bottom: -80px;
+    }
+    .promotional-banner-text {
+        font-size: 14px; 
+        padding: 8px 10px;
+    }
+
+    .promotional-banner-text-wrap {
+        display: block; 
+        text-align: center;
+        word-break: break-word;
+    }
+
+}
+
+/* fix ul/li on dseo */
+#layout_dynamic-seo .custom-html-module ul{
+    list-style: disc !important; /* or circle, square, etc. */
+    padding-left: 20px; /* Adds spacing for visibility */
+}
+
+
+/* slider america day */
+.themeAmericaDayBanner .main--slider-title {
+	text-transform: uppercase;
+    font-size: calc(30px + (40 - 30) * ((100vw - 768px) / (1900 - 768))) !important;
+}
+
+.themeAmericaDayBanner .main--slider-text {
+	font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.themeAmericaDayBanner .main--slider-text a {
+	color: #fff !important;
+}
+
+.themeAmericaDayBanner .main--slider-text a:hover,
+.themeAmericaDayBanner .main--slider-text a:focus {
+	background-color: transparent !important;
+}
+
+.themeAmericaDayBanner .main--slider-button a {
+	padding: 12px 40px;
+    max-width: 209px;
+}
+
+@media screen and (max-width: 767px) {
+	.themeAmericaDayBanner .main--slider-bg img {
+		height: 500px;
+	}
+}
+
+/* term disclaimer */
+.themeBannerTermWrap {
+	position: relative;
+    display: inline-block;
+    padding: 5px 0px;
+}
+
+.themeBannerTermWrap a {
+	color: #fff !important;
+}
+
+.themeBannerTermWrap a:hover,
+.themeBannerTermWrap a:focus {
+	color: #fff;
+    background-color: transparent !important;
+}
+
+@media screen and (max-width: 446px) {
+    .themeBannerTermWrap {
+    	display: block;
+    }
+}
+
+.themeBannerTermWrap.openDisclaimer .themeBannerTermBox {
+	display: block;
+}
+
+.themeBannerTermBox {
+    display: none;
+	position: absolute;
+    background-color: #fff;
+    color: #000;
+    width: 615px;
+    padding: 15px 15px;
+    font-size: 10px;
+    z-index: 99;
+    top: 30px;
+    left: 0;
+    height: 120px;
+    overflow: auto;
+    font-weight: 400;
+    text-transform: capitalize;
+    transform: translateX(250px); /*modified - women's day promo  */
+}
+
+@media screen and (max-width: 860px) {
+    .themeBannerTermBox {
+    	width: 450px; /*modified - women's day promo  */
+        transform: translateX(-20px); /*modified - women's day promo  */
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .themeBannerTermBox {
+    	left: auto;
+        right: 0;
+        transform: translateX(-205px); 
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .themeBannerTermBox {
+        right: -200px; /*modified - women's day promo  */
+    }
+}
+
+/* new tab category section */
+.motorrad--listImg-item.portfolio {
+	position: relative;
+}
+
+.themeCatCard {
+	background-color: #fff;
+    padding: 20px 20px;
+}
+
+.themePartsCategory .container-wrap {
+	padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.themePartsCategory .tabContent {
+	margin-top: 0 !important;
+    padding: 20px 15px;
+    background-color: #e6e6e6;
+}
+
+.themePartsCategoryList {
+    margin-bottom: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-color: #f2f2f2;
+}
+
+.themePartsCategoryList a {
+	display: block;
+    color: #000;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.themePartsCategoryList li.active a {
+    color: #333;
+    font-weight: 700;
+}
+
+.themePartsCategoryList a:hover,
+.themePartsCategoryList a:focus {
+	text-decoration: none;
+}
+
+.theme_cat_tab_wrapper .theme_title h3 {
+	text-align: center;
+}
+
+.theme_cat_tab_list {
+	display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5px;
+    list-style: none;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #333;
+}
+
+@media screen and (max-width: 600px) {
+    .theme_cat_tab_list {
+    	grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .theme_cat_tab_list {
+    	grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.theme_cat_tab_item.active .theme_cat_tab_link {
+	border-bottom: 2px solid var(--themeColor);
+    background-color: #fff;
+    color: #333;
+}
+
+@media screen and (max-width: 400px) {
+    .theme_cat_tab_item.active .theme_cat_tab_link {
+    	background-color: #000;
+        color: #fff;
+    }
+}
+
+.theme_cat_tab_link {
+	display: inline-block;
+    width: 100%;
+    padding: 15px 15px;
+    background-color: transparent;
+    text-align: center;
+    font-size: 16px;
+    color: #5c6163;
+    border-bottom: 2px solid transparent;
+    font-weight: 700;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+@media screen and (max-width: 970px) {
+    .theme_cat_tab_link {
+    	padding: 10px 10px;
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+}
+
+.theme_cat_tab_link:hover, .theme_cat_tab_link:focus {
+	color: #000 !important;
+    text-decoration: none;
+    
+}
+
+.themeCatDiscount {
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    display: inline-block;
+    z-index: 1;
+    margin-bottom: 0;
+    background: #0562FF;
+    padding: 5px 10px;
+    color: #fff;
+}
+
+.theme_cat_tab_content_list {
+	display: grid;
+    grid-template-columns: repeat(4, 1fr) !important;
+    gap: 30px;
+    list-style: none;
+    margin-bottom: 0;
+}
+
+.theme_cat_tab_content_list li {
+	position: relative;
+}
+
+.theme_cat_tab_content_list a {
+	color: #000;
+}
+
+.theme_cat_tab_content_list a:hover,
+.theme_cat_tab_content_list a:focus {
+	text-decoration: none;
+    color: #000;
+}
+
+
+@media screen and (max-width: 767px) {
+    .theme_cat_tab_content_list {
+    	grid-template-columns: repeat(2, 1fr) !important;
+    }
+}
+
+.themeCatCard h3 {
+	font-size: 22px;
+    color: #000;
+    height: 55px;
+}
+
+.themeCatPrice {
+	display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    gap: 10px;
+}
+
+.motorrad--listImg-item a:hover,
+.motorrad--listImg-item a:focus {
+	text-decoration: none;
+}
+
+.themeCatPrice p {
+	margin-bottom: 0;
+    font-size: 18px;
+}
+
+.themeCatCollection {
+	font-size: 18px;
+    margin-bottom: 15px;
+    color: #000;
+}
+
+.offerDayAmerica .motorrad--listImg {
+	display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+@media screen and (max-width: 1200px) {
+    .offerDayAmerica .motorrad--listImg {
+    	grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .offerDayAmerica .motorrad--listImg {
+    	grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .offerDayAmerica .motorrad--listImg {
+    	grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.themeCatSize {
+	font-size: 18px;
+    color: #000;
+    height: 25px;
+    display: none;
+}
+
+.themeCatButton {
+	display: block;
+    border-radius: 0;
+    color: white;
+    font-family: bmw;
+    font-weight: bold;
+    padding: 10px 10px;
+    text-transform: uppercase;
+    text-align: center;
+    background: black;
+}
+
+.themeCatSale {
+	color: #0562FF;
+}
+
+.themeCatMsrp {
+    color: #8d8d8d;
+    text-decoration: line-through;
+    font-weight: 300;
+}
+
+.theme_cat_tab_content_img img {
+	width: 100%;
+    height: 150px;
+    object-fit: contain;
+    border-radius: 0px;
+}
+
+.theme_cat_tab_content_img {
+	margin-bottom: 15px;
+}
+
+@media screen and (max-width: 767px) {
+    .theme_cat_tab_content_img img {
+    	height: 150px;
+    }
+}
+
+.theme_cat_tab_content_list a {
+	position: relative;
+}
+
+.theme_cat_tab_content_list a:hover .theme_cat_tab_content_img img {
+	transform: scale(1.1);
+}
+
+.theme_cat_tab_content_img {
+	position: relative;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.theme_cat_tab_content_img img {
+	transition: all .3s ease-in-out;
+}
+
+/* end of new tab category section */
+
+/* begin a11y mods 9/12/24 */
+
+.product-title-module .supersession-info-box {
+	color: #285db7;
+}
+/* end a11y mods 9/12/24 */
+
+
+/* start modification 082624 */
+.motorrad--download-button a {
+    color: black;
+    border: 1px solid #fff;
+    display: inline-block;
+    background-color: #d3d3d3;
+    padding: 15px 15px;
+    max-width: 300px;
+    width: 100%;
+    text-align: center;
+    transition: all .3s ease-in-out;
+}
+
+.motorrad--download-button a:hover {
+    color: #fff;
+    background-color: #0562FF;
+    border: 1px solid #000;
+    text-decoration: none;
+}
+/* end modification 082624 */
+
+/* Begin General link styles within the specific div, span, and page-page */
+#layout_dynamic-seo p a,
+#layout_dynamic-seo li a,
+.list-value.disclaimer-text-body a,
+#page-page #layout_page p a, .a11ycolor {
+  text-decoration: underline;
+  color: #0056b3; /* Ensure better contrast */
+}
+
+#layout_dynamic-seo p a:hover, 
+#layout_dynamic-seo p a:focus,
+#layout_dynamic-seo li a:hover, 
+#layout_dynamic-seo li a:focus,
+.list-value.disclaimer-text-body a:hover, 
+.list-value.disclaimer-text-body a:focus,
+#page-page #layout_page p a:hover, 
+#page-page #layout_page p a:focus,
+.a11ybkgcolor a:hover, 
+.a11ybkgcolor p a:focus {
+  color: #003366; /* Darker color for better visibility */
+  background-color: #e6f7ff; /* Light background color */
+  text-decoration: underline; /* Keep underline */
+}
+/* End General link styles within the specific div, span, and page-page */
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css');
+.animated {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: all 0.5s ease-in-out;
+}
+
+#mobile-header #mobile-menu .mobile-sub-nav.open .mobile-sub-list {
+	height: auto !important;
+}
+
+#layout_dynamic-seo .page-builder-layout-module  {
+	padding-left: 15px;
+    padding-right: 15px;
+}
+
+/*.search-listing-module .catalog-products {
+	display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+@media screen and (max-width: 1600px) {
+    .search-listing-module .catalog-products {
+    	grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .search-listing-module .catalog-products {
+    	grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .search-listing-module .catalog-products {
+    	grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.search-listing-module .catalog-product {
+	display: flex;
+    flex-direction: column;
+    border: 1px solid #cfcfcf;
+    padding: 15px 15px;
+    margin: 0;
+}*/
+
+/* start fixing 031125 */
+#page-category-listing-page .categories-facet {
+	display: none;
+}
+
+.search-listing-module .catalog-products {
+	display: flex !important;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.search-listing-module .catalog-product .product-details-col .product-title .title-link {
+	text-wrap: auto;
+}
+
+.search-listing-module .catalog-product {
+    border: 1px solid #cfcfcf;
+    padding: 15px 15px;
+    flex: 0 0 24%;
+    max-width: 24%;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0;
+}
+
+@media screen and (max-width: 1577px) {
+    .search-listing-module .catalog-product {
+    	flex: 0 0 32%;
+    	max-width: 32%;
+    }
+}
+
+@media screen and (max-width: 1078px) {
+    .search-listing-module .catalog-product {
+    	flex: 0 0 48%;
+    	max-width: 48%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .search-listing-module .catalog-product {
+    	flex: 0 0 100%;
+    	max-width: 100%;
+    }
+}
+
+.search-listing-module .catalog-product.row:after {
+	display: none;
+}
+
+/*.search-listing-module .catalog-product .product-image-col,
+.search-listing-module .catalog-product .product-details-col {
+	width: 100% !important;
+}
+
+.search-listing-module .catalog-product .product-details-col {
+	display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+
+.search-listing-module .catalog-product .product-image-col>a img {
+	width: 100%;
+    object-fit: contain;
+}
+
+.search-listing-module .catalog-product .product-details-col .col-xs-12 {
+	width: 100%;
+    float: none;
+    padding: 0;
+}*/
+
+/* start modification 052324 */
+.search-listing-module .catalog-product .product-image-col,
+.search-listing-module .catalog-product .product-details-col {
+    width: 100% !important;
+    min-height: auto;
+}
+
+.search-listing-module .catalog-product .product-details-col {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    /* height: 100%; */
+}
+
+.search-listing-module .catalog-product .product-image-col>a img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.search-listing-module .catalog-product .product-details-col .col-xs-12 {
+    width: 100%;
+    float: none;
+    padding: 0;
+}
+
+.search-listing-module .catalog-product .product-details-col .col-xs-12.col-sm-4 {
+    margin-block-start: auto;
+}
+
+.search-listing-module .catalog-product .product-partnum-category {
+    min-height: 60px;
+}
+
+.search-listing-module .catalog-product .product-details-col .product-title {
+    display: block;
+    min-height: 60px;
+}
+
+/* end modification 052324 */
+
+.search-listing-module .catalog-product .product-image-col>a {
+	display: flex !important;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+}
+
+.search-listing-module .catalog-product .product-details-col .product-manufacturer-data strong {
+	font-size: 12px;
+    display: none;
+}
+
+.search-listing-module .catalog-product .product-manufacturer .product-manufacturer-data span img {
+	min-height: auto;
+    max-width: 110px;
+}
+
+.search-listing-module .search-pagination .pagination-label,
+.search-pagination .pagination-label  {
+	display: none;
+}
+
+.search-listing-module .search-pagination a,
+.search-pagination a {
+	display: inline-block;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    text-decoration: none;
+    color: #333;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.search-pagination a.active{
+	color: #1a7db7;
+}
+
+.search-listing-module .search-pagination {
+	text-align: right;
+    margin-top: 20px;
+}
+
+.search-pagination {
+	text-align: right;
+}
+
+.search-pagination .paginator {
+	display: flex;
+    justify-content: flex-end;
+    gap: 2px;
+}
+
+.search-facets-module .facet-title {
+	display: block;
+    padding: 18px 0;
+    margin-bottom: 0;
+    border-top: 1px solid #ccc;
+    font-weight: 700;
+    cursor: pointer;
+    position: relative;
+}
+
+.search-facets-module .facet-title::before {
+	content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 10px;
+    height: 2px;
+    background-color: #888;
+    margin: auto;
+}
+
+.search-facets-module .facet-title.activeAccordion:after {
+	content: "";
+    position: absolute;
+    right: 4px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    height: 10px;
+    background-color: #888;
+    margin: auto;
+}
+
+.search-facets-module ul {
+	margin-bottom: 20px;
+}
+
+.desktop-search-filters h3 {
+	text-transform: uppercase;
+    font-size: 20px;
+    padding-left: 10px;
+    margin-bottom: 0;
+    letter-spacing: 3px;
+}
+
+.search-facets-module ul li label {
+	font-weight: 400;
+}
+
+.search-facets-module .facet-wrapper+.facet-wrapper {
+	margin-top: 0px;
+}
+
+.multi-select-facet .show-less, .multi-select-facet .show-more {
+    padding-top: 0.375rem;
+    margin-top: 4px;
+    display: block;
+    font-size: 14px;
+}
+
+.wideSearchFilters .search-pagination {
+	display: none;
+}
+
+.wideSearchFilters .vehicle-filter-container .refine-search-form {
+	margin-top: 0;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+@media screen and (max-width: 767px) {
+    .wideSearchFilters .vehicle-filter-container .refine-search-form {
+    	grid-template-columns: repeat(3, 1fr);
+    }
+    .wideSearchFilters .vehicle-filter-container .refine-search-form .refine-select.refine-model-select {
+    	min-width: auto;
+    }
+}
+
+.wideSearchFilters .vehicle-filter-container .refine-select {
+	margin: 0;
+}
+
+.wideSearchFilters .vehicle-filter-container .refine-reset {
+	margin-top: 0;
+    height: 38px;
+}
+
+.wideSearchFilters .vehicle-filter-container strong {
+	display: inline-block;
+    margin-bottom: 20px;
+}
+
+.wideSearchFilters .vehicle-filter-container .refine-select-wrapper+.refine-select-wrapper {
+	margin: 0;
+}
+
+@media screen and (max-width: 767px) {
+	.wideSearchFilters #mobile-filters-button,
+    .wideSearchFilters .page-builder-layout-column {
+        display: none;
+    }
+}
+
+#mobile-filters-button {
+	margin-bottom: 25px;
+}
+
+.searchList {
+	padding-top: 125px;
+    position: relative;
+}
+
+@media screen and (max-width: 767px) {
+    .searchList {
+    	padding-top: 0;
+    }
+}
+
+.searchList .col-md-3 {
+	position: static;
+}
+
+.wideSearchFilters .search-filters-module {
+	position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+@media screen and (max-width: 767px) {
+    .wideSearchFilters .search-filters-module {
+    	position: static;
+    }
+    .wideSearchFilters .filters-overlay-content {
+    	display: flex;
+        flex-direction: column-reverse;
+    }
+}
+
+/* new prod css */
+.product_detail_section .product-purchase-module .purchase-box {
+	position: relative;
+}
+
+.themeNewProd {
+	position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.newProduct .product-image-col {
+	position: relative;
+    margin-top: 58px;
+}
+
+.themeNewProdListing {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+@media screen and (max-width: 350px) {
+    .themeNewProdListing {
+        top: 0;
+        right: 0;
+        bottom: auto;
+        left: auto;
+    }
+}
+
+.themeNewProd img {
+	width: 140px;
+}
+
+.themeNewProdListing img {
+	width: 120px;
+}
+
+@media screen and (max-width: 1300px) {
+    .newProduct .product-purchase {
+    	margin-top: 45px;
+    }
+}
+
+.product-badges-module .product-badges .product-badge .badge-icon .icon {
+	filter: brightness(0.3);
+}
+
+/* cannot purchase */
+.cannot-purchase-parent {
+	display: ;
+}
+
+.product-purchase-module .purchase-box .cannot-purchase.ship-controlled-item {
+    max-width: 550px;
+}
+
+/* Collection Products */
+.collection_products_row {
+	display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+}
+
+@media screen and (max-width: 767px) {
+    .collection_products_row {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.collection_products_card {
+	display: flex;
+    grid-gap: 10px;
+}
+
+@media screen and (max-width: 767px) {
+    .collection_products_card {
+    	flex-wrap: wrap;
+    }
+}
+
+.collection_products_img {
+	flex: 0 0 25%;
+    max-width: 25%;
+}
+
+@media screen and (max-width: 767px) {
+    .collection_products_img {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+.collection_products_content {
+	flex: 0 0 75%;
+    max-width: 75%;
+}
+
+@media screen and (max-width: 767px) {
+    .collection_products_content {
+        flex: 0 0 100%;
+    	max-width: 100%;
+    }
+}
+
+.collection_products_title {
+	font-size: 18px;
+    color: #0562FF;
+}
+
+.collection_products_content p {
+	margin-bottom: 10px;
+}
+
+.collection_products_button {
+	margin-top: 30px;
+}
+
+@media screen and (max-width: 767px) {
+    .collection_products_button {
+    	text-align: center;
+    }
+}
+
+.collection_products_button a {
+	display: inline-block;
+    padding: 10px 10px;
+    text-transform: uppercase;
+    font-weight: 700;
+    background-color: #000;
+    color: #fff;
+    max-width: 220px;
+    width: 100%;
+    text-align: center;
+    transition: all .3s ease-in-out;
+    font-size: 14px;
+}
+
+.collection_products_button a:hover {
+	background-color: #0562FF;
+    text-decoration: none;
+    color: #fff;
+}
+
+.collection_products_text {
+	font-size: 14.4px;
+}
+
+.read-more {
+  display: none;
+  background-color: #fff;
+  color: #0562FF;
+  border: none;
+  padding: 0px 0px;
+  border-radius: 0px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.read-more:focus, .read-more:hover {
+	outline: none;
+}
+
+.hidden-text {
+  display: none;
+}
+
+/* option 719 */
+.option-719_banner {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 25%; 
+  background-image: url('https://rparts-sites.s3.amazonaws.com/23908d49235005b9c1c9e417b84fee8e/design/deals/bmwm-aug2023-promo-learnmore-v5a.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+
+.black_collection_banner {
+	background-image: url(https://rparts-sites.s3.amazonaws.com/23908d49235005b9c1c9e417b84fee8e/design/option-719/banner-black-collection.png);
+}
+
+.urban_collection_banner {
+	background-image: url(https://rparts-sites.s3.amazonaws.com/23908d49235005b9c1c9e417b84fee8e/design/collection/urban/P90462815_highRes__mid.jpg);
+}
+
+.adventure_collection_banner {
+	background-image: url(https://rparts-sites.s3.amazonaws.com/23908d49235005b9c1c9e417b84fee8e/design/collection/adventure/img05.png);
+}
+
+.modal-backdrop {
+	z-index: 1 !important;
+}
+
+@media screen and (max-width: 767px) {
+    .option-719_banner {
+    	margin-bottom: 40px;
+        height: 130px;
+    }
+}
+
+.option-719_content_section {
+	margin-bottom: 80px;
+}
+
+@media screen and (max-width: 767px) {
+    .option-719_content_section {
+    	margin-bottom: 40px;
+    }
+}
+
+.option-719_content_wrapper {
+	max-width: 850px;
+    width: 100%;
+}
+
+.option-719_content_wrapper h1 {
+    font-size: 80px;
+    text-transform: uppercase;
+}
+
+.option-719_content_wrapper p {
+	margin-bottom: 0;
+}
+
+@media screen and (max-width: 767px) {
+    .option-719_content_wrapper h1 {
+    	font-size: 45px;
+    }
+}
+
+.option-719_content_wrapper h3 {
+	font-size: 32px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+@media screen and (max-width: 767px) {
+    .option-719_content_wrapper h3 {
+    	font-size: 22px;
+    }
+}
+
+.option-719_title_img {
+    background-color: #fff;
+	width: 215px;
+    height: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+@media screen and (max-width: 767px) {
+    .option-719_title_img {
+    	width: 140px;
+        height: 55px;
+    }
+}
+
+.option-719_img_wrapper {
+	position: relative;
+    margin-bottom: 10px;
+}
+
+.option-719_img_wrapper::before {
+	content: "";
+    background-color: #000;
+    height: 3px;
+    max-width: 900px;
+    width: 100%;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: all .3s ease-in-out;
+}
+
+.option-719_title {
+	margin-bottom: 40px;
+}
+
+@media screen and (max-width: 767px) {
+    .option-719_title {
+        margin-bottom: 20px;
+    }
+}
+
+.option-719_colors {
+	margin-bottom: 80px;
+}
+
+@media screen and (max-width: 767px) {
+    .option-719_colors {
+    	margin-bottom: 40px;
+    }
+}
+
+.option-719_colors .option-719_card_button a {
+	width: 250px;
+    margin-top: 30px;
+}
+
+@media screen and (max-width: 767px) {
+    .option-719_colors .option-719_card_button a {
+    	margin-bottom: 30px;
+    }
+}
+
+.option-719_title h2 {
+	text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+    .option-719_title h2 {
+    	font-size: 28px;
+    }
+}
+
+.option-719_text {
+	max-width: 755px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 80px;
+}
+
+.option-719_text p {
+	margin-bottom: 0;
+}
+
+.option-719_row {
+	display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+    margin-bottom: 80px;
+}
+
+.option-719_row_august {
+	display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+@media screen and (max-width: 767px) {
+    .option-719_row_august {
+    	grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.option-719_row:last-child {
+	margin-bottom: 0;
+}
+
+@media screen and (max-width: 767px) {
+    .option-719_row {
+    	margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+}
+
+.option-719_col {
+	flex: 0 0 50%;
+    max-width: 50%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.option-719_row_august .option-719_col {
+	padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+    max-width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+    .option-719_col {
+    	flex: 0 0 100%;
+        max-width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+.option-719_content_inner h3 {
+	margin-bottom: 30px;
+}
+
+.option-719_content_inner p {
+	margin-bottom: 0;
+}
+
+@media screen and (max-width: 767px) {
+    .option-719_content_inner p {
+    	margin-bottom: 30px;
+    }
+}
+
+.option-719_row_reverse {
+	flex-direction: row-reverse;
+}
+
+
+
+
+.option-719_card {
+	color: #16171a;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 40px;
+    position: relative;
+    height: 100%;
+}
+
+@media screen and (max-width: 767px) {
+    .option-719_card {
+    	margin-bottom: 40px;
+        height: auto;
+    }
+}
+
+.option-719_card::before {
+	content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 5px;
+    background-color: #919191;
+}
+
+.option-719_card_button {
+    margin-block-start: auto;
+}
+
+.option-719_card:hover, .option-719_card:focus {
+    color: #000;
+	text-decoration: none;
+}
+
+.option-719_card:hover .option-719_card_button p, .option-719_card_button a:hover {
+	background-color: #0562FF;
+    border: 2px solid #0562FF;
+    color: #fff;
+    text-decoration: none;
+}
+
+.option-719_card_img {
+	margin-bottom: 30px;
+}
+
+.option-719_card_img img {
+	width: 100%;
+}
+
+.option-719_card_content {
+	margin-bottom: 30px;
+}
+
+.option-719_card_content p {
+	margin-bottom: 0;
+}
+
+.option-719_card_content h3 {
+	margin-bottom: 20px;
+}
+
+.option-719_card_button p, .option-719_card_button a {
+    background-color: #fff;
+    color: #000;
+	margin-bottom: 0;
+    display: inline-block;
+    border: 2px solid #000;
+    padding: 10px 15px;
+    width: 185px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: all .3s ease-in-out;
+}
+
+/****
+	New HomePage CSS
+*****/
+
+.container-header {
+	position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 999;
+    background-color: #fff;
+    transition: .55s;
+}
+
+.scrolled-down .container-header {
+	top: -200px;
+}
+
+@media screen and (max-width: 991px) {
+    .scrolled-down .container-header {
+    	top: 0;
+    }
+}
+
+.scrolled-down.scrolled-all-the-way-down .container-header {
+	top: 0;
+}
+
+.meta-footer .life-ride p {
+	position: relative;
+}
+
+.meta-footer {
+	overflow: hidden;
+}
+
+.meta-footer .life-ride p::before {
+	content: "";
+    position: absolute;
+    bottom: -200px;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background-color: #000;
+    transition: all 1s ease-in-out;
+}
+
+.scrolled-all-the-way-down .meta-footer .life-ride p::before {
+	bottom: -4px;
+}
+
+.container-header .store-logo-link::before {
+	content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -70px;
+    background-color: #000;
+    height: 4px;
+    transition: all 1s ease-in-out;
+    width: 140px;
+}
+
+.container-header .mobile-logo::before {
+	content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -50px;
+    background-color: #000;
+    height: 4px;
+    transition: all 1s ease-in-out;
+    width: 170px;
+    margin: auto;
+}
+
+.scrolled-all-the-way-down .container-header .store-logo-link::before {
+	top: 0;
+}
+
+.scrolled-all-the-way-down .container-header .mobile-logo::before {
+	margin: auto;
+    width: 170px;
+    top: 4px;
+}
+
+.page-content {
+	margin-top: 180px;
+}
+
+@media screen and (max-width: 991px) {
+	.page-content {
+        margin-top: 148px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+	.page-content {
+        margin-top: 206px;
+    }
+}
+
+/*
+	Product CSS
+*/
+
+.bmw_breadcrumbs_section .left-content {
+	padding-bottom: 0;
+}
+
+.bmw_breadcrumbs_section {
+	margin-bottom: 50px;
+}
+
+.bmw_vehicle_picker {
+	background-color: #F8F8F8;
+    padding: 30px 0;
+    margin-bottom: 40px;
+}
+
+.bmw_vehicle_picker .header-text {
+	font-size: 32px;
+    font-weight: 400;
+    padding-bottom: 35px;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+@media screen and (max-width: 767px) {
+	.bmw_vehicle_picker .header-text {
+        font-size: 20px;
+        padding-bottom: 30px;
+    }
+    .bmw_vehicle_picker .header-text::before {
+    	font-size: 14px;
+    }
+}
+
+.bmw_vehicle_picker .header-text::before {
+	content: "Add your vehicle to get an exact fit.";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    font-size: 18px;
+}
+
+@media screen and (max-width: 767px) {
+    .bmw_vehicle_picker .header-text::before {
+    	font-size: 14px;
+    }
+    .bmw_shop_all .search-filters-module .refine-search-form .refine-select.refine-model-select {
+    	min-width: 100%;
+    }
+}
+
+.bmw_vehicle_picker .vpicker_buttons {
+	display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+}
+
+@media screen and (max-width: 600px) {
+    .bmw_vehicle_picker .vpicker_buttons {
+    	grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.bmw_vehicle_picker .vehicle-picker-module .vpicker_buttons li.vpicker_button {
+	padding: 10px 10px;
+    margin-bottom: 0;
+}
+
+.bmw_vehicle_picker .vehicle-picker-module .vpicker_buttons li.vpicker_button .dropdown {
+	top: 8px;
+}
+
+.bmw_vehicle_picker .vehicle-picker-module .vpicker_buttons {
+	padding-top: 25px;
+    counter-reset: section;
+    margin-bottom: 30px;
+}
+
+.bmw_vehicle_picker .vehicle-picker-module .vpicker_buttons li.vpicker_button::before {
+	counter-increment: section;
+    content: counter(section);
+    position: absolute;
+    top: -35px;
+    left: 0;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    background-color: #B8B8B8;
+    color: #505050;
+    border-radius: 50%;
+}
+
+.bmw_vehicle_picker .vehicle-picker-module .vpicker_buttons li:first-child::before {
+	background-color: #0562FF;
+    color: #fff;
+}
+
+.bmw_vehicle_picker .vehicle-picker-module .vpicker_buttons li:after {
+	content: "";
+    position: absolute;
+    left: 32px;
+    top: -36px;
+}
+
+.bmw_vehicle_picker .vehicle-picker-module .vpicker_buttons li:nth-child(1):after {
+	content: "Year";
+}
+
+.bmw_vehicle_picker .vehicle-picker-module .vpicker_buttons li:nth-child(2):after {
+	content: "Make";
+}
+
+.bmw_vehicle_picker .vehicle-picker-module .vpicker_buttons li:nth-child(3):after {
+	content: "Model";
+}
+
+.bmw_vehicle_picker .call-to-action-button, .call-to-action-button {
+	padding: 12px 15px;
+    font-size: 14px;
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.dealer-selection-modal .modal-container .modal-content .modal-body .dealer-selection .dealer-selection-container .dealers-container .dealers-list .dealer-row {
+	display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.dealer-selection-modal .modal-container .modal-content .modal-body .dealer-selection .dealer-selection-container .dealers-container .dealers-list .dealer-row .select-dealer-button {
+	position: inherit;
+    margin-top: 0;
+    margin-right: 0;
+}
+
+.dealer-selection-modal .modal-container .modal-content .modal-body .dealer-selection .zip-input-container {
+	display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.dealer-selection-modal .modal-container .modal-content .modal-body .dealer-selection .zip-input-container .zip-input {
+	flex: 1;
+}
+
+.dealer-selection-modal .modal-container .modal-content .modal-body .dealer-selection .zip-input-container .enter-zip-button {
+	margin-right: 0;
+}
+
+.bmw_shop_cat {
+	margin-bottom: 50px;
+}
+
+.bmw_shop_cat h3, .bmw_shop_all h3 {
+	margin-bottom: 30px;
+}
+
+.bmw_shop_all {
+	margin-bottom: 50px;
+}
+
+@media screen and (max-width: 767px) {
+    .bmw_shop_cat h3, .bmw_shop_all h3 {
+        margin-bottom: 15px;
+    }
+}
+
+.show_more_list {
+	text-align: center;
+    margin-top: 50px;
+}
+
+.show_more_list a {
+	padding: 10px 10px;
+    display: inline-block;
+    width: 100%;
+    background-color: #000;
+    text-transform: uppercase;
+    color: #fff;
+    transition: all .3s ease-in-out;
+}
+
+.show_more_list a:hover, .show_more_list a:focus {
+	background-color: #0562FF;
+    text-decoration: none;
+    color: #fff;
+}
+
+.shop_by_cat {
+	display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    grid-gap: 10px;
+    margin-bottom: 0;
+}
+
+.bmw_shop_all .search-filters-module {
+	background-color: transparent;
+}
+
+@media screen and (max-width: 767px) {
+    .bmw_shop_all .search-filters-module {
+    	margin-bottom: 30px;
+    }
+}
+
+.bmw_shop_all .search-filters-module .refine-reset {
+	width: 100%;
+    padding: 10px;
+    background-color: #000;
+}
+
+.bmw_shop_all .search-filters-module strong {
+	font-size: 20px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 400px) {
+    .shop_by_cat {
+    	grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.shop_by_cat_item {
+	border: 1px solid #CCCCCC;
+}
+
+.shop_by_cat_link {
+    background-color: #f7f7f7;
+	color: #000;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    padding: 20px 20px;
+}
+
+.shop_by_cat_link:hover {
+	text-decoration: none;
+}
+
+.shop_by_cat_img img {
+	width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.shop_by_cat_name {
+	margin-bottom: 0;
+    display: inline-block;
+    width: 100%;
+    padding: 47px 32px;
+    background-color: #F8F8F8;
+    font-size: 18px;
+}
+
+.bmw_shop_all .catalog-products {
+	display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+}
+
+@media screen and (max-width: 1000px) {
+    .bmw_shop_all .catalog-products {
+    	grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.bmw_shop_all .catalog-product.row {
+	margin-left: 0 !important;
+    margin-right: 0 !important;
+    border: 1px solid #ccc !important;
+    display: none;
+    flex-wrap: wrap;
+    padding: 15px 15px 15px 15px !important;
+}
+
+
+
+.bmw_shop_all .catalog-product.row .col-md-2 {
+	flex: 0 0 40% !important;
+    max-width: 40% !important;
+}
+
+.bmw_shop_all .search-listing-module .catalog-product .product-purchase-button {
+    padding: 10px 0 0 !important;
+}
+
+.bmw_shop_all .catalog-product.row .col-md-10 {
+	flex: 0 0 60% !important;
+    max-width: 60% !important;
+    position: initial;
+}
+
+.bmw_shop_all .product-details-col.row {
+	display: flex;
+    flex-wrap: wrap;
+}
+
+.bmw_shop_all .product-details-col.row .col-xs-12 {
+	flex: 0 0 100% !important;
+    max-width: 100% !important;
+    padding: 0 !important;
+    position: inherit;
+}
+
+.bmw_shop_all .data-terms-container {
+	display: none;
+}
+
+.bmw_shop_all .search-listing-module .catalog-product .product-purchase-button .place-order-button {
+	width: 100%;
+}
+
+.bmw_shop_all .search-listing-module .catalog-product .add-to-cart-col {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.new_container .container-wrap {
+	max-width: 1600px !important;
+    width: 100% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+.product_detail_section {
+	padding: 100px 0;
+}
+
+.prod_policies .product-policies-module {
+	display: none !important;
+}
+
+.prod_policies.openTabs .product-policies-module {
+	display: block !important;
+}
+
+@media screen and (max-width: 767px) {
+    .product_detail_section {
+    	padding: 50px 0;
+    }
+}
+
+.product_detail_section .product-images-module .product-images {
+	margin-bottom: 0;
+    padding: 10px 10px;
+    border: 1px solid #cfcfcf;
+}
+
+.product_detail_section .product-images-module .product-images .product-main-image-link {
+	border: 0 !important;
+}
+
+.product_detail_section .product-images-module .product-images .secondary-images-wrapper {
+	left: 10px;
+    top: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .product_detail_section .product-images-module .product-images .secondary-images-wrapper {
+    	top: auto;
+        left: 0
+    }
+}
+
+.product_detail_section .product-images-module .product-images .product-main-image-link .enlarge-image-link {
+	left: auto;
+    right: 0;
+    width: 170px;
+}
+
+.product_detail_section .product-images-module .product-images .product-main-image-link .enlarge-image-link i {
+	display: flex;
+    align-items: center;
+    font-size: 22px;
+}
+
+.product_detail_section .product-images-module .product-images .product-main-image-link .enlarge-image-link i:after {
+	content: "Full Screen Zoom";
+    position: absolute;
+    font-size: 12px;
+    font-family: bmw;
+    text-transform: uppercase;
+    font-weight: 700;
+    right: 8px;
+}
+
+.product_new_tabs .product-policies-module, .product_new_tabs .product-badges-module {
+    background-color: #F2F2F2;
+	padding: 30px 30px;
+}
+
+.product_new_tabs .tab-nav-wrap {
+	padding-top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 0 !important;
+}
+
+.product_new_tabs .product-policies-module {
+	display: none;
+}
+
+.product_detail_section .product-fitment-confirmation-module {
+	max-width: 550px;
+    width: 100%;
+}
+
+.product_new_tabs {
+	margin-bottom: 100px;
+}
+
+@media screen and (max-width: 767px) {
+    .product_new_tabs {
+    	margin-bottom: 50px;
+    }
+}
+
+.riders_b_title {
+	text-align: center;
+    position: relative;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.riders_b_title::before {
+	content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 5px;
+    background-color: #0562FF;
+    width: 140px;
+    margin: auto;
+}
+
+.product_new_tabs .product_new_tabs_wrapper .page-builder-layout-module {
+	margin-top: 0 !important;
+}
+
+.product_new_tabs .product-details-inner {
+	padding: 30px 30px;
+    background-color: #F2F2F2;
+}
+
+.product_new_tabs .tab-nav {
+	flex: 0 0 25%;
+    max-width: 25%;
+    padding-right: 0 !important;
+}
+
+@media screen and (max-width: 767px) {
+    .product_new_tabs .tab-nav {
+    	flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .product_new_tabs .tab-nav {
+    	flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+.product_new_tabs .tab-nav.tab-active a {
+	background-color: #F2F2F2;
+}
+
+.product_new_tabs .tab-nav a {
+	border-bottom: 0 !important;
+    color: #000 !important;
+    text-align: center;
+}
+
+.product_detail_section .product-title-module {
+	padding: 0 !important;
+}
+
+.product_detail_section .product-display .sale-price-label {
+	display: none !important;
+}
+
+.product_detail_section .product-purchase-module .product-options ul li .option-select {
+	font-size: 12px;
+}
+
+.product_detail_section .product-purchase-module .purchase-box .purchase-wrapper .add-to-cart {
+	max-width: 550px;
+}
+
+.product_section .container-wrap {
+	max-width: 1600px !important;
+    width: 100% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+.product_section .featured-products {
+	display: grid !important;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.product_section .featured-product {
+	margin-right: 0 !important;
+    display: none;
+}
+
+.product_section .featured-products-module .product-wrapper-link .product-details-link {
+	position: inherit !important;
+    right: 0 !important;
+    left: 0 !important;
+    height: auto !important;
+    background-color: #000;
+    padding: 5px 5px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.product_section .featured-products-module .product-wrapper-link .product-details-link .fa {
+	display: none;
+}
+
+.product_section .featured-products-module {
+	padding: 0 !important;
+}
+
+.product_section .featured-products-module .featured-product {
+	margin-bottom: 0 !important;
+}
+
+.product_section .featured-products-module .product-wrapper-link {
+	padding: 0px !important;
+    border: 0 !important;
+}
+
+.product_section .product-sale-price  {
+	text-align: right !important;
+    font-size: 18px !important;
+    margin-bottom: 15px !important;
+    border-bottom: 2px solid #000;
+}
+
+.sidebar_wrapper_title h4 {
+	text-transform: uppercase;
+    font-size: 24px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+.sidebar_list_category_item {
+	margin-bottom: 8px;
+}
+
+.sidebar_list_category_item:last-child {
+	margin-bottom: 0;
+}
+
+.sidebar_list_category_link {
+	color: #000;
+    font-size: 14px;
+}
+
+.sidebar_list_category_link:hover {
+	color: #000;
+    text-decoration: none;
+    opacity: .7;
+}
+
+.sidebar_wrapper_item {
+	margin-bottom: 40px;
+}
+
+.sidebar_wrapper_item:last-child {
+	margin-bottom: 0;
+}
+
+.sidebar_filter_item p {
+	margin-bottom: 10px;
+}
+
+.sidebar_list_category_item [type="radio"]:checked,
+.sidebar_list_category_item [type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+.sidebar_list_category_item [type="radio"]:checked + label,
+.sidebar_list_category_item [type="radio"]:not(:checked) + label
+{
+    position: relative;
+    padding-left: 28px;
+    cursor: pointer;
+    line-height: 20px;
+    display: inline-block;
+    color: #000;
+    font-size: 14px;
+    font-weight: 500;
+}
+.sidebar_list_category_item [type="radio"]:checked + label:before,
+.sidebar_list_category_item [type="radio"]:not(:checked) + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #ddd;
+    background: #fff;
+}
+.sidebar_list_category_item [type="radio"]:checked + label:after,
+.sidebar_list_category_item [type="radio"]:not(:checked) + label:after {
+    content: '';
+    width: 12px;
+    height: 12px;
+    background: #000;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+.sidebar_list_category_item [type="radio"]:not(:checked) + label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+.sidebar_list_category_item [type="radio"]:checked + label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+.sidebar_filter_item {
+	border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+.sidebar_filter_item:last-child {
+	border-bottom: 0;
+    margin-bottom: 0;
+}
+
+.product_section .filter_list_load_more {
+	margin-top: 50px;
+}
+
+
+/**
+	Main Slider
+**/
+
+
+
+.page-builder-layout-section.main--hero .container-wrap {
+	padding: 0 0 !important;
+}
+
+.main--slider-item {
+	position: relative;
+}
+
+.main--slider-bg {
+	position: relative;
+}
+
+.main--slider-bg img {
+	width: 100% !important;
+    height: calc(300px + (700 - 300) * ((100vw - 320px) / (1900 - 320)));
+    object-fit: cover;
+}
+
+.main--slider-bg:before {
+	content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1;
+}
+
+.main--slider-wrapper {
+	max-width: 1600px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    z-index: 2;
+    padding: 0 15px;
+}
+
+.main--slider-content {
+	max-width: 720px;
+    width: 100%;
+}
+
+.main--slider-itemNewHoliday .main--slider-content {
+	max-width: 1250px;
+}
+
+.main--slider-itemNewHoliday .main--slider-title {
+	margin-bottom: 0;
+}
+
+.main--slider-itemNewHoliday .main--slider-text {
+	font-size: 20px;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 767px) {
+    .main--slider-itemNewHoliday .main--slider-text {
+    	font-size: 12px;
+    }
+}
+
+.mainSliderHolidayPricing img {
+	width: 75% !important;
+    margin-bottom: 40px;
+}
+
+@media screen and (max-width: 767px) {
+    .mainSliderHolidayPricing img {
+    	width: 100% !important;
+    }
+}
+
+.main--slider-itemNewHoliday .themeBannerTermBox {
+	left: auto;
+    right: 0;
+}
+
+@media screen and (max-width: 811px) {
+    .main--slider-itemNewHoliday .themeBannerTermBox {
+    	width: 350px; /*modified - women's day promo  */
+    	margin-right: -280px; /*modified - women's day promo  */
+    }
+}
+
+.main--slider-title {
+	color: #fff;
+    font-size: calc(35px + (55 - 35) * ((100vw - 768px) / (1900 - 768))) !important;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+	.main--slider-title {
+        font-size: calc(26px + (35 - 26) * ((100vw - 320px) / (768 - 320))) !important;
+    }
+}
+
+.main--slider-sub-title {
+	color: #fff;
+    font-size: calc(16px + (18 - 16) * ((100vw - 768px) / (1900 - 768))) !important;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .main--slider-sub-title {
+    	font-size: 16px !important;
+    }
+}
+
+.main--slider-text {
+	color: #fff;
+    margin-bottom: 40px;
+}
+
+.main--slider-button a {
+	display: inline-block;
+    background-color: #fff;
+    color: #000;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: calc(12px + (18 - 12) * ((100vw - 768px) / (1900 - 768)));
+    max-width: 250px;
+    width: 100%;
+    text-align: center;
+    transition: all .3s ease-in-out;
+}
+
+@media screen and (max-width: 767px) {
+    .main--slider-button a {
+    	padding: 12px;
+        font-size: 14px;
+    }
+}
+
+
+.main--slider-button a:hover {
+	background-color: #0562FF;
+    color: #fff;
+    text-decoration: none;
+}
+
+/**
+	Personal Retail
+**/
+.personal--retail {
+	background-color: #000;
+    padding: 30px 0;
+}
+
+.personal--retail .container-wrap {
+	padding: 0 0 !important;
+}
+
+.personal--retail-button .links-list {
+	display: flex !important;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.personal--retail-button .links-list li {
+	margin-right: 120px;
+}
+
+@media screen and (max-width: 1090px) {
+	.personal--retail-button .links-list li {
+        margin-right: 20px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+	.personal--retail-button .links-list li {
+        margin-right: 0;
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+}
+
+
+.personal--retail-button .links-list li:last-child {
+	margin-right: 0;
+    margin-bottom: 0;
+}
+
+.personal--retail-button .links-list li a {
+	color: #fff;
+    text-transform: uppercase;
+    font-size: 16px;
+    position: relative;
+    padding-left: 50px;
+    pointer-events: none;
+}
+
+@media screen and (max-width: 1090px) {
+    .personal--retail-button .links-list li a {
+    	font-size: 14px;
+        padding-left: 30px;
+    }
+}
+
+.personal--retail-button .links-list li a:before {
+	content: "";
+    position: absolute;
+    background-image: url(https://rparts-sites.s3.amazonaws.com/23908d4…/design/icons/icon01.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 37px;
+    height: 30px;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+@media screen and (max-width: 1090px) {
+    .personal--retail-button .links-list li a:before {
+    	width: 30px;
+        height: 23px;
+    }
+}
+
+.personal--retail-button .links-list li:nth-child(1) a:before {
+    background-image: url(https://rparts-sites.s3.amazonaws.com/23908d49235005b9c1c9e417b84fee8e/design/icons/icon01.png);
+}
+
+.personal--retail-button .links-list li:nth-child(2) a:before {
+    background-image: url(https://rparts-sites.s3.amazonaws.com/23908d49235005b9c1c9e417b84fee8e/design/icons/icon02.png);
+}
+
+.personal--retail-button .links-list li:nth-child(3) a:before {
+    background-image: url(https://rparts-sites.s3.amazonaws.com/23908d49235005b9c1c9e417b84fee8e/design/icons/icon03.png);
+}
+
+.personal--retail-button .links-list li a:hover {
+	text-decoration: none;
+}
+
+.hero--wrap-section {
+	background-color: #303030 !important;
+}
+
+.hero--wrap-section #search-tabs-nav .nav-link:hover, #hero-wrap #search-tabs-nav .nav-link.active {
+    border-bottom: 3px solid #fff !important;
+    color: #fff !important;
+}
+
+.hero--wrap-section #search-tabs-nav .nav-link {
+	color: #fff !important;
+}
+
+.motorrad--offer {
+	background-color: #1A1A1A;
+}
+
+.motorrad--offer .container-wrap {
+	padding: 0 0px !important;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.motorrad--filter-list {
+    background-color: #5A5A5A;
+	margin-bottom: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+@media screen and (max-width: 767px) {
+    .motorrad--filter-list {
+    	flex-wrap: wrap;
+        background-color: transparent;
+    }
+    .motorrad--filter-list-item {
+    	flex: 0 0 100%;
+        max-width: 100%;
+    }
+    #filters {
+    	display: none;
+        border-top: 2px solid #fff;
+    }
+    
+    #filters.openCategory {
+    	display: flex;
+    }
+}
+
+.motorrad--filter-list-link {
+    display: inline-block;
+	color: #fff !important;
+	text-transform: uppercase;
+	font-weight: 700;
+    font-size: 14px;
+    padding: 30px 30px;
+    cursor: pointer;
+    position: relative;
+}
+
+@media screen and (max-width: 1045px) {
+    .motorrad--filter-list-link {
+    	font-size: 12px;
+    	padding: 30px 10px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .motorrad--filter-list-link {
+    	width: 100%;
+        padding: 10px 10px;
+        font-weight: 400;
+    }
+}
+
+.filter_title_mobile {
+	display: none;
+}
+
+.filter_title_mobile .fa {
+	color: #fff;
+}
+
+@media screen and (max-width: 767px) {
+    #filter_wrapper {
+    	padding: 25px 25px;
+    }
+    .filter_title_mobile {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 15px;
+        cursor: pointer;
+    }
+    .filter_title_mobile h4 {
+    	color: #fff;
+        font-size: 16px !important;
+        margin-bottom: 0;
+    }
+    .filter_title_mobile i {
+    	color: #fff;
+    }
+}
+
+.motorrad--listImg-desc-wrapper {
+	position: relative;
+}
+
+.motorrad--listImg-desc-wrapper:before {
+    content: "";
+	position: absolute;
+    bottom: -15px;
+    height: 5px;
+    background-color: #000;
+    width: 140px;
+    left: 0;
+    transition: all .3s ease-in-out;
+}
+
+.motorrad--filter-list-link.active:before {
+	content: "";
+    position: absolute;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 15px solid #000;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 20px;
+    margin: auto;
+}
+
+@media screen and (max-width: 767px) {
+    .motorrad--filter-list-link.active:before {
+    	display: none;
+    }
+}
+
+.motorrad--filter-list-link:hover {
+	text-decoration: none;
+	color: #fff;
+	opacity: .8;
+}
+
+.motorrad--filter-list-img {
+	margin-top: 0!important;
+}
+
+.motorrad-container {
+	max-width: 1600px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.motorrad--listImg {
+	display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 0;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.motorrad--listImg-item {
+	padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+}
+
+.popular_cat .motorrad--listImg-item.portfolio {
+	display: block !important;
+}
+
+.popular_cat {
+	margin-bottom: 0px;
+    padding-top: 0 !important;
+}
+
+.popular_cat .motorrad--listImg {
+	margin-bottom: 40px;
+}
+
+.motorrad_filter_title {
+	color: #fff;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+@media screen and (max-width: 767px) {
+    .motorrad_filter_title {
+    	font-size: 20px !important;
+    }
+}
+
+.motorrad--listImg-item.portfolio {
+	display: none;
+}
+
+.motorrad--filter-list-wrapper {
+	padding: 60px 0 0px 0;
+}
+
+@media screen and (max-width: 767px) {
+    .motorrad--filter-list-wrapper {
+    	padding: 20px 0 20px 0;
+    }
+}
+
+.motorrad--listImg-item-12 {
+	flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.motorrad--listImg-item-3 {
+	flex: 0 0 25%;
+    max-width: 25%;
+}
+
+@media screen and (max-width: 1300px) {
+    .motorrad--listImg-item-3 {
+    	flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+	.motorrad--listImg-item-3 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+.motorrad--listImg-item-4 {
+	flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+}
+
+@media screen and (max-width: 1300px) {
+    .motorrad--listImg-item-4 {
+    	flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+	.motorrad--listImg-item-4 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+.motorrad--listImg-item-6 {
+	flex: 0 0 50%;
+    max-width: 50%;
+}
+
+@media screen and (max-width: 768px) {
+	.motorrad--listImg-item-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+.motorrad--listImg-content {
+	position: relative;
+    height: 100%;
+}
+
+@media screen and (max-width: 767px) {
+    .motorrad--listImg-content {
+    	height: auto;
+    }
+}
+
+.motorrad--listImg-banner {
+	height: 100%;
+}
+
+.motorrad--listImg-banner img {
+	width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.motorrad--listImg-link {
+	color: #000;
+    transition: all .3s ease-in-out;
+    height: 100%;
+    display: inline-block;
+}
+
+.motorrad--listImg-link:hover {
+	color: #000;
+    text-decoration: none;
+}
+
+.motorrad--listImg-link:hover .motorrad--listImg-desc {
+	height: 210px;
+}
+
+@media screen and (max-width: 767px) {
+	.motorrad--listImg-link:hover .motorrad--listImg-desc {
+        height: auto;
+    }
+}
+
+.motorrad--listImg-link:hover .motorrad--listImg-desc-wrapper:before {
+	background-color: #0562FF;
+}
+
+.motorrad--listImg-desc {
+	background-color: #fff;
+    padding: 40px 40px;
+    position: absolute;
+    left: 0;
+    bottom: 30px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    transition: all .3s ease-in-out;
+}
+
+@media screen and (max-width: 767px) {
+    .motorrad--listImg-desc {
+    	height: auto;
+        padding: 30px 20px;
+        position: inherit;
+        bottom: 0;
+    }
+}
+
+.motorrad--listImg-desc h4 {
+	font-size: 16px !important;
+    text-transform: capitalize !important;
+}
+
+.motorrad--listImg-desc p {
+	margin-bottom: 0;
+}
+
+.motorrad--local .container-wrap, .parts_cat_section .container-wrap {
+	padding-left: 15px !important;
+	padding-right: 15px !important;
+	padding-top: 0 !important;
+	padding-bottom: 0 !important;
+	max-width: 1600px !important;
+	width: 100% !important;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.parts_cat_section {
+	padding: 60px 0 0;
+}
+
+.parts_title {
+	text-align: center;
+    margin-bottom: 50px;
+}
+
+.parts_list {
+	margin-bottom: 0px;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+@media screen and (max-width: 930px) {
+    .parts_list {
+    	grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .parts_list {
+    	grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.parts_list_link {
+	color: #000;
+}
+
+.parts_list_link:hover {
+	color: #000;
+    text-decoration: none;
+}
+
+.parts_list_img {
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.parts_list_img img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.parts_list_text p {
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-bottom: 15px;
+    min-height: 56px;
+}
+
+@media screen and (max-width: 630px) {
+    .parts_list_text p {
+    	min-height: auto;
+    }
+}
+
+.parts_list_cat {
+	margin-bottom: 20px;
+}
+
+.parts_list_button a {
+	display: inline-block;
+    width: 100%;
+    text-align: center;
+    padding: 15px 15px;
+    background-color: #0562FF;
+    color: #fff;
+}
+
+.parts_list_button a:hover {
+	text-decoration: none;
+    color: #fff;
+    background-color: #134ba9;
+}
+
+.parts_list_cat a {
+	font-size: 14px;
+    color: #000;
+}
+
+.parts_list_cat a:hover {
+	text-decoration: none;
+    color: #000;
+    opacity: .7;
+}
+
+.motorrad--local {
+	padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+@media screen and (max-width: 767px) {
+    .motorrad--local {
+    	padding-top: 50px;
+    	padding-bottom: 50px;
+    }
+}
+
+.motorrad--local-wrapper {
+	background-image: url(https://rparts-sites.s3.amazonaws.com/29f070d3355f7a968d354a14440576a8/design/minified/webp/Mask_Group_5.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.motorrad--local-content {
+	padding: 140px 60px;
+	background-color: #0562FF;
+	max-width: 520px;
+	width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+    .motorrad--local-content {
+    	padding: 50px 50px;
+    }
+}
+
+.motorrad--local-title {
+	font-size: 24px;
+	color: #fff;
+}
+
+.motorrad--local-content p {
+	color: #fff;
+}
+
+.motorrad--local-button a {
+	color: #0562FF;
+	border: 1px solid #fff;
+	display: inline-block;
+	background-color: #fff;
+	padding: 15px 15px;
+	max-width: 250px;
+	width: 100%;
+	text-align: center;
+	transition: all .3s ease-in-out;
+}
+
+.motorrad--local-button a:hover {
+	color: #fff;
+	background-color: #000;
+    border: 1px solid #000;
+    text-decoration: none;
+}
+
+.motorrad--special {
+	background-image: url(https://rparts-sites.s3.amazonaws.com/29f070d3355f7a968d354a14440576a8/design/minified/webp/Mask_Group_14.webp);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    position: relative;
+}
+
+.motorrad--special::before {
+    content: "";
+    background-color: rgba(0,0,0,0.5);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+@media screen and (max-width: 767px) {
+    .motorrad--special {
+    	padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}
+
+.motorrad--special .container-wrap, .bmw-style-collection .container-wrap {
+	max-width: 1600px !important;
+	width: 100% !important;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 0 !important;
+	padding-top: 0 !important;
+	padding-left: 15px !important;
+	padding-right: 15px !important;
+}
+
+.motorrad--special-content h4 {
+	color: #fff;
+	font-size: 28px;
+}
+
+.motorrad--special-content p {
+	color: #fff;
+    margin-bottom: 40px !important;
+}
+
+.motorrad--special-box {
+	max-width: 400px;
+	width: 100%;
+	margin-left: auto !important;
+	margin-right: auto !important;
+}
+
+.motorrad--special-box .newsletter-signup-module {
+	margin-bottom: 0;
+}
+
+.motorrad--special-box .input-custom, .motorrad--special-box .input-custom input {
+	margin-bottom: 0 !important;
+}
+
+.motorrad--special-box .input-custom {
+	display: flex;
+}
+
+.motorrad--special-box .input-custom input {
+	flex: 1;
+    width: auto !important;
+    max-width: 100% !important;
+}
+
+.motorrad--special-box .input-custom button {
+	border: 1px solid #fff !important;
+}
+
+.bmw-content-title {
+    font-size: calc(32px + (46 - 32) * ((100vw - 768px) / (1900 - 768))); !important;
+}
+
+@media screen and (max-width: 767px) {
+	font-size: 32px !important;
+}
+
+.bmw-content-section {
+	padding: 80px 0px;
+}
+
+@media screen and (max-width: 767px) {
+    .bmw-content-section {
+    	padding: 50px 0;
+    }
+}
+
+.bmw-content-section h4 {
+    font-size: 18px !important;
+}
+
+.bmw-content-section p {
+	margin-bottom: 0 !important;
+}
+
+.bmw-content-section .container-wrap {
+	padding: 0 15px !important;
+}
+
+.style-collection-list {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 0;
+    position: relative;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.style-collection-list .owl-prev, .style-collection-list .owl-next {
+	position: absolute;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    margin: auto;
+    border-radius: 50%;
+    background-color: #edebeb;
+    border-color: 1px solid #ccc;
+}
+
+.style-collection-list .owl-prev {
+	left: 0px;
+}
+
+.style-collection-list .owl-next {
+	right: 0px;
+}
+
+@media screen and (max-width: 800px) {
+    .style-collection-list {
+    	grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .style-collection-list {
+    	grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.style-collection-link {
+    color: #000;
+}
+
+.style-collection-link:hover, .style-collection-link:focus {
+	text-decoration: none;
+    color: #000;
+}
+
+.style-collection-link:hover .style-collection-content p::before {
+	background-color: #0562FF;
+}
+
+.style-collection-link:hover .style-collection-img img {
+	transform: scale(1.1);
+}
+
+.style-collection-img {
+    overflow: hidden;
+}
+
+.style-collection-img img {
+    width: 100% !important;
+    transition: all .3s ease-in-out;
+    height: 225px;
+    object-fit: cover;
+}
+
+.style-collection-content {
+    background-color: #E5E5E5;
+    padding: 20px 15px;
+}
+
+.style-collection-content p {
+    position: relative;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    font-size: 12px;
+    margin-bottom: 0;
+}
+
+.style-collection-content p::before {
+	content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: #000;
+    width: 50%;
+    transition: all .3s ease-in-out;
+}
+
+#riders_equipment img {
+	object-fit: contain;
+}
+
+.style-collections h4 {
+	text-align: center;
+    margin-bottom: 40px;
+}
+
+.style-collection-wrapper {
+	margin-bottom: 90px;
+}
+
+.collection_filter_wrapper h5 {
+    text-transform: uppercase;
+    font-size: 24px !important;
+    margin-bottom: 15px;
+}
+
+.collection_filter_button {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 0;
+}
+
+@media screen and (max-width: 1130px) {
+    .collection_filter_button {
+    	grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.collection_filter_button_gender {
+	margin-top: 25px;
+}
+
+.collection_filter_link {
+    width: 100%;
+    display: inline-block;
+    border: 2px solid #000;
+    padding: 10px 10px;
+    text-align: center;
+    color: #000;
+    font-size: 12px;
+}
+
+.collection_filter_link.active {
+	color: #fff;
+    background-color: #000;
+}
+
+.collection_filter_link:hover, .collection_filter_link:focus {
+	color: #fff;
+    background-color: #000;
+    text-decoration: none;
+}
+
+/*Gender*/
+.collection_filter_button [type="radio"]:checked,
+.collection_filter_button [type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+.collection_filter_button [type="radio"]:checked + label,
+.collection_filter_button [type="radio"]:not(:checked) + label
+{
+    position: relative;
+    padding-left: 28px;
+    cursor: pointer;
+    line-height: 20px;
+    display: inline-block;
+    color: #000;
+    font-size: 18px;
+    font-weight: 500;
+}
+.collection_filter_button [type="radio"]:checked + label:before,
+.collection_filter_button [type="radio"]:not(:checked) + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #ddd;
+    background: #fff;
+}
+.collection_filter_button [type="radio"]:checked + label:after,
+.collection_filter_button [type="radio"]:not(:checked) + label:after {
+    content: '';
+    width: 12px;
+    height: 12px;
+    background: #000;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+.collection_filter_button [type="radio"]:not(:checked) + label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+.collection_filter_button [type="radio"]:checked + label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+/*Price Range*/
+.price-range-slider {
+	width:100%;
+      float:left;
+}
+
+.range-value {
+	margin:0;
+}
+
+.range-value input {
+	width:100%;
+    background:none;
+    color: #000;
+    font-size: 16px;
+    font-weight: initial;
+    box-shadow: none;
+    border: none;
+    margin: 0px 0 5px 0;
+}
+
+.range-value input:hover, .range-value input:focus {
+	outline: 0;
+}
+
+.range-bar {
+	border: none;
+    background: #000;
+    height: 5px !important;	
+    width: 96%;
+    margin-left: 8px;
+    top: 3px;
+}
+
+.range-bar .ui-slider-range {
+	background:#000;
+}
+
+.range-bar .ui-slider-handle {
+	border:none;
+    border-radius:25px;
+    background:#fff;
+    border:2px solid #06b9c0;
+    height:17px;
+    width:17px;
+    top: -0.52em !important;
+    cursor:pointer;
+}
+
+.range-bar .ui-slider-handle + span {
+	background:#f6f6f6;
+}
+
+.more_filters a {
+	display: inline-block;
+    width: 100%;
+    padding: 10px 10px;
+    background-color: #E5E5E5;
+    color: #000;
+    transition: all .3s ease-in-out;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.more_filters a:hover {
+	color: #000;
+    text-decoration: none;
+}
+
+.filter_list_items {
+	margin-bottom: 60px;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+@media screen and (max-width: 1010px) {
+    .filter_list_items {
+    	grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .filter_list_items {
+    	grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .filter_list_items {
+    	grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.filter_list_img {
+	display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.filter_list_link:hover .filter_list_img img {
+	transform: scale(1.1);
+}
+
+.filter_list_img img {
+	width: 100%;
+    transition: all .3s ease-in-out;
+}
+
+.filter_list_link {
+	color: #000;
+}
+
+.filter_list_link:hover {
+	color: #000;
+    text-decoration: none;
+}
+
+.filter_list_desc p {
+	margin-bottom: 0;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.filter_list_desc {
+	margin-bottom: 25px;
+}
+
+.filter_list_pricing {
+	display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #000;
+}
+
+.filter_list_pricing .filter_list_color {
+	font-size: 12px;
+}
+
+.filter_list_pricing .filter_list_price {
+	font-size: 14px;
+}
+
+.filter_list_load_more {
+	text-align: center;
+}
+
+.filter_list_load_more a {
+	display: inline-block;
+    padding: 10px 10px;
+    text-align: center;
+    width: 250px;
+    text-transform: uppercase;
+    background-color: #000;
+    color: #fff;
+    font-size: 14px;
+    transition: all .3s ease-in-out;
+    border: 1px solid transparent;
+}
+
+.filter_list_load_more a:hover, .filter_list_load_more a:focus {
+	border: 1px solid #000;
+    color: #000;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 767px) {
+    .product_section .row {
+    	display: flex;
+        flex-wrap: wrap;
+    }
+    .product_section .col-md-3, .product_section .col-md-9 {
+    	flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .product_list {
+    	margin-top: 50px;
+    }
+}
+
+
+
+
+/* Old CSS */
+
+.cyber-deals-content-wrapper {
+	display: none;
+}
+
+@media screen and (max-width: 767px) {
+    .cyber-deals-content-wrapper {
+    	display: block;
+    }
+}
+
+.prodIsActive {
+	display: block;
+}
+
+.gear-page-wrapper .gear-page-img {
+	margin-bottom: 0px;
+}
+
+.gear-page-wrapper h3 {
+	padding: 10px 0;
+    transition: all .3s ease-in-out;
+    position: relative;
+}
+
+.gear-page-wrapper:hover h3 {
+    padding: 10px 10px;
+    color: #fff;
+    background-color: #0562FF;
+}
+
+@font-face {
+    font-family: bmw;
+    src: url(https://s3.amazonaws.com/static.revolutionparts.com/assets/fonts/BMW/BMWMotorradW05-Light.woff);
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: bmw;
+    src: url(https://s3.amazonaws.com/static.revolutionparts.com/assets/fonts/BMW/BMWMotorradW05-Regular.woff);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: bmw;
+    src: url(https://s3.amazonaws.com/static.revolutionparts.com/assets/fonts/BMW/BMWMotorradW05-Italic.woff);
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: bmw;
+    src: url(https://s3.amazonaws.com/static.revolutionparts.com/assets/fonts/BMW/BMWMotorradW05-Bold.woff);
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: bmw;
+    src: url(https://s3.amazonaws.com/static.revolutionparts.com/assets/fonts/BMW/BMWMotorradW05-BoldItalic.woff);
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: bmw;
+    src: url(https://s3.amazonaws.com/static.revolutionparts.com/assets/fonts/BMW/BMWMotorradW05-Heavy.woff);
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: bmw;
+    src: url(https://s3.amazonaws.com/static.revolutionparts.com/assets/fonts/BMW/BMWMotorradW05-HeavyItalic.woff);
+    font-weight: 700;
+    font-style: italic;
+}
+
+body {
+    font-family: bmw !important;
+    color: black;
+}
+
+h1, h2, h3, h4, h5, h6, label {
+    font-family: bmw;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.75rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+p {
+    font-size: .9rem;
+}
+
+a, a:hover, a:focus {
+    color: #0041B3;
+}
+
+.d-none {
+    display: none;
+}
+
+/* Buttons */
+.bmw-button,
+.btn-primary,
+.form-fields .block-button {
+    display: inline-block;
+    min-width: 14rem;
+    padding: .6rem 2rem;
+    color: white;
+    font-family: bmw;
+    font-weight: bold;
+    background: black;
+    font-size: 1rem;
+    transition: all .2s ease;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 0;
+    border: none;
+}
+
+.bmw-button-light {
+	background-color: #0562FF;
+}
+
+.bmw-button-light:hover {
+	background-color: #fff !important;
+    color: #0562FF !important;
+}
+
+.bmw-button:hover,
+.btn-primary:hover,
+.form-fields .block-button:hover {
+    color: white;
+    text-decoration: none;
+    background: #0562FF;
+}
+
+html body .action-button,
+.button,
+.green.button {
+    display: inline-block;
+    padding: .6rem 2rem;
+    color: white;
+    font-family: bmw;
+    font-weight: bold;
+    background-color: black;
+    font-size: 1rem;
+    transition: all .2s ease;
+    text-transform: uppercase;
+    text-align: center;
+    border: none;
+    border-radius: 0;
+    white-space: nowrap;
+    background-image: none;
+    background-repeat: unset;
+}
+
+html body .action-button:hover,
+.button:hover,
+.green.button:hover {
+    color: white;
+    text-decoration: none;
+    background-color: #0562FF !important;
+    background-image: none;
+    background-repeat: unset;
+}
+
+#rp_global_add_to_cart .add_cart_control .add_cart_button .button {
+    color: white !important;
+}
+
+.call-to-action-button,
+.call-to-action-button {
+    background: black;
+}
+
+.call-to-action-button:focus,
+.call-to-action-button:hover {
+    background: #0562FF;
+}
+
+html body .action-button.place-order-button,
+html body .action-button.big-button,
+.product-policies-module .policy-link a {
+    display: inline-block;
+    padding: .6rem 2rem;
+    color: white;
+    font-family: bmw;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: all .2s ease;
+    background: black;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 0;
+    white-space: nowrap;
+}
+
+html body .action-button.place-order-button:hover,
+html body .action-button.big-button:hover,
+.product-policies-module .policy-link a:hover {
+    color: white;
+    text-decoration: none;
+    background: #0562FF;
+}
+
+.product-purchase-module .purchase-offers-box .change-location-form .input-group button {
+    display: inline-block;
+    padding: .5rem 1rem;
+    color: white;
+    font-family: bmw;
+    font-weight: bold;
+    background: black;
+    border-color: black;
+    transition: all .2s ease;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 0;
+    white-space: nowrap;
+}
+
+.product-purchase-module .purchase-offers-box .change-location-form .input-group button:hover {
+    color: white;
+    text-decoration: none;
+    background: #0562FF;
+    border-color: #0562FF;
+}
+
+.page-subheader-component h1,
+.page-subheader-component h2 {
+    color: black;
+}
+
+.page-subheader-replace {
+    font-size: 18px;
+    letter-spacing: .5px;
+    margin: 15px 0 0;
+}
+
+/* Table */
+.bmw-table {
+    border: 2px solid #000000;
+    margin: 25px 0;
+}
+
+.bmw-table th,
+.bmw-table td { 
+    padding: 10px;
+    border: 1px solid #000000;
+}
+
+.bmw-table th { 
+    font-weight: bold;
+}
+
+/*--- NEW HEADER ---*/
+
+
+
+/*--- HEADER ---*/
+/* Meta Nav New */
+#meta-nav ul {
+    display: flex;
+    align-items: center;
+}
+
+#meta-nav ul li {
+    padding-right: 1.25rem;
+}
+
+#meta-nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: .9rem;
+}
+
+#meta-nav ul li a:hover {
+    color: #0562FF;
+}
+
+/* Main */
+#header-main-wrap {
+    border-bottom: 1px solid #d7d7d7;
+}
+
+#header-main-wrap .container-wrap {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+#header-main-wrap #header-main #meta-nav-wrap .links-list li a:hover {
+    opacity: 1;
+    color: #0562FF;
+}
+
+#header-main {
+    height: 85px;
+}
+
+#header-main > .block-modules {
+    height: auto;
+}
+
+#skip-nav-btn {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    padding: 1rem;
+    background: white;
+    z-index: 1;
+    border: 1px solid black;
+    margin: 1rem;
+    border-radius: 3px;
+}
+
+#skip-nav-btn:focus {
+    opacity: 0.9;
+    pointer-events: all;
+}
+
+.store-logo-module .store-logo-link img {
+	max-width: unset;
+    height: unset;
+}
+
+.find-dealer-button {
+    margin-right: 1rem;
+}
+
+.find-dealer-button,
+.find-dealer-button-link {
+    font-size: .9rem;
+}
+
+#header-main-wrap #header-main #meta-nav-wrap .find-dealer-button {
+    white-space: nowrap;
+}
+
+.find-dealer-button:hover {
+    color: #0562FF;
+}
+
+#header-main-wrap #header-main #meta-nav-wrap .cart-button-module .cart-component .cart-button {
+    background: white;
+    color: black;
+    border: 2px solid black;
+    border-radius: 0;
+    padding: .25rem 0;
+}
+
+#header-main-wrap #header-main #meta-nav-wrap .cart-button-module .cart-component .cart-button:hover {
+    color: white;
+}
+
+.cart-component .cart-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    padding: .15rem 0;
+}
+
+.cart-component .cart-button .cart-icon {
+    margin-right: .3rem;
+}
+
+.cart-component .cart-button .cart-text {
+    font-size: .8rem;
+}
+
+.cart-component .cart-flyout .order-item {
+    color: #0562FF;
+}
+
+.cart-component .cart-flyout .order-item:hover {
+    color: #0562FF;
+    text-decoration: underline;
+}
+
+.cart-component .cart-flyout .flyout-action-button {
+    border-radius: 0;
+}
+
+
+/* New Primary */
+#header-secondary-wrap {
+	background: white;
+    padding: .5rem 0;
+}
+
+/* .main-nav-wrap {
+    display: flex;
+    align-items: center;
+} */
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.main-nav-wrap .main-nav > .infinite-dropdown-title {
+    position: relative;
+    display: block;
+    height: 100%;
+    padding-right: 1.25rem;
+    font-family: bmw;
+    font-weight: normal;
+    font-size: .8rem;
+    text-align: center;
+	text-transform: capitalize;
+    color: black;
+    border: none;
+    background: white;
+}
+
+/*
+.main-nav-wrap .main-nav > .infinite-dropdown-title em,
+.main-nav-wrap .main-nav > .infinite-dropdown-title i {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+*/
+
+.main-nav-wrap .main-nav > .infinite-dropdown-title:hover,
+.main-nav-wrap .main-nav > .infinite-dropdown-title:focus,
+.main-nav-wrap .main-nav > .infinite-dropdown-title:hover em,
+.main-nav-wrap .main-nav > .infinite-dropdown-title:focus em,
+.main-nav-wrap .main-nav > .infinite-dropdown-title:hover i,
+.main-nav-wrap .main-nav > .infinite-dropdown-title:focus i {
+    font-weight: bold;
+}
+
+.main-nav-wrap .main-nav > .infinite-dropdown-title::before {
+    font-family: bmw;
+    font-weight: bold;
+    display: block;
+    content: attr(title);
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+.main-nav-wrap .main-nav > li:first-of-type {
+    padding: 0 .75rem;
+}
+.main-nav-wrap .main-nav > li > a {
+	text-transform: capitalize;
+    font-size: .8rem;
+}
+
+.main-nav-wrap .main-nav > li > * {
+	color: black;
+}
+
+
+/* Garage Component */
+.garage-component.svg-icons .garage-text {
+    color: black !important;
+    display: flex !important;
+    align-items: center !important;
+    font-size: 0.9rem !important;
+    font-weight: 400 !important;
+    text-decoration: none !important;
+}
+
+.garage-component.svg-icons .garage-icon path {
+    fill: black !important;
+}
+
+.search-bar-wrap .search-bar-component button:hover {
+    background: #0562FF;
+    opacity: 1;
+}
+
+.main-nav-wrap .main-nav > li {
+    display: flex;
+    align-items: center;
+    height: 56px;
+    color: white;
+    padding: 0 0.75rem;
+    text-decoration: none;
+}
+
+.main-nav-wrap .main-nav > li > a {
+    font-family: bmw;
+    font-weight: normal;
+    display: block;
+    height: auto;
+    text-align: center;
+    text-decoration: none;
+}
+
+.main-nav-wrap .main-nav > li > a:hover,
+.main-nav-wrap .main-nav > li > a:focus {
+    font-weight: bold;
+}
+
+.main-nav-wrap .main-nav > li > a::before {
+    font-family: bmw;
+    font-weight: bold;
+    display: block;
+    content: attr(title);
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+/* Infinite Menu */
+#header-secondary-wrap .infinite-menu {
+    display: flex;
+	background: white;
+    border-bottom: 2px solid #0562FF;
+}
+
+#header-secondary-wrap .infinite-menu .links-list-module.links-display-block .heading {
+	color: black;
+    margin-bottom: .5rem;
+    font-family: bmw;
+    font-weight: bold;
+}
+
+#header-secondary-wrap .infinite-menu .links-list-module .links-list li a {
+	color: black;
+    font-family: bmw;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+#header-secondary-wrap .infinite-menu .links-list-module .links-list li a:hover,
+#header-secondary-wrap .infinite-menu .links-list-module .links-list li a:focus {
+    font-weight: bold;
+}
+
+#header-secondary-wrap .infinite-menu .links-list-module .links-list li a::before {
+    font-family: bmw;
+    font-weight: bold;
+    display: block;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+#header-secondary-wrap .infinite-menu .links-list-footer {
+    display: block;
+    margin-top: .5rem;
+    font-size: .9rem;
+}
+
+#header-secondary-wrap .header-secondary .main-nav-wrap .main-nav > li, #header-secondary-wrap .header-secondary .main-nav-wrap .main-nav > li > * {
+	color: #000;
+}
+
+#header-secondary-wrap .header-secondary .main-nav-wrap .main-nav > li.infinite-dropdown-title {
+	font-size: .9rem;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+}
+
+/* Dealer Select Modal */
+.dealer-modal-source .container-wrap {
+    padding: 0 !important;
+}
+
+.dealer-modal-source .find-dealer-button {
+    visibility: hidden;
+    position: fixed;
+    transform: translate(-500%, -500%);
+    pointer-events: none;
+}
+.dealer-selection-modal .dealer-info {
+	max-width: 350px;
+}
+
+/* Select Dealer Module */
+.select-dealer-module .container-wrap.container-fluid {
+    margin: 0;
+    padding: 0 !important;
+}
+.select-dealer-module .find-dealer-button {
+    display: none;
+}
+
+/*--- MOBILE HEADER & MENU ---*/
+#mobile-header {
+    z-index: 900;
+    height: 64px;
+}
+
+#mobile-header-inner {
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    background: white;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 64px;
+    align-items: center;
+}
+
+#mobile-header #mobile-menu {
+    overflow-y: scroll;
+}
+
+#mobile-header .mobile-logo {
+    max-width: 170px;
+}
+
+#mobile-header #mobile-menu .mobile-nav li a {
+    margin: 0;
+}
+
+#mobile-header #mobile-menu .mobile-sub-nav .mobile-sub-nav-toggle .fa {
+    pointer-events: none;
+}
+
+/*--- HOME PAGE ---*/
+#page-home h1,
+#page-home h2,
+#page-home h3,
+#page-home h4 {
+    text-transform: uppercase;
+}
+#page-home h1 {
+    font-size: 2.5rem;
+}
+
+#page-home h2 {
+    font-size: 2rem;
+}
+
+#page-home h3 {
+    font-size: 1.75rem;
+}
+
+#page-home h4 {
+    font-size: 1.5rem;
+}
+
+/* Hero Slider */
+.hero-wrap {
+    position: relative;
+    /* overflow: hidden; */
+}
+
+.hero-wrap .container-wrap {
+    padding: 0 !important;
+}
+
+.hero-wrap .row {
+    margin: 0 !important;
+}
+
+.motorrad-slide {
+	max-height: 450px;
+}
+
+.motorrad-slide:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+}
+
+figure.motorrad-slide_bg {
+    margin: 0;
+}
+
+/*.motorrad-slider-deals .motorrad-slide_bg, .cyber-deal-motorrad-slide_bg {
+	filter: blur(10px);
+}*/
+
+.motorrad-slide h5 {
+	color: #fff;
+}
+
+figure.motorrad-slide_bg img {
+    width: 100% !important;
+}
+
+.motorrad-slide_content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 1250px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    padding: 2rem;
+}
+
+
+.motorrad-slide_content > * {
+    flex-basis: 50%;
+    flex-grow: 1;
+}
+
+.motorrad-slide_content-right {
+    display: flex;
+    justify-content: center;
+}
+
+.motorrad-slide_content-right img {
+    filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.5)) brightness(1.1);
+}
+
+.motorrad-slide_content h1 {
+    color: white;
+}
+
+.motorrad-slide_content p {
+    color: white;
+    margin-bottom: 2rem;
+}
+
+#motorrad-slider .owl-dots {
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#motorrad-slider .owl-dot {
+    width: .5rem;
+    height: .5rem;
+    background-color: white;
+    display: inline-block;
+    border-radius: 50%;
+    margin: .25rem;
+    opacity: 0.25;
+}
+
+#motorrad-slider .owl-dot.active {
+    opacity: 1;
+}
+
+/* Hero Banner -- Old */
+.hero {
+    padding: 3rem 0 9rem;
+}
+.hero h1 {
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+.hero .caption {
+    max-width: 780px;
+}
+.hero p {
+    color: white;
+    max-width: 75%;
+}
+
+.hero .bmw-button {
+    margin-top: 1rem;
+    background: black;
+}
+
+.hero .bmw-button:hover {
+    background: white;
+    color: black;
+}
+
+/* Hero Tabs */
+
+/*--- Temp */
+#hero-wrap #search-tabs-nav {
+    justify-content: flex-start;
+}
+
+/*--- /Temp */
+
+#hero-wrap {
+    background: #F7F7F7;
+    padding: 2rem 0;
+}
+#hero-wrap:before {
+    display: none;
+}
+
+#hero-wrap #search-tabs-nav .nav-link {
+    width: 33%;
+    text-align: center;;
+    background: transparent;
+    border: none;
+    text-transform: uppercase;
+    padding: .5rem;
+    margin-bottom: .5rem;
+    border-bottom: 3px solid transparent;
+    font-family: bmw;
+    font-weight: bold;
+    color: black;
+    border-radius: 0;
+}
+
+#hero-wrap #search-tabs-nav .nav-link:hover,
+#hero-wrap #search-tabs-nav .nav-link.active {
+    border: none;
+    border-bottom: 3px solid #0562FF;
+    color: #0562FF;
+    background: transparent;
+}
+
+#hero-wrap #search-tabs-body-wrap #search-tabs-body {
+    border: 1px solid #d7d7d7;
+}
+
+#hero-wrap #search-tabs-body-wrap #search-tabs-body .tab-pane .vehicle-picker-dropdown-module .vehicle-picker-dropdown.inline .dropdown .dropdown-toggle {
+    border: none;
+    border-bottom: 1px solid gray;
+    border-radius: 0;
+}
+
+#hero-wrap #search-tabs-body-wrap #search-tabs-body .tab-pane#part-search-tab .search-by-part-module input[type=text] {
+    border: none;
+    border-bottom: 1px solid gray;
+    border-radius: 0;
+}
+
+#hero-wrap #search-tabs-body-wrap #search-tabs-body .tab-pane#vin-search-tab .search-by-vin-module input[type=text] {
+    border: none;
+    border-bottom: 1px solid gray;
+    border-radius: 0;
+}
+
+#hero-wrap #search-tabs-body-wrap #search-tabs-body .tab-pane .vehicle-picker-dropdown-module .vehicle-picker-dropdown.inline .dropdown .dropdown-toggle.disabled {
+    background: #e2e2e2;
+    color: black;
+}
+
+#hero-wrap #search-tabs-body-wrap #search-tabs-body .tab-pane#part-search-tab .search-by-part-module .btn,
+#hero-wrap #search-tabs-body-wrap #search-tabs-body .tab-pane#vin-search-tab .search-by-vin-module .btn {
+    border-radius: 0;
+    color: white;
+    font-family: bmw;
+    font-weight: bold;
+    min-width: 13.5rem;
+    text-align: center;
+    background: black;
+}
+
+#hero-wrap #search-tabs-body-wrap #search-tabs-body .tab-pane#part-search-tab .search-by-part-module .btn:hover,
+#hero-wrap #search-tabs-body-wrap #search-tabs-body .tab-pane#vin-search-tab .search-by-vin-module .btn:hover {
+    background: #0562FF;
+    color: white;
+}
+
+/* Featured Products */
+.featured-products-module {
+    padding-right: 2rem;
+    padding-left: 2rem;
+}
+
+.featured-products-module h2 {
+    display: none;
+}
+
+.featured-products-module .featured-products .featured-product {
+    width: 100%;
+}
+
+.featured-products-module .product-wrapper-link {
+    border-bottom: 2px solid black;
+}
+
+.featured-products-module .featured-products .featured-product .image-display .image-wrapper {
+    height: 210px;
+}
+
+.featured-products-module .featured-product .details-display .product-title {
+    font-family: bmw;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#page-home .owl-carousel .owl-item img {
+    width: auto;
+}
+
+.featured-products-module .featured-product .pricing-actions-display .product-pricing .product-sale-price {
+    text-align: center;
+}
+
+.featured-products-module .featured-product .details-display {
+    min-height: 47px;
+}
+
+.featured-products-module .featured-product .details-display .details-partnum {
+    display: none;
+}
+
+.featured-products-module .product-wrapper-link .product-details-link {
+    background: #0562FF;
+    color: white;
+}
+
+.featured-products-module .owl-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;;
+}
+
+.featured-products-module .owl-prev,
+.featured-products-module .owl-next {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 3rem;
+    width: 3rem;
+    border: 1px solid gray;
+    border-radius: 50%;
+    transition: all .2s ease;
+    color: black;
+    background: whitesmoke;
+    pointer-events: auto;
+}
+
+.featured-products-module .owl-prev:hover,
+.featured-products-module .owl-next:hover {
+    background: #0562FF;
+    color: white;
+}
+
+.featured-products-module .owl-prev {
+    transform: translateX(-4rem)
+}
+
+.featured-products-module .owl-next {
+    transform: translateX(4rem)
+}
+
+/* Service Sections */
+.service-wrap {
+    padding: 4rem 0;
+}
+
+.service-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.service-header.motorcycle-gear-header {
+    margin-bottom: 2rem;
+}
+
+.service-header p {
+    max-width: 620px;
+    margin: auto;
+}
+
+.service-boxes {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.service-box {
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-end;
+    width: 22%;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #d7d7d7;
+    border-radius: .2rem;
+    background: white;
+}
+
+.service-box figure {
+    margin: 0;
+}
+
+.service-box figure img.lazy-load {
+    position: relative;
+}
+
+.service-box figure img.lazy-load:nth-child(2) {
+    display: none;
+}
+
+.service-box .service-title {
+    text-align: center;
+    background: white;
+    position: relative;
+    pointer-events: none;
+    padding: .5rem;
+}
+
+.service-box a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    color: white;
+    font-size: 1.25rem;
+    line-height: 1;
+    text-decoration: none;
+    opacity: 0;
+    background: rgba(0,0,0,0.8);
+    transition: all .2s ease;
+    padding-bottom: 3rem;
+}
+
+.service-box:hover a {
+    opacity: 1;
+}
+
+.service-box span {
+    transform: translateY(-50%);
+}
+
+.service-box a .fa {
+    margin-right: .5rem;
+}
+
+.service-accessories h2,
+.service-accessories p {
+    color: white;
+}
+
+.service-footer {
+    margin-top: 4rem;
+}
+
+.service-footer a {
+    display: inline-block;
+    min-width: 14rem;
+    padding: .6rem 2rem;
+    color: white;
+    font-family: bmw;
+    font-weight: bold;
+    background: black;
+    transition: all .2s ease;
+    text-transform: uppercase;
+    
+}
+
+.service-footer a:hover {
+    color: white;
+    text-decoration: none;
+    background: #0562FF;
+}
+
+/*--- Cta---*/
+#cta-home {
+    padding: 6rem 0;
+}
+
+#cta-home .cta-content {
+    color: white;
+}
+
+#cta-home .cta-content h3 {
+    margin-bottom: 1.5rem;
+}
+
+#cta-home .cta-button a {
+    display: inline-block;
+    min-width: 14rem;
+    padding: .6rem 2rem !important;
+    color: black;
+    font-family: bmw;
+    font-weight: bold;
+    background: white;
+    text-align: center;
+    transition: all .2s ease;
+    text-transform: uppercase;
+}
+
+#cta-home .cta-button a:hover {
+    background: #0562FF;
+    text-decoration: none;
+    color: white;
+}
+
+#cta-home .newsletter-signup-module {
+    padding: 0 4rem;
+}
+
+#cta-home .newsletter-main-text {
+    display: block;
+    margin-bottom: 1.5rem;
+    font-size: 1.75rem;
+    color: white;
+    font-family: bmw;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+
+#cta-home .newsletter-signup-module.newsletter-inline .input-custom {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#cta-home .newsletter-signup-module.newsletter-inline .input-custom input {
+    font-size: 1rem;
+    margin: 0;
+    min-width: 18rem;
+    padding: .6rem 1rem;
+    border-radius: 0;
+    border: none;
+    border-right: 1px solid #c9c9c9;
+}
+
+#cta-home .newsletter-signup-module.newsletter-inline .input-custom input::placeholder {
+    font-size: 1rem;
+}
+
+#cta-home .newsletter-signup-module.newsletter-inline .input-custom .newsletter-button {
+    display: inline-block;
+    padding: .6rem 2rem;
+    font-family: bmw;
+    font-weight: bold;
+    font-size: 1rem;
+    color: black;
+    transition: all .2s ease;
+    text-transform: uppercase;
+    text-align: center;
+    background: white;
+}
+
+#cta-home .newsletter-signup-module.newsletter-inline .input-custom .newsletter-button:hover {
+    background: #0562FF;
+    color: white;
+    text-decoration: none;
+}
+
+/*--- OEM Catalog Page ---*/
+#page-oem-catalog .p_cats_list h3 {
+    display: none;
+}
+
+/*--- ALL INTERIOR PAGES ---*/
+.interior-banner {
+    padding: 3rem 0 2rem;
+    color: white;
+}
+
+.select2-selection--single, select,
+input, label, select {
+	color: #000;
+}
+
+input::placeholder {
+	color: #000;
+}
+
+.interior-banner h1 {
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: 1.5rem;
+    display: inline-block;
+    background-color: #000;
+}
+
+.interior-banner p {
+    color: white;
+    max-width: 560px;
+    font-size: 1.1rem;
+}
+
+.oem-sidebar-module .facet-wrapper .oem-sidebar-component-heading ul li a.active-cat,
+.oem-sidebar-module .facet-wrapper .oem-sidebar-component-heading ul li a:hover,
+.oem-sidebar-module .oem-sidebar-component .oem-sidebar-component-heading ul li a.active-cat,
+.oem-sidebar-module .oem-sidebar-component .oem-sidebar-component-heading ul li a:hover,
+.search-facets-module .facet-wrapper .oem-sidebar-component-heading ul li a.active-cat,
+.search-facets-module .facet-wrapper .oem-sidebar-component-heading ul li a:hover,
+.search-facets-module .oem-sidebar-component .oem-sidebar-component-heading ul li a.active-cat,
+.search-facets-module .oem-sidebar-component .oem-sidebar-component-heading ul li a:hover {
+    color: #0562FF;
+}
+
+.oem-sidebar-module .facet-wrapper .category-group .categories .card .card-header a:hover,
+.oem-sidebar-module .oem-sidebar-component .category-group .categories .card .card-header a:hover,
+.search-facets-module .facet-wrapper .category-group .categories .card .card-header a:hover,
+.search-facets-module .oem-sidebar-component .category-group .categories .card .card-header a:hover {
+    color: #0562FF;
+    border-color: #0562FF;
+}
+
+.oem-sidebar-module .facet-wrapper .oem-sidebar-component-heading ul li a.active-cat:before, .oem-sidebar-module .facet-wrapper .oem-sidebar-component-heading ul li a:hover:before,
+.oem-sidebar-module .oem-sidebar-component .oem-sidebar-component-heading ul li a.active-cat:before,
+.oem-sidebar-module .oem-sidebar-component .oem-sidebar-component-heading ul li a:hover:before,
+.search-facets-module .facet-wrapper .oem-sidebar-component-heading ul li a.active-cat:before,
+.search-facets-module .facet-wrapper .oem-sidebar-component-heading ul li a:hover:before,
+.search-facets-module .oem-sidebar-component .oem-sidebar-component-heading ul li a.active-cat:before,
+.search-facets-module .oem-sidebar-component .oem-sidebar-component-heading ul li a:hover:before {
+    background-color: #0562FF;
+}
+
+.oem-sidebar-module .facet-wrapper .category-group .categories .card .subcategories-list ul li a:hover,
+.oem-sidebar-module .oem-sidebar-component .category-group .categories .card .subcategories-list ul li a:hover,
+.search-facets-module .facet-wrapper .category-group .categories .card .subcategories-list ul li a:hover,
+.search-facets-module .oem-sidebar-component .category-group .categories .card .subcategories-list ul li a:hover {
+    color: #0562FF;
+}
+
+.oem-assemblies-module .part-group .part-group-container .all-component-parts .catalog-product .product-details-col .product-title a:hover,
+.oem-assemblies-module .part-group .part-group-container .all-component-parts .catalog-product .product-details-col .product-partnum a:hover {
+    text-decoration: underline;
+}
+
+#mobile-filters-button {
+    top: 205px;
+}
+
+#mobile-filters-close-button {
+    font-size: 2rem;
+}
+
+/*--- SELECT YEAR PAGE ---*/
+.oem-vehicle-picker-module .vehicle-column h4 {
+    color: black;
+}
+
+/*--- PRODUCT PAGE ---*/
+#page-product .product-page-layout h1.product-title {
+    color: black;
+}
+
+#page-product .product-purchase-module .purchase-offers-box .change-location-form .change-location-label {
+    color: black;
+}
+
+.product-purchase-module .purchase-offers-box ul li .offer-dealer-info .offer-dealer-name {
+    font-family: bmw;
+    font-weight: bold;
+}
+
+#page-product .product-purchase-module .purchase-offers-box .change-location-form .input-group input {
+    width: 100%;
+    max-width: 250px;
+    margin-bottom: .5rem;
+}
+
+#page-product .product-purchase-module .purchase-offers-box .change-location-form .input-group button {
+    width: 100%;
+    max-width: 250px;
+    font-size: .9rem;
+}
+
+.product-purchase-module .purchase-box .view-offers-link {
+    display: none;
+}
+
+#page-product .purchase-box .component-link {
+    display: block;
+    margin-top: 1rem;
+    color: #595959;
+    font-size: 0.9rem;
+    border-bottom: none;
+}
+
+#page-product .purchase-box .component-link.component-category-parent {
+    display: inline-block;
+}
+
+#page-product .purchase-box .component-link.component-category-parent,
+#page-product .purchase-box .component-link .component-category {
+    border-bottom: 1px solid #0562FF;
+    font-weight: 500;
+    text-decoration: none;
+    color: #0562FF;
+}
+
+#page-product .purchase-box .component-link.component-category-parent:hover,
+#page-product .purchase-box .component-link:hover .component-category {
+    color: #0052dd;
+    border-color: #0052dd;
+}
+
+
+.product-fitment-confirmation-module .product-fitment .click-here-fitment-action a,
+.product-fitment-confirmation-module .product-fitment .click-here-fitment-action a:hover {
+    color: #0562FF;
+}
+
+.product-purchase-module .purchase-box .purchase-wrapper.choose-another-dealer button {
+    display: inline-block;
+    min-width: 14rem;
+    padding: .6rem 2rem;
+    color: white;
+    font-family: bmw;
+    font-weight: bold;
+    font-size: 1rem;
+    background: black;
+    transition: all .2s ease;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 0;
+    border: none;
+}
+
+.product-purchase-module .purchase-box .purchase-wrapper.choose-another-dealer button:hover {
+    color: white;
+    text-decoration: none;
+    background: #0562FF;
+}
+
+.product-tab-nav-module .tab-nav-wrap li a {
+    font-family: bmw;
+    font-weight: bold;
+}
+
+.product-tab-nav-module .tab-nav-wrap li.tab-active a,
+.product-page-layout .product-section-title.tab-selected {
+    color: #0562FF;
+    border-color: #0562FF;
+}
+
+.product-page-layout ul.field-list li .list-label, .product-page-layout ul.field-list li label {
+    font-family: bmw;
+    font-weight: bold;
+}
+
+.disclaimer-warning {
+    position: absolute;
+    left: -2.5rem;
+    transform: translateY(-4px);
+}
+
+.product-browse-more-module .part-of-components a {
+    font-size: 14px;
+}
+
+.product-browse-more-module .part-of-components .component-category {
+    color: #0562FF;
+    border-color: #0562FF;
+}
+
+.product-browse-more-module .part-of-components a:hover span.component-category {
+    color: #0052dd;
+    border-color: #0052dd;
+}
+
+.product-fitment-module .fitment-table-wrap .fitment-expander span.fitment-chevron:before {
+    color: #0562FF;
+}
+
+.product-details-module .product-description .description_body ol,
+.product-details-module .product-description .description_body ul {
+    margin-top: 1rem;
+}
+
+.product-details-module ul.field-list li.description ul li {
+    position: relative;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+}
+
+.product-details-module ul.field-list li.description ul li:before {
+    content: '';
+    width: 4px;
+    height: 4px;
+    background: #595959;
+    border-radius: 50%;
+    position: absolute;
+    left: -1rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/*--- CATEGORY/CATALOG PAGES ---*/
+#page-catalog .category-children-module {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+#page-catalog .category-children-module h2 {
+    display: none;
+}
+
+#page-catalog .category-children-module .category-tiles {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+#page-catalog .category-children-module .category-tile {
+    margin-bottom: 1rem;
+}
+
+.gear-page #page-catalog .category-children-module .category-tile {
+    flex-grow: 1;
+    
+}
+
+#page-catalog .category-children-module .category-tile a:nth-child(2) {
+    display: block;
+    text-align: left;
+    padding: .75rem 0;
+    font-size: 1.2rem;
+    color: black;
+    font-family: bmw;
+    font-weight: bold;
+    background: white;
+    transition: all .32s ease;
+}
+
+#page-catalog .category-children-module .category-tile:hover a:nth-child(2) {
+    background: #0562FF;
+    color: white;
+    padding-left: 1rem;
+}
+
+#page-catalog .category-children-module .category-tile a:nth-child(2):hover {
+    text-decoration: none;
+}
+
+#page-catalog .category-children-module .category-tile-image {
+    height: auto;
+}
+
+#page-catalog .category-children-module .category-tile-image img {
+    max-height: none;
+}
+
+/*--- CART PAGE ---*/
+.cart-page-layout a,
+.cart-page-layout a:hover {
+    color: #0562FF;
+}
+
+.cart-page-layout .cart-description .item-description a,
+.cart-page-layout .cart-description .item-description a:hover {
+    color: #0562FF;
+}
+
+#page-product .action-button.add-to-wishlist,
+#page-product .action-button.remove-from-wishlist {
+    color: black;
+    background: white;
+    font-size: .9rem;
+    margin-left: 0 !important;
+    border: 1.5px solid black;
+}
+
+.action-button.add-to-wishlist,
+.action-button.remove-from-wishlist {
+    font-size: .9rem;
+}
+
+#page-product .action-button.add-to-wishlist:hover,
+#page-product .action-button.remove-from-wishlist:hover { 
+    background: #0562FF;
+    color: white;
+    border-color: #0562FF;
+}
+
+#page-product .added-to-wishlist.show {
+    margin-right: 2rem;
+}
+
+/*--- CONTACT PAGE ---*/
+.contact-page-header {
+    font-size: 1.2rem;
+    font-family: bmw;
+    font-weight: bold;
+}
+
+#page-contact .normal-content .garage-component.svg-icons {
+    display: flex;
+    align-items: center;
+    margin-bottom: .75rem;
+}
+
+#page-contact .normal-content .garage-component.svg-icons .garage-icon {
+    width: 30px;
+    height: 26px;
+    border: none;
+}
+
+#page-contact .normal-content .garage-component.svg-icons .garage-text-wrap .garage-text {
+    font-size: .9rem;
+    font-family: bmw;
+    color: black !important;
+    text-decoration: none;
+}
+
+#page-contact .normal-content .find-dealer-button {
+    display: flex;
+    align-items: center;
+}
+
+#page-contact .normal-content .find-dealer-button .fa {
+    font-size: 1.5rem;
+    margin-right: .9rem;
+}
+
+#page-contact .contact-form-module {
+    margin-bottom: 4rem;
+}
+
+.contact-form-module .call-to-action-button {
+    display: inline-block;
+    min-width: 14rem;
+    padding: .6rem 2rem;
+    color: white;
+    font-family: bmw;
+    font-weight: bold;
+    font-size: 1rem;
+    background: black;
+    transition: all .2s ease;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 0;
+}
+
+.contact-form-module .call-to-action-button:hover {
+    color: white;
+    text-decoration: none;
+    background: #0562FF;
+}
+
+/* PAGES: Account
+----------------------------------- */
+.account-nav {
+    position: relative;
+    width: 100%;
+    display: flex;
+    list-style: none;
+}
+
+.account-nav_item {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    border-bottom: 3px solid #d7d7d7;
+}
+
+.account-nav_item.active {
+    flex: 1;
+    border-color: #0562FF;
+}
+
+.account-nav_item a {
+    display: block;
+    width: 100%;
+    font-size: .8rem;
+    text-align: center;
+    padding: .65rem 1rem;
+    color: black;
+    text-decoration: none;
+    line-height: 1.5;
+}
+
+.account-nav_item.active a,
+.account-nav_item:hover a {
+    color: #0562FF;
+}
+
+/* PAGE: OEM Vehicle Picker
+----------------------------------- */
+.oem-vehicle-picker-module a {
+    color: #0562FF;
+}
+
+.oem-vehicle-picker-module a:hover {
+    color: #0562FF;
+    border-color: #0562FF !important;
+}
+
+
+/* PAGE: Account Profile
+----------------------------------- */
+#layout_account-profile .form-fields .fieldset-title {
+    font-size: 2rem;
+    font-weight: 300;
+    margin-top: 2rem
+}
+
+#layout_account-profile .form-fields .field .field-label {
+    display: block;
+    width: auto;
+}
+
+#layout_account-profile .form-fields .field .field-value {
+    display: block;
+}
+
+#layout_account-profile .form-fields .field .field-value input:not(.newsletters) {
+    width: 100%;
+    display: block;
+    border: 2px solid #d7d7d7;
+    border-radius: 3px;
+    height: 2.75rem;
+    margin-bottom: 1rem;
+}
+
+#layout_account-profile .btn {
+    display: inline-block;
+    min-width: 14rem;
+    padding: .6rem 2rem;
+    color: white;
+    font-family: bmw;
+    font-weight: bold;
+    background: black;
+    border-color: black;
+    font-size: 1rem;
+    transition: all .2s ease;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 0;
+}
+
+#layout_account-profile .btn:hover {
+    color: white;
+    text-decoration: none;
+    background: #0562FF;
+    border-color: #0562FF;
+}
+
+/* PAGE: Wishlist and Wishlist Buttons
+----------------------------------- */
+#layout_account-wishlist .action-button.remove-from-wishlist i.fa-close {
+    background: transparent;
+}
+
+#layout_account-wishlist .search-listing-module .catalog-product .product-purchase-button .place-order-button {
+    display: inline-flex;
+}
+
+html body .action-button.add-to-wishlist,
+html body .action-button.remove-from-wishlist {
+    color: black;
+    font: bmw;
+    font-weight: bold;
+}
+
+html body .action-button.add-to-wishlist:hover,
+html body .action-button.remove-from-wishlist:hover { 
+    background: #0562FF;
+    color: white;
+}
+
+#layout_account-wishlist .action-button.remove-from-wishlist i.fa-close {
+    color: black;
+}
+
+#layout_account-wishlist .action-button.remove-from-wishlist:hover i.fa-close {
+    color: white;
+}
+
+/* PAGE: Account/login
+----------------------------------- */
+#page-login-create #login-user-form .row:nth-of-type(1) {
+    margin-bottom: 1.5rem;
+}
+
+.login-combined-module button.block-button {
+    display: inline-block;
+    min-width: 14rem;
+    padding: .6rem 2rem;
+    color: white;
+    font-family: bmw;
+    font-weight: bold;
+    font-size: 1rem;
+    background: black;
+    border-color: black;
+    transition: all .2s ease;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 0;
+}
+
+.login-combined-module button.block-button:hover {
+    color: white;
+    text-decoration: none;
+    background: #0562FF;
+    border-color: #0562FF;
+}
+
+/* PAGE: Order Details
+----------------------------------- */
+/* Hide the appended account navigation at bottom */
+#layout_account-order-details .container-wrap .row:nth-of-type(2) {
+    display: none;
+}
+
+/* PAGE: Page
+----------------------------------- */
+#page-page #text_page_content ul {
+    list-style: disc;
+    list-style-position: outside;
+    padding-left: 2rem;
+}
+
+/*--- CONTACT CARD ---*/
+#contact-us_action {
+    position: relative;
+    overflow: hidden;
+    padding: 1rem;
+    max-width: 370px;
+    border-radius: .25rem;
+}
+
+#contact-us_action figure img {
+    width: 100%;
+    border-radius: 3px;
+    filter: brightness(1.5);
+}
+
+.contact-us_action-header {
+    position: relative;
+    width: 100%;
+}
+
+.contact-us_action-header p {
+    margin-top: .5rem;
+    color: white;
+    line-height: 1.2;
+}
+
+.contact-us_action-cards {
+    position: relative;
+    width: 100%;
+}
+
+.contact-us_action-card {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 6rem;
+    border-radius: 2px;
+    background: rgba(255,255,255,0.9);
+    padding: 1rem;
+    margin-top: 17rem;
+    margin-bottom: 1rem;
+}
+
+.contact-us_action-card svg {
+    width: 3rem;
+    margin-right: 2rem;
+}
+
+.contact-us_action-card svg path {
+    fill: #A8A9AC;
+}
+
+.contact-us_action-card p {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.contact-us_action-card a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.contact-us_action-card a:hover {
+    color: #0562FF;
+}
+
+.contact-us_action-card ul {
+    list-style: none;
+    margin: 0;
+}
+
+.contact-us_action-card ul li {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+/*--- BMW Motorrad CARE ---*/
+#bmwm-care {
+    display: flex;
+	align-items: center;
+}
+
+/*--- FOOTER ---*/
+.footer-main {
+    padding: 2rem 0;
+}
+.footer-main ul {
+    padding: 1rem 0;
+}
+
+.footer-main li {
+    padding: .5rem 0;
+}
+
+.footer-main a {
+    color: #5d5d5d;
+}
+
+.footer-main a .fa {
+    font-size: 1.5rem;
+    margin-right: .5rem;
+}
+
+.footer-main a:hover {
+    text-decoration: none;
+    color: #0562FF;
+}
+
+.meta-footer {
+    padding: 1rem 0;
+}
+
+.meta-footer p {
+    font-size: 0.7rem;
+    margin-bottom: .5rem;
+}
+
+.meta-footer .life-ride p {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-family: bmw;
+    font-weight: bold;
+    padding-bottom: .5rem;
+}
+
+.meta-footer .powered-by {
+	font-size: .8rem;
+}
+
+.meta-footer .powered-by img {
+    height: 14px;
+    width: 14px;
+}
+
+/*--- FEEDBACK WIDGET ---*/
+#contactable form#contactForm .submit {
+    background: #0562FF;
+    border: none;
+}
+
+#contactable form#contactForm .submit:hover {
+    background: white;
+    color: black;
+}
+
+#contactable form#contactForm label {
+    font-size: 16px;
+}
+
+#contactable p {
+    font-size: 16px !important;
+}
+
+#contactable form#contactForm input:focus,
+#contactable form#contactForm select:focus,
+#contactable form#contactForm textarea:focus {
+    outline: 1px solid white;
+}
+
+/*--- VEHICLE PICKER MODAL ---*/
+.rp_vehiclepicker_chooser .vp_breadcrumbs li.active {
+    border-top: 3px solid #0562FF !important;
+}
+
+.vp_option_row ul li a,
+.vp_option_row ul li a:link,
+.vp_option_row ul li a:visited {
+    color: #0562FF !important;
+}
+
+body .vp_option_row ul li a:hover,
+body .vp_option_row ul li a:focus{
+    color: #0562FF !important;
+    text-decoration: underline;
+}
+
+.rp_vehiclepicker_chooser .vp_control a,
+.rp_vehiclepicker_chooser .vp_control a:link,
+.rp_vehiclepicker_chooser .vp_control a:visited {
+    display: inline-block;
+    padding: .6rem 2rem;
+    color: white;
+    font-family: bmw;
+    font-weight: bold;
+    background: black;
+    font-size: 1rem;
+    transition: all .2s ease;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 0;
+}
+
+.rp_vehiclepicker_chooser .vp_control a:hover,
+.rp_vehiclepicker_chooser .vp_control a:focus {
+    color: white;
+    text-decoration: none;
+    background: #0562FF;
+}
+
+#header-mobile-wrap {
+    display: none;
+}
+
+/*--- MEDIA QUERIES ---*/
+@media (min-width: 768px) {
+    .container-wrap {
+        padding-right: 30px !important;
+        padding-left: 30px !important;
+    }
+}
+
+@media (min-width: 992px) {
+    .footer-main .footer-social {
+        border-left: 1px solid #cacaca;
+        padding-left: 6rem;
+    }
+    /*.meta-footer .life-ride {
+        padding-left: 7rem;
+    }*/
+}
+
+@media (min-width: 1200px) {
+    #motorrad-slider .motorrad-slide-one .motorrad-slide_content h1 {
+    	font-size: 3rem;
+        max-width: 400px;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1199px) {
+    #cta-home .newsletter-signup-module.newsletter-inline .input-custom input {
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 1380px) {
+    .featured-products-module {
+        padding-right: 4rem;
+        padding-left: 4rem;
+    }
+}
+
+@media (max-width: 1199px) {
+    /* Hero Slider */
+    #motorrad-slider .motorrad-slide_content h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 991px) {
+    .mobile-hide {
+        display: none !important;
+    }
+    .main-nav-wrap {
+        display: none;
+    }
+    #mobile-header {
+        /*position: fixed;*/
+        width: 100%;
+        top: 0;
+        left: 0;
+        background-color: white;
+    }
+    #header-main-wrap {
+        display: none;
+    }
+    #header-mobile-wrap {
+        display: block;
+        margin-top: 0px;
+    }
+
+    /* Hero Slider */
+    #motorrad-slider .motorrad-slide_content h1 {
+        font-size: 1.75rem;
+        margin-bottom: 1rem;
+    }
+    #motorrad-slider .motorrad-slide_content p {
+        display: none;
+    }
+    #motorrad-slider .motorrad-slide_content-right img {
+        max-width: 70%;
+    }
+    #motorrad-slider .owl-dots {
+        position: absolute;
+        bottom: -2rem;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    #motorrad-slider .owl-dot {
+        width: .5rem;
+        height: .5rem;
+        background-color: black;
+        display: inline-block;
+        border-radius: 50%;
+        margin: .25rem;
+        opacity: 0.25;
+    }
+
+
+    .hero {
+        padding: 4rem 0;
+    }
+    #page-product .product-purchase-module .dealer-select-button {
+        font-size: .85rem;
+    }
+}
+
+@media (max-width: 767px) {
+    /* Hero Slider  */
+    #motorrad-slider .motorrad-slide-one .motorrad-slide_content-left {
+        flex-basis: 65%;
+    }
+    #motorrad-slider .motorrad-slide-one .motorrad-slide_content h1 {
+        font-size: 1.3rem;
+    }
+    #motorrad-slider .motorrad-slide-two .motorrad-slide_content {
+        flex-flow: column;
+    }
+    #motorrad-slider .motorrad-slide_content h1 {
+        font-size: 1.5rem;
+    }
+    #motorrad-slider .motorrad-slide_content a.bmw-button {
+        font-size: 0.8rem;
+        min-width: 10rem;
+        padding: .4rem 1.5rem
+    }
+
+    .hero {
+        padding: 2rem 0;
+    }
+    #hero-wrap {
+        display: none;
+    }
+    #page-home .hero h1 {
+        font-size: 2.25rem;
+    }
+    #page-contact .dealer-info-col {
+        margin-bottom: 2rem;
+        border-bottom: 1px solid #d4d4d4;
+        padding-bottom: 2rem;
+    }
+    .service-box {
+        width: 48%;
+        margin-bottom: 2rem;
+    }
+    .service-footer {
+        margin-top: 2rem;
+    }
+    .service-box figure img {
+        width: 100%
+    }
+    #cta-home {
+        padding: 2rem 0;
+    }
+    #cta-home .newsletter-signup-module {
+        padding: 4rem 0 0;
+    }
+    .interior-banner {
+        padding: 1.5rem 0 .5rem;
+    }
+    .interior-banner h1 {
+        font-size: 2.25rem;
+    }
+    #page-catalog .category-children-module .category-tile {
+        max-width: none;
+    }
+    #contact-us_action figure {
+        display: none;
+    }
+    .footer-main .links-list-module {
+        margin-bottom: 1rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid #c5c5c5;
+    }
+    footer .life-ride {
+        margin-top: 1rem;
+    }
+}
+
+@media (max-width: 575px) {
+    /* Hero Slider */
+    #motorrad-slider .motorrad-slide_content h1 {
+        font-size: 1.4rem;
+    }
+    #cta-home .newsletter-signup-module.newsletter-inline .input-custom input {
+        margin-bottom: 1rem;
+        min-width: 100%;
+    }
+}
+
+/* DO NOT DELETE....DO NOT DELETE...DO NOT DELETE...DO NOT DELETE....DO NOT DELETE...DO NOT DELETE
+Contact Jacy Smith or Sebastian if you need to delete the code below. */
+
+.shipping-quote {
+display: none !important;
+}
+
+.display-quote {
+display: none !important;
+}
+
+.meta-nav-menu {
+	display: flex;
+    align-items: center;
+}
+
+#header-secondary-wrap .infinite-menu .links-list-module.links-display-block .heading {
+    font-size: 0.9rem;
+    color: black;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+    border-bottom: none !imoprtant;
+}
+
+
+/* DO NOT DELETE CODE ABOVE ^....DO NOT DELETE CODE ABOVE ^
+Contact Jacy Smith or Sebastian if you need to delete the code below. */
+
+/*--- PAGE: VEHICLE ---*/
+.oem-vehicle-picker-module .vehicle-column.non-year {
+	width:40%;
+	margin-right:3%;
+}
+.oem-vehicle-picker-module .vehicle-column ul {
+    width: 100%;
+}
+.oem-vehicle-picker-module .vehicle-column ul li {
+	width: 100%;
+	margin:0 15px 15px 0
+}
+.oem-vehicle-picker-module .vehicle-column ul li a {
+	border: 1px solid black;
+	padding: 12px;
+	width: 100%;
+	background-color:#f1f1f1;
+	border-radius:5px;
+    color: black;
+}
+.oem-vehicle-picker-module .vehicle-column ul li a:hover {
+	border: 1px solid white;
+	padding: 12px;
+	width: 100%;
+	background-color:black;
+	border-radius:5px;
+	color: #fff;
+}
+@media only screen and (max-width:767px) {
+    .oem-vehicle-picker-module .vehicle-column ul {
+        width: 100%;
+    }
+}
+
+.nav-featured-items {
+	border-right: 1px solid #ccc;
+}
+
+
+#models-menu  .links-list li:nth-child(1), #models-menu  .links-list li:nth-child(6) {
+	display: none;
+}
+
+.nav-featured-items .links-list li a.active {
+	font-weight: bold !important;
+}
+
+.search-listing-module .catalog-product .product-image-col>a.lazy-load-wrap img {
+    transform: translateY(0px);
+}
+
+.b-tab {
+    /*width: 100% !important;*/
+    display: none;
+    /*
+    position: absolute;
+    top: 0;*/
+    background-color: #fff;
+    /* bottom: 0;
+    left: 0;
+    right: 0;
+    height: calc(100% + 40px);
+    border-bottom: 2px solid #0562FF; */
+}
+.b-tab.active {
+	display: block;
+}
+
+.backTo {
+	color: #000;
+    font-size: 12px;
+    border-bottom: 1px solid #000;
+    margin-bottom: 10px;
+    display: inline-block;
+    text-decoration: none;
+}
+.backTo:hover {
+    color: #000;
+	text-decoration: none;
+}
+
+.mobile-dropdown-toggle .fa, .mobile-dropdown-toggle-child .fa {
+	transition: all .3s ease-in-out;
+}
+
+.mobile-dropdown-toggle.active .fa, .mobile-dropdown-toggle-child.active .fa {
+	transform: rotate(180deg);
+}
+
+.mobile-dropdown-toggle.active, .mobile-dropdown-toggle-child.active {
+	color: #0090ff !important;
+}
+
+.mobile-mega-menu.menu-child {
+	display: none;
+}
+
+.mobile-menu-wrap.has-child .menu-wrap {
+	display: none;
+}
+
+.mobile-nav-item.has-child .mobile-dropdown-toggle {
+	justify-content: space-between;
+}
+
+.mobile-dropdown-toggle-child {
+	padding-left: 30px !important;
+    justify-content: space-between;
+}
+
+.menu-wrap .mobile-nav-item a {
+	padding-left: 50px !important;
+}
+
+.menu-wrap .mobile-nav-item {
+	border-bottom: 0 !important;
+}
+
+.hero-wrap-cyber {
+	margin-bottom: 40px;
+}
+
+.cyber-deal-wrapper {
+	padding-right: 30px;
+    border-right: 1px solid #C5C5C5;
+}
+
+@media screen and (max-width: 767px) {
+	.cyber-deal-wrapper {
+        padding-right: 0px;
+        border-right: 0px;
+    }
+}
+
+.cyber-deals-header h2, .cyber-deals-header p {
+	text-align: center;
+}
+
+.cyber-deals-header p {
+	max-width: 720px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cyber-deals-header h2 {
+	text-transform: capitalize !important;
+}
+
+.cyber-deals-list {
+	display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 0;
+    grid-gap: 12px;
+}
+
+@media screen and (max-width: 900px) {
+    .cyber-deals-list {
+    	grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (max-width: 767px) {
+	.cyber-deals-list {
+    	padding-left: 30px;
+        padding-right: 40px;
+    }
+}
+
+.cyber-deals-item {
+	border: 1px solid #C5C5C5;
+    border-radius: 5px;
+    position: relative;
+}
+
+.cyber-deals-item-wrapper {
+	position: relative;
+    padding: 50px 20px;
+    display: inline-block;
+    width: 100%;
+    pointer-events: none;
+    height: 100%;
+}
+
+.cyber-deals-item-active .cyber-deals-item-wrapper {
+	pointer-events: all;
+    cursor: pointer;
+}
+
+.cyber-deals-item-active.selected-deals:before {
+	content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    border: 5px solid #0562FF;
+    z-index: 9;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 767px) {
+	.cyber-deals-item-active .cyber-deals-item-wrapper {
+        pointer-events: none;
+    }
+    .cyber-deals-item-active {
+    	display: none;
+    }
+}
+
+.cyber-deals-img img {
+	width: 100%;
+    filter: blur(4px);
+    -webkit-filter: blur(4px);
+    height: 160px;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 767px) {
+    .cyber-deals-img img {
+    	height: auto;
+    }
+}
+
+.cyber-deals-item-active .cyber-deals-img img {
+	filter: blur(0px);
+    -webkit-filter: blur(0px);
+}
+
+.cyber-deals-day {
+	position: absolute;
+    transform: translate(0, 50%);
+    bottom: 50%;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 30px 20px 20px;
+    background-color: #fff;
+    z-index: 1;
+}
+
+@media screen and (max-width: 1100px) {
+    .cyber-deals-day {
+        padding: 20px 20px 20px 20px;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .cyber-deals-day {
+        padding: 20px 10px 20px 20px;
+    }
+}
+
+.cyber-deals-item-active .cyber-deals-day {
+	transform: translate(0, 0);
+    bottom: 0;
+}
+
+.cyber-deals-day:before {
+	content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    width: 40%;
+    z-index: -1;
+    border-bottom: 66px solid #000;
+    border-left: 25px solid transparent;
+}
+
+@media screen and (max-width: 900px) {
+    .cyber-deals-day:before {
+    	border-bottom: 63px solid #000;
+    }
+}
+
+.cyber-deals-item-active .cyber-deals-day:before {
+	border-bottom: 66px solid #0562FF;
+}
+
+@media screen and (max-width: 900px) {
+	.cyber-deals-item-active .cyber-deals-day:before {
+        border-bottom: 63px solid #0562FF;
+    }
+}
+
+.cyber-deals-item-logo img {
+	width: 100px;
+}
+
+@media screen and (max-width: 950px) {
+	.cyber-deals-item-logo img {
+        width: 80px;
+    }
+}
+
+.cyber-deals-day-text {
+	margin-bottom: 0;
+    color: #fff;
+    font-weight: 600;
+}
+
+.cyber-deal-section {
+	margin-bottom: 80px;
+}
+
+@media screen and (max-width: 767px) {
+	.cyber-deal-section {
+        margin-bottom: 50px;
+    }
+}
+
+.cyber-deals-content-title {
+	font-size: 32px !important;
+    text-transform: capitalize !important;
+}
+
+@media screen and (max-width: 767px) {
+    .cyber-deals-content-title {
+        font-size: 26px !important;
+    }
+}
+
+.cyber-deals-product {
+	border: 1px solid #C5C5C5;
+    border-radius: 5px;
+    padding: 20px 20px;
+    margin-bottom: 30px;
+}
+
+@media screen and (max-width: 767px) {
+    .cyber-deals-product {
+    	padding: 10px 10px;
+    }
+}
+
+.cyber-deals-product-img-list {
+	display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 10px;
+    margin-bottom: 0;
+}
+
+/*.cyber-deals-product-img-list .owl-stage {
+	width: 100% !important;
+}*/
+
+.cyber-deals-product-img img {
+	width: 100%;
+    height: 375px;
+    object-fit: contain;
+}
+
+@media screen and (max-width: 767px) {
+    .cyber-deals-product-img img {
+    	height: 200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/*.cyber-deals-product-img-item {
+	display: none;
+}*/
+
+.cyber-deals-product-img-item-active {
+	display: block;
+}
+
+.cyber-deals-product-img-item a {
+	display: inline-block;
+    border: 1px solid #C5C5C5;
+    padding: 10px 10px;
+    border-radius: 5px;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.cyber-deals-product-img-list .owl-prev, .cyber-deals-product-img-list .owl-next {
+	position: absolute;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+    .cyber-deals-content-wrapper {
+    	margin-bottom: 40px;
+    }
+    .motorrad-slider-deals .motorrad-slide_content p{
+    	display: block !important;
+        margin-bottom: 0 !important;
+    }
+}
+
+.cyber-deals-content-wrapper-not-active {
+	filter: blur(10px);
+    pointer-events: none;
+}
+
+.cyber-deals-product-img-list .owl-prev {
+	left: -15px;
+}
+
+.cyber-deals-product-img-list .owl-next {
+	right: -15px;
+}
+
+.cyber-deals-product-img-list .owl-next.disabled, .cyber-deals-product-img-list .owl-prev.disabled {
+	display: none;
+}
+
+.cyber-deals-product-img-item a img {
+	height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (max-width: 767px) {
+    .cyber-deals-product-img-item a img {
+    	height: auto;
+    }
+}
+
+.cyber-deals-days-content {
+	position: relative;
+    display: inline-block;
+    padding: 10px 50px 10px 10px;
+    margin-bottom: 10px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.cyber-deals-days-content:before {
+	content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+    border-bottom: 43px solid #0562FF;
+    border-right: 25px solid transparent;
+}
+
+.cyber-deals-content-description {
+	margin-bottom: 35px !important;
+}
+
+.product-button a {
+    color: #fff;
+	background-color: #0562FF;
+    display: inline-block;
+    width: 100%;
+    padding: 10px 10px;
+    text-transform: uppercase;
+    transition: all .3s ease-in-out;
+    text-align: center;
+    font-weight: 600;
+}
+
+.product-button a:hover {
+	background-color: #000;
+    text-decoration: none;
+}
+
+.banner-deals .container-wrap {
+	padding: 0px 0px !important;
+}
+
+.banner-deals .col-full-height {
+	padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.banner-deals-content-wrapper {
+    background-image: url('https://rparts-sites.s3.amazonaws.com/23908d49235005b9c1c9e417b84fee8e/design/Mask_Group_12_%282%29.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center right;
+	padding-top: 150px;
+    padding-bottom: 150px;
+    position: relative;
+}
+
+@media screen and (max-width: 767px) {
+    .banner-deals-content-wrapper {
+    	padding-top: 50px;
+    	padding-bottom: 50px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+.banner-deals-content-wrapper:before {
+	content: "";
+    position: absolute;
+    left: -75px;
+    top: 0;
+    bottom: 0;
+    width: 75px;
+    background-image: url('https://rparts-sites.s3.amazonaws.com/23908d49235005b9c1c9e417b84fee8e/design/Maskbg.png');
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+@media screen and (max-width: 767px) {
+    .banner-deals-content-wrapper:before {
+    	display: none;
+    }
+}
+
+.banner-deals-content {
+	max-width: 600px;
+    width: 100%;
+    padding: 0 30px;
+}
+
+@media screen and (max-width: 767px) {
+	.banner-deals-content {
+        max-width: 100%;
+        padding: 0 0px;
+    }
+}
+
+.banner-content-title {
+	text-transform: capitalize !important;
+    color: #fff;
+    font-size: 32px !important;
+}
+
+.banner-description, .banner-description-small {
+	color: #fff;
+}
+
+.banner-description-small {
+	font-size: 14px;
+}
+
+.banner-deals-button {
+	max-width: 600px;
+    width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+	.banner-deals-button {
+        max-width: 100%;
+	}
+}
+
+.banner-description {
+	font-size: 22px;
+}
+
+.banner-deals-button a {
+	background-color: #000;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    display: inline-block;
+    font-size: 22px !important;
+    padding: 5px 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.banner-content-bg {
+	background-image: url('https://rparts-sites.s3.amazonaws.com/23908d49235005b9c1c9e417b84fee8e/design/shutterstock_1852863430.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+@media screen and (max-width: 767px) {
+    .banner-content-bg {
+    	display: none;
+    }
+}
+
+.banner-deals-button a:hover {
+	text-decoration: none;
+}
+
+.banner-content-wrapper {
+	padding: 50px 0;
+}
+
+@media screen and (max-width: 767px) {
+	.banner-content-wrapper {
+        padding: 20px 0;
+    }
+}
+
+.banner-deals .container-wrap .page-builder-layout-row {
+	margin-top: 60px !important;
+}
+
+@media screen and (max-width: 767px) {
+	.banner-deals .container-wrap .page-builder-layout-row {
+        margin-top: 30px !important;
+    }
+}
+
+.banner-deals .container-wrap .page-builder-layout-row:first-child {
+	margin-top: 0 !important;
+}
+
+.banner-deals .container-wrap .page-builder-layout-row:nth-child(2) .banner-deals-content-wrapper {
+	background-image: url('https://rparts-sites.s3.amazonaws.com/23908d49235005b9c1c9e417b84fee8e/design/Mask_Group_13_%282%29.png');
+}
+
+.banner-deals .container-wrap .page-builder-layout-row:nth-child(2) .banner-deals-content-wrapper:before {
+	content: "";
+    background-color: #000;
+    height: 100%;
+    width: 75px;
+    right: -75px;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    z-index: 1;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    left: auto;
+    background-image: none;
+}
+
+@media screen and (max-width: 767px) {
+	.banner-deals .container-wrap .page-builder-layout-row:nth-child(2) .banner-deals-content-wrapper:before {
+    	display: none;
+    }
+}
+
+.banner-deals .container-wrap .page-builder-layout-row:nth-child(2) .banner-deals-content, .banner-deals .container-wrap .page-builder-layout-row:nth-child(2) .banner-deals-button {
+	margin-left: auto;
+}
+
+.banner-deals .container-wrap .page-builder-layout-row:nth-child(2) .banner-deals-button a {
+	background-color: #fff;
+    color: #000;
+}
+
+.banner-deals .container-wrap .page-builder-layout-row:nth-child(2) .banner-content-bg {
+	background-image: url('https://rparts-sites.s3.amazonaws.com/23908d49235005b9c1c9e417b84fee8e/design/shutterstock_1850394673.png');
+}
+
+.banner-deals {
+	margin-bottom: 100px;
+}
+
+@media screen and (max-width: 767px) {
+	.banner-deals {
+        margin-bottom: 50px;
+    }
+}
+
+.gear-page-img {
+	margin: 30px 0;
+}
+
+.gear-page-img img {
+	width: 100%;
+}
+
+.multiple-cyber-deals {
+	position: relative;
+}
+
+.multiple-cyber-deals .owl-prev, .multiple-cyber-deals .owl-next {
+	position: absolute;
+    top: 50%;
+    transform: translate(0, 50%);
+    display: flex;
+    align-items: center;
+}
+
+.multiple-cyber-deals .owl-prev {
+	left: 15px;
+}
+
+.multiple-cyber-deals .owl-next {
+	right: 15px;
+}
+
+.multiple-cyber-deals .owl-nav i {
+	background-color: #0562FF;
+    color: #fff;
+    padding: 6px 8px;
+    border-radius: 3px;
+    font-size: 10px;
+}
+
+.multiple-cyber-deals .owl-dots {
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 90px;
+    right: 0;
+    left: 0;
+}
+
+.multiple-cyber-deals .owl-dot {
+	height: 10px;
+    width: 10px;
+    margin-right: 6px;
+}
+
+.multiple-cyber-deals .owl-dot:last-child {
+	margin-right: 0;
+}
+
+.multiple-cyber-deals .owl-dot span {
+    display: inline-block;
+	width: 10px;
+    height: 10px;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 50px;
+}
+
+.multiple-cyber-deals .owl-dot.active span {
+	background-color: rgba(0,0,0,1)
+}
+
+.cyber-deals-img-multiple {
+	display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: -5px;
+    margin-right: -5px;
+}
+
+.deals-multiple-img {
+	flex: 0 0 50%;
+    max-width: 50%;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.deals-multiple-img img {
+	height: 100px;
+}
+
+.cyber-msrp {
+	font-size: 20px;
+    color: rgba(0,0,0,0.6);
+    position: relative;
+    margin-right: 15px;
+}
+
+@media screen and (max-width: 767px) {
+    .cyber-msrp {
+    	font-size: 15px;
+    }
+}
+
+.cyber-msrp:before {
+	content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: red;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.cyber-pricing {
+	font-size: 25px;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 767px) {
+    .cyber-pricing {
+        font-size: 15px;
+    }
+	.deals-reverse {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+
+    .deals-reverse .col-md-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+/* Deals Slider CSS */
+.cyber-deals-hero {
+	background-image: url('https://rparts-sites.s3.amazonaws.com/23908d49235005b9c1c9e417b84fee8e/design/bmw_bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    padding: 150px 0px;
+    position: relative;
+    z-index: 1;
+}
+
+@media screen and (max-width: 767px) {
+    .cyber-deals-hero {
+    	padding: 80px 0px;
+        background-position: center right;
+    }
+}
+
+.cyber-deals-hero:before {
+	content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: -1;
+}
+
+.cyber-deals-hero-content {
+	max-width: 1250px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.cyber-deals-hero h1, .cyber-deals-hero h5, .cyber-deals-hero p {
+	color: #fff;
+}
+
+.cyber-deals-hero p {
+	margin-bottom: 0;
+    max-width: 590px;
+    width: 100%;
+}
+
+/* Force Site Wide BAnner */
+.promotional-banner-wrap .promo-close {
+    display: none !important;
+}
+.promotional-banner-wrap, .promotional-banner-wrap .promotional-banner-text {
+	padding-right: 0 !important;
+}
+@media screen and (max-width: 991px) {
+    .promotional-banner-wrap {
+    	z-index: 999 !important;
+        position: fixed !important;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+    
+}
+
+@media screen and (max-width: 767px) {
+    .cybers-deals-content-slider .owl-prev, .cybers-deals-content-slider .owl-next {
+    	position: absolute;
+        top: 50%;
+        transform: translate(0 50%);
+    }
+    .cybers-deals-content-slider .owl-prev {
+    	left: -5px;
+    }
+    .cybers-deals-content-slider .owl-next {
+    	right: -5px;
+    }
+    .cybers-deals-content-slider {
+    	padding-left: 30px;
+        padding-right: 30px;
+    }
+    .cybers-deals-content-slider .owl-nav i {
+    	border: 1px solid #000;
+        border-radius: 50px;
+        height: 30px;
+        width: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+/* aug 2023 lander */
+
+.aug-2023-tc-banner {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 25%; 
+  background-image: url('https://rparts-sites.s3.amazonaws.com/23908d49235005b9c1c9e417b84fee8e/design/deals/bmwm-aug2023-promo-shopnow-v7.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+
+
+.aug-2023_banner {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 25%; 
+  background-image: url('https://rparts-sites.s3.amazonaws.com/23908d49235005b9c1c9e417b84fee8e/design/deals/bmwm-aug2023-promo-learnmore-v7.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+
+.collage_img {
+    margin-top: 40px;
+}
+
+
+.bmw_button_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    grid-gap: 15px;
+    margin-top: 45px;
+}
+
+.bmw_button a {
+    display: inline-block;
+    text-transform: uppercase;
+    color: #16171a;
+    border: 2px solid #16171a;
+    transition: all .3s ease-in-out;
+    font-size: 16px;
+    padding: 6px 15px;
+    font-weight: 600;
+}
+
+.bmw_button a:hover,
+.bmw_button a:focus {
+    background-color: #0062ff;
+    border: 2px solid #0062ff;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+#yearsContent .cyber-msrp {
+	color: #000;
+}
+
+#yearsContent .cyber-msrp::before {
+	display: none;
+}
+
+.product-purchase-module .purchase-box .cannot-purchase h3 {
+	color: #A61212;
+}
+
+.product-purchase-module .purchase-box .cannot-purchase.backordered-item div.warning-icon, .product-purchase-module .purchase-box .cannot-purchase.discontinued-part div.warning-icon, .product-purchase-module .purchase-box .cannot-purchase.not-for-sale-item div.warning-icon, .product-purchase-module .purchase-box .cannot-purchase.ship-controlled-item div.warning-icon {
+	color: #A61212;
+}
+
+/* holiday 2023 lander */
+
+.holiday-2023-tc-banner {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 25%; 
+  background-image: url('https://rparts-sites.s3.amazonaws.com/23908d49235005b9c1c9e417b84fee8e/design/holiday2023/bmwm-holiday2023-dd-final-121023-02.webp');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+
+
+.holiday-2023_banner {
+  position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 25%;
+    background-image: url('https://rparts-sites.s3.amazonaws.com/23908d49235005b9c1c9e417b84fee8e/design/holiday2023/bmwm-holiday2023-dd-final-121023-02.webp');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    cursor: pointer;
+}
+
+/* product new tab */
+.product_new_tabs_wrapper .theme_video {
+	margin-top: 30px;
+}
+
+/* bmw video */
+.productBMWVid .style-collection-img {
+	display: flex;
+    align-items: center;
+}
+
+.productBMWVid .style-collection-list {
+	padding-left: 0;
+    padding-right: 0;
+}
+
+.bmwVid .container-wrap {
+	padding-left: 0 !important;
+    padding-right: 0 !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+.bmwVid {
+	padding: 50px 0;
+}
+
+.motorradVidWrap a {
+	color: #fff;
+}
+
+.motorradVid {
+	display: flex;
+    align-items: center;
+}
+
+.motorradVidWrap a:hover,
+.motorradVidWrap a:focus {
+	text-decoration: none;
+}
+
+.motorradTitle {
+    font-size: 18px !important;
+	text-align: center;
+    margin-bottom: 0;
+    padding: 10px 0px;
+}
+
+.motorradVidAll {
+	text-align: center;
+    margin-top: 10px;
+}
+
+.motorradVidAll a {
+	color: #fff;
+}
+
+
+/* themeStack */
+.themeStackAccordion {
+	margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.themeStackAccordionHeader h3 {
+	margin-bottom: 0;
+    background-color: #828282;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    display: block;
+    cursor: pointer;
+    padding: 12px 10px;
+    transition: all .3s ease-in-out;
+    position: relative;
+    pointer-events: none;
+}
+
+.themeStackAccordionHeader h3::before {
+	content: "\f107";
+    font-family: FontAwesome\ 4;
+    font-size: 35px;
+    position: absolute;
+    right: 20px;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    transition: all .3s ease-in-out;
+    transform: rotate(180deg);
+}
+
+/*.themeStackAccordionHeader.active h3::before {
+    transform: rotate(0);
+}
+
+.themeStackAccordionHeader.active h3 {
+	background-color: #0F6BB3;
+}*/
+
+.displayDay .themeStackAccordionHeader h3 {
+	background-color: #0F6BB3;
+}
+
+.displayDay .themeStackAccordionHeader h3::before {
+	transform: rotate(0);
+}
+
+.displayDay .themeStackAccordionBody {
+	display: block;
+}
+
+.displayDay .themeStackAccordionHeader h3:hover,
+.displayDay .themeStackAccordionHeader h3:focus {
+	background-color: #0F6BB3;
+}
+
+.themeStackAccordionHeader h3:hover,
+.themeStackAccordionHeader h3:focus {
+	background-color: #828282;
+}
+
+.themeStackAccordionBody {
+    display: none;
+	padding: 15px 15px;
+}
+
+.themeStackDealsCard {
+    display: block;
+    border-radius: 5px;
+	color: #fff;
+    font-weight: 600;
+    border: 1px solid #C5C5C5;
+}
+
+.themeStackDealsCard:hover,
+.themeStackDealsCard:focus {
+	color: #fff;
+    text-decoration: none;
+}
+
+.themeStackRow {
+	display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+@media screen and (max-width: 767px) {
+    .themeStackRow {
+    	display: flex;
+        flex-direction: column-reverse;
+    }
+}
+
+.themeStackDealsList {
+	display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.themeStackDealsContent {
+	display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+    padding: 10px;
+    background-color: #0562FF;
+}
+
+.themeStackDealsImg img {
+	width: 100%;
+    height: 200px;
+    object-fit: contain;
+}
+
+@media screen and (max-width: 767px) {
+    .themeStackDealsImg img {
+    	height: 100px;
+    }
+}
+
+.themeStackDealsLogo img {
+	width: 100px;
+}
+
+.themeStackText {
+	margin-bottom: 0;
+}
+
+.themeStackDayHeaderText {
+    position: relative;
+    display: inline-block;
+    padding: 10px 50px 10px 10px;
+    margin-bottom: 10px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.themeStackDayHeaderText::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+    border-bottom: 43px solid #0562FF;
+    border-right: 25px solid transparent;
+}
+
+.themeStackDayImg {
+    border: 1px solid #C5C5C5;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+.themeStackDayImg img {
+	height: 400px;
+    object-fit: contain;
+    width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+    .themeStackDayImg img {
+    	height: 200px;
+    }
+}
+
+.themeStackDealsItem {
+	cursor: pointer;
+    position: relative;
+}
+
+.themeStackDealsItem.active::before {
+	content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    border: 5px solid #0562FF;
+    z-index: 9;
+    border-radius: 5px;
+}
+
+.themeStackDayButton a {
+	color: #fff;
+    background-color: #0562FF;
+    display: inline-block;
+    width: 100%;
+    padding: 10px 10px;
+    text-transform: uppercase;
+    transition: all .3s ease-in-out;
+    text-align: center;
+    font-weight: 600;
+}
+
+.themeStackDayButton a:hover,
+.themeStackDayButton a:focus {
+    background-color: #000;
+    text-decoration: none;
+}
+
+.themeStackDayItem {
+	display: none;
+}
+
+.themeStackDayItem.active {
+	display: block;
+}
+
+/* Sept 2024 Promo */
+.fd-2024_banner {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 25%; 
+  background-image: url('https://rparts-sites.s3.amazonaws.com/23908d49235005b9c1c9e417b84fee8e/design/deals/bmwm-sept2024-fma-081924-01.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+
+@media screen and (max-width: 767px) {
+    .fd-2024_banner {
+        margin-bottom: 40px;
+        height: 130px;
+    }
+}
+
+.fd-2024_banner-2 {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 25%; 
+  background-image: url('https://rparts-sites.s3.amazonaws.com/23908d49235005b9c1c9e417b84fee8e/design/deals/bmwm-sept2024-fma-081924-01.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+    cursor: pointer;
+}
+
+
+/* Start Fix for product image sizing
+.product-images-module .product-images .product-main-image-link {
+    height: 100%;
+}
+
+.product-images-module .product-images .product-main-image-link img.centered {
+    height: 100%;
+}
+End Fix for product image sizing */

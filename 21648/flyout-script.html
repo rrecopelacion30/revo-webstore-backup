@@ -1,0 +1,30 @@
+<script>   
+    $('.themeHamburgerMenu').click(function(e) {
+        e.preventDefault();
+        $('.themeFlyoutSection').addClass('openFlyout')
+        $('body').addClass('openFlyoutBefore')
+    })
+    $('.themeHeaderFlyoutNavItem.hasChild').on('click', function(e) {
+        e.preventDefault();
+        $('.themeHeaderFlyoutNavItem.hasChild').removeClass('openSubFlyout');
+        $(this).addClass('openSubFlyout');
+        $('body').addClass('openChildFlyout');
+    });
+    $('.FlyoutBackButton').on('click', function(e) {
+        e.preventDefault();
+        $('.themeHeaderFlyoutNavItem.hasChild').removeClass('openSubFlyout');
+        //$('.themeFlyoutSection').removeClass('openFlyout');
+        $('body').removeClass('openChildFlyout');
+    })
+    $('.themeHeaderSubFlyoutWrap a').on('click', function(e) {
+        e.preventDefault();
+        window.location.href = $(this).attr('href');
+    })
+    $('.themeHeaderFlyoutCardClose').click(function(e) {
+        e.preventDefault();
+        $('.themeHeaderFlyoutNavItem.hasChild').removeClass('openSubFlyout');
+        $('.themeFlyoutSection').removeClass('openFlyout');
+        $('body').removeClass('openChildFlyout');
+        $('body').removeClass('openFlyoutBefore')
+    })
+</script>

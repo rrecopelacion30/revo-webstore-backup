@@ -1,0 +1,98 @@
+{
+  "sectionId": "section_26",
+  "htmlId": "",
+  "htmlClasses": "themeNewBanner",
+  "contentWidth": "wide",
+  "backgroundColor": "",
+  "backgroundImage": "",
+  "textColor": "dark",
+  "display": "normal",
+  "rows": [
+    {
+      "rowId": "row_27",
+      "rowLayout": 12,
+      "htmlId": null,
+      "htmlClasses": null,
+      "columns": [
+        {
+          "columnId": "column_29",
+          "columnWidth": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "moduleArrangement": "block",
+          "textAlignment": "text-left",
+          "modules": [
+            {
+              "moduleId": "module_30",
+              "moduleType": "custom_html",
+              "title": "Banner Slider",
+              "options": {
+                "html_content": {
+                  "name": "Custom HTML Content",
+                  "type": "html_content",
+                  "default_value": "",
+                  "value": "<div class=\"themeNewBannerWrapper\">\n    <div id=\"themeNewBannerSlider\" class=\"themeNewBannerSlider owl-carousel owl-theme\">\n        <div class=\"themeNewBannerSliderItem\">\n            <div class=\"themeNewBannerSliderBox\">\n                <div class=\"themeNewBannerSliderImg\">\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/00d43a1703c9241dcca9da0d452449dc/design/new-home/slider/15_promo.webp\" alt=\"MOPAR 15% Off Authentic Parts & Accessories - Use code: MOPAR15\">\n                </div>\n                <div class=\"themeNewBAnnerSliderContent\">\n                    <div class=\"themeNewBannerSliderContentBox\">\n                        <h4>GET 15% OFF ON SELECT PERFORMANCE PARTS & ACCESSORIES</h4>\n                        <p class=\"themeNewBannerSliderText\">\n                            <strong>Use promo code: <span style=\"font-weight:700;\">MOPAR15</span> - Offer valid through 12/31/2025.</strong>\n                            <span class=\"themeBannerTermWrap\">\n                                <span style=\"text-decoration: underline;cursor: pointer;\">[*]</span>\n                                <span class=\"themeBannerTermBox\">\n                                    *Maximum value: $200.00. Discount applies to regular retail pricing on select Mopar® Accessories and Performance Parts for FCA US LLC vehicles. Excludes Accessories Listed in the Mopar Affiliated Accessories Program. Excludes Electric Vehicle Level II Charging Units. Not valid with other offers. Customer is responsible for installation, local tax, and Shop Supplies fee. Must present coupon when the order is written. See Service Advisor for complete details. Offer expires 12/31/2025.\n                                </span>\n                            </span>\n                        </p>\n                        <p class=\"themeNewBannerSliderButton\">\n                            Shop Now\n                        </p>\n                    </div>\n                </div>\n            </div>\n        </div>\n        <div class=\"themeNewBannerSliderItem\">\n            <a href=\"2-lift-kits\">\n                <div class=\"themeNewBannerSliderBox\">\n                    <div class=\"themeNewBannerSliderImg\">\n                        <img src=\"https://rparts-sites.s3.amazonaws.com/00d43a1703c9241dcca9da0d452449dc/design/new-home/slider/square_4.webp\" alt=\"MOPAR Authentic Parts & Accessories\">\n                    </div>\n                    <div class=\"themeNewBAnnerSliderContent\">\n                        <div class=\"themeNewBannerSliderContentBox\">\n                            <h4>JPP 2” LIFT KITS</h4>\n                            <p class=\"themeNewBannerSliderText\">\n                                Jeep Performance Parts 2-inch lift kits elevate Jeep Wrangler & Jeep Gladiator 4x4 capability.\n                            </p>\n                            <p class=\"themeNewBannerSliderButton\">\n                                Shop Now\n                            </p>\n                        </div>\n                    </div>\n                </div>\n            </a>\n        </div>\n        <div class=\"themeNewBannerSliderItem\">\n            <a href=\"https://store.mopar.com/blueprint\">\n                <div class=\"themeNewBannerSliderBox\">\n                    <div class=\"themeNewBannerSliderImg\">\n                        <img src=\"https://rparts-sites.s3.amazonaws.com/00d43a1703c9241dcca9da0d452449dc/design/new-home/slider/square_8.webp\" alt=\"MOPAR Authentic Parts & Accessories\">\n                    </div>\n                    <div class=\"themeNewBAnnerSliderContent\">\n                        <div class=\"themeNewBannerSliderContentBox\">\n                            <h4>JEEP WRANGLER BLUEPRINT CONCEPT</h4>\n                            <p class=\"themeNewBannerSliderText\">\n                                Customized carrying more than 35 accessories finished in contrasting Mopar Blue.\n                            </p>\n                            <p class=\"themeNewBannerSliderButton\">\n                                Shop Now\n                            </p>\n                        </div>\n                    </div>\n                </div>\n            </a>\n        </div>\n        <div class=\"themeNewBannerSliderItem\">\n            <a href=\"v-jeep\">\n                <div class=\"themeNewBannerSliderBox\">\n                    <div class=\"themeNewBannerSliderImg\">\n                        <img src=\"https://rparts-sites.s3.amazonaws.com/00d43a1703c9241dcca9da0d452449dc/design/new-home/slider/square_5.webp\" alt=\"MOPAR Authentic Parts & Accessories\">\n                    </div>\n                    <div class=\"themeNewBAnnerSliderContent\">\n                        <div class=\"themeNewBannerSliderContentBox\">\n                            <h4>JEEP BRAND PARTS & ACCESSORIES</h4>\n                            <p class=\"themeNewBannerSliderText\">\n                                Life’s an adventure with Jeep Brand Authentic Parts & Accessories.\n                            </p>\n                            <p class=\"themeNewBannerSliderButton\">\n                                Shop Now\n                            </p>\n                        </div>\n                    </div>\n                </div>\n            </a>\n        </div>\n    </div>\n</div>"
+                },
+                "force_lazy": {
+                  "name": "Lazy Load Images",
+                  "type": "boolean",
+                  "default_value": false,
+                  "value": false
+                }
+              },
+              "htmlId": "",
+              "htmlClasses": "",
+              "minColumnWidth": 0,
+              "customAdmin": false,
+              "modulePadding": "padding-0",
+              "display": "normal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rowId": "row_28",
+      "rowLayout": 12,
+      "htmlId": null,
+      "htmlClasses": null,
+      "columns": [
+        {
+          "columnId": "column_31",
+          "columnWidth": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "moduleArrangement": "block",
+          "textAlignment": "text-left",
+          "modules": [
+            {
+              "moduleId": "module_32",
+              "moduleType": "custom_html",
+              "title": "H1 Title",
+              "options": {
+                "html_content": {
+                  "name": "Custom HTML Content",
+                  "type": "html_content",
+                  "default_value": "",
+                  "value": "<h1>Shop Genuine Jeep Performance Parts & Accessories Online</h1>"
+                },
+                "force_lazy": {
+                  "name": "Lazy Load Images",
+                  "type": "boolean",
+                  "default_value": false,
+                  "value": false
+                }
+              },
+              "htmlId": "",
+              "htmlClasses": "",
+              "minColumnWidth": 0,
+              "customAdmin": false,
+              "modulePadding": "padding-0",
+              "display": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,543 @@
+{
+  "pageId": "cart",
+  "pageName": "Cart Page",
+  "pageType": null,
+  "layoutEnabled": true,
+  "moduleCategories": [
+    "header",
+    "images",
+    "text",
+    "search",
+    "categories_products",
+    "forms",
+    "navigation",
+    "footer",
+    "cart_page"
+  ],
+  "VFSPath": "layouts/cart.json",
+  "requiredModules": [
+    "cart_checkout",
+    "cart_subtotal",
+    "cart_listing"
+  ],
+  "scripts": null,
+  "sections": [
+    {
+      "sectionId": "section_1",
+      "htmlId": "",
+      "htmlClasses": "",
+      "contentWidth": "wide",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_2",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_3",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "left",
+              "modules": [
+                {
+                  "moduleId": "module_19",
+                  "moduleType": "page_subheader",
+                  "title": "Page Subheader",
+                  "options": {
+                    "show_change_vehicle": {
+                      "name": "Show Change Vehicle",
+                      "type": "boolean",
+                      "default_value": true,
+                      "value": true
+                    },
+                    "show_breadcrumbs": {
+                      "name": "Show Breadcrumbs",
+                      "type": "boolean",
+                      "default_value": true,
+                      "value": true
+                    },
+                    "show_title": {
+                      "name": "Show Title",
+                      "type": "boolean",
+                      "default_value": true,
+                      "value": true
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "rowId": "row_3",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_4",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "left",
+              "modules": [
+                {
+                  "moduleId": "module_5",
+                  "moduleType": "cart_checkout",
+                  "title": "Checkout (Top)",
+                  "options": {},
+                  "htmlId": "",
+                  "htmlClasses": "cart-button-top",
+                  "minColumnWidth": 12,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_6",
+                  "moduleType": "cart_listing",
+                  "title": "Cart Listing",
+                  "options": {},
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 12,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "rowId": "row_16",
+          "rowLayout": "8_4",
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_17",
+              "columnWidth": 8,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_2",
+                  "moduleType": "collect_vin_form",
+                  "title": "Collect VIN Form",
+                  "options": {
+                    "vin_message": {
+                      "name": "VIN Message",
+                      "type": "html_content",
+                      "default_value": "<p>Make sure your parts fit your vehicle. Provide your VIN and we will confirm fitment for you.</p>",
+                      "value": "<p>Make sure your parts fit your vehicle. Provide your VIN and we will confirm fitment for you.</p>"
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            },
+            {
+              "columnId": "column_18",
+              "columnWidth": 4,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_3",
+                  "moduleType": "cart_subtotal",
+                  "title": "Cart Subtotal Box",
+                  "options": {},
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_7",
+                  "moduleType": "payments_messaging",
+                  "title": "Payments Messaging",
+                  "options": {},
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "rowId": "row_19",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_20",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_21",
+                  "moduleType": "custom_html",
+                  "title": "Popular Accessories",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<h3>Popular Mitsubishi Accessories</h3>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "rowId": "row_32",
+          "rowLayout": "3_3_3_3",
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_33",
+              "columnWidth": 3,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_8",
+                  "moduleType": "single_sku_cross_sell",
+                  "title": "Single SKU Cross Sell",
+                  "options": {
+                    "sku": {
+                      "name": "SKU #",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "MZ315481",
+                      "placeholder": null
+                    },
+                    "catalog": {
+                      "name": "Catalog",
+                      "type": "select",
+                      "default_value": "",
+                      "value": "mitsubishi",
+                      "validate": "validate_required",
+                      "possible_values": [
+                        {
+                          "value": "",
+                          "label": "Select catalog"
+                        }
+                      ]
+                    },
+                    "action_button_label": {
+                      "name": "Action button label",
+                      "type": "string",
+                      "default_value": "Add to Cart",
+                      "value": "Add to Cart",
+                      "placeholder": null
+                    },
+                    "layout": {
+                      "name": "Layout",
+                      "type": "select",
+                      "default_value": "horizontal",
+                      "value": "vertical",
+                      "possible_values": [
+                        {
+                          "value": "horizontal",
+                          "label": "Horizontal"
+                        },
+                        {
+                          "value": "vertical",
+                          "label": "Vertical"
+                        }
+                      ]
+                    },
+                    "product_message": {
+                      "name": "Product Message",
+                      "type": "html_content",
+                      "default_value": "<p><strong>Special Offer!</strong><br></p>",
+                      "caption": "Maximum characters: 140",
+                      "value": ""
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            },
+            {
+              "columnId": "column_34",
+              "columnWidth": 3,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_14",
+                  "moduleType": "single_sku_cross_sell",
+                  "title": "Single SKU Cross Sell",
+                  "options": {
+                    "sku": {
+                      "name": "SKU #",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "MZ315323",
+                      "placeholder": null
+                    },
+                    "catalog": {
+                      "name": "Catalog",
+                      "type": "select",
+                      "default_value": "",
+                      "value": "mitsubishi",
+                      "validate": "validate_required",
+                      "possible_values": [
+                        {
+                          "value": "",
+                          "label": "Select catalog"
+                        }
+                      ]
+                    },
+                    "action_button_label": {
+                      "name": "Action button label",
+                      "type": "string",
+                      "default_value": "Add to Cart",
+                      "value": "Add to Cart",
+                      "placeholder": null
+                    },
+                    "layout": {
+                      "name": "Layout",
+                      "type": "select",
+                      "default_value": "horizontal",
+                      "value": "vertical",
+                      "possible_values": [
+                        {
+                          "value": "horizontal",
+                          "label": "Horizontal"
+                        },
+                        {
+                          "value": "vertical",
+                          "label": "Vertical"
+                        }
+                      ]
+                    },
+                    "product_message": {
+                      "name": "Product Message",
+                      "type": "html_content",
+                      "default_value": "<p><strong>Special Offer!</strong><br></p>",
+                      "caption": "Maximum characters: 140",
+                      "value": ""
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            },
+            {
+              "columnId": "column_35",
+              "columnWidth": 3,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_24",
+                  "moduleType": "single_sku_cross_sell",
+                  "title": "Single SKU Cross Sell",
+                  "options": {
+                    "sku": {
+                      "name": "SKU #",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "MZ312853",
+                      "placeholder": null
+                    },
+                    "catalog": {
+                      "name": "Catalog",
+                      "type": "select",
+                      "default_value": "",
+                      "value": "mitsubishi",
+                      "validate": "validate_required",
+                      "possible_values": [
+                        {
+                          "value": "",
+                          "label": "Select catalog"
+                        }
+                      ]
+                    },
+                    "action_button_label": {
+                      "name": "Action button label",
+                      "type": "string",
+                      "default_value": "Add to Cart",
+                      "value": "Add to Cart",
+                      "placeholder": null
+                    },
+                    "layout": {
+                      "name": "Layout",
+                      "type": "select",
+                      "default_value": "horizontal",
+                      "value": "horizontal",
+                      "possible_values": [
+                        {
+                          "value": "horizontal",
+                          "label": "Horizontal"
+                        },
+                        {
+                          "value": "vertical",
+                          "label": "Vertical"
+                        }
+                      ]
+                    },
+                    "product_message": {
+                      "name": "Product Message",
+                      "type": "html_content",
+                      "default_value": "<p><strong>Special Offer!</strong><br></p>",
+                      "caption": "Maximum characters: 140",
+                      "value": ""
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            },
+            {
+              "columnId": "column_36",
+              "columnWidth": 3,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_40",
+                  "moduleType": "single_sku_cross_sell",
+                  "title": "Single SKU Cross Sell",
+                  "options": {
+                    "sku": {
+                      "name": "SKU #",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "MZ562930EX",
+                      "placeholder": null
+                    },
+                    "catalog": {
+                      "name": "Catalog",
+                      "type": "select",
+                      "default_value": "",
+                      "value": "mitsubishi",
+                      "validate": "validate_required",
+                      "possible_values": [
+                        {
+                          "value": "",
+                          "label": "Select catalog"
+                        }
+                      ]
+                    },
+                    "action_button_label": {
+                      "name": "Action button label",
+                      "type": "string",
+                      "default_value": "Add to Cart",
+                      "value": "Add to Cart",
+                      "placeholder": null
+                    },
+                    "layout": {
+                      "name": "Layout",
+                      "type": "select",
+                      "default_value": "horizontal",
+                      "value": "horizontal",
+                      "possible_values": [
+                        {
+                          "value": "horizontal",
+                          "label": "Horizontal"
+                        },
+                        {
+                          "value": "vertical",
+                          "label": "Vertical"
+                        }
+                      ]
+                    },
+                    "product_message": {
+                      "name": "Product Message",
+                      "type": "html_content",
+                      "default_value": "<p><strong>Special Offer!</strong><br></p>",
+                      "caption": "Maximum characters: 140",
+                      "value": ""
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
