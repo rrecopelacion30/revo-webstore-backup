@@ -1,0 +1,418 @@
+{
+  "pageId": "homepage",
+  "pageName": "Home Page",
+  "pageType": null,
+  "layoutEnabled": true,
+  "moduleCategories": [
+    "header",
+    "images",
+    "text",
+    "search",
+    "categories_products",
+    "forms",
+    "navigation",
+    "footer"
+  ],
+  "VFSPath": "layouts/homepage.json",
+  "requiredModules": [
+    "featured_products"
+  ],
+  "scripts": null,
+  "sections": [
+    {
+      "sectionId": "section_10",
+      "htmlId": "",
+      "htmlClasses": "themeBannerSection",
+      "contentWidth": "full",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_11",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_12",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_13",
+                  "moduleType": "custom_html",
+                  "title": "Banner Section",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"themeBannerWrap\">\n    <div class=\"themeBannerCard\">\n        <div class=\"themeBannerImg\">\n            <img src=\"https://rparts-sites.s3.amazonaws.com/0670b8771a51f55d8dfad0664c6a0e43/design/banner/hero_image.webp\" alt=\"Image Banner\">\n        </div>\n    </div>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_20",
+      "htmlId": "",
+      "htmlClasses": "themeVehiclePickerSection",
+      "contentWidth": "wide",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_22",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_23",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_24",
+                  "moduleType": "vehicle_picker_dropdowns",
+                  "title": "Vehicle Picker Dropdowns",
+                  "options": {
+                    "title": {
+                      "name": "Picker Title",
+                      "type": "string",
+                      "default_value": "Select Your Vehicle",
+                      "value": "Pick the Best Parts for Your Vehicle "
+                    },
+                    "redirect_uri": {
+                      "name": "Redirect URL",
+                      "type": "string",
+                      "default_value": null,
+                      "value": ""
+                    },
+                    "select_button_text": {
+                      "name": "Select Button Text",
+                      "type": "string",
+                      "default_value": "Select",
+                      "value": "Search"
+                    },
+                    "make_text": {
+                      "name": "Select Make Text",
+                      "type": "string",
+                      "default_value": "",
+                      "value": ""
+                    },
+                    "model_text": {
+                      "name": "Select Model Text",
+                      "type": "string",
+                      "default_value": "",
+                      "value": ""
+                    },
+                    "year_text": {
+                      "name": "Select Year Text",
+                      "type": "string",
+                      "default_value": "",
+                      "value": ""
+                    },
+                    "trim_text": {
+                      "name": "Select Trim Text",
+                      "type": "string",
+                      "default_value": "",
+                      "value": ""
+                    },
+                    "engine_text": {
+                      "name": "Select Engine Text",
+                      "type": "string",
+                      "default_value": "",
+                      "value": ""
+                    },
+                    "use_button_submit": {
+                      "name": "Save on Button Click",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": true
+                    },
+                    "show_filters": {
+                      "name": "Show filter input in dropdown",
+                      "type": "boolean",
+                      "default_value": true,
+                      "value": true
+                    },
+                    "filter_placeholder": {
+                      "name": "Filter placeholder text",
+                      "type": "string",
+                      "default_value": "Filter",
+                      "value": "Filter"
+                    },
+                    "style": {
+                      "name": "Display",
+                      "type": "select",
+                      "possible_values": [
+                        {
+                          "value": "classic",
+                          "label": "Classic"
+                        },
+                        {
+                          "value": "inline",
+                          "label": "Horizontal"
+                        }
+                      ],
+                      "default_value": "classic",
+                      "value": "classic"
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_19",
+      "htmlId": "",
+      "htmlClasses": "themeFeaturedProductSection",
+      "contentWidth": "wide",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_21",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_22",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_23",
+                  "moduleType": "featured_products",
+                  "title": "Featured Products",
+                  "options": {
+                    "display_as_slider": {
+                      "name": "Display As slider",
+                      "caption": "Displays featured products in a slider format",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": null,
+                  "htmlClasses": null,
+                  "minColumnWidth": 12,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_1",
+      "htmlId": "",
+      "htmlClasses": "themeBlogSection paddingSection",
+      "contentWidth": "wide",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_2",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_3",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_4",
+                  "moduleType": "custom_html",
+                  "title": "Blog Section",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"themeBlogWrap\">\n    <ul class=\"themeBlogList owl-carousel owl-theme\">\n        <li class=\"themeBlogItem\">\n            <a href=\"#\" class=\"themeBlogLink\">\n                <div class=\"themeBlogCard\">\n                    <div class=\"themeBlogImg\">\n                        <img src=\"https://rparts-sites.s3.amazonaws.com/0670b8771a51f55d8dfad0664c6a0e43/design/blog/blog01.webp\" alt=\"Image\">\n                    </div>\n                    <div class=\"themeBlogContent\">\n                        <h3>Rev Up Your Savings!</h3>\n                        <p>Exclusive deals on performance parts. Limited time only!</p>\n                    </div>\n                </div>\n            </a>\n        </li>\n        <li class=\"themeBlogItem\">\n            <a href=\"/deals-offers\" class=\"themeBlogLink\">\n                <div class=\"themeBlogCard\">\n                    <div class=\"themeBlogImg\">\n                        <img src=\"https://rparts-sites.s3.amazonaws.com/0670b8771a51f55d8dfad0664c6a0e43/design/blog/blog02.webp\" alt=\"Image\">\n                    </div>\n                    <div class=\"themeBlogContent\">\n                        <h3>Rev Up Your Savings!</h3>\n                        <p>Exclusive deals on performance parts. Limited time only!</p>\n                    </div>\n                </div>\n            </a>\n        </li>\n        <li class=\"themeBlogItem\">\n            <a href=\"/deals-offers\" class=\"themeBlogLink\">\n                <div class=\"themeBlogCard\">\n                    <div class=\"themeBlogImg\">\n                        <img src=\"https://rparts-sites.s3.amazonaws.com/0670b8771a51f55d8dfad0664c6a0e43/design/blog/blog03.webp\" alt=\"Image\">\n                    </div>\n                    <div class=\"themeBlogContent\">\n                        <h3>Rev Up Your Savings!</h3>\n                        <p>Exclusive deals on performance parts. Limited time only!</p>\n                    </div>\n                </div>\n            </a>\n        </li>\n        <li class=\"themeBlogItem\">\n            <a href=\"/deals-offers\" class=\"themeBlogLink\">\n                <div class=\"themeBlogCard\">\n                    <div class=\"themeBlogImg\">\n                        <img src=\"https://rparts-sites.s3.amazonaws.com/0670b8771a51f55d8dfad0664c6a0e43/design/blog/blog01.webp\" alt=\"Image\">\n                    </div>\n                    <div class=\"themeBlogContent\">\n                        <h3>Rev Up Your Savings!</h3>\n                        <p>Exclusive deals on performance parts. Limited time only!</p>\n                    </div>\n                </div>\n            </a>\n        </li>\n        <li class=\"themeBlogItem\">\n            <a href=\"/deals-offers\" class=\"themeBlogLink\">\n                <div class=\"themeBlogCard\">\n                    <div class=\"themeBlogImg\">\n                        <img src=\"https://rparts-sites.s3.amazonaws.com/0670b8771a51f55d8dfad0664c6a0e43/design/blog/blog02.webp\" alt=\"Image\">\n                    </div>\n                    <div class=\"themeBlogContent\">\n                        <h3>Rev Up Your Savings!</h3>\n                        <p>Exclusive deals on performance parts. Limited time only!</p>\n                    </div>\n                </div>\n            </a>\n        </li>\n    </ul>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_17",
+      "htmlId": "",
+      "htmlClasses": "themeFeaturedBuildSection",
+      "contentWidth": "wide",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_18",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_19",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_20",
+                  "moduleType": "custom_html",
+                  "title": "Featured Build",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"themeFeaturedBuildWrap\">\n    <ul class=\"themeFeaturedBuildList owl-carousel owl-theme\">\n        <li>\n            <div class=\"themeFeaturedBuildListCard\">\n                <div class=\"themeFeaturedBuildRow\">\n                    <div class=\"themeFeaturedBuildCol\">\n                        <div class=\"themeFeaturedBuildRow\">\n                            <div class=\"themeFeaturedBuildContent\">\n                                <p class=\"themeFeaturedBuildSmallText\">Featured Build</p>\n                                <h3>Power and Precision</h3>\n                                <div class=\"themeFeaturedBuildImg v-sp\">\n                                    <img src=\"https://rparts-sites.s3.amazonaws.com/0670b8771a51f55d8dfad0664c6a0e43/design/build01.webp\" alt=\"Image\">\n                                </div>\n                                <p class=\"themeFeaturedBuildText\">\n                                    Explore our latest custom build, showcasing the best in performance, style, and innovation. Every part handpicked to enhance power, improve handling, and turn heads on the road. Get inspired by this ultimate upgrade and find the parts you need to start your own project.\n                                </p>\n                                <div class=\"themeFeaturedBuildButton\">\n                                    <a href=\"/builds\">View Builds Details</a>\n                                </div>\n                            </div>\n                        </div>\n                        <div class=\"themeFeaturedBuildRow\">\n                            <div class=\"themeFeaturedBuildImg v-pc\">\n                                <img src=\"https://rparts-sites.s3.amazonaws.com/0670b8771a51f55d8dfad0664c6a0e43/design/build01.webp\" alt=\"Image\">\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </li>\n        <li>\n            <div class=\"themeFeaturedBuildListCard\">\n                <div class=\"themeFeaturedBuildRow\">\n                    <div class=\"themeFeaturedBuildCol\">\n                        <div class=\"themeFeaturedBuildRow\">\n                            <div class=\"themeFeaturedBuildContent\">\n                                <p class=\"themeFeaturedBuildSmallText\">Featured Build</p>\n                                <h3>Power and Precision</h3>\n                                <div class=\"themeFeaturedBuildImg v-sp\">\n                                    <img src=\"https://rparts-sites.s3.amazonaws.com/0670b8771a51f55d8dfad0664c6a0e43/design/build01.webp\" alt=\"Image\">\n                                </div>\n                                <p class=\"themeFeaturedBuildText\">\n                                    Explore our latest custom build, showcasing the best in performance, style, and innovation. Every part handpicked to enhance power, improve handling, and turn heads on the road. Get inspired by this ultimate upgrade and find the parts you need to start your own project.\n                                </p>\n                                <div class=\"themeFeaturedBuildButton\">\n                                    <a href=\"/builds\">View Builds Details</a>\n                                </div>\n                            </div>\n                        </div>\n                        <div class=\"themeFeaturedBuildRow\">\n                            <div class=\"themeFeaturedBuildImg v-pc\">\n                                <img src=\"https://rparts-sites.s3.amazonaws.com/0670b8771a51f55d8dfad0664c6a0e43/design/build01.webp\" alt=\"Image\">\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </li>\n    </ul>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_33",
+      "htmlId": "",
+      "htmlClasses": "themeBrandSection",
+      "contentWidth": "wide",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_34",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_35",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_36",
+                  "moduleType": "custom_html",
+                  "title": "Brand Section",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"themeBrandWrap\">\n    <div class=\"themeBrandTitle\">\n        <p>Popular Brands</p>\n        <h3>Trusted Brands, Quality Parts</h3>\n    </div>\n    <ul class=\"themeBrandList\">\n        <li>\n            <a href=\"#\">\n                <img src=\"https://rparts-sites.s3.amazonaws.com/0670b8771a51f55d8dfad0664c6a0e43/design/brands/logo_1.png\" alt=\"Image\">\n            </a>\n        </li>\n        <li>\n            <a href=\"#\">\n                <img src=\"https://rparts-sites.s3.amazonaws.com/0670b8771a51f55d8dfad0664c6a0e43/design/brands/logo_2.png\" alt=\"Image\">\n            </a>\n        </li>\n        <li>\n            <a href=\"#\">\n                <img src=\"https://rparts-sites.s3.amazonaws.com/0670b8771a51f55d8dfad0664c6a0e43/design/brands/logo_3.png\" alt=\"Image\">\n            </a>\n        </li>\n        <li>\n            <a href=\"#\">\n                <img src=\"https://rparts-sites.s3.amazonaws.com/0670b8771a51f55d8dfad0664c6a0e43/design/brands/logo_4.png\" alt=\"Image\">\n            </a>\n        </li>\n        <li>\n            <a href=\"#\">\n                <img src=\"https://rparts-sites.s3.amazonaws.com/0670b8771a51f55d8dfad0664c6a0e43/design/brands/logo_5.png\" alt=\"Image\">\n            </a>\n        </li>\n        <li>\n            <a href=\"#\">\n                <img src=\"https://rparts-sites.s3.amazonaws.com/0670b8771a51f55d8dfad0664c6a0e43/design/brands/logo_6.png\" alt=\"Image\">\n            </a>\n        </li>\n        <li>\n            <a href=\"#\">\n                <img src=\"https://rparts-sites.s3.amazonaws.com/0670b8771a51f55d8dfad0664c6a0e43/design/brands/logo_7.png\" alt=\"Image\">\n            </a>\n        </li>\n        <li>\n            <a href=\"#\">\n                <img src=\"https://rparts-sites.s3.amazonaws.com/0670b8771a51f55d8dfad0664c6a0e43/design/brands/logo_8.png\" alt=\"Image\">\n            </a>\n        </li>\n    </ul>\n    <p class=\"themeBrandText\">\n        We partner with the industry’s top brands to bring you the best quality parts for your vehicle. From performance upgrades to essential replacements, trust in our selection to keep you driving smoothly.\n    </p>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

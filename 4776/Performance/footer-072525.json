@@ -1,0 +1,1246 @@
+{
+  "pageId": "footer",
+  "pageName": "Footer",
+  "pageType": null,
+  "layoutEnabled": true,
+  "moduleCategories": [
+    "header",
+    "images",
+    "text",
+    "search",
+    "categories_products",
+    "forms",
+    "navigation",
+    "footer"
+  ],
+  "VFSPath": "layouts/footer.json",
+  "requiredModules": [
+    "powered_by_rp"
+  ],
+  "scripts": null,
+  "sections": [
+    {
+      "sectionId": "section_25",
+      "htmlId": "",
+      "htmlClasses": "d-none",
+      "contentWidth": "normal",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_26",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_27",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_28",
+                  "moduleType": "powered_by_rp",
+                  "title": "Powered By RP",
+                  "options": {
+                    "rp_logo": {
+                      "name": "RP Logo Color",
+                      "type": "select",
+                      "default_value": "red",
+                      "value": null,
+                      "possible_values": [
+                        {
+                          "value": "red",
+                          "label": "Red"
+                        },
+                        {
+                          "value": "grey",
+                          "label": "Grey"
+                        },
+                        {
+                          "value": "none",
+                          "label": "None"
+                        }
+                      ]
+                    }
+                  },
+                  "htmlId": null,
+                  "htmlClasses": null,
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_82",
+      "htmlId": "",
+      "htmlClasses": "themeFooterNewsletterSection",
+      "contentWidth": "wide",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_83",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_84",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_85",
+                  "moduleType": "newsletter_signup",
+                  "title": "Newsletter Signup",
+                  "options": {
+                    "newsletter_title": {
+                      "name": "Title",
+                      "type": "string",
+                      "default_value": "Newsletter Signup",
+                      "value": "<span>JOIN OUR NEWSLETTER</span>STAY UP TO DATE WITH THE LATEST RELEASES, EVENTS, PROMOTIONS AND MORE."
+                    },
+                    "box_icon": {
+                      "name": "Icon",
+                      "type": "string",
+                      "default_value": "fa-envelope-o",
+                      "value": "fa-envelope-o"
+                    },
+                    "message": {
+                      "name": "Message",
+                      "type": "string",
+                      "default_value": "Sign up and save more",
+                      "value": "Sign up and save more"
+                    },
+                    "placeholder": {
+                      "name": "Placeholder Text",
+                      "type": "string",
+                      "default_value": "Email Address",
+                      "value": "Enter your email address"
+                    },
+                    "style": {
+                      "name": "Style",
+                      "type": "select",
+                      "default_value": "newsletter-inline",
+                      "value": "newsletter-inline",
+                      "possible_values": [
+                        {
+                          "value": "newsletter-inline",
+                          "label": "Inline"
+                        },
+                        {
+                          "value": "newsletter-block",
+                          "label": "Block"
+                        }
+                      ]
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_96",
+      "htmlId": "",
+      "htmlClasses": "themeFooterNewSection",
+      "contentWidth": "wide",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_97",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_98",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_99",
+                  "moduleType": "store_logo",
+                  "title": "Store Logo",
+                  "options": {
+                    "logo_dark_background": {
+                      "name": "Use Dark Background Logo",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": true
+                    },
+                    "logo_height": {
+                      "name": "Logo Height (px)",
+                      "type": "string",
+                      "default_value": "",
+                      "value": ""
+                    },
+                    "logo_width": {
+                      "name": "Logo Width (px)",
+                      "type": "string",
+                      "default_value": "",
+                      "value": ""
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "themeFooterLogo",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_106",
+                  "moduleType": "links_list",
+                  "title": "Categories",
+                  "options": {
+                    "links": {
+                      "name": "Links",
+                      "type": "object",
+                      "default_value": [],
+                      "value": [
+                        {
+                          "linkId": "link_45",
+                          "text": "Home",
+                          "url": "#",
+                          "target": "",
+                          "icon": "",
+                          "type": "direct"
+                        },
+                        {
+                          "linkId": "link_46",
+                          "text": "Parts",
+                          "url": "/parts",
+                          "target": "",
+                          "icon": "",
+                          "type": "direct"
+                        },
+                        {
+                          "linkId": "link_47",
+                          "text": "Shop By Vehicle Type",
+                          "url": "/shop-by-vehicle",
+                          "target": "",
+                          "icon": "",
+                          "type": "direct"
+                        },
+                        {
+                          "linkId": "link_48",
+                          "text": "Garage Signs",
+                          "url": "/garage-signs",
+                          "target": "",
+                          "icon": "",
+                          "type": "direct"
+                        },
+                        {
+                          "linkId": "link_50",
+                          "text": "Auto Decals",
+                          "url": "/auto-decals",
+                          "target": "",
+                          "icon": "",
+                          "type": "direct"
+                        }
+                      ]
+                    },
+                    "links_image": {
+                      "name": "List Image",
+                      "type": "image_upload",
+                      "default_value": null,
+                      "value": ""
+                    },
+                    "links_title": {
+                      "name": "List Title",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "Categories"
+                    },
+                    "links_title_url": {
+                      "name": "List Title Link",
+                      "type": "string",
+                      "default_value": null,
+                      "value": ""
+                    },
+                    "links_stock": {
+                      "name": "List Style",
+                      "type": "select",
+                      "default_value": "none",
+                      "value": "none",
+                      "possible_values": [
+                        {
+                          "value": "none",
+                          "label": "None"
+                        },
+                        {
+                          "value": "mobile_menu",
+                          "label": "Mobile Menu"
+                        },
+                        {
+                          "value": "policies",
+                          "label": "Policies"
+                        }
+                      ]
+                    },
+                    "header_tag": {
+                      "name": "Header Tag",
+                      "type": "select",
+                      "default_value": "strong",
+                      "value": "strong",
+                      "possible_values": [
+                        {
+                          "value": "strong",
+                          "label": "STRONG"
+                        },
+                        {
+                          "value": "h3",
+                          "label": "H3"
+                        }
+                      ]
+                    },
+                    "links_display": {
+                      "name": "List Display",
+                      "type": "select",
+                      "default_value": "block",
+                      "value": "block",
+                      "possible_values": [
+                        {
+                          "value": "inline",
+                          "label": "Inline"
+                        },
+                        {
+                          "value": "block",
+                          "label": "Block"
+                        },
+                        {
+                          "value": "dropdown",
+                          "label": "Drop Down"
+                        }
+                      ]
+                    },
+                    "list_style": {
+                      "name": "List Style",
+                      "type": "select",
+                      "default_value": "none",
+                      "value": "none",
+                      "possible_values": [
+                        {
+                          "value": "none",
+                          "label": "No Style"
+                        },
+                        {
+                          "value": "footer",
+                          "label": "Footer"
+                        },
+                        {
+                          "value": "header",
+                          "label": "Header"
+                        },
+                        {
+                          "value": "navigation",
+                          "label": "Navigation Bar"
+                        },
+                        {
+                          "value": "menu",
+                          "label": "Menu Bar"
+                        }
+                      ]
+                    },
+                    "footer_link": {
+                      "name": "Footer Link",
+                      "type": "string",
+                      "default_value": null,
+                      "value": ""
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "themeLinkWrap",
+                  "minColumnWidth": 0,
+                  "customAdmin": true,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_21",
+                  "moduleType": "links_list",
+                  "title": "Brands",
+                  "options": {
+                    "links": {
+                      "name": "Links",
+                      "type": "object",
+                      "default_value": [],
+                      "value": [
+                        {
+                          "linkId": "link_81",
+                          "text": "ACC",
+                          "url": "#",
+                          "target": "",
+                          "icon": "",
+                          "type": "direct"
+                        },
+                        {
+                          "linkId": "link_82",
+                          "text": "ACS",
+                          "url": "#",
+                          "target": "",
+                          "icon": "",
+                          "type": "direct"
+                        },
+                        {
+                          "linkId": "link_83",
+                          "text": "Altec",
+                          "url": "#",
+                          "target": "",
+                          "icon": "",
+                          "type": "direct"
+                        },
+                        {
+                          "linkId": "link_84",
+                          "text": "Anderson Composites",
+                          "url": "#",
+                          "target": "",
+                          "icon": "",
+                          "type": "direct"
+                        },
+                        {
+                          "linkId": "link_85",
+                          "text": "LLoyd Mats",
+                          "url": "#",
+                          "target": "",
+                          "icon": "",
+                          "type": "direct"
+                        },
+                        {
+                          "linkId": "link_86",
+                          "text": "Oracle Lighting",
+                          "url": "#",
+                          "target": "",
+                          "icon": "",
+                          "type": "direct"
+                        },
+                        {
+                          "linkId": "link_87",
+                          "text": "Roush",
+                          "url": "#",
+                          "target": "",
+                          "icon": "",
+                          "type": "direct"
+                        },
+                        {
+                          "linkId": "link_88",
+                          "text": "Seat Armor",
+                          "url": "#",
+                          "target": "",
+                          "icon": "",
+                          "type": "direct"
+                        },
+                        {
+                          "linkId": "link_89",
+                          "text": "Steeda",
+                          "url": "#",
+                          "target": "",
+                          "icon": "",
+                          "type": "direct"
+                        },
+                        {
+                          "linkId": "link_90",
+                          "text": "Sto N Sho",
+                          "url": "#",
+                          "target": "",
+                          "icon": "",
+                          "type": "direct"
+                        },
+                        {
+                          "linkId": "link_91",
+                          "text": "Tire Penz",
+                          "url": "#",
+                          "target": "",
+                          "icon": "",
+                          "type": "direct"
+                        }
+                      ]
+                    },
+                    "links_image": {
+                      "name": "List Image",
+                      "type": "image_upload",
+                      "default_value": null,
+                      "value": ""
+                    },
+                    "links_title": {
+                      "name": "List Title",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "Brands"
+                    },
+                    "links_title_url": {
+                      "name": "List Title Link",
+                      "type": "string",
+                      "default_value": null,
+                      "value": ""
+                    },
+                    "links_stock": {
+                      "name": "List Style",
+                      "type": "select",
+                      "default_value": "none",
+                      "value": "none",
+                      "possible_values": [
+                        {
+                          "value": "none",
+                          "label": "None"
+                        },
+                        {
+                          "value": "mobile_menu",
+                          "label": "Mobile Menu"
+                        },
+                        {
+                          "value": "policies",
+                          "label": "Policies"
+                        }
+                      ]
+                    },
+                    "header_tag": {
+                      "name": "Header Tag",
+                      "type": "select",
+                      "default_value": "strong",
+                      "value": "strong",
+                      "possible_values": [
+                        {
+                          "value": "strong",
+                          "label": "STRONG"
+                        },
+                        {
+                          "value": "h3",
+                          "label": "H3"
+                        }
+                      ]
+                    },
+                    "links_display": {
+                      "name": "List Display",
+                      "type": "select",
+                      "default_value": "block",
+                      "value": "block",
+                      "possible_values": [
+                        {
+                          "value": "inline",
+                          "label": "Inline"
+                        },
+                        {
+                          "value": "block",
+                          "label": "Block"
+                        },
+                        {
+                          "value": "dropdown",
+                          "label": "Drop Down"
+                        }
+                      ]
+                    },
+                    "list_style": {
+                      "name": "List Style",
+                      "type": "select",
+                      "default_value": "none",
+                      "value": "none",
+                      "possible_values": [
+                        {
+                          "value": "none",
+                          "label": "No Style"
+                        },
+                        {
+                          "value": "footer",
+                          "label": "Footer"
+                        },
+                        {
+                          "value": "header",
+                          "label": "Header"
+                        },
+                        {
+                          "value": "navigation",
+                          "label": "Navigation Bar"
+                        },
+                        {
+                          "value": "menu",
+                          "label": "Menu Bar"
+                        }
+                      ]
+                    },
+                    "footer_link": {
+                      "name": "Footer Link",
+                      "type": "string",
+                      "default_value": null,
+                      "value": ""
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "themeLinkWrap",
+                  "minColumnWidth": 0,
+                  "customAdmin": true,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_22",
+                  "moduleType": "links_list",
+                  "title": "Quick Links",
+                  "options": {
+                    "links": {
+                      "name": "Links",
+                      "type": "object",
+                      "default_value": [],
+                      "value": [
+                        {
+                          "linkId": "link_134",
+                          "text": "About Us",
+                          "url": "/about",
+                          "target": "",
+                          "icon": "",
+                          "type": "direct"
+                        },
+                        {
+                          "linkId": "link_135",
+                          "text": "Privacy Policy",
+                          "url": "/policies/privacy",
+                          "target": "",
+                          "icon": "",
+                          "type": "direct"
+                        },
+                        {
+                          "linkId": "link_136",
+                          "text": "Returns & Exchange",
+                          "url": "/policies/returns",
+                          "target": "",
+                          "icon": "",
+                          "type": "direct"
+                        },
+                        {
+                          "linkId": "link_137",
+                          "text": "Terms & Conditions",
+                          "url": "/policies/terms-and-conditions",
+                          "target": "",
+                          "icon": "",
+                          "type": "direct"
+                        },
+                        {
+                          "linkId": "link_138",
+                          "text": "Contact Us",
+                          "url": "/contact",
+                          "target": "",
+                          "icon": "",
+                          "type": "direct"
+                        },
+                        {
+                          "linkId": "link_139",
+                          "text": "Blog",
+                          "url": "/news",
+                          "target": "",
+                          "icon": "",
+                          "type": "direct"
+                        }
+                      ]
+                    },
+                    "links_image": {
+                      "name": "List Image",
+                      "type": "image_upload",
+                      "default_value": null,
+                      "value": ""
+                    },
+                    "links_title": {
+                      "name": "List Title",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "Quick Links"
+                    },
+                    "links_title_url": {
+                      "name": "List Title Link",
+                      "type": "string",
+                      "default_value": null,
+                      "value": ""
+                    },
+                    "links_stock": {
+                      "name": "List Style",
+                      "type": "select",
+                      "default_value": "none",
+                      "value": "none",
+                      "possible_values": [
+                        {
+                          "value": "none",
+                          "label": "None"
+                        },
+                        {
+                          "value": "mobile_menu",
+                          "label": "Mobile Menu"
+                        },
+                        {
+                          "value": "policies",
+                          "label": "Policies"
+                        }
+                      ]
+                    },
+                    "header_tag": {
+                      "name": "Header Tag",
+                      "type": "select",
+                      "default_value": "strong",
+                      "value": "strong",
+                      "possible_values": [
+                        {
+                          "value": "strong",
+                          "label": "STRONG"
+                        },
+                        {
+                          "value": "h3",
+                          "label": "H3"
+                        }
+                      ]
+                    },
+                    "links_display": {
+                      "name": "List Display",
+                      "type": "select",
+                      "default_value": "block",
+                      "value": "block",
+                      "possible_values": [
+                        {
+                          "value": "inline",
+                          "label": "Inline"
+                        },
+                        {
+                          "value": "block",
+                          "label": "Block"
+                        },
+                        {
+                          "value": "dropdown",
+                          "label": "Drop Down"
+                        }
+                      ]
+                    },
+                    "list_style": {
+                      "name": "List Style",
+                      "type": "select",
+                      "default_value": "none",
+                      "value": "none",
+                      "possible_values": [
+                        {
+                          "value": "none",
+                          "label": "No Style"
+                        },
+                        {
+                          "value": "footer",
+                          "label": "Footer"
+                        },
+                        {
+                          "value": "header",
+                          "label": "Header"
+                        },
+                        {
+                          "value": "navigation",
+                          "label": "Navigation Bar"
+                        },
+                        {
+                          "value": "menu",
+                          "label": "Menu Bar"
+                        }
+                      ]
+                    },
+                    "footer_link": {
+                      "name": "Footer Link",
+                      "type": "string",
+                      "default_value": null,
+                      "value": ""
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "themeLinkWrap",
+                  "minColumnWidth": 0,
+                  "customAdmin": true,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_1",
+                  "moduleType": "links_list",
+                  "title": "Address ",
+                  "options": {
+                    "links": {
+                      "name": "Links",
+                      "type": "object",
+                      "default_value": [],
+                      "value": [
+                        {
+                          "linkId": "link_164",
+                          "text": "<svg width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"> <path d=\"M10 1.25C6.54961 1.25 3.75 3.76992 3.75 6.875C3.75 11.875 10 18.75 10 18.75C10 18.75 16.25 11.875 16.25 6.875C16.25 3.76992 13.4504 1.25 10 1.25ZM10 10C9.50555 10 9.0222 9.85338 8.61107 9.57867C8.19995 9.30397 7.87952 8.91352 7.6903 8.45671C7.50108 7.99989 7.45157 7.49723 7.54804 7.01227C7.6445 6.52732 7.8826 6.08186 8.23223 5.73223C8.58186 5.3826 9.02732 5.1445 9.51227 5.04804C9.99723 4.95157 10.4999 5.00108 10.9567 5.1903C11.4135 5.37952 11.804 5.69995 12.0787 6.11107C12.3534 6.5222 12.5 7.00555 12.5 7.5C12.4993 8.16282 12.2357 8.79828 11.767 9.26697C11.2983 9.73565 10.6628 9.99928 10 10Z\" fill=\"#B60000\"/> </svg>58 S. River Dr, Suite 101 Tempe, AZ 85 288",
+                          "url": "",
+                          "target": "",
+                          "icon": "",
+                          "type": "direct"
+                        },
+                        {
+                          "linkId": "link_165",
+                          "text": "<svg width=\"18\" height=\"19\" viewBox=\"0 0 18 19\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"> <g clip-path=\"url(#clip0_1_206)\"> <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M2.12067 1.07541C2.31751 0.878856 2.55388 0.726384 2.81411 0.628095C3.07434 0.529806 3.35249 0.487943 3.63012 0.505282C3.90776 0.522621 4.17853 0.598765 4.42451 0.728668C4.67049 0.858571 4.88605 1.03927 5.05692 1.25878L7.07629 3.85303C7.44642 4.32891 7.57692 4.94878 7.43067 5.53378L6.81529 7.99753C6.7837 8.12515 6.78553 8.25876 6.8206 8.38547C6.85568 8.51217 6.92282 8.6277 7.01554 8.72091L9.77967 11.485C9.87298 11.5779 9.9887 11.6452 10.1156 11.6803C10.2425 11.7154 10.3764 11.7171 10.5042 11.6853L12.9668 11.0699C13.2555 10.9981 13.5567 10.9927 13.8479 11.0541C14.139 11.1155 14.4124 11.2421 14.6475 11.4243L17.2418 13.4425C18.1744 14.1682 18.2599 15.5463 17.4252 16.3799L16.2619 17.5432C15.4294 18.3757 14.1852 18.7413 13.0253 18.3329C10.056 17.2896 7.3604 15.5899 5.13904 13.3604C2.90971 11.1394 1.21004 8.44412 0.166542 5.47528C-0.240708 4.31653 0.124917 3.07116 0.957416 2.23866L2.12067 1.07541Z\" fill=\"#B60000\"/> </g> <defs> <clipPath id=\"clip0_1_206\"> <rect width=\"18\" height=\"18\" fill=\"white\" transform=\"translate(0 0.5)\"/> </clipPath> </defs> </svg>(888) 348-1699",
+                          "url": "tel:(888) 348-1699",
+                          "target": "",
+                          "icon": "",
+                          "type": "direct"
+                        },
+                        {
+                          "linkId": "link_166",
+                          "text": "<svg width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"> <path d=\"M16.5625 3.125H3.4375C2.85753 3.12562 2.30149 3.35629 1.89139 3.76639C1.48129 4.17649 1.25062 4.73253 1.25 5.3125V14.6875C1.25062 15.2675 1.48129 15.8235 1.89139 16.2336C2.30149 16.6437 2.85753 16.8744 3.4375 16.875H16.5625C17.1425 16.8744 17.6985 16.6437 18.1086 16.2336C18.5187 15.8235 18.7494 15.2675 18.75 14.6875V5.3125C18.7494 4.73253 18.5187 4.17649 18.1086 3.76639C17.6985 3.35629 17.1425 3.12562 16.5625 3.125ZM16.0086 6.74336L10.3836 11.1184C10.2739 11.2036 10.1389 11.2499 10 11.2499C9.86107 11.2499 9.72609 11.2036 9.61641 11.1184L3.99141 6.74336C3.92532 6.69345 3.86981 6.63091 3.8281 6.55936C3.78639 6.48781 3.75932 6.40869 3.74846 6.32659C3.73759 6.24449 3.74315 6.16104 3.76482 6.08111C3.78648 6.00118 3.82381 5.92635 3.87465 5.86097C3.92548 5.79559 3.9888 5.74096 4.06093 5.70027C4.13306 5.65957 4.21255 5.63362 4.2948 5.62391C4.37704 5.6142 4.4604 5.62094 4.54002 5.64372C4.61964 5.66651 4.69394 5.70489 4.75859 5.75664L10 9.8332L15.2414 5.75664C15.3725 5.65766 15.5372 5.61425 15.7 5.6358C15.8629 5.65734 16.0107 5.74211 16.1115 5.87177C16.2123 6.00142 16.258 6.16555 16.2387 6.32866C16.2195 6.49176 16.1368 6.64073 16.0086 6.74336Z\" fill=\"#B60000\"/> </svg>info@performanceparts.com",
+                          "url": "mailto:info@performanceparts.com",
+                          "target": "",
+                          "icon": "",
+                          "type": "direct"
+                        },
+                        {
+                          "linkId": "link_167",
+                          "text": "<svg width=\"18\" height=\"18\" viewBox=\"0 0 18 18\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"> <g clip-path=\"url(#clip0_1_210)\"> <path d=\"M4.5 0.5625C4.5 0.413316 4.44074 0.270242 4.33525 0.164752C4.22976 0.0592632 4.08668 0 3.9375 0C3.78832 0 3.64524 0.0592632 3.53975 0.164752C3.43426 0.270242 3.375 0.413316 3.375 0.5625V1.125H2.25C1.65326 1.125 1.08097 1.36205 0.65901 1.78401C0.237053 2.20597 0 2.77826 0 3.375V4.5H18V3.375C18 2.77826 17.7629 2.20597 17.341 1.78401C16.919 1.36205 16.3467 1.125 15.75 1.125H14.625V0.5625C14.625 0.413316 14.5657 0.270242 14.4602 0.164752C14.3548 0.0592632 14.2117 0 14.0625 0C13.9133 0 13.7702 0.0592632 13.6648 0.164752C13.5593 0.270242 13.5 0.413316 13.5 0.5625V1.125H4.5V0.5625ZM18 15.75V5.625H0V15.75C0 16.3467 0.237053 16.919 0.65901 17.341C1.08097 17.7629 1.65326 18 2.25 18H15.75C16.3467 18 16.919 17.7629 17.341 17.341C17.7629 16.919 18 16.3467 18 15.75ZM10.6875 7.875H11.8125C11.9617 7.875 12.1048 7.93426 12.2102 8.03975C12.3157 8.14524 12.375 8.28832 12.375 8.4375V9.5625C12.375 9.71168 12.3157 9.85476 12.2102 9.96025C12.1048 10.0657 11.9617 10.125 11.8125 10.125H10.6875C10.5383 10.125 10.3952 10.0657 10.2898 9.96025C10.1843 9.85476 10.125 9.71168 10.125 9.5625V8.4375C10.125 8.28832 10.1843 8.14524 10.2898 8.03975C10.3952 7.93426 10.5383 7.875 10.6875 7.875ZM14.0625 7.875H15.1875C15.3367 7.875 15.4798 7.93426 15.5852 8.03975C15.6907 8.14524 15.75 8.28832 15.75 8.4375V9.5625C15.75 9.71168 15.6907 9.85476 15.5852 9.96025C15.4798 10.0657 15.3367 10.125 15.1875 10.125H14.0625C13.9133 10.125 13.7702 10.0657 13.6648 9.96025C13.5593 9.85476 13.5 9.71168 13.5 9.5625V8.4375C13.5 8.28832 13.5593 8.14524 13.6648 8.03975C13.7702 7.93426 13.9133 7.875 14.0625 7.875ZM2.25 11.8125C2.25 11.6633 2.30926 11.5202 2.41475 11.4148C2.52024 11.3093 2.66332 11.25 2.8125 11.25H3.9375C4.08668 11.25 4.22976 11.3093 4.33525 11.4148C4.44074 11.5202 4.5 11.6633 4.5 11.8125V12.9375C4.5 13.0867 4.44074 13.2298 4.33525 13.3352C4.22976 13.4407 4.08668 13.5 3.9375 13.5H2.8125C2.66332 13.5 2.52024 13.4407 2.41475 13.3352C2.30926 13.2298 2.25 13.0867 2.25 12.9375V11.8125ZM6.1875 11.25H7.3125C7.46168 11.25 7.60476 11.3093 7.71025 11.4148C7.81574 11.5202 7.875 11.6633 7.875 11.8125V12.9375C7.875 13.0867 7.81574 13.2298 7.71025 13.3352C7.60476 13.4407 7.46168 13.5 7.3125 13.5H6.1875C6.03832 13.5 5.89524 13.4407 5.78975 13.3352C5.68426 13.2298 5.625 13.0867 5.625 12.9375V11.8125C5.625 11.6633 5.68426 11.5202 5.78975 11.4148C5.89524 11.3093 6.03832 11.25 6.1875 11.25Z\" fill=\"#B60000\"/> </g> <defs> <clipPath id=\"clip0_1_210\"> <rect width=\"18\" height=\"18\" fill=\"white\"/> </clipPath> </defs> </svg>Mon - Fri : 8am - 5pm CST<br>Sat - Sun Closed",
+                          "url": "",
+                          "target": "",
+                          "icon": "",
+                          "type": "direct"
+                        }
+                      ]
+                    },
+                    "links_image": {
+                      "name": "List Image",
+                      "type": "image_upload",
+                      "default_value": null,
+                      "value": ""
+                    },
+                    "links_title": {
+                      "name": "List Title",
+                      "type": "string",
+                      "default_value": null,
+                      "value": ""
+                    },
+                    "links_title_url": {
+                      "name": "List Title Link",
+                      "type": "string",
+                      "default_value": null,
+                      "value": ""
+                    },
+                    "links_stock": {
+                      "name": "List Style",
+                      "type": "select",
+                      "default_value": "none",
+                      "value": "none",
+                      "possible_values": [
+                        {
+                          "value": "none",
+                          "label": "None"
+                        },
+                        {
+                          "value": "mobile_menu",
+                          "label": "Mobile Menu"
+                        },
+                        {
+                          "value": "policies",
+                          "label": "Policies"
+                        }
+                      ]
+                    },
+                    "header_tag": {
+                      "name": "Header Tag",
+                      "type": "select",
+                      "default_value": "strong",
+                      "value": "strong",
+                      "possible_values": [
+                        {
+                          "value": "strong",
+                          "label": "STRONG"
+                        },
+                        {
+                          "value": "h3",
+                          "label": "H3"
+                        }
+                      ]
+                    },
+                    "links_display": {
+                      "name": "List Display",
+                      "type": "select",
+                      "default_value": "block",
+                      "value": "block",
+                      "possible_values": [
+                        {
+                          "value": "inline",
+                          "label": "Inline"
+                        },
+                        {
+                          "value": "block",
+                          "label": "Block"
+                        },
+                        {
+                          "value": "dropdown",
+                          "label": "Drop Down"
+                        }
+                      ]
+                    },
+                    "list_style": {
+                      "name": "List Style",
+                      "type": "select",
+                      "default_value": "none",
+                      "value": "none",
+                      "possible_values": [
+                        {
+                          "value": "none",
+                          "label": "No Style"
+                        },
+                        {
+                          "value": "footer",
+                          "label": "Footer"
+                        },
+                        {
+                          "value": "header",
+                          "label": "Header"
+                        },
+                        {
+                          "value": "navigation",
+                          "label": "Navigation Bar"
+                        },
+                        {
+                          "value": "menu",
+                          "label": "Menu Bar"
+                        }
+                      ]
+                    },
+                    "footer_link": {
+                      "name": "Footer Link",
+                      "type": "string",
+                      "default_value": null,
+                      "value": ""
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "themeAddressClone",
+                  "minColumnWidth": 0,
+                  "customAdmin": true,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_123",
+      "htmlId": "",
+      "htmlClasses": "themeCreditCards",
+      "contentWidth": "wide",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_124",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_125",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_126",
+                  "moduleType": "payments_accepted",
+                  "title": "Payments Accepted",
+                  "options": {
+                    "payments_title": {
+                      "name": "Title",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "We accept all major credit cards:"
+                    },
+                    "background": {
+                      "name": "Dark Background",
+                      "caption": "Display light version of the logo.",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    },
+                    "paypal": {
+                      "name": "Paypal",
+                      "type": "boolean",
+                      "default_value": true,
+                      "value": true
+                    },
+                    "visa": {
+                      "name": "Visa",
+                      "type": "boolean",
+                      "default_value": true,
+                      "value": true
+                    },
+                    "mastercard": {
+                      "name": "Mastercard",
+                      "type": "boolean",
+                      "default_value": true,
+                      "value": true
+                    },
+                    "amex": {
+                      "name": "AMEX",
+                      "type": "boolean",
+                      "default_value": true,
+                      "value": true
+                    },
+                    "discover": {
+                      "name": "Discover",
+                      "type": "boolean",
+                      "default_value": true,
+                      "value": true
+                    },
+                    "cirrus": {
+                      "name": "Cirrus",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": true
+                    },
+                    "maestro": {
+                      "name": "Maestro",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": true
+                    },
+                    "style": {
+                      "name": "Style",
+                      "type": "select",
+                      "possible_values": [
+                        {
+                          "value": "classic",
+                          "label": "Classic"
+                        },
+                        {
+                          "value": "watermark",
+                          "label": "Watermark"
+                        }
+                      ],
+                      "default_value": "classic",
+                      "value": "classic"
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_147",
+      "htmlId": "",
+      "htmlClasses": "themeCopyrightNewSection",
+      "contentWidth": "wide",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_148",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_149",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_150",
+                  "moduleType": "links_list",
+                  "title": "Copyright",
+                  "options": {
+                    "links": {
+                      "name": "Links",
+                      "type": "object",
+                      "default_value": [],
+                      "value": [
+                        {
+                          "linkId": "link_160",
+                          "text": "All prices are USD ",
+                          "url": "",
+                          "target": "",
+                          "icon": "",
+                          "type": "direct"
+                        },
+                        {
+                          "linkId": "link_161",
+                          "text": "© 2024 Performance Parts ",
+                          "url": "",
+                          "target": "",
+                          "icon": "",
+                          "type": "direct"
+                        },
+                        {
+                          "linkId": "link_162",
+                          "text": "Sitemap",
+                          "url": "#",
+                          "target": "",
+                          "icon": "",
+                          "type": "direct"
+                        }
+                      ]
+                    },
+                    "links_image": {
+                      "name": "List Image",
+                      "type": "image_upload",
+                      "default_value": null,
+                      "value": ""
+                    },
+                    "links_title": {
+                      "name": "List Title",
+                      "type": "string",
+                      "default_value": null,
+                      "value": ""
+                    },
+                    "links_title_url": {
+                      "name": "List Title Link",
+                      "type": "string",
+                      "default_value": null,
+                      "value": ""
+                    },
+                    "links_stock": {
+                      "name": "List Style",
+                      "type": "select",
+                      "default_value": "none",
+                      "value": "none",
+                      "possible_values": [
+                        {
+                          "value": "none",
+                          "label": "None"
+                        },
+                        {
+                          "value": "mobile_menu",
+                          "label": "Mobile Menu"
+                        },
+                        {
+                          "value": "policies",
+                          "label": "Policies"
+                        }
+                      ]
+                    },
+                    "header_tag": {
+                      "name": "Header Tag",
+                      "type": "select",
+                      "default_value": "strong",
+                      "value": "strong",
+                      "possible_values": [
+                        {
+                          "value": "strong",
+                          "label": "STRONG"
+                        },
+                        {
+                          "value": "h3",
+                          "label": "H3"
+                        }
+                      ]
+                    },
+                    "links_display": {
+                      "name": "List Display",
+                      "type": "select",
+                      "default_value": "block",
+                      "value": "block",
+                      "possible_values": [
+                        {
+                          "value": "inline",
+                          "label": "Inline"
+                        },
+                        {
+                          "value": "block",
+                          "label": "Block"
+                        },
+                        {
+                          "value": "dropdown",
+                          "label": "Drop Down"
+                        }
+                      ]
+                    },
+                    "list_style": {
+                      "name": "List Style",
+                      "type": "select",
+                      "default_value": "none",
+                      "value": "none",
+                      "possible_values": [
+                        {
+                          "value": "none",
+                          "label": "No Style"
+                        },
+                        {
+                          "value": "footer",
+                          "label": "Footer"
+                        },
+                        {
+                          "value": "header",
+                          "label": "Header"
+                        },
+                        {
+                          "value": "navigation",
+                          "label": "Navigation Bar"
+                        },
+                        {
+                          "value": "menu",
+                          "label": "Menu Bar"
+                        }
+                      ]
+                    },
+                    "footer_link": {
+                      "name": "Footer Link",
+                      "type": "string",
+                      "default_value": null,
+                      "value": ""
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": true,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

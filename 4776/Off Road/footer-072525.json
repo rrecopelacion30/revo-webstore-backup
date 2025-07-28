@@ -1,0 +1,794 @@
+{
+  "pageId": "footer",
+  "pageName": "Footer",
+  "pageType": null,
+  "layoutEnabled": true,
+  "moduleCategories": [
+    "header",
+    "images",
+    "text",
+    "search",
+    "categories_products",
+    "forms",
+    "navigation",
+    "footer"
+  ],
+  "VFSPath": "layouts/footer.json",
+  "requiredModules": [
+    "powered_by_rp"
+  ],
+  "scripts": null,
+  "sections": [
+    {
+      "sectionId": "section_32",
+      "htmlId": "",
+      "htmlClasses": "d-none",
+      "contentWidth": "normal",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_33",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_34",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_35",
+                  "moduleType": "powered_by_rp",
+                  "title": "Powered By RP",
+                  "options": {
+                    "rp_logo": {
+                      "name": "RP Logo Color",
+                      "type": "select",
+                      "default_value": "red",
+                      "value": null,
+                      "possible_values": [
+                        {
+                          "value": "red",
+                          "label": "Red"
+                        },
+                        {
+                          "value": "grey",
+                          "label": "Grey"
+                        },
+                        {
+                          "value": "none",
+                          "label": "None"
+                        }
+                      ]
+                    }
+                  },
+                  "htmlId": null,
+                  "htmlClasses": null,
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_12",
+      "htmlId": "",
+      "htmlClasses": "theme_footer_social themePadding",
+      "contentWidth": "wide",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_13",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_14",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_15",
+                  "moduleType": "custom_html",
+                  "title": "Social Icons",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"theme_footer_social_wrap\">\n    <h3>Follow us and the future of transportation</h3>\n    <ul class=\"theme_footer_social_list\">\n        <li>\n            <a href=\"https://www.facebook.com/RevolutionParts/\">\n                <em alt=\"facebook story sharing icon\" class=\"fa fa-facebook\"></em>\n            </a>\n        </li>\n        <li>\n            <a href=\"https://twitter.com/revolutionparts\">\n                <em alt=\"twitter story sharing icon\" class=\"fa fa-twitter\"></em>\n            </a>\n        </li>\n        <li>\n            <a href=\"https://www.instagram.com/teamrevolutionparts/\">\n                <em alt=\"Instagram\" class=\"fa fa-instagram\"></em>\n            </a>\n        </li>\n    </ul>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_36",
+      "htmlId": "",
+      "htmlClasses": "theme_footer_section",
+      "contentWidth": "wide",
+      "backgroundColor": "#000000",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_15",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_16",
+              "columnWidth": 12,
+              "htmlId": "",
+              "htmlClasses": "theme_footer_links_list",
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_82",
+                  "moduleType": "custom_html",
+                  "title": "Clone Footer",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div id=\"themeFooterClone\"></div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_17",
+                  "moduleType": "links_list",
+                  "title": "Vehicles",
+                  "options": {
+                    "links": {
+                      "name": "Links",
+                      "type": "object",
+                      "default_value": [],
+                      "value": [
+                        {
+                          "linkId": "link_22",
+                          "text": "Jeep",
+                          "url": "#",
+                          "target": "",
+                          "icon": "",
+                          "type": "direct"
+                        },
+                        {
+                          "linkId": "link_23",
+                          "text": "Ford",
+                          "url": "#",
+                          "target": "",
+                          "icon": "",
+                          "type": "direct"
+                        },
+                        {
+                          "linkId": "link_24",
+                          "text": "Toyota",
+                          "url": "#",
+                          "target": "",
+                          "icon": "",
+                          "type": "direct"
+                        },
+                        {
+                          "linkId": "link_25",
+                          "text": "Chevy",
+                          "url": "#",
+                          "target": "",
+                          "icon": "",
+                          "type": "direct"
+                        },
+                        {
+                          "linkId": "link_26",
+                          "text": "Land Rover",
+                          "url": "#",
+                          "target": "",
+                          "icon": "",
+                          "type": "direct"
+                        },
+                        {
+                          "linkId": "link_27",
+                          "text": "ATV",
+                          "url": "#",
+                          "target": "",
+                          "icon": "",
+                          "type": "direct"
+                        },
+                        {
+                          "linkId": "link_28",
+                          "text": "UTV",
+                          "url": "#",
+                          "target": "",
+                          "icon": "",
+                          "type": "direct"
+                        }
+                      ]
+                    },
+                    "links_image": {
+                      "name": "List Image",
+                      "type": "image_upload",
+                      "default_value": null,
+                      "value": ""
+                    },
+                    "links_title": {
+                      "name": "List Title",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "Vehicles"
+                    },
+                    "links_title_url": {
+                      "name": "List Title Link",
+                      "type": "string",
+                      "default_value": null,
+                      "value": ""
+                    },
+                    "links_stock": {
+                      "name": "List Style",
+                      "type": "select",
+                      "default_value": "none",
+                      "value": "none",
+                      "possible_values": [
+                        {
+                          "value": "none",
+                          "label": "None"
+                        },
+                        {
+                          "value": "mobile_menu",
+                          "label": "Mobile Menu"
+                        },
+                        {
+                          "value": "policies",
+                          "label": "Policies"
+                        }
+                      ]
+                    },
+                    "header_tag": {
+                      "name": "Header Tag",
+                      "type": "select",
+                      "default_value": "strong",
+                      "value": "strong",
+                      "possible_values": [
+                        {
+                          "value": "strong",
+                          "label": "STRONG"
+                        },
+                        {
+                          "value": "h3",
+                          "label": "H3"
+                        }
+                      ]
+                    },
+                    "links_display": {
+                      "name": "List Display",
+                      "type": "select",
+                      "default_value": "block",
+                      "value": "block",
+                      "possible_values": [
+                        {
+                          "value": "inline",
+                          "label": "Inline"
+                        },
+                        {
+                          "value": "block",
+                          "label": "Block"
+                        },
+                        {
+                          "value": "dropdown",
+                          "label": "Drop Down"
+                        }
+                      ]
+                    },
+                    "list_style": {
+                      "name": "List Style",
+                      "type": "select",
+                      "default_value": "none",
+                      "value": "none",
+                      "possible_values": [
+                        {
+                          "value": "none",
+                          "label": "No Style"
+                        },
+                        {
+                          "value": "footer",
+                          "label": "Footer"
+                        },
+                        {
+                          "value": "header",
+                          "label": "Header"
+                        },
+                        {
+                          "value": "navigation",
+                          "label": "Navigation Bar"
+                        },
+                        {
+                          "value": "menu",
+                          "label": "Menu Bar"
+                        }
+                      ]
+                    },
+                    "footer_link": {
+                      "name": "Footer Link",
+                      "type": "string",
+                      "default_value": null,
+                      "value": ""
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": true,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_70",
+                  "moduleType": "links_list",
+                  "title": "Help",
+                  "options": {
+                    "links": {
+                      "name": "Links",
+                      "type": "object",
+                      "default_value": [],
+                      "value": [
+                        {
+                          "linkId": "link_41",
+                          "text": "Contact Us",
+                          "url": "/contact-us",
+                          "target": "",
+                          "icon": "",
+                          "type": "direct"
+                        },
+                        {
+                          "linkId": "link_42",
+                          "text": "Order Status",
+                          "url": "/account/order-status",
+                          "target": "",
+                          "icon": "",
+                          "type": "direct"
+                        },
+                        {
+                          "linkId": "link_43",
+                          "text": "Shipping",
+                          "url": "#",
+                          "target": "",
+                          "icon": "",
+                          "type": "direct"
+                        },
+                        {
+                          "linkId": "link_44",
+                          "text": "Returns",
+                          "url": "/policies/returns",
+                          "target": "",
+                          "icon": "",
+                          "type": "direct"
+                        },
+                        {
+                          "linkId": "link_45",
+                          "text": "Privacy Policy",
+                          "url": "/policies/privacy",
+                          "target": "",
+                          "icon": "",
+                          "type": "direct"
+                        }
+                      ]
+                    },
+                    "links_image": {
+                      "name": "List Image",
+                      "type": "image_upload",
+                      "default_value": null,
+                      "value": ""
+                    },
+                    "links_title": {
+                      "name": "List Title",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "Help"
+                    },
+                    "links_title_url": {
+                      "name": "List Title Link",
+                      "type": "string",
+                      "default_value": null,
+                      "value": ""
+                    },
+                    "links_stock": {
+                      "name": "List Style",
+                      "type": "select",
+                      "default_value": "none",
+                      "value": "none",
+                      "possible_values": [
+                        {
+                          "value": "none",
+                          "label": "None"
+                        },
+                        {
+                          "value": "mobile_menu",
+                          "label": "Mobile Menu"
+                        },
+                        {
+                          "value": "policies",
+                          "label": "Policies"
+                        }
+                      ]
+                    },
+                    "header_tag": {
+                      "name": "Header Tag",
+                      "type": "select",
+                      "default_value": "strong",
+                      "value": "strong",
+                      "possible_values": [
+                        {
+                          "value": "strong",
+                          "label": "STRONG"
+                        },
+                        {
+                          "value": "h3",
+                          "label": "H3"
+                        }
+                      ]
+                    },
+                    "links_display": {
+                      "name": "List Display",
+                      "type": "select",
+                      "default_value": "block",
+                      "value": "block",
+                      "possible_values": [
+                        {
+                          "value": "inline",
+                          "label": "Inline"
+                        },
+                        {
+                          "value": "block",
+                          "label": "Block"
+                        },
+                        {
+                          "value": "dropdown",
+                          "label": "Drop Down"
+                        }
+                      ]
+                    },
+                    "list_style": {
+                      "name": "List Style",
+                      "type": "select",
+                      "default_value": "none",
+                      "value": "none",
+                      "possible_values": [
+                        {
+                          "value": "none",
+                          "label": "No Style"
+                        },
+                        {
+                          "value": "footer",
+                          "label": "Footer"
+                        },
+                        {
+                          "value": "header",
+                          "label": "Header"
+                        },
+                        {
+                          "value": "navigation",
+                          "label": "Navigation Bar"
+                        },
+                        {
+                          "value": "menu",
+                          "label": "Menu Bar"
+                        }
+                      ]
+                    },
+                    "footer_link": {
+                      "name": "Footer Link",
+                      "type": "string",
+                      "default_value": null,
+                      "value": ""
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": true,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_37",
+                  "moduleType": "links_list",
+                  "title": "Up To Speed",
+                  "options": {
+                    "links": {
+                      "name": "Links",
+                      "type": "object",
+                      "default_value": [],
+                      "value": [
+                        {
+                          "linkId": "link_22",
+                          "text": "About Us",
+                          "url": "/about-us",
+                          "target": "",
+                          "icon": "",
+                          "type": "direct"
+                        },
+                        {
+                          "linkId": "link_23",
+                          "text": "Articles & Guides",
+                          "url": "/articles-more",
+                          "target": "",
+                          "icon": "",
+                          "type": "direct"
+                        }
+                      ]
+                    },
+                    "links_image": {
+                      "name": "List Image",
+                      "type": "image_upload",
+                      "default_value": null,
+                      "value": ""
+                    },
+                    "links_title": {
+                      "name": "List Title",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "Up To Speed"
+                    },
+                    "links_title_url": {
+                      "name": "List Title Link",
+                      "type": "string",
+                      "default_value": null,
+                      "value": ""
+                    },
+                    "links_stock": {
+                      "name": "List Style",
+                      "type": "select",
+                      "default_value": "none",
+                      "value": "none",
+                      "possible_values": [
+                        {
+                          "value": "none",
+                          "label": "None"
+                        },
+                        {
+                          "value": "mobile_menu",
+                          "label": "Mobile Menu"
+                        },
+                        {
+                          "value": "policies",
+                          "label": "Policies"
+                        }
+                      ]
+                    },
+                    "header_tag": {
+                      "name": "Header Tag",
+                      "type": "select",
+                      "default_value": "strong",
+                      "value": "strong",
+                      "possible_values": [
+                        {
+                          "value": "strong",
+                          "label": "STRONG"
+                        },
+                        {
+                          "value": "h3",
+                          "label": "H3"
+                        }
+                      ]
+                    },
+                    "links_display": {
+                      "name": "List Display",
+                      "type": "select",
+                      "default_value": "block",
+                      "value": "block",
+                      "possible_values": [
+                        {
+                          "value": "inline",
+                          "label": "Inline"
+                        },
+                        {
+                          "value": "block",
+                          "label": "Block"
+                        },
+                        {
+                          "value": "dropdown",
+                          "label": "Drop Down"
+                        }
+                      ]
+                    },
+                    "list_style": {
+                      "name": "List Style",
+                      "type": "select",
+                      "default_value": "none",
+                      "value": "none",
+                      "possible_values": [
+                        {
+                          "value": "none",
+                          "label": "No Style"
+                        },
+                        {
+                          "value": "footer",
+                          "label": "Footer"
+                        },
+                        {
+                          "value": "header",
+                          "label": "Header"
+                        },
+                        {
+                          "value": "navigation",
+                          "label": "Navigation Bar"
+                        },
+                        {
+                          "value": "menu",
+                          "label": "Menu Bar"
+                        }
+                      ]
+                    },
+                    "footer_link": {
+                      "name": "Footer Link",
+                      "type": "string",
+                      "default_value": null,
+                      "value": ""
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": true,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "rowId": "row_62",
+          "rowLayout": 12,
+          "htmlId": "",
+          "htmlClasses": "themeFooterCloneRow",
+          "columns": [
+            {
+              "columnId": "column_63",
+              "columnWidth": 12,
+              "htmlId": "",
+              "htmlClasses": "themeFooterToClone",
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_64",
+                  "moduleType": "store_logo",
+                  "title": "Store Logo",
+                  "options": {
+                    "logo_dark_background": {
+                      "name": "Use Dark Background Logo",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    },
+                    "logo_height": {
+                      "name": "Logo Height (px)",
+                      "type": "string",
+                      "default_value": "",
+                      "value": ""
+                    },
+                    "logo_width": {
+                      "name": "Logo Width (px)",
+                      "type": "string",
+                      "default_value": "",
+                      "value": ""
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_76",
+                  "moduleType": "newsletter_signup",
+                  "title": "Newsletter Signup",
+                  "options": {
+                    "newsletter_title": {
+                      "name": "Title",
+                      "type": "string",
+                      "default_value": "Newsletter Signup",
+                      "value": "Get on the List"
+                    },
+                    "box_icon": {
+                      "name": "Icon",
+                      "type": "string",
+                      "default_value": "fa-envelope-o",
+                      "value": "fa-envelope-o"
+                    },
+                    "message": {
+                      "name": "Message",
+                      "type": "string",
+                      "default_value": "Sign up and save more",
+                      "value": "Get exclusive savings, insider information, and the latest Off Road Parts articles sent straight to your inbox"
+                    },
+                    "placeholder": {
+                      "name": "Placeholder Text",
+                      "type": "string",
+                      "default_value": "Email Address",
+                      "value": "Email Address"
+                    },
+                    "style": {
+                      "name": "Style",
+                      "type": "select",
+                      "default_value": "newsletter-inline",
+                      "value": "newsletter-inline",
+                      "possible_values": [
+                        {
+                          "value": "newsletter-inline",
+                          "label": "Inline"
+                        },
+                        {
+                          "value": "newsletter-block",
+                          "label": "Block"
+                        }
+                      ]
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
