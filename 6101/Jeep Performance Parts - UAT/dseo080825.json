@@ -1,0 +1,420 @@
+{
+  "pageId": "dynamic-seo",
+  "pageName": "Dynamic SEO Page",
+  "pageType": null,
+  "layoutEnabled": true,
+  "moduleCategories": [
+    "header",
+    "images",
+    "text",
+    "search",
+    "categories_products",
+    "forms",
+    "navigation",
+    "footer",
+    "search_page"
+  ],
+  "VFSPath": "layouts/dynamic-seo.json",
+  "requiredModules": [
+    "search_filters",
+    "search_listing"
+  ],
+  "scripts": "",
+  "sections": [
+    {
+      "sectionId": "section_1",
+      "htmlId": "themeDynamicCategorySection",
+      "htmlClasses": "themeDynamicCategorySection",
+      "contentWidth": "wide",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_2",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_3",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "left",
+              "modules": [
+                {
+                  "moduleId": "module_4",
+                  "moduleType": "page_subheader",
+                  "title": "Page Header",
+                  "options": {
+                    "show_change_vehicle": {
+                      "name": "Show Change Vehicle",
+                      "type": "boolean",
+                      "default_value": true,
+                      "value": false
+                    },
+                    "show_breadcrumbs": {
+                      "name": "Show Breadcrumbs",
+                      "type": "boolean",
+                      "default_value": true,
+                      "value": true
+                    },
+                    "show_title": {
+                      "name": "Show Title",
+                      "type": "boolean",
+                      "default_value": true,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 12,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "rowId": "row_30",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_31",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_20",
+                  "moduleType": "links_list",
+                  "title": "Filter Links List",
+                  "options": {
+                    "links": {
+                      "name": "Links",
+                      "type": "object",
+                      "default_value": [],
+                      "value": [
+                        {
+                          "linkId": "link_66",
+                          "text": "Filter & Sort",
+                          "url": "#",
+                          "target": "",
+                          "icon": "",
+                          "type": "direct"
+                        },
+                        {
+                          "linkId": "link_67",
+                          "text": "Genuine Parts",
+                          "url": "#",
+                          "target": "",
+                          "icon": "",
+                          "type": "direct"
+                        },
+                        {
+                          "linkId": "link_68",
+                          "text": "Aftermarket Parts",
+                          "url": "#",
+                          "target": "",
+                          "icon": "",
+                          "type": "direct"
+                        }
+                      ]
+                    },
+                    "links_image": {
+                      "name": "List Image",
+                      "type": "image_upload",
+                      "default_value": null,
+                      "value": ""
+                    },
+                    "links_title": {
+                      "name": "List Title",
+                      "type": "string",
+                      "default_value": null,
+                      "value": ""
+                    },
+                    "links_title_url": {
+                      "name": "List Title Link",
+                      "type": "string",
+                      "default_value": null,
+                      "value": ""
+                    },
+                    "links_stock": {
+                      "name": "List Style",
+                      "type": "select",
+                      "default_value": "none",
+                      "value": "none",
+                      "possible_values": [
+                        {
+                          "value": "none",
+                          "label": "None"
+                        },
+                        {
+                          "value": "mobile_menu",
+                          "label": "Mobile Menu"
+                        },
+                        {
+                          "value": "policies",
+                          "label": "Policies"
+                        }
+                      ]
+                    },
+                    "header_tag": {
+                      "name": "Header Tag",
+                      "type": "select",
+                      "default_value": "strong",
+                      "value": "strong",
+                      "possible_values": [
+                        {
+                          "value": "strong",
+                          "label": "STRONG"
+                        },
+                        {
+                          "value": "h3",
+                          "label": "H3"
+                        }
+                      ]
+                    },
+                    "links_display": {
+                      "name": "List Display",
+                      "type": "select",
+                      "default_value": "block",
+                      "value": "block",
+                      "possible_values": [
+                        {
+                          "value": "inline",
+                          "label": "Inline"
+                        },
+                        {
+                          "value": "block",
+                          "label": "Block"
+                        },
+                        {
+                          "value": "dropdown",
+                          "label": "Drop Down"
+                        }
+                      ]
+                    },
+                    "list_style": {
+                      "name": "List Style",
+                      "type": "select",
+                      "default_value": "none",
+                      "value": "none",
+                      "possible_values": [
+                        {
+                          "value": "none",
+                          "label": "No Style"
+                        },
+                        {
+                          "value": "footer",
+                          "label": "Footer"
+                        },
+                        {
+                          "value": "header",
+                          "label": "Header"
+                        },
+                        {
+                          "value": "navigation",
+                          "label": "Navigation Bar"
+                        },
+                        {
+                          "value": "menu",
+                          "label": "Menu Bar"
+                        }
+                      ]
+                    },
+                    "footer_link": {
+                      "name": "Footer Link",
+                      "type": "string",
+                      "default_value": null,
+                      "value": ""
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "themeCategoryFilterLinkList",
+                  "minColumnWidth": 0,
+                  "customAdmin": true,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_5",
+                  "moduleType": "search_filters",
+                  "title": "Search Filters",
+                  "options": {
+                    "display_vehicle_filters": {
+                      "name": "Display Vehicle Filters",
+                      "type": "boolean",
+                      "default_value": true,
+                      "value": true
+                    },
+                    "display_facet_filters": {
+                      "name": "Display Facet Filters",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": true
+                    },
+                    "display_category_tree": {
+                      "name": "Display Category Tree",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "themeCategoryFlyoutFilter",
+                  "minColumnWidth": 12,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "rowId": "row_72",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_73",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_6",
+                  "moduleType": "search_listing",
+                  "title": "Search Page",
+                  "options": {
+                    "hide_on_empty": {
+                      "name": "Hide on Empty?",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    },
+                    "no_results_message": {
+                      "name": "No Results Message",
+                      "type": "html_content",
+                      "default_value": "<p>No results found{?search_str} for <strong>\"</strong><strong>{search_str}\"</strong>{/search_str}. Here are some helpful search tips: <br></p><ul><li>Search by a part name. Example:&nbsp;water pump.</li><li>Be less specific. Example:&nbsp;brake&nbsp;instead of&nbsp;ceramic brake.</li><li>Remove information such as make, year or model.</li><li>Can't find the part you are looking for? Contact us and&nbsp;we'll find it for you!</li></ul><p><br></p>",
+                      "value": "<p>No results found{?search_str} for <strong>\"</strong><strong>{search_str}\"</strong>{/search_str}. Here are some helpful search tips: <br></p><ul><li>Search by a part name. Example:&nbsp;water pump.</li><li>Be less specific. Example:&nbsp;brake&nbsp;instead of&nbsp;ceramic brake.</li><li>Remove information such as make, year or model.</li><li>Can't find the part you are looking for? Contact us and&nbsp;we'll find it for you!</li></ul><p><br></p>"
+                    },
+                    "image_size": {
+                      "name": "Image Size",
+                      "type": "select",
+                      "default_value": "module.search_listing.option.image_size.small",
+                      "value": "large",
+                      "possible_values": [
+                        {
+                          "value": "small",
+                          "label": "Small"
+                        },
+                        {
+                          "value": "medium",
+                          "label": "Medium"
+                        },
+                        {
+                          "value": "large",
+                          "label": "Large"
+                        }
+                      ]
+                    },
+                    "display_msrp": {
+                      "name": "Display MSRP",
+                      "type": "boolean",
+                      "default_value": true,
+                      "value": true
+                    },
+                    "listing_display": {
+                      "name": "Listing columns",
+                      "type": "select",
+                      "default_value": "1",
+                      "value": "1",
+                      "possible_values": [
+                        {
+                          "value": "1",
+                          "label": "1"
+                        },
+                        {
+                          "value": "2",
+                          "label": "2"
+                        },
+                        {
+                          "value": "3",
+                          "label": "3"
+                        },
+                        {
+                          "value": "4",
+                          "label": "4"
+                        }
+                      ]
+                    },
+                    "msrp_custom_label": {
+                      "name": "MSRP Display Text",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "",
+                      "placeholder": "MSRP"
+                    },
+                    "brand_link_label": {
+                      "name": "Display Text for Brand Link",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "Shop all [Brand] products",
+                      "caption": "Maximum characters: 40",
+                      "placeholder": "Shop all [Brand] products"
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 12,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_1",
+                  "moduleType": "custom_html",
+                  "title": "Custom HTML",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": ""
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": null,
+                  "htmlClasses": null,
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
