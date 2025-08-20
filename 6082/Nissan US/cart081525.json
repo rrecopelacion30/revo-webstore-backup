@@ -1,0 +1,1103 @@
+{
+  "pageId": "cart",
+  "pageName": "Cart Page",
+  "pageType": null,
+  "layoutEnabled": true,
+  "moduleCategories": [
+    "header",
+    "images",
+    "text",
+    "search",
+    "categories_products",
+    "forms",
+    "navigation",
+    "footer",
+    "cart_page"
+  ],
+  "VFSPath": "layouts/cart.json",
+  "requiredModules": [
+    "cart_checkout",
+    "cart_subtotal",
+    "cart_listing"
+  ],
+  "scripts": null,
+  "sections": [
+    {
+      "sectionId": "section_1",
+      "htmlId": "",
+      "htmlClasses": "",
+      "contentWidth": "wide",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_2",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_3",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "left",
+              "modules": [
+                {
+                  "moduleId": "module_27",
+                  "moduleType": "page_subheader",
+                  "title": "Page Subheader",
+                  "options": {
+                    "show_change_vehicle": {
+                      "name": "Show Change Vehicle",
+                      "type": "boolean",
+                      "default_value": true,
+                      "value": false
+                    },
+                    "show_breadcrumbs": {
+                      "name": "Show Breadcrumbs",
+                      "type": "boolean",
+                      "default_value": true,
+                      "value": true
+                    },
+                    "show_title": {
+                      "name": "Show Title",
+                      "type": "boolean",
+                      "default_value": true,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_1",
+                  "moduleType": "page_title",
+                  "title": "Title",
+                  "options": {},
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 12,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "rowId": "row_3",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_4",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "left",
+              "modules": [
+                {
+                  "moduleId": "module_5",
+                  "moduleType": "cart_checkout",
+                  "title": "Checkout (Top)",
+                  "options": {},
+                  "htmlId": "",
+                  "htmlClasses": "cart-button-top",
+                  "minColumnWidth": 12,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_6",
+                  "moduleType": "cart_listing",
+                  "title": "Cart Listing",
+                  "options": {},
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 12,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "rowId": "row_6",
+          "rowLayout": "8_4",
+          "htmlId": "",
+          "htmlClasses": "cart-subtotal-row",
+          "columns": [
+            {
+              "columnId": "column_7",
+              "columnWidth": 8,
+              "htmlId": "",
+              "htmlClasses": "themeCartAccessories",
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_22",
+                  "moduleType": "single_sku_cross_sell",
+                  "title": "Single SKU Cross Sell",
+                  "options": {
+                    "sku": {
+                      "name": "SKU #",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "F8800-8992D",
+                      "placeholder": null
+                    },
+                    "catalog": {
+                      "name": "Catalog",
+                      "type": "select",
+                      "default_value": "",
+                      "value": "nissan",
+                      "validate": "validate_required",
+                      "possible_values": [
+                        {
+                          "value": "",
+                          "label": "Select catalog"
+                        }
+                      ]
+                    },
+                    "action_button_label": {
+                      "name": "Action button label",
+                      "type": "string",
+                      "default_value": "Add to Cart",
+                      "value": "Add to Cart",
+                      "placeholder": null
+                    },
+                    "layout": {
+                      "name": "Layout",
+                      "type": "select",
+                      "default_value": "horizontal",
+                      "value": "horizontal",
+                      "possible_values": [
+                        {
+                          "value": "horizontal",
+                          "label": "Horizontal"
+                        },
+                        {
+                          "value": "vertical",
+                          "label": "Vertical"
+                        }
+                      ]
+                    },
+                    "product_message": {
+                      "name": "Product Message",
+                      "type": "html_content",
+                      "default_value": "<p><strong>Special Offer!</strong><br></p>",
+                      "caption": "Maximum characters: 140",
+                      "value": "<p><strong>Special Offer!</strong><br></p>"
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_28",
+                  "moduleType": "single_sku_cross_sell",
+                  "title": "Single SKU Cross Sell",
+                  "options": {
+                    "sku": {
+                      "name": "SKU #",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "999A3-SZ000",
+                      "placeholder": null
+                    },
+                    "catalog": {
+                      "name": "Catalog",
+                      "type": "select",
+                      "default_value": "",
+                      "value": "nissan",
+                      "validate": "validate_required",
+                      "possible_values": [
+                        {
+                          "value": "",
+                          "label": "Select catalog"
+                        }
+                      ]
+                    },
+                    "action_button_label": {
+                      "name": "Action button label",
+                      "type": "string",
+                      "default_value": "Add to Cart",
+                      "value": "Add to Cart",
+                      "placeholder": null
+                    },
+                    "layout": {
+                      "name": "Layout",
+                      "type": "select",
+                      "default_value": "horizontal",
+                      "value": "horizontal",
+                      "possible_values": [
+                        {
+                          "value": "horizontal",
+                          "label": "Horizontal"
+                        },
+                        {
+                          "value": "vertical",
+                          "label": "Vertical"
+                        }
+                      ]
+                    },
+                    "product_message": {
+                      "name": "Product Message",
+                      "type": "html_content",
+                      "default_value": "<p><strong>Special Offer!</strong><br></p>",
+                      "caption": "Maximum characters: 140",
+                      "value": "<p><strong>Special Offer!</strong><br></p>"
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_34",
+                  "moduleType": "single_sku_cross_sell",
+                  "title": "Single SKU Cross Sell",
+                  "options": {
+                    "sku": {
+                      "name": "SKU #",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "999M1-ST000",
+                      "placeholder": null
+                    },
+                    "catalog": {
+                      "name": "Catalog",
+                      "type": "select",
+                      "default_value": "",
+                      "value": "nissan",
+                      "validate": "validate_required",
+                      "possible_values": [
+                        {
+                          "value": "",
+                          "label": "Select catalog"
+                        }
+                      ]
+                    },
+                    "action_button_label": {
+                      "name": "Action button label",
+                      "type": "string",
+                      "default_value": "Add to Cart",
+                      "value": "Add to Cart",
+                      "placeholder": null
+                    },
+                    "layout": {
+                      "name": "Layout",
+                      "type": "select",
+                      "default_value": "horizontal",
+                      "value": "horizontal",
+                      "possible_values": [
+                        {
+                          "value": "horizontal",
+                          "label": "Horizontal"
+                        },
+                        {
+                          "value": "vertical",
+                          "label": "Vertical"
+                        }
+                      ]
+                    },
+                    "product_message": {
+                      "name": "Product Message",
+                      "type": "html_content",
+                      "default_value": "<p><strong>Special Offer!</strong><br></p>",
+                      "caption": "Maximum characters: 140",
+                      "value": "<p><strong>Special Offer!</strong><br></p>"
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_41",
+                  "moduleType": "single_sku_cross_sell",
+                  "title": "Single SKU Cross Sell",
+                  "options": {
+                    "sku": {
+                      "name": "SKU #",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "T99U4-9BU1A",
+                      "placeholder": null
+                    },
+                    "catalog": {
+                      "name": "Catalog",
+                      "type": "select",
+                      "default_value": "",
+                      "value": "nissan",
+                      "validate": "validate_required",
+                      "possible_values": [
+                        {
+                          "value": "",
+                          "label": "Select catalog"
+                        }
+                      ]
+                    },
+                    "action_button_label": {
+                      "name": "Action button label",
+                      "type": "string",
+                      "default_value": "Add to Cart",
+                      "value": "Add to Cart",
+                      "placeholder": null
+                    },
+                    "layout": {
+                      "name": "Layout",
+                      "type": "select",
+                      "default_value": "horizontal",
+                      "value": "horizontal",
+                      "possible_values": [
+                        {
+                          "value": "horizontal",
+                          "label": "Horizontal"
+                        },
+                        {
+                          "value": "vertical",
+                          "label": "Vertical"
+                        }
+                      ]
+                    },
+                    "product_message": {
+                      "name": "Product Message",
+                      "type": "html_content",
+                      "default_value": "<p><strong>Special Offer!</strong><br></p>",
+                      "caption": "Maximum characters: 140",
+                      "value": "<p><strong>Special Offer!</strong><br></p>"
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_47",
+                  "moduleType": "single_sku_cross_sell",
+                  "title": "Single SKU Cross Sell",
+                  "options": {
+                    "sku": {
+                      "name": "SKU #",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "T99Q7-6SA3A",
+                      "placeholder": null
+                    },
+                    "catalog": {
+                      "name": "Catalog",
+                      "type": "select",
+                      "default_value": "",
+                      "value": "nissan",
+                      "validate": "validate_required",
+                      "possible_values": [
+                        {
+                          "value": "",
+                          "label": "Select catalog"
+                        }
+                      ]
+                    },
+                    "action_button_label": {
+                      "name": "Action button label",
+                      "type": "string",
+                      "default_value": "Add to Cart",
+                      "value": "Add to Cart",
+                      "placeholder": null
+                    },
+                    "layout": {
+                      "name": "Layout",
+                      "type": "select",
+                      "default_value": "horizontal",
+                      "value": "horizontal",
+                      "possible_values": [
+                        {
+                          "value": "horizontal",
+                          "label": "Horizontal"
+                        },
+                        {
+                          "value": "vertical",
+                          "label": "Vertical"
+                        }
+                      ]
+                    },
+                    "product_message": {
+                      "name": "Product Message",
+                      "type": "html_content",
+                      "default_value": "<p><strong>Special Offer!</strong><br></p>",
+                      "caption": "Maximum characters: 140",
+                      "value": "<p><strong>Special Offer!</strong><br></p>"
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_53",
+                  "moduleType": "single_sku_cross_sell",
+                  "title": "Single SKU Cross Sell",
+                  "options": {
+                    "sku": {
+                      "name": "SKU #",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "T99A7-6TA0A",
+                      "placeholder": null
+                    },
+                    "catalog": {
+                      "name": "Catalog",
+                      "type": "select",
+                      "default_value": "",
+                      "value": "nissan",
+                      "validate": "validate_required",
+                      "possible_values": [
+                        {
+                          "value": "",
+                          "label": "Select catalog"
+                        }
+                      ]
+                    },
+                    "action_button_label": {
+                      "name": "Action button label",
+                      "type": "string",
+                      "default_value": "Add to Cart",
+                      "value": "Add to Cart",
+                      "placeholder": null
+                    },
+                    "layout": {
+                      "name": "Layout",
+                      "type": "select",
+                      "default_value": "horizontal",
+                      "value": "horizontal",
+                      "possible_values": [
+                        {
+                          "value": "horizontal",
+                          "label": "Horizontal"
+                        },
+                        {
+                          "value": "vertical",
+                          "label": "Vertical"
+                        }
+                      ]
+                    },
+                    "product_message": {
+                      "name": "Product Message",
+                      "type": "html_content",
+                      "default_value": "<p><strong>Special Offer!</strong><br></p>",
+                      "caption": "Maximum characters: 140",
+                      "value": "<p><strong>Special Offer!</strong><br></p>"
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_59",
+                  "moduleType": "single_sku_cross_sell",
+                  "title": "Single SKU Cross Sell",
+                  "options": {
+                    "sku": {
+                      "name": "SKU #",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "T99A7-6TA1A",
+                      "placeholder": null
+                    },
+                    "catalog": {
+                      "name": "Catalog",
+                      "type": "select",
+                      "default_value": "",
+                      "value": "nissan",
+                      "validate": "validate_required",
+                      "possible_values": [
+                        {
+                          "value": "",
+                          "label": "Select catalog"
+                        }
+                      ]
+                    },
+                    "action_button_label": {
+                      "name": "Action button label",
+                      "type": "string",
+                      "default_value": "Add to Cart",
+                      "value": "Add to Cart",
+                      "placeholder": null
+                    },
+                    "layout": {
+                      "name": "Layout",
+                      "type": "select",
+                      "default_value": "horizontal",
+                      "value": "horizontal",
+                      "possible_values": [
+                        {
+                          "value": "horizontal",
+                          "label": "Horizontal"
+                        },
+                        {
+                          "value": "vertical",
+                          "label": "Vertical"
+                        }
+                      ]
+                    },
+                    "product_message": {
+                      "name": "Product Message",
+                      "type": "html_content",
+                      "default_value": "<p><strong>Special Offer!</strong><br></p>",
+                      "caption": "Maximum characters: 140",
+                      "value": "<p><strong>Special Offer!</strong><br></p>"
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_65",
+                  "moduleType": "single_sku_cross_sell",
+                  "title": "Single SKU Cross Sell",
+                  "options": {
+                    "sku": {
+                      "name": "SKU #",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "T99W2-A7010",
+                      "placeholder": null
+                    },
+                    "catalog": {
+                      "name": "Catalog",
+                      "type": "select",
+                      "default_value": "",
+                      "value": "nissan",
+                      "validate": "validate_required",
+                      "possible_values": [
+                        {
+                          "value": "",
+                          "label": "Select catalog"
+                        }
+                      ]
+                    },
+                    "action_button_label": {
+                      "name": "Action button label",
+                      "type": "string",
+                      "default_value": "Add to Cart",
+                      "value": "Add to Cart",
+                      "placeholder": null
+                    },
+                    "layout": {
+                      "name": "Layout",
+                      "type": "select",
+                      "default_value": "horizontal",
+                      "value": "horizontal",
+                      "possible_values": [
+                        {
+                          "value": "horizontal",
+                          "label": "Horizontal"
+                        },
+                        {
+                          "value": "vertical",
+                          "label": "Vertical"
+                        }
+                      ]
+                    },
+                    "product_message": {
+                      "name": "Product Message",
+                      "type": "html_content",
+                      "default_value": "<p><strong>Special Offer!</strong><br></p>",
+                      "caption": "Maximum characters: 140",
+                      "value": "<p><strong>Special Offer!</strong><br></p>"
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            },
+            {
+              "columnId": "column_8",
+              "columnWidth": 4,
+              "htmlId": "",
+              "htmlClasses": "",
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_3",
+                  "moduleType": "cart_subtotal",
+                  "title": "Cart Subtotal Box",
+                  "options": {},
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_7",
+                  "moduleType": "payments_messaging",
+                  "title": "Payments Messaging",
+                  "options": {},
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_2",
+                  "moduleType": "collect_vin_form",
+                  "title": "Collect VIN Form",
+                  "options": {
+                    "vin_message": {
+                      "name": "VIN Message",
+                      "type": "html_content",
+                      "default_value": "<p>Make sure your parts fit your vehicle. Provide your VIN and we will confirm fitment for you.</p>",
+                      "value": ""
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "rowId": "row_22",
+          "rowLayout": "8_4",
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_23",
+              "columnWidth": 8,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_12",
+                  "moduleType": "custom_html",
+                  "title": "Cyber Promo",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"themeBannerWrapper\">\n    <ul class=\"themeBannerList\">\n       <li class=\"themeBannerItem themeBannerItemCyber\">\n            <div class=\"themeBannerCard\">\n                <div class=\"themeBannerImage\">\n                    \n                </div>\n                <div class=\"themeBannerHpContent\">\n                    <div class=\"themeBannerHpContentImages\">\n                        <img class=\"v-sp\" src=\"https://rparts-sites.s3.amazonaws.com/223b3e40451187171b9a7229149b1553/design/cyber/banner-text-mobile-new.svg\" alt=\"Nissan Cyber\">\n                        <img class=\"v-pc\" src=\"https://rparts-sites.s3.amazonaws.com/223b3e40451187171b9a7229149b1553/design/cyber/banner-text-new.svg\" alt=\"Nissan Cyber\">\n                        <div class=\"themeAccessoriesDisclaimerWrap\"> \n                            <div class=\"themeAccessoriesDisclaimerButton\"></div> \n                            <div class=\"themeAccessoriesDisclaimerBox\">\n                                Promotion valid online from 11/17/2024 through 12/21/2024 on select accessory purchases fulfilled by U.S. Nissan and INFINITI dealers only. Exclusions apply. Not valid on Tires, OMNIPARTS Automotive Parts, Virtual Key or Dual Camera Drive Recorder, Genuine Branded Merchandise, ICON Lift Kits, Yakima Accessories, or Japan Domestic Market (JDM) parts, accessories, merchandise and Motorsports parts. Does not include applicable taxes, installation or shipping and handling charges. Other restrictions may apply. See participating US retailer for details. Price and offer availability may vary by model. Void where prohibited. No cash value. Code must be entered at time of purchase.\n                            </div> \n                        </div>\n                    </div>\n                        <div class=\"themeBannerButton\">\n                            <a href=\"/accessories\"><p>Shop Now</p></a>\n                        </div>\n                </div>\n            </div>\n        </li>\n    </ul>\n  </div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "cartCyberPromo",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            },
+            {
+              "columnId": "column_24",
+              "columnWidth": 4,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": []
+            }
+          ]
+        },
+        {
+          "rowId": "row_1",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_2",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_4",
+                  "moduleType": "custom_html",
+                  "title": "Popular Pet Accessories",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<h3>Popular Pet Accessories</h3><p>Nissan has a full portfolio of Genuine Nissan <a href=\"https://parts.nissanusa.com/go/Nissan-Pet-Accessories.html\">Pet Accessories</a> to outfit your furry friend and vehicle for the road ahead! <strong><a href=\"https://parts.nissanusa.com/go/Nissan-Pet-Accessories.html\">View All Pet Accessories</a></strong></p>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "rowId": "row_7",
+          "rowLayout": "3_3_3_3",
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_9",
+              "columnWidth": 3,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_21",
+                  "moduleType": "single_sku_cross_sell",
+                  "title": "Single SKU Cross Sell",
+                  "options": {
+                    "sku": {
+                      "name": "SKU #",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "T99C3-6MA0P",
+                      "placeholder": null
+                    },
+                    "catalog": {
+                      "name": "Catalog",
+                      "type": "select",
+                      "default_value": "",
+                      "value": "nissan",
+                      "validate": "validate_required",
+                      "possible_values": [
+                        {
+                          "value": "",
+                          "label": "Select catalog"
+                        }
+                      ]
+                    },
+                    "action_button_label": {
+                      "name": "Action button label",
+                      "type": "string",
+                      "default_value": "Add to Cart",
+                      "value": "Add to Cart",
+                      "placeholder": null
+                    },
+                    "layout": {
+                      "name": "Layout",
+                      "type": "select",
+                      "default_value": "horizontal",
+                      "value": "horizontal",
+                      "possible_values": [
+                        {
+                          "value": "horizontal",
+                          "label": "Horizontal"
+                        },
+                        {
+                          "value": "vertical",
+                          "label": "Vertical"
+                        }
+                      ]
+                    },
+                    "product_message": {
+                      "name": "Product Message",
+                      "type": "html_content",
+                      "default_value": "<p><strong>Special Offer!</strong><br></p>",
+                      "caption": "Maximum characters: 140",
+                      "value": ""
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            },
+            {
+              "columnId": "column_10",
+              "columnWidth": 3,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_37",
+                  "moduleType": "single_sku_cross_sell",
+                  "title": "Single SKU Cross Sell",
+                  "options": {
+                    "sku": {
+                      "name": "SKU #",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "T99H2-6TA0B",
+                      "placeholder": null
+                    },
+                    "catalog": {
+                      "name": "Catalog",
+                      "type": "select",
+                      "default_value": "",
+                      "value": "nissan",
+                      "validate": "validate_required",
+                      "possible_values": [
+                        {
+                          "value": "",
+                          "label": "Select catalog"
+                        }
+                      ]
+                    },
+                    "action_button_label": {
+                      "name": "Action button label",
+                      "type": "string",
+                      "default_value": "Add to Cart",
+                      "value": "Add to Cart",
+                      "placeholder": null
+                    },
+                    "layout": {
+                      "name": "Layout",
+                      "type": "select",
+                      "default_value": "horizontal",
+                      "value": "horizontal",
+                      "possible_values": [
+                        {
+                          "value": "horizontal",
+                          "label": "Horizontal"
+                        },
+                        {
+                          "value": "vertical",
+                          "label": "Vertical"
+                        }
+                      ]
+                    },
+                    "product_message": {
+                      "name": "Product Message",
+                      "type": "html_content",
+                      "default_value": "<p><strong>Special Offer!</strong><br></p>",
+                      "caption": "Maximum characters: 140",
+                      "value": ""
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            },
+            {
+              "columnId": "column_15",
+              "columnWidth": 3,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_15",
+                  "moduleType": "single_sku_cross_sell",
+                  "title": "Single SKU Cross Sell",
+                  "options": {
+                    "sku": {
+                      "name": "SKU #",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "T99N4-6TA0P",
+                      "placeholder": null
+                    },
+                    "catalog": {
+                      "name": "Catalog",
+                      "type": "select",
+                      "default_value": "",
+                      "value": "nissan",
+                      "validate": "validate_required",
+                      "possible_values": [
+                        {
+                          "value": "",
+                          "label": "Select catalog"
+                        }
+                      ]
+                    },
+                    "action_button_label": {
+                      "name": "Action button label",
+                      "type": "string",
+                      "default_value": "Add to Cart",
+                      "value": "Add to Cart",
+                      "placeholder": null
+                    },
+                    "layout": {
+                      "name": "Layout",
+                      "type": "select",
+                      "default_value": "horizontal",
+                      "value": "horizontal",
+                      "possible_values": [
+                        {
+                          "value": "horizontal",
+                          "label": "Horizontal"
+                        },
+                        {
+                          "value": "vertical",
+                          "label": "Vertical"
+                        }
+                      ]
+                    },
+                    "product_message": {
+                      "name": "Product Message",
+                      "type": "html_content",
+                      "default_value": "<p><strong>Special Offer!</strong><br></p>",
+                      "caption": "Maximum characters: 140",
+                      "value": ""
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            },
+            {
+              "columnId": "column_16",
+              "columnWidth": 3,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_31",
+                  "moduleType": "single_sku_cross_sell",
+                  "title": "Single SKU Cross Sell",
+                  "options": {
+                    "sku": {
+                      "name": "SKU #",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "T99H1-6TA0A",
+                      "placeholder": null
+                    },
+                    "catalog": {
+                      "name": "Catalog",
+                      "type": "select",
+                      "default_value": "",
+                      "value": "nissan",
+                      "validate": "validate_required",
+                      "possible_values": [
+                        {
+                          "value": "",
+                          "label": "Select catalog"
+                        }
+                      ]
+                    },
+                    "action_button_label": {
+                      "name": "Action button label",
+                      "type": "string",
+                      "default_value": "Add to Cart",
+                      "value": "Add to Cart",
+                      "placeholder": null
+                    },
+                    "layout": {
+                      "name": "Layout",
+                      "type": "select",
+                      "default_value": "horizontal",
+                      "value": "horizontal",
+                      "possible_values": [
+                        {
+                          "value": "horizontal",
+                          "label": "Horizontal"
+                        },
+                        {
+                          "value": "vertical",
+                          "label": "Vertical"
+                        }
+                      ]
+                    },
+                    "product_message": {
+                      "name": "Product Message",
+                      "type": "html_content",
+                      "default_value": "<p><strong>Special Offer!</strong><br></p>",
+                      "caption": "Maximum characters: 140",
+                      "value": ""
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
