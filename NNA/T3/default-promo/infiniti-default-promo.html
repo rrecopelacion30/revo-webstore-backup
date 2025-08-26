@@ -1,0 +1,117 @@
+<style>
+    .v-pc {
+        display: block !important;
+    }
+    @media screen and (max-width: 767px) {
+        .v-pc {
+            display: none !important;
+        }
+    }
+    .v-sp {
+        display: none !important;
+    }
+    @media screen and (max-width: 767px) {
+        .v-sp {
+            display: block !important;
+        }
+    }
+    .themeBannerImage {
+        height: 500px;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+    }
+    @media screen and (max-width: 1440px) {
+        .themeBannerImage {
+            background-position: 80% 50%;
+        }
+    }
+    @media screen and (max-width: 767px) {
+        .themeBannerImage {
+            height: 500px;
+            background-size: cover;
+        }
+    }
+    .themeBannerContent p {
+        position: relative !important;
+    }
+    .themeBannerTermWrap {
+        position: static !important;
+        display: inline-block !important;
+    }
+    .themeBannerTermBox {
+        width: auto !important;
+        height: auto !important;
+        right: 0;
+    }
+    @media screen and (max-width: 767px) {
+        .themeBannerTermBox {
+            height: 100px !important;
+        }
+    }
+    #themeBannerList .owl-dots.disabled .owl-dot.active span {
+        display: none;
+    }
+    #search-tabs .tab-content .call-to-action-button {
+    	display: inline-block;
+        font-size: 14px;
+        padding: 0px 15px;
+        border: 2px solid #B0A591;
+        background-color: #B0A591;
+        text-align: left;
+        color: var(--themeColor);
+        font-family: var(--themeFontLight);
+        letter-spacing: .05em;
+        position: relative;
+        line-height: 30px;
+    }
+    #search-tabs .tab-content .call-to-action-button::before {
+    	content: "";
+        width: 9px;
+        height: 9px;
+        border: solid var(--themeColor);
+        border-width: 1px 0 0 1px;
+        position: absolute;
+        right: 20px;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        transform: rotate(135deg);
+    }
+    #search-tabs .tab-content .call-to-action-button:hover::before {
+        border: solid var(--themeButtonColor);
+    	border-width: 1px 0 0 1px;
+    }
+    #search-tabs .tab-content .call-to-action-button:hover,
+    #search-tabs .tab-content .call-to-action-button:focus {
+    	text-decoration: none;
+        color: #B0A591;
+        background-color: transparent;
+    }
+    .themeBannerContentBox {
+    max-width: 575px;
+    width: 100%;
+	}
+</style>
+<div class="themeBannerWrapper">
+  <ul class="themeBannerList">
+    <li class="themeBannerItem">
+      <div class="themeBannerCard">
+        <div class="themeBannerImage">
+          <img class="v-pc" src="https://rparts-sites.s3.amazonaws.com/b6fdbad66389e181c0036ce75e53ddc9/design/2025promo/evergreen/inf_aug_desktop_t3.webp" alt="Genuine INFINITI OEM Parts and Accessories Desktop">
+          <img class="v-sp" src="https://rparts-sites.s3.amazonaws.com/b6fdbad66389e181c0036ce75e53ddc9/design/2025promo/evergreen/inf_aug_mobile_all_b.webp" alt="Genuine INFINITI OEM Parts and Accessories Mobile">
+        </div>
+        <div class="themeBannerContent">
+          <div class="themeBannerContentBox">
+              <p class="h1">Genuine INFINITI Parts & Accessories</p>
+              
+              <div class="themeBannerButton">
+                <a href="javascript:openVehiclePicker();" class="themeBannerCard">
+                  Shop Now
+                </a>
+              </div>
+          </div>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
