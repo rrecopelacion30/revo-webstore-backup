@@ -1,0 +1,116 @@
+/* menu dropdown 071625 */
+#themeNewDropDownMenuSection .dropdownWrapper {
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.d-none{
+	display: none;
+}
+
+#featured-custom .product-wrapper-link {
+    height: 360px;
+}
+.vehicle-picker-module .browse_catalog:hover, .vehicle-picker-module .vpicker-submit:hover {
+    background-color: #e6283f;
+}
+.featured-products-module .product-wrapper-link .product-details-link {
+    position: absolute;
+    top: 100%;
+    left: 2px;
+    right: 2px;
+    height: 0;
+    background-color: #C4172C;
+    color: #fff;
+    border-top: none;
+    text-align: center;
+    line-height: 30px;
+    font-weight: 700;
+    border-radius: 0 0 2px 2px;
+    overflow: hidden;
+    transition: height .3s ease;
+}
+.promotional-banner-wrap.text-wrapping {
+    background-color: #c71919!important; }
+
+.promotional-banner-text {
+    color: #fff;
+    text-shadow: 2px 2px 2px #000;
+    font-size: 15px!important; }
+.payment-message-display {
+    display: flex;
+    justify-content: end;
+    padding-right: 10%;
+}
+
+.promotional-banner-wrap {
+  background-color: red !important;
+}
+.promotional-banner-text {
+  color: white;
+  font-size: 18px !important;
+  animation-name: pulse;
+  animation-duration: 3s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+}
+.promotional-banner-link {
+  color: white !important;
+}
+@keyframes pulse {
+  0% {transform: scale(1);}
+  15% {transform: scale(1.1);}
+  45% {transform: scale(1);}
+}
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: #f4f4f4;
+  color: black;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #cfcbcb;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 300px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 51;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd}
+
+/* Add or remove this to hide or show */
+.hide {display:none;}
+
+/* Hidding Footnote */
+.footnotes {
+	display: none!important;
+}

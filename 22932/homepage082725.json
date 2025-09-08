@@ -1,0 +1,545 @@
+{
+  "pageId": "homepage",
+  "pageName": "Home Page",
+  "pageType": null,
+  "layoutEnabled": true,
+  "moduleCategories": [
+    "header",
+    "images",
+    "text",
+    "search",
+    "categories_products",
+    "forms",
+    "navigation",
+    "footer"
+  ],
+  "VFSPath": "layouts/homepage.json",
+  "requiredModules": [
+    "featured_products"
+  ],
+  "scripts": null,
+  "sections": [
+    {
+      "sectionId": "section_1",
+      "htmlId": "",
+      "htmlClasses": "themeVehicleSelectorSection",
+      "contentWidth": "wide",
+      "backgroundColor": "#000000",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_2",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_3",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_4",
+                  "moduleType": "vehicle_picker_dropdowns",
+                  "title": "Vehicle Picker Dropdowns",
+                  "options": {
+                    "title": {
+                      "name": "Picker Title",
+                      "type": "string",
+                      "default_value": "Select Your Vehicle",
+                      "value": "Select Your Vehicle"
+                    },
+                    "redirect_uri": {
+                      "name": "Redirect URL",
+                      "type": "string",
+                      "default_value": null,
+                      "value": ""
+                    },
+                    "select_button_text": {
+                      "name": "Select Button Text",
+                      "type": "string",
+                      "default_value": "Select",
+                      "value": "Search"
+                    },
+                    "make_text": {
+                      "name": "Select Make Text",
+                      "type": "string",
+                      "default_value": "",
+                      "value": ""
+                    },
+                    "model_text": {
+                      "name": "Select Model Text",
+                      "type": "string",
+                      "default_value": "",
+                      "value": ""
+                    },
+                    "year_text": {
+                      "name": "Select Year Text",
+                      "type": "string",
+                      "default_value": "",
+                      "value": ""
+                    },
+                    "trim_text": {
+                      "name": "Select Trim Text",
+                      "type": "string",
+                      "default_value": "",
+                      "value": ""
+                    },
+                    "engine_text": {
+                      "name": "Select Engine Text",
+                      "type": "string",
+                      "default_value": "",
+                      "value": ""
+                    },
+                    "use_button_submit": {
+                      "name": "Save on Button Click",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": true
+                    },
+                    "show_filters": {
+                      "name": "Show filter input in dropdown",
+                      "type": "boolean",
+                      "default_value": true,
+                      "value": true
+                    },
+                    "filter_placeholder": {
+                      "name": "Filter placeholder text",
+                      "type": "string",
+                      "default_value": "Filter",
+                      "value": "Filter"
+                    },
+                    "style": {
+                      "name": "Display",
+                      "type": "select",
+                      "possible_values": [
+                        {
+                          "value": "classic",
+                          "label": "Classic"
+                        },
+                        {
+                          "value": "inline",
+                          "label": "Horizontal"
+                        }
+                      ],
+                      "default_value": "classic",
+                      "value": "classic"
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_36",
+      "htmlId": "",
+      "htmlClasses": "themeBannerSliderSection",
+      "contentWidth": "full",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_37",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_38",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_39",
+                  "moduleType": "custom_html",
+                  "title": "Custom Banner",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"themeCustomBannerWrap\">\n    <ul class=\"themeCustomBannerList owl-carousel owl-theme\" id=\"themeCustomBannerList\">\n        <li>\n            <div class=\"themeCustomBannerCard\">\n                <div class=\"themeCustomBannerImg\">\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/440f53fb14dbd320e4e762afca4800d2/design/banner/land_leaping_auto_parts_hero_banner.webp\" alt=\"Land Leaping Auto Parts Banner Image\">\n                </div>\n                <div class=\"themeCustomBannerContent\">\n                    <div class=\"themeCustomBannerBox\">\n                        <p class=\"h1\">\n                            AUTOMOTIVE PARTS\n                        </p>\n                        <div class=\"themeCustomBannerButton\">\n                            <a href=\"/aftermarket-parts\">Shop Parts Now</a>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </li>\n    </ul>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_59",
+      "htmlId": "",
+      "htmlClasses": "themeTopBrands",
+      "contentWidth": "full",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_60",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_61",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_64",
+                  "moduleType": "custom_html",
+                  "title": "Top Brands Themes title",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"themeTitleSection\">\n    <h3>Top Brands</h3>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "rowId": "row_67",
+          "rowLayout": 12,
+          "htmlId": "",
+          "htmlClasses": "themeRow",
+          "columns": [
+            {
+              "columnId": "column_68",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_69",
+                  "moduleType": "custom_html",
+                  "title": "Brand List",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"themeBrandWrap\">\n    <ul class=\"themeBrandList\">\n        <li>\n            <a href=\"/b/dorman\">\n                <img src=\"https://rparts-sites.s3.amazonaws.com/440f53fb14dbd320e4e762afca4800d2/design/aftermarket-logo/dorman.webp\" alt=\"Image\">\n            </a>\n        </li>\n        <li>\n            <a href=\"/b/delphi\">\n                <img src=\"https://rparts-sites.s3.amazonaws.com/440f53fb14dbd320e4e762afca4800d2/design/aftermarket-logo/delphi.webp\" alt=\"Image\">\n            </a>\n        </li>\n        <li>\n            <a href=\"b/acdelco\">\n                <img src=\"https://rparts-sites.s3.amazonaws.com/440f53fb14dbd320e4e762afca4800d2/design/aftermarket-logo/ac_delco.webp\" alt=\"Image\">\n            </a>\n        </li>\n        <li>\n            <a href=\"/b/kyb\">\n                <img src=\"https://rparts-sites.s3.amazonaws.com/440f53fb14dbd320e4e762afca4800d2/design/aftermarket-logo/kyb.webp\" alt=\"Image\">\n            </a>\n        </li>\n        <li>\n            <a href=\"/b/aisin\">\n                <img src=\"https://rparts-sites.s3.amazonaws.com/440f53fb14dbd320e4e762afca4800d2/design/aftermarket-logo/aisin.webp\" alt=\"Image\">\n            </a>\n        </li>\n        <li>\n            <a href=\"/b/fel-pro\">\n                <img src=\"https://rparts-sites.s3.amazonaws.com/440f53fb14dbd320e4e762afca4800d2/design/aftermarket-logo/felpro.webp\" alt=\"Image\">\n            </a>\n        </li>\n        <li>\n            <a href=\"/b/mevotech\">\n                <img src=\"https://rparts-sites.s3.amazonaws.com/440f53fb14dbd320e4e762afca4800d2/design/aftermarket-logo/mevotech.webp\" alt=\"Image\">\n            </a>\n        </li>\n        <li>\n            <a href=\"/b/holstein\">\n                <img src=\"https://rparts-sites.s3.amazonaws.com/440f53fb14dbd320e4e762afca4800d2/design/aftermarket-logo/holstein.webp\" alt=\"Image\">\n            </a>\n        </li>\n        <li>\n            <a href=\"/b/akebono\">\n                <img src=\"https://rparts-sites.s3.amazonaws.com/440f53fb14dbd320e4e762afca4800d2/design/aftermarket-logo/akebono.webp\" alt=\"Image\">\n            </a>\n        </li>\n        <li>\n            <a href=\"/b/wagner-brake\">\n                <img src=\"https://rparts-sites.s3.amazonaws.com/440f53fb14dbd320e4e762afca4800d2/design/aftermarket-logo/wagner.webp\" alt=\"Image\">\n            </a>\n        </li>\n    </ul>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_2",
+      "htmlId": "",
+      "htmlClasses": "themeShopCategoriesSection",
+      "contentWidth": "full",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_3",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_4",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_5",
+                  "moduleType": "custom_html",
+                  "title": "Theme Title",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"themeTitleSection\">\n    <h3>Shop By Categories</h3>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_10",
+                  "moduleType": "custom_html",
+                  "title": "Categories List",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"themeCategoriesWrap\">\n    <ul class=\"themeCategoriesList\">\n        <li class=\"themeCategoriesItem\">\n            <a href=\"/electrical-parts\">\n                <div class=\"themeCategoriesCard\">\n                    <div class=\"themeCategoriesImg\">\n                        <img src=\"https://rparts-sites.s3.amazonaws.com/440f53fb14dbd320e4e762afca4800d2/design/category/electrical-category_1.webp\" alt=\"Image\">\n                    </div>\n                    <div class=\"themeCategoriesContent\">\n                        <h3>Electrical Parts</h3>\n                        \n                    </div>\n                </div>\n            </a>\n        </li>\n        <li class=\"themeCategoriesItem\">\n            <a href=\"/exhaust-system-parts\">\n                <div class=\"themeCategoriesCard\">\n                    <div class=\"themeCategoriesImg\">\n                        <img src=\"https://rparts-sites.s3.amazonaws.com/440f53fb14dbd320e4e762afca4800d2/design/category/exhaust-category_2.webp\" alt=\"Image\">\n                    </div>\n                    <div class=\"themeCategoriesContent\">\n                        <h3>Exhaust System Parts</h3>\n                        \n                    </div>\n                </div>\n            </a>\n        </li>\n        <li class=\"themeCategoriesItem\">\n            <a href=\"/cooling-system-parts\">\n                <div class=\"themeCategoriesCard\">\n                    <div class=\"themeCategoriesImg\">\n                        <img src=\"https://rparts-sites.s3.amazonaws.com/440f53fb14dbd320e4e762afca4800d2/design/category/cooling-category_3.webp\" alt=\"Image\">\n                    </div>\n                    <div class=\"themeCategoriesContent\">\n                        <h3>Cooling System Parts</h3>\n                        \n                    </div>\n                </div>\n            </a>\n        </li>\n        <li class=\"themeCategoriesItem\">\n            <a href=\"/suspension-parts\">\n                <div class=\"themeCategoriesCard\">\n                    <div class=\"themeCategoriesImg\">\n                        <img src=\"https://rparts-sites.s3.amazonaws.com/440f53fb14dbd320e4e762afca4800d2/design/category/new-suspension-category_4.webp\" alt=\"Image\">\n                    </div>\n                    <div class=\"themeCategoriesContent\">\n                        <h3>Suspension parts</h3>\n                        \n                    </div>\n                </div>\n            </a>\n        </li>\n        <li class=\"themeCategoriesItem\">\n            <a href=\"/brake-components\">\n                <div class=\"themeCategoriesCard\">\n                    <div class=\"themeCategoriesImg\">\n                        <img src=\"https://rparts-sites.s3.amazonaws.com/440f53fb14dbd320e4e762afca4800d2/design/category/brakes-category_5.webp\" alt=\"Image\">\n                    </div>\n                    <div class=\"themeCategoriesContent\">\n                        <h3>Brake Components</h3>\n                        \n                    </div>\n                </div>\n            </a>\n        </li>\n    </ul>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_40",
+      "htmlId": "",
+      "htmlClasses": "themeFeaturedSection",
+      "contentWidth": "full",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_41",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_42",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_24",
+      "htmlId": "",
+      "htmlClasses": "themeNewProductsSection",
+      "contentWidth": "full",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_34",
+          "rowLayout": "6_6",
+          "htmlId": "",
+          "htmlClasses": "themeRow",
+          "columns": [
+            {
+              "columnId": "column_35",
+              "columnWidth": 6,
+              "htmlId": "",
+              "htmlClasses": "themeProductLeft",
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_44",
+                  "moduleType": "custom_html",
+                  "title": "Featured Product Image",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"themeNewProductsMainImg\">\n    <img src=\"https://rparts-sites.s3.amazonaws.com/440f53fb14dbd320e4e762afca4800d2/design/products/new-product-exhaust-with-shadow.webp\" alt=\"Image\">\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            },
+            {
+              "columnId": "column_36",
+              "columnWidth": 6,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_29",
+                  "moduleType": "custom_html",
+                  "title": "Theme Title",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"themeTitleSection\">\n    <h3>Featured Products</h3>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_37",
+                  "moduleType": "custom_html",
+                  "title": "New Product List",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"themeNewProductWrap\">\n    <ul id=\"themeNewProductList\" class=\"themeNewProductList owl-carousel owl-theme\">\n        <li>\n            <a href=\"/brake-components\">\n                <div class=\"themeNewProductsCard\">\n                    <div class=\"themeNewProductsImg\">\n                        <img src=\"https://rparts-sites.s3.amazonaws.com/440f53fb14dbd320e4e762afca4800d2/design/products/featured-product_1.webp\" alt=\"Image\">\n                    </div>\n                    <h3>Brakes</h3>\n                </div>\n            </a>\n        </li>\n        <li>\n            <a href=\"/suspension-parts\">\n                <div class=\"themeNewProductsCard\">\n                    <div class=\"themeNewProductsImg\">\n                        <img src=\"https://rparts-sites.s3.amazonaws.com/440f53fb14dbd320e4e762afca4800d2/design/products/featured-prod_2.webp\" alt=\"Image\">\n                    </div>\n                    <h3>Suspension</h3>\n                </div>\n            </a>\n        </li>\n        <li>\n            <a href=\"/body-panel-hardware\">\n                <div class=\"themeNewProductsCard\">\n                    <div class=\"themeNewProductsImg\">\n                        <img src=\"https://rparts-sites.s3.amazonaws.com/440f53fb14dbd320e4e762afca4800d2/design/products/featured-prod_3.webp\" alt=\"Image\">\n                    </div>\n                    <h3>Body Parts</h3>\n                </div>\n            </a>\n        </li>\n    </ul>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_43",
+                  "moduleType": "featured_products",
+                  "title": "Featured Products",
+                  "options": {
+                    "display_as_slider": {
+                      "name": "Display As slider",
+                      "caption": "Displays featured products in a slider format",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": null,
+                  "htmlClasses": null,
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

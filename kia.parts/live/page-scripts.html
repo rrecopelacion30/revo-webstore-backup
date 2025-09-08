@@ -1,0 +1,103 @@
+<link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,700,900' rel='stylesheet' type='text/css'>
+
+<script>
+	// Top Menu
+	$(document).ready(function(){
+		// Mobile Header Slide down script
+		var mobileSliders = $(".mobile-slider-button"), j;
+
+		for(j=0; j < mobileSliders.length; j++) {
+			mobileSliders[j].onclick = function() {
+				// If top menu item has class menu-selected
+				if (!$(this).is(".menu-selected")) {
+					$(this).toggleClass("menu-selected");
+					// If that top menu button is also mobile-search-col
+					if ($(this).is(".mobile-search-col")) {
+						$(".search-row").toggleClass("open");
+						$(".menu-row").removeClass("open");
+						$(".mobile-menu-col").removeClass("menu-selected");
+						$(".slider-close").addClass("close-display");
+					}
+					else if ($(this).is(".mobile-menu-col")) {
+						$(".menu-row").toggleClass("open");
+						$(".search-row").removeClass("open");
+						$(".mobile-search-col").removeClass("menu-selected");
+						$(".slider-close").addClass("close-display");
+					}
+				}
+				else if ($(this).is(".menu-selected"))	{
+					$(this).removeClass("menu-selected");
+					$(".slider-close").removeClass("close-display");
+					if ($(this).is(".mobile-search-col")) {
+						$(".search-row").removeClass("open");
+					}
+					else if ($(this).is(".mobile-menu-col")) {
+						$(".menu-row").removeClass("open");
+					}
+				}
+			}
+		}
+
+		// Close everything when the close arrow is clicked
+		$(".slider-close").click(function(){
+			$(".slider-tab").removeClass("open");
+			$(".mobile-slider-button").removeClass("menu-selected");
+			$(this).removeClass("close-display");
+		});
+
+		// Close on off click
+		$(document).on('click', function(event){
+			if(!$(event.target).closest(".mobile-header-click").length) {
+				$(".slider-tab").removeClass("open");
+				$(".mobile-slider-button").removeClass("menu-selected");
+				$(".slider-close").removeClass("close-display");
+			}
+		})
+
+	});
+
+</script>
+
+
+<!-- Bing Script -->
+
+<script>(function(w,d,t,r,u){var f,n,i;w[u]=w[u]||[],f=function(){var o={ti:"151014748", enableAutoSpaTracking: true};o.q=w[u],w[u]=new UET(o),w[u].push("pageLoad")},n=d.createElement(t),n.src=r,n.async=1,n.onload=n.onreadystatechange=function(){var s=this.readyState;s&&s!=="loaded"&&s!=="complete"||(f(),n.onload=n.onreadystatechange=null)},i=d.getElementsByTagName(t)[0],i.parentNode.insertBefore(n,i)})(window,document,"script","//bat.bing.com/bat.js","uetq");</script>
+
+<script>
+    // Get all the menus into an array, just once:
+let menus = Array.prototype.slice.call(document.querySelectorAll(".dropdown-content"));
+
+let openMenu = null;
+
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function hideAllMenus() {
+  // Get all the dropdowns into an array.
+  menus.forEach(function(dropdown) {
+    // If the element currently is not hidden
+    if(!dropdown.classList.contains("hide")){
+      openMenu = dropdown;
+      dropdown.classList.add('hide'); // Hide it
+    }
+  });
+}
+
+// Close the dropdown menu if the user clicks outside of it
+document.addEventListener("click", function(event) {
+
+  hideAllMenus();      // Hide all the menus
+  
+  // If the clicked item was a menu
+  if (event.target.classList.contains('dropbtn')) { 
+    if(event.target.nextElementSibling === openMenu){
+      event.target.nextElementSibling.classList.add("hide");
+      openMenu = null;
+    } else {
+      // Go to the next element that is a sibling of the one that got clicked (the menu)
+      // and toggle the use of the `hide` CSS class
+      event.target.nextElementSibling.classList.remove("hide"); // Show the one that was clicked
+      openMenu = event.target.nextElementSibling;
+    }
+  }
+});
+</script>

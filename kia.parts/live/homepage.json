@@ -1,0 +1,461 @@
+{
+  "pageId": "homepage",
+  "pageName": "Home Page",
+  "pageType": null,
+  "layoutEnabled": true,
+  "moduleCategories": [
+    "header",
+    "images",
+    "text",
+    "search",
+    "categories_products",
+    "forms",
+    "navigation",
+    "footer"
+  ],
+  "VFSPath": "layouts/homepage.json",
+  "requiredModules": [
+    "featured_products"
+  ],
+  "scripts": "<script>\n\n\t$(document).ready(function(){\n\n  \t$('.main-carousel').owlCarousel({\n\t    margin: 0,\n\t    loop: true,\n\t    nav: true,\n\t    navText: ['<div class=\"arrow-icons\"><i class=\"fa fa-angle-left\" aria-hidden=\"true\"></i></div>','<div class=\"arrow-icons\"><i class=\"fa fa-angle-right\" aria-hidden=\"true\"></i></div>'],\n\t    items: 1\n\t\t});\n\t\t$('.parts-carousel').owlCarousel({\n\t    margin: 0,\n\t    loop: true,\n\t    nav: true,\n\t    navText: ['<div class=\"arrow-icons\"><i class=\"fa fa-angle-left\" aria-hidden=\"true\"></i></div>','<div class=\"arrow-icons\"><i class=\"fa fa-angle-right\" aria-hidden=\"true\"></i></div>'],\n\t    items: 1\n\t\t});\n\t\t$('.acc-carousel').owlCarousel({\n\t    margin: 0,\n\t    loop: true,\n\t    nav: true,\n\t    navText: ['<div class=\"arrow-icons\"><i class=\"fa fa-angle-left\" aria-hidden=\"true\"></i></div>','<div class=\"arrow-icons\"><i class=\"fa fa-angle-right\" aria-hidden=\"true\"></i></div>'],\n\t    items: 1\n\t\t});\n\n\t});\t\n\n</script>\n\n\n\n\n",
+  "sections": [
+    {
+      "sectionId": "section_1",
+      "htmlId": "banner-custom",
+      "htmlClasses": "no-padding",
+      "contentWidth": "wide",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "desktop-only",
+      "rows": [
+        {
+          "rowId": "row_2",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_3",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_4",
+                  "moduleType": "banner_vpicker",
+                  "title": "Banner Vehicle Picker",
+                  "options": {
+                    "banner_slides": {
+                      "name": "Banner Slides",
+                      "type": "object",
+                      "default_value": [],
+                      "value": [
+                        {
+                          "slideId": "slide_12",
+                          "image": "https://rparts-sites.s3.amazonaws.com/ec2ff22bf5636da2ba256d2fe11a68d7/design/kia.parts-cadenza.jpg",
+                          "link": "javascript: openVehiclePickerRedirect('kia', null, null, null, null, null); ",
+                          "alt": "Genuine Kia Parts"
+                        },
+                        {
+                          "slideId": "slide_13",
+                          "image": "https://rparts-sites.s3.amazonaws.com/ec2ff22bf5636da2ba256d2fe11a68d7/design/kia.parts-exterior.jpg",
+                          "link": "javascript: openVehiclePickerRedirect('kia', null, null, null, null, 'accessories'); ",
+                          "alt": "Shop Genuine Kia Accessories"
+                        },
+                        {
+                          "slideId": "slide_14",
+                          "image": "https://rparts-sites.s3.amazonaws.com/ec2ff22bf5636da2ba256d2fe11a68d7/design/kia.parts-hybrid.jpg",
+                          "link": "javascript: openVehiclePickerRedirect('kia', 'niro', null, null, null, null); ",
+                          "alt": "Kia Niro Parts"
+                        }
+                      ]
+                    },
+                    "overlay_header": {
+                      "name": "Overlay Header",
+                      "type": "string",
+                      "default_value": null,
+                      "value": ""
+                    },
+                    "overlay_content": {
+                      "name": "Overlay Content",
+                      "type": "string",
+                      "default_value": null,
+                      "value": ""
+                    },
+                    "hide_vehicle_picker": {
+                      "name": "Hide Vehicle Picker",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": true
+                    },
+                    "slider_timeout": {
+                      "name": "Slider Speed",
+                      "type": "string",
+                      "default_value": "4000",
+                      "value": "4000"
+                    },
+                    "banner_height": {
+                      "name": "Banner Height",
+                      "type": "string",
+                      "default_value": "360",
+                      "value": "360"
+                    },
+                    "use_overlay_shadows": {
+                      "name": "Overlay Shadows",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    },
+                    "picker_title": {
+                      "name": "Picker Title",
+                      "type": "string",
+                      "default_value": "Select Your Vehicle",
+                      "value": "Select Your Vehicle"
+                    },
+                    "banner_image_fill": {
+                      "name": "Banner Image Fill",
+                      "type": "select",
+                      "possible_values": [
+                        {
+                          "value": "cover",
+                          "label": "Cover"
+                        },
+                        {
+                          "value": "contain",
+                          "label": "Contain"
+                        }
+                      ],
+                      "default_value": "cover",
+                      "value": "contain"
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 12,
+                  "customAdmin": true,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_2",
+      "htmlId": "title-custom",
+      "htmlClasses": "",
+      "contentWidth": "wide",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_3",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_4",
+              "columnWidth": 12,
+              "htmlId": "",
+              "htmlClasses": "",
+              "moduleArrangement": "block",
+              "textAlignment": "text-center",
+              "modules": [
+                {
+                  "moduleId": "module_5",
+                  "moduleType": "custom_html",
+                  "title": "Site Title",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<h1>Kia.Parts - Genuine Kia Parts</h1><br>\n<h2>We have the best prices on Genuine Kia Parts & Accessories</h2>\n<p>As an authorized Kia parts distributor, you can be sure you will get the highest quality parts possible when you shop with us. We only deal in OEM parts and accessories. We feature catalogs for all <a href=\"v-kia\">Kia Models</a> and have a team of part experts on hand. If you have any questions or need help finding a part, you can <a href=\"contact-us\">Contact Us</a> any time. Our parts are discounted and we offer fast, affordable shipping anywhere in the nation in our goal to help you save more money!</p>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "rowId": "row_8",
+          "rowLayout": 12,
+          "htmlId": "",
+          "htmlClasses": "vpicker-custom",
+          "columns": [
+            {
+              "columnId": "column_9",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_31",
+                  "moduleType": "vehicle_picker",
+                  "title": "Vehicle Picker",
+                  "options": {
+                    "title": {
+                      "name": "Picker Title",
+                      "type": "string",
+                      "default_value": "Select Your Vehicle",
+                      "value": "Select Your Vehicle"
+                    },
+                    "redirect_uri": {
+                      "name": "Redirect URL",
+                      "type": "string",
+                      "default_value": null,
+                      "value": ""
+                    },
+                    "select_button_text": {
+                      "name": "Select Button Text",
+                      "type": "string",
+                      "default_value": "Select",
+                      "value": "Select"
+                    },
+                    "display_change_vehicle": {
+                      "name": "Change Vehicle Link",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    },
+                    "header_class": {
+                      "name": "Header Class",
+                      "type": "string",
+                      "default_value": "header-text",
+                      "value": "header-text"
+                    },
+                    "button_class": {
+                      "name": "Button Class",
+                      "type": "string",
+                      "default_value": null,
+                      "value": ""
+                    },
+                    "dropdown_class": {
+                      "name": "Dropdown Class",
+                      "type": "string",
+                      "default_value": "dropdown",
+                      "value": "dropdown"
+                    },
+                    "dropdown_icon_class": {
+                      "name": "Dropdown Icon Class",
+                      "type": "string",
+                      "default_value": null,
+                      "value": ""
+                    },
+                    "style": {
+                      "name": "Display",
+                      "type": "select",
+                      "possible_values": [
+                        {
+                          "value": "classic",
+                          "label": "Classic"
+                        },
+                        {
+                          "value": "horiz",
+                          "label": "Horizontal"
+                        }
+                      ],
+                      "default_value": "classic",
+                      "value": "horiz"
+                    },
+                    "make_text": {
+                      "name": "Select Make Text",
+                      "type": "string",
+                      "default_value": "",
+                      "value": null
+                    },
+                    "model_text": {
+                      "name": "Select Model Text",
+                      "type": "string",
+                      "default_value": "",
+                      "value": null
+                    },
+                    "year_text": {
+                      "name": "Select Year Text",
+                      "type": "string",
+                      "default_value": "",
+                      "value": null
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_3",
+      "htmlId": "main-content-custom",
+      "htmlClasses": "",
+      "contentWidth": "wide",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_4",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_5",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_6",
+                  "moduleType": "custom_html",
+                  "title": "Popular Parts",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"pop-part-wrap\">\n\t\t<h3>Popular Kia Parts</h3>\n\t\t<div class=\"pop-image-wrap\">\n\t\t\t\t<div class=\"item\">\n\t\t\t\t\t<div class=\"pop-parts-1\">\n\t\t\t\t\t\t<a href=\"air-filters\"><aside class=\"pop-part-image\"></aside><h4 class=\"pop-part-text\">Air Filters</h4></a>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"pop-parts-2\">\n\t\t\t\t\t\t<a href=\"oil-filters\"><aside class=\"pop-part-image\"></aside><h4 class=\"pop-part-text\">Oil Filters</h4></a>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"pop-parts-3\">\n\t\t\t\t\t\t<a href=\"brake-pads\"><aside class=\"pop-part-image\"></aside><h4 class=\"pop-part-text\">Brake Pads</h4></a>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"pop-parts-4\">\n\t\t\t\t\t\t<a href=\"brake-rotors\"><aside class=\"pop-part-image\"></aside><h4 class=\"pop-part-text\">Brake Rotors</h4></a>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"item\">\n\t\t\t\t\t<div class=\"pop-parts-5\">\n\t\t\t\t\t\t<a href=\"alternators\"><aside class=\"pop-part-image\"></aside><h4 class=\"pop-part-text\">Alternators</h4></a>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"pop-parts-7\">\n\t\t\t\t\t\t<a href=\"spark-plugs\"><aside class=\"pop-part-image\"></aside><h4 class=\"pop-part-text\">Spark Plugs</h4></a>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"pop-parts-8\">\n\t\t\t\t\t\t<a href=\"starters\"><aside class=\"pop-part-image\"></aside><h4 class=\"pop-part-text\">Starters</h4></a>\n\t\t\t\t\t</div>\n                    <div class=\"pop-parts-9\">\n\t\t\t\t\t\t<a href=\"belts-and-hoses\"><aside class=\"pop-part-image\"></aside><h4 class=\"pop-part-text\">Belts & Hoses</h4></a>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"item\">\n\t\t\t\t\t<div class=\"pop-parts-10\">\n\t\t\t\t\t\t<a href=\"radiators\"><aside class=\"pop-part-image\"></aside><h4 class=\"pop-part-text\">Radiators</h4></a>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"pop-parts-11\">\n\t\t\t\t\t\t<a href=\"suspension\"><aside class=\"pop-part-image\"></aside><h4 class=\"pop-part-text\">Suspension</h4></a>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"pop-parts-12\">\n\t\t\t\t\t\t<a href=\"wipers\"><aside class=\"pop-part-image\"></aside><h4 class=\"pop-part-text\">Wipers</h4></a>\n\t\t\t\t\t</div>\n                    <div class=\"pop-parts-13\">\n\t\t\t\t\t\t<a href=\"javascript: openVehiclePickerRedirect(null, null, null, null, null, null);\"><aside class=\"pop-part-image\"></aside><h4 class=\"pop-part-text\">All Categories</h4></a>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t</div>\n\t</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_7",
+                  "moduleType": "custom_html",
+                  "title": "Popular Accessories",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"pop-acc-wrap\">\n\t\t<h3>Popular Kia Accessories</h3>\n\t<div class=\"pop-image-wrap\">\n\t\t\t<div class=\"item\">\n\t\t\t\t<div class=\"pop-acc-1\">\n\t\t\t\t\t<a href=\"interior-accessories\"><aside class=\"pop-acc-image\"></aside><h4 class=\"pop-acc-text\">Interior</h4></a>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"pop-acc-2\">\n\t\t\t\t\t<a href=\"cargo\"><aside class=\"pop-acc-image\"></aside><h4 class=\"pop-acc-text\">Cargo</h4></a>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"pop-acc-3\">\n\t\t\t\t\t<a href=\"door-sills\"><aside class=\"pop-acc-image\"></aside><h4 class=\"pop-acc-text\">Door Sills</h4></a>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"pop-acc-4\">\n\t\t\t\t\t<a href=\"floor-mats\"><aside class=\"pop-acc-image\"></aside><h4 class=\"pop-acc-text\">Floor Mats</h4></a>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t<div class=\"item\">\n\t\t\t\t<div class=\"pop-acc-5\">\n\t\t\t\t\t<a href=\"electronics\"><aside class=\"pop-acc-image\"></aside><h4 class=\"pop-acc-text\">Electronics</h4></a>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"pop-acc-7\">\n\t\t\t\t\t<a href=\"shift-knobs\"><aside class=\"pop-acc-image\"></aside><h4 class=\"pop-acc-text\">Shift Knobs</h4></a>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"pop-acc-8\">\n\t\t\t\t\t<a href=\"sun-shades\"><aside class=\"pop-acc-image\"></aside><h4 class=\"pop-acc-text\">Sun Shades</h4></a>\n\t\t\t\t</div>\n                <div class=\"pop-acc-9\">\n\t\t\t\t\t<a href=\"exterior-accessories\"><aside class=\"pop-acc-image\"></aside><h4 class=\"pop-acc-text\">Exterior</h4></a>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t<div class=\"item\">\n\t\t\t\t\n\t\t\t\t<div class=\"pop-acc-10\">\n\t\t\t\t\t<a href=\"car-covers\"><aside class=\"pop-acc-image\"></aside><h4 class=\"pop-acc-text\">Car Covers</h4></a>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"pop-acc-11\">\n\t\t\t\t\t<a href=\"roof-racks\"><aside class=\"pop-acc-image\"></aside><h4 class=\"pop-acc-text\">Roof Racks</h4></a>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"pop-acc-12\">\n\t\t\t\t\t<a href=\"spoilers\"><aside class=\"pop-acc-image\"></aside><h4 class=\"pop-acc-text\">Spoilers</h4></a>\n\t\t\t\t</div>\n                <div class=\"pop-acc-13\">\n\t\t\t\t\t<a href=\"javascript: openVehiclePickerRedirect(null, null, null, null, null, 'accessories');&nbsp;\"><aside class=\"pop-acc-image\"></aside><h4 class=\"pop-acc-text\">All Accessories</h4></a>\n\t\t\t\t</div>\n\t\t\t</div>\n\t</div>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_19",
+      "htmlId": "",
+      "htmlClasses": "",
+      "contentWidth": "wide",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_21",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_22",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_23",
+                  "moduleType": "featured_products",
+                  "title": "Featured Products",
+                  "options": {},
+                  "htmlId": null,
+                  "htmlClasses": null,
+                  "minColumnWidth": 12,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_4",
+      "htmlId": "featured-pages",
+      "htmlClasses": "",
+      "contentWidth": "wide",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": []
+    },
+    {
+      "sectionId": "section_17",
+      "htmlId": null,
+      "htmlClasses": null,
+      "contentWidth": null,
+      "backgroundColor": null,
+      "backgroundImage": null,
+      "textColor": "dark",
+      "display": "normal",
+      "rows": []
+    }
+  ]
+}

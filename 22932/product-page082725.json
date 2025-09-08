@@ -1,0 +1,514 @@
+{
+  "pageId": "product",
+  "pageName": "Product Page",
+  "pageType": null,
+  "layoutEnabled": true,
+  "moduleCategories": [
+    "header",
+    "images",
+    "text",
+    "search",
+    "categories_products",
+    "forms",
+    "navigation",
+    "footer",
+    "product"
+  ],
+  "VFSPath": "layouts/product.json",
+  "requiredModules": [
+    "product_images",
+    "product_purchase",
+    "product_fitment_confirmation"
+  ],
+  "scripts": "",
+  "sections": [
+    {
+      "sectionId": "section_2",
+      "htmlId": "",
+      "htmlClasses": "",
+      "contentWidth": "normal",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_2",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_3",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "left",
+              "modules": [
+                {
+                  "moduleId": "module_1",
+                  "moduleType": "product_breadcrumbs",
+                  "title": "Breadcrumbs",
+                  "options": {},
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_2",
+                  "moduleType": "product_title",
+                  "title": "Product Title (Mobile)",
+                  "options": {
+                    "product_subtitle_text": {
+                      "name": "Product Subtitle Text",
+                      "type": "string",
+                      "default_value": null,
+                      "value": ""
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "mobile-only"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_1",
+      "htmlId": "",
+      "htmlClasses": "",
+      "contentWidth": "normal",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_1",
+          "rowLayout": "6_6",
+          "htmlId": null,
+          "htmlClasses": "split-column",
+          "columns": [
+            {
+              "columnId": "column_2",
+              "columnWidth": 6,
+              "htmlId": null,
+              "htmlClasses": "product-left",
+              "moduleArrangement": "block",
+              "textAlignment": "left",
+              "modules": [
+                {
+                  "moduleId": "module_8",
+                  "moduleType": "product_images",
+                  "title": "Product Images",
+                  "options": {},
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            },
+            {
+              "columnId": "column_4",
+              "columnWidth": 6,
+              "htmlId": null,
+              "htmlClasses": "product-right",
+              "moduleArrangement": "block",
+              "textAlignment": "left",
+              "modules": [
+                {
+                  "moduleId": "module_21",
+                  "moduleType": "product_fitment_confirmation",
+                  "title": "Fitment Confirmation",
+                  "options": {},
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_4",
+                  "moduleType": "product_title",
+                  "title": "Product Title (Desktop)",
+                  "options": {
+                    "product_subtitle_text": {
+                      "name": "Product Subtitle Text",
+                      "type": "string",
+                      "default_value": null,
+                      "value": ""
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "desktop-only"
+                },
+                {
+                  "moduleId": "module_5",
+                  "moduleType": "product_purchase",
+                  "title": "Product Purchase",
+                  "options": {
+                    "display_payment_message": {
+                      "name": "Display Payment Message",
+                      "type": "boolean",
+                      "default_value": true,
+                      "value": true
+                    }
+                  },
+                  "htmlId": null,
+                  "htmlClasses": null,
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_20",
+                  "moduleType": "product_features_benefits",
+                  "title": "Features and Benefits",
+                  "options": {},
+                  "htmlId": null,
+                  "htmlClasses": null,
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_13",
+                  "moduleType": "product_badges",
+                  "title": "Product Badges",
+                  "options": {
+                    "display_security": {
+                      "name": "Display Security",
+                      "type": "boolean",
+                      "default_value": true,
+                      "value": true
+                    },
+                    "security_text": {
+                      "name": "Security Text",
+                      "caption": "Security Badge Text (35 character max)",
+                      "type": "string",
+                      "default_value": "Your information is safe",
+                      "value": "Your information is safe"
+                    },
+                    "display_warranty": {
+                      "name": "Display Warranty",
+                      "type": "boolean",
+                      "default_value": true,
+                      "value": true
+                    },
+                    "warranty_text": {
+                      "name": "Warranty Text",
+                      "caption": "Warranty Badge Text (35 character max)",
+                      "type": "string",
+                      "default_value": "Minimum of 12 Months",
+                      "value": "Minimum of 12 Months"
+                    },
+                    "display_fitment": {
+                      "name": "Display Fitment",
+                      "type": "boolean",
+                      "default_value": true,
+                      "value": true
+                    },
+                    "fitment_text": {
+                      "name": "Fitment Text",
+                      "caption": "Fitment Badge Text (35 character max)",
+                      "type": "string",
+                      "default_value": "Always the correct parts",
+                      "value": "Always the correct parts"
+                    },
+                    "display_support": {
+                      "name": "Display Support",
+                      "type": "boolean",
+                      "default_value": true,
+                      "value": true
+                    },
+                    "support_text": {
+                      "name": "Support Text",
+                      "caption": "Support Badge Text (35 character max)",
+                      "type": "string",
+                      "default_value": "We know our products",
+                      "value": "We know our products"
+                    },
+                    "product_badge_images": {
+                      "name": "Product Badge Images",
+                      "type": "radio",
+                      "possible_values": [
+                        {
+                          "value": "badge-sprite"
+                        },
+                        {
+                          "value": "badge-sprite-01"
+                        },
+                        {
+                          "value": "badge-sprite-02"
+                        },
+                        {
+                          "value": "badge-sprite-03"
+                        }
+                      ],
+                      "default_value": "badge-sprite",
+                      "value": "badge-sprite"
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_4",
+      "htmlId": "",
+      "htmlClasses": "",
+      "contentWidth": "normal",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "desktop-only",
+      "rows": [
+        {
+          "rowId": "row_5",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_6",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_7",
+                  "moduleType": "product_tab_nav",
+                  "title": "Product Navigation Tabs",
+                  "options": {},
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_3",
+      "htmlId": "",
+      "htmlClasses": "",
+      "contentWidth": "normal",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_4",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_5",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "left",
+              "modules": [
+                {
+                  "moduleId": "module_10",
+                  "moduleType": "product_details",
+                  "title": "Product Details",
+                  "options": {},
+                  "htmlId": null,
+                  "htmlClasses": null,
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_4",
+                  "moduleType": "product_browse_more",
+                  "title": "Browse More",
+                  "options": {},
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_14",
+                  "moduleType": "product_recommended",
+                  "title": "Recommended Products",
+                  "options": {},
+                  "htmlId": null,
+                  "htmlClasses": null,
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_9",
+                  "moduleType": "product_fitment",
+                  "title": "Product Fitment",
+                  "options": {},
+                  "htmlId": null,
+                  "htmlClasses": null,
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_10",
+                  "moduleType": "product_reviews",
+                  "title": "Product Reviews",
+                  "options": {},
+                  "htmlId": null,
+                  "htmlClasses": null,
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_13",
+                  "moduleType": "product_questions",
+                  "title": "Product Questions",
+                  "options": {},
+                  "htmlId": null,
+                  "htmlClasses": null,
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_11",
+                  "moduleType": "product_store_description",
+                  "title": "Store Description",
+                  "options": {},
+                  "htmlId": null,
+                  "htmlClasses": null,
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_12",
+                  "moduleType": "product_brand_description",
+                  "title": "Brand Description",
+                  "options": {},
+                  "htmlId": null,
+                  "htmlClasses": null,
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_15",
+                  "moduleType": "product_warranty",
+                  "title": "Product Warranty",
+                  "options": {},
+                  "htmlId": null,
+                  "htmlClasses": null,
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_19",
+                  "moduleType": "product_interchange",
+                  "title": "module.product_interchange.title",
+                  "options": {},
+                  "htmlId": null,
+                  "htmlClasses": null,
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_16",
+                  "moduleType": "product_installation",
+                  "title": "Product Installation",
+                  "options": {},
+                  "htmlId": null,
+                  "htmlClasses": null,
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_17",
+                  "moduleType": "product_policies",
+                  "title": "Product Policies",
+                  "options": {},
+                  "htmlId": null,
+                  "htmlClasses": null,
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_18",
+                  "moduleType": "bundle_recommendation",
+                  "title": "Bundle Recommendation",
+                  "options": {},
+                  "htmlId": null,
+                  "htmlClasses": null,
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

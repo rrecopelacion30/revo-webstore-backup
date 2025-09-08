@@ -1,0 +1,1423 @@
+{
+  "pageId": "homepage",
+  "pageName": "Home Page",
+  "pageType": null,
+  "layoutEnabled": true,
+  "moduleCategories": [
+    "header",
+    "images",
+    "text",
+    "search",
+    "categories_products",
+    "forms",
+    "navigation",
+    "footer"
+  ],
+  "VFSPath": "layouts/homepage.json",
+  "requiredModules": [
+    "featured_products"
+  ],
+  "scripts": "",
+  "sections": [
+    {
+      "sectionId": "section_1",
+      "htmlId": "",
+      "htmlClasses": "d-none",
+      "contentWidth": "normal",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_2",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_3",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_4",
+                  "moduleType": "featured_products",
+                  "title": "Featured Products",
+                  "options": {
+                    "display_as_slider": {
+                      "name": "Display As slider",
+                      "caption": "Displays featured products in a slider format",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": null,
+                  "htmlClasses": null,
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_5",
+      "htmlId": "",
+      "htmlClasses": "theme_slider_section",
+      "contentWidth": "full",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_6",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_7",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_11",
+                  "moduleType": "custom_html",
+                  "title": "Main Slider",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div id=\"main--slider\" >\n    <div class=\"main--slider-item\">\n        <div class=\"main--slider-bg\">\n            <img src=\"https://rparts-sites.s3.amazonaws.com/94a75e9e5a4537a1260ffa9d710df090/design/new_anthem_auto_parts_banner_1.webp\" alt=\"Slider01\" title=\"Slider01\">\n        </div>\n    </div>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_18",
+                  "moduleType": "vehicle_picker",
+                  "title": "Vehicle Picker",
+                  "options": {
+                    "title": {
+                      "name": "Picker Title",
+                      "type": "string",
+                      "default_value": "Select Your Vehicle",
+                      "value": "Select Your Vehicle"
+                    },
+                    "redirect_uri": {
+                      "name": "Redirect URL",
+                      "type": "string",
+                      "default_value": null,
+                      "value": ""
+                    },
+                    "select_button_text": {
+                      "name": "Select Button Text",
+                      "type": "string",
+                      "default_value": "Select",
+                      "value": "Find My Part"
+                    },
+                    "make_text": {
+                      "name": "Select Make Text",
+                      "type": "string",
+                      "default_value": "",
+                      "value": ""
+                    },
+                    "model_text": {
+                      "name": "Select Model Text",
+                      "type": "string",
+                      "default_value": "",
+                      "value": ""
+                    },
+                    "year_text": {
+                      "name": "Select Year Text",
+                      "type": "string",
+                      "default_value": "",
+                      "value": ""
+                    },
+                    "display_change_vehicle": {
+                      "name": "Change Vehicle Link",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    },
+                    "header_class": {
+                      "name": "Header Class",
+                      "type": "string",
+                      "default_value": "header-text",
+                      "value": "header-text"
+                    },
+                    "button_class": {
+                      "name": "Button Class",
+                      "type": "string",
+                      "default_value": null,
+                      "value": ""
+                    },
+                    "dropdown_class": {
+                      "name": "Dropdown Class",
+                      "type": "string",
+                      "default_value": "dropdown",
+                      "value": "dropdown"
+                    },
+                    "dropdown_icon_class": {
+                      "name": "Dropdown Icon Class",
+                      "type": "string",
+                      "default_value": null,
+                      "value": ""
+                    },
+                    "style": {
+                      "name": "Display",
+                      "type": "select",
+                      "possible_values": [
+                        {
+                          "value": "classic",
+                          "label": "Classic"
+                        },
+                        {
+                          "value": "horiz",
+                          "label": "Horizontal"
+                        }
+                      ],
+                      "default_value": "classic",
+                      "value": "classic"
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "theme_vehicle_picker",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_87",
+      "htmlId": "",
+      "htmlClasses": "themePadding themeCategorySection",
+      "contentWidth": "wide",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_88",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_90",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_91",
+                  "moduleType": "call_to_action",
+                  "title": "Shop by Category",
+                  "options": {
+                    "title": {
+                      "name": "Title",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "Shop By Category"
+                    },
+                    "content": {
+                      "name": "Content",
+                      "type": "html_content",
+                      "default_value": null,
+                      "value": ""
+                    },
+                    "button_text": {
+                      "name": "Button Text",
+                      "type": "string",
+                      "default_value": null,
+                      "value": ""
+                    },
+                    "button_link": {
+                      "name": "Button Link",
+                      "type": "link",
+                      "default_value": null,
+                      "value": ""
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "themeTitle",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "rowId": "row_89",
+          "rowLayout": 12,
+          "htmlId": "",
+          "htmlClasses": "themeCategoryNewList",
+          "columns": [
+            {
+              "columnId": "column_92",
+              "columnWidth": 12,
+              "htmlId": "",
+              "htmlClasses": "themeCategoryNewSlider",
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_93",
+                  "moduleType": "custom_image",
+                  "title": "Category Image - Engine Components",
+                  "options": {
+                    "image_file": {
+                      "name": "Image File",
+                      "type": "image_upload",
+                      "default_value": null,
+                      "value": "https://cdn.revolutionparts.io/94a75e9e5a4537a1260ffa9d710df090/design/all_engine_%26_components.webp"
+                    },
+                    "image_link": {
+                      "name": "Image URL",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "search?search_str=engine+components"
+                    },
+                    "image_title": {
+                      "name": "Image Title",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "Engine Components"
+                    },
+                    "image_size": {
+                      "name": "Image Size",
+                      "caption": "% Height of Image Relative to Width",
+                      "validate": "validate_required validate_numeric",
+                      "type": "string",
+                      "default_value": 100,
+                      "value": "100"
+                    },
+                    "image_margin": {
+                      "name": "Margin",
+                      "type": "string",
+                      "caption": "ex: 5px",
+                      "default_value": 0,
+                      "value": "0"
+                    },
+                    "background_image_fill": {
+                      "name": "Image Fill",
+                      "type": "select",
+                      "default_value": "contain",
+                      "value": "contain",
+                      "possible_values": [
+                        {
+                          "value": "contain",
+                          "label": "Contain"
+                        },
+                        {
+                          "value": "cover",
+                          "label": "Cover"
+                        }
+                      ]
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_94",
+                  "moduleType": "custom_image",
+                  "title": "Category Image - Suspension",
+                  "options": {
+                    "image_file": {
+                      "name": "Image File",
+                      "type": "image_upload",
+                      "default_value": null,
+                      "value": "https://cdn.revolutionparts.io/94a75e9e5a4537a1260ffa9d710df090/design/all_suspension_steering_parts.webp"
+                    },
+                    "image_link": {
+                      "name": "Image URL",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "search?search_str=suspension"
+                    },
+                    "image_title": {
+                      "name": "Image Title",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "Suspension Parts"
+                    },
+                    "image_size": {
+                      "name": "Image Size",
+                      "caption": "% Height of Image Relative to Width",
+                      "validate": "validate_required validate_numeric",
+                      "type": "string",
+                      "default_value": 100,
+                      "value": "100"
+                    },
+                    "image_margin": {
+                      "name": "Margin",
+                      "type": "string",
+                      "caption": "ex: 5px",
+                      "default_value": 0,
+                      "value": "0"
+                    },
+                    "background_image_fill": {
+                      "name": "Image Fill",
+                      "type": "select",
+                      "default_value": "contain",
+                      "value": "contain",
+                      "possible_values": [
+                        {
+                          "value": "contain",
+                          "label": "Contain"
+                        },
+                        {
+                          "value": "cover",
+                          "label": "Cover"
+                        }
+                      ]
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_95",
+                  "moduleType": "custom_image",
+                  "title": "Category Image - Brake Components",
+                  "options": {
+                    "image_file": {
+                      "name": "Image File",
+                      "type": "image_upload",
+                      "default_value": null,
+                      "value": "https://cdn.revolutionparts.io/94a75e9e5a4537a1260ffa9d710df090/design/brake_%26_brake_parts.webp"
+                    },
+                    "image_link": {
+                      "name": "Image URL",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "search?search_str=brake+components"
+                    },
+                    "image_title": {
+                      "name": "Image Title",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "Brake Components"
+                    },
+                    "image_size": {
+                      "name": "Image Size",
+                      "caption": "% Height of Image Relative to Width",
+                      "validate": "validate_required validate_numeric",
+                      "type": "string",
+                      "default_value": 100,
+                      "value": "100"
+                    },
+                    "image_margin": {
+                      "name": "Margin",
+                      "type": "string",
+                      "caption": "ex: 5px",
+                      "default_value": 0,
+                      "value": "0"
+                    },
+                    "background_image_fill": {
+                      "name": "Image Fill",
+                      "type": "select",
+                      "default_value": "contain",
+                      "value": "contain",
+                      "possible_values": [
+                        {
+                          "value": "contain",
+                          "label": "Contain"
+                        },
+                        {
+                          "value": "cover",
+                          "label": "Cover"
+                        }
+                      ]
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_96",
+                  "moduleType": "custom_image",
+                  "title": "Category Image - Electrical Parts",
+                  "options": {
+                    "image_file": {
+                      "name": "Image File",
+                      "type": "image_upload",
+                      "default_value": null,
+                      "value": "https://cdn.revolutionparts.io/94a75e9e5a4537a1260ffa9d710df090/design/all_electronics.webp"
+                    },
+                    "image_link": {
+                      "name": "Image URL",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "search?search_str=electrical+parts"
+                    },
+                    "image_title": {
+                      "name": "Image Title",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "Electrical Parts"
+                    },
+                    "image_size": {
+                      "name": "Image Size",
+                      "caption": "% Height of Image Relative to Width",
+                      "validate": "validate_required validate_numeric",
+                      "type": "string",
+                      "default_value": 100,
+                      "value": "100"
+                    },
+                    "image_margin": {
+                      "name": "Margin",
+                      "type": "string",
+                      "caption": "ex: 5px",
+                      "default_value": 0,
+                      "value": "0"
+                    },
+                    "background_image_fill": {
+                      "name": "Image Fill",
+                      "type": "select",
+                      "default_value": "contain",
+                      "value": "contain",
+                      "possible_values": [
+                        {
+                          "value": "contain",
+                          "label": "Contain"
+                        },
+                        {
+                          "value": "cover",
+                          "label": "Cover"
+                        }
+                      ]
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_97",
+                  "moduleType": "custom_image",
+                  "title": "Category Image - Interior Accessories",
+                  "options": {
+                    "image_file": {
+                      "name": "Image File",
+                      "type": "image_upload",
+                      "default_value": null,
+                      "value": "https://cdn.revolutionparts.io/94a75e9e5a4537a1260ffa9d710df090/design/all_interior_parts.webp"
+                    },
+                    "image_link": {
+                      "name": "Image URL",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "search?search_str=interior+parts"
+                    },
+                    "image_title": {
+                      "name": "Image Title",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "Interior Accessories"
+                    },
+                    "image_size": {
+                      "name": "Image Size",
+                      "caption": "% Height of Image Relative to Width",
+                      "validate": "validate_required validate_numeric",
+                      "type": "string",
+                      "default_value": 100,
+                      "value": "100"
+                    },
+                    "image_margin": {
+                      "name": "Margin",
+                      "type": "string",
+                      "caption": "ex: 5px",
+                      "default_value": 0,
+                      "value": "0"
+                    },
+                    "background_image_fill": {
+                      "name": "Image Fill",
+                      "type": "select",
+                      "default_value": "contain",
+                      "value": "contain",
+                      "possible_values": [
+                        {
+                          "value": "contain",
+                          "label": "Contain"
+                        },
+                        {
+                          "value": "cover",
+                          "label": "Cover"
+                        }
+                      ]
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_198",
+                  "moduleType": "custom_image",
+                  "title": "Category Image - Exterior Accessories",
+                  "options": {
+                    "image_file": {
+                      "name": "Image File",
+                      "type": "image_upload",
+                      "default_value": null,
+                      "value": "https://cdn.revolutionparts.io/94a75e9e5a4537a1260ffa9d710df090/design/all_extrerior_parts.webp"
+                    },
+                    "image_link": {
+                      "name": "Image URL",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "search?search_str=exterior+parts"
+                    },
+                    "image_title": {
+                      "name": "Image Title",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "Exterior Accessories"
+                    },
+                    "image_size": {
+                      "name": "Image Size",
+                      "caption": "% Height of Image Relative to Width",
+                      "validate": "validate_required validate_numeric",
+                      "type": "string",
+                      "default_value": 100,
+                      "value": "100"
+                    },
+                    "image_margin": {
+                      "name": "Margin",
+                      "type": "string",
+                      "caption": "ex: 5px",
+                      "default_value": 0,
+                      "value": "0"
+                    },
+                    "background_image_fill": {
+                      "name": "Image Fill",
+                      "type": "select",
+                      "default_value": "contain",
+                      "value": "contain",
+                      "possible_values": [
+                        {
+                          "value": "contain",
+                          "label": "Contain"
+                        },
+                        {
+                          "value": "cover",
+                          "label": "Cover"
+                        }
+                      ]
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_199",
+                  "moduleType": "custom_image",
+                  "title": "Category Image - Transmission Parts",
+                  "options": {
+                    "image_file": {
+                      "name": "Image File",
+                      "type": "image_upload",
+                      "default_value": null,
+                      "value": "https://cdn.revolutionparts.io/94a75e9e5a4537a1260ffa9d710df090/design/all_transmission.webp"
+                    },
+                    "image_link": {
+                      "name": "Image URL",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "search?search_str=transmission+parts"
+                    },
+                    "image_title": {
+                      "name": "Image Title",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "Transmission Parts"
+                    },
+                    "image_size": {
+                      "name": "Image Size",
+                      "caption": "% Height of Image Relative to Width",
+                      "validate": "validate_required validate_numeric",
+                      "type": "string",
+                      "default_value": 100,
+                      "value": "100"
+                    },
+                    "image_margin": {
+                      "name": "Margin",
+                      "type": "string",
+                      "caption": "ex: 5px",
+                      "default_value": 0,
+                      "value": "0"
+                    },
+                    "background_image_fill": {
+                      "name": "Image Fill",
+                      "type": "select",
+                      "default_value": "contain",
+                      "value": "contain",
+                      "possible_values": [
+                        {
+                          "value": "contain",
+                          "label": "Contain"
+                        },
+                        {
+                          "value": "cover",
+                          "label": "Cover"
+                        }
+                      ]
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_200",
+                  "moduleType": "custom_image",
+                  "title": "Category Image - Cooling System",
+                  "options": {
+                    "image_file": {
+                      "name": "Image File",
+                      "type": "image_upload",
+                      "default_value": null,
+                      "value": "https://cdn.revolutionparts.io/94a75e9e5a4537a1260ffa9d710df090/design/all_cooling_sytem_parts.webp"
+                    },
+                    "image_link": {
+                      "name": "Image URL",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "search?search_str=cooling+system"
+                    },
+                    "image_title": {
+                      "name": "Image Title",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "Cooling System"
+                    },
+                    "image_size": {
+                      "name": "Image Size",
+                      "caption": "% Height of Image Relative to Width",
+                      "validate": "validate_required validate_numeric",
+                      "type": "string",
+                      "default_value": 100,
+                      "value": "100"
+                    },
+                    "image_margin": {
+                      "name": "Margin",
+                      "type": "string",
+                      "caption": "ex: 5px",
+                      "default_value": 0,
+                      "value": "0"
+                    },
+                    "background_image_fill": {
+                      "name": "Image Fill",
+                      "type": "select",
+                      "default_value": "contain",
+                      "value": "contain",
+                      "possible_values": [
+                        {
+                          "value": "contain",
+                          "label": "Contain"
+                        },
+                        {
+                          "value": "cover",
+                          "label": "Cover"
+                        }
+                      ]
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_201",
+                  "moduleType": "custom_image",
+                  "title": "Category Image - Exhaust System",
+                  "options": {
+                    "image_file": {
+                      "name": "Image File",
+                      "type": "image_upload",
+                      "default_value": null,
+                      "value": "https://cdn.revolutionparts.io/94a75e9e5a4537a1260ffa9d710df090/design/all_exhaust_parts.webp"
+                    },
+                    "image_link": {
+                      "name": "Image URL",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "search?search_str=exhaust+system"
+                    },
+                    "image_title": {
+                      "name": "Image Title",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "Exhaust System"
+                    },
+                    "image_size": {
+                      "name": "Image Size",
+                      "caption": "% Height of Image Relative to Width",
+                      "validate": "validate_required validate_numeric",
+                      "type": "string",
+                      "default_value": 100,
+                      "value": "100"
+                    },
+                    "image_margin": {
+                      "name": "Margin",
+                      "type": "string",
+                      "caption": "ex: 5px",
+                      "default_value": 0,
+                      "value": "0"
+                    },
+                    "background_image_fill": {
+                      "name": "Image Fill",
+                      "type": "select",
+                      "default_value": "contain",
+                      "value": "contain",
+                      "possible_values": [
+                        {
+                          "value": "contain",
+                          "label": "Contain"
+                        },
+                        {
+                          "value": "cover",
+                          "label": "Cover"
+                        }
+                      ]
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_202",
+                  "moduleType": "custom_image",
+                  "title": "Category Image - Fuel System",
+                  "options": {
+                    "image_file": {
+                      "name": "Image File",
+                      "type": "image_upload",
+                      "default_value": null,
+                      "value": "https://cdn.revolutionparts.io/94a75e9e5a4537a1260ffa9d710df090/design/fuel_filter.webp"
+                    },
+                    "image_link": {
+                      "name": "Image URL",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "search?search_str=fuel+system"
+                    },
+                    "image_title": {
+                      "name": "Image Title",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "Fuel System"
+                    },
+                    "image_size": {
+                      "name": "Image Size",
+                      "caption": "% Height of Image Relative to Width",
+                      "validate": "validate_required validate_numeric",
+                      "type": "string",
+                      "default_value": 100,
+                      "value": "100"
+                    },
+                    "image_margin": {
+                      "name": "Margin",
+                      "type": "string",
+                      "caption": "ex: 5px",
+                      "default_value": 0,
+                      "value": "0"
+                    },
+                    "background_image_fill": {
+                      "name": "Image Fill",
+                      "type": "select",
+                      "default_value": "contain",
+                      "value": "contain",
+                      "possible_values": [
+                        {
+                          "value": "contain",
+                          "label": "Contain"
+                        },
+                        {
+                          "value": "cover",
+                          "label": "Cover"
+                        }
+                      ]
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_203",
+                  "moduleType": "custom_image",
+                  "title": "Category Image - Heating & AC",
+                  "options": {
+                    "image_file": {
+                      "name": "Image File",
+                      "type": "image_upload",
+                      "default_value": null,
+                      "value": "https://cdn.revolutionparts.io/94a75e9e5a4537a1260ffa9d710df090/design/AC_%26_heating.webp"
+                    },
+                    "image_link": {
+                      "name": "Image URL",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "search?search_str=heating"
+                    },
+                    "image_title": {
+                      "name": "Image Title",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "Heating & A/C Parts"
+                    },
+                    "image_size": {
+                      "name": "Image Size",
+                      "caption": "% Height of Image Relative to Width",
+                      "validate": "validate_required validate_numeric",
+                      "type": "string",
+                      "default_value": 100,
+                      "value": "100"
+                    },
+                    "image_margin": {
+                      "name": "Margin",
+                      "type": "string",
+                      "caption": "ex: 5px",
+                      "default_value": 0,
+                      "value": "0"
+                    },
+                    "background_image_fill": {
+                      "name": "Image Fill",
+                      "type": "select",
+                      "default_value": "contain",
+                      "value": "contain",
+                      "possible_values": [
+                        {
+                          "value": "contain",
+                          "label": "Contain"
+                        },
+                        {
+                          "value": "cover",
+                          "label": "Cover"
+                        }
+                      ]
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_204",
+                  "moduleType": "custom_image",
+                  "title": "Category Image - Body Parts",
+                  "options": {
+                    "image_file": {
+                      "name": "Image File",
+                      "type": "image_upload",
+                      "default_value": null,
+                      "value": "https://cdn.revolutionparts.io/94a75e9e5a4537a1260ffa9d710df090/design/body_parts.webp"
+                    },
+                    "image_link": {
+                      "name": "Image URL",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "search?search_str=body+parts"
+                    },
+                    "image_title": {
+                      "name": "Image Title",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "Body Parts"
+                    },
+                    "image_size": {
+                      "name": "Image Size",
+                      "caption": "% Height of Image Relative to Width",
+                      "validate": "validate_required validate_numeric",
+                      "type": "string",
+                      "default_value": 100,
+                      "value": "100"
+                    },
+                    "image_margin": {
+                      "name": "Margin",
+                      "type": "string",
+                      "caption": "ex: 5px",
+                      "default_value": 0,
+                      "value": "0"
+                    },
+                    "background_image_fill": {
+                      "name": "Image Fill",
+                      "type": "select",
+                      "default_value": "contain",
+                      "value": "contain",
+                      "possible_values": [
+                        {
+                          "value": "contain",
+                          "label": "Contain"
+                        },
+                        {
+                          "value": "cover",
+                          "label": "Cover"
+                        }
+                      ]
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_205",
+                  "moduleType": "custom_image",
+                  "title": "Category Image - Steering Components",
+                  "options": {
+                    "image_file": {
+                      "name": "Image File",
+                      "type": "image_upload",
+                      "default_value": null,
+                      "value": "https://cdn.revolutionparts.io/94a75e9e5a4537a1260ffa9d710df090/design/363a35521d195829b67da9bd8d5bb225.webp"
+                    },
+                    "image_link": {
+                      "name": "Image URL",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "search?search_str=steering+components"
+                    },
+                    "image_title": {
+                      "name": "Image Title",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "Steering Components"
+                    },
+                    "image_size": {
+                      "name": "Image Size",
+                      "caption": "% Height of Image Relative to Width",
+                      "validate": "validate_required validate_numeric",
+                      "type": "string",
+                      "default_value": 100,
+                      "value": "100"
+                    },
+                    "image_margin": {
+                      "name": "Margin",
+                      "type": "string",
+                      "caption": "ex: 5px",
+                      "default_value": 0,
+                      "value": "0"
+                    },
+                    "background_image_fill": {
+                      "name": "Image Fill",
+                      "type": "select",
+                      "default_value": "contain",
+                      "value": "contain",
+                      "possible_values": [
+                        {
+                          "value": "contain",
+                          "label": "Contain"
+                        },
+                        {
+                          "value": "cover",
+                          "label": "Cover"
+                        }
+                      ]
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_206",
+                  "moduleType": "custom_image",
+                  "title": "Category Image - Lighting & Electrical Components",
+                  "options": {
+                    "image_file": {
+                      "name": "Image File",
+                      "type": "image_upload",
+                      "default_value": null,
+                      "value": "https://cdn.revolutionparts.io/94a75e9e5a4537a1260ffa9d710df090/design/lighting.webp"
+                    },
+                    "image_link": {
+                      "name": "Image URL",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "search?search_str=Lighting"
+                    },
+                    "image_title": {
+                      "name": "Image Title",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "Lighting & Electrical Components"
+                    },
+                    "image_size": {
+                      "name": "Image Size",
+                      "caption": "% Height of Image Relative to Width",
+                      "validate": "validate_required validate_numeric",
+                      "type": "string",
+                      "default_value": 100,
+                      "value": "100"
+                    },
+                    "image_margin": {
+                      "name": "Margin",
+                      "type": "string",
+                      "caption": "ex: 5px",
+                      "default_value": 0,
+                      "value": "0"
+                    },
+                    "background_image_fill": {
+                      "name": "Image Fill",
+                      "type": "select",
+                      "default_value": "contain",
+                      "value": "contain",
+                      "possible_values": [
+                        {
+                          "value": "contain",
+                          "label": "Contain"
+                        },
+                        {
+                          "value": "cover",
+                          "label": "Cover"
+                        }
+                      ]
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_267",
+                  "moduleType": "custom_image",
+                  "title": "Category Image - Drivetrain",
+                  "options": {
+                    "image_file": {
+                      "name": "Image File",
+                      "type": "image_upload",
+                      "default_value": null,
+                      "value": "https://cdn.revolutionparts.io/94a75e9e5a4537a1260ffa9d710df090/design/drive_train.webp"
+                    },
+                    "image_link": {
+                      "name": "Image URL",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "search?search_str=drivetrain"
+                    },
+                    "image_title": {
+                      "name": "Image Title",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "Drivetrain Components"
+                    },
+                    "image_size": {
+                      "name": "Image Size",
+                      "caption": "% Height of Image Relative to Width",
+                      "validate": "validate_required validate_numeric",
+                      "type": "string",
+                      "default_value": 100,
+                      "value": "100"
+                    },
+                    "image_margin": {
+                      "name": "Margin",
+                      "type": "string",
+                      "caption": "ex: 5px",
+                      "default_value": 0,
+                      "value": "0"
+                    },
+                    "background_image_fill": {
+                      "name": "Image Fill",
+                      "type": "select",
+                      "default_value": "contain",
+                      "value": "contain",
+                      "possible_values": [
+                        {
+                          "value": "contain",
+                          "label": "Contain"
+                        },
+                        {
+                          "value": "cover",
+                          "label": "Cover"
+                        }
+                      ]
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_17",
+      "htmlId": "our-brands",
+      "htmlClasses": "themeAftermarketBrands",
+      "contentWidth": "wide",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_18",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_19",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_20",
+                  "moduleType": "custom_html",
+                  "title": "Top Brands",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div id=\"spotlightTitle\">\n    <h2>Top Brands</h2>\n</div>\n<ul class=\"themeAftermarketBrandList\">\n    <li>\n        <a href=\"/b/acdelco\">\n            <div class=\"themeAftermarketBrandImg\">\n                <img src=\"https://cdn.revolutionparts.io/cbb863a2fb043ea4a901edc31201b145/design/ac-delco-logo.png\" alt=\"AC Delco Logo\">\n            </div>\n            <p>AC Delco</p>\n        </a>\n    </li>\n    <li>\n        <a href=\"/b/motorcraft\">\n            <div class=\"themeAftermarketBrandImg\">\n                <img src=\"https://cdn.revolutionparts.io/cbb863a2fb043ea4a901edc31201b145/design/motorcraft-vector-logo.png\" alt=\"Motorcraft Logo\">\n            </div>\n            <p>Motorcraft</p>\n        </a>\n    </li>\n    <li>\n        <a href=\"/b/dorman\">\n            <div class=\"themeAftermarketBrandImg\">\n                <img src=\"https://cdn.revolutionparts.io/cbb863a2fb043ea4a901edc31201b145/design/Dorman_Logo.png\" alt=\"Dorman Logo\">\n            </div>\n            <p>Dorman</p>\n        </a>\n    </li>\n    <li>\n        <a href=\"/b/kyb\">\n            <div class=\"themeAftermarketBrandImg\">\n                <img src=\"https://cdn.revolutionparts.io/cbb863a2fb043ea4a901edc31201b145/design/KYB_Logo.png\" alt=\"KYB Logo\">\n            </div>\n            <p>KYB America</p>\n        </a>\n    </li>\n    <li>\n        <a href=\"/b/delphi\">\n            <div class=\"themeAftermarketBrandImg\">\n                <img src=\"https://cdn.revolutionparts.io/cbb863a2fb043ea4a901edc31201b145/design/Delphi_Logo.png\" alt=\"Delphi Logo\">\n            </div>\n            <p>Delphi</p>\n        </a>\n    </li>\n    <li>\n        <a href=\"/b/moog\">\n            <div class=\"themeAftermarketBrandImg\">\n                <img src=\"https://cdn.revolutionparts.io/cbb863a2fb043ea4a901edc31201b145/design/MOOG-Logo.png\" alt=\"Moog Logo\">\n            </div>\n            <p>Moog</p>\n        </a>\n    </li>\n    <li>\n        <a href=\"/b/skf\">\n            <div class=\"themeAftermarketBrandImg\">\n                <img src=\"https://cdn-static.revolutionparts.io/assets/images/skf.png\" alt=\"SKF Logo\">\n            </div>\n            <p>SKF</p>\n        </a>\n    </li>\n    <li>\n        <a href=\"/b/brute-power\">\n            <div class=\"themeAftermarketBrandImg\">\n                <img src=\"https://cdn-static.revolutionparts.io/assets/images/brute-power.png\" alt=\"Moog Logo\">\n            </div>\n            <p>Brute Power</p>\n        </a>\n    </li>\n</ul>\n<div class=\"themeAftermarketButton\">\n    <a href=\"/b\">Shop All Brands</a>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_12",
+      "htmlId": "",
+      "htmlClasses": "theme_shop_cat_section padding_section",
+      "contentWidth": "wide",
+      "backgroundColor": "#ffffff",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_13",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_14",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_64",
+                  "moduleType": "custom_html",
+                  "title": "Section Title",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div id=\"bestsellerTitle\">\n    <h2>Best Sellers</h2>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_10",
+                  "moduleType": "featured_products",
+                  "title": "Featured Products",
+                  "options": {
+                    "display_as_slider": {
+                      "name": "Display As slider",
+                      "caption": "Displays featured products in a slider format",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "homepageFeaturedProducts",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_57",
+      "htmlId": "",
+      "htmlClasses": "theme_spotlight_section",
+      "contentWidth": "wide",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_58",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_59",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_60",
+                  "moduleType": "custom_html",
+                  "title": "Spotlight Section",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div id=\"spotlightTitle\">\n    <h2>Free Returns</h2>\n</div>\n<ul class=\"theme_spotlight_list\">\n    <li class=\"theme_spotlight_item\">\n        <div class=\"theme_spotlight_card\">\n            <div class=\"theme_spotlight_icon\">\n                <img src=\"https://rparts-sites.s3.amazonaws.com/94a75e9e5a4537a1260ffa9d710df090/design/icons/inventory.svg\" alt=\"Live Inventory\">\n            </div>\n            <div class=\"theme_spotlight_content\">\n                <h4>Live Inventory</h4>\n            </div>\n        </div>        \n    </li>\n    <li class=\"theme_spotlight_item\">\n        <div class=\"theme_spotlight_card\">\n            <div class=\"theme_spotlight_icon\">\n                <img src=\"https://rparts-sites.s3.amazonaws.com/94a75e9e5a4537a1260ffa9d710df090/design/icons/quality.svg\" alt=\"OEM & Quality Aftermarket\">\n            </div>\n            <div class=\"theme_spotlight_content\">\n                <h4>OEM & Quality Aftermarket</h4>\n            </div>\n        </div>\n    </li>\n    <li class=\"theme_spotlight_item\">\n        <div class=\"theme_spotlight_card\">\n            <div class=\"theme_spotlight_icon\">\n                <img src=\"https://rparts-sites.s3.amazonaws.com/94a75e9e5a4537a1260ffa9d710df090/design/icons/secure-payment.svg\" alt=\"Secure Checkout\">\n            </div>\n            <div class=\"theme_spotlight_content\">\n                <h4>Secure Checkout</h4>\n            </div>\n        </div>        \n    </li>\n</ul>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
