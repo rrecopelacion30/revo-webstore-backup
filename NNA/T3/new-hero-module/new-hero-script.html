@@ -1,0 +1,23 @@
+<script>
+$(document).ready(function () {
+  $('.themeHeroTooltipAnchor').on('click', function (e) {
+    e.preventDefault();
+
+    const anchor = $(this);
+    const wrapper = anchor.closest('.themeHeroTooltipWrap');
+    const tooltip = wrapper.next('.themeHeroTooltip'); // sibling tooltip
+
+    // Hide all tooltips first
+    $('.themeHeroTooltip').hide();
+
+    tooltip.show();
+  });
+
+  // Hide tooltip on outside click
+  $(document).on('click', function (e) {
+    if (!$(e.target).closest('.themeHeroTooltipAnchor, .themeHeroTooltip').length) {
+      $('.themeHeroTooltip').hide();
+    }
+  });
+});
+</script>

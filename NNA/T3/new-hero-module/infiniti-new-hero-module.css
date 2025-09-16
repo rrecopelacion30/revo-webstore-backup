@@ -1,0 +1,92 @@
+/* themeHeroSection */
+.themeHeroSection .container-wrap {
+	padding-top: 0 !important;
+	padding-bottom: 0 !important;
+}
+
+.themeHeroSection .hero-module .hero-slider li .slide-content-wrap {
+	max-width: 1250px;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.themeHeroSection .hero-module .hero-slider li .slide-content-wrap,
+.themeHeroSection .hero-module .hero-slider li .slide-image-wrap {
+    height: 500px !important;
+}
+
+.themeHeroSection .hero-module .hero-slider li .slide-content-wrap .slide-content {
+	max-width: 575px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+.themeHeroSection .hero-module .hero-slider li .slide-content-wrap .slide-content h1 {
+	color: #fff;
+    font-family: var(--themeFontLight) !important;
+    font-size: 1.875rem;
+    line-height: normal;
+    margin-bottom: 15px;
+}
+
+.themeHeroSection .hero-module .hero-slider li .slide-content-wrap .slide-content .themeHeroTooltipWrap {
+	margin-bottom: 40px;
+    font-size: 14px;
+}
+
+.themeHeroSection .hero-module .hero-slider li .slide-content-wrap .slide-content .themeHeroButton {
+    display: inline-block;
+    font-size: 16px;
+    padding: 10px 40px 10px 15px;
+    border: 1px solid var(--themeButtonColor);
+    background-color: var(--themeButtonColor);
+    text-align: center;
+    font-weight: 300;
+    width: auto;
+    color: var(--themeColor) !important;
+    font-family: var(--themeFontLight);
+    transition: all .3s ease-in-out;
+    margin-bottom: 0;
+    position: relative;
+}
+
+.themeHeroSection .hero-module .hero-slider li .slide-content-wrap .slide-content .themeHeroButton::before {
+	content: "";
+    width: 9px;
+    height: 9px;
+    border: solid var(--themeColor);
+    border-width: 1px 0 0 1px;
+    position: absolute;
+    right: 20px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    transform: rotate(135deg);
+}
+
+.themeHeroSection .themeHeroTooltip {
+	position: absolute;
+    bottom: 0;
+    background: #fff;
+    color: #000;
+    padding: 10px 10px;
+    border-radius: 2px;
+    font-size: 10px;
+    display: none;
+    z-index: 1000;
+    width: 100%;
+}
+
+.themeHeroSection .themeHeroTooltip strong {
+    font-family: var(--themeFontBold) !important;
+}
+
+.themeHeroSection .hero-module .hero-content .owl-nav.disabled {
+	display: none !important;
+}
+/* end of themeHeroSection */

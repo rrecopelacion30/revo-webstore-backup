@@ -1,0 +1,1673 @@
+{
+  "pageId": "homepage",
+  "pageName": "Home Page",
+  "pageType": null,
+  "layoutEnabled": true,
+  "moduleCategories": [
+    "header",
+    "images",
+    "text",
+    "search",
+    "categories_products",
+    "forms",
+    "navigation",
+    "footer"
+  ],
+  "VFSPath": "layouts/homepage.json",
+  "requiredModules": [
+    "featured_products"
+  ],
+  "scripts": null,
+  "sections": [
+    {
+      "sectionId": "section_5",
+      "htmlId": "",
+      "htmlClasses": "themeBannerSection",
+      "contentWidth": "full",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_6",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_7",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_28",
+                  "moduleType": "hero",
+                  "title": "Hero",
+                  "options": {
+                    "hero_slides": {
+                      "name": "Hero Slides",
+                      "type": "object",
+                      "default_value": [],
+                      "value": [
+                        {
+                          "slideId": "slide_60",
+                          "type": null,
+                          "image": "https://cdn.revolutionparts.io/575ff38c4115750c8c2dc1bcebcc2f6c/design/banner_01.webp",
+                          "mobile_image": "",
+                          "image_overlay": "#000000",
+                          "image_overlay_opacity": "30",
+                          "alt": "",
+                          "content": "<h1>Superior Braking Performance</h1>\n<h2>\nPremium Brake Repair Parts, For Passenger, Medium-Duty, and Commercial Applications\n</h2>\n<a href=\"/all-products\">Shop Parts</a>",
+                          "link": null,
+                          "link_text": null,
+                          "timeline": "permanent_slide",
+                          "duration": null
+                        }
+                      ]
+                    },
+                    "transition_style": {
+                      "name": "Transition Style",
+                      "type": "radio",
+                      "possible_values": [
+                        {
+                          "value": "slide",
+                          "label": "Slide to the next"
+                        },
+                        {
+                          "value": "fade",
+                          "label": "Fade to the next"
+                        }
+                      ],
+                      "value": "slide"
+                    },
+                    "transition_speed": {
+                      "name": "Transition Speed",
+                      "type": "select",
+                      "possible_values": [
+                        {
+                          "value": "5",
+                          "label": "5 seconds"
+                        },
+                        {
+                          "value": "10",
+                          "label": "10 seconds"
+                        }
+                      ],
+                      "value": "10"
+                    },
+                    "use_slide_arrow_control": {
+                      "name": "Previous/next arrows",
+                      "type": "boolean",
+                      "value": false
+                    },
+                    "use_slide_pagination_control": {
+                      "name": "Slide pagination",
+                      "type": "boolean",
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": true,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_50",
+                  "moduleType": "vehicle_picker_dropdowns",
+                  "title": "Vehicle Picker Dropdowns",
+                  "options": {
+                    "title": {
+                      "name": "Picker Title",
+                      "type": "string",
+                      "default_value": "Select Your Vehicle",
+                      "value": "Select By Vehicle"
+                    },
+                    "redirect_uri": {
+                      "name": "Redirect URL",
+                      "type": "string",
+                      "default_value": null,
+                      "value": ""
+                    },
+                    "select_button_text": {
+                      "name": "Select Button Text",
+                      "type": "string",
+                      "default_value": "Select",
+                      "value": "Search Now"
+                    },
+                    "make_text": {
+                      "name": "Select Make Text",
+                      "type": "string",
+                      "default_value": "",
+                      "value": ""
+                    },
+                    "model_text": {
+                      "name": "Select Model Text",
+                      "type": "string",
+                      "default_value": "",
+                      "value": ""
+                    },
+                    "year_text": {
+                      "name": "Select Year Text",
+                      "type": "string",
+                      "default_value": "",
+                      "value": ""
+                    },
+                    "trim_text": {
+                      "name": "Select Trim Text",
+                      "type": "string",
+                      "default_value": "",
+                      "value": ""
+                    },
+                    "engine_text": {
+                      "name": "Select Engine Text",
+                      "type": "string",
+                      "default_value": "",
+                      "value": ""
+                    },
+                    "use_button_submit": {
+                      "name": "Save on Button Click",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": true
+                    },
+                    "show_filters": {
+                      "name": "Show filter input in dropdown",
+                      "type": "boolean",
+                      "default_value": true,
+                      "value": true
+                    },
+                    "filter_placeholder": {
+                      "name": "Filter placeholder text",
+                      "type": "string",
+                      "default_value": "Filter",
+                      "value": "Filter"
+                    },
+                    "style": {
+                      "name": "Display",
+                      "type": "select",
+                      "possible_values": [
+                        {
+                          "value": "classic",
+                          "label": "Classic"
+                        },
+                        {
+                          "value": "inline",
+                          "label": "Horizontal"
+                        }
+                      ],
+                      "default_value": "classic",
+                      "value": "classic"
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "themeVehiclePicker",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_32",
+      "htmlId": "",
+      "htmlClasses": "themePadding themeCategorySection",
+      "contentWidth": "wide",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_33",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_35",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_36",
+                  "moduleType": "call_to_action",
+                  "title": "Shop by Category",
+                  "options": {
+                    "title": {
+                      "name": "Title",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "Shop By Category"
+                    },
+                    "content": {
+                      "name": "Content",
+                      "type": "html_content",
+                      "default_value": null,
+                      "value": ""
+                    },
+                    "button_text": {
+                      "name": "Button Text",
+                      "type": "string",
+                      "default_value": null,
+                      "value": ""
+                    },
+                    "button_link": {
+                      "name": "Button Link",
+                      "type": "link",
+                      "default_value": null,
+                      "value": ""
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "themeTitle",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "rowId": "row_34",
+          "rowLayout": 12,
+          "htmlId": "",
+          "htmlClasses": "themeCategoryNewList",
+          "columns": [
+            {
+              "columnId": "column_37",
+              "columnWidth": 12,
+              "htmlId": "",
+              "htmlClasses": "themeCategoryNewSlider",
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_38",
+                  "moduleType": "custom_image",
+                  "title": "Category Image - Brakes & Wheel Bearings",
+                  "options": {
+                    "image_file": {
+                      "name": "Image File",
+                      "type": "image_upload",
+                      "default_value": null,
+                      "value": "https://cdn.revolutionparts.io/575ff38c4115750c8c2dc1bcebcc2f6c/design/brake_%26_brake_parts.webp"
+                    },
+                    "image_link": {
+                      "name": "Image URL",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "c/brakes-brake-parts"
+                    },
+                    "image_title": {
+                      "name": "Image Title",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "Brakes & Wheel Bearings"
+                    },
+                    "image_size": {
+                      "name": "Image Size",
+                      "caption": "% Height of Image Relative to Width",
+                      "validate": "validate_required validate_numeric",
+                      "type": "string",
+                      "default_value": 100,
+                      "value": "100"
+                    },
+                    "image_margin": {
+                      "name": "Margin",
+                      "type": "string",
+                      "caption": "ex: 5px",
+                      "default_value": 0,
+                      "value": "0"
+                    },
+                    "background_image_fill": {
+                      "name": "Image Fill",
+                      "type": "select",
+                      "default_value": "contain",
+                      "value": "contain",
+                      "possible_values": [
+                        {
+                          "value": "contain",
+                          "label": "Contain"
+                        },
+                        {
+                          "value": "cover",
+                          "label": "Cover"
+                        }
+                      ]
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_39",
+                  "moduleType": "custom_image",
+                  "title": "Category Image - Steering & Suspension",
+                  "options": {
+                    "image_file": {
+                      "name": "Image File",
+                      "type": "image_upload",
+                      "default_value": null,
+                      "value": "https://cdn.revolutionparts.io/575ff38c4115750c8c2dc1bcebcc2f6c/design/all_suspension_steering_parts.webp"
+                    },
+                    "image_link": {
+                      "name": "Image URL",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "c/suspension-steering"
+                    },
+                    "image_title": {
+                      "name": "Image Title",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "Steering & Suspension"
+                    },
+                    "image_size": {
+                      "name": "Image Size",
+                      "caption": "% Height of Image Relative to Width",
+                      "validate": "validate_required validate_numeric",
+                      "type": "string",
+                      "default_value": 100,
+                      "value": "100"
+                    },
+                    "image_margin": {
+                      "name": "Margin",
+                      "type": "string",
+                      "caption": "ex: 5px",
+                      "default_value": 0,
+                      "value": "0"
+                    },
+                    "background_image_fill": {
+                      "name": "Image Fill",
+                      "type": "select",
+                      "default_value": "contain",
+                      "value": "contain",
+                      "possible_values": [
+                        {
+                          "value": "contain",
+                          "label": "Contain"
+                        },
+                        {
+                          "value": "cover",
+                          "label": "Cover"
+                        }
+                      ]
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_40",
+                  "moduleType": "custom_image",
+                  "title": "Category Image - Ignition & Electrical",
+                  "options": {
+                    "image_file": {
+                      "name": "Image File",
+                      "type": "image_upload",
+                      "default_value": null,
+                      "value": "https://cdn.revolutionparts.io/575ff38c4115750c8c2dc1bcebcc2f6c/design/all_ignition_system_parts.webp"
+                    },
+                    "image_link": {
+                      "name": "Image URL",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "c/ignition-systems"
+                    },
+                    "image_title": {
+                      "name": "Image Title",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "Ignition & Electrical"
+                    },
+                    "image_size": {
+                      "name": "Image Size",
+                      "caption": "% Height of Image Relative to Width",
+                      "validate": "validate_required validate_numeric",
+                      "type": "string",
+                      "default_value": 100,
+                      "value": "100"
+                    },
+                    "image_margin": {
+                      "name": "Margin",
+                      "type": "string",
+                      "caption": "ex: 5px",
+                      "default_value": 0,
+                      "value": "0"
+                    },
+                    "background_image_fill": {
+                      "name": "Image Fill",
+                      "type": "select",
+                      "default_value": "contain",
+                      "value": "contain",
+                      "possible_values": [
+                        {
+                          "value": "contain",
+                          "label": "Contain"
+                        },
+                        {
+                          "value": "cover",
+                          "label": "Cover"
+                        }
+                      ]
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_41",
+                  "moduleType": "custom_image",
+                  "title": "Category Image - Fuel & Emissions",
+                  "options": {
+                    "image_file": {
+                      "name": "Image File",
+                      "type": "image_upload",
+                      "default_value": null,
+                      "value": "https://cdn.revolutionparts.io/575ff38c4115750c8c2dc1bcebcc2f6c/design/all_emission_system_parts.webp"
+                    },
+                    "image_link": {
+                      "name": "Image URL",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "c/emission-systems"
+                    },
+                    "image_title": {
+                      "name": "Image Title",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "Fuel & Emission"
+                    },
+                    "image_size": {
+                      "name": "Image Size",
+                      "caption": "% Height of Image Relative to Width",
+                      "validate": "validate_required validate_numeric",
+                      "type": "string",
+                      "default_value": 100,
+                      "value": "100"
+                    },
+                    "image_margin": {
+                      "name": "Margin",
+                      "type": "string",
+                      "caption": "ex: 5px",
+                      "default_value": 0,
+                      "value": "0"
+                    },
+                    "background_image_fill": {
+                      "name": "Image Fill",
+                      "type": "select",
+                      "default_value": "contain",
+                      "value": "contain",
+                      "possible_values": [
+                        {
+                          "value": "contain",
+                          "label": "Contain"
+                        },
+                        {
+                          "value": "cover",
+                          "label": "Cover"
+                        }
+                      ]
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_42",
+                  "moduleType": "custom_image",
+                  "title": "Category Image - Engine & Drivetrain",
+                  "options": {
+                    "image_file": {
+                      "name": "Image File",
+                      "type": "image_upload",
+                      "default_value": null,
+                      "value": "https://cdn.revolutionparts.io/575ff38c4115750c8c2dc1bcebcc2f6c/design/all_engine_%26_components.webp"
+                    },
+                    "image_link": {
+                      "name": "Image URL",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "c/engines-components"
+                    },
+                    "image_title": {
+                      "name": "Image Title",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "Engine & Drivetrain"
+                    },
+                    "image_size": {
+                      "name": "Image Size",
+                      "caption": "% Height of Image Relative to Width",
+                      "validate": "validate_required validate_numeric",
+                      "type": "string",
+                      "default_value": 100,
+                      "value": "100"
+                    },
+                    "image_margin": {
+                      "name": "Margin",
+                      "type": "string",
+                      "caption": "ex: 5px",
+                      "default_value": 0,
+                      "value": "0"
+                    },
+                    "background_image_fill": {
+                      "name": "Image Fill",
+                      "type": "select",
+                      "default_value": "contain",
+                      "value": "contain",
+                      "possible_values": [
+                        {
+                          "value": "contain",
+                          "label": "Contain"
+                        },
+                        {
+                          "value": "cover",
+                          "label": "Cover"
+                        }
+                      ]
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_43",
+                  "moduleType": "custom_image",
+                  "title": "Category Image - Transmission",
+                  "options": {
+                    "image_file": {
+                      "name": "Image File",
+                      "type": "image_upload",
+                      "default_value": null,
+                      "value": "https://cdn.revolutionparts.io/575ff38c4115750c8c2dc1bcebcc2f6c/design/all_transmission.webp"
+                    },
+                    "image_link": {
+                      "name": "Image URL",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "c/transmission-drivetrain"
+                    },
+                    "image_title": {
+                      "name": "Image Title",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "Transmission"
+                    },
+                    "image_size": {
+                      "name": "Image Size",
+                      "caption": "% Height of Image Relative to Width",
+                      "validate": "validate_required validate_numeric",
+                      "type": "string",
+                      "default_value": 100,
+                      "value": "100"
+                    },
+                    "image_margin": {
+                      "name": "Margin",
+                      "type": "string",
+                      "caption": "ex: 5px",
+                      "default_value": 0,
+                      "value": "0"
+                    },
+                    "background_image_fill": {
+                      "name": "Image Fill",
+                      "type": "select",
+                      "default_value": "contain",
+                      "value": "contain",
+                      "possible_values": [
+                        {
+                          "value": "contain",
+                          "label": "Contain"
+                        },
+                        {
+                          "value": "cover",
+                          "label": "Cover"
+                        }
+                      ]
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_46",
+                  "moduleType": "custom_image",
+                  "title": "Category Image - Service & Maintenance",
+                  "options": {
+                    "image_file": {
+                      "name": "Image File",
+                      "type": "image_upload",
+                      "default_value": null,
+                      "value": "https://cdn.revolutionparts.io/575ff38c4115750c8c2dc1bcebcc2f6c/design/service%26maintenance.webp"
+                    },
+                    "image_link": {
+                      "name": "Image URL",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "c/tools-supplies"
+                    },
+                    "image_title": {
+                      "name": "Image Title",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "Service & Maintenance"
+                    },
+                    "image_size": {
+                      "name": "Image Size",
+                      "caption": "% Height of Image Relative to Width",
+                      "validate": "validate_required validate_numeric",
+                      "type": "string",
+                      "default_value": 100,
+                      "value": "100"
+                    },
+                    "image_margin": {
+                      "name": "Margin",
+                      "type": "string",
+                      "caption": "ex: 5px",
+                      "default_value": 0,
+                      "value": "0"
+                    },
+                    "background_image_fill": {
+                      "name": "Image Fill",
+                      "type": "select",
+                      "default_value": "contain",
+                      "value": "contain",
+                      "possible_values": [
+                        {
+                          "value": "contain",
+                          "label": "Contain"
+                        },
+                        {
+                          "value": "cover",
+                          "label": "Cover"
+                        }
+                      ]
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_47",
+                  "moduleType": "custom_image",
+                  "title": "Category Image - Exhaust",
+                  "options": {
+                    "image_file": {
+                      "name": "Image File",
+                      "type": "image_upload",
+                      "default_value": null,
+                      "value": "https://cdn.revolutionparts.io/575ff38c4115750c8c2dc1bcebcc2f6c/design/all_exhaust_parts.webp"
+                    },
+                    "image_link": {
+                      "name": "Image URL",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "c/exhaust"
+                    },
+                    "image_title": {
+                      "name": "Image Title",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "Exhaust"
+                    },
+                    "image_size": {
+                      "name": "Image Size",
+                      "caption": "% Height of Image Relative to Width",
+                      "validate": "validate_required validate_numeric",
+                      "type": "string",
+                      "default_value": 100,
+                      "value": "100"
+                    },
+                    "image_margin": {
+                      "name": "Margin",
+                      "type": "string",
+                      "caption": "ex: 5px",
+                      "default_value": 0,
+                      "value": "0"
+                    },
+                    "background_image_fill": {
+                      "name": "Image Fill",
+                      "type": "select",
+                      "default_value": "contain",
+                      "value": "contain",
+                      "possible_values": [
+                        {
+                          "value": "contain",
+                          "label": "Contain"
+                        },
+                        {
+                          "value": "cover",
+                          "label": "Cover"
+                        }
+                      ]
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_48",
+                  "moduleType": "custom_image",
+                  "title": "Category Image - Chemical & Fluids",
+                  "options": {
+                    "image_file": {
+                      "name": "Image File",
+                      "type": "image_upload",
+                      "default_value": null,
+                      "value": "https://cdn.revolutionparts.io/575ff38c4115750c8c2dc1bcebcc2f6c/design/fluids.webp"
+                    },
+                    "image_link": {
+                      "name": "Image URL",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "c/other-parts"
+                    },
+                    "image_title": {
+                      "name": "Image Title",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "Fluids"
+                    },
+                    "image_size": {
+                      "name": "Image Size",
+                      "caption": "% Height of Image Relative to Width",
+                      "validate": "validate_required validate_numeric",
+                      "type": "string",
+                      "default_value": 100,
+                      "value": "100"
+                    },
+                    "image_margin": {
+                      "name": "Margin",
+                      "type": "string",
+                      "caption": "ex: 5px",
+                      "default_value": 0,
+                      "value": "0"
+                    },
+                    "background_image_fill": {
+                      "name": "Image Fill",
+                      "type": "select",
+                      "default_value": "contain",
+                      "value": "contain",
+                      "possible_values": [
+                        {
+                          "value": "contain",
+                          "label": "Contain"
+                        },
+                        {
+                          "value": "cover",
+                          "label": "Cover"
+                        }
+                      ]
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_49",
+                  "moduleType": "custom_image",
+                  "title": "Category Image - HVAC & Cooling",
+                  "options": {
+                    "image_file": {
+                      "name": "Image File",
+                      "type": "image_upload",
+                      "default_value": null,
+                      "value": "https://cdn.revolutionparts.io/575ff38c4115750c8c2dc1bcebcc2f6c/design/all_cooling_sytem_parts.webp"
+                    },
+                    "image_link": {
+                      "name": "Image URL",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "c/cooling-systems"
+                    },
+                    "image_title": {
+                      "name": "Image Title",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "HVAC & Cooling"
+                    },
+                    "image_size": {
+                      "name": "Image Size",
+                      "caption": "% Height of Image Relative to Width",
+                      "validate": "validate_required validate_numeric",
+                      "type": "string",
+                      "default_value": 100,
+                      "value": "100"
+                    },
+                    "image_margin": {
+                      "name": "Margin",
+                      "type": "string",
+                      "caption": "ex: 5px",
+                      "default_value": 0,
+                      "value": "0"
+                    },
+                    "background_image_fill": {
+                      "name": "Image Fill",
+                      "type": "select",
+                      "default_value": "contain",
+                      "value": "contain",
+                      "possible_values": [
+                        {
+                          "value": "contain",
+                          "label": "Contain"
+                        },
+                        {
+                          "value": "cover",
+                          "label": "Cover"
+                        }
+                      ]
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "rowId": "row_116",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_117",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_118",
+                  "moduleType": "custom_html",
+                  "title": "Shop Category Button",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"themeCategoryButton\">\n    <a href=\"/c\">Shop All Categories</a>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_27",
+      "htmlId": "our-brands",
+      "htmlClasses": "themeAftermarketBrands",
+      "contentWidth": "wide",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_28",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_29",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_30",
+                  "moduleType": "custom_html",
+                  "title": "Top Brands",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div id=\"spotlightTitle\">\n    <h2>Top Brands</h2>\n</div>\n<ul class=\"themeAftermarketBrandList\">\n    <li>\n        <a href=\"/b/acdelco\">\n            <div class=\"themeAftermarketBrandImg\">\n                <img src=\"https://cdn.revolutionparts.io/cbb863a2fb043ea4a901edc31201b145/design/ac-delco-logo.png\" alt=\"AC Delco Logo\">\n            </div>\n            <p>AC Delco</p>\n        </a>\n    </li>\n    <li>\n        <a href=\"/b/motorcraft\">\n            <div class=\"themeAftermarketBrandImg\">\n                <img src=\"https://cdn.revolutionparts.io/cbb863a2fb043ea4a901edc31201b145/design/motorcraft-vector-logo.png\" alt=\"Motorcraft Logo\">\n            </div>\n            <p>Motorcraft</p>\n        </a>\n    </li>\n    <li>\n        <a href=\"/b/dorman\">\n            <div class=\"themeAftermarketBrandImg\">\n                <img src=\"https://cdn.revolutionparts.io/cbb863a2fb043ea4a901edc31201b145/design/Dorman_Logo.png\" alt=\"Dorman Logo\">\n            </div>\n            <p>Dorman</p>\n        </a>\n    </li>\n    <li>\n        <a href=\"/b/denso\">\n            <div class=\"themeAftermarketBrandImg\">\n                <img src=\"https://cdn-static.revolutionparts.io/assets/images/denso.png\" alt=\"Denso Logo\">\n            </div>\n            <p>Denso</p>\n        </a>\n    </li>\n    <li>\n        <a href=\"/b/bilstein\">\n            <div class=\"themeAftermarketBrandImg\">\n                <img src=\"https://cdn-static.revolutionparts.io/assets/images/bilstein.png\" alt=\"Bilstein Logo\">\n            </div>\n            <p>Bilstein</p>\n        </a>\n    </li>\n    <li>\n        <a href=\"/b/moog\">\n            <div class=\"themeAftermarketBrandImg\">\n                <img src=\"https://cdn.revolutionparts.io/cbb863a2fb043ea4a901edc31201b145/design/MOOG-Logo.png\" alt=\"Moog Logo\">\n            </div>\n            <p>Moog</p>\n        </a>\n    </li>\n    <li>\n        <a href=\"b/delphi\">\n            <div class=\"themeAftermarketBrandImg\">\n                <img src=\"https://cdn-static.revolutionparts.io/assets/images/delphi.png\" alt=\"Delphi Logo\">\n            </div>\n            <p>Delphi</p>\n        </a>\n    </li>\n    <li>\n        <a href=\"b/monroe-shocks-&-struts\">\n            <div class=\"themeAftermarketBrandImg\">\n                <img src=\"https://cdn-static.revolutionparts.io/assets/images/monroe-shocks-and-struts.png\" alt=\"Monroe Logo\">\n            </div>\n            <p>Monroe</p>\n        </a>\n    </li>\n    <li>\n        <a href=\"b/akebono\">\n            <div class=\"themeAftermarketBrandImg\">\n                <img src=\"https://cdn-static.revolutionparts.io/assets/images/akebono.png\" alt=\"Akebono Logo\">\n            </div>\n            <p>Akebono</p>\n        </a>\n    </li>\n    <li>\n        <a href=\"b/global-parts-distributors\">\n            <div class=\"themeAftermarketBrandImg\">\n                <img src=\"https://cdn-static.revolutionparts.io/assets/images/global-parts-distributors.png\" alt=\"GPD Logo\">\n            </div>\n            <p>GPD</p>\n        </a>\n    </li>\n</ul>\n<div class=\"themeAftermarketButton\">\n    <a href=\"/b\">Shop All Brands</a>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_164",
+      "htmlId": "",
+      "htmlClasses": "themeDealsSection themePadding",
+      "contentWidth": "wide",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_168",
+          "rowLayout": "4_8",
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_169",
+              "columnWidth": 4,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_1",
+                  "moduleType": "call_to_action",
+                  "title": "Deals Content",
+                  "options": {
+                    "title": {
+                      "name": "Title",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "Why Choose Wagner Branded Parts?"
+                    },
+                    "content": {
+                      "name": "Content",
+                      "type": "html_content",
+                      "default_value": null,
+                      "value": "<p>Wagner's premium parts provide coverage for an array of vehicles and driving conditions!</p>"
+                    },
+                    "button_text": {
+                      "name": "Button Text",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "Shop All Products"
+                    },
+                    "button_link": {
+                      "name": "Button Link",
+                      "type": "link",
+                      "default_value": null,
+                      "value": "all-products"
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            },
+            {
+              "columnId": "column_170",
+              "columnWidth": 8,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_6",
+                  "moduleType": "banner_vpicker",
+                  "title": "Deals Slider",
+                  "options": {
+                    "banner_slides": {
+                      "name": "Banner Slides",
+                      "type": "object",
+                      "default_value": [],
+                      "value": [
+                        {
+                          "slideId": "slide_96",
+                          "image": "https://rparts-sites.s3.amazonaws.com/575ff38c4115750c8c2dc1bcebcc2f6c/design/Brake_Pad_Closeup.jpg",
+                          "link": "",
+                          "alt": ""
+                        },
+                        {
+                          "slideId": "slide_98",
+                          "image": "https://rparts-sites.s3.amazonaws.com/575ff38c4115750c8c2dc1bcebcc2f6c/design/oil-filter.webp",
+                          "link": "",
+                          "alt": ""
+                        }
+                      ]
+                    },
+                    "overlay_header": {
+                      "name": "Overlay Header",
+                      "type": "string",
+                      "default_value": null,
+                      "value": ""
+                    },
+                    "overlay_content": {
+                      "name": "Overlay Content",
+                      "type": "string",
+                      "default_value": null,
+                      "value": ""
+                    },
+                    "picker_title": {
+                      "name": "Picker Title",
+                      "type": "string",
+                      "default_value": "Select Your Vehicle",
+                      "value": "Select Your Vehicle"
+                    },
+                    "hide_vehicle_picker": {
+                      "name": "Hide Vehicle Picker",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": true
+                    },
+                    "slider_timeout": {
+                      "name": "Slider Speed",
+                      "type": "string",
+                      "default_value": "4000",
+                      "value": "4000"
+                    },
+                    "banner_height": {
+                      "name": "Banner Height",
+                      "type": "string",
+                      "default_value": "290",
+                      "value": "600"
+                    },
+                    "use_overlay_shadows": {
+                      "name": "Overlay Shadows",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    },
+                    "banner_image_fill": {
+                      "name": "Banner Image Fill",
+                      "type": "select",
+                      "possible_values": [
+                        {
+                          "value": "cover",
+                          "label": "Cover"
+                        },
+                        {
+                          "value": "contain",
+                          "label": "Contain"
+                        }
+                      ],
+                      "default_value": "cover",
+                      "value": "cover"
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": true,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_2",
+      "htmlId": "",
+      "htmlClasses": "themeLatestNewsSection",
+      "contentWidth": "wide",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_3",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_4",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_18",
+                  "moduleType": "call_to_action",
+                  "title": "Latest News ",
+                  "options": {
+                    "title": {
+                      "name": "Title",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "About the Parts We Sell"
+                    },
+                    "content": {
+                      "name": "Content",
+                      "type": "html_content",
+                      "default_value": null,
+                      "value": "<p>Learn why we pride ourselves in selling Wagner parts.</p>"
+                    },
+                    "button_text": {
+                      "name": "Button Text",
+                      "type": "string",
+                      "default_value": null,
+                      "value": ""
+                    },
+                    "button_link": {
+                      "name": "Button Link",
+                      "type": "link",
+                      "default_value": null,
+                      "value": ""
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "rowId": "row_7",
+          "rowLayout": "4_8",
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_8",
+              "columnWidth": 4,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_44",
+                  "moduleType": "banner_vpicker",
+                  "title": "Latest News 01",
+                  "options": {
+                    "banner_slides": {
+                      "name": "Banner Slides",
+                      "type": "object",
+                      "default_value": [],
+                      "value": [
+                        {
+                          "slideId": "slide_100",
+                          "image": "https://rparts-sites.s3.amazonaws.com/575ff38c4115750c8c2dc1bcebcc2f6c/design/part_main_img.webp",
+                          "link": "brakes",
+                          "alt": ""
+                        }
+                      ]
+                    },
+                    "overlay_header": {
+                      "name": "Overlay Header",
+                      "type": "string",
+                      "default_value": null,
+                      "value": ""
+                    },
+                    "overlay_content": {
+                      "name": "Overlay Content",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "Wagner set the industry standard for their brakes pads offering premium braking for trucks, SUVs, CUVs, and passenger cars."
+                    },
+                    "picker_title": {
+                      "name": "Picker Title",
+                      "type": "string",
+                      "default_value": "Select Your Vehicle",
+                      "value": "Select Your Vehicle"
+                    },
+                    "hide_vehicle_picker": {
+                      "name": "Hide Vehicle Picker",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": true
+                    },
+                    "slider_timeout": {
+                      "name": "Slider Speed",
+                      "type": "string",
+                      "default_value": "4000",
+                      "value": "1000"
+                    },
+                    "banner_height": {
+                      "name": "Banner Height",
+                      "type": "string",
+                      "default_value": "290",
+                      "value": "540"
+                    },
+                    "use_overlay_shadows": {
+                      "name": "Overlay Shadows",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    },
+                    "banner_image_fill": {
+                      "name": "Banner Image Fill",
+                      "type": "select",
+                      "possible_values": [
+                        {
+                          "value": "cover",
+                          "label": "Cover"
+                        },
+                        {
+                          "value": "contain",
+                          "label": "Contain"
+                        }
+                      ],
+                      "default_value": "cover",
+                      "value": "cover"
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": true,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            },
+            {
+              "columnId": "column_9",
+              "columnWidth": 8,
+              "htmlId": "",
+              "htmlClasses": "themeLatestNewsRight",
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_65",
+                  "moduleType": "banner_vpicker",
+                  "title": "Latest News 02",
+                  "options": {
+                    "banner_slides": {
+                      "name": "Banner Slides",
+                      "type": "object",
+                      "default_value": [],
+                      "value": [
+                        {
+                          "slideId": "slide_110",
+                          "image": "https://rparts-sites.s3.amazonaws.com/575ff38c4115750c8c2dc1bcebcc2f6c/design/lighting_img.webp",
+                          "link": "lighting",
+                          "alt": ""
+                        }
+                      ]
+                    },
+                    "overlay_header": {
+                      "name": "Overlay Header",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "Lighting"
+                    },
+                    "overlay_content": {
+                      "name": "Overlay Content",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "DOT compliant lights for night driving, fog, or snow."
+                    },
+                    "picker_title": {
+                      "name": "Picker Title",
+                      "type": "string",
+                      "default_value": "Select Your Vehicle",
+                      "value": "Select Your Vehicle"
+                    },
+                    "hide_vehicle_picker": {
+                      "name": "Hide Vehicle Picker",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": true
+                    },
+                    "slider_timeout": {
+                      "name": "Slider Speed",
+                      "type": "string",
+                      "default_value": "4000",
+                      "value": "1000"
+                    },
+                    "banner_height": {
+                      "name": "Banner Height",
+                      "type": "string",
+                      "default_value": "290",
+                      "value": "160"
+                    },
+                    "use_overlay_shadows": {
+                      "name": "Overlay Shadows",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    },
+                    "banner_image_fill": {
+                      "name": "Banner Image Fill",
+                      "type": "select",
+                      "possible_values": [
+                        {
+                          "value": "cover",
+                          "label": "Cover"
+                        },
+                        {
+                          "value": "contain",
+                          "label": "Contain"
+                        }
+                      ],
+                      "default_value": "cover",
+                      "value": "cover"
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": true,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_66",
+                  "moduleType": "banner_vpicker",
+                  "title": "Latest News 03",
+                  "options": {
+                    "banner_slides": {
+                      "name": "Banner Slides",
+                      "type": "object",
+                      "default_value": [],
+                      "value": [
+                        {
+                          "slideId": "slide_120",
+                          "image": "https://rparts-sites.s3.amazonaws.com/575ff38c4115750c8c2dc1bcebcc2f6c/design/rotors_img.webp",
+                          "link": "rotors",
+                          "alt": ""
+                        }
+                      ]
+                    },
+                    "overlay_header": {
+                      "name": "Overlay Header",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "Rotors"
+                    },
+                    "overlay_content": {
+                      "name": "Overlay Content",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "Engineered with a protective electro-coating to prevent corrosion."
+                    },
+                    "picker_title": {
+                      "name": "Picker Title",
+                      "type": "string",
+                      "default_value": "Select Your Vehicle",
+                      "value": "Select Your Vehicle"
+                    },
+                    "hide_vehicle_picker": {
+                      "name": "Hide Vehicle Picker",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": true
+                    },
+                    "slider_timeout": {
+                      "name": "Slider Speed",
+                      "type": "string",
+                      "default_value": "4000",
+                      "value": "1000"
+                    },
+                    "banner_height": {
+                      "name": "Banner Height",
+                      "type": "string",
+                      "default_value": "290",
+                      "value": "160"
+                    },
+                    "use_overlay_shadows": {
+                      "name": "Overlay Shadows",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    },
+                    "banner_image_fill": {
+                      "name": "Banner Image Fill",
+                      "type": "select",
+                      "possible_values": [
+                        {
+                          "value": "cover",
+                          "label": "Cover"
+                        },
+                        {
+                          "value": "contain",
+                          "label": "Contain"
+                        }
+                      ],
+                      "default_value": "cover",
+                      "value": "cover"
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": true,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_67",
+                  "moduleType": "banner_vpicker",
+                  "title": "Latest News 04",
+                  "options": {
+                    "banner_slides": {
+                      "name": "Banner Slides",
+                      "type": "object",
+                      "default_value": [],
+                      "value": [
+                        {
+                          "slideId": "slide_130",
+                          "image": "https://rparts-sites.s3.amazonaws.com/575ff38c4115750c8c2dc1bcebcc2f6c/design/fluids_img.webp",
+                          "link": "fluids",
+                          "alt": ""
+                        }
+                      ]
+                    },
+                    "overlay_header": {
+                      "name": "Overlay Header",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "Fluids"
+                    },
+                    "overlay_content": {
+                      "name": "Overlay Content",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "Extend the longevity of your braking system with Wagner brake fluids"
+                    },
+                    "picker_title": {
+                      "name": "Picker Title",
+                      "type": "string",
+                      "default_value": "Select Your Vehicle",
+                      "value": "Select Your Vehicle"
+                    },
+                    "hide_vehicle_picker": {
+                      "name": "Hide Vehicle Picker",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": true
+                    },
+                    "slider_timeout": {
+                      "name": "Slider Speed",
+                      "type": "string",
+                      "default_value": "4000",
+                      "value": "1000"
+                    },
+                    "banner_height": {
+                      "name": "Banner Height",
+                      "type": "string",
+                      "default_value": "290",
+                      "value": "160"
+                    },
+                    "use_overlay_shadows": {
+                      "name": "Overlay Shadows",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    },
+                    "banner_image_fill": {
+                      "name": "Banner Image Fill",
+                      "type": "select",
+                      "possible_values": [
+                        {
+                          "value": "cover",
+                          "label": "Cover"
+                        },
+                        {
+                          "value": "contain",
+                          "label": "Contain"
+                        }
+                      ],
+                      "default_value": "cover",
+                      "value": "cover"
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": true,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_1",
+      "htmlId": "",
+      "htmlClasses": "themeFeaturedProductSection",
+      "contentWidth": "wide",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_2",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_3",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_4",
+                  "moduleType": "featured_products",
+                  "title": "Featured Products",
+                  "options": {
+                    "display_as_slider": {
+                      "name": "Display As slider",
+                      "caption": "Displays featured products in a slider format",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": null,
+                  "htmlClasses": null,
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

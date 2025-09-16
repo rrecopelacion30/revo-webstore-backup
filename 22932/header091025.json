@@ -1,0 +1,831 @@
+{
+  "pageId": "header",
+  "pageName": "Header",
+  "pageType": null,
+  "layoutEnabled": true,
+  "moduleCategories": [
+    "header",
+    "images",
+    "text",
+    "search",
+    "categories_products",
+    "forms",
+    "navigation",
+    "footer"
+  ],
+  "VFSPath": "layouts/header.json",
+  "requiredModules": [],
+  "scripts": null,
+  "sections": [
+    {
+      "sectionId": "section_13",
+      "htmlId": "",
+      "htmlClasses": "themeTopHeaderSection",
+      "contentWidth": "wide",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_14",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_15",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_16",
+                  "moduleType": "store_logo",
+                  "title": "Store Logo",
+                  "options": {
+                    "logo_dark_background": {
+                      "name": "Use Dark Background Logo",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    },
+                    "logo_height": {
+                      "name": "Logo Height (px)",
+                      "type": "string",
+                      "default_value": "",
+                      "value": ""
+                    },
+                    "logo_width": {
+                      "name": "Logo Width (px)",
+                      "type": "string",
+                      "default_value": "",
+                      "value": ""
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "themeLogo",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_45",
+                  "moduleType": "custom_html",
+                  "title": "Hamburger Menu",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"themeHamburgerWrap\"> <span class=\"hamBar1\"></span> <span class=\"hamBar2\"></span> <span class=\"hamBar3\"></span> </div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "themeHamburgerMenu d-none",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "desktop-only"
+                },
+                {
+                  "moduleId": "module_4",
+                  "moduleType": "links_list",
+                  "title": "Nav Menu",
+                  "options": {
+                    "links": {
+                      "name": "Links",
+                      "type": "object",
+                      "default_value": [],
+                      "value": [
+                        {
+                          "linkId": "link_57",
+                          "text": "Shop Parts",
+                          "url": "/aftermarket-parts",
+                          "target": "",
+                          "icon": "",
+                          "type": "direct"
+                        },
+                        {
+                          "linkId": "link_58",
+                          "text": "Shop By Brand",
+                          "url": "/b",
+                          "target": "",
+                          "icon": "",
+                          "type": "direct"
+                        }
+                      ]
+                    },
+                    "links_image": {
+                      "name": "List Image",
+                      "type": "image_upload",
+                      "default_value": null,
+                      "value": ""
+                    },
+                    "links_title": {
+                      "name": "List Title",
+                      "type": "string",
+                      "default_value": null,
+                      "value": ""
+                    },
+                    "links_title_url": {
+                      "name": "List Title Link",
+                      "type": "string",
+                      "default_value": null,
+                      "value": ""
+                    },
+                    "links_stock": {
+                      "name": "List Style",
+                      "type": "select",
+                      "default_value": "none",
+                      "value": "none",
+                      "possible_values": [
+                        {
+                          "value": "none",
+                          "label": "None"
+                        },
+                        {
+                          "value": "mobile_menu",
+                          "label": "Mobile Menu"
+                        },
+                        {
+                          "value": "policies",
+                          "label": "Policies"
+                        }
+                      ]
+                    },
+                    "header_tag": {
+                      "name": "Header Tag",
+                      "type": "select",
+                      "default_value": "strong",
+                      "value": "strong",
+                      "possible_values": [
+                        {
+                          "value": "strong",
+                          "label": "STRONG"
+                        },
+                        {
+                          "value": "h3",
+                          "label": "H3"
+                        }
+                      ]
+                    },
+                    "links_display": {
+                      "name": "List Display",
+                      "type": "select",
+                      "default_value": "block",
+                      "value": "block",
+                      "possible_values": [
+                        {
+                          "value": "inline",
+                          "label": "Inline"
+                        },
+                        {
+                          "value": "block",
+                          "label": "Block"
+                        },
+                        {
+                          "value": "dropdown",
+                          "label": "Drop Down"
+                        }
+                      ]
+                    },
+                    "list_style": {
+                      "name": "List Style",
+                      "type": "select",
+                      "default_value": "none",
+                      "value": "none",
+                      "possible_values": [
+                        {
+                          "value": "none",
+                          "label": "No Style"
+                        },
+                        {
+                          "value": "footer",
+                          "label": "Footer"
+                        },
+                        {
+                          "value": "header",
+                          "label": "Header"
+                        },
+                        {
+                          "value": "navigation",
+                          "label": "Navigation Bar"
+                        },
+                        {
+                          "value": "menu",
+                          "label": "Menu Bar"
+                        }
+                      ]
+                    },
+                    "footer_link": {
+                      "name": "Footer Link",
+                      "type": "string",
+                      "default_value": null,
+                      "value": ""
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "themeNavMenu d-none",
+                  "minColumnWidth": 0,
+                  "customAdmin": true,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_41",
+                  "moduleType": "actions_bar",
+                  "title": "Actions Bar",
+                  "options": {
+                    "show_disclosure": {
+                      "name": "Show Disclosure",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "themeSearchActionBar",
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_29",
+                  "moduleType": "search_bar",
+                  "title": "Search Bar",
+                  "options": {
+                    "placeholder": {
+                      "name": "Placeholder Text",
+                      "type": "string",
+                      "default_value": "Part Number(s), Keywords, or VIN",
+                      "value": "Part Number(s), Keywords, or VIN"
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "themeSearchBar d-none",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_54",
+                  "moduleType": "account_login",
+                  "title": "Account Login",
+                  "options": {
+                    "use_svg_icons": {
+                      "name": "Use SVG Icon",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "themeAccount",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_56",
+                  "moduleType": "cart_button",
+                  "title": "Cart Button",
+                  "options": {
+                    "cart_label": {
+                      "name": "Cart Label",
+                      "type": "string",
+                      "default_value": "Cart",
+                      "value": "Cart"
+                    },
+                    "use_svg_icons": {
+                      "name": "Use SVG Icons",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    },
+                    "show_disclosure": {
+                      "name": "Show Disclosure",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "themeCart",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_60",
+                  "moduleType": "links_list",
+                  "title": "Track Order",
+                  "options": {
+                    "links": {
+                      "name": "Links",
+                      "type": "object",
+                      "default_value": [],
+                      "value": [
+                        {
+                          "linkId": "link_90",
+                          "text": "Track Order",
+                          "url": "#",
+                          "target": "",
+                          "icon": "",
+                          "type": "direct"
+                        }
+                      ]
+                    },
+                    "links_image": {
+                      "name": "List Image",
+                      "type": "image_upload",
+                      "default_value": null,
+                      "value": ""
+                    },
+                    "links_title": {
+                      "name": "List Title",
+                      "type": "string",
+                      "default_value": null,
+                      "value": ""
+                    },
+                    "links_title_url": {
+                      "name": "List Title Link",
+                      "type": "string",
+                      "default_value": null,
+                      "value": ""
+                    },
+                    "links_stock": {
+                      "name": "List Style",
+                      "type": "select",
+                      "default_value": "none",
+                      "value": "none",
+                      "possible_values": [
+                        {
+                          "value": "none",
+                          "label": "None"
+                        },
+                        {
+                          "value": "mobile_menu",
+                          "label": "Mobile Menu"
+                        },
+                        {
+                          "value": "policies",
+                          "label": "Policies"
+                        }
+                      ]
+                    },
+                    "header_tag": {
+                      "name": "Header Tag",
+                      "type": "select",
+                      "default_value": "strong",
+                      "value": "strong",
+                      "possible_values": [
+                        {
+                          "value": "strong",
+                          "label": "STRONG"
+                        },
+                        {
+                          "value": "h3",
+                          "label": "H3"
+                        }
+                      ]
+                    },
+                    "links_display": {
+                      "name": "List Display",
+                      "type": "select",
+                      "default_value": "block",
+                      "value": "block",
+                      "possible_values": [
+                        {
+                          "value": "inline",
+                          "label": "Inline"
+                        },
+                        {
+                          "value": "block",
+                          "label": "Block"
+                        },
+                        {
+                          "value": "dropdown",
+                          "label": "Drop Down"
+                        }
+                      ]
+                    },
+                    "list_style": {
+                      "name": "List Style",
+                      "type": "select",
+                      "default_value": "none",
+                      "value": "none",
+                      "possible_values": [
+                        {
+                          "value": "none",
+                          "label": "No Style"
+                        },
+                        {
+                          "value": "footer",
+                          "label": "Footer"
+                        },
+                        {
+                          "value": "header",
+                          "label": "Header"
+                        },
+                        {
+                          "value": "navigation",
+                          "label": "Navigation Bar"
+                        },
+                        {
+                          "value": "menu",
+                          "label": "Menu Bar"
+                        }
+                      ]
+                    },
+                    "footer_link": {
+                      "name": "Footer Link",
+                      "type": "string",
+                      "default_value": null,
+                      "value": ""
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "themeTrackOrder",
+                  "minColumnWidth": 0,
+                  "customAdmin": true,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_157",
+                  "moduleType": "custom_html",
+                  "title": "Contact Us",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"page-builder-layout-module themeContactUs\">\n  <div class=\"links-list-module links-display-block list-style-none\">\n    <ul class=\"links-list\">\n      <li>\n        <a href=\"tel:5032655236\">\n          \n          <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"black\">\n            <path d=\"M6.62 10.79a15.464 15.464 0 006.59 6.59l2.2-2.2\n                     c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 \n                     0 1 .45 1 1V20c0 .55-.45 1-1 \n                     1C10.07 21 3 13.93 3 5c0-.55.45-1 \n                     1-1h3.5c.55 0 1 .45 1 1 \n                     0 1.24.2 2.45.57 3.57.11.35.03.74-.25 \n                     1.02l-2.2 2.2z\"></path>\n          </svg>\n          Contact Us\n        </a>\n      </li>\n    </ul>\n  </div>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "themeContactUs",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_17",
+      "htmlId": "themeNavigationSection",
+      "htmlClasses": "themeNavigationSection",
+      "contentWidth": "wide",
+      "backgroundColor": "#f2f2f2",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_18",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_19",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_20",
+                  "moduleType": "links_list",
+                  "title": "Navigation Section",
+                  "options": {
+                    "links": {
+                      "name": "Links",
+                      "type": "object",
+                      "default_value": [],
+                      "value": [
+                        {
+                          "linkId": "link_30",
+                          "text": "Home",
+                          "url": "/",
+                          "target": "",
+                          "icon": "",
+                          "type": "direct"
+                        },
+                        {
+                          "linkId": "link_31",
+                          "text": "Categories",
+                          "url": "/c",
+                          "target": "",
+                          "icon": "",
+                          "type": "direct"
+                        },
+                        {
+                          "linkId": "link_32",
+                          "text": "Brands",
+                          "url": "/b",
+                          "target": "",
+                          "icon": "",
+                          "type": "direct"
+                        },
+                        {
+                          "linkId": "link_33",
+                          "text": "About",
+                          "url": "/about",
+                          "target": "",
+                          "icon": "",
+                          "type": "direct"
+                        },
+                        {
+                          "linkId": "link_34",
+                          "text": "OEM Parts",
+                          "url": "https://www.landleaping.com/",
+                          "target": "_blank",
+                          "icon": "",
+                          "type": "direct"
+                        }
+                      ]
+                    },
+                    "links_image": {
+                      "name": "List Image",
+                      "type": "image_upload",
+                      "default_value": null,
+                      "value": ""
+                    },
+                    "links_title": {
+                      "name": "List Title",
+                      "type": "string",
+                      "default_value": null,
+                      "value": ""
+                    },
+                    "links_title_url": {
+                      "name": "List Title Link",
+                      "type": "string",
+                      "default_value": null,
+                      "value": ""
+                    },
+                    "links_stock": {
+                      "name": "List Style",
+                      "type": "select",
+                      "default_value": "none",
+                      "value": "none",
+                      "possible_values": [
+                        {
+                          "value": "none",
+                          "label": "None"
+                        },
+                        {
+                          "value": "mobile_menu",
+                          "label": "Mobile Menu"
+                        },
+                        {
+                          "value": "policies",
+                          "label": "Policies"
+                        }
+                      ]
+                    },
+                    "header_tag": {
+                      "name": "Header Tag",
+                      "type": "select",
+                      "default_value": "strong",
+                      "value": "strong",
+                      "possible_values": [
+                        {
+                          "value": "strong",
+                          "label": "STRONG"
+                        },
+                        {
+                          "value": "h3",
+                          "label": "H3"
+                        }
+                      ]
+                    },
+                    "links_display": {
+                      "name": "List Display",
+                      "type": "select",
+                      "default_value": "block",
+                      "value": "block",
+                      "possible_values": [
+                        {
+                          "value": "inline",
+                          "label": "Inline"
+                        },
+                        {
+                          "value": "block",
+                          "label": "Block"
+                        },
+                        {
+                          "value": "dropdown",
+                          "label": "Drop Down"
+                        }
+                      ]
+                    },
+                    "list_style": {
+                      "name": "List Style",
+                      "type": "select",
+                      "default_value": "none",
+                      "value": "none",
+                      "possible_values": [
+                        {
+                          "value": "none",
+                          "label": "No Style"
+                        },
+                        {
+                          "value": "footer",
+                          "label": "Footer"
+                        },
+                        {
+                          "value": "header",
+                          "label": "Header"
+                        },
+                        {
+                          "value": "navigation",
+                          "label": "Navigation Bar"
+                        },
+                        {
+                          "value": "menu",
+                          "label": "Menu Bar"
+                        }
+                      ]
+                    },
+                    "footer_link": {
+                      "name": "Footer Link",
+                      "type": "string",
+                      "default_value": null,
+                      "value": ""
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "customAdmin": true,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_1",
+      "htmlId": "",
+      "htmlClasses": "themeBottomHeaderSection",
+      "contentWidth": "wide",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_2",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_3",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_31",
+                  "moduleType": "custom_html",
+                  "title": "Hamburger Menu",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"themeHamburgerWrap\"> <span class=\"hamBar1\"></span> <span class=\"hamBar2\"></span> <span class=\"hamBar3\"></span> </div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "themeHamburgerMenu",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_19",
+      "htmlId": "",
+      "htmlClasses": "left_panel",
+      "contentWidth": "normal",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_20",
+          "rowLayout": 12,
+          "htmlId": "",
+          "htmlClasses": "left_panel_wrapper",
+          "columns": [
+            {
+              "columnId": "column_21",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_22",
+                  "moduleType": "custom_html",
+                  "title": "Left Panel Content",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div id=\"mobile-header\">\n    <div id=\"mobile-menu\">\n        <ul class=\"mobile-nav main\">\n            <li class=\"mobile-nav-item\">\n                <a href=\"/\">\n                    <em class=\"fa fa-home\"></em> Home\n                </a>\n            </li>\n            <li class=\"mobile-nav-item\">\n                <a href=\"cart\">\n                    <em class=\"fa fa-shopping-cart\" role=\"presentation\"></em> My Cart\n                </a>\n            </li>\n            <li class=\"mobile-nav-item has-child\">\n                <a href=\"#\" class=\"mobile-dropdown-toggle\">\n                    Parts Categories\n                    <em class=\"fa fa-chevron-down\" role=\"presentation\"></em>\n                </a>\n                <div class=\"mobile-mega-menu menu-child\">\n                    <ul class=\"mobile-mega-wrap\">\n                        <li class=\"mobile-nav-item mobile-menu-wrap has-child\">\n                            <a href=\"https://stage-3a4ad586d880339c453a87504d5a8c17.revolutionparts.com/air-intake-fuel-delivery#\" class=\"mobile-dropdown-toggle-child\">\n                                Air Intake & Fuel Delivery<em class=\"fa fa-chevron-down\" role=\"presentation\"></em>\n                            </a>\n                            <ul class=\"menu-wrap\">\n                                <li class=\"mobile-nav-item\"><a href=\"fuel-tanks\">Fuel Tanks </a></li>\n                                <li class=\"mobile-nav-item\"><a href=\"air-intake\">Air Intake Systems </a></li>\n                                <li class=\"mobile-nav-item\"><a href=\"fuel-injectors\">Fuel Injectors </a></li>\n                                <li class=\"mobile-nav-item\"><a href=\"air-cleaner-assemblies\">Air Cleaner Assemblies </a></li>\n                                <li class=\"mobile-nav-item\"><a href=\"fuel-pumps\">Fuel Pumps </a></li>\n                            </ul>\n                        </li>\n                        <li class=\"mobile-nav-item mobile-menu-wrap has-child\">\n                            <a href=\"https://stage-3a4ad586d880339c453a87504d5a8c17.revolutionparts.com/brakes\" class=\"mobile-dropdown-toggle-child\">\n                                Brakes<em class=\"fa fa-chevron-down\" role=\"presentation\"></em>\n                            </a>\n                            <ul class=\"menu-wrap\">\n                                <li class=\"mobile-nav-item\"><a href=\"brake-calipers\">Brake Calipers </a></li>\n                                <li class=\"mobile-nav-item\"><a href=\"brake-pads\">Brake Pads </a></li>\n                                <li class=\"mobile-nav-item\"><a href=\"brake-drums\">Brake Drums </a></li>\n                                <li class=\"mobile-nav-item\"><a href=\"brake-discs-rotors-hardware\">Brake Discs, Rotors & Hardware</a></li>\n                            </ul>\n                        </li>\n                        <li class=\"mobile-nav-item mobile-menu-wrap has-child\">\n                            <a href=\"https://stage-3a4ad586d880339c453a87504d5a8c17.revolutionparts.com/cooling-systems\" class=\"mobile-dropdown-toggle-child\">\n                                Cooling Systems<em class=\"fa fa-chevron-down\" role=\"presentation\"></em>\n                            </a>\n                            <ul class=\"menu-wrap\">\n                                <li class=\"mobile-nav-item\"><a href=\"hoses-clamps\">Hoses & Clamps </a></li>\n                                <li class=\"mobile-nav-item\"><a href=\"radiators\">Radiators & Parts </a></li>\n                                <li class=\"mobile-nav-item\"><a href=\"thermostats\">Thermostats & Parts </a></li>\n                                <li class=\"mobile-nav-item\"><a href=\"water-pumps\">Water Pumps </a></li>\n                                <li class=\"mobile-nav-item\"><a href=\"oil-coolers\">Oil Coolers </a></li>\n                            </ul>\n                        </li>\n                        <li class=\"mobile-nav-item mobile-menu-wrap has-child\">\n                            <a href=\"https://stage-3a4ad586d880339c453a87504d5a8c17.revolutionparts.com/gaskets\" class=\"mobile-dropdown-toggle-child\">\n                                Gaskets<em class=\"fa fa-chevron-down\" role=\"presentation\"></em>\n                            </a>\n                            <ul class=\"menu-wrap\">\n                                <li class=\"mobile-nav-item\"><a href=\"oil-pan-gaskets\">Oil Pan Gaskets </a></li>\n                                <li class=\"mobile-nav-item\"><a href=\"intake-gaskets\">Intake Gaskets </a></li>\n                                <li class=\"mobile-nav-item\"><a href=\"exhaust-gaskets\">Exhaust Gaskets </a></li>\n                                <li class=\"mobile-nav-item\"><a href=\"full-set-gaskets\">Full Set Gaskets </a></li>\n                            </ul>\n                        </li>\n                        <li class=\"mobile-nav-item mobile-menu-wrap has-child\">\n                            <a href=\"https://stage-3a4ad586d880339c453a87504d5a8c17.revolutionparts.com/lighting\" class=\"mobile-dropdown-toggle-child\">\n                                Lighting<em class=\"fa fa-chevron-down\" role=\"presentation\"></em>\n                            </a>\n                            <ul class=\"menu-wrap\">\n                                <li class=\"mobile-nav-item\"><a href=\"tail-lights\">Tail Lights </a></li>\n                                <li class=\"mobile-nav-item\"><a href=\"headlights\">Headlights </a></li>\n                                <li class=\"mobile-nav-item\"><a href=\"turn-signals\">Turn Signals </a></li>\n                                <li class=\"mobile-nav-item\"><a href=\"/side-marker-lights\">Side Marker Lights </a></li>\n                            </ul>\n                        </li>\n                        <li class=\"mobile-nav-item mobile-menu-wrap has-child\">\n                            <a href=\"https://stage-3a4ad586d880339c453a87504d5a8c17.revolutionparts.com/suspension\" class=\"mobile-dropdown-toggle-child\">\n                                Suspension & Steering<em class=\"fa fa-chevron-down\" role=\"presentation\"></em>\n                            </a>\n                            <ul class=\"menu-wrap\">\n                                <li class=\"mobile-nav-item\"><a href=\"control-arms\">Control Arms & Parts </a></li>\n                                <li class=\"mobile-nav-item\"><a href=\"coil-springs\">Coil Springs </a></li>\n                                <li class=\"mobile-nav-item\"><a href=\"shocks-struts\">Shocks & Struts </a></li>\n                                <li class=\"mobile-nav-item\"><a href=\"sway-bars\">Sway Bars </a></li>\n                                <li class=\"mobile-nav-item\"><a href=\"tie-rod-linkages\">Tie Rod Linkages </a></li>\n                            </ul>\n                        </li>\n                        <li class=\"mobile-nav-item mobile-menu-wrap has-child\">\n                            <a href=\"https://stage-3a4ad586d880339c453a87504d5a8c17.revolutionparts.com/wheel-tire-packages\" class=\"mobile-dropdown-toggle-child\">\n                                Wheels, Tires & Parts<em class=\"fa fa-chevron-down\" role=\"presentation\"></em>\n                            </a>\n                            <ul class=\"menu-wrap\">\n                                <li class=\"mobile-nav-item\"><a href=\"wheel-lugs\">Wheel Lugs </a></li>\n                                <li class=\"mobile-nav-item\"><a href=\"wheel-hubs-bearings\">Wheel Hubs & Bearings </a></li>\n                                <li class=\"mobile-nav-item\"><a href=\"tpms-sensors\">Tire Pressure Monitoring System</a></li>\n                            </ul>\n                        </li>\n                    </ul>\n                </div>\n            </li>\n            <li class=\"mobile-nav-item has-child\">\n                <a href=\"#\" class=\"mobile-dropdown-toggle\">\n                    Shop by Brand\n                    <em class=\"fa fa-chevron-down\" role=\"presentation\"></em>\n                </a>\n                <div class=\"mobile-mega-menu menu-child\">\n                    <ul class=\"mobile-mega-wrap\">\n                        <li class=\"mobile-nav-item\"><a href=\"/b/acdelco\">ACDelco</a></li>\n                        <li class=\"mobile-nav-item\"><a href=\"/b/akebono\">Akebono</a></li>\n                        <li class=\"mobile-nav-item\"><a href=\"/b/continental\">Continental</a></li>\n                        <li class=\"mobile-nav-item\"><a href=\"/b/dayco-hydraulic\">Dayco</a></li>\n                        <li class=\"mobile-nav-item\"><a href=\"/b/delphi\">Delphi</a></li>\n                        <li class=\"mobile-nav-item\"><a href=\"/b/dorman\">Dorman</a></li>\n                        <li class=\"mobile-nav-item\"><a href=\"/b/fel-pro\">Fel-Pro</a></li>\n                        <li class=\"mobile-nav-item\"><a href=\"/b/global-parts-distributors\">Global Parts Distributors</a></li>\n                        <li class=\"mobile-nav-item\"><a href=\"/b/holstein\">Holstein</a></li>\n                        <li class=\"mobile-nav-item\"><a href=\"/b/kyb\">KYB</a></li>\n                        <li class=\"mobile-nav-item\"><a href=\"/b/monroe-shocks-&-struts\">Monroe Shocks & Struts</a></li>\n                        <li class=\"mobile-nav-item\"><a href=\"/b/moog\">Moog</a></li>\n                        <li class=\"mobile-nav-item\"><a href=\"/b/ngk\">NGK</a></li>\n                        <li class=\"mobile-nav-item\"><a href=\"/b/sachs\">Sachs</a></li>\n                        <li class=\"mobile-nav-item\"><a href=\"/b/valeo\">Valeo</a></li>\n                        <li class=\"mobile-nav-item\"><a href=\"/b/wagner-brake\">Wagner</a></li>\n                        <li class=\"mobile-nav-item\"><a href=\"/b/walker-exhaust\">Walker Exhaust</a></li>\n                    </ul>\n                </div>\n            </li>\n            <li class=\"mobile-nav-item\">\n                <a href=\"about\">\n                    About Us\n                </a>\n            </li>\n            <li class=\"mobile-nav-item\">\n                <a href=\"/account/order-status\">\n                    Track Orders\n                </a>\n            </li>\n            <li class=\"mobile-nav-item\">\n                <a href=\"/contact-us\">\n                    Contact Us\n                </a>\n            </li>\n        </ul>\n    </div>\n  </div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "left_panel_content",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_23",
+                  "moduleType": "custom_html",
+                  "title": "Close Panel",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"left_panel_close\">\n        <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\" viewBox=\"0 0 20 20\">\n            <g id=\"Close\" transform=\"translate(-77 -444.835)\">\n                <g id=\"Group_40503\" data-name=\"Group 40503\" transform=\"translate(77 445.403)\">\n                <path id=\"Path_269033\" data-name=\"Path 269033\" d=\"M0,.192,18.26,17.934,20,16.243,1.739-1.5Z\" transform=\"translate(0 1.498)\" fill=\"#093452\"/>\n                </g>\n                <g id=\"Group_40504\" data-name=\"Group 40504\" transform=\"translate(77 444.835)\">\n                <path id=\"Path_269034\" data-name=\"Path 269034\" d=\"M0,2.015l1.642,1.6L19.857-14.084v-.089l-1.6-1.55Z\" transform=\"translate(0 15.723)\" fill=\"#093452\"/>\n                </g>\n            </g>\n        </svg>          \n    </div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

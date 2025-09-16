@@ -1,0 +1,104 @@
+{
+  "sectionId": "section_65",
+  "htmlId": "themeHeroSection_NissanUS",
+  "htmlClasses": "themeHeroSection",
+  "contentWidth": "full",
+  "backgroundColor": "",
+  "backgroundImage": "",
+  "textColor": "dark",
+  "display": "normal",
+  "rows": [
+    {
+      "rowId": "row_66",
+      "rowLayout": 12,
+      "htmlId": null,
+      "htmlClasses": null,
+      "columns": [
+        {
+          "columnId": "column_67",
+          "columnWidth": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "moduleArrangement": "block",
+          "textAlignment": "text-left",
+          "modules": [
+            {
+              "moduleId": "module_68",
+              "moduleType": "hero",
+              "title": "Hero",
+              "options": {
+                "hero_slides": {
+                  "name": "Hero Slides",
+                  "type": "object",
+                  "default_value": [],
+                  "value": [
+                    {
+                      "slideId": "slide_36",
+                      "type": null,
+                      "image": "https://cdn.revolutionparts.io/ddf1a4688f481343d29071cefb36dbca/design/nissan_sept_fs_desktop_t3.webp",
+                      "mobile_image": "https://cdn.revolutionparts.io/ddf1a4688f481343d29071cefb36dbca/design/nissan_sept_fs_mobile_all.webp",
+                      "image_overlay": "#000000",
+                      "image_overlay_opacity": "30",
+                      "alt": "Gear up for Fall with Free Shipping -- $50 Max Value",
+                      "content": "<h1>Gear up for Fall with Free Shipping -- $50 Max Value</h1>\n<p class=\"themeHeroTooltipWrap\">\nShop here 9/15–9/30 and get free shipping up to $50 on qualifying orders of $200 or more. <a href=\"#\" class=\"themeHeroTooltipAnchor\">[*]</a>\n</p>\n<p class=\"themeHeroTooltip\">\n    <strong>ELIGIBILITY REQUIREMENTS: Not all items are shippable. Promotion valid only on online orders of shippable items with a minimum order value of $200, made from 09/15/2025 through 09/30/2025 and fulfilled by a participating U.S. NISSAN retailer.</strong> Offer code automatically applied at online checkout. Promotion covers up to $50 of the total shipping fee; any remaining shipping fee balance is the sole responsibility of the customer. No cash value. Void where prohibited. Other restrictions may apply. Contact a participating retailer for details.\n</p>\n<a class=\"themeHeroButton\" href=\"javascript:openVehiclePicker();\">Shop Now</a>",
+                      "link": null,
+                      "link_text": null,
+                      "timeline": "permanent_slide",
+                      "duration": null
+                    }
+                  ]
+                },
+                "transition_style": {
+                  "name": "Transition Style",
+                  "type": "radio",
+                  "possible_values": [
+                    {
+                      "value": "slide",
+                      "label": "Slide to the next"
+                    },
+                    {
+                      "value": "fade",
+                      "label": "Fade to the next"
+                    }
+                  ],
+                  "value": "slide"
+                },
+                "transition_speed": {
+                  "name": "Transition Speed",
+                  "type": "select",
+                  "possible_values": [
+                    {
+                      "value": "5",
+                      "label": "5 seconds"
+                    },
+                    {
+                      "value": "10",
+                      "label": "10 seconds"
+                    }
+                  ],
+                  "value": "5"
+                },
+                "use_slide_arrow_control": {
+                  "name": "Previous/next arrows",
+                  "type": "boolean",
+                  "value": false
+                },
+                "use_slide_pagination_control": {
+                  "name": "Slide pagination",
+                  "type": "boolean",
+                  "value": false
+                }
+              },
+              "htmlId": "",
+              "htmlClasses": "",
+              "minColumnWidth": 0,
+              "customAdmin": true,
+              "modulePadding": "padding-0",
+              "display": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
