@@ -1,0 +1,55 @@
+{
+  "sectionId": "section_2",
+  "htmlId": "",
+  "htmlClasses": "themeBanner",
+  "contentWidth": "full",
+  "backgroundColor": "",
+  "backgroundImage": "",
+  "textColor": "dark",
+  "display": "normal",
+  "rows": [
+    {
+      "rowId": "row_3",
+      "rowLayout": 12,
+      "htmlId": null,
+      "htmlClasses": null,
+      "columns": [
+        {
+          "columnId": "column_4",
+          "columnWidth": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "moduleArrangement": "block",
+          "textAlignment": "text-left",
+          "modules": [
+            {
+              "moduleId": "module_5",
+              "moduleType": "custom_html",
+              "title": "Banner",
+              "options": {
+                "html_content": {
+                  "name": "Custom HTML Content",
+                  "type": "html_content",
+                  "default_value": "",
+                  "value": "<style>\n    #search-tabs {\n    \tmargin-top: -60px;\n    }\n    .themeBannerList .owl-dots {\n    \tbottom: 30px;\n    }\n    .themeBannerImage {\n        background-position: bottom right;\n        height: 500px;\n    }\n    @media screen and (max-width: 767px) {\n    .themeBannerImage {\n        height: 400px;\n        background-size: cover;\n        background-position: center center;\n    }\n    }\n    .themeBannerContent p {\n        position: relative !important;\n    }\n    .themeBannerTermWrap {\n        position: static !important;\n        display: inline-block !important;\n    }\n    .themeBannerTermBox {\n        width: auto !important;\n        height: auto !important;\n        right: 0;\n    }\n    @media screen and (max-width: 767px) {\n        .themeBannerTermBox {\n            height: 100px !important;\n        }\n    }\n    #search-tabs .tab-content .call-to-action-button {\n    \tbackground-color: #000;\n        font-size: 14px;\n        line-height: 32px;\n    }\n    #search-tabs .tab-content .call-to-action-button:hover,\n    #search-tabs .tab-content .call-to-action-button:focus {\n    \tbackground-color: #fff;\n        color: #000;\n        border: 1px solid #fff;\n    }\n    .themeBannerContentBox {\n    max-width: 575px;\n    width: 100%;\n\t}\n</style>\n<div class=\"themeBannerWrapper\">\n    <ul class=\"themeBannerList\">\n        <li class=\"themeBannerItem\">\n            <div class=\"themeBannerCard\">\n                <div class=\"themeBannerImage\">\n                    <img class=\"v-pc\" src=\"https://rparts-sites.s3.amazonaws.com/18c1f0176b3e81543f19b33e424e9f77/design/nissan_aug_hp_t3.webp\" alt=\"Shop our full line of Genuine Nissan OEM Parts and Accessories  Img\">\n                    <img class=\"v-sp\" src=\"https://rparts-sites.s3.amazonaws.com/18c1f0176b3e81543f19b33e424e9f77/design/nissan_aug_hp_all.webp\" alt=\"Shop our full line of Genuine Nissan OEM Parts and Accessories Img\">\n                </div>\n                 \n                    <div class=\"themeBannerContent\">\n                        <div class=\"themeBannerContentBox\">\n                            <p class=\"h1\">Shop our full line of Genuine Nissan OEM Parts and Accessories</p>\n                            <div class=\"themeBannerButton\">\n                                <a href=\"javascript:openVehiclePicker();\" class=\"themeBannerCard\"><p>Shop Now</p></a>\n                            </div>\n                        </div>    \n                    </div>\n            </div>\n        </li>\n    </ul>\n  </div>"
+                },
+                "force_lazy": {
+                  "name": "Lazy Load Images",
+                  "type": "boolean",
+                  "default_value": false,
+                  "value": false
+                }
+              },
+              "htmlId": "",
+              "htmlClasses": "",
+              "minColumnWidth": 0,
+              "customAdmin": false,
+              "modulePadding": "padding-0",
+              "display": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

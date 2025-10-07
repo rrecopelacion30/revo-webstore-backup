@@ -1,0 +1,55 @@
+{
+  "sectionId": "section_2",
+  "htmlId": "",
+  "htmlClasses": "themeBanner",
+  "contentWidth": "full",
+  "backgroundColor": "",
+  "backgroundImage": "",
+  "textColor": "dark",
+  "display": "normal",
+  "rows": [
+    {
+      "rowId": "row_3",
+      "rowLayout": 12,
+      "htmlId": null,
+      "htmlClasses": null,
+      "columns": [
+        {
+          "columnId": "column_4",
+          "columnWidth": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "moduleArrangement": "block",
+          "textAlignment": "text-left",
+          "modules": [
+            {
+              "moduleId": "module_5",
+              "moduleType": "custom_html",
+              "title": "Banner",
+              "options": {
+                "html_content": {
+                  "name": "Custom HTML Content",
+                  "type": "html_content",
+                  "default_value": "",
+                  "value": "<style>\n    \n    .v-pc {\n        display: block !important;\n    }\n    @media screen and (max-width: 767px) {\n        .v-pc {\n            display: none !important;\n        }\n    }\n    .v-sp {\n        display: none !important;\n    }\n    @media screen and (max-width: 767px) {\n        .v-sp {\n            display: block !important;\n        }\n    }\n    .themeBannerImage {\n        height: 500px;\n        background-position: 50% 50%;\n        background-repeat: no-repeat;\n    }\n    @media screen and (max-width: 1440px) {\n        .themeBannerImage {\n            background-position: 80% 50%;\n        }\n    }\n    @media screen and (max-width: 767px) {\n        .themeBannerImage {\n            height: 400px;\n            background-size: cover;\n        }\n    }\n    .themeBannerContent p {\n        position: relative !important;\n    }\n    .themeBannerTermWrap {\n        position: static !important;\n        display: inline-block !important;\n    }\n    .themeBannerTermBox {\n        width: auto !important;\n        height: auto !important;\n        right: 0;\n    }\n    @media screen and (max-width: 767px) {\n        .themeBannerTermBox {\n            height: 100px !important;\n        }\n    }\n    #themeBannerList .owl-dots.disabled .owl-dot.active span {\n        display: none;\n    }\n    #search-tabs .tab-content .call-to-action-button {\n    \tdisplay: inline-block;\n        font-size: 14px;\n        padding: 0px 15px;\n        border: 2px solid #B0A591;\n        background-color: #B0A591;\n        text-align: left;\n        color: var(--themeColor);\n        font-family: var(--themeFontLight);\n        letter-spacing: .05em;\n        position: relative;\n        line-height: 30px;\n    }\n    #search-tabs .tab-content .call-to-action-button::before {\n    \tcontent: \"\";\n        width: 9px;\n        height: 9px;\n        border: solid var(--themeColor);\n        border-width: 1px 0 0 1px;\n        position: absolute;\n        right: 20px;\n        top: 0;\n        bottom: 0;\n        margin: auto;\n        transform: rotate(135deg);\n    }\n    #search-tabs .tab-content .call-to-action-button:hover::before {\n        border: solid var(--themeButtonColor);\n    \tborder-width: 1px 0 0 1px;\n    }\n    #search-tabs .tab-content .call-to-action-button:hover,\n    #search-tabs .tab-content .call-to-action-button:focus {\n    \ttext-decoration: none;\n        color: #B0A591;\n        background-color: transparent;\n    }\n        \n    .themeBannerContentBox {\n    max-width: 575px;\n    width: 100%;\n\t}\n</style>\n<div class=\"themeBannerWrapper\">\n    <ul class=\"themeBannerList\">\n        <li class=\"themeBannerItem\">\n            <div class=\"themeBannerCard\">\n                <div class=\"themeBannerImage\">\n                    <img class=\"v-pc\" src=\"https://rparts-sites.s3.amazonaws.com/95cd67137b3695dd68b19bba58110a16/design/t3_1.webp\" alt=\"Shop our full line of Genuine INFINITI OEM Parts and Accessories\">\n                    <img class=\"v-sp\" src=\"https://rparts-sites.s3.amazonaws.com/95cd67137b3695dd68b19bba58110a16/design/t3_1_mobile.webp\" alt=\"Shop our full line of Genuine INFINITI OEM Parts and Accessories\">\n                </div>\n                <div class=\"themeBannerContent\">\n                    <div class=\"themeBannerContentBox\">\n                        <p class=\"h1\">Shop our full line of Genuine INFINITI OEM Parts and Accessories</p>\n                        <div class=\"themeBannerButton\">\n                            <a href=\"#\" onclick=\"javascript:openVehiclePicker();\" class=\"themeBannerCard\">\n                                Shop Now\n                            </a>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </li>\n    </ul>\n  </div>"
+                },
+                "force_lazy": {
+                  "name": "Lazy Load Images",
+                  "type": "boolean",
+                  "default_value": false,
+                  "value": false
+                }
+              },
+              "htmlId": "",
+              "htmlClasses": "",
+              "minColumnWidth": 0,
+              "customAdmin": false,
+              "modulePadding": "padding-0",
+              "display": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

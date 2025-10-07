@@ -1,0 +1,55 @@
+{
+  "sectionId": "section_2",
+  "htmlId": "",
+  "htmlClasses": "themeBanner",
+  "contentWidth": "full",
+  "backgroundColor": "",
+  "backgroundImage": "",
+  "textColor": "dark",
+  "display": "normal",
+  "rows": [
+    {
+      "rowId": "row_3",
+      "rowLayout": 12,
+      "htmlId": null,
+      "htmlClasses": null,
+      "columns": [
+        {
+          "columnId": "column_4",
+          "columnWidth": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "moduleArrangement": "block",
+          "textAlignment": "text-left",
+          "modules": [
+            {
+              "moduleId": "module_5",
+              "moduleType": "custom_html",
+              "title": "Banner",
+              "options": {
+                "html_content": {
+                  "name": "Custom HTML Content",
+                  "type": "html_content",
+                  "default_value": "",
+                  "value": "<style>\n    .v-pc {\n        display: block !important;\n    }\n    @media screen and (max-width: 767px) {\n        .v-pc {\n            display: none !important;\n        }\n    }\n    .v-sp {\n        display: none !important;\n    }\n    @media screen and (max-width: 767px) {\n        .v-sp {\n            display: block !important;\n        }\n    }\n    .themeBannerImage {\n        height: 500px;\n        background-position: 50% 50%;\n        background-repeat: no-repeat;\n    }\n    @media screen and (max-width: 1440px) {\n        .themeBannerImage {\n            background-position: 80% 50%;\n        }\n    }\n    @media screen and (max-width: 767px) {\n        .themeBannerImage {\n            height: 500px;\n            background-size: cover;\n        }\n    }\n    .themeBannerContent p {\n        position: relative !important;\n    }\n    .themeBannerTermWrap {\n        position: static !important;\n        display: inline-block !important;\n    }\n    .themeBannerTermBox {\n        width: auto !important;\n        height: auto !important;\n        right: 0;\n    }\n    @media screen and (max-width: 767px) {\n        .themeBannerTermBox {\n            height: 100px !important;\n        }\n    }\n    #themeBannerList .owl-dots.disabled .owl-dot.active span {\n        display: none;\n    }\n    #search-tabs .tab-content .call-to-action-button {\n    \tdisplay: inline-block;\n        font-size: 14px;\n        padding: 0px 15px;\n        border: 2px solid #B0A591;\n        background-color: #B0A591;\n        text-align: left;\n        color: var(--themeColor);\n        font-family: var(--themeFontLight);\n        letter-spacing: .05em;\n        position: relative;\n        line-height: 30px;\n    }\n    #search-tabs .tab-content .call-to-action-button::before {\n    \tcontent: \"\";\n        width: 9px;\n        height: 9px;\n        border: solid var(--themeColor);\n        border-width: 1px 0 0 1px;\n        position: absolute;\n        right: 20px;\n        top: 0;\n        bottom: 0;\n        margin: auto;\n        transform: rotate(135deg);\n    }\n    #search-tabs .tab-content .call-to-action-button:hover::before {\n        border: solid var(--themeButtonColor);\n    \tborder-width: 1px 0 0 1px;\n    }\n    #search-tabs .tab-content .call-to-action-button:hover,\n    #search-tabs .tab-content .call-to-action-button:focus {\n    \ttext-decoration: none;\n        color: #B0A591;\n        background-color: transparent;\n    }\n    .themeBannerContentBox {\n    max-width: 560px;\n    width: 100%;\n}\n</style>\n<div class=\"themeBannerWrapper\">\n  <ul class=\"themeBannerList\">\n<li class=\"themeBannerItem\">\n  <div class=\"themeBannerCard\">\n    <div class=\"themeBannerImage\">\n      <img class=\"v-pc\" src=\"https://rparts-sites.s3.amazonaws.com/7b280ff202890134a9507162f998ec1f/design/2025promo/sept/inf_fs_aug_desktop_t3c.webp\" alt=\"Free Shipping INFINITI Desktop\">\n      <img class=\"v-sp\" src=\"https://rparts-sites.s3.amazonaws.com/7b280ff202890134a9507162f998ec1f/design/2025promo/sept/inf_fs_aug_mobile_all.webp\" alt=\"Free Shipping INFINITI Mobile\">\n    </div>\n    <div class=\"themeBannerContent\">  \n      <div class=\"themeBannerContentBox\">\n        <p class=\"h1\">School is back in session with free shipping of up to $50</p>\n        <p>\n          Get up to $50 off shipping when you spend over $200 on INFINITI parts and accessories. Offer valid September 1–30, 2025.\n          <span class=\"themeBannerTermWrap\">\n            <a href=\"#\">[*]</a>\n            <span class=\"themeBannerTermBox\">\n              <span style=\"font-family: var(--themeFontBold) !important;\">\n                Offer valid from September 1, 2025 to September 30, 2025.\n              </span>\n              Offer has no cash value. Purchase threshold of $200 is calculated before tax. Online purchases must be fulfilled by an INFINITI Retailer. If shipping costs are less than $50, the consumer will not be credited with the difference. If shipping costs exceed $50, the customer will be responsible for paying the difference. Under no circumstances will the shipping credit exceed $50. Offer valid in Canada only. Offer code automatically applied at time of online purchase. Void where prohibited. Other restrictions may apply. See your INFINITI Retailer for complete details.\n            </span>\n          </span>\n        </p>\n        <div class=\"themeBannerButton\">\n          <a href=\"javascript:openVehiclePicker();\">Shop Now</a>\n        </div>\n      </div>\n    </div>\n  </div>\n</li>\n  </ul>\n</div>"
+                },
+                "force_lazy": {
+                  "name": "Lazy Load Images",
+                  "type": "boolean",
+                  "default_value": false,
+                  "value": false
+                }
+              },
+              "htmlId": "",
+              "htmlClasses": "",
+              "minColumnWidth": 0,
+              "customAdmin": false,
+              "modulePadding": "padding-0",
+              "display": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "sectionId": "section_2",
+  "htmlId": "",
+  "htmlClasses": "themeBanner",
+  "contentWidth": "full",
+  "backgroundColor": "",
+  "backgroundImage": "",
+  "textColor": "dark",
+  "display": "normal",
+  "rows": [
+    {
+      "rowId": "row_3",
+      "rowLayout": 12,
+      "htmlId": null,
+      "htmlClasses": null,
+      "columns": [
+        {
+          "columnId": "column_4",
+          "columnWidth": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "moduleArrangement": "block",
+          "textAlignment": "text-left",
+          "modules": [
+            {
+              "moduleId": "module_5",
+              "moduleType": "custom_html",
+              "title": "Banner",
+              "options": {
+                "html_content": {
+                  "name": "Custom HTML Content",
+                  "type": "html_content",
+                  "default_value": "",
+                  "value": "<style>\n    .themeBannerImage::before {\n     \tbackground: none !important;   \n    }\n    \n    .themeBannerContentBox {\n        max-width: 540px;\n        width: 100%;\n    }\n    \n    #search-tabs {\n    \tmargin-top: -60px;\n    }\n    .themeBannerList .owl-dots {\n    \tbottom: 30px;\n    }\n    .themeBannerImage {\n        background-position: bottom right;\n        height: 500px;\n    }\n    @media screen and (max-width: 767px) {\n    .themeBannerImage {\n        height: 400px;\n        background-size: cover;\n        background-position: center center;\n    }\n    }\n    .themeBannerContent p {\n        position: relative !important;\n    }\n    .themeBannerTermWrap {\n        position: static !important;\n        display: inline-block !important;\n    }\n    .themeBannerTermBox {\n        width: auto !important;\n        height: auto !important;\n        right: 0;\n    }\n    @media screen and (max-width: 767px) {\n        .themeBannerTermBox {\n            height: 100px !important;\n        }\n    }\n    #search-tabs .tab-content .call-to-action-button {\n    \tbackground-color: #000;\n        font-size: 14px;\n        line-height: 32px;\n    }\n    #search-tabs .tab-content .call-to-action-button:hover,\n    #search-tabs .tab-content .call-to-action-button:focus {\n    \tbackground-color: #fff;\n        color: #000;\n        border: 1px solid #fff;\n    }\n</style>\n<div class=\"themeBannerWrapper\">\n  <ul class=\"themeBannerList\">\n    <li class=\"themeBannerItem\">\n      <div class=\"themeBannerCard\">\n        <div class=\"themeBannerImage\">\n          <div class=\"themeBannerImage v-pc\" style=\"background-image: url(https://rparts-sites.s3.amazonaws.com/043762c8bc258c5f283beb7fa50915ef/design/2025promo/sept/nissan_fs_aug_desktop_t3.webp); background-size: cover;\"></div>\n          <div class=\"themeBannerImage v-sp\" style=\"background-image: url(https://rparts-sites.s3.amazonaws.com/043762c8bc258c5f283beb7fa50915ef/design/2025promo/sept/nissan_fs_aug_mobile_all.webp); background-size: cover;\"></div>\n        </div>\n        <div class=\"themeBannerContent\">\n          <div class=\"themeBannerContentBox\">\n            <p class=\"h1\">School is back in session with Free Shipping on Qualifying Online Orders</p>\n          <p>Offer valid through September 30, 2025.\n            <span class=\"themeBannerTermWrap\">\n              <a href=\"#\">[*]</a>\n              <span class=\"themeBannerTermBox\">\n                <span style=\"font-family: var(--themeFontBold) !important;\">\n                  Offer valid from September 1, 2025 to September 30, 2025.</span> Offer has no cash value. Purchase threshold of $200 is calculated before tax. Online purchases must be fulfilled by a Nissan Dealer. If shipping costs are less than $50, the consumer will not be credited with the difference. If shipping costs exceed $50, the customer will be responsible for paying the difference. Under no circumstances will the shipping credit exceed $50. Offer valid in Canada only. Offer code automatically applied at time of online purchase. Void where prohibited. Other restrictions may apply. See your Nissan Dealer for complete details.\n              </span>\n            </span>\n          </p>\n          <div class=\"themeBannerButton\">\n            <a href=\"javascript:openVehiclePicker();\" class=\"themeBannerCard\"><p>Shop Now</p></a>\n          </div>\n        </div>\n        </div>\n      </div>\n    </li>\n  </ul>\n</div>"
+                },
+                "force_lazy": {
+                  "name": "Lazy Load Images",
+                  "type": "boolean",
+                  "default_value": false,
+                  "value": false
+                }
+              },
+              "htmlId": "",
+              "htmlClasses": "",
+              "minColumnWidth": 0,
+              "customAdmin": false,
+              "modulePadding": "padding-0",
+              "display": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
