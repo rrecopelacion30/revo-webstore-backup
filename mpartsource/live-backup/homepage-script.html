@@ -1,0 +1,12 @@
+<script>
+  // Bootstrap tabs //
+  $('.nav-tabs a').click(function (e) {
+    e.preventDefault();
+    $(this).tab('show');
+  });
+  // Tabs Underline //
+  $('.nav-tabs a').click(function (e) {
+    var activeLeft = $(this).parent().offset().left - $('.activeBorderWrap').offset().left;
+    $('.activeBorderWrap .activeBorder').animate({left: (activeLeft)}, { duration: 250 });
+  });
+</script>

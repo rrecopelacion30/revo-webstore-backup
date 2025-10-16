@@ -1,0 +1,150 @@
+{
+  "sectionId": "section_5",
+  "htmlId": "",
+  "htmlClasses": "theme_slider_section",
+  "contentWidth": "full",
+  "backgroundColor": "",
+  "backgroundImage": "",
+  "textColor": "dark",
+  "display": "normal",
+  "rows": [
+    {
+      "rowId": "row_6",
+      "rowLayout": 12,
+      "htmlId": null,
+      "htmlClasses": null,
+      "columns": [
+        {
+          "columnId": "column_7",
+          "columnWidth": 12,
+          "htmlId": "heroSection",
+          "htmlClasses": "",
+          "moduleArrangement": "block",
+          "textAlignment": "text-left",
+          "modules": [
+            {
+              "moduleId": "module_18",
+              "moduleType": "vehicle_picker",
+              "title": "Vehicle Picker",
+              "options": {
+                "title": {
+                  "name": "Picker Title",
+                  "type": "string",
+                  "default_value": "Select Your Vehicle",
+                  "value": "Select Your Vehicle"
+                },
+                "redirect_uri": {
+                  "name": "Redirect URL",
+                  "type": "string",
+                  "default_value": null,
+                  "value": ""
+                },
+                "select_button_text": {
+                  "name": "Select Button Text",
+                  "type": "string",
+                  "default_value": "Select",
+                  "value": "Find My Part"
+                },
+                "make_text": {
+                  "name": "Select Make Text",
+                  "type": "string",
+                  "default_value": "",
+                  "value": ""
+                },
+                "model_text": {
+                  "name": "Select Model Text",
+                  "type": "string",
+                  "default_value": "",
+                  "value": ""
+                },
+                "year_text": {
+                  "name": "Select Year Text",
+                  "type": "string",
+                  "default_value": "",
+                  "value": ""
+                },
+                "display_change_vehicle": {
+                  "name": "Change Vehicle Link",
+                  "type": "boolean",
+                  "default_value": false,
+                  "value": false
+                },
+                "header_class": {
+                  "name": "Header Class",
+                  "type": "string",
+                  "default_value": "header-text",
+                  "value": "header-text"
+                },
+                "button_class": {
+                  "name": "Button Class",
+                  "type": "string",
+                  "default_value": null,
+                  "value": ""
+                },
+                "dropdown_class": {
+                  "name": "Dropdown Class",
+                  "type": "string",
+                  "default_value": "dropdown",
+                  "value": "dropdown"
+                },
+                "dropdown_icon_class": {
+                  "name": "Dropdown Icon Class",
+                  "type": "string",
+                  "default_value": null,
+                  "value": ""
+                },
+                "style": {
+                  "name": "Display",
+                  "type": "select",
+                  "possible_values": [
+                    {
+                      "value": "classic",
+                      "label": "Classic"
+                    },
+                    {
+                      "value": "horiz",
+                      "label": "Horizontal"
+                    }
+                  ],
+                  "default_value": "classic",
+                  "value": "classic"
+                }
+              },
+              "htmlId": "",
+              "htmlClasses": "theme_vehicle_picker",
+              "minColumnWidth": 0,
+              "customAdmin": false,
+              "modulePadding": "padding-0",
+              "display": "normal"
+            },
+            {
+              "moduleId": "module_11",
+              "moduleType": "custom_html",
+              "title": "Main Slider",
+              "options": {
+                "html_content": {
+                  "name": "Custom HTML Content",
+                  "type": "html_content",
+                  "default_value": "",
+                  "value": "<div id=\"main--slider\">\n  <div class=\"main--slider-item\">\n    <div class=\"main--slider-bg\">\n      <img src=\"https://rparts-sites.s3.amazonaws.com/074cbb958cec0ac60d45d4c837955a5d/design/anthem-auto-parts/acdelco-banner-1.webp\" alt=\"ACDelco\">\n      <div class=\"slider--content\">\n        <h2>Performance You Can Count On.</h2>\n        <p>ACDelco parts deliver precision, durability, and performance that keep your vehicle running like new &mdash; mile after mile.</p>\n        <a href=\"https://www.anthemautoparts.com/b/acdelco\" class=\"slider--cta\">Explore Parts</a>\n      </div>\n    </div>\n    <div class=\"main--slider-bg\">\n      <img src=\"https://rparts-sites.s3.amazonaws.com/074cbb958cec0ac60d45d4c837955a5d/design/anthem-auto-parts/brakes-banner.webp\" alt=\"Brakes Pads and Rotors\">\n      <div class=\"slider--content\">\n        <h2>Stop Faster. Save More.</h2>\n        <p>This season, get premium stopping power with our full line of brake pads and rotors &mdash; engineered for performance and built to last.</p>\n        <a href=\"https://www.anthemautoparts.com/c/brakes-brake-parts\" class=\"slider--cta\">Shop Now & Save</a>\n      </div>\n    </div>\n    <div class=\"main--slider-bg\">\n      <img src=\"https://rparts-sites.s3.amazonaws.com/074cbb958cec0ac60d45d4c837955a5d/design/anthem-auto-parts/shipping-banner.webp\" alt=\"Shipping\">\n      <div class=\"slider--content\">\n        <h2>Spend $500, Ship Free!</h2>\n        <p>For a limited time, enjoy free shipping on qualifying orders over $500 &mdash; maximum savings of $30 per order.</p>\n        <a href=\"javascript:openVehiclePicker();\" class=\"slider--cta\">Shop Now</a>\n      </div>\n    </div>\n  </div>\n</div>"
+                },
+                "force_lazy": {
+                  "name": "Lazy Load Images",
+                  "type": "boolean",
+                  "default_value": false,
+                  "value": false
+                }
+              },
+              "htmlId": "",
+              "htmlClasses": "heroSlider",
+              "minColumnWidth": 0,
+              "customAdmin": false,
+              "modulePadding": "padding-0",
+              "display": "desktop-only"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,456 @@
+{
+  "pageId": "header",
+  "pageName": "Header",
+  "pageType": null,
+  "layoutEnabled": true,
+  "moduleCategories": [
+    "header",
+    "images",
+    "text",
+    "search",
+    "categories_products",
+    "forms",
+    "navigation",
+    "footer"
+  ],
+  "VFSPath": "layouts/header.json",
+  "requiredModules": [],
+  "scripts": null,
+  "sections": [
+    {
+      "sectionId": "section_1",
+      "htmlId": "",
+      "htmlClasses": "",
+      "contentWidth": "normal",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "mobile-only",
+      "rows": [
+        {
+          "rowId": "row_3",
+          "rowLayout": 12,
+          "htmlId": "mobile-header",
+          "htmlClasses": "",
+          "columns": [
+            {
+              "columnId": "column_4",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_5",
+                  "moduleType": "mobile_header",
+                  "title": "Mobile Header",
+                  "options": {
+                    "background_color": {
+                      "name": "Background Color",
+                      "type": "hexcolor",
+                      "default_value": false,
+                      "value": ""
+                    },
+                    "hide_accounts_orders": {
+                      "name": "Hide Accounts & Orders",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    },
+                    "hide_logo": {
+                      "name": "Hide Logo",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    },
+                    "hide_home_center_nav": {
+                      "name": "Hide Home Center Nav",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    },
+                    "hide_contact_info": {
+                      "name": "Hide Contact Info",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    },
+                    "show_search": {
+                      "name": "Show Search",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": true
+                    },
+                    "use_svg_icons": {
+                      "name": "Use SVG Icons",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    },
+                    "use_plugin_menu_links": {
+                      "name": "Use Plugin Menu Links",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_2",
+                  "moduleType": "custom_html",
+                  "title": "Email Signup Popup",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<script type=\"text/javascript\" src=\"https://confirmsubscription.com/h/j/CC65135461C990ED/DDFBF5E71319F8AC/popup.js\"></script>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "d-none",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_2",
+      "htmlId": "primary-header",
+      "htmlClasses": "",
+      "contentWidth": "wide",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "light",
+      "display": "desktop-only",
+      "rows": [
+        {
+          "rowId": "row_12",
+          "rowLayout": 12,
+          "htmlId": "",
+          "htmlClasses": "logo-wrap",
+          "columns": [
+            {
+              "columnId": "column_13",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_1",
+                  "moduleType": "store_logo",
+                  "title": "Store Logo",
+                  "options": {
+                    "logo_dark_background": {
+                      "name": "Use Dark Background Logo",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": true
+                    },
+                    "logo_height": {
+                      "name": "Logo Height (px)",
+                      "type": "string",
+                      "default_value": "",
+                      "value": ""
+                    },
+                    "logo_width": {
+                      "name": "Logo Width (px)",
+                      "type": "string",
+                      "default_value": "",
+                      "value": ""
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "rowId": "row_38",
+          "rowLayout": 12,
+          "htmlId": "",
+          "htmlClasses": "header-right-wrap",
+          "columns": [
+            {
+              "columnId": "column_39",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_29",
+                  "moduleType": "custom_html",
+                  "title": "Navigation",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<ul class=\"main-nav\">\n\t<a href=\"/\">\n\t<li><em class=\"fa fa-home\" aria-hidden=\"true\"></em>&nbsp;&nbsp;Home</li></a>\n\t<a href=\"account/order-status\">\n\t<li><em class=\"fa fa-truck\" aria-hidden=\"true\"></em>&nbsp;&nbsp;Track Order</li></a>\n\t<a href=\"contact-us\">\n\t<li><em class=\"fa fa-users\" aria-hidden=\"true\"></em>&nbsp;&nbsp;Contact Us</li></a>\n\t<a href=\"account/login\">\n\t<li><em class=\"fa fa-user\" aria-hidden=\"true\"></em>&nbsp;&nbsp;My Account</li></a>\n</ul>"
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "rowId": "row_36",
+          "rowLayout": 12,
+          "htmlId": "",
+          "htmlClasses": "header-right-wrap-bottom",
+          "columns": [
+            {
+              "columnId": "column_37",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_15",
+                  "moduleType": "car_selected",
+                  "title": "Current Car Selected",
+                  "options": {},
+                  "htmlId": null,
+                  "htmlClasses": null,
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_14",
+                  "moduleType": "search_bar",
+                  "title": "Search Bar",
+                  "options": {},
+                  "htmlId": null,
+                  "htmlClasses": null,
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_42",
+                  "moduleType": "cart_button",
+                  "title": "Cart Button",
+                  "options": {
+                    "cart_label": {
+                      "name": "Cart Label",
+                      "type": "string",
+                      "default_value": "Cart",
+                      "value": "Cart"
+                    }
+                  },
+                  "htmlId": null,
+                  "htmlClasses": null,
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_128",
+      "htmlId": "",
+      "htmlClasses": "",
+      "contentWidth": "wide",
+      "backgroundColor": "#000000",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "desktop-only",
+      "rows": [
+        {
+          "rowId": "row_129",
+          "rowLayout": "3_3_3_3",
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_130",
+              "columnWidth": 3,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_134",
+                  "moduleType": "custom_html",
+                  "title": "Custom HTML",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"dropdown\">\n  <button class=\"dropbtn\">Select Your Vehicle ▼</button>\n  <div class=\"dropdown-content hide\">\n<div class=\"col-md-6\">\n<a href=\"v-mercedes-benz\">All Mercedes-Benz Models</a>\n<a href=\"v-mercedes-benz-190e\">190 E</a>\n<a href=\"v-mercedes-benz-300d\">300 D</a>\n<a href=\"v-mercedes-benz-300e\">300 E</a>\n<a href=\"v-mercedes-benz-300sd\">300 SD</a>\n<a href=\"v-mercedes-benz-300sl\">300 SL</a>\n<a href=\"v-mercedes-benz-380sl\">380 SL</a>\n<a href=\"v-mercedes-benz-420sel\">420 SEL</a>\n<a href=\"v-mercedes-benz-500sec\">500 SEC</a>\n<a href=\"v-mercedes-benz-500sel\">500 SEL</a>\n<a href=\"v-mercedes-benz-500sl\">500 SL</a>\n</div><div class=\"col-md-6\">\n<a href=\"v-mercedes-benz-560sl\">560 SL</a>\n<a href=\"v-mercedes-benz-cla250\">CLA 250</a>\n<a href=\"v-mercedes-benz-e320\">E 320</a>\n<a href=\"v-mercedes-benz-gla250\">GLA 250</a>\n<a href=\"v-mercedes-benz-glc300\">GLC 300</a>\n<a href=\"v-mercedes-benz-gle350\">GLE 350</a>\n<a href=\"v-mercedes-benz-glk350\">GLK 350</a>\n<a href=\"v-mercedes-benz-ml320\">ML 320</a>\n<a href=\"v-mercedes-benz-ml350\">ML 350</a>\n<a href=\"v-mercedes-benz-sl500\">SL 500</a>\n<a href=\"v-mercedes-benz-slk230\">SLK 230</a>\n</div>\n  </div>\n</div>\n"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            },
+            {
+              "columnId": "column_131",
+              "columnWidth": 3,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_137",
+                  "moduleType": "custom_html",
+                  "title": "Custom HTML",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"dropdown\">\n  <button class=\"dropbtn\">Shop Parts ▼</button>\n  <div class=\"dropdown-content hide\">\n<div class=\"row\">\n<div class=\"col-xs-6\">\n<a href=\"ac-and-heating\">A/C and Heating Parts</a>\n<a href=\"air-filters\">Air Filters</a>\n<a href=\"alternators\">Alternators</a>\n<a href=\"belts-and-hoses\">Belts And Hoses</a>\n<a href=\"brake-pads\">Brake Pads</a>\n<a href=\"brakes\">Brakes</a>\n<a href=\"cabin-air-filters\">Cabin Air Filters</a>\n<a href=\"fuel-filters\">Fuel Filters</a>\n<a href=\"ignition\">Ignition Parts</a>\n<a href=\"oil-filters\">Oil Filters</a>\n<a href=\"radiators\">Radiators</a>\n</div>\n<div class=\"col-xs-6\">\n<a href=\"remote-start\">Remote Start Parts</a>\n<a href=\"shocks-and-struts\">Shocks and Struts</a>\n<a href=\"spark-plugs\">Spark Plugs</a>\n<a href=\"steering\">Steering Parts</a>\n<a href=\"suspension\">Suspensions</a>\n<a href=\"thermostat\">Thermostats</a>\n<a href=\"c-mercedes-benz-tires-2\">Tires</a>\n<a href=\"trailer-towing\">Trailer Towing Parts</a>\n<a href=\"turbochargers\">Turbochargers</a>\n<a href=\"wheels\">Wheels</a>\n<a href=\"wiper-blades\">Wiper Blades</a>\n</div>\n</div>\n</div>\n</div>\n"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            },
+            {
+              "columnId": "column_132",
+              "columnWidth": 3,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_140",
+                  "moduleType": "custom_html",
+                  "title": "Custom HTML",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"dropdown\">\n  <button class=\"dropbtn\">Shop Accessories ▼</button>\n  <div class=\"dropdown-content hide\">\n<div class=\"row\">\n<div class=\"col-xs-6\">\n<a href=\"car-covers\">Car Covers</a>\n<a href=\"cargo-trays\">Cargo Trays</a>\n<a href=\"door-sills\">Door Sills</a>\n<a href=\"entertainment\">Entertainment</a>\n<a href=\"exterior-accessories\">Exterior Accessories</a>\n<a href=\"floor-mats\">Floor Mats</a>\n<a href=\"front-masks\">Front Masks</a>\n<a href=\"interior-accessories\">Interior Accessories</a>\n<a href=\"lighting\">Lights</a>\n<a href=\"pedal-kits\">Pedal Kits</a>\n</div>\n<div class=\"col-xs-6\">\n<a href=\"roadside-assistance\">Roadside Assistance Parts</a>\n<a href=\"roof-racks\">Roof Racks</a>\n<a href=\"shift-knobs\">Shift Knobs</a>\n<a href=\"splash-guards\">Splash Guards</a>\n<a href=\"spoilers\">Spoilers</a>\n<a href=\"step-rails\">Step Rails</a>\n<a href=\"sun-shades\">Sun Shades</a>\n<a href=\"wheel-accessories\">Wheel Accessories</a>\n<a href=\"wheel-locks\">Wheel Locks</a>\n<a href=\"wind-deflectors\">Wind Deflectors</a>\n</div>\n</div>\n</div>\n</div>\n"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            },
+            {
+              "columnId": "column_133",
+              "columnWidth": 3,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_143",
+                  "moduleType": "custom_html",
+                  "title": "Custom HTML",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"dropdown\">\n  <button class=\"dropbtn\">About ▼</button>\n  <div class=\"dropdown-content hide\">\n    <a href=\"about\">About Us</a>\n    <a href=\"contact-us\">Contact Us</a>\n      <a href=\"c-mercedes-benz-merchandise-11\">Merchandise</a>\n    <a href=\"policies/shipping\">Shipping Policy</a>\n    <a href=\"policies/returns\">Return Policy</a>\n  </div>\n</div>\n"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

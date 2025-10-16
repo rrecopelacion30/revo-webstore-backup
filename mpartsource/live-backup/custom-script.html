@@ -1,0 +1,39 @@
+<script>
+    // Get all the menus into an array, just once:
+let menus = Array.prototype.slice.call(document.querySelectorAll(".dropdown-content"));
+
+let openMenu = null;
+
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function hideAllMenus() {
+  // Get all the dropdowns into an array.
+  menus.forEach(function(dropdown) {
+    // If the element currently is not hidden
+    if(!dropdown.classList.contains("hide")){
+      openMenu = dropdown;
+      dropdown.classList.add('hide'); // Hide it
+    }
+  });
+}
+
+// Close the dropdown menu if the user clicks outside of it
+document.addEventListener("click", function(event) {
+
+  hideAllMenus();      // Hide all the menus
+  
+  // If the clicked item was a menu
+  if (event.target.classList.contains('dropbtn')) { 
+    if(event.target.nextElementSibling === openMenu){
+      event.target.nextElementSibling.classList.add("hide");
+      openMenu = null;
+    } else {
+      // Go to the next element that is a sibling of the one that got clicked (the menu)
+      // and toggle the use of the `hide` CSS class
+      event.target.nextElementSibling.classList.remove("hide"); // Show the one that was clicked
+      openMenu = event.target.nextElementSibling;
+    }
+  }
+});
+</script>
+<script src="https://cdn.gubagoo.io/toolbars/139354/loader_139354_1.js" async></script>

@@ -1,0 +1,610 @@
+{
+  "pageId": "homepage",
+  "pageName": "Home Page",
+  "pageType": null,
+  "layoutEnabled": true,
+  "moduleCategories": [
+    "header",
+    "images",
+    "text",
+    "search",
+    "categories_products",
+    "forms",
+    "navigation",
+    "footer"
+  ],
+  "VFSPath": "layouts/homepage.json",
+  "requiredModules": [
+    "featured_products"
+  ],
+  "scripts": "<script>\n  // Bootstrap tabs //\n  $('.nav-tabs a').click(function (e) {\n    e.preventDefault();\n    $(this).tab('show');\n  });\n  // Tabs Underline //\n  $('.nav-tabs a').click(function (e) {\n    var activeLeft = $(this).parent().offset().left - $('.activeBorderWrap').offset().left;\n    $('.activeBorderWrap .activeBorder').animate({left: (activeLeft)}, { duration: 250 });\n  });\n</script>\n",
+  "sections": [
+    {
+      "sectionId": "section_1",
+      "htmlId": "banner-custom",
+      "htmlClasses": "no-padding",
+      "contentWidth": "full",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "desktop-only",
+      "rows": [
+        {
+          "rowId": "row_2",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_3",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_4",
+                  "moduleType": "banner_vpicker",
+                  "title": "Banner Vehicle Picker",
+                  "options": {
+                    "banner_slides": {
+                      "name": "Banner Slides",
+                      "type": "object",
+                      "default_value": [],
+                      "value": [
+                        {
+                          "slideId": "slide_10",
+                          "image": "https://rparts-sites.s3.amazonaws.com/b4f6c0cb25d1bd2c3d7de9d94b6b2b26/design/MercedesBenzLaredo-parts.jpg",
+                          "link": "javascript: openVehiclePickerRedirect(null, null, null, null, null, null);",
+                          "alt": "Shop Mercedes Benz Replacement Parts"
+                        },
+                        {
+                          "slideId": "slide_11",
+                          "image": "https://rparts-sites.s3.amazonaws.com/b4f6c0cb25d1bd2c3d7de9d94b6b2b26/design/MercedesBenzLaredo-acc.jpg",
+                          "link": "javascript: openVehiclePickerRedirect(null, null, null, null, null, null);",
+                          "alt": "Mercedes Benz Accessories"
+                        },
+                        {
+                          "slideId": "slide_12",
+                          "image": "https://rparts-sites.s3.amazonaws.com/b4f6c0cb25d1bd2c3d7de9d94b6b2b26/design/MercedesBenzLaredo-maint.jpg",
+                          "link": "javascript: openVehiclePickerRedirect(null, null, null, null, null, null);",
+                          "alt": "Mercedes Benz OEM Parts"
+                        }
+                      ]
+                    },
+                    "overlay_header": {
+                      "name": "Overlay Header",
+                      "type": "string",
+                      "default_value": null,
+                      "value": ""
+                    },
+                    "overlay_content": {
+                      "name": "Overlay Content",
+                      "type": "string",
+                      "default_value": null,
+                      "value": ""
+                    },
+                    "hide_vehicle_picker": {
+                      "name": "Hide Vehicle Picker",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": true
+                    },
+                    "slider_timeout": {
+                      "name": "Slider Speed",
+                      "type": "string",
+                      "default_value": "4000",
+                      "value": "4000"
+                    },
+                    "banner_height": {
+                      "name": "Banner Height",
+                      "type": "string",
+                      "default_value": "360",
+                      "value": "300"
+                    },
+                    "use_overlay_shadows": {
+                      "name": "Overlay Shadows",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": true
+                    },
+                    "picker_title": {
+                      "name": "Picker Title",
+                      "type": "string",
+                      "default_value": "Select Your Vehicle",
+                      "value": "Select Your Vehicle"
+                    },
+                    "banner_image_fill": {
+                      "name": "Banner Image Fill",
+                      "type": "select",
+                      "possible_values": [
+                        {
+                          "value": "cover",
+                          "label": "Cover"
+                        },
+                        {
+                          "value": "contain",
+                          "label": "Contain"
+                        }
+                      ],
+                      "default_value": "cover",
+                      "value": "contain"
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 12,
+                  "customAdmin": true,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_3",
+      "htmlId": "picker-custom",
+      "htmlClasses": "",
+      "contentWidth": "normal",
+      "backgroundColor": "#000000",
+      "backgroundImage": "",
+      "textColor": "light",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_4",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_5",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_6",
+                  "moduleType": "vehicle_picker",
+                  "title": "Vehicle Picker",
+                  "options": {
+                    "title": {
+                      "name": "Picker Title",
+                      "type": "string",
+                      "default_value": "Select Your Vehicle",
+                      "value": "Select Your Vehicle"
+                    },
+                    "redirect_uri": {
+                      "name": "Redirect URL",
+                      "type": "string",
+                      "default_value": null,
+                      "value": ""
+                    },
+                    "select_button_text": {
+                      "name": "Select Button Text",
+                      "type": "string",
+                      "default_value": "Select",
+                      "value": "Select"
+                    },
+                    "display_change_vehicle": {
+                      "name": "Change Vehicle Link",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    },
+                    "header_class": {
+                      "name": "Header Class",
+                      "type": "string",
+                      "default_value": "header-text",
+                      "value": "header-text"
+                    },
+                    "button_class": {
+                      "name": "Button Class",
+                      "type": "string",
+                      "default_value": null,
+                      "value": ""
+                    },
+                    "dropdown_class": {
+                      "name": "Dropdown Class",
+                      "type": "string",
+                      "default_value": "dropdown",
+                      "value": "dropdown"
+                    },
+                    "dropdown_icon_class": {
+                      "name": "Dropdown Icon Class",
+                      "type": "string",
+                      "default_value": null,
+                      "value": ""
+                    },
+                    "style": {
+                      "name": "Display",
+                      "type": "select",
+                      "possible_values": [
+                        {
+                          "value": "classic",
+                          "label": "Classic"
+                        },
+                        {
+                          "value": "horiz",
+                          "label": "Horizontal"
+                        }
+                      ],
+                      "default_value": "classic",
+                      "value": "horiz"
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_27",
+      "htmlId": "title-custom",
+      "htmlClasses": "less-padding",
+      "contentWidth": "normal",
+      "backgroundColor": "#ffffff",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_28",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_29",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_30",
+                  "moduleType": "custom_html",
+                  "title": "Site Title",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"HOME_SEO\">\n    <h1>MB Part Source</h1>\n    <h2><center>Genuine Benz Parts At Affordable Prices</center></h2>\n    <p>We carry the highest quality inventory of OEM parts and accessories for all <a href=\"v-mercedes-benz\">Mercedes-Benz models.</a></p>\n    <p>We offer the full catalog of OEM parts and accessories along with diagrams to show you the part you are buying. Shopping for MB parts online has never been easier or cheaper. All the parts we offer are up to 35% off MSRP! and we are here to help. Please <a href=\"contact-us\">Contact Our Staff</a> with any questions you may have and we thank you for shopping with us!</p>\n    <p>Interested in Toyota parts? Check out our&nbsp;<strong>Toyota </strong>store here:&nbsp;<a href=\"http://genuinetoyotapartsonline.com/\" target=\"_blank\" rel=\"noopener\">genuinetoyotapartsonline.com</a><br></p>\n</div>\n<div class=\"HOME_SEO\"><h4>Note: Our shipping calculator is currently unrealistic for shipping rates on certain items. Please email or call to get a exact shipping quote.</h4></div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_2",
+      "htmlId": "tab-custom",
+      "htmlClasses": "",
+      "contentWidth": "wide",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_3",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_4",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_5",
+                  "moduleType": "custom_html",
+                  "title": "Tabs",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<ul class=\"nav nav-tabs\">\n\t<li class=\"nav-item\"><a class=\"nav-link active\" role=\"tab\" data-toggle=\"tab\" href=\"#replacement-parts\">Replacement Parts</a></li>\n\t<li class=\"nav-item\"><a class=\"nav-link\" role=\"tab\" data-toggle=\"tab\" href=\"#maintenance\">Maintenance</a></li>\n\t<li class=\"nav-item\"><a class=\"nav-link\" role=\"tab\" data-toggle=\"tab\" href=\"#interior-accessories\">Interior Accessories</a></li>\n\t<li class=\"nav-item\"><a class=\"nav-link\" role=\"tab\" data-toggle=\"tab\" href=\"#exterior-accessories\">Exterior Accessories</a></li>\n</ul>\n<div class=\"activeBorderWrap\">\n\t<div class=\"activeBorder\">\n\t</div>\n\t<div class=\"staticBorder\">\n\t</div>\n</div>\n<div class=\"tab-content\">\n\t<div id=\"replacement-parts\" class=\"tab-pane fade in active row\" role=\"tabpanel\">\n\t\t<div class=\"hero-content\">\n\t\t\t<ul>\n\t\t\t\t<a href=\"ac-and-heating\" class=\"feature01\">\n\t\t\t\t<li>\n\t\t\t\t<div class=\"featured-img\">\n\t\t\t\t</div>A/C & Heating</li></a>\n\t\t\t\t<a href=\"alternators\" class=\"feature02\">\n\t\t\t\t<li>\n\t\t\t\t<div class=\"featured-img\">\n\t\t\t\t</div>Alternators</li></a>\n\t\t\t\t<a href=\"brakes\" class=\"feature03\">\n\t\t\t\t<li>\n\t\t\t\t<div class=\"featured-img\">\n\t\t\t\t</div>Brakes</li></a>\n\t\t\t\t<a href=\"c-mercedes-tires-2\" class=\"feature04\">\n\t\t\t\t<li>\n\t\t\t\t<div class=\"featured-img\">\n\t\t\t\t</div>Tires</li></a>\n\t\t\t\t<a href=\"c-mercedes-tires-2\" class=\"feature05\">\n\t\t\t\t<li>\n\t\t\t\t<div class=\"featured-img\">\n\t\t\t\t</div>Lighting</li></a>\n\t\t\t\t<a href=\"radiators\" class=\"feature06\">\n\t\t\t\t<li>\n\t\t\t\t<div class=\"featured-img\">\n\t\t\t\t</div>Radiators</li></a>\n\t\t\t\t<a href=\"steering\" class=\"feature07\">\n\t\t\t\t<li>\n\t\t\t\t<div class=\"featured-img\">\n\t\t\t\t</div>Steering</li></a>\n\t\t\t\t<a href=\"shocks-and-struts\" class=\"feature08\">\n\t\t\t\t<li>\n\t\t\t\t<div class=\"featured-img\">\n\t\t\t\t</div>Suspension</li></a>\n\t\t\t</ul>\n\t\t</div>\n\t</div>\n\t<div id=\"maintenance\" class=\"tab-pane fade row\" role=\"tabpanel\">\n\t\t<div class=\"hero-content\">\n\t\t\t<ul>\n\t\t\t\t<a href=\"air-filters\" class=\"feature01\">\n\t\t\t\t<li>\n\t\t\t\t<div class=\"featured-img\">\n\t\t\t\t</div>Air Filter</li></a>\n\t\t\t\t<a href=\"belts-and-hoses\" class=\"feature02\">\n\t\t\t\t<li>\n\t\t\t\t<div class=\"featured-img\">\n\t\t\t\t</div>Belts & Hoses</li></a>\n\t\t\t\t<a href=\"cabin-air-filters\" class=\"feature03\">\n\t\t\t\t<li>\n\t\t\t\t<div class=\"featured-img\">\n\t\t\t\t</div>Cabin Air Filter</li></a>\n\t\t\t\t<a href=\"fuel-filters\" class=\"feature04\">\n\t\t\t\t<li>\n\t\t\t\t<div class=\"featured-img\">\n\t\t\t\t</div>Fuel Filter</li></a>\n\t\t\t\t<a href=\"oil-filters\" class=\"feature05\">\n\t\t\t\t<li>\n\t\t\t\t<div class=\"featured-img\">\n\t\t\t\t</div>Oil Filter</li></a>\n\t\t\t\t<a href=\"spark-plugs\" class=\"feature06\">\n\t\t\t\t<li>\n\t\t\t\t<div class=\"featured-img\">\n\t\t\t\t</div>Spark Plugs</li></a>\n\t\t\t\t<a href=\"thermostat\" class=\"feature07\">\n\t\t\t\t<li>\n\t\t\t\t<div class=\"featured-img\">\n\t\t\t\t</div>Thermostat</li></a>\n\t\t\t\t<a href=\"wiper-blades\" class=\"feature08\">\n\t\t\t\t<li>\n\t\t\t\t<div class=\"featured-img\">\n\t\t\t\t</div>Wiper Blades</li></a>\n\t\t\t</ul>\n\t\t</div>\n\t</div>\n\t<div id=\"interior-accessories\" class=\"tab-pane fade row\" role=\"tabpanel\">\n\t\t<div class=\"hero-content\">\n\t\t\t<ul>\n\t\t\t\t<a href=\"cargo-trays\" class=\"feature01\">\n\t\t\t\t<li>\n\t\t\t\t<div class=\"featured-img\">\n\t\t\t\t</div>Cargo Trays</li></a>\n\t\t\t\t<a href=\"door-sills\" class=\"feature02\">\n\t\t\t\t<li>\n\t\t\t\t<div class=\"featured-img\">\n\t\t\t\t</div>Door Sills</li></a>\n\t\t\t\t<a href=\"entertainment\" class=\"feature03\">\n\t\t\t\t<li>\n\t\t\t\t<div class=\"featured-img\">\n\t\t\t\t</div>Entertainment</li></a>\n\t\t\t\t<a href=\"floor-mats\" class=\"feature04\">\n\t\t\t\t<li>\n\t\t\t\t<div class=\"featured-img\">\n\t\t\t\t</div>Floor Mats</li></a>\n\t\t\t\t<a href=\"pedal-kits\" class=\"feature05\">\n\t\t\t\t<li>\n\t\t\t\t<div class=\"featured-img\">\n\t\t\t\t</div>Pedal Kits</li></a>\n\t\t\t\t<a href=\"remote-start\" class=\"feature06\">\n\t\t\t\t<li>\n\t\t\t\t<div class=\"featured-img\">\n\t\t\t\t</div>Remote Start</li></a>\n\t\t\t\t<a href=\"shift-knobs\" class=\"feature07\">\n\t\t\t\t<li>\n\t\t\t\t<div class=\"featured-img\">\n\t\t\t\t</div>Shift Knobs</li></a>\n\t\t\t\t<a href=\"sun-shades\" class=\"feature08\">\n\t\t\t\t<li>\n\t\t\t\t<div class=\"featured-img\">\n\t\t\t\t</div>Sun Shades</li></a>\n\t\t\t</ul>\n\t\t</div>\n\t</div>\n\t<div id=\"exterior-accessories\" class=\"tab-pane fade row\" role=\"tabpanel\">\n\t\t<div class=\"hero-content\">\n\t\t\t<ul>\n\t\t\t\t<a href=\"car-covers\" class=\"feature01\">\n\t\t\t\t<li>\n\t\t\t\t<div class=\"featured-img\">\n\t\t\t\t</div>Car Covers</li></a>\n\t\t\t\t<a href=\"spoilers\" class=\"feature02\">\n\t\t\t\t<li>\n\t\t\t\t<div class=\"featured-img\">\n\t\t\t\t</div>Spoilers</li></a>\n\t\t\t\t<a href=\"step-rails\" class=\"feature03\">\n\t\t\t\t<li>\n\t\t\t\t<div class=\"featured-img\">\n\t\t\t\t</div>Step Rails</li></a>\n\t\t\t\t<a href=\"roadside-assistance\" class=\"feature04\">\n\t\t\t\t<li>\n\t\t\t\t<div class=\"featured-img\">\n\t\t\t\t</div>Roadside Assistance</li></a>\n\t\t\t\t<a href=\"roof-racks\" class=\"feature05\">\n\t\t\t\t<li>\n\t\t\t\t<div class=\"featured-img\">\n\t\t\t\t</div>Roof Racks</li></a>\n\t\t\t\t<a href=\"splash-guards\" class=\"feature06\">\n\t\t\t\t<li>\n\t\t\t\t<div class=\"featured-img\">\n\t\t\t\t</div>Splash Guards</li></a>\n\t\t\t\t<a href=\"trailer-towing\" \"=\"\" class=\"feature07\">\n\t\t\t\t<li>\n\t\t\t\t<div class=\"featured-img\">\n\t\t\t\t</div>Trailer/Towing</li></a>\n\t\t\t\t<a href=\"wind-deflectors\" class=\"feature08\">\n\t\t\t\t<li>\n\t\t\t\t<div class=\"featured-img\">\n\t\t\t\t</div>Wind Deflectors</li></a>\n\t\t\t</ul>\n\t\t</div>\n\t</div>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_19",
+      "htmlId": "featured-custom",
+      "htmlClasses": "",
+      "contentWidth": "wide",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_21",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_22",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_23",
+                  "moduleType": "featured_products",
+                  "title": "Featured Products",
+                  "options": {},
+                  "htmlId": null,
+                  "htmlClasses": null,
+                  "minColumnWidth": 12,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_10",
+      "htmlId": "vin-custom",
+      "htmlClasses": "",
+      "contentWidth": "normal",
+      "backgroundColor": "#f1f1f1",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_11",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_12",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_13",
+                  "moduleType": "collect_vin_horiz",
+                  "title": "Collect VIN (horizontal)",
+                  "options": {},
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 6,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_61",
+      "htmlId": "",
+      "htmlClasses": "",
+      "contentWidth": "narrow",
+      "backgroundColor": "#ffffff",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_62",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_63",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_64",
+                  "moduleType": "custom_html",
+                  "title": "Custom HTML",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<h2 style=\"text-align:center;\">Additional OEM Mercedes-Benz Parts and Accessories</h2>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-10",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_12",
+                  "moduleType": "circles_categories",
+                  "title": "Circle Categories",
+                  "options": {
+                    "section_title": {
+                      "name": "Section Title",
+                      "type": "string",
+                      "default_value": null,
+                      "value": ""
+                    },
+                    "image_one_file": {
+                      "name": "Image One File",
+                      "type": "image_upload",
+                      "default_value": null,
+                      "value": "https://cdn.revolutionparts.io/b4f6c0cb25d1bd2c3d7de9d94b6b2b26/design/MB_sunshade.jpg"
+                    },
+                    "image_one_link": {
+                      "name": "Image One URL",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "/sun-shades"
+                    },
+                    "image_one_title": {
+                      "name": "Image One Title",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "MB Sun Shades"
+                    },
+                    "image_two_file": {
+                      "name": "Image Two File",
+                      "type": "image_upload",
+                      "default_value": null,
+                      "value": "https://rparts-sites.s3.amazonaws.com/b4f6c0cb25d1bd2c3d7de9d94b6b2b26/design/mercedes_wheel_AMG.PNG"
+                    },
+                    "image_two_link": {
+                      "name": "Image Two URL",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "/wheels"
+                    },
+                    "image_two_title": {
+                      "name": "Image Two Title",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "Alloy Wheels"
+                    },
+                    "image_three_file": {
+                      "name": "Image Three File",
+                      "type": "image_upload",
+                      "default_value": null,
+                      "value": "https://rparts-sites.s3.amazonaws.com/b4f6c0cb25d1bd2c3d7de9d94b6b2b26/design/mercedes_wheel.PNG"
+                    },
+                    "image_three_link": {
+                      "name": "Image Three URL",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "/c-mercedes-benz-tires-2"
+                    },
+                    "image_three_title": {
+                      "name": "Image Three Title",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "Tires"
+                    },
+                    "text_style": {
+                      "name": "Image Title Style",
+                      "type": "select",
+                      "default_value": "text",
+                      "value": "text",
+                      "possible_values": [
+                        {
+                          "value": "text",
+                          "label": "Text"
+                        },
+                        {
+                          "value": "button",
+                          "label": "Button"
+                        }
+                      ]
+                    },
+                    "variant": {
+                      "name": "Variant",
+                      "type": "select",
+                      "default_value": "",
+                      "value": "",
+                      "possible_values": [
+                        {
+                          "value": "",
+                          "label": "None"
+                        },
+                        {
+                          "value": "shop-now-inner",
+                          "label": "Shop Now (Inner)"
+                        }
+                      ]
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
