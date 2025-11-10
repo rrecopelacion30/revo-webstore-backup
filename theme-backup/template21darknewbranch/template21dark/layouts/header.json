@@ -1,0 +1,513 @@
+{
+  "pageId": "header",
+  "pageName": "Header",
+  "pageType": null,
+  "layoutEnabled": true,
+  "moduleCategories": [
+    "header",
+    "images",
+    "text",
+    "search",
+    "categories_products",
+    "forms",
+    "navigation",
+    "footer"
+  ],
+  "VFSPath": "layouts/header.json",
+  "requiredModules": [],
+  "scripts": null,
+  "sections": [
+    {
+      "sectionId": "section_1",
+      "htmlId": "",
+      "htmlClasses": "themeTopHeaderSection",
+      "contentWidth": "wide",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_2",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_3",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_4",
+                  "moduleType": "store_logo",
+                  "title": "Store Logo",
+                  "options": {
+                    "logo_dark_background": {
+                      "name": "Use Dark Background Logo",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    },
+                    "logo_height": {
+                      "name": "Logo Height (px)",
+                      "type": "string",
+                      "default_value": "",
+                      "value": ""
+                    },
+                    "logo_width": {
+                      "name": "Logo Width (px)",
+                      "type": "string",
+                      "default_value": "",
+                      "value": ""
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "themeLogo",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_39",
+                  "moduleType": "car_selected",
+                  "title": "Current Car Selected",
+                  "options": {
+                    "not_selected_text": {
+                      "name": "No Vehicle Selected Text",
+                      "type": "string",
+                      "default_value": null,
+                      "value": ""
+                    },
+                    "use_svg_icons": {
+                      "name": "Use SVG Icons",
+                      "type": "select",
+                      "possible_values": [
+                        {
+                          "label": "Garage Icon",
+                          "value": "garage_icon"
+                        },
+                        {
+                          "label": "Car Icon",
+                          "value": "car_icon"
+                        }
+                      ],
+                      "default_value": "garage_icon",
+                      "value": "garage_icon"
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "themeCarSelected",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_8",
+                  "moduleType": "search_bar",
+                  "title": "Search Bar",
+                  "options": {
+                    "placeholder": {
+                      "name": "Placeholder Text",
+                      "type": "string",
+                      "default_value": "Part Number(s), Keywords, or VIN",
+                      "value": "Part Number(s), Keywords, or VIN"
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "themeSearchBar",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_10",
+                  "moduleType": "account_login",
+                  "title": "Account Login",
+                  "options": {
+                    "use_svg_icons": {
+                      "name": "Use SVG Icon",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "themeAccount",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_12",
+                  "moduleType": "cart_button",
+                  "title": "Cart Button",
+                  "options": {
+                    "cart_label": {
+                      "name": "Cart Label",
+                      "type": "string",
+                      "default_value": "Cart",
+                      "value": "Cart"
+                    },
+                    "use_svg_icons": {
+                      "name": "Use SVG Icons",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    },
+                    "show_disclosure": {
+                      "name": "Show Disclosure",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "themeCart",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_18",
+                  "moduleType": "links_list",
+                  "title": "Order Status",
+                  "options": {
+                    "links": {
+                      "name": "Links",
+                      "type": "object",
+                      "default_value": [],
+                      "value": [
+                        {
+                          "linkId": "link_56",
+                          "text": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"> <path d=\"M9 5H7C5.89543 5 5 5.89543 5 7V19C5 20.1046 5.89543 21 7 21H17C18.1046 21 19 20.1046 19 19V7C19 5.89543 18.1046 5 17 5H15M9 5C9 6.10457 9.89543 7 11 7H13C14.1046 7 15 6.10457 15 5M9 5C9 3.89543 9.89543 3 11 3H13C14.1046 3 15 3.89543 15 5M12 12H15M12 16H15M9 12H9.01M9 16H9.01\" stroke=\"#0078EE\" stroke-width=\"2\" stroke-linecap=\"round\"/> </svg> Order Status",
+                          "url": "account/order-status",
+                          "target": "",
+                          "icon": "",
+                          "type": "direct"
+                        }
+                      ]
+                    },
+                    "links_image": {
+                      "name": "List Image",
+                      "type": "image_upload",
+                      "default_value": null,
+                      "value": ""
+                    },
+                    "links_title": {
+                      "name": "List Title",
+                      "type": "string",
+                      "default_value": null,
+                      "value": ""
+                    },
+                    "links_title_url": {
+                      "name": "List Title Link",
+                      "type": "string",
+                      "default_value": null,
+                      "value": ""
+                    },
+                    "links_stock": {
+                      "name": "List Style",
+                      "type": "select",
+                      "default_value": "none",
+                      "value": "none",
+                      "possible_values": [
+                        {
+                          "value": "none",
+                          "label": "None"
+                        },
+                        {
+                          "value": "mobile_menu",
+                          "label": "Mobile Menu"
+                        },
+                        {
+                          "value": "policies",
+                          "label": "Policies"
+                        }
+                      ]
+                    },
+                    "header_tag": {
+                      "name": "Header Tag",
+                      "type": "select",
+                      "default_value": "strong",
+                      "value": "strong",
+                      "possible_values": [
+                        {
+                          "value": "strong",
+                          "label": "STRONG"
+                        },
+                        {
+                          "value": "h3",
+                          "label": "H3"
+                        }
+                      ]
+                    },
+                    "links_display": {
+                      "name": "List Display",
+                      "type": "select",
+                      "default_value": "block",
+                      "value": "block",
+                      "possible_values": [
+                        {
+                          "value": "inline",
+                          "label": "Inline"
+                        },
+                        {
+                          "value": "block",
+                          "label": "Block"
+                        },
+                        {
+                          "value": "dropdown",
+                          "label": "Drop Down"
+                        }
+                      ]
+                    },
+                    "list_style": {
+                      "name": "List Style",
+                      "type": "select",
+                      "default_value": "none",
+                      "value": "none",
+                      "possible_values": [
+                        {
+                          "value": "none",
+                          "label": "No Style"
+                        },
+                        {
+                          "value": "footer",
+                          "label": "Footer"
+                        },
+                        {
+                          "value": "header",
+                          "label": "Header"
+                        },
+                        {
+                          "value": "navigation",
+                          "label": "Navigation Bar"
+                        },
+                        {
+                          "value": "menu",
+                          "label": "Menu Bar"
+                        }
+                      ]
+                    },
+                    "footer_link": {
+                      "name": "Footer Link",
+                      "type": "string",
+                      "default_value": null,
+                      "value": ""
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "themeOrderStatus",
+                  "minColumnWidth": 0,
+                  "customAdmin": true,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_19",
+      "htmlId": "themeNewNavigationSection",
+      "htmlClasses": "themeNewNavigationSection",
+      "contentWidth": "wide",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_20",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_21",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_22",
+                  "moduleType": "custom_html",
+                  "title": "Mega Menu with Pure CSS",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"themeNewNavigationHamWrapper\">\n    <div class=\"themeNewNavigationHamMenu\">\n        <input type=\"checkbox\" name=\"themeNewNavigationHamToggle\" class=\"themeNewNavigationHamToggle\">\n        <div class=\"themeNewNavigationHamButton\">\n            <span></span>\n        </div>\n        <div class=\"themeNewNavigationWrapper\">\n            <ul class=\"themeNewNavigationList\">\n                <li class=\"themeNewNavigationItem\">\n                    <a href=\"/\" class=\"themeNewNavigationLink\">\n                        Home\n                    </a>\n                </li>\n                <li class=\"themeNewNavigationItem mobile-only\">\n                    <a href=\"/contact-us\" class=\"themeNewNavigationLink\">\n                        Contact Us\n                    </a>\n                </li>\n                <li class=\"themeNewNavigationItem mobile-only\">\n                    <a href=\"/account/order-status\" class=\"themeNewNavigationLink\">\n                        Order Status\n                    </a>\n                </li>\n                <li class=\"themeNewNavigationItem mobile-only\">\n                    <a href=\"/account/login\" class=\"themeNewNavigationLink\">\n                        My Account\n                    </a>\n                </li>\n                <li class=\"themeNewNavigationItem themeNewNavigationItemHasChild\">\n                    <input type=\"checkbox\" name=\"themeNewNavigationToggle\" class=\"themeNewNavigationToggle\">\n                    <p class=\"themeNewNavigationLink\">\n                        Brands\n                        <em class=\"fa fa-chevron-down\" role=\"presentation\"></em>\n                    </p>\n                    <div class=\"themeNewNavigationMegaBox\">\n                        <div class=\"themeNewNavigationMegaContainer\">\n                            <div class=\"themeNewNavigationMegaCard\">\n                                <div class=\"themeNewNavigationMegaTitle\">\n                                    <h3>\n                                        <a href=\"/b\">Brands</a>\n                                    </h3>\n                                </div>\n                                <div class=\"themeNewNavigationMegaBody\">\n                                    <ul class=\"themeNewNavigationMegaList\">\n                                        <li><a href=\"/b/amp-research\">AMP Research</a></li>\n                                        <li><a href=\"/b/acdelco\">ACDelco</a></li>\n                                        <li><a href=\"/b/anchor\">Anchor</a></li>\n                                        <li><a href=\"/b/akebono\">AKEBONO</a></li>\n                                        <li><a href=\"/b/aisin\">AISIN</a></li>\n                                        <li><a href=\"/b/aci\">ACI</a></li>\n                                        <li><a href=\"/b/ackoja\">ACKOJA</a></li>\n                                        <li><a href=\"/b/acme-auto-headlining-co\">Acme Auto Headlining Co</a></li>\n                                        <li><a href=\"/b/action-clutch\">Action Clutch</a></li>\n                                        <li><a href=\"/b/adenna\">Adenna</a></li>\n                                        <li><a href=\"/b/advanced-fuel-dynamics\">Advanced Fuel Dynamics</a></li>\n                                        <li><a href=\"/b/advics\">Advics</a></li>\n                                        <li><a href=\"/b/agm\">AGM</a></li>\n                                        <li><a href=\"/b/ags\">AGS</a></li>\n                                        <li><a href=\"/b/ap-exhaust\">AP Exhaust</a></li>\n                                        <li><a href=\"/b/autel\">Autel</a></li>\n                                        <li><a href=\"/b/b&m\">B&M</a></li>\n                                        <li><a href=\"/b/baldwin\">Baldwin</a></li>\n                                        <li><a href=\"/b/beck-arnley\">Beck Arnley</a></li>\n                                        <li><a href=\"/b/bestop\">Bestop</a></li>\n                                        <li><a href=\"/b/bilstein\">Bilstein</a></li>\n                                        <li><a href=\"/b/brembo\">Brembo</a></li>\n                                        <li><a href=\"/b/brexhaust\">BRExhaust</a></li>\n                                        <li><a href=\"/b/brigade\">Brigade</a></li>\n                                        <li><a href=\"/b/brute-power\">BRUTE POWER</a></li>\n                                        <li><a href=\"/b/centerforce\">Centerforce</a></li>\n                                        <li><a href=\"/b/carr\">Carr</a></li>\n                                        <li><a href=\"/b/centric-parts\">Centric Parts</a></li>\n                                        <li><a href=\"/b/ctek\">CTEK</a></li>\n                                        <li><a href=\"/b/ctr\">CTR</a></li>\n                                        <li><a href=\"/b/csf-cooling\">CSF Cooling</a></li>\n                                        <li><a href=\"/b/continental\">Continental</a></li>\n                                        <li><a href=\"/b/dayco-hydraulic\">DAYCO HYDRAULIC</a></li>\n                                        <li><a href=\"/b/delphi\">DELPHI</a></li>\n                                    </ul>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                </li>\n                <li class=\"themeNewNavigationItem themeNewNavigationItemHasChild\">\n                    <input type=\"checkbox\" name=\"themeNewNavigationToggle\" class=\"themeNewNavigationToggle\">\n                    <p class=\"themeNewNavigationLink\">\n                        Categories\n                        <em class=\"fa fa-chevron-down\" role=\"presentation\"></em>\n                    </p>\n                    <div class=\"themeNewNavigationMegaBox\">\n                        <div class=\"themeNewNavigationMegaContainer\">\n                            <div class=\"themeNewNavigationMegaCard\">\n                                <div class=\"themeNewNavigationMegaTitle\">\n                                    <h3>\n                                        <a href=\"/c\">Categories</a>\n                                    </h3>\n                                </div>\n                                <div class=\"themeNewNavigationMegaBody\">\n                                    <ul class=\"themeNewNavigationMegaList\">\n                                        <li><a href=\"c/accessories\">Accessories</a></li>\n                                        <li><a href=\"c/air-conditioning-heat\">Air Conditioning & Heat</a></li>\n                                        <li><a href=\"c/air-intake-fuel-delivery\">Air Intake & Fuel Delivery</a></li>\n                                        <li><a href=\"c/brakes-brake-parts\">Brakes & Brake Parts</a></li>\n                                        <li><a href=\"c/charging-starting-systems\">Charging & Starting Systems</a></li>\n                                        <li><a href=\"c/computers-chips-cruise-control-parts\">Computers, Chips & Cruise Control Parts</a></li>\n                                        <li><a href=\"c/cooling-systems\">Cooling Systems</a></li>\n                                        <li><a href=\"c/electronics\">Electronics</a></li>\n                                        <li><a href=\"c/emission-systems\">Emission Systems</a></li>\n                                        <li><a href=\"c/engines-components\">Engines & Components</a></li>\n                                        <li><a href=\"c/exhaust\">Exhaust</a></li>\n                                        <li><a href=\"c/exterior\">Exterior</a></li>\n                                        <li><a href=\"c/filters\">Filters</a></li>\n                                        <li><a href=\"c/gaskets\">Gaskets</a></li>\n                                        <li><a href=\"c/gauges\">Gauges</a></li>\n                                        <li><a href=\"c/glass\">Glass</a></li>\n                                        <li><a href=\"c/ignition-systems\">Ignition Systems</a></li>\n                                        <li><a href=\"c/interior\">Interior</a></li>\n                                        <li><a href=\"c/lighting-lamps\">Lighting & Lamps</a></li>\n                                        <li><a href=\"c/other-parts\">Other Parts</a></li>\n                                        <li><a href=\"c/safety-security\">Safety & Security</a></li>\n                                        <li><a href=\"c/suspension-steering\">Suspension & Steering</a></li>\n                                        <li><a href=\"c/tools-supplies\">Tools & Supplies</a></li>\n                                        <li><a href=\"c/transmission-drivetrain\">Transmission & Drivetrain</a></li>\n                                        <li><a href=\"c/turbos-nitrous-superchargers\">Turbos, Nitrous & Superchargers</a></li>\n                                        <li><a href=\"c/wheels-tires-parts\">Wheels, Tires & Parts</a></li>\n                                    </ul>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                </li>\n                <li class=\"themeNewNavigationItem\">\n                    <a href=\"about\" class=\"themeNewNavigationLink\">\n                        About Us\n                    </a>\n                </li>\n            </ul>\n        </div>\n    </div>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_23",
+                  "moduleType": "links_list",
+                  "title": "Phone",
+                  "options": {
+                    "links": {
+                      "name": "Links",
+                      "type": "object",
+                      "default_value": [],
+                      "value": [
+                        {
+                          "linkId": "link_13",
+                          "text": "Contact Us",
+                          "url": "/contact-us",
+                          "target": "",
+                          "icon": "",
+                          "type": "direct"
+                        }
+                      ]
+                    },
+                    "links_image": {
+                      "name": "List Image",
+                      "type": "image_upload",
+                      "default_value": null,
+                      "value": null
+                    },
+                    "links_title": {
+                      "name": "List Title",
+                      "type": "string",
+                      "default_value": null,
+                      "value": ""
+                    },
+                    "links_title_url": {
+                      "name": "List Title Link",
+                      "type": "string",
+                      "default_value": null,
+                      "value": ""
+                    },
+                    "links_stock": {
+                      "name": "List Style",
+                      "type": "select",
+                      "default_value": "none",
+                      "value": "none",
+                      "possible_values": [
+                        {
+                          "value": "none",
+                          "label": "None"
+                        },
+                        {
+                          "value": "mobile_menu",
+                          "label": "Mobile Menu"
+                        },
+                        {
+                          "value": "policies",
+                          "label": "Policies"
+                        }
+                      ]
+                    },
+                    "header_tag": {
+                      "name": "Header Tag",
+                      "type": "select",
+                      "default_value": "strong",
+                      "value": "strong",
+                      "possible_values": [
+                        {
+                          "value": "strong",
+                          "label": "STRONG"
+                        },
+                        {
+                          "value": "h3",
+                          "label": "H3"
+                        }
+                      ]
+                    },
+                    "links_display": {
+                      "name": "List Display",
+                      "type": "select",
+                      "default_value": "block",
+                      "value": "block",
+                      "possible_values": [
+                        {
+                          "value": "inline",
+                          "label": "Inline"
+                        },
+                        {
+                          "value": "block",
+                          "label": "Block"
+                        },
+                        {
+                          "value": "dropdown",
+                          "label": "Drop Down"
+                        }
+                      ]
+                    },
+                    "list_style": {
+                      "name": "List Style",
+                      "type": "select",
+                      "default_value": "none",
+                      "value": "none",
+                      "possible_values": [
+                        {
+                          "value": "none",
+                          "label": "No Style"
+                        },
+                        {
+                          "value": "footer",
+                          "label": "Footer"
+                        },
+                        {
+                          "value": "header",
+                          "label": "Header"
+                        },
+                        {
+                          "value": "navigation",
+                          "label": "Navigation Bar"
+                        },
+                        {
+                          "value": "menu",
+                          "label": "Menu Bar"
+                        }
+                      ]
+                    },
+                    "footer_link": {
+                      "name": "Footer Link",
+                      "type": "string",
+                      "default_value": null,
+                      "value": ""
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "themeContactLink",
+                  "minColumnWidth": 0,
+                  "customAdmin": true,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

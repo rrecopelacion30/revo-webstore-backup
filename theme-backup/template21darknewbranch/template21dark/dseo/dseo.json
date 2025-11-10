@@ -1,0 +1,62 @@
+[
+	{
+		"url": "brakes",
+		"title": "Brakes",
+		"h1_title": "Brakes",
+		"meta_title": "Brakes",
+		"page_type": "search",
+		"search_terms": [
+			"brakes"
+		]
+	},
+	{
+		"url": "lighting",
+		"title": "Lighting",
+		"h1_title": "Lighting",
+		"meta_title": "Lighting",
+		"page_type": "search",
+		"search_terms": [
+			"lighting"
+		]
+	},
+	{
+		"url": "rotors",
+		"title": "Rotors",
+		"h1_title": "Rotors",
+		"meta_title": "Rotors",
+		"page_type": "search",
+		"search_terms": [
+			"rotors"
+		]
+	},
+	{
+		"url": "sensors",
+		"title": "Sensors",
+		"h1_title": "Sensors",
+		"meta_title": "Sensors",
+		"page_type": "search",
+		"search_terms": [
+			"sensors"
+		]
+	},
+	{
+		"url": "fluids",
+		"title": "Fluids",
+		"h1_title": "Fluids",
+		"meta_title": "Fluids",
+		"page_type": "search",
+		"search_terms": [
+			"fluids"
+		]
+	},
+	{
+		"url": "all-products",
+		"title": "All Products",
+		"h1_title": "All Products",
+		"meta_title": "All Products",
+		"page_type": "search",
+		"search_terms": [
+			""
+		]
+	}
+]
