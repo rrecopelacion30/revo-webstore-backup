@@ -1,0 +1,55 @@
+{
+  "sectionId": "section_21",
+  "htmlId": "",
+  "htmlClasses": "main--hero",
+  "contentWidth": "full",
+  "backgroundColor": "",
+  "backgroundImage": "",
+  "textColor": "dark",
+  "display": "normal",
+  "rows": [
+    {
+      "rowId": "row_22",
+      "rowLayout": 12,
+      "htmlId": "",
+      "htmlClasses": "",
+      "columns": [
+        {
+          "columnId": "column_23",
+          "columnWidth": 12,
+          "htmlId": "",
+          "htmlClasses": "",
+          "moduleArrangement": "block",
+          "textAlignment": "text-left",
+          "modules": [
+            {
+              "moduleId": "module_24",
+              "moduleType": "custom_html",
+              "title": "Main Slider",
+              "options": {
+                "html_content": {
+                  "name": "Custom HTML Content",
+                  "type": "html_content",
+                  "default_value": "",
+                  "value": "<div class=\"promo-banner-freeship\">\n  <p class=\"promo-banner-freeship-text\">Holiday Shipping Bonus: Get $25 OFF Express or Standard Shipping on orders $300 or more (11/19–12/01) <span class=\"themeBannerTermWrap\"> \n    <a href=\"#\">[Terms]</a>\n    <span class=\"themeBannerTermBox bmsw_disclaimer\">\nReceive $25 OFF Standard or Two-Day Express Shipping with a minimum subtotal of $300 or more. The promotion covers up to $25 of the total shipping fee; any remaining shipping fee balance is the sole responsibility of the customer. The offer code is automatically applied at online checkout. No cash value. Void where prohibited. Subject to the exclusions that follow. Eligibility will be determined at the time of checkout. The offer excludes Next-Day Shipping. The offer also excludes products classified as hazardous materials (e.g., chemicals, compressed gases, etc.) and paints. Certain oversized and heavy items are not eligible, including but not limited to items/packaging exceeding 165\" in combined length and width. Items over 50 lbs. will incur a $20 surcharge, and items over 120 lbs. cannot be shipped. Changing and combining orders or changing or entering an invalid shipping address may affect your order’s $25 OFF shipping eligibility.\n    </span>\n</span> </p>\n</div>\n<div id=\"main--slider\" class=\"owl-carousel owl-theme\">\n\t<div class=\"main--slider-item main--slider-itemSaveMore\">\n        <div class=\"main--slider-bg\">\n            <img loading=\"lazy\" alt=\"BMW Motorrad BUY MORE SAVE MORE Holiday Sale - 11/19 - 12/01\" src=\"https://rparts-sites.s3.amazonaws.com/23908d49235005b9c1c9e417b84fee8e/design/buymore_2025b.webp\">\n        </div>\n        <div class=\"main--slider-wrapper\">\n            <div class=\"main--slider-content\">\n                <h2 class=\"main--slider-title\">BMW Motorrad BUY MORE SAVE MORE Holiday Sale - 11/19 - 12/01</h2>                   \n                <p class=\"bmsm\">Spend $300 - $499.99 and receive $50 Off MSRP - Promo Code: <span class=\"promo_bold\">HOLIDAY50</span></p>\n                <p class=\"bmsm\">Spend $500 - $999.99 and receive $100 Off MSRP - Promo Code: <span class=\"promo_bold\">HOLIDAY100</span></p>\n                <p class=\"bmsm\">Spend $1000+ and receive $200 Off MSRP - Promo Code: <span class=\"promo_bold\">HOLIDAY200</span>\n                <span class=\"themeBannerTermWrap\"> \n    <a href=\"#\">[Terms]</a>\n    <span class=\"themeBannerTermBox bmsw_disclaimer\">\n        <span class=\"themeBannerTermBox bmsw_disclaimer\">\n<span class=\"promo_bold\">Terms and Conditions:</span><br><br>\nAll items available while supplies last. Prices exclude taxes and / or shipping and handling charges.<br><br>\n<em>Offer valid from 11/19/2025 through 12/01/2025 11:59 PM (EST). Tax and installation not included. Dealer delivery times may vary.</em><br><br>\nPurchase any eligible BMW Motorrad Riders' or Casual Gear/Clothing, and Original BMW Motorrad Accessories, online at <a href=\"http://www.shopbmwmotorcycles.com\" target=\"_blank\" style=\"color: #000000;\">www.shopbmwmotorcycles.com</a> or at an authorized BMW Motorrad Dealership between 11/19/2025 and 12/01/2025 and receive up to $200 OFF MSRP (see discount scale below).<br><br>\n<span class=\"promo_bold\">Proof of Purchase Requirements:</span><br><br>\n• Spend $300 - $499.99 and receive $50 Off MSRP <span class=\"promo_bold\">(Promo Code HOLIDAY50)</span><br><br>\n• Spend $500 - $999.99 and receive $100 Off MSRP <span class=\"promo_bold\">(Promo Code HOLIDAY100)</span><br><br>\n• Spend $1000+ and receive $200 Off MSRP <span class=\"promo_bold\">(Promo Code HOLIDAY200)</span><br><br>\nEnter Promo Code at checkout to determine eligibility. Offers cannot be combined with multiple transactions and/or purchases or combined with any other discount or offer. One offer per household or email address. Offer not valid on previously purchased merchandise. Promo Code offers are not stackable (i.e. multiple coupon codes cannot be applied to a single order). Offer excludes all New Motorcycle Sales, Hard Parts, Chemicals, shipping, tax, services, labor and/or additional dealer charges.<br><br>\nLimited time offer. Offer expires on 12/01/2025 at 11:59pm (EST). Orders submitted after the offer period ends do not qualify.<br><br>\n    </span>\n</span>\n                </span></p>\n                <div class=\"main--slider-button main--slider-button-flex\">\n\t\t\t\t\t<a href=\"javascript:openVehiclePicker();\">SHOP ACCESSORIES</a>\n\t\t\t\t\t<a href=\"/gear\">SHOP GEAR</a>\n                </div>\n            </div>\n        </div>\n    </div>\n\t<div class=\"main--slider-item\">\n        <div class=\"main--slider-bg\">\n            <img loading=\"lazy\" alt=\"2025 Holiday Gift Guide\" src=\"https://rparts-sites.s3.amazonaws.com/23908d49235005b9c1c9e417b84fee8e/design/holiday_gift_guide_2025.webp\">\n        </div>\n        <div class=\"main--slider-wrapper\">\n            <div class=\"main--slider-content\">\n                <h2 class=\"main--slider-title\">HOLIDAY GIFT GUIDE 2025</h2>\n                  <p style=\"color: #ffffff !important;font-size: 1.3rem !important;\">Find the perfect gift for every kind of rider.</p>\n                \n                <div class=\"main--slider-button\">\n                    <a href=\"/holiday-gift-guide-2025\">SHOP GIFT GUIDE</a>\n                </div>\n            </div>\n        </div>\n    </div>\n    <div class=\"main--slider-item\">\n            <div class=\"main--slider-bg\">\n                <img loading=\"lazy\" alt=\"Original BMW F900 GS Accessories\" src=\"https://rparts-sites.s3.amazonaws.com/23908d49235005b9c1c9e417b84fee8e/design/main-slider/f900gs.webp\">\n            </div>\n            <div class=\"main--slider-wrapper\">\n                <div class=\"main--slider-content\">\n                    <h2 class=\"main--slider-title\">YOUR COMPANION FOR NEARLY EVERY ADVENTURE</h2>\n                    <p class=\"main--slider-text\">New accessories for your F900 GS Adventure are now available. Shop before they're gone.</p>\n                    <div class=\"main--slider-button\">\n                        <a href=\"javascript:openVehiclePicker();\">Shop All Accessories</a>\n                    </div>\n                </div>\n            </div>\n        </div>\n        <div class=\"main--slider-item\">\n            <div class=\"main--slider-bg\">\n                <img loading=\"lazy\" alt=\"Original BMW Motorrad Gear\" src=\"https://rparts-sites.s3.amazonaws.com/23908d49235005b9c1c9e417b84fee8e/design/main-slider/bmwmalpaca.webp\">\n            </div>\n            <div class=\"main--slider-wrapper\">\n                <div class=\"main--slider-content\">\n                    <h2 class=\"main--slider-title\">BY FANS FOR FANS</h2>\n                    <p class=\"main--slider-text\">Comfort and protection merge at close quarters - it's the ideal riding experience. Shop authentic BMW Motorcycle gear & apparel that offers you confidence.</p>\n                    <div class=\"main--slider-button\">\n                        <a href=\"gear\">Shop All Gear</a>\n                    </div>\n                </div>\n            </div>\n        </div>\n        <div class=\"main--slider-item\">\n            <div class=\"main--slider-bg\">\n                <img loading=\"lazy\" alt=\"BMW Motorrad Gear\" src=\"https://rparts-sites.s3.amazonaws.com/29f070d3355f7a968d354a14440576a8/design/minified/webp/DI22_000108187.webp\">\n            </div>\n            <div class=\"main--slider-wrapper\">\n                <div class=\"main--slider-content\">\n                    <h2 class=\"main--slider-title\">BMW MOTORRAD GEAR</h2>\n                    <p class=\"main--slider-text\">Innovation, quality and protection – on and off your motorcycle. Relax and choose the gear that is right for you in the comfort of your home.</p>\n                    <div class=\"main--slider-button\">\n                        <a href=\"gear\">Shop All Gear</a>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>"
+                },
+                "force_lazy": {
+                  "name": "Lazy Load Images",
+                  "type": "boolean",
+                  "default_value": false,
+                  "value": false
+                }
+              },
+              "htmlId": "themeHeroSection_BMWM",
+              "htmlClasses": "",
+              "minColumnWidth": 0,
+              "customAdmin": false,
+              "modulePadding": "padding-0",
+              "display": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+<script>
+    
+    // Update margin based on header height
+    function updateMargin() {
+        const headerHeight = $('header.container-header').outerHeight() || 0;
+        $('.page-content').css('margin-top', headerHeight + 'px');
+    }
+
+    // Run on page load
+    $(document).ready(updateMargin);
+    $(window).on('load', updateMargin);
+
+    // Update on window resize
+    $(window).on('resize', function () {
+        updateMargin();
+    });
+    
+    $(document).ready(function() {
+        
+        var sections = $(".gsSection"); // Select all sections
+        var navLinks = $(".newBMWTabListLink"); // Select all nav links
+
+        $(window).on("scroll", function () {
+            var scrollPos = $(window).scrollTop();
+            var found = false; // Flag to check if any section is in view
+
+            sections.each(function () {
+                var top = $(this).offset().top; // Adjust for better accuracy
+                console.log(top);
+                var bottom = top + $(this).outerHeight();
+                var id = $(this).attr("id");
+
+                if (scrollPos >= top && scrollPos < bottom) {
+                    navLinks.removeClass("active"); // Remove active from all
+                    $('.newBMWTabListLink[href="#' + id + '"]').addClass("active"); // Add active to matching link
+                    found = true; // Section is found in view
+                }
+            });
+
+            // If no section is found in view, remove all active classes
+            if (!found) {
+                navLinks.removeClass("active");
+            }
+        });
+        
+        var newBMWTab = $("#newBMWTab");
+        var stickyPoint = newBMWTab.offset().top; // Get initial position of navbar
+        var body = $("body");
+        var lastScrollTop = 0; // Track the last scroll position
+
+        $(window).scroll(function () {
+            var scrollTop = $(window).scrollTop();
+
+            // Sticky Navbar Logic
+            if (scrollTop > stickyPoint) {
+                newBMWTab.addClass("sticky");
+                body.addClass("stickyTab");
+            } else {
+                newBMWTab.removeClass("sticky");
+                body.removeClass("stickyTab");
+            }
+
+            // Add class every 50px of scroll (downwards only)
+            if (scrollTop > lastScrollTop + 100) {
+                body.addClass("scrolled");
+                lastScrollTop = scrollTop; // Update the last scroll position
+            }
+
+            // Remove class when scrolled back to the top
+            if (scrollTop === 0) {
+                body.removeClass("scrolled");
+                lastScrollTop = 0; // Reset scroll tracking
+            }
+        });
+        
+    	// Select all links with hashes
+        $('.newBMWTabListLink')
+            .not('[href="#"]')
+            .not('[href="#0"]')
+            .click(function(event) {
+            // Remove 'active' class from all links
+            $('.newBMWTabListLink').removeClass('active');
+
+            // Add 'active' class to the clicked link
+            $(this).addClass('active');
+
+            // On-page links
+            if (
+                location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') &&
+                location.hostname == this.hostname
+            ) {
+                // Figure out element to scroll to
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+
+                // Does a scroll target exist?
+                if (target.length) {
+                    // Prevent default if animation is actually gonna happen
+                    event.preventDefault();
+                    $('html, body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000, function() {
+                        // Callback after animation
+                        var $target = $(target);
+                        $target.focus();
+                        if (!$target.is(":focus")) {
+                            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+                            $target.focus(); // Set focus again
+                        }
+                    });
+                }
+            }
+        });
+    })
+    
+</script>

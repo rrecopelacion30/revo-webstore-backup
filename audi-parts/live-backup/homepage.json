@@ -1,0 +1,949 @@
+{
+  "pageId": "homepage",
+  "pageName": "Home Page",
+  "pageType": null,
+  "layoutEnabled": true,
+  "moduleCategories": [
+    "header",
+    "images",
+    "text",
+    "search",
+    "categories_products",
+    "forms",
+    "navigation",
+    "footer"
+  ],
+  "VFSPath": "layouts/homepage.json",
+  "requiredModules": [
+    "featured_products"
+  ],
+  "scripts": "",
+  "sections": [
+    {
+      "sectionId": "section_1",
+      "htmlId": "banner-custom",
+      "htmlClasses": "no-padding",
+      "contentWidth": "full",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "desktop-only",
+      "rows": [
+        {
+          "rowId": "row_2",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_3",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "left",
+              "modules": [
+                {
+                  "moduleId": "module_4",
+                  "moduleType": "banner_vpicker",
+                  "title": "Top Banner BG Image",
+                  "options": {
+                    "banner_slides": {
+                      "name": "Banner Slides",
+                      "type": "object",
+                      "default_value": [],
+                      "value": [
+                        {
+                          "slideId": "slide_10",
+                          "image": "https://rparts-sites.s3.amazonaws.com/233b3fc64e5873b133e62aa1f881f6df/design/BANNER.jpg",
+                          "link": "",
+                          "alt": "audipartsstore.com"
+                        }
+                      ]
+                    },
+                    "overlay_header": {
+                      "name": "Overlay Header",
+                      "type": "string",
+                      "default_value": null,
+                      "value": ""
+                    },
+                    "overlay_content": {
+                      "name": "Overlay Content",
+                      "type": "string",
+                      "default_value": null,
+                      "value": ""
+                    },
+                    "hide_vehicle_picker": {
+                      "name": "Hide Vehicle Picker",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": true
+                    },
+                    "slider_timeout": {
+                      "name": "Slider Speed",
+                      "type": "string",
+                      "default_value": "4000",
+                      "value": "4000"
+                    },
+                    "banner_height": {
+                      "name": "Banner Height",
+                      "type": "string",
+                      "default_value": "360",
+                      "value": "450"
+                    },
+                    "use_overlay_shadows": {
+                      "name": "Overlay Shadows",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": true
+                    },
+                    "picker_title": {
+                      "name": "Picker Title",
+                      "type": "string",
+                      "default_value": "Select Your Vehicle",
+                      "value": ""
+                    },
+                    "banner_image_fill": {
+                      "name": "Banner Image Fill",
+                      "type": "select",
+                      "possible_values": [
+                        {
+                          "value": "cover",
+                          "label": "Cover"
+                        },
+                        {
+                          "value": "contain",
+                          "label": "Contain"
+                        }
+                      ],
+                      "default_value": "cover",
+                      "value": "cover"
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 12,
+                  "customAdmin": true,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_18",
+      "htmlId": "home-page-search",
+      "htmlClasses": "",
+      "contentWidth": "wide",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_19",
+          "rowLayout": 12,
+          "htmlId": "",
+          "htmlClasses": "search-row-custom",
+          "columns": [
+            {
+              "columnId": "column_20",
+              "columnWidth": 12,
+              "htmlId": "",
+              "htmlClasses": "text-center",
+              "moduleArrangement": "block",
+              "textAlignment": "left",
+              "modules": [
+                {
+                  "moduleId": "module_22",
+                  "moduleType": "custom_html",
+                  "title": "Page Title",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<h1>Audi Parts Store</h1>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_21",
+                  "moduleType": "search_bar",
+                  "title": "Search Bar",
+                  "options": {
+                    "placeholder": {
+                      "name": "Placeholder Text",
+                      "type": "string",
+                      "default_value": "Part Number(s), Keywords, or VIN",
+                      "value": "Part Number(s), Keywords, or VIN"
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "mobile-display-hide",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "rowId": "row_56",
+          "rowLayout": "6_6",
+          "htmlId": "",
+          "htmlClasses": "picker-row-custom mobile-display-hide",
+          "columns": [
+            {
+              "columnId": "column_57",
+              "columnWidth": 6,
+              "htmlId": "",
+              "htmlClasses": "text-center picker-column-custom",
+              "moduleArrangement": "block",
+              "textAlignment": "text-center",
+              "modules": [
+                {
+                  "moduleId": "module_30",
+                  "moduleType": "custom_html",
+                  "title": "Select Vehicle",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<strong class=\"header-text\">Select Your Vehicle</strong>"
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_45",
+                  "moduleType": "custom_image",
+                  "title": "Car Image",
+                  "options": {
+                    "image_file": {
+                      "name": "Image File",
+                      "type": "image_upload",
+                      "default_value": null,
+                      "value": "https://s3.amazonaws.com/static.revolutionparts.com/assets/themes/default_assets/car-icon.png"
+                    },
+                    "image_link": {
+                      "name": "Image URL",
+                      "type": "string",
+                      "default_value": null,
+                      "value": ""
+                    },
+                    "image_title": {
+                      "name": "Image Title",
+                      "type": "string",
+                      "default_value": null,
+                      "value": ""
+                    },
+                    "image_size": {
+                      "name": "Image Size",
+                      "caption": "% Height of Image Relative to Width",
+                      "validate": "validate_required validate_numeric",
+                      "type": "string",
+                      "default_value": 100,
+                      "value": "10"
+                    },
+                    "background_image_fill": {
+                      "name": "Image Fill",
+                      "type": "select",
+                      "default_value": "contain",
+                      "value": "contain",
+                      "possible_values": [
+                        {
+                          "value": "contain",
+                          "label": "Contain"
+                        },
+                        {
+                          "value": "cover",
+                          "label": "Cover"
+                        }
+                      ]
+                    },
+                    "image_margin": {
+                      "name": "Margin",
+                      "type": "string",
+                      "caption": "ex: 5px",
+                      "default_value": 0,
+                      "value": "20px 0 0 0"
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_29",
+                  "moduleType": "car_selected",
+                  "title": "Current Car Selected",
+                  "options": {},
+                  "htmlId": null,
+                  "htmlClasses": null,
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_32",
+                  "moduleType": "vehicle_picker",
+                  "title": "Vehicle Picker",
+                  "options": {
+                    "title": {
+                      "name": "Picker Title",
+                      "type": "string",
+                      "default_value": "Select Your Vehicle",
+                      "value": "Select Your Vehicle"
+                    },
+                    "redirect_uri": {
+                      "name": "Redirect URL",
+                      "type": "string",
+                      "default_value": null,
+                      "value": ""
+                    },
+                    "select_button_text": {
+                      "name": "Select Button Text",
+                      "type": "string",
+                      "default_value": "Select",
+                      "value": "Select"
+                    },
+                    "display_change_vehicle": {
+                      "name": "Change Vehicle Link",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    },
+                    "header_class": {
+                      "name": "Header Class",
+                      "type": "string",
+                      "default_value": "header-text",
+                      "value": "header-text"
+                    },
+                    "button_class": {
+                      "name": "Button Class",
+                      "type": "string",
+                      "default_value": null,
+                      "value": ""
+                    },
+                    "dropdown_class": {
+                      "name": "Dropdown Class",
+                      "type": "string",
+                      "default_value": "dropdown",
+                      "value": "dropdown"
+                    },
+                    "dropdown_icon_class": {
+                      "name": "Dropdown Icon Class",
+                      "type": "string",
+                      "default_value": null,
+                      "value": ""
+                    },
+                    "style": {
+                      "name": "Display",
+                      "type": "select",
+                      "possible_values": [
+                        {
+                          "value": "classic",
+                          "label": "Classic"
+                        },
+                        {
+                          "value": "horiz",
+                          "label": "Horizontal"
+                        }
+                      ],
+                      "default_value": "classic",
+                      "value": "classic"
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            },
+            {
+              "columnId": "column_58",
+              "columnWidth": 6,
+              "htmlId": "",
+              "htmlClasses": "vin-column-custom text-center",
+              "moduleArrangement": "block",
+              "textAlignment": "text-center",
+              "modules": [
+                {
+                  "moduleId": "module_53",
+                  "moduleType": "custom_html",
+                  "title": "Search By Vin Title",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<strong class=\"header-text\">Search By VIN</strong>"
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_55",
+                  "moduleType": "custom_image",
+                  "title": "Barcode Image",
+                  "options": {
+                    "image_file": {
+                      "name": "Image File",
+                      "type": "image_upload",
+                      "default_value": null,
+                      "value": "https://s3.amazonaws.com/static.revolutionparts.com/assets/themes/default_assets/barcode-image.png"
+                    },
+                    "image_link": {
+                      "name": "Image URL",
+                      "type": "string",
+                      "default_value": null,
+                      "value": ""
+                    },
+                    "image_title": {
+                      "name": "Image Title",
+                      "type": "string",
+                      "default_value": null,
+                      "value": ""
+                    },
+                    "image_size": {
+                      "name": "Image Size",
+                      "caption": "% Height of Image Relative to Width",
+                      "validate": "validate_required validate_numeric",
+                      "type": "string",
+                      "default_value": 100,
+                      "value": "13"
+                    },
+                    "background_image_fill": {
+                      "name": "Image Fill",
+                      "type": "select",
+                      "default_value": "contain",
+                      "value": "contain",
+                      "possible_values": [
+                        {
+                          "value": "contain",
+                          "label": "Contain"
+                        },
+                        {
+                          "value": "cover",
+                          "label": "Cover"
+                        }
+                      ]
+                    },
+                    "image_margin": {
+                      "name": "Margin",
+                      "type": "string",
+                      "caption": "ex: 5px",
+                      "default_value": 0,
+                      "value": "20px 0 0 0"
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_42",
+                  "moduleType": "search_by_vin",
+                  "title": "Search By VIN",
+                  "options": {
+                    "title": {
+                      "name": "Box Title",
+                      "type": "string",
+                      "default_value": "Search By VIN",
+                      "value": ""
+                    },
+                    "box_icon": {
+                      "name": "Icon",
+                      "type": "string",
+                      "default_value": "fa-search",
+                      "value": ""
+                    },
+                    "message": {
+                      "name": "Message",
+                      "type": "string",
+                      "default_value": "Ensure Part Fitment",
+                      "value": ""
+                    },
+                    "placeholder": {
+                      "name": "Placeholder Text",
+                      "type": "string",
+                      "default_value": "Enter VIN number...",
+                      "value": "Enter VIN number..."
+                    },
+                    "button_text": {
+                      "name": "Button Text",
+                      "type": "string",
+                      "default_value": "Find Vehicle",
+                      "value": "Find Vehicle"
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_15",
+      "htmlId": "vehicle-custom",
+      "htmlClasses": "",
+      "contentWidth": "full",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "mobile-only",
+      "rows": [
+        {
+          "rowId": "row_3",
+          "rowLayout": 12,
+          "htmlId": "",
+          "htmlClasses": "vpicker-row",
+          "columns": [
+            {
+              "columnId": "column_4",
+              "columnWidth": 12,
+              "htmlId": "",
+              "htmlClasses": "text-center",
+              "moduleArrangement": "block",
+              "textAlignment": "left",
+              "modules": [
+                {
+                  "moduleId": "module_5",
+                  "moduleType": "vehicle_picker",
+                  "title": "Vehicle Picker",
+                  "options": {
+                    "title": {
+                      "name": "Picker Title",
+                      "type": "string",
+                      "default_value": "Select Your Vehicle",
+                      "value": "Select Your Vehicle"
+                    },
+                    "redirect_uri": {
+                      "name": "Redirect URL",
+                      "type": "string",
+                      "default_value": null,
+                      "value": ""
+                    },
+                    "select_button_text": {
+                      "name": "Select Button Text",
+                      "type": "string",
+                      "default_value": "Select",
+                      "value": "Select"
+                    },
+                    "display_change_vehicle": {
+                      "name": "Change Vehicle Link",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    },
+                    "header_class": {
+                      "name": "Header Class",
+                      "type": "string",
+                      "default_value": "header-text",
+                      "value": "header-text"
+                    },
+                    "button_class": {
+                      "name": "Button Class",
+                      "type": "string",
+                      "default_value": null,
+                      "value": ""
+                    },
+                    "dropdown_class": {
+                      "name": "Dropdown Class",
+                      "type": "string",
+                      "default_value": "dropdown",
+                      "value": "dropdown"
+                    },
+                    "dropdown_icon_class": {
+                      "name": "Dropdown Icon Class",
+                      "type": "string",
+                      "default_value": null,
+                      "value": ""
+                    },
+                    "style": {
+                      "name": "Display",
+                      "type": "select",
+                      "possible_values": [
+                        {
+                          "value": "classic",
+                          "label": "Classic"
+                        },
+                        {
+                          "value": "horiz",
+                          "label": "Horizontal"
+                        }
+                      ],
+                      "default_value": "classic",
+                      "value": "horiz"
+                    },
+                    "make_text": {
+                      "name": "Select Make Text",
+                      "type": "string",
+                      "default_value": "",
+                      "value": null
+                    },
+                    "model_text": {
+                      "name": "Select Model Text",
+                      "type": "string",
+                      "default_value": "",
+                      "value": null
+                    },
+                    "year_text": {
+                      "name": "Select Year Text",
+                      "type": "string",
+                      "default_value": "",
+                      "value": null
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_2",
+      "htmlId": null,
+      "htmlClasses": null,
+      "contentWidth": null,
+      "backgroundColor": null,
+      "backgroundImage": null,
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_4",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_5",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_6",
+                  "moduleType": "custom_html",
+                  "title": "Audi Parts Store Content",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"homeseo\">\n    <h2>Genuine Audi OEM Parts & Accessories</h2>\n<p>Genuine, Factory Audi auto parts and accessories at steeply discounted prices with available shipping to all 50 states. You can browse a full catalog of OEM parts for your <a href=\"v-audi\">Audi Model</a> and checkout without having to wait for a dealership to get back to your or answer a part form. With a full OEM catalog of parts and accessories for all Audi models, we are sure you will be able to find exactly what you need. <a href=\"/contact-us\">Contact Us</a> if you have any questions and our experts will be happy to help. Your Audi parts, on your time with Audi Parts Store!</p></div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_76",
+      "htmlId": "body-content-custom",
+      "htmlClasses": "",
+      "contentWidth": "wide",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_97",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_98",
+              "columnWidth": 3,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_80",
+                  "moduleType": "custom_html",
+                  "title": "Popular Parts",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<h3>Popular Audi Parts</h3>\n<div class=\"pop-parts-wrap\">\n\t<div class=\"part-wrapper\">\n\t\t<a href=\"air-filters\">\n\t\t\t<aside class=\"pop-image pop-image-1\"></aside>\n\t\t\t<aside class=\"pop-text\"><h4>Air Filters</h4></aside>\n\t\t</a>\n\t\t<a href=\"alternators\">\n\t\t\t<aside class=\"pop-image pop-image-2\"></aside>\n\t\t\t<aside class=\"pop-text\"><h4>Alternators</h4></aside>\n\t\t</a>\n\t\t<a href=\"belts\">\n\t\t\t<aside class=\"pop-image pop-image-3\"></aside>\n\t\t\t<aside class=\"pop-text\"><h4>Belts</h4></aside>\n\t\t</a>\n\t\t<a href=\"brake-pads\">\n\t\t\t<aside class=\"pop-image pop-image-4\"></aside>\n\t\t\t<aside class=\"pop-text\"><h4>Brake Pads</h4></aside>\n\t\t</a>\n\t\t<a href=\"headlights\">\n\t\t\t<aside class=\"pop-image pop-image-5\"></aside>\n\t\t\t<aside class=\"pop-text\"><h4>Headlights</h4></aside>\n\t\t</a>\n\t\t<a href=\"ignition\">\n\t\t\t<aside class=\"pop-image pop-image-6\"></aside>\n\t\t\t<aside class=\"pop-text\"><h4>Ignition</h4></aside>\n\t\t</a>\n\t\t<a href=\"oil-filters\">\n\t\t\t<aside class=\"pop-image pop-image-7\"></aside>\n\t\t\t<aside class=\"pop-text\"><h4>Oil Filters</h4></aside>\n\t\t</a>\n\t\t<a href=\"radiators\">\n\t\t\t<aside class=\"pop-image pop-image-8\"></aside>\n\t\t\t<aside class=\"pop-text\"><h4>Radiators</h4></aside>\n\t\t</a>\n\t\t<a href=\"spark-plugs\">\n\t\t\t<aside class=\"pop-image pop-image-9\"></aside>\n\t\t\t<aside class=\"pop-text\"><h4>Spark Plugs</h4></aside>\n\t\t</a>\n\t\t<a href=\"wiper-blades\">\n\t\t\t<aside class=\"pop-image pop-image-10\"></aside>\n\t\t\t<aside class=\"pop-text\"><h4>Wiper Blades</h4></aside>\n\t\t</a>\n        <a href=\"c-black-out-trim-pkg-9\">\n\t\t\t<aside class=\"pop-image pop-image-11\"></aside>\n\t\t\t<aside class=\"pop-text\"><h4>Black Out Trim</h4></aside>\n\t\t</a>\n\t</div>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "pop-parts",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            },
+            {
+              "columnId": "column_99",
+              "columnWidth": 9,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_82",
+                  "moduleType": "circles_categories",
+                  "title": "Circle Categories",
+                  "options": {
+                    "section_title": {
+                      "name": "Section Title",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "Specials & Promotions"
+                    },
+                    "image_one_file": {
+                      "name": "Image One File",
+                      "type": "image_upload",
+                      "default_value": null,
+                      "value": "https://s3.amazonaws.com/static.revolutionparts.com/assets/themes/default_assets/image-one.jpg"
+                    },
+                    "image_one_link": {
+                      "name": "Image One URL",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "floor-mats"
+                    },
+                    "image_one_title": {
+                      "name": "Image One Title",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "Shop<br>Floor Mats"
+                    },
+                    "image_two_file": {
+                      "name": "Image Two File",
+                      "type": "image_upload",
+                      "default_value": null,
+                      "value": "https://s3.amazonaws.com/static.revolutionparts.com/assets/themes/default_assets/image-two.jpg"
+                    },
+                    "image_two_link": {
+                      "name": "Image Two URL",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "roof-racks"
+                    },
+                    "image_two_title": {
+                      "name": "Image Two Title",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "Shop<br>Roof Racks"
+                    },
+                    "image_three_file": {
+                      "name": "Image Three File",
+                      "type": "image_upload",
+                      "default_value": null,
+                      "value": "https://rparts-sites.s3.amazonaws.com/233b3fc64e5873b133e62aa1f881f6df/design/01.JPG"
+                    },
+                    "image_three_link": {
+                      "name": "Image Three URL",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "c-audi-apparel-collection-5"
+                    },
+                    "image_three_title": {
+                      "name": "Image Three Title",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "Shop<br>Apparel"
+                    },
+                    "text_style": {
+                      "name": "Image Title Style",
+                      "type": "select",
+                      "default_value": "text",
+                      "value": "text",
+                      "possible_values": [
+                        {
+                          "value": "text",
+                          "label": "Text"
+                        },
+                        {
+                          "value": "button",
+                          "label": "Button"
+                        }
+                      ]
+                    },
+                    "variant": {
+                      "name": "Variant",
+                      "type": "select",
+                      "default_value": "",
+                      "value": "",
+                      "possible_values": [
+                        {
+                          "value": "",
+                          "label": "None"
+                        },
+                        {
+                          "value": "shop-now-inner",
+                          "label": "Shop Now (Inner)"
+                        }
+                      ]
+                    }
+                  },
+                  "htmlId": "circle-cats-custom",
+                  "htmlClasses": " specials",
+                  "minColumnWidth": 6,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_23",
+                  "moduleType": "featured_products",
+                  "title": "Featured Products",
+                  "options": {
+                    "display_as_slider": {
+                      "name": "Display As slider",
+                      "caption": "Displays featured products in a slider format",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "featured-custom",
+                  "htmlClasses": "col-md-12",
+                  "minColumnWidth": 12,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "rowId": "row_1",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_2",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_3",
+      "htmlId": null,
+      "htmlClasses": null,
+      "contentWidth": null,
+      "backgroundColor": null,
+      "backgroundImage": null,
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_5",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_6",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

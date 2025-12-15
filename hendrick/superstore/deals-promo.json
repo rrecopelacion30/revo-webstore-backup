@@ -1,0 +1,251 @@
+{
+  "sectionId": "section_46",
+  "htmlId": "themeDealsSection",
+  "htmlClasses": "themeDealsSection",
+  "contentWidth": "wide",
+  "backgroundColor": "",
+  "backgroundImage": "",
+  "textColor": "dark",
+  "display": "normal",
+  "rows": [
+    {
+      "rowId": "row_50",
+      "rowLayout": 12,
+      "htmlId": null,
+      "htmlClasses": null,
+      "columns": [
+        {
+          "columnId": "column_51",
+          "columnWidth": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "moduleArrangement": "block",
+          "textAlignment": "text-left",
+          "modules": [
+            {
+              "moduleId": "module_54",
+              "moduleType": "custom_html",
+              "title": "Title",
+              "options": {
+                "html_content": {
+                  "name": "Custom HTML Content",
+                  "type": "html_content",
+                  "default_value": "",
+                  "value": "<h3>Current Deals & Promos</h3>"
+                },
+                "force_lazy": {
+                  "name": "Lazy Load Images",
+                  "type": "boolean",
+                  "default_value": false,
+                  "value": false
+                }
+              },
+              "htmlId": "",
+              "htmlClasses": "themeTitle",
+              "minColumnWidth": 0,
+              "customAdmin": false,
+              "modulePadding": "padding-0",
+              "display": "normal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rowId": "row_57",
+      "rowLayout": "6_6",
+      "htmlId": null,
+      "htmlClasses": null,
+      "columns": [
+        {
+          "columnId": "column_58",
+          "columnWidth": 6,
+          "htmlId": null,
+          "htmlClasses": null,
+          "moduleArrangement": "block",
+          "textAlignment": "text-left",
+          "modules": [
+            {
+              "moduleId": "module_71",
+              "moduleType": "banner_vpicker",
+              "title": "Big Savings on Auto Parts",
+              "options": {
+                "banner_slides": {
+                  "name": "Banner Slides",
+                  "type": "object",
+                  "default_value": [],
+                  "value": [
+                    {
+                      "slideId": "slide_54",
+                      "image": null,
+                      "link": null,
+                      "alt": ""
+                    }
+                  ]
+                },
+                "overlay_header": {
+                  "name": "Overlay Header",
+                  "type": "string",
+                  "default_value": null,
+                  "value": "Big Savings <br> on Auto Parts"
+                },
+                "overlay_content": {
+                  "name": "Overlay Content",
+                  "type": "string",
+                  "default_value": null,
+                  "value": "Shop OEM & aftermarket parts <br>  now and score exclusive discounts\n<div class=\"themeDealsButton\">\n<a href=\"javascript:openVehiclePicker();\">Shop Now</a>\n</div>"
+                },
+                "picker_title": {
+                  "name": "Picker Title",
+                  "type": "string",
+                  "default_value": "Select Your Vehicle",
+                  "value": "Select Your Vehicle"
+                },
+                "hide_vehicle_picker": {
+                  "name": "Hide Vehicle Picker",
+                  "type": "boolean",
+                  "default_value": false,
+                  "value": true
+                },
+                "slider_timeout": {
+                  "name": "Slider Speed",
+                  "type": "string",
+                  "default_value": "4000",
+                  "value": "4000"
+                },
+                "banner_height": {
+                  "name": "Banner Height",
+                  "type": "string",
+                  "default_value": "290",
+                  "value": "345"
+                },
+                "use_overlay_shadows": {
+                  "name": "Overlay Shadows",
+                  "type": "boolean",
+                  "default_value": false,
+                  "value": false
+                },
+                "banner_image_fill": {
+                  "name": "Banner Image Fill",
+                  "type": "select",
+                  "possible_values": [
+                    {
+                      "value": "cover",
+                      "label": "Cover"
+                    },
+                    {
+                      "value": "contain",
+                      "label": "Contain"
+                    }
+                  ],
+                  "default_value": "cover",
+                  "value": "cover"
+                }
+              },
+              "htmlId": "",
+              "htmlClasses": "",
+              "minColumnWidth": 0,
+              "customAdmin": true,
+              "modulePadding": "padding-0",
+              "display": "normal"
+            }
+          ]
+        },
+        {
+          "columnId": "column_59",
+          "columnWidth": 6,
+          "htmlId": null,
+          "htmlClasses": null,
+          "moduleArrangement": "block",
+          "textAlignment": "text-left",
+          "modules": [
+            {
+              "moduleId": "module_152",
+              "moduleType": "banner_vpicker",
+              "title": "20% Off Shipping",
+              "options": {
+                "banner_slides": {
+                  "name": "Banner Slides",
+                  "type": "object",
+                  "default_value": [],
+                  "value": [
+                    {
+                      "slideId": "slide_64",
+                      "image": null,
+                      "link": null,
+                      "alt": ""
+                    }
+                  ]
+                },
+                "overlay_header": {
+                  "name": "Overlay Header",
+                  "type": "string",
+                  "default_value": null,
+                  "value": "20% Off<br> Shipping"
+                },
+                "overlay_content": {
+                  "name": "Overlay Content",
+                  "type": "string",
+                  "default_value": null,
+                  "value": "Get your parts delivered fast <br>\nand for less. Don’t miss out!\n<div class=\"themeDealsButton\">\n<a href=\"javascript:openVehiclePicker();\">Shop Now</a>\n</div>"
+                },
+                "picker_title": {
+                  "name": "Picker Title",
+                  "type": "string",
+                  "default_value": "Select Your Vehicle",
+                  "value": "Select Your Vehicle"
+                },
+                "hide_vehicle_picker": {
+                  "name": "Hide Vehicle Picker",
+                  "type": "boolean",
+                  "default_value": false,
+                  "value": true
+                },
+                "slider_timeout": {
+                  "name": "Slider Speed",
+                  "type": "string",
+                  "default_value": "4000",
+                  "value": "4000"
+                },
+                "banner_height": {
+                  "name": "Banner Height",
+                  "type": "string",
+                  "default_value": "290",
+                  "value": "345"
+                },
+                "use_overlay_shadows": {
+                  "name": "Overlay Shadows",
+                  "type": "boolean",
+                  "default_value": false,
+                  "value": false
+                },
+                "banner_image_fill": {
+                  "name": "Banner Image Fill",
+                  "type": "select",
+                  "possible_values": [
+                    {
+                      "value": "cover",
+                      "label": "Cover"
+                    },
+                    {
+                      "value": "contain",
+                      "label": "Contain"
+                    }
+                  ],
+                  "default_value": "cover",
+                  "value": "cover"
+                }
+              },
+              "htmlId": "",
+              "htmlClasses": "themeDealsBlue",
+              "minColumnWidth": 0,
+              "customAdmin": true,
+              "modulePadding": "padding-0",
+              "display": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

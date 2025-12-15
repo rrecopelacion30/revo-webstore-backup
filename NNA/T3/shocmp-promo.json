@@ -1,0 +1,55 @@
+{
+  "sectionId": "section_2",
+  "htmlId": "",
+  "htmlClasses": "themeBanner",
+  "contentWidth": "full",
+  "backgroundColor": "",
+  "backgroundImage": "",
+  "textColor": "dark",
+  "display": "normal",
+  "rows": [
+    {
+      "rowId": "row_3",
+      "rowLayout": 12,
+      "htmlId": null,
+      "htmlClasses": null,
+      "columns": [
+        {
+          "columnId": "column_4",
+          "columnWidth": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "moduleArrangement": "block",
+          "textAlignment": "text-left",
+          "modules": [
+            {
+              "moduleId": "module_5",
+              "moduleType": "custom_html",
+              "title": "Banner",
+              "options": {
+                "html_content": {
+                  "name": "Custom HTML Content",
+                  "type": "html_content",
+                  "default_value": "",
+                  "value": "<style>\n    #search-tabs {\n    \tmargin-top: -60px;\n    }\n    .themeBannerList .owl-dots {\n    \tbottom: 30px;\n    }\n    .themeBannerImage {\n        background-position: bottom right;\n        height: 500px;\n    }\n    @media screen and (max-width: 767px) {\n    .themeBannerImage {\n        height: 400px;\n        background-size: cover;\n        background-position: center center;\n    }\n    }\n    .themeBannerContent p {\n        position: relative !important;\n        color: #fff;\n    }\n    .themeBannerTermWrap {\n        position: static !important;\n        display: inline-block !important;\n    }\n    .themeBannerTermWrap a {\n        color: #fff;\n    }\n    .themeBannerTermBox {\n        width: auto !important;\n        height: auto !important;\n        right: 0;\n    }\n    @media screen and (max-width: 767px) {\n        .themeBannerTermBox {\n            height: 100px !important;\n        }\n    }\n    #search-tabs .tab-content .call-to-action-button {\n    \tbackground-color: #000;\n        font-size: 14px;\n        line-height: 32px;\n    }\n    #search-tabs .tab-content .call-to-action-button:hover,\n    #search-tabs .tab-content .call-to-action-button:focus {\n    \tbackground-color: #fff;\n        color: #000;\n        border: 1px solid #fff;\n    }\n</style>\n<div class=\"themeBannerWrapper\">\n    <ul class=\"themeBannerList\">\n        <li class=\"themeBannerItem\">\n            <div class=\"themeBannerCard\">\n                <div class=\"themeBannerImage v-pc\" style=\"background-image: url(https://rparts-sites.s3.amazonaws.com/32631665aa8d4eaddcb34d8b125a3ab3/design/nissan_fs_apr_t3.webp);\"></div>\n                <div class=\"themeBannerImage v-sp\" style=\"background-image: url(https://rparts-sites.s3.amazonaws.com/32631665aa8d4eaddcb34d8b125a3ab3/design/nissan_fs_apr_all.webp);\"></div>\n                <div class=\"themeBannerContent\">\n                    <p class=\"h1\">Celebrate Car Care Month with Free Shipping</p>\n                    <p>Instantly get free shipping (Up to $50 max value) on qualifying online orders of $200 or more on Parts & Accessories\n                        <span class=\"themeBannerTermWrap\"> \n                            <a href=\"#\">[*]</a> \n                            <span class=\"themeBannerTermBox\">\n                                <span style=\"font-family: var(--themeFontBold) !important;\">Promotion valid only on online purchase orders with a minimum subtotal of $200 and made from 04/01/2025 through 04/30/2025 fulfilled by a participating U.S. Nissan dealer or INFINITI retailer. Offer code automatically applied at online checkout.</span> No cash value. Maximum discount on shipping of $50. Void where prohibited. May be combined with other offers. Other restrictions may apply. Contact participating U.S. Nissan dealer/INFINITI retailer for details.\n                            </span> \n                        </span>\n                    </p>\n                    <div class=\"themeBannerButton\">\n                        <a href=\"javascript:openVehiclePicker();\" class=\"themeBannerCard\"><p>Shop Now</p></a>\n                    </div>\n                </div>\n            </div>\n        </li>\n    </ul>\n</div>"
+                },
+                "force_lazy": {
+                  "name": "Lazy Load Images",
+                  "type": "boolean",
+                  "default_value": false,
+                  "value": false
+                }
+              },
+              "htmlId": "",
+              "htmlClasses": "",
+              "minColumnWidth": 0,
+              "customAdmin": false,
+              "modulePadding": "padding-0",
+              "display": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

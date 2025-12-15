@@ -1,0 +1,97 @@
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const table = document.querySelector("table");
+  if (!table) return;
+
+  // Create container div
+  const container = document.createElement("div");
+  container.id = "cart-container";
+  table.insertAdjacentElement("afterend", container);
+
+  const rows = table.querySelectorAll("tbody tr");
+  let html = "";
+
+  rows.forEach((row, index) => {
+    const imageCell = row.querySelector(".cart-image")?.innerHTML.trim() || "";
+    const descCell = row.querySelector(".cart-description")?.innerHTML.trim() || "";
+    const priceCell = row.querySelector(".cart-price")?.innerHTML.trim() || "";
+    const qtyInput = row.querySelector(".cart-quantity input");
+    const totalCell = row.querySelector(".cart-total")?.innerHTML.trim() || "";
+
+    const priceNumber = parseFloat(priceCell.replace(/[^0-9.-]+/g,"")) || 0;
+
+    html += `
+      <div class="cart-item" data-row-index="${index}" data-price="${priceNumber}">
+        <div class="cart-col image">${imageCell}</div>
+        <div class="cart-col desc">${descCell}</div>
+        <div class="cart-col price">${priceCell}</div>
+        <div class="cart-col qty">
+          <button class="qty-minus">-</button>
+          <input type="number" min="1" value="${qtyInput?.value || 1}" class="qty-input">
+          <button class="qty-plus">+</button>
+        </div>
+        <div class="cart-col total">${totalCell}</div>
+      </div>
+    `;
+  });
+
+  // Include footer
+  const footerRow = table.querySelector("tfoot tr");
+  if (footerRow) {
+    html += `<div class="cart-footer">${footerRow.innerHTML}</div>`;
+  }
+
+  container.innerHTML = html;
+  table.style.display = "none";
+
+  // Handle plus/minus buttons
+  const cartItems = container.querySelectorAll(".cart-item");
+
+  cartItems.forEach(item => {
+    const rowIndex = parseInt(item.dataset.rowIndex);
+    const tableRow = table.querySelectorAll("tbody tr")[rowIndex];
+    const tableInput = tableRow.querySelector(".cart-quantity input");
+    const tableUpdateBtn = tableRow.querySelector(".update-cart-link");
+
+    const input = item.querySelector(".qty-input");
+    const minusBtn = item.querySelector(".qty-minus");
+    const plusBtn = item.querySelector(".qty-plus");
+    const totalCell = item.querySelector(".cart-col.total");
+    const price = parseFloat(item.dataset.price) || 0;
+
+    let updateTimeout = null;
+
+    const updateQuantity = () => {
+      let qty = parseInt(input.value) || 1;
+      if (qty < 1) qty = 1;
+      input.value = qty;
+
+      // Update hidden table input
+      tableInput.value = qty;
+
+      // Update total visually
+      totalCell.textContent = `$${(price * qty).toLocaleString(undefined, {minimumFractionDigits:2})}`;
+
+      // Trigger the original update button after 500ms
+      if (tableUpdateBtn) {
+        if (updateTimeout) clearTimeout(updateTimeout);
+        updateTimeout = setTimeout(() => {
+          tableUpdateBtn.click();
+        }, 500);
+      }
+    };
+
+    minusBtn.addEventListener("click", () => {
+      input.value = parseInt(input.value) - 1;
+      updateQuantity();
+    });
+
+    plusBtn.addEventListener("click", () => {
+      input.value = parseInt(input.value) + 1;
+      updateQuantity();
+    });
+
+    input.addEventListener("change", updateQuantity);
+  });
+});
+</script>

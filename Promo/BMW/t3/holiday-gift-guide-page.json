@@ -1,0 +1,406 @@
+{
+  "pageId": "page",
+  "pageName": "Text Page",
+  "pageType": null,
+  "layoutEnabled": true,
+  "moduleCategories": [
+    "header",
+    "images",
+    "text",
+    "search",
+    "categories_products",
+    "forms",
+    "navigation",
+    "footer"
+  ],
+  "VFSPath": "layouts/page.json",
+  "requiredModules": [],
+  "scripts": "",
+  "sections": [
+    {
+      "sectionId": "section_1",
+      "htmlId": "",
+      "htmlClasses": "newBMWBanner",
+      "contentWidth": "full",
+      "backgroundColor": "#000000",
+      "backgroundImage": "https://cdn.revolutionparts.io/29aae1a45f62e2c5224f4527f32ea58b/design/holiday_gift_banner.webp",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_2",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_3",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_4",
+                  "moduleType": "custom_html",
+                  "title": "New BMW Banner Content",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"newBMWBannerWrap newBMWBannerWrapHoliday\">\n    <div class=\"newBMWBannerContent\">\n        <h1 data-aos=\"fade-right\">\n            Holiday Gift <br>\n            Guide 2025\n        </h1>\n        <p>Find the perfect gift for every kind of rider.</p>\n        <div class=\"newBMWBannerMakeLife\">\n            <p>Make Life A Ride</p>\n        </div>\n    </div>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_2",
+      "htmlId": "newBMWTab",
+      "htmlClasses": "newBMWTab newBMWTabGiftHoliday",
+      "contentWidth": "full",
+      "backgroundColor": "#5a5a5a",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_3",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_4",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_5",
+                  "moduleType": "custom_html",
+                  "title": "New BMW Tab",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"newBMWTabWrap\">\n    <ul class=\"newBMWTabList\">\n        <li class=\"newBMWTabListItem\">\n            <a href=\"#riderapp\" class=\"newBMWTabListLink\">\n                Rider Apparel\n            </a>\n        </li>\n        <li class=\"newBMWTabListItem\">\n            <a href=\"#footwear\" class=\"newBMWTabListLink\">\n                Footwear\n            </a>\n        </li>\n        <li class=\"newBMWTabListItem\">\n            <a href=\"#riding\" class=\"newBMWTabListLink\">\n                Riding Gear & Suits\n            </a>\n        </li>\n        <li class=\"newBMWTabListItem\">\n            <a href=\"#ridefav\" class=\"newBMWTabListLink\">\n                Rider Favorites\n            </a>\n        </li>\n        <li class=\"newBMWTabListItem\">\n            <a href=\"/gear\" class=\"newBMWTabListLink\">\n                Shop All Gear\n            </a>\n        </li>\n    </ul>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_5",
+      "htmlId": "riderapp",
+      "htmlClasses": "gsSection gsSectionRiderApp",
+      "contentWidth": "full",
+      "backgroundColor": "#000000",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_6",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_7",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_8",
+                  "moduleType": "custom_html",
+                  "title": "Rider Apparel",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"newBMWMainTitle\">\n    <h5>RIDER APPAREL</h5>\n    <p>Everyday lifestyle apparel &mdash; stylish, casual, and wearable off the bike.</p>\n</div>\n<div class=\"newBMWMainWrapList\">\n    <div class=\"newBMWMainWrapListItem newBMWMainWrapListItemNaples01\">\n        <div class=\"newBMWMainImg\">\n            <a href=\"p-mens-naples-jacket-anthracite-unisexjacketnaplesanthracite2025\">\n                <img src=\"https://rparts-sites.s3.amazonaws.com/29aae1a45f62e2c5224f4527f32ea58b/design/holiday/naples_jacket.png\" alt=\"Naples Jacket\">\n            </a>\n        </div>\n        <div class=\"newBMWMainContentFloat\">\n            <h4>Mens Naples Jacket</h4> <br>\n            <p>\n                MSRP: $279.00 <br>\n                COLOR: ANTHRACITE <br><br>\n            </p>\n            <div class=\"newBMWListButton\">\n                <a href=\"p-mens-naples-jacket-anthracite-unisexjacketnaplesanthracite2025\">Shop Now</a>\n            </div>\n        </div>\n    </div>\n    <div class=\"newBMWMainWrapListItem newBMWMainWrapListItemNaples02 newBMWMainWrapListItemNaples04 newBMWMainWrapListItemNaples04new\">\n        <div class=\"newBMWMainWrapRow\">\n            <div class=\"newBMWMainWrapCol\">\n                <div class=\"newBMWMainImg\">\n                    <a href=\"p-mens-pace-pro-jacket-mensjacketpaceproblack2025\">\n                        <img src=\"https://rparts-sites.s3.amazonaws.com/29aae1a45f62e2c5224f4527f32ea58b/design/holiday/mens_pace_pro.png\" alt=\"Naples Jacket\">\n                    </a>\n                </div>\n                <div class=\"newBMWMainContentFloat\">\n                    <h4>Mens Pace Pro Jacket</h4> <br>\n                    <p>\n                        MSRP: $1,250.00 <br>\n                        COLOR: Black <br><br>\n                    </p>\n                        <div class=\"newBMWListButton\">\n                            <a href=\"p-mens-pace-pro-jacket-mensjacketpaceproblack2025\">Shop Now</a>\n                        </div>\n                </div>\n            </div>\n            <div class=\"newBMWMainWrapCol\">\n                <div class=\"newBMWMainImg\">\n                    <a href=\"p-womens-pace-pro-jacket-womensjacketpaceproblack2025\">\n                        <img src=\"https://rparts-sites.s3.amazonaws.com/29aae1a45f62e2c5224f4527f32ea58b/design/holiday/womens_pace_pro.png\" alt=\"Naples Jacket\">\n                    </a>\n                </div>\n                <div class=\"newBMWMainContentFloat\">\n                    <h4>Womens Pace Pro Jacket</h4> <br>\n                    <p>\n                        MSRP: $1,250.00 <br>\n                        COLOR: Black <br><br>\n                    </p>\n                    <div class=\"newBMWListButton\">\n                        <a href=\"p-womens-pace-pro-jacket-womensjacketpaceproblack2025\">Shop Now</a>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n    <div class=\"newBMWMainWrapListItem newBMWMainWrapListItemNaples02\">\n        <div class=\"newBMWMainWrapRow\">\n            <div class=\"newBMWMainWrapCol\">\n                <div class=\"newBMWMainImg\">\n                    <a href=\"p-mens-gs-softshell-jacket-mensgssoftshelljacketanthracite\">\n                        <img src=\"https://rparts-sites.s3.amazonaws.com/29aae1a45f62e2c5224f4527f32ea58b/design/holiday/naples_jacket_01.png\" alt=\"Naples Jacket\">\n                    </a>\n                </div>\n                <div class=\"newBMWMainContentFloat\">\n                    <h4>GS SOFTSHELL JACKET</h4> <br>\n                    <p>\n                        MSRP: $169.00 <br>\n                        COLOR: BLACK <br><br>\n                    </p>\n                    <div class=\"newBMWListButton\">\n                        <a href=\"p-mens-gs-softshell-jacket-mensgssoftshelljacketanthracite\">Shop Men's</a>\n                        <a href=\"p-womens-gs-softshell-jacket-womensgssoftshelljacketanthracite\">Shop Women's</a>\n                    </div>\n                </div>\n            </div>\n            <div class=\"newBMWMainWrapCol\">\n                <div class=\"newBMWMainImg\">\n                    <a href=\"p-unisex-make-life-a-ride-softshell-jacket-unisexmakelifearidesoftshelljacketnightblue\">\n                        <img src=\"https://rparts-sites.s3.amazonaws.com/29aae1a45f62e2c5224f4527f32ea58b/design/holiday/naples_jacket_02.png\" alt=\"Naples Jacket\">\n                    </a>\n                </div>\n                <div class=\"newBMWMainContentFloat\">\n                    <h4>Unisex Make Life a Ride <br>Softshell Jacket</h4> <br>\n                    <p>\n                        MSRP: $169.00 <br>\n                        COLOR: Blue <br><br>\n                    </p>\n                    <div class=\"newBMWListButton\">\n                        <a href=\"p-unisex-make-life-a-ride-softshell-jacket-unisexmakelifearidesoftshelljacketnightblue\">Shop Now</a>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n    <div class=\"newBMWFullButton\">\n        <div class=\"newBMWListButton\">\n            <a href=\"gear/riders-equipment/jackets\">Shop All Jackets</a>\n        </div>\n    </div>\n    <div class=\"newBMWMainWrapListItem newBMWMainWrapListItemNaples03\">\n        <div class=\"newBMWMainImg\">\n            <a href=\"p-unisex-bmw-motorrad-cap-brown-76615b3e520\">\n                <img src=\"https://rparts-sites.s3.amazonaws.com/29aae1a45f62e2c5224f4527f32ea58b/design/holiday/naples_cap_dup.png\" alt=\"Naples Jacket\">\n            </a>\n        </div>\n        <div class=\"newBMWMainContentFloat\">\n            <h4>Unisex BMW Motorrad Cap</h4> <br>\n            <p>\n                MSRP: $32.00 <br>\n                COLOR: Brown <br><br>\n            </p>\n            <div class=\"newBMWListButton\">\n                <a href=\"p-unisex-bmw-motorrad-cap-brown-76615b3e520\">Shop Now</a>\n            </div>\n        </div>\n    </div>\n    <div class=\"newBMWFullButton\">\n        <div class=\"newBMWListButton\">\n            <a href=\"gear/casual-collection/caps\">Shop All Caps</a>\n        </div>\n    </div>\n    <div class=\"newBMWMainWrapListItem newBMWMainWrapListItemNaples02 newBMWMainWrapListItemNaples04\">\n        <div class=\"newBMWMainWrapRow\">\n            <div class=\"newBMWMainWrapCol\">\n                <div class=\"newBMWMainImg\">\n                    <a href=\"p-mens-r12-ninet-t-shirt-menstshirtr12ninetolive2025\">\n                        <img src=\"https://rparts-sites.s3.amazonaws.com/29aae1a45f62e2c5224f4527f32ea58b/design/holiday/r12_nine_tshirt.png\" alt=\"Naples Jacket\">\n                    </a>\n                </div>\n                <div class=\"newBMWMainContentFloat\">\n                    <h4>Men's R12 Ninet T-shirt</h4> <br>\n                    <p>\n                        MSRP: $45.00 <br>\n                        COLOR: Olive <br><br>\n                    </p>\n                    <div class=\"newBMWListButton\">\n                        <a href=\"p-mens-r12-ninet-t-shirt-menstshirtr12ninetolive2025\">Shop Now</a>\n                    </div>\n                </div>\n            </div>\n            <div class=\"newBMWMainWrapCol\">\n                <div class=\"newBMWMainImg\">\n                    <a href=\"p-mens-gs-adventure-t-shirt-menstshirtgsadventureblack2025\">\n                        <img src=\"https://rparts-sites.s3.amazonaws.com/29aae1a45f62e2c5224f4527f32ea58b/design/holiday/gs_adventure_tshirt.png\" alt=\"Naples Jacket\">\n                    </a>\n                </div>\n                <div class=\"newBMWMainContentFloat\">\n                    <h4>Men's GS Adventure T-shirt</h4> <br>\n                    <p>\n                        MSRP: $45.00 <br>\n                        COLOR: Black <br><br>\n                    </p>\n                    <div class=\"newBMWListButton\">\n                        <a href=\"p-mens-gs-adventure-t-shirt-menstshirtgsadventureblack2025\">Shop Now</a>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n    <div class=\"newBMWFullButton\">\n        <div class=\"newBMWListButton\">\n            <a href=\"gear/casual-collection/t-shirts\">Shop All T-Shirts</a>\n        </div>\n    </div>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_77",
+      "htmlId": "footwear",
+      "htmlClasses": "gsSection gsSectionFootWear",
+      "contentWidth": "full",
+      "backgroundColor": "#000000",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_78",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_79",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_80",
+                  "moduleType": "custom_html",
+                  "title": "Footwear",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"newBMWMainTitle\">\n    <h5>FOOTWEAR</h5>\n    <p>Lifestyle shoes and sneakers - light, stylish, everyday wear.</p>\n</div>\n<div class=\"newBMWMainWrapList\">\n    <div class=\"newBMWMainWrapListItem newBMWMainWrapListItemFootwear01\">\n        <div class=\"newBMWMainImg\">\n            <a href=\"p-unisex-knitlite-sneakers-unisexknitlitesneakersblack\">\n                <img src=\"https://rparts-sites.s3.amazonaws.com/29aae1a45f62e2c5224f4527f32ea58b/design/holiday/footwear01.png\" alt=\"Footwear\">\n            </a>\n        </div>\n        <div class=\"newBMWMainContentFloat\">\n            <h4>Unisex Knitlite Sneakers</h4> <br>\n            <p>\n                MSRP: $289.00 <br>\n                COLOR: Black <br><br>\n            </p>\n            <div class=\"newBMWListButton\">\n                <a href=\"p-unisex-knitlite-sneakers-unisexknitlitesneakersblack\">Shop Now</a>\n            </div>\n        </div>\n    </div>\n</div>\n<div class=\"newBMWFullButton\"> \n    <div class=\"newBMWListButton\"> \n        <a href=\"gear/riders-equipment/boots-sneakers\">\n            Shop All Sneakers\n        </a> \n    </div> \n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_93",
+      "htmlId": "riding",
+      "htmlClasses": "gsSection gsSectionRiding",
+      "contentWidth": "full",
+      "backgroundColor": "#000000",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_94",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_95",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_96",
+                  "moduleType": "custom_html",
+                  "title": "Riding Gear & Suits",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"newBMWMainTitle\">\n    <h5>RIDING GEAR & SUITS</h5>\n    <p>Technical gear built for serious riders - full protective systems.</p>\n</div>\n<div class=\"newBMWMainWrapList\">\n    <div class=\"newBMWMainWrapListItem newBMWMainWrapListItemRidingGear01\">\n        <div class=\"newBMWMainContentFloat newBMWMainContentFloat01\">\n            <h4>GS Namib GTX Suit</h4> <br>\n            <p>\n                MSRP: $1,898.00 <br>\n                COLOR: Khaki <br><br>\n            </p>\n            <div class=\"newBMWListButton\">\n                <a href=\"p-mens-gs-namib-gtx-suit-mensgsnamibgtxsuitkhaki\">Shop Men's</a>\n                <a href=\"p-womens-gs-namib-gtx-suit-womensgsnamibgtxsuitkhaki\">Shop Women's</a>\n            </div>\n        </div>\n        <div class=\"newBMWMainImg\">\n            <a href=\"search?search_str=GS+Namib+GTX+Suit\">\n                <img src=\"https://rparts-sites.s3.amazonaws.com/29aae1a45f62e2c5224f4527f32ea58b/design/holiday/riding_gear.png\" alt=\"Footwear\">\n            </a>\n        </div>\n    </div>\n</div>\n<div class=\"newBMWFullButton\"> \n    <div class=\"newBMWListButton\"> \n        <a href=\"gear/riders-equipment/suits\">\n            Shop All Suits\n        </a> \n    </div> \n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_109",
+      "htmlId": "ridefav",
+      "htmlClasses": "gsSection gsSectionRideFav",
+      "contentWidth": "full",
+      "backgroundColor": "#000000",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_110",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_111",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_112",
+                  "moduleType": "custom_html",
+                  "title": "Rider's Favorite",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"newBMWMainTitle\">\n    <h5>RIDERS FAVORITES</h5>\n    <p>Tech, gadgets, and smaller gifts - perfect add-ons or standalone presents.</p>\n</div>\n<div class=\"newBMWProductWrap\">\n    <ul class=\"newBMWProductList\">\n        <li class=\"newBMWProductListItem\">\n            <a href=\"/oem-parts/bmw-motorrad-connectedride-navigator-77525a881e8\">\n                <div class=\"newBMWProductCard\">\n                    <div class=\"newBMWProductImg\">\n                        <img src=\"https://rparts-sites.s3.amazonaws.com/29f070d3355f7a968d354a14440576a8/design/holiday2025/connectride.png\" alt=\"BMW Connectride\">\n                    </div>\n                    <div class=\"newBMWProductContent\">\n                        <h3>Connectedride Navigator</h3>\n                        <p>\n                            MSRP: <strong>$890.00</strong>\n                        </p>\n                        <div class=\"newBMWListButton \">\n                            <p>Shop Now</p>\n                        </div>\n                    </div>\n                </div>\n            </a>\n        </li>\n        <li class=\"newBMWProductListItem\">\n            <a href=\"/oem-parts/bmw-motorrad-set-connectedride-cradle-77525a84266\">\n                <div class=\"newBMWProductCard\">\n                    <div class=\"newBMWProductImg\">\n                        <img src=\"https://rparts-sites.s3.amazonaws.com/29f070d3355f7a968d354a14440576a8/design/holiday2025/cradle.png\" alt=\"BMW Set Connectedride Cradle\">\n                    </div>\n                    <div class=\"newBMWProductContent\">\n                        <h3>Set Connectedride Cradle</h3>\n                        <p>\n                            MSRP: <strong>$295.00</strong>\n                        </p>\n                        <div class=\"newBMWListButton \">\n                            <p>Shop Now</p>\n                        </div>\n                    </div>\n                </div>\n            </a>\n        </li>\n        <li class=\"newBMWProductListItem\">\n            <a href=\"/oem-parts/bmw-motorrad-adventure-collection-soft-rear-bag-large-77495a503b9\">\n                <div class=\"newBMWProductCard\">\n                    <div class=\"newBMWProductImg\">\n                        <img src=\"https://cdn-product-images.revolutionparts.io/assets/0030a0d6bd83f4fba0745f367a7aead2.webp\" alt=\"BMW Adventure Collection Soft Rear Bag, Large\">\n                    </div>\n                    <div class=\"newBMWProductContent\">\n                        <h3>Adventure Collection Soft Rear Bag</h3>\n                        <p>\n                            MSRP: <strong>$393.00</strong>\n                        </p>\n                        <div class=\"newBMWListButton \">\n                            <p>Shop Now</p>\n                        </div>\n                    </div>\n                </div>\n            </a>\n        </li>\n        <li class=\"newBMWProductListItem\">\n            <a href=\"/p-unisex-bmw-motorrad-cap-76615a82559\">\n                <div class=\"newBMWProductCard\">\n                    <div class=\"newBMWProductImg\">\n                        <img src=\"https://rparts-sites.s3.amazonaws.com/29aae1a45f62e2c5224f4527f32ea58b/design/holiday/bmw_cap_new.png\" alt=\"BMW Unisex BMW Motorrad Cap\">\n                    </div>\n                    <div class=\"newBMWProductContent\">\n                        <h3>Unisex BMW Motorrad Cap</h3>\n                        <p>\n                            MSRP: <strong>$32.00</strong>\n                        </p>\n                        <div class=\"newBMWListButton \">\n                            <p>Shop Now</p>\n                        </div>\n                    </div>\n                </div>\n            </a>\n        </li>\n    </ul>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_14",
+      "htmlId": "",
+      "htmlClasses": "main--hero main--heronewBMW",
+      "contentWidth": "full",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_17",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_21",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_25",
+                  "moduleType": "custom_html",
+                  "title": "Main Slider",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div id=\"main--slider\" class=\"owl-carousel owl-theme\">\n    <div class=\"main--slider-item\">\n        <div class=\"main--slider-bg\">\n            <img alt=\"BMW Motorrad Gear\" src=\"https://rparts-sites.s3.amazonaws.com/23908d49235005b9c1c9e417b84fee8e/design/main-slider/gearslider01.png\">\n        </div>\n        <div class=\"main--slider-wrapper\">\n            <div class=\"main--slider-content\">\n                <h2 class=\"main--slider-title\">\n                    SHOP ALL BMW MOTORRAD <br>\n                    GEAR\n                </h2>\n                \n                <div class=\"main--slider-button\"> <a href=\"gear\">Shop All Gear</a> </div>\n            </div>\n        </div>\n    </div>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
