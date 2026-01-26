@@ -1,0 +1,1286 @@
+{
+  "pageId": "homepage",
+  "pageName": "Home Page",
+  "pageType": null,
+  "layoutEnabled": true,
+  "moduleCategories": [
+    "header",
+    "images",
+    "text",
+    "search",
+    "categories_products",
+    "forms",
+    "navigation",
+    "footer"
+  ],
+  "VFSPath": "layouts/homepage.json",
+  "requiredModules": [
+    "featured_products"
+  ],
+  "scripts": "<script>\n$( document ).ready(function() {\n    $('.hero-slider').owlCarousel({\n        items: 1,\n        autoplay: 7000,\n        autoplayTimeout: 7000,\n        animateIn: 'fadeIn',\n        slideBy: 1,\n        dots: true,\n        arrows: false,\n        loop: true,\n        animateOut: 'fadeOut'\n    });\n});\n \n</script>",
+  "sections": [
+    {
+      "sectionId": "section_4",
+      "htmlId": "",
+      "htmlClasses": "themeNewBanner",
+      "contentWidth": "wide",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_1",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_2",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_42",
+                  "moduleType": "custom_html",
+                  "title": "H1 Title",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div style=\"padding-bottom: 20px;\"><h1>Shop Genuine Mopar<sub>®</sub> Parts & Accessories Online</h1></div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_3",
+                  "moduleType": "custom_html",
+                  "title": "Banner Slider",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"themeNewBannerWrapper\">\n    <div id=\"themeNewBannerSlider\" class=\"themeNewBannerSlider owl-carousel owl-theme\">\n        <div class=\"themeNewBannerSliderItem\">\n            <div class=\"themeNewBannerSliderBox\">\n                <a href=\"https://www.dcperformance.com/\">\n                    <div class=\"themeNewBannerSliderBox\">\n                        <div class=\"themeNewBAnnerSliderContent\">\n                            <div class=\"themeNewBannerSliderContentBox\">\n                                <h4>The Direct Connection Story</h4>\n                                <p class=\"themeNewBannerSliderText\">\n                                    Created 40 year ago, Direct Connection was the answer for the high demand for Mopar<sub>®</sub> performance parts.\n                                </p>\n                                <p class=\"themeNewBannerSliderButton\">\n                                    SHOP NOW\n                                </p>\n                            </div>\n                        </div>\n                        <div class=\"themeNewBannerSliderImg\">\n                            <img src=\"https://rparts-sites.s3.amazonaws.com/8ae4b64986c61872a339a5e6aa224aeb/design/new-home/slider/MOPAR_Direct_Connection_Banner_new_.webp\" alt=\"The Direct Connection Story\">\n                        </div>\n                    </div>\n                </a>\n            </div>\n        </div>\n        <div class=\"themeNewBannerSliderItem\">\n            <div class=\"themeNewBannerSliderBox\">\n                <a href=\"interactive-garage\">\n                    <div class=\"themeNewBannerSliderBox\">\n                        <div class=\"themeNewBAnnerSliderContent\">\n                            <div class=\"themeNewBannerSliderContentBox\">\n                                <h4>MOPAR<sub>®</sub> CUSTOMIZER IS HERE</h4>\n                                <p class=\"themeNewBannerSliderText\">\n                                    Try new Mopar<sub>®</sub> Customizer and see your accessories in action before you buy.\n                                </p>\n                                <p class=\"themeNewBannerSliderButton\">\n                                    Visualize Now\n                                </p>\n                            </div>\n                        </div>\n                        <div class=\"themeNewBannerSliderImg\">\n                            <img src=\"https://rparts-sites.s3.amazonaws.com/8ae4b64986c61872a339a5e6aa224aeb/design/new-home/slider/ig-promo-tile_.webp\" alt=\"MOPAR CUSTOMIZER IS HERE\">\n                        </div>\n                    </div>\n                </a>\n            </div>\n        </div>\n        <div class=\"themeNewBannerSliderItem\">\n            <div class=\"themeNewBannerSliderBox\">\n                <a href=\"accessories\">\n                    <div class=\"themeNewBannerSliderImg\">\n                        <img src=\"https://rparts-sites.s3.amazonaws.com/8ae4b64986c61872a339a5e6aa224aeb/design/new-home/slider/15_promo_.webp\" alt=\"MOPAR 15% Off Authentic Parts & Accessories - Use code: MOPAR15\">\n                    </div>\n                </a>\n                <div class=\"themeNewBAnnerSliderContent\">\n                    <div class=\"themeNewBannerSliderContentBox\">\n                        <a href=\"accessories\"><h4>GET 15% OFF ON SELECT PERFORMANCE PARTS & ACCESSORIES</h4></a>\n                        <p class=\"themeNewBannerSliderText\">\n                            <strong>Use promo code: <span style=\"font-weight:700;\">MOPAR15</span> - Offer valid through 12/31/2026.</strong>\n                            <span class=\"themeBannerTermWrap\">\n                                <span style=\"text-decoration: underline;cursor: pointer;\">[*]</span>\n                                <span class=\"themeBannerTermBox\">\n                                    *Use promo code: <strong>MOPAR15</strong>. Maximum value: $200.00. Discount applies to regular retail pricing on select Mopar® Accessories and Performance Parts for FCA US LLC vehicles. Excludes Accessories Listed in the Mopar Affiliated Accessories Program. Excludes Electric Vehicle Level II Charging Units. Not valid with other offers. Customer is responsible for installation, local tax, and Shop Supplies fee. Must present coupon when the order is written. See Service Advisor for complete details. Offer expires 12/31/2026.\n                                </span>\n                            </span>\n                        </p>\n                        <a href=\"accessories\" class=\"themeNewBannerSliderButton\">\n                            Shop Now\n                        </a>\n                    </div>\n                </div>\n            </div>\n        </div>\n        <div class=\"themeNewBannerSliderItem\">\n            <a href=\"javascript:void(0)\" data-toggle=\"modal\" data-target=\"#creditCardPromoModal\">\n                <div class=\"themeNewBannerSliderBox\">\n                    <div class=\"themeNewBannerSliderImg\">\n                        <img src=\"https://rparts-sites.s3.amazonaws.com/8ae4b64986c61872a339a5e6aa224aeb/design/new-home/slider/Mopar_75LTO_Banner_978x700-EO-n.webp\" alt=\"MOPAR Authentic Parts & Accessories\">\n                    </div>\n                </div>\n            </a>\n        </div>\n        <div class=\"themeNewBannerSliderItem\">\n            <div class=\"themeNewBannerSliderBox\">\n                <a href=\"rho-magnaflow-exhaust\">\n                    <div class=\"themeNewBannerSliderBox\">\n                        <div class=\"themeNewBAnnerSliderContent\">\n                            <div class=\"themeNewBannerSliderContentBox\">\n                                <h4>RHO Exhaust Kits</h4>\n                                <p class=\"themeNewBannerSliderText\">\n                                    MagnaFlow RAM RHO xMOD and SPEQ Series Cat-Back Performance Exhaust\n                                </p>\n                                <p class=\"themeNewBannerSliderButton\">\n                                    Shop Now\n                                </p>\n                            </div>\n                        </div>\n                        <div class=\"themeNewBannerSliderImg\">\n                            <img src=\"https://rparts-sites.s3.amazonaws.com/8ae4b64986c61872a339a5e6aa224aeb/design/new-home/slider/rho-exhaust-tile_.webp\" alt=\"RAM RHO Cat-Back Performance Exhaust\">\n                        </div>\n                    </div>\n                </a>\n            </div>\n        </div>\n        <div class=\"themeNewBannerSliderItem\">\n            <div class=\"themeNewBannerSliderBox\">\n                <a href=\"https://store.mopar.com/jeep-wrangler-catalog\">\n                    <div class=\"themeNewBannerSliderBox\">\n                        <div class=\"themeNewBAnnerSliderContent\">\n                            <div class=\"themeNewBannerSliderContentBox\">\n                                <h4>Jeep Wrangler Interactive Catalog</h4>\n                                <p class=\"themeNewBannerSliderText\">\n                                    An immersive catalog featuring top selling accessories in an interactive experience.\n                                </p>\n                                <p class=\"themeNewBannerSliderButton\">\n                                    Shop Now\n                                </p>\n                            </div>\n                        </div>\n                        <div class=\"themeNewBannerSliderImg\">\n                            <img src=\"https://rparts-sites.s3.amazonaws.com/8ae4b64986c61872a339a5e6aa224aeb/design/new-home/slider/banner_wrangler_.webp\" alt=\"Jeep Wrangler Interactive Catalog\">\n                        </div>\n                    </div>\n                </a>\n            </div>\n        </div>\n        <div class=\"themeNewBannerSliderItem\">\n            <a href=\"/affiliated-accessories\">\n                <div class=\"themeNewBannerSliderBox\">\n                    <div class=\"themeNewBannerSliderImg\">\n                        <img src=\"https://rparts-sites.s3.amazonaws.com/8ae4b64986c61872a339a5e6aa224aeb/design/new-home/slider/square_1a_.webp\" alt=\"MOPAR Authentic Parts & Accessories\">\n                    </div>\n                    <div class=\"themeNewBAnnerSliderContent\">\n                        <div class=\"themeNewBannerSliderContentBox\">\n                            <h4>Mopar Affiliated Accessories</h4>\n                            <p class=\"themeNewBannerSliderText\">\n                                <strong>Partnered with 30+ trusted brands</strong> to offer top accessories and customization options for your vehicle.\n                            </p>\n                            <p class=\"themeNewBannerSliderButton\">\n                                Shop Now\n                            </p>\n                        </div>\n                    </div>\n                </div>\n            </a>\n        </div>\n        <div class=\"themeNewBannerSliderItem\">\n            <a href=\"bproauto\">\n                <div class=\"themeNewBannerSliderBox\">\n                    <div class=\"themeNewBAnnerSliderContent\">\n                        <div class=\"themeNewBannerSliderContentBox\">\n                            <h4>BPROAUTO PARTS</h4>\n                            <p class=\"themeNewBannerSliderText\">\n                                bproauto parts are quality-tested, O.E.-backed aftermarket parts for most vehicles – affordable and warranty-backed.\n                            </p>\n                            <p class=\"themeNewBannerSliderButton\">\n                                Shop Now\n                            </p>\n                        </div>\n                    </div>\n                    <div class=\"themeNewBannerSliderImg\">\n                        <img src=\"https://rparts-sites.s3.amazonaws.com/8ae4b64986c61872a339a5e6aa224aeb/design/new-home/slider/square_2_.webp\" alt=\"MOPAR Authentic Parts & Accessories\">\n                    </div>\n                </div>\n            </a>\n        </div>\n        <div class=\"themeNewBannerSliderItem\">\n            <a href=\"oem-parts/mopar-free2move-charge-in-home-ev-charger-level-2-48-amp-82219155ab?c=bD00Jm49RHluYW1pYyBTRU8gUGFnZSZrPTEmcT04MjIxOTE1NUFB\">\n                <div class=\"themeNewBannerSliderBox\">\n                    <div class=\"themeNewBannerSliderImg\">\n                        <img src=\"https://rparts-sites.s3.amazonaws.com/8ae4b64986c61872a339a5e6aa224aeb/design/new-home/slider/square_3_.webp\" alt=\"MOPAR Authentic Parts & Accessories\">\n                    </div>\n                    <div class=\"themeNewBAnnerSliderContent\">\n                        <div class=\"themeNewBannerSliderContentBox\">\n                            <h4>FREE2MOVE LEVEL 2 CHARGING</h4>\n                            <p class=\"themeNewBannerSliderText\">\n                                Increase charging time at home with the new 48A Level 2 charging station.\n                            </p>\n                            <p class=\"themeNewBannerSliderButton\">\n                                Shop Now\n                            </p>\n                        </div>\n                    </div>\n                </div>\n            </a>\n        </div>\n    </div>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_17",
+      "htmlId": "themeVehiclePickerSection",
+      "htmlClasses": "themeVehiclePickerSection",
+      "contentWidth": "wide",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_18",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_19",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_21",
+                  "moduleType": "vehicle_picker_dropdowns",
+                  "title": "Vehicle Picker Dropdowns",
+                  "options": {
+                    "title": {
+                      "name": "Picker Title",
+                      "type": "string",
+                      "default_value": "Select Your Vehicle",
+                      "value": "Select Your Vehicle"
+                    },
+                    "redirect_uri": {
+                      "name": "Redirect URL",
+                      "type": "string",
+                      "default_value": null,
+                      "value": ""
+                    },
+                    "select_button_text": {
+                      "name": "Select Button Text",
+                      "type": "string",
+                      "default_value": "Select",
+                      "value": "Select"
+                    },
+                    "make_text": {
+                      "name": "Select Make Text",
+                      "type": "string",
+                      "default_value": "",
+                      "value": ""
+                    },
+                    "model_text": {
+                      "name": "Select Model Text",
+                      "type": "string",
+                      "default_value": "",
+                      "value": ""
+                    },
+                    "year_text": {
+                      "name": "Select Year Text",
+                      "type": "string",
+                      "default_value": "",
+                      "value": ""
+                    },
+                    "trim_text": {
+                      "name": "Select Trim Text",
+                      "type": "string",
+                      "default_value": "",
+                      "value": ""
+                    },
+                    "engine_text": {
+                      "name": "Select Engine Text",
+                      "type": "string",
+                      "default_value": "",
+                      "value": ""
+                    },
+                    "use_button_submit": {
+                      "name": "Save on Button Click",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    },
+                    "show_filters": {
+                      "name": "Show filter input in dropdown",
+                      "type": "boolean",
+                      "default_value": true,
+                      "value": true
+                    },
+                    "filter_placeholder": {
+                      "name": "Filter placeholder text",
+                      "type": "string",
+                      "default_value": "Filter",
+                      "value": "Filter"
+                    },
+                    "style": {
+                      "name": "Display",
+                      "type": "select",
+                      "possible_values": [
+                        {
+                          "value": "classic",
+                          "label": "Classic"
+                        },
+                        {
+                          "value": "inline",
+                          "label": "Horizontal"
+                        }
+                      ],
+                      "default_value": "classic",
+                      "value": "classic"
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_34",
+                  "moduleType": "search_by_vin",
+                  "title": "Search By VIN",
+                  "options": {
+                    "title": {
+                      "name": "Box Title",
+                      "type": "string",
+                      "default_value": "Search By VIN",
+                      "value": "Search By VIN"
+                    },
+                    "box_icon": {
+                      "name": "Icon",
+                      "type": "string",
+                      "default_value": "fa-search",
+                      "value": "fa-search"
+                    },
+                    "message": {
+                      "name": "Message",
+                      "type": "string",
+                      "default_value": "Ensure Part Fitment",
+                      "value": "Ensure Part Fitment"
+                    },
+                    "placeholder": {
+                      "name": "Placeholder Text",
+                      "type": "string",
+                      "default_value": "Enter VIN number...",
+                      "value": "Enter VIN number..."
+                    },
+                    "button_text": {
+                      "name": "Button Text",
+                      "type": "string",
+                      "default_value": "Find Vehicle",
+                      "value": "Search"
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_169",
+      "htmlId": "",
+      "htmlClasses": "themeDreamVehicle",
+      "contentWidth": "full",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_170",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_171",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_174",
+                  "moduleType": "custom_html",
+                  "title": "Dream Vehicle Tab",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"themeDreamVehicleTab\">\n    <div class=\"themeDreamVehicleTabBox\">\n        <div class=\"themeDreamVehicleTitle\">\n            <h2>Explore Mopar<sub>®</sub> Brands</h2>\n        </div>\n        <ul class=\"themeDreamVehicleTabList\">\n            <li>\n                <a href=\"#\" data-toggle-target=\".themeDreamVehicleTabChrysler\">\n                    <div class=\"themeDreamVehicleTabImg\">\n                        <img src=\"https://rparts-sites.s3.amazonaws.com/00d43a1703c9241dcca9da0d452449dc/design/new-home/header_chrysler_logo_lrg.webp\" alt=\"Chrysler\">\n                    </div>\n                </a>\n            </li>\n            <li>\n                <a href=\"#\" data-toggle-target=\".themeDreamVehicleTabDodge\">\n                    <div class=\"themeDreamVehicleTabImg\">\n                        <img src=\"https://rparts-sites.s3.amazonaws.com/8ae4b64986c61872a339a5e6aa224aeb/design/new-home/header_dodge_logo_lrg_a.webp\" alt=\"Dodge\">\n                    </div>\n                </a>\n            </li>\n            <li>\n                <a href=\"#\" data-toggle-target=\".themeDreamVehicleTabJeep\">\n                    <div class=\"themeDreamVehicleTabImg\">\n                        <img src=\"https://rparts-sites.s3.amazonaws.com/00d43a1703c9241dcca9da0d452449dc/design/new-home/header_jeep_logo_lrg.webp\" alt=\"Jeep\">\n                    </div>\n                </a>\n            </li>\n            <li>\n                <a href=\"#\" data-toggle-target=\".themeDreamVehicleTabRAM\">\n                    <div class=\"themeDreamVehicleTabImg\">\n                        <img src=\"https://rparts-sites.s3.amazonaws.com/8ae4b64986c61872a339a5e6aa224aeb/design/new-home/header_ram_logo_lrg_a.webp\" alt=\"Ram\">\n                    </div>\n                </a>\n            </li>\n            <li>\n                <a href=\"/v\">\n                    <div class=\"themeDreamVehicleTabImg\">\n                        All Vehicles\n                    </div>\n                </a>\n            </li>\n        </ul>\n    </div>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "rowId": "row_11",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_12",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_197",
+                  "moduleType": "custom_html",
+                  "title": "Chrysler Tab",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"themeDreamVehicleTabContent\">\n    <ul class=\"themeDreamVehicleTabContentList\">\n        <li>\n            <div class=\"themeDreamVehicleTabContentBox\">\n                <a href=\"v-chrysler-pacifica\">\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/00d43a1703c9241dcca9da0d452449dc/design/new-home/chrysler01.webp\" alt=\"Chrysler Pacifica-Hauls\">\n                    <p>Chrysler Pacifica</p>\n                </a>\n            </div>\n        </li>\n        <li>\n            <div class=\"themeDreamVehicleTabContentBox\">\n                <a href=\"v-chrysler-300\">\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/00d43a1703c9241dcca9da0d452449dc/design/new-home/chrysler02.webp\" alt=\"Chrysler 300\">\n                    <p>Chrysler 300</p>\n                </a>\n            </div>\n        </li>\n        <li>\n            <div class=\"themeDreamVehicleTabContentBox themeDreamVehicleTabContentBox02\">\n                <a href=\"v-chrysler\">\n                    <h3>ALL CHRYSLER VEHICLES</h3>\n                </a>\n            </div>\n        </li>\n    </ul>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "themeDreamVehicleTabCategory themeDreamVehicleTabChrysler",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_202",
+                  "moduleType": "custom_html",
+                  "title": "Dodge Tab",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"themeDreamVehicleTabContent\">\n    <ul class=\"themeDreamVehicleTabContentList\">\n        <li>\n            <div class=\"themeDreamVehicleTabContentBox\">\n                <a href=\"v-dodge-challenger\">\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/00d43a1703c9241dcca9da0d452449dc/design/new-home/dodge01.webp\" alt=\"Dodge Challenger\">\n                    <p>Dodge Challenger</p>\n                </a>\n            </div>\n        </li>\n        <li>\n            <div class=\"themeDreamVehicleTabContentBox\">\n                <a href=\"v-dodge-charger\">\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/00d43a1703c9241dcca9da0d452449dc/design/new-home/dodge02.webp\" alt=\"Dodge Charger\">\n                    <p>Dodge Charger</p>\n                </a>\n            </div>\n        </li>\n        <li>\n            <div class=\"themeDreamVehicleTabContentBox\">\n                <a href=\"v-dodge-durango\">\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/00d43a1703c9241dcca9da0d452449dc/design/new-home/dodge03.webp\" alt=\"Dodge Durango\">\n                    <p>Dodge Durango</p>\n                </a>\n            </div>\n        </li>\n        <li>\n            <div class=\"themeDreamVehicleTabContentBox themeDreamVehicleTabContentBox02\">\n                <a href=\"v-dodge\">\n                    <h3>ALL DODGE VEHICLES</h3>\n                </a>\n            </div>\n        </li>\n    </ul>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "themeDreamVehicleTabCategory themeDreamVehicleTabDodge",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_203",
+                  "moduleType": "custom_html",
+                  "title": "Jeep Tab",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"themeDreamVehicleTabContent\">\n    <ul class=\"themeDreamVehicleTabContentList\">\n        <li>\n            <div class=\"themeDreamVehicleTabContentBox\">\n                <a href=\"v-jeep-wrangler\">\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/00d43a1703c9241dcca9da0d452449dc/design/new-home/jeep01.webp\" alt=\"Jeep Wrangler\">\n                    <p>Jeep Wrangler</p>\n                </a>\n            </div>\n        </li>\n        <li>\n            <div class=\"themeDreamVehicleTabContentBox\">\n                <a href=\"v-jeep-gladiator\">\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/00d43a1703c9241dcca9da0d452449dc/design/new-home/jeep02.webp\" alt=\"Jeep Gladiator\">\n                    <p>Jeep Gladiator</p>\n                </a>\n            </div>\n        </li>\n        <li>\n            <div class=\"themeDreamVehicleTabContentBox\">\n                <a href=\"v-jeep-grand-cherokee\">\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/00d43a1703c9241dcca9da0d452449dc/design/new-home/jeep03.webp\" alt=\"Grand Cherokee\">\n                    <p>Jeep Grand Cherokee</p>\n                </a>\n            </div>\n        </li>\n        <li>\n            <div class=\"themeDreamVehicleTabContentBox\">\n                <a href=\"v-jeep-wagoneer\">\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/00d43a1703c9241dcca9da0d452449dc/design/new-home/jeep04.webp\" alt=\"Grand Wagoneer\">\n                    <p>Jeep Wagoneer</p>\n                </a>\n            </div>\n        </li>\n        <li>\n            <div class=\"themeDreamVehicleTabContentBox themeDreamVehicleTabContentBox02\">\n                <a href=\"v-jeep\">\n                    <h3>ALL JEEP<sub>®</sub> BRAND VEHICLES</h3>\n                </a>\n            </div>\n        </li>\n    </ul>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "themeDreamVehicleTabCategory themeDreamVehicleTabJeep",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_204",
+                  "moduleType": "custom_html",
+                  "title": "RAM Tab",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"themeDreamVehicleTabContent\">\n    <ul class=\"themeDreamVehicleTabContentList\">\n        <li>\n            <div class=\"themeDreamVehicleTabContentBox\">\n                <a href=\"v-ram-1500\">\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/00d43a1703c9241dcca9da0d452449dc/design/new-home/ram01.webp\" alt=\"Ram 1500\">\n                    <p>Ram 1500</p>\n                </a>\n            </div>\n        </li>\n        <li>\n            <div class=\"themeDreamVehicleTabContentBox\">\n                <a href=\"v-ram-2500\">\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/00d43a1703c9241dcca9da0d452449dc/design/new-home/ram02.webp\" alt=\"Ram 2500\">\n                    <p>Ram 2500</p>\n                </a>\n            </div>\n        </li>\n        <li>\n            <div class=\"themeDreamVehicleTabContentBox\">\n                <a href=\"v-ram-3500\">\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/00d43a1703c9241dcca9da0d452449dc/design/new-home/ram03.webp\" alt=\"Ram 3500\">\n                    <p>Ram 3500</p>\n                </a>\n            </div>\n        </li>\n        <li>\n            <div class=\"themeDreamVehicleTabContentBox themeDreamVehicleTabContentBox02\">\n                <a href=\"v-ram\">\n                    <h3>ALL RAM VEHICLES</h3>\n                </a>\n            </div>\n        </li>\n    </ul>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "themeDreamVehicleTabCategory themeDreamVehicleTabRAM",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_16",
+      "htmlId": "",
+      "htmlClasses": "themeNewBanner",
+      "contentWidth": "wide",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_40",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_41",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_317",
+                  "moduleType": "custom_html",
+                  "title": "Yotpo reviews tab",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"yotpo-widget-instance\" data-yotpo-instance-id=\"1170142\" data-yotpo-product-id=\"Product ID\"/>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_67",
+      "htmlId": "",
+      "htmlClasses": "themeCategorySection",
+      "contentWidth": "wide",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_68",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_69",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_77",
+                  "moduleType": "custom_html",
+                  "title": "Title - Browse Mopar® Parts & Accessories by Category",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"themeDreamVehicleTitle\" style=\"padding-bottom: 20px;\">\n    <h2>Browse Mopar<sub>®</sub> Parts & Accessories by Category</h2>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_70",
+                  "moduleType": "custom_html",
+                  "title": "Category List",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"themeCategoryWrapper\">\n    <div id=\"themeCategoryList\" class=\"themeCategoryList owl-carousel owl-theme\">\n        <div class=\"themeCategoryListItem active\"> \n            <a href=\"#\" data-toggle-target=\".tabCategoryInterior\"> Interior Accessories\n            </a> \n        </div>\n        <div class=\"themeCategoryListItem\"> \n            <a href=\"#\" data-toggle-target=\".tabCategoryExterior\"> Exterior Accessories\n            </a> \n        </div>\n        <div class=\"themeCategoryListItem\"> \n            <a href=\"#\" data-toggle-target=\".tabCategoryMaintenance\"> Maintenance\n            </a> \n        </div>\n        <div class=\"themeCategoryListItem\"> \n            <a href=\"#\" data-toggle-target=\".tabCategoryBrakes\"> Brakes & Brake Parts\n            </a> \n        </div>\n        <div class=\"themeCategoryListItem\"> \n            <a href=\"#\" data-toggle-target=\".tabCategoryHeatingCooling\"> Heating & Cooling\n            </a> \n        </div>\n        <div class=\"themeCategoryListItem\"> \n            <a href=\"#\" data-toggle-target=\".tabCategoryEngine\"> Engine & Engine Components\n            </a> \n        </div>\n        <div class=\"themeCategoryListItem\"> \n            <a href=\"#\" data-toggle-target=\".tabCategorySuspension\"> Suspension & Steering\n            </a> \n        </div>\n        <div class=\"themeCategoryListItem\"> \n            <a href=\"#\" data-toggle-target=\".tabCategoryLightingElectrical\"> Electrical & Lighting\n            </a> \n        </div>\n        <div class=\"themeCategoryListItem\"> \n            <a href=\"#\" data-toggle-target=\".tabCategoryAirFuel\"> Fuel & Air Delivery\n            </a> \n        </div>\n        <div class=\"themeCategoryListItem\"> \n            <a href=\"#\" data-toggle-target=\".tabCategoryBody\"> Body & Exterior\n            </a> \n        </div>\n        <div class=\"themeCategoryListItem\"> \n            <a href=\"#\" data-toggle-target=\".tabCategoryTow\"> Truck and Hauling\n            </a> \n        </div>\n    </div>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "categoryTabListWrapper",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_72",
+                  "moduleType": "custom_html",
+                  "title": "Interior Accessories",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"themeCatTabWrapper\">\n    <ul class=\"themeCatListContent\">\n        <li>\n            <a href=\"floor-mats\">\n                <div class=\"themeCatListImg\">\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/8ae4b64986c61872a339a5e6aa224aeb/design/new-home/tab-category/interior/floor_mats_.webp\" alt=\"Floor Mats & Liners\">\n                </div>\n                <p>Floor Mats & Liners</p>\n            </a>\n        </li>\n        <li>\n            <a href=\"seat-covers\">\n                <div class=\"themeCatListImg\">\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/8ae4b64986c61872a339a5e6aa224aeb/design/new-home/tab-category/interior/seat_cover_.webp\" alt=\"Seat Covers\">\n                </div>\n                <p>Seat Covers</p>\n            </a>\n        </li>\n        <li>\n            <a href=\"sunshades\">\n                <div class=\"themeCatListImg\">\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/8ae4b64986c61872a339a5e6aa224aeb/design/new-home/tab-category/interior/sunshades_.webp\" alt=\"Sunshades\">\n                </div>\n                <p>Sunshades</p>\n            </a>\n        </li>\n        <li>\n            <a href=\"dash\">\n                <div class=\"themeCatListImg\">\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/8ae4b64986c61872a339a5e6aa224aeb/design/new-home/tab-category/interior/dash_covers_.webp\" alt=\"Dash Covers\">\n                </div>\n                <p>Dash Covers</p>\n            </a>\n        </li>\n        <li>\n            <a href=\"steering-wheels-horns\">\n                <div class=\"themeCatListImg\">\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/8ae4b64986c61872a339a5e6aa224aeb/design/new-home/tab-category/interior/steering_wheel_.webp\" alt=\"Steering Wheel Covers\">\n                </div>\n                <p>Steering Wheel Covers</p>\n            </a>\n        </li>\n        <li>\n            <a href=\"cargo-management\">\n                <div class=\"themeCatListImg\">\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/8ae4b64986c61872a339a5e6aa224aeb/design/new-home/tab-category/interior/cargo_.webp\" alt=\"Cargo Liners & Trays\">\n                </div>\n                <p>Cargo Liners & Trays</p>\n            </a>\n        </li>\n        <li>\n            <a href=\"search?search_str=Interior+Lighting\">\n                <div class=\"themeCatListImg\">\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/8ae4b64986c61872a339a5e6aa224aeb/design/new-home/tab-category/interior/interior_lightings_.webp\" alt=\"Interior Lighting\">\n                </div>\n                <p>Interior</p>\n            </a>\n        </li>\n        <li>\n            <a href=\"search?search_str=Organizers+%26+Storage+Solution\">\n                <div class=\"themeCatListImg\">\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/8ae4b64986c61872a339a5e6aa224aeb/design/new-home/tab-category/interior/organizers_.webp\" alt=\"Organizers & Storage Solution\">\n                </div>\n                <p>Organizers & Storage Solution</p>\n            </a>\n        </li>\n        <li>\n            <a href=\"/pet-accessories\">\n                <div class=\"themeCatListImg\">\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/8ae4b64986c61872a339a5e6aa224aeb/design/new-home/tab-category/interior/mopar_pet_accessories_.webp\" alt=\"Pet Accessories\">\n                </div>\n                <p>Pet Accessories</p>\n            </a>\n        </li>\n    </ul>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "tabCategory tabCategoryInterior",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_73",
+                  "moduleType": "custom_html",
+                  "title": "Exterior Accessories",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"themeCatTabWrapper\">\n    <ul class=\"themeCatListContent\">\n        <li>\n            <a href=\"car-covers\">\n                <div class=\"themeCatListImg\">\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/8ae4b64986c61872a339a5e6aa224aeb/design/new-home/tab-category/exterior/car_cover_.webp\" alt=\"Car Covers\">\n                </div>\n                <p>Car Covers</p>\n            </a>\n        </li>\n        <li>\n            <a href=\"search?search_str=Bug+Deflectors\">\n                <div class=\"themeCatListImg\">\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/8ae4b64986c61872a339a5e6aa224aeb/design/new-home/tab-category/exterior/bug_deflectors_.webp\" alt=\"Bug Deflectors\">\n                </div>\n                <p>Bug Deflectors</p>\n            </a>\n        </li>\n        <li>\n            <a href=\"sun-visors\">\n                <div class=\"themeCatListImg\">\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/8ae4b64986c61872a339a5e6aa224aeb/design/new-home/tab-category/exterior/visors_.webp\" alt=\"Rain Guards / Window Visors\">\n                </div>\n                <p>Rain Guards / Window Visors</p>\n            </a>\n        </li>\n        <li>\n            <a href=\"search?search_str=License+Plate+Frames\">\n                <div class=\"themeCatListImg\">\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/8ae4b64986c61872a339a5e6aa224aeb/design/new-home/tab-category/exterior/license_plate_frame_.webp\" alt=\"License Plate Frames\">\n                </div>\n                <p>License Plate Frames</p>\n            </a>\n        </li>\n        <li>\n            <a href=\"spoilers-wings\">\n                <div class=\"themeCatListImg\">\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/8ae4b64986c61872a339a5e6aa224aeb/design/new-home/tab-category/exterior/spoilers_.webp\" alt=\"Spoilers & Body Kits\">\n                </div>\n                <p>Spoilers & Body Kits</p>\n            </a>\n        </li>\n        <li>\n            <a href=\"running-boards-and-side-steps\">\n                <div class=\"themeCatListImg\">\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/8ae4b64986c61872a339a5e6aa224aeb/design/new-home/tab-category/exterior/running_boards_.webp\" alt=\"Side Steps / Running Boards\">\n                </div>\n                <p>Side Steps / Running Boards</p>\n            </a>\n        </li>\n        <li>\n            <a href=\"fenders\">\n                <div class=\"themeCatListImg\">\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/8ae4b64986c61872a339a5e6aa224aeb/design/new-home/tab-category/exterior/fenders_.webp\" alt=\"Fender Flares\">\n                </div>\n                <p>Fender Flares</p>\n            </a>\n        </li>\n    </ul>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "tabCategory tabCategoryExterior",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_71",
+                  "moduleType": "custom_html",
+                  "title": "Maintenance",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"themeCatTabWrapper\">\n    <ul class=\"themeCatListContent\">\n        <li>\n            <a href=\"air-filters\">\n                <div class=\"themeCatListImg\">\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/8ae4b64986c61872a339a5e6aa224aeb/design/new-home/tab-category/maintenance/air_filter_.webp\" alt=\"Air Filter\">\n                </div>\n                <p>Air Filter</p>\n            </a>\n        </li>\n        <li>\n            <a href=\"belts-pulleys-brackets\">\n                <div class=\"themeCatListImg\">\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/8ae4b64986c61872a339a5e6aa224aeb/design/new-home/tab-category/maintenance/belts_and_hoses_.webp\" alt=\"Belts & Hoses\">\n                </div>\n                <p>Belts & Hoses</p>\n            </a>\n        </li>\n        <li>\n            <a href=\"search?search_str=Cabin+Air+Filters\">\n                <div class=\"themeCatListImg\">\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/8ae4b64986c61872a339a5e6aa224aeb/design/new-home/tab-category/maintenance/cabin_air_filters_.webp\" alt=\"Cabin Air Filters\">\n                </div>\n                <p>Cabin Air Filters</p>\n            </a>\n        </li>\n        <li>\n            <a href=\"fuel-filters\">\n                <div class=\"themeCatListImg\">\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/8ae4b64986c61872a339a5e6aa224aeb/design/new-home/tab-category/maintenance/fuel_filter_.webp\" alt=\"Fuel Filters\">\n                </div>\n                <p>Fuel Filters</p>\n            </a>\n        </li>\n        <li>\n            <a href=\"oil-filters\">\n                <div class=\"themeCatListImg\">\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/8ae4b64986c61872a339a5e6aa224aeb/design/new-home/tab-category/maintenance/oil_filters_.webp\" alt=\"Oil Filters\">\n                </div>\n                <p>Oil Filters</p>\n            </a>\n        </li>\n        <li>\n            <a href=\"spark-plugs\">\n                <div class=\"themeCatListImg\">\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/8ae4b64986c61872a339a5e6aa224aeb/design/new-home/tab-category/maintenance/spark_plug_.webp\" alt=\"Spark Plugs\">\n                </div>\n                <p>Spark Plugs</p>\n            </a>\n        </li>\n        <li>\n            <a href=\"thermostats\">\n                <div class=\"themeCatListImg\">\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/8ae4b64986c61872a339a5e6aa224aeb/design/new-home/tab-category/maintenance/thermostat_.webp\" alt=\"Thermostat\">\n                </div>\n                <p>Thermostat</p>\n            </a>\n        </li>\n        <li>\n            <a href=\"windshield-wiper-blades\">\n                <div class=\"themeCatListImg\">\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/8ae4b64986c61872a339a5e6aa224aeb/design/new-home/tab-category/maintenance/wiper_blades_.webp\" alt=\"Wiper Blades\">\n                </div>\n                <p>Wiper Blades</p>\n            </a>\n        </li>\n    </ul>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "tabCategory tabCategoryMaintenance",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_5",
+                  "moduleType": "custom_html",
+                  "title": "Brakes & Brake Parts",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"themeCatTabWrapper\">\n    <ul class=\"themeCatListContent\">\n        <li>\n            <a href=\"brake-pads-shoes\">\n                <div class=\"themeCatListImg\">\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/8ae4b64986c61872a339a5e6aa224aeb/design/new-home/tab-category/brake-parts/brake_pads_.webp\" alt=\"Brake Pads\">\n                </div>\n                <p>Brake Pads</p>\n            </a>\n        </li>\n        <li>\n            <a href=\"brake-disks-rotors-hardware\">\n                <div class=\"themeCatListImg\">\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/8ae4b64986c61872a339a5e6aa224aeb/design/new-home/tab-category/brake-parts/brake_rotors_.webp\" alt=\"Brake Rotors\">\n                </div>\n                <p>Brake Rotors</p>\n            </a>\n        </li>\n        <li>\n            <a href=\"caliper\">\n                <div class=\"themeCatListImg\">\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/8ae4b64986c61872a339a5e6aa224aeb/design/new-home/tab-category/brake-parts/brake_calipers_.webp\" alt=\"Brake Calipers\">\n                </div>\n                <p>Brake Calipers</p>\n            </a>\n        </li>\n        <li>\n            <a href=\"search?search_str=brake+drums\">\n                <div class=\"themeCatListImg\">\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/8ae4b64986c61872a339a5e6aa224aeb/design/new-home/tab-category/brake-parts/brake_drums_.webp\" alt=\"Brake Drums\">\n                </div>\n                <p>Brake Drums</p>\n            </a>\n        </li>\n        <li>\n            <a href=\"search?search_str=brake+shoes\">\n                <div class=\"themeCatListImg\">\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/8ae4b64986c61872a339a5e6aa224aeb/design/new-home/tab-category/brake-parts/brake_shoe_.webp\" alt=\"Brake Shoes\">\n                </div>\n                <p>Brake Shoes</p>\n            </a>\n        </li>\n        <li>\n            <a href=\"search?search_str=Cylinders\">\n                <div class=\"themeCatListImg\">\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/8ae4b64986c61872a339a5e6aa224aeb/design/new-home/tab-category/brake-parts/master_cylinders_.webp\" alt=\"Master Cylinders\">\n                </div>\n                <p>Master Cylinders</p>\n            </a>\n        </li>\n        <li>\n            <a href=\"search?search_str=ABS\">\n                <div class=\"themeCatListImg\">\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/8ae4b64986c61872a339a5e6aa224aeb/design/new-home/tab-category/brake-parts/abs_components_.webp\" alt=\"ABS Components\">\n                </div>\n                <p>ABS Components</p>\n            </a>\n        </li>\n        <li>\n            <a href=\"search?search_str=Brake+Lines+%26+Hoses\">\n                <div class=\"themeCatListImg\">\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/8ae4b64986c61872a339a5e6aa224aeb/design/new-home/tab-category/brake-parts/brake_lines_.webp\" alt=\"Brake Lines & Hoses\">\n                </div>\n                <p>Brake Lines & Hoses</p>\n            </a>\n        </li>\n    </ul>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "tabCategory tabCategoryBrakes",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_97",
+                  "moduleType": "custom_html",
+                  "title": "Heating & Cooling",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"themeCatTabWrapper\">\n    <ul class=\"themeCatListContent\">\n        <li>\n            <a href=\"search?search_str=A%2FC+Compressors\">\n                <div class=\"themeCatListImg\">\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/8ae4b64986c61872a339a5e6aa224aeb/design/new-home/tab-category/heating-cooling/ac_compressors_.webp\" alt=\"A/C Compressors\">\n                </div>\n                <p>A/C Compressors</p>\n            </a>\n        </li>\n        <li>\n            <a href=\"search?search_str=A%2FC+Condensers\">\n                <div class=\"themeCatListImg\">\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/8ae4b64986c61872a339a5e6aa224aeb/design/new-home/tab-category/heating-cooling/ac_condenser_.webp\" alt=\"A/C Condensers\">\n                </div>\n                <p>A/C Condensers</p>\n            </a>\n        </li>\n        <li>\n            <a href=\"search?search_str=Heater+Cores\">\n                <div class=\"themeCatListImg\">\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/8ae4b64986c61872a339a5e6aa224aeb/design/new-home/tab-category/heating-cooling/heater_cores_.webp\" alt=\"Heater Cores\">\n                </div>\n                <p>Heater Cores</p>\n            </a>\n        </li>\n        <li>\n            <a href=\"search?search_str=Blower+Motors\">\n                <div class=\"themeCatListImg\">\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/8ae4b64986c61872a339a5e6aa224aeb/design/new-home/tab-category/heating-cooling/blower_motors_.webp\" alt=\"Blower Motors\">\n                </div>\n                <p>Blower Motors</p>\n            </a>\n        </li>\n        <li>\n            <a href=\"radiators\">\n                <div class=\"themeCatListImg\">\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/8ae4b64986c61872a339a5e6aa224aeb/design/new-home/tab-category/heating-cooling/radiators_.webp\" alt=\"Radiators\">\n                </div>\n                <p>Radiators</p>\n            </a>\n        </li>\n        <li>\n            <a href=\"water-pumps\">\n                <div class=\"themeCatListImg\">\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/8ae4b64986c61872a339a5e6aa224aeb/design/new-home/tab-category/heating-cooling/water_pump_.webp\" alt=\"Water Pumps\">\n                </div>\n                <p>Water Pumps</p>\n            </a>\n        </li>\n        <li>\n            <a href=\"thermostats\">\n                <div class=\"themeCatListImg\">\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/8ae4b64986c61872a339a5e6aa224aeb/design/new-home/tab-category/heating-cooling/thermostat_.webp\" alt=\"Thermostats\">\n                </div>\n                <p>Thermostats</p>\n            </a>\n        </li>\n        <li>\n            <a href=\"search?search_str=Coolant+Reservoirs\">\n                <div class=\"themeCatListImg\">\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/8ae4b64986c61872a339a5e6aa224aeb/design/new-home/tab-category/heating-cooling/coolant_.webp\" alt=\"Coolant Reservoirs\">\n                </div>\n                <p>Coolant Reservoirs</p>\n            </a>\n        </li>\n        <li>\n            <a href=\"search?search_str=Hoses+%26+Clamps\">\n                <div class=\"themeCatListImg\">\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/8ae4b64986c61872a339a5e6aa224aeb/design/new-home/tab-category/heating-cooling/hoses_and_clamps_.webp\" alt=\"Hoses & Clamps\">\n                </div>\n                <p>Hoses & Clamps</p>\n            </a>\n        </li>\n        <li>\n            <a href=\"search?search_str=Fan+Assemblies\">\n                <div class=\"themeCatListImg\">\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/8ae4b64986c61872a339a5e6aa224aeb/design/new-home/tab-category/heating-cooling/fan_assemblies_.webp\" alt=\"Fan Assemblies\">\n                </div>\n                <p>Fan Assemblies</p>\n            </a>\n        </li>\n    </ul>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "tabCategory tabCategoryHeatingCooling",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_20",
+                  "moduleType": "custom_html",
+                  "title": "Engine and Engine Components",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"themeCatTabWrapper\">\n    <ul class=\"themeCatListContent\">\n        <li>\n            <a href=\"search?search_str=Engine+Assemblies\">\n                <div class=\"themeCatListImg\">\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/8ae4b64986c61872a339a5e6aa224aeb/design/new-home/tab-category/engine-components/engine_.webp\" alt=\"Engine Assemblies\">\n                </div>\n                <p>Engine Assemblies</p>\n            </a>\n        </li>\n        <li>\n            <a href=\"cylinder-heads\">\n                <div class=\"themeCatListImg\">\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/8ae4b64986c61872a339a5e6aa224aeb/design/new-home/tab-category/engine-components/cylinder_heads_.webp\" alt=\"Cylinder Heads\">\n                </div>\n                <p>Cylinder Heads</p>\n            </a>\n        </li>\n        <li>\n            <a href=\"camshafts-lifters\">\n                <div class=\"themeCatListImg\">\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/8ae4b64986c61872a339a5e6aa224aeb/design/new-home/tab-category/engine-components/camshafts_.webp\" alt=\"Camshafts & Lifters\">\n                </div>\n                <p>Camshafts & Lifters</p>\n            </a>\n        </li>\n        <li>\n            <a href=\"timing-belt-chains-and-covers-and-balance-shafts\">\n                <div class=\"themeCatListImg\">\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/8ae4b64986c61872a339a5e6aa224aeb/design/new-home/tab-category/engine-components/timing_chains_belts_.webp\" alt=\"Timing Chains & Belts\">\n                </div>\n                <p>Timing Chains & Belts</p>\n            </a>\n        </li>\n        <li>\n            <a href=\"oil-pumps\">\n                <div class=\"themeCatListImg\">\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/8ae4b64986c61872a339a5e6aa224aeb/design/new-home/tab-category/engine-components/oil_pumps_.webp\" alt=\"Oil Pumps\">\n                </div>\n                <p>Oil Pumps</p>\n            </a>\n        </li>\n        <li>\n            <a href=\"full-set-gaskets\">\n                <div class=\"themeCatListImg\">\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/8ae4b64986c61872a339a5e6aa224aeb/design/new-home/tab-category/engine-components/gaskets_.webp\" alt=\"Gaskets & Seals\">\n                </div>\n                <p>Gaskets & Seals</p>\n            </a>\n        </li>\n        <li>\n            <a href=\"motor-mounts\">\n                <div class=\"themeCatListImg\">\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/8ae4b64986c61872a339a5e6aa224aeb/design/new-home/tab-category/engine-components/engine_mounts_.webp\" alt=\"Engine Mounts\">\n                </div>\n                <p>Engine Mounts</p>\n            </a>\n        </li>\n    </ul>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "tabCategory tabCategoryEngine",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_27",
+                  "moduleType": "custom_html",
+                  "title": "Suspension & Steering",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"themeCatTabWrapper\">\n    <ul class=\"themeCatListContent\">\n        <li>\n            <a href=\"shocks-struts\">\n                <div class=\"themeCatListImg\">\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/8ae4b64986c61872a339a5e6aa224aeb/design/new-home/tab-category/suspension-steering/shocks_and_struts_.webp\" alt=\"Shocks & Struts\">\n                </div>\n                <p>Shocks & Struts</p>\n            </a>\n        </li>\n        <li>\n            <a href=\"control-arms\">\n                <div class=\"themeCatListImg\">\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/8ae4b64986c61872a339a5e6aa224aeb/design/new-home/tab-category/suspension-steering/control_arm_.webp\" alt=\"Control Arms\">\n                </div>\n                <p>Control Arms</p>\n            </a>\n        </li>\n        <li>\n            <a href=\"ball-joints\">\n                <div class=\"themeCatListImg\">\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/8ae4b64986c61872a339a5e6aa224aeb/design/new-home/tab-category/suspension-steering/ball_joints_.webp\" alt=\"Ball Joints\">\n                </div>\n                <p>Ball Joints</p>\n            </a>\n        </li>\n        <li>\n            <a href=\"tie-rod-linkages\">\n                <div class=\"themeCatListImg\">\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/8ae4b64986c61872a339a5e6aa224aeb/design/new-home/tab-category/suspension-steering/tie_rod_.webp\" alt=\"Tie Rods\">\n                </div>\n                <p>Tie Rods</p>\n            </a>\n        </li>\n        <li>\n            <a href=\"sway-bars\">\n                <div class=\"themeCatListImg\">\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/8ae4b64986c61872a339a5e6aa224aeb/design/new-home/tab-category/suspension-steering/sway_bars_.webp\" alt=\"Sway Bars & Links\">\n                </div>\n                <p>Sway Bars & Links</p>\n            </a>\n        </li>\n        <li>\n            <a href=\"steering-racks-gear-boxes\">\n                <div class=\"themeCatListImg\">\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/8ae4b64986c61872a339a5e6aa224aeb/design/new-home/tab-category/suspension-steering/steering_racks_.webp\" alt=\"Steering Racks\">\n                </div>\n                <p>Steering Racks</p>\n            </a>\n        </li>\n        <li>\n            <a href=\"coil-springs\">\n                <div class=\"themeCatListImg\">\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/8ae4b64986c61872a339a5e6aa224aeb/design/new-home/tab-category/suspension-steering/coil_spring_.webp\" alt=\"Coil Springs\">\n                </div>\n                <p>Coil Springs</p>\n            </a>\n        </li>\n    </ul>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "tabCategory tabCategorySuspension",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_98",
+                  "moduleType": "custom_html",
+                  "title": "Lighting & Electrical",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"themeCatTabWrapper\">\n    <ul class=\"themeCatListContent\">\n        <li>\n            <a href=\"batteries-battery-trays-and-cables\">\n                <div class=\"themeCatListImg\">\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/8ae4b64986c61872a339a5e6aa224aeb/design/new-home/tab-category/electrical-lighting/batteries_.webp\" alt=\"Batteries\">\n                </div>\n                <p>Batteries</p>\n            </a>\n        </li>\n        <li>\n            <a href=\"generators-and-alternators\">\n                <div class=\"themeCatListImg\">\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/8ae4b64986c61872a339a5e6aa224aeb/design/new-home/tab-category/electrical-lighting/alternators_.webp\" alt=\"Alternators\">\n                </div>\n                <p>Alternators</p>\n            </a>\n        </li>\n        <li>\n            <a href=\"starters\">\n                <div class=\"themeCatListImg\">\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/8ae4b64986c61872a339a5e6aa224aeb/design/new-home/tab-category/electrical-lighting/starters_.webp\" alt=\"Starters\">\n                </div>\n                <p>Starters</p>\n            </a>\n        </li>\n        <li>\n            <a href=\"wiring-and-repair-parts\">\n                <div class=\"themeCatListImg\">\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/8ae4b64986c61872a339a5e6aa224aeb/design/new-home/tab-category/electrical-lighting/wiring_harnesses_.webp\" alt=\"Wiring Harnesses\">\n                </div>\n                <p>Wiring Harnesses</p>\n            </a>\n        </li>\n        <li>\n            <a href=\"headlights\">\n                <div class=\"themeCatListImg\">\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/8ae4b64986c61872a339a5e6aa224aeb/design/new-home/tab-category/electrical-lighting/headlights_1.webp\" alt=\"Headlights\">\n                </div>\n                <p>Headlights</p>\n            </a>\n        </li>\n        <li>\n            <a href=\"tail-lights\">\n                <div class=\"themeCatListImg\">\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/8ae4b64986c61872a339a5e6aa224aeb/design/new-home/tab-category/electrical-lighting/tailights_.webp\" alt=\"Taillights\">\n                </div>\n                <p>Taillights</p>\n            </a>\n        </li>\n        <li>\n            <a href=\"turn-signals\">\n                <div class=\"themeCatListImg\">\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/8ae4b64986c61872a339a5e6aa224aeb/design/new-home/tab-category/electrical-lighting/turn_signals_.webp\" alt=\"Turn Signals\">\n                </div>\n                <p>Turn Signals</p>\n            </a>\n        </li>\n        <li>\n            <a href=\"switches-controls\">\n                <div class=\"themeCatListImg\">\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/8ae4b64986c61872a339a5e6aa224aeb/design/new-home/tab-category/electrical-lighting/relays_.webp\" alt=\"Switches & Relays\">\n                </div>\n                <p>Switches & Relays</p>\n            </a>\n        </li>\n    </ul>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "tabCategory tabCategoryLightingElectrical",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_74",
+                  "moduleType": "custom_html",
+                  "title": "Fuel & Air Delivery",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"themeCatTabWrapper\">\n    <ul class=\"themeCatListContent\">\n        <li>\n            <a href=\"fuel-pumps\">\n                <div class=\"themeCatListImg\">\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/8ae4b64986c61872a339a5e6aa224aeb/design/new-home/tab-category/fuel-air-delivery/fuel_pumps_.webp\" alt=\"Fuel Pumps\">\n                </div>\n                <p>Fuel Pumps</p>\n            </a>\n        </li>\n        <li>\n            <a href=\"fuel-injector-controls\">\n                <div class=\"themeCatListImg\">\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/8ae4b64986c61872a339a5e6aa224aeb/design/new-home/tab-category/fuel-air-delivery/fuel_injectors_.webp\" alt=\"Fuel Injectors\">\n                </div>\n                <p>Fuel Injectors</p>\n            </a>\n        </li>\n        <li>\n            <a href=\"carburetor\">\n                <div class=\"themeCatListImg\">\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/8ae4b64986c61872a339a5e6aa224aeb/design/new-home/tab-category/fuel-air-delivery/carburetors_.webp\" alt=\"Carburetors\">\n                </div>\n                <p>Carburetors</p>\n            </a>\n        </li>\n        <li>\n            <a href=\"fuel-filters\">\n                <div class=\"themeCatListImg\">\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/8ae4b64986c61872a339a5e6aa224aeb/design/new-home/tab-category/fuel-air-delivery/fuel_filters_.webp\" alt=\"Fuel Filters\">\n                </div>\n                <p>Fuel Filters</p>\n            </a>\n        </li>\n        <li>\n            <a href=\"air-filters\">\n                <div class=\"themeCatListImg\">\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/8ae4b64986c61872a339a5e6aa224aeb/design/new-home/tab-category/fuel-air-delivery/air_filters_.webp\" alt=\"Air Filters\">\n                </div>\n                <p>Air Filters</p>\n            </a>\n        </li>\n        <li>\n            <a href=\"search?search_str=Mass+Air+Flow+Sensors\">\n                <div class=\"themeCatListImg\">\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/8ae4b64986c61872a339a5e6aa224aeb/design/new-home/tab-category/fuel-air-delivery/mass_air_flow_.webp\" alt=\"Mass Air Flow Sensors\">\n                </div>\n                <p>Mass Air Flow Sensors</p>\n            </a>\n        </li>\n        <li>\n            <a href=\"throttle-body\">\n                <div class=\"themeCatListImg\">\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/8ae4b64986c61872a339a5e6aa224aeb/design/new-home/tab-category/fuel-air-delivery/throttle_bodies_.webp\" alt=\"Throttle Bodies\">\n                </div>\n                <p>Throttle Bodies</p>\n            </a>\n        </li>\n    </ul>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "tabCategory tabCategoryAirFuel",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_75",
+                  "moduleType": "custom_html",
+                  "title": "Body & Exterior",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"themeCatTabWrapper\">\n    <ul class=\"themeCatListContent\">\n        <li>\n            <a href=\"bumpers\">\n                <div class=\"themeCatListImg\">\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/8ae4b64986c61872a339a5e6aa224aeb/design/new-home/tab-category/body-exterior/bumpers_1.webp\" alt=\"Bumpers\">\n                </div>\n                <p>Bumpers</p>\n            </a>\n        </li>\n        <li>\n            <a href=\"fenders\">\n                <div class=\"themeCatListImg\">\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/8ae4b64986c61872a339a5e6aa224aeb/design/new-home/tab-category/body-exterior/fenders_.webp\" alt=\"Fenders\">\n                </div>\n                <p>Fenders</p>\n            </a>\n        </li>\n        <li>\n            <a href=\"grilles\">\n                <div class=\"themeCatListImg\">\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/8ae4b64986c61872a339a5e6aa224aeb/design/new-home/tab-category/body-exterior/grilles_.webp\" alt=\"Grilles\">\n                </div>\n                <p>Grilles</p>\n            </a>\n        </li>\n        <li>\n            <a href=\"hoods\">\n                <div class=\"themeCatListImg\">\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/8ae4b64986c61872a339a5e6aa224aeb/design/new-home/tab-category/body-exterior/hoods_.webp\" alt=\"Hoods\">\n                </div>\n                <p>Hoods</p>\n            </a>\n        </li>\n        <li>\n            <a href=\"mirrors\">\n                <div class=\"themeCatListImg\">\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/8ae4b64986c61872a339a5e6aa224aeb/design/new-home/tab-category/body-exterior/mirrors_.webp\" alt=\"Mirrors\">\n                </div>\n                <p>Mirrors</p>\n            </a>\n        </li>\n        <li>\n            <a href=\"exterior-door-handles\">\n                <div class=\"themeCatListImg\">\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/8ae4b64986c61872a339a5e6aa224aeb/design/new-home/tab-category/body-exterior/door_handles_.webp\" alt=\"Door Handles\">\n                </div>\n                <p>Door Handles</p>\n            </a>\n        </li>\n        <li>\n            <a href=\"emblems\">\n                <div class=\"themeCatListImg\">\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/8ae4b64986c61872a339a5e6aa224aeb/design/new-home/tab-category/body-exterior/emblems_.webp\" alt=\"Emblems & Badges\">\n                </div>\n                <p>Emblems & Badges</p>\n            </a>\n        </li>\n    </ul>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "tabCategory tabCategoryBody",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_76",
+                  "moduleType": "custom_html",
+                  "title": "Truck and Hauling",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"themeCatTabWrapper\">\n    <ul class=\"themeCatListContent\">\n        <li>\n            <a href=\"trailer-tow-and-tow-hooks\">\n                <div class=\"themeCatListImg\">\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/8ae4b64986c61872a339a5e6aa224aeb/design/new-home/tab-category/truck-hauling/tow_hitch_.webp\" alt=\"Tow Hitch Receivers\">\n                </div>\n                <p>Tow Hitch Receivers</p>\n            </a>\n        </li>\n        <li>\n            <a href=\"search?search_str=Trailer+Brake+Controllers\">\n                <div class=\"themeCatListImg\">\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/8ae4b64986c61872a339a5e6aa224aeb/design/new-home/tab-category/truck-hauling/trailer_brake_.webp\" alt=\"Trailer Brake Controllers\">\n                </div>\n                <p>Trailer Brake Controllers</p>\n            </a>\n        </li>\n        <li>\n            <a href=\"search?search_str=Roof+Racks+%26+Cross+Bars\">\n                <div class=\"themeCatListImg\">\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/8ae4b64986c61872a339a5e6aa224aeb/design/new-home/tab-category/truck-hauling/roof_rack_.webp\" alt=\"Roof Racks & Cross Bars\">\n                </div>\n                <p>Roof Racks & Cross Bars</p>\n            </a>\n        </li>\n        <li>\n            <a href=\"search?search_str=Bed+Extenders\">\n                <div class=\"themeCatListImg\">\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/8ae4b64986c61872a339a5e6aa224aeb/design/new-home/tab-category/truck-hauling/bed_extender_1.webp\" alt=\"Bed Extenders\">\n                </div>\n                <p>Bed Extenders</p>\n            </a>\n        </li>\n        <li>\n            <a href=\"search?search_str=Tonneau+Covers\">\n                <div class=\"themeCatListImg\">\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/8ae4b64986c61872a339a5e6aa224aeb/design/new-home/tab-category/truck-hauling/Tonneau_Covers_2.webp\" alt=\"Tonneau Covers\">\n                </div>\n                <p>Tonneau Covers</p>\n            </a>\n        </li>\n        <li>\n            <a href=\"search?search_str=Bed+Liners\">\n                <div class=\"themeCatListImg\">\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/8ae4b64986c61872a339a5e6aa224aeb/design/new-home/tab-category/truck-hauling/bed_liners_1.webp\" alt=\"Bed Liners\">\n                </div>\n                <p>Bed Liners</p>\n            </a>\n        </li>\n        <li>\n            <a href=\"search?search_str=Cargo+Management+Systems\">\n                <div class=\"themeCatListImg\">\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/8ae4b64986c61872a339a5e6aa224aeb/design/new-home/tab-category/truck-hauling/cargo_management_.webp\" alt=\"Cargo Management Systems\">\n                </div>\n                <p>Cargo Management Systems</p>\n            </a>\n        </li>\n    </ul>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "tabCategory tabCategoryTow",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_20",
+      "htmlId": "themeNewPromoBanner",
+      "htmlClasses": "themeNewPromoBanner",
+      "contentWidth": "wide",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_21",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_22",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_24",
+                  "moduleType": "custom_html",
+                  "title": "IG Promo Banner",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"themeNewPromoBannerWrapper\">\n    <div class=\"themeNewPromoBannerCard\">\n        <div class=\"themeNewPromoBannerImg\" style=\"background-image: url(https://rparts-sites.s3.amazonaws.com/00d43a1703c9241dcca9da0d452449dc/design/mopar-customizer-banner.webp);\"></div>\n        <div class=\"themeNewPromoBannerBox\">\n            <div class=\"themeNewPromoBannerContent\">\n                <h3>Take the guesswork out of upgrades</h3>\n                <p>\n                    Our new Mopar<sub>®</sub> Customizer puts your vision in motion-add wheels, lift kits, graphics, and more with a 3D preview before you buy.\n                </p>\n                <div class=\"themeNewPromoBannerButton\">\n                    <a href=\"interactive-garage\">Customize Your Vehicle</a>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_19",
+      "htmlId": "",
+      "htmlClasses": "themeFeaturedNew",
+      "contentWidth": "wide",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_3",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_4",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_23",
+                  "moduleType": "featured_products",
+                  "title": "Featured Products",
+                  "options": {
+                    "display_as_slider": {
+                      "name": "Display As slider",
+                      "caption": "Displays featured products in a slider format",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 12,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_10",
+      "htmlId": "",
+      "htmlClasses": "latest_catalog_section",
+      "contentWidth": "wide",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_12",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_13",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_14",
+                  "moduleType": "custom_html",
+                  "title": "Tab Latest Catalog",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"latest_catalog_wrapper\">\n    <div class=\"latest_catalog_title\">\n        <h3>Explore Our Latest Catalogs</h3>\n    </div>\n    <ul class=\"latest_catalog_list\">\n        <li class=\"latest_catalog_item\">\n            <a href=\"#\" data-toggle-target=\".tab_content_chrysler\">\n                Chrysler\n            </a>\n        </li>\n        <li class=\"latest_catalog_item\">\n            <a href=\"#\" data-toggle-target=\".tab_content_dodge\">\n                Dodge\n            </a>\n        </li>\n        <li class=\"latest_catalog_item\">\n            <a href=\"#\" data-toggle-target=\".tab_content_jeep\">\n                Jeep®\n            </a>\n        </li>\n        <li class=\"latest_catalog_item\">\n            <a href=\"#\" data-toggle-target=\".tab_content_ram\">\n                Ram\n            </a>\n        </li>\n    </ul>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_15",
+                  "moduleType": "custom_html",
+                  "title": "Chrysler",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"theme_cat_tab_content\">\n    <ul class=\"theme_cat_tab_content_list\">\n        <li>\n            <div class=\"theme_cat_tab_content_wrapper\">\n                <div class=\"theme_cat_tab_content_img\">\n                    <img alt=\"Mopar®  Accessory Brochure - Chrysler 300\" src=\"https://rparts-sites.s3.amazonaws.com/8ae4b64986c61872a339a5e6aa224aeb/design/new-home/catalogs/chrysler_300_.webp\">\n                </div>\n                <p>Mopar®  Accessory Brochure - Chrysler 300</p>\n                <div class=\"theme_tab_link\">\n                    <a href=\"\">Explore More</a>\n                </div>\n                <a href=\"https://mydigimag.rrd.com/publication/?co=US&pid=538&pc=MC-LX-web&bt_field_name%5b%5d=source&bt_field_value%5b%5d=null\" target=\"_blank\"></a>\n            </div>\n        </li>\n        <li>\n            <div class=\"theme_cat_tab_content_wrapper\">\n                <div class=\"theme_cat_tab_content_img\">\n                    <img alt=\"Mopar®  Accessory Brochure - Chrysler Pacifica\" src=\"https://rparts-sites.s3.amazonaws.com/8ae4b64986c61872a339a5e6aa224aeb/design/new-home/catalogs/chrysler_pacifica_.webp\">\n                </div>\n                <p>Mopar®  Accessory Brochure - Chrysler Pacifica</p>\n                <div class=\"theme_tab_link\">\n                    <a href=\"\">Explore More</a>\n                </div>\n                <a href=\"https://mydigimag.rrd.com/publication/?co=US&pid=538&pc=MC-RU-web&bt_field_name%5b%5d=source&bt_field_value%5b%5d=null\" target=\"_blank\"></a>\n            </div>\n        </li>\n    </ul>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "tab_content tab_content_chrysler",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_16",
+                  "moduleType": "custom_html",
+                  "title": "Dodge",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"theme_cat_tab_content\">\n    <ul class=\"theme_cat_tab_content_list\">\n        <li>\n            <div class=\"theme_cat_tab_content_wrapper\">\n                <div class=\"theme_cat_tab_content_img\">\n                    <img alt=\"Mopar® Accessory Brochure - Dodge Durango\" src=\"https://rparts-sites.s3.amazonaws.com/00d43a1703c9241dcca9da0d452449dc/design/new-home/catalogs/dodge_durango.webp\">\n                </div>\n                <p>Mopar® Accessory Brochure - Dodge Durango</p>\n                <div class=\"theme_tab_link\">\n                    <a href=\"\">Explore More</a>\n                </div>\n                <a href=\"https://mydigimag.rrd.com/publication/?co=US&pid=538&pc=MD-WD-web&bt_field_name%5b%5d=source&bt_field_value%5b%5d=null\" target=\"_blank\"></a>\n            </div>\n        </li>\n        <li>\n            <div class=\"theme_cat_tab_content_wrapper\">\n                <div class=\"theme_cat_tab_content_img\">\n                    <img alt=\"Mopar® Accessory Brochure - Dodge Challenger\" src=\"https://rparts-sites.s3.amazonaws.com/00d43a1703c9241dcca9da0d452449dc/design/new-home/catalogs/dodge_challenger.webp\">\n                </div>\n                <p>Mopar® Accessory Brochure - Dodge Challenger</p>\n                <div class=\"theme_tab_link\">\n                    <a href=\"\">Explore More</a>\n                </div>\n                <a href=\"https://mydigimag.rrd.com/publication/?co=US&pid=538&pc=MD-LA-web&bt_field_name%5b%5d==source&bt_field_value%5b%5d==null\" target=\"_blank\"></a>\n            </div>\n        </li>\n        <li>\n            <div class=\"theme_cat_tab_content_wrapper\">\n                <div class=\"theme_cat_tab_content_img\">\n                    <img alt=\"Mopar® Accessory Brochure - Dodge Charger\" src=\"https://rparts-sites.s3.amazonaws.com/00d43a1703c9241dcca9da0d452449dc/design/new-home/catalogs/dodge_charger.webp\">\n                </div>\n                <p>Mopar® Accessory Brochure - Dodge Charger</p>\n                <div class=\"theme_tab_link\">\n                    <a href=\"\">Explore More</a>\n                </div>\n                <a href=\"https://mydigimag.rrd.com/publication/?co=US&pid=538&pc=MD-LD-web&bt_field_name%5b%5d=source&bt_field_value%5b%5d=null\" target=\"_blank\"></a>\n            </div>\n        </li>\n        <li>\n            <div class=\"theme_cat_tab_content_wrapper\">\n                <div class=\"theme_cat_tab_content_img\">\n                    <img alt=\"Mopar® Accessory Brochure - Dodge Hornet\" src=\"https://rparts-sites.s3.amazonaws.com/00d43a1703c9241dcca9da0d452449dc/design/new-home/catalogs/dodge_hornet.webp\">\n                </div>\n                <p>Mopar® Accessory Brochure - Dodge Hornet</p>\n                <div class=\"theme_tab_link\">\n                    <a href=\"\">Explore More</a>\n                </div>\n                <a href=\"https://mydigimag.rrd.com/publication/?co=US&pid=538&pc=MD-HR-web&bt_field_name%5b%5d=source&bt_field_value%5b%5d=null\" target=\"_blank\"></a>\n            </div>\n        </li>\n        <li>\n            <div class=\"theme_cat_tab_content_wrapper\">\n                <div class=\"theme_cat_tab_content_img\">\n                    <img alt=\"Mopar® Accessory Brochure - Dodge Charger Daytona\" src=\"https://rparts-sites.s3.amazonaws.com/00d43a1703c9241dcca9da0d452449dc/design/new-home/catalogs/dodge_daytona.webp\">\n                </div>\n                <p>Mopar® Accessory Brochure - Dodge Charger Daytona</p>\n                <div class=\"theme_tab_link\">\n                    <a href=\"\">Explore More</a>\n                </div>\n                <a href=\"https://mydigimag.rrd.com/publication/?co=US&pid=538&pc=MD-LY-web&bt_field_name=source&bt_field_value=null\" target=\"_blank\"></a>\n            </div>\n        </li>\n    </ul>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "tab_content tab_content_dodge",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_17",
+                  "moduleType": "custom_html",
+                  "title": "Jeep",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"theme_cat_tab_content\">\n    <ul class=\"theme_cat_tab_content_list\">\n        <li>\n            <div class=\"theme_cat_tab_content_wrapper\">\n                <div class=\"theme_cat_tab_content_img\">\n                    <img alt=\"Jeep® Performance Parts Catalog\" src=\"https://rparts-sites.s3.amazonaws.com/00d43a1703c9241dcca9da0d452449dc/design/new-home/catalogs/jeep.webp\">\n                </div>\n                <p>Jeep® Performance Parts Catalog</p>\n                <div class=\"theme_tab_link\">\n                    <a href=\"\">Explore More</a>\n                </div>\n                <a href=\"https://www.mopar.com/content/dam/mopar/pdf/mopar-cap/2524_MOP144936_Jeep_Performance_Parts_Catalog_v01_r06.pdf\" target=\"_blank\"></a>\n            </div>\n        </li>\n        <li>\n            <div class=\"theme_cat_tab_content_wrapper\">\n                <div class=\"theme_cat_tab_content_img\">\n                    <img alt=\"Mopar®  Accessory Brochure - Jeep Grand Cherokee WL\" src=\"https://rparts-sites.s3.amazonaws.com/00d43a1703c9241dcca9da0d452449dc/design/new-home/catalogs/jeep_grand_cherokee.webp\">\n                </div>\n                <p>Mopar®  Accessory Brochure - Jeep Grand Cherokee WL</p>\n                <div class=\"theme_tab_link\">\n                    <a href=\"\">Explore More</a>\n                </div>\n                <a href=\"https://mydigimag.rrd.com/publication/?co=US&pid=538&pc=MJ-WL-web&bt_field_name%5b%5d=source&bt_field_value%5b%5d=null\" target=\"_blank\"></a>\n            </div>\n        </li>\n        <li>\n            <div class=\"theme_cat_tab_content_wrapper\">\n                <div class=\"theme_cat_tab_content_img\">\n                    <img alt=\"Mopar®  Accessory Brochure - Jeep Grand Cherokee WK\" src=\"https://rparts-sites.s3.amazonaws.com/00d43a1703c9241dcca9da0d452449dc/design/new-home/catalogs/jeep_grand_cherokee_wk.webp\">\n                </div>\n                <p>Mopar®  Accessory Brochure - Jeep Grand Cherokee WK</p>\n                <div class=\"theme_tab_link\">\n                    <a href=\"\">Explore More</a>\n                </div>\n                <a href=\"https://mydigimag.rrd.com/publication/?co=US&pid=538&pc=MJ-WK-web&bt_field_name%5b%5d=source&bt_field_value%5b%5d=null\" target=\"_blank\"></a>\n            </div>\n        </li>\n        <li>\n            <div class=\"theme_cat_tab_content_wrapper\">\n                <div class=\"theme_cat_tab_content_img\">\n                    <img alt=\"Mopar®  Accessory Brochure - Jeep Renegade\" src=\"https://rparts-sites.s3.amazonaws.com/00d43a1703c9241dcca9da0d452449dc/design/new-home/catalogs/jeep_renegade.webp\">\n                </div>\n                <p>Mopar®  Accessory Brochure - Jeep Renegade</p>\n                <div class=\"theme_tab_link\">\n                    <a href=\"\">Explore More</a>\n                </div>\n                <a href=\"https://mydigimag.rrd.com/publication/?co=US&pid=538&pc=MJ-BV-web&bt_field_name%5b%5d=source&bt_field_value%5b%5d=null\" target=\"_blank\"></a>\n            </div>\n        </li>\n        <li>\n            <div class=\"theme_cat_tab_content_wrapper\">\n                <div class=\"theme_cat_tab_content_img\">\n                    <img alt=\"Mopar®  Accessory Brochure - Jeep Wrangler\" src=\"https://rparts-sites.s3.amazonaws.com/00d43a1703c9241dcca9da0d452449dc/design/new-home/catalogs/jeep_wrangler.webp\">\n                </div>\n                <p>Mopar®  Accessory Brochure - Jeep Wrangler</p>\n                <div class=\"theme_tab_link\">\n                    <a href=\"\">Explore More</a>\n                </div>\n                <a href=\"jeep-wrangler-catalog\"></a>\n            </div>\n        </li>\n        <li>\n            <div class=\"theme_cat_tab_content_wrapper\">\n                <div class=\"theme_cat_tab_content_img\">\n                    <img alt=\"Mopar®  Accessory Brochure - Jeep Gladiator\" src=\"https://rparts-sites.s3.amazonaws.com/00d43a1703c9241dcca9da0d452449dc/design/new-home/catalogs/jeep_gladiator.webp\">\n                </div>\n                <p>Mopar®  Accessory Brochure - Jeep Gladiator</p>\n                <div class=\"theme_tab_link\">\n                    <a href=\"\">Explore More</a>\n                </div>\n                <a href=\"jeep-gladiator-catalog\"></a>\n            </div>\n        </li>\n        <li>\n            <div class=\"theme_cat_tab_content_wrapper\">\n                <div class=\"theme_cat_tab_content_img\">\n                    <img alt=\"Mopar®  Accessory Brochure - Jeep Cherokee\" src=\"https://rparts-sites.s3.amazonaws.com/00d43a1703c9241dcca9da0d452449dc/design/new-home/catalogs/jeep_cherokee.webp\">\n                </div>\n                <p>Mopar®  Accessory Brochure - Jeep Cherokee</p>\n                <div class=\"theme_tab_link\">\n                    <a href=\"\">Explore More</a>\n                </div>\n                <a href=\"https://mydigimag.rrd.com/publication/?co=US&pid=538&pc=MJ-KL-web&bt_field_name%5b%5d=source&bt_field_value%5b%5d=null\" target=\"_blank\"></a>\n            </div>\n        </li>\n        <li>\n            <div class=\"theme_cat_tab_content_wrapper\">\n                <div class=\"theme_cat_tab_content_img\">\n                    <img alt=\"Mopar®  Accessory Brochure - Jeep Compass\" src=\"https://rparts-sites.s3.amazonaws.com/00d43a1703c9241dcca9da0d452449dc/design/new-home/catalogs/jeep_compass.webp\">\n                </div>\n                <p>Mopar®  Accessory Brochure - Jeep Compass</p>\n                <div class=\"theme_tab_link\">\n                    <a href=\"\">Explore More</a>\n                </div>\n                <a href=\"https://mydigimag.rrd.com/publication/?co=US&pid=538&pc=MJ-MP-web&bt_field_name%5b%5d=source&bt_field_value%5b%5d=null\" target=\"_blank\"></a>\n            </div>\n        </li>\n        <li>\n            <div class=\"theme_cat_tab_content_wrapper\">\n                <div class=\"theme_cat_tab_content_img\">\n                    <img alt=\"Mopar® Accessory Brochure - Jeep® Wagoneer/Grand Wagoneer\" src=\"https://rparts-sites.s3.amazonaws.com/00d43a1703c9241dcca9da0d452449dc/design/new-home/catalogs/jeep_wagoneer.webp\">\n                </div>\n                <p>Mopar® Accessory Brochure - Jeep® Wagoneer/Grand Wagoneer</p>\n                <div class=\"theme_tab_link\">\n                    <a href=\"\">Explore More</a>\n                </div>\n                <a href=\"https://mydigimag.rrd.com/publication/?co=US&pid=538&pc=MJ-WS-web&bt_field_name%5b%5d=source&bt_field_value%5b%5d=null\" target=\"_blank\"></a>\n            </div>\n        </li>\n        <li>\n            <div class=\"theme_cat_tab_content_wrapper\">\n                <div class=\"theme_cat_tab_content_img\">\n                    <img alt=\"Mopar® Accessory Brochure - Jeep® Wagoneer S\" src=\"https://rparts-sites.s3.amazonaws.com/00d43a1703c9241dcca9da0d452449dc/design/new-home/catalogs/jeep_wagoneer_2.webp\">\n                </div>\n                <p>Mopar® Accessory Brochure - Jeep® Wagoneer S</p>\n                <div class=\"theme_tab_link\">\n                    <a href=\"\">Explore More</a>\n                </div>\n                <a href=\"https://mydigimag.rrd.com/publication/?i=833844&p=1&view=issueViewer&bt_field_name%5b%5d=source&bt_field_value%5b%5d=null&co=US&pid=538&pc=MJ-W2-web\" target=\"_blank\"></a>\n            </div>\n        </li>\n    </ul>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "tab_content tab_content_jeep",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_18",
+                  "moduleType": "custom_html",
+                  "title": "RAM",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"theme_cat_tab_content\">\n    <ul class=\"theme_cat_tab_content_list\">\n        <li>\n            <div class=\"theme_cat_tab_content_wrapper\">\n                <div class=\"theme_cat_tab_content_img\">\n                    <img alt=\"Mopar®  Accessory Brochure - Ram 1500\" src=\"https://rparts-sites.s3.amazonaws.com/00d43a1703c9241dcca9da0d452449dc/design/new-home/catalogs/ram_1500.webp\">\n                </div>\n                <p>Mopar®  Accessory Brochure - Ram 1500</p>\n                <div class=\"theme_tab_link\">\n                    <a href=\"\">Explore More</a>\n                </div>\n                <a href=\"ram-1500-catalog\"></a>\n            </div>\n        </li>\n        <li>\n            <div class=\"theme_cat_tab_content_wrapper\">\n                <div class=\"theme_cat_tab_content_img\">\n                    <img alt=\"Mopar®  Accessory Brochure - Ram 1500 Classic\" src=\"https://rparts-sites.s3.amazonaws.com/00d43a1703c9241dcca9da0d452449dc/design/new-home/catalogs/ram_1500_classic.webp\">\n                </div>\n                <p>Mopar®  Accessory Brochure - Ram 1500 Classic</p>\n                <div class=\"theme_tab_link\">\n                    <a href=\"\">Explore More</a>\n                </div>\n                <a href=\"https://mydigimag.rrd.com/publication/?co=US&pid=538&pc=MR-DS-web&bt_field_name%5b%5d=source&bt_field_value%5b%5d=null\" target=\"_blank\"></a>\n            </div>\n        </li>\n        <li>\n            <div class=\"theme_cat_tab_content_wrapper\">\n                <div class=\"theme_cat_tab_content_img\">\n                    <img alt=\"Mopar®  Accessory Brochure - Ram Heavy Duty\" src=\"https://rparts-sites.s3.amazonaws.com/00d43a1703c9241dcca9da0d452449dc/design/new-home/catalogs/ram_heavy_duty.webp\">\n                </div>\n                <p>Mopar®  Accessory Brochure - Ram Heavy Duty</p>\n                <div class=\"theme_tab_link\">\n                    Explore More\n                </div>\n                <a href=\"ram-heavy-duty-catalog\"></a>\n            </div>\n        </li>\n        <li>\n            <div class=\"theme_cat_tab_content_wrapper\">\n                <div class=\"theme_cat_tab_content_img\">\n                    <img alt=\"Mopar®  Accessory Brochure - Ram ProMaster\" src=\"https://rparts-sites.s3.amazonaws.com/00d43a1703c9241dcca9da0d452449dc/design/new-home/catalogs/ram_pro_master.webp\">\n                </div>\n                <p>Mopar®  Accessory Brochure - Ram ProMaster</p>\n                <div class=\"theme_tab_link\">\n                    <a href=\"\">Explore More</a>\n                </div>\n                <a href=\"https://mydigimag.rrd.com/publication/?co=US&pid=538&pc=MR-VF-web&bt_field_name%5b%5d=source&bt_field_value%5b%5d=null\" target=\"_blank\"></a>\n            </div>\n        </li>\n        <li>\n            <div class=\"theme_cat_tab_content_wrapper\">\n                <div class=\"theme_cat_tab_content_img\">\n                    <img alt=\"Mopar®  Accessory Brochure - Ram ProMaster City\" src=\"https://rparts-sites.s3.amazonaws.com/00d43a1703c9241dcca9da0d452449dc/design/new-home/catalogs/ram_promaster_city.webp\">\n                </div>\n                <p>Mopar®  Accessory Brochure - Ram ProMaster City</p>\n                <div class=\"theme_tab_link\">\n                    <a href=\"\">Explore More</a>\n                </div>\n                <a href=\"https://mydigimag.rrd.com/publication/?co=US&pid=538&pc=MR-VM-web&bt_field_name%5b%5d=source&bt_field_value%5b%5d=null\" target=\"_blank\"></a>\n            </div>\n        </li>\n    </ul>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "tab_content tab_content_ram",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_56",
+      "htmlId": "themeEvolutionSection",
+      "htmlClasses": "themeEvolutionSection",
+      "contentWidth": "wide",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_57",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_58",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_61",
+                  "moduleType": "custom_html",
+                  "title": "Title",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"latest_catalog_title\">\n    <h3>The Evolution of Mopar<sub>®</sub></h3>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_66",
+                  "moduleType": "custom_image",
+                  "title": "Custom Image",
+                  "options": {
+                    "image_file": {
+                      "name": "Image File",
+                      "type": "image_upload",
+                      "default_value": null,
+                      "value": "https://cdn.revolutionparts.io/8ae4b64986c61872a339a5e6aa224aeb/design/timeline_horizontal_4-20-22.jpg"
+                    },
+                    "image_link": {
+                      "name": "Image URL",
+                      "type": "string",
+                      "default_value": null,
+                      "value": ""
+                    },
+                    "image_title": {
+                      "name": "Image Title",
+                      "type": "string",
+                      "default_value": null,
+                      "value": ""
+                    },
+                    "image_size": {
+                      "name": "Image Size",
+                      "caption": "% Height of Image Relative to Width",
+                      "validate": "validate_required validate_numeric",
+                      "type": "string",
+                      "default_value": 100,
+                      "value": "54"
+                    },
+                    "image_margin": {
+                      "name": "Margin",
+                      "type": "string",
+                      "caption": "ex: 5px",
+                      "default_value": 0,
+                      "value": "0"
+                    },
+                    "background_image_fill": {
+                      "name": "Image Fill",
+                      "type": "select",
+                      "default_value": "contain",
+                      "value": "contain",
+                      "possible_values": [
+                        {
+                          "value": "contain",
+                          "label": "Contain"
+                        },
+                        {
+                          "value": "cover",
+                          "label": "Cover"
+                        }
+                      ]
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_115",
+      "htmlId": "",
+      "htmlClasses": "themeBrandSection",
+      "contentWidth": "wide",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_116",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_117",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_118",
+                  "moduleType": "custom_html",
+                  "title": "Affliate Brand Section",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"themeBrandWrap\">\n    <div class=\"themeBrandTitle\">\n        <h3>Affiliate Brands</h3>\n    </div>\n    <div id=\"themeBrandList\" class=\"themeBrandList owl-carousel owl-theme\">\n        <div class=\"themeBrandListItem\">\n            <a href=\"https://store.mopar.com/affiliated-accessories\">\n                <img src=\"https://rparts-sites.s3.amazonaws.com/8ae4b64986c61872a339a5e6aa224aeb/design/affiliates/tailgater_tire_table_.webp\" alt=\"Tire Table\">\n            </a>\n        </div>\n        <div class=\"themeBrandListItem\">\n            <a href=\"https://store.mopar.com/affiliated-accessories\">\n                <img src=\"https://rparts-sites.s3.amazonaws.com/00d43a1703c9241dcca9da0d452449dc/design/affiliates/accuair.webp\" alt=\"AccuAir\">\n            </a>\n        </div>\n        <div class=\"themeBrandListItem\">\n            <a href=\"https://store.mopar.com/affiliated-accessories\">\n                <img src=\"https://rparts-sites.s3.amazonaws.com/00d43a1703c9241dcca9da0d452449dc/design/affiliates/alltrade.webp\" alt=\"Alltrade\">\n            </a>\n        </div>\n        <div class=\"themeBrandListItem\">\n            <a href=\"https://store.mopar.com/affiliated-accessories\">\n                <img src=\"https://rparts-sites.s3.amazonaws.com/00d43a1703c9241dcca9da0d452449dc/design/affiliates/curt.webp\" alt=\"Curt\">\n            </a>\n        </div>\n        <div class=\"themeBrandListItem\">\n            <a href=\"https://store.mopar.com/affiliated-accessories\">\n                <img src=\"https://rparts-sites.s3.amazonaws.com/00d43a1703c9241dcca9da0d452449dc/design/affiliates/dometic.webp\" alt=\"Dometic\">\n            </a>\n        </div>\n        <div class=\"themeBrandListItem\">\n            <a href=\"https://store.mopar.com/affiliated-accessories\">\n                <img src=\"https://rparts-sites.s3.amazonaws.com/00d43a1703c9241dcca9da0d452449dc/design/affiliates/leitner.webp\" alt=\"Leitner Designs\">\n            </a>\n        </div>\n        <div class=\"themeBrandListItem\">\n            <a href=\"https://store.mopar.com/affiliated-accessories\">\n                <img src=\"https://rparts-sites.s3.amazonaws.com/8ae4b64986c61872a339a5e6aa224aeb/design/affiliates/load_1.webp\" alt=\"Load\">\n            </a>\n        </div>\n        <div class=\"themeBrandListItem\">\n            <a href=\"https://store.mopar.com/affiliated-accessories\">\n                <img src=\"https://rparts-sites.s3.amazonaws.com/00d43a1703c9241dcca9da0d452449dc/design/affiliates/nemesys.webp\" alt=\"Nemesys\">\n            </a>\n        </div>\n        <div class=\"themeBrandListItem\">\n            <a href=\"https://store.mopar.com/affiliated-accessories\">\n                <img src=\"https://rparts-sites.s3.amazonaws.com/00d43a1703c9241dcca9da0d452449dc/design/affiliates/thule.webp\" alt=\"Thule\">\n            </a>\n        </div>\n    </div>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

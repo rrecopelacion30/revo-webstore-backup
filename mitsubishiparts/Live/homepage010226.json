@@ -1,0 +1,701 @@
+{
+  "pageId": "homepage",
+  "pageName": "Home Page",
+  "pageType": null,
+  "layoutEnabled": true,
+  "moduleCategories": [
+    "header",
+    "images",
+    "text",
+    "search",
+    "categories_products",
+    "forms",
+    "navigation",
+    "footer"
+  ],
+  "VFSPath": "layouts/homepage.json",
+  "requiredModules": [
+    "featured_products"
+  ],
+  "scripts": null,
+  "sections": [
+    {
+      "sectionId": "section_83",
+      "htmlId": null,
+      "htmlClasses": null,
+      "contentWidth": null,
+      "backgroundColor": null,
+      "backgroundImage": null,
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_84",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_85",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_86",
+                  "moduleType": "featured_products",
+                  "title": "Featured Products",
+                  "options": {
+                    "display_as_slider": {
+                      "name": "Display As slider",
+                      "caption": "Displays featured products in a slider format",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": null,
+                  "htmlClasses": null,
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_88",
+      "htmlId": "",
+      "htmlClasses": "main_slider_section",
+      "contentWidth": "full",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_89",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_90",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_91",
+                  "moduleType": "custom_html",
+                  "title": "Main Slider",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div id=\"main--slider\" class=\"owl-carousel owl-theme\">\n    <div class=\"main--slider-item\">\n        <div class=\"main--slider-bg\" style=\"background-image: url(https://rparts-sites.s3.amazonaws.com/728796ac19bf35d33cacea37986d2661/design/mitsu_oct_advantage.webp);\">\n        </div>\n        <div class=\"main--slider-wrapper\"> \n            <div class=\"main--slider-content\"> \n                <h2>Advantage Select: Smarter Parts, Greater Value</h2>\n                <p class=\"main--slider-text\">\n                    Mitsubishi Advantage Select parts deliver the quality and reliability you expect&mdash;at a price that keeps your vehicle on the road without breaking the bank.\n                </p>\n                <div class=\"main--slider-buttton\">\n                    <a href=\"https://parts.mitsubishicars.com/advantage-select\">Shop Advantage Select</a>\n                </div>\n            </div>\n        </div>\n    </div>\n    <div class=\"main--slider-item\">\n        <div class=\"main--slider-bg\" style=\"background-image: url(https://rparts-sites.s3.amazonaws.com/728796ac19bf35d33cacea37986d2661/design/mitsu_hp.webp); background-position: 50% 50%;\">\n        </div>\n        <div class=\"main--slider-wrapper\"> \n            <div class=\"main--slider-content\"> \n                <h2>Mitsubishi Genuine Parts & Accessories</h2>\n                <p class=\"main--slider-text\">Experience peace of mind with every genuine Mitsubishi Part & Accessory&nbsp;</p>\n                <div class=\"main--slider-buttton\">\n                    <a href=\"javascript:openVehiclePicker();\">Shop Now</a>\n                </div>\n            </div> \n        </div>\n    </div>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_3",
+      "htmlId": "",
+      "htmlClasses": "theme_vehicle_selection",
+      "contentWidth": "wide",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "desktop-only",
+      "rows": [
+        {
+          "rowId": "row_4",
+          "rowLayout": 12,
+          "htmlId": "",
+          "htmlClasses": "",
+          "columns": [
+            {
+              "columnId": "column_5",
+              "columnWidth": 12,
+              "htmlId": "",
+              "htmlClasses": "theme_vehicle_selection_wrapper",
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_10",
+                  "moduleType": "vehicle_picker_dropdowns",
+                  "title": "Vehicle Picker Dropdowns",
+                  "options": {
+                    "title": {
+                      "name": "Picker Title",
+                      "type": "string",
+                      "default_value": "Select Your Vehicle",
+                      "value": "Select Your Vehicle"
+                    },
+                    "redirect_uri": {
+                      "name": "Redirect URL",
+                      "type": "string",
+                      "default_value": null,
+                      "value": ""
+                    },
+                    "select_button_text": {
+                      "name": "Select Button Text",
+                      "type": "string",
+                      "default_value": "Select",
+                      "value": "Select"
+                    },
+                    "make_text": {
+                      "name": "Select Make Text",
+                      "type": "string",
+                      "default_value": "",
+                      "value": ""
+                    },
+                    "model_text": {
+                      "name": "Select Model Text",
+                      "type": "string",
+                      "default_value": "",
+                      "value": ""
+                    },
+                    "year_text": {
+                      "name": "Select Year Text",
+                      "type": "string",
+                      "default_value": "",
+                      "value": ""
+                    },
+                    "trim_text": {
+                      "name": "Select Trim Text",
+                      "type": "string",
+                      "default_value": "",
+                      "value": ""
+                    },
+                    "engine_text": {
+                      "name": "Select Engine Text",
+                      "type": "string",
+                      "default_value": "",
+                      "value": ""
+                    },
+                    "use_button_submit": {
+                      "name": "Save on Button Click",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    },
+                    "show_filters": {
+                      "name": "Show filter input in dropdown",
+                      "type": "boolean",
+                      "default_value": true,
+                      "value": true
+                    },
+                    "filter_placeholder": {
+                      "name": "Filter placeholder text",
+                      "type": "string",
+                      "default_value": "Filter",
+                      "value": "Filter"
+                    },
+                    "style": {
+                      "name": "Display",
+                      "type": "select",
+                      "possible_values": [
+                        {
+                          "value": "classic",
+                          "label": "Classic"
+                        },
+                        {
+                          "value": "inline",
+                          "label": "Horizontal"
+                        }
+                      ],
+                      "default_value": "classic",
+                      "value": "classic"
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_11",
+                  "moduleType": "search_by_vin",
+                  "title": "Search By VIN",
+                  "options": {
+                    "title": {
+                      "name": "Box Title",
+                      "type": "string",
+                      "default_value": "Search By VIN",
+                      "value": "Search By VIN"
+                    },
+                    "box_icon": {
+                      "name": "Icon",
+                      "type": "string",
+                      "default_value": "fa-search",
+                      "value": "fa-search"
+                    },
+                    "message": {
+                      "name": "Message",
+                      "type": "string",
+                      "default_value": "Ensure Part Fitment",
+                      "value": "Ensure Part Fitment"
+                    },
+                    "placeholder": {
+                      "name": "Placeholder Text",
+                      "type": "string",
+                      "default_value": "Enter VIN number...",
+                      "value": "Enter VIN number..."
+                    },
+                    "button_text": {
+                      "name": "Button Text",
+                      "type": "string",
+                      "default_value": "Find Vehicle",
+                      "value": "Search"
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_20",
+      "htmlId": "",
+      "htmlClasses": "theme_model_section",
+      "contentWidth": "full",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_21",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_22",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_23",
+                  "moduleType": "custom_html",
+                  "title": "<h1> Welcome",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"theme_model_wrapper\">\n    <h1 style=\"color: #000000 !important;\"><center>Welcome to Mitsubishi Parts Online</center></h1>    \n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_21",
+      "htmlId": "",
+      "htmlClasses": "themePartsCategory",
+      "contentWidth": "wide",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_22",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_23",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_24",
+                  "moduleType": "custom_html",
+                  "title": "Parts Category List",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"themePartsCategoryWrap\">\n    <h3>Shop Popular Mitsubishi Parts & Accessories</h3>\n    <ul class=\"themePartsCategoryList\">\n        <li>\n            <a href=\"#\" data-toggle-target=\".tabContentEv\">\n                Replacement\n            </a>\n        </li>\n        <li>\n            <a href=\"#\" data-toggle-target=\".tabContentSeries\">\n                Maintenance\n            </a>\n        </li>\n        <li>\n            <a href=\"#\" data-toggle-target=\".tabContentParallel\">\n                Accessories\n            </a>\n        </li>\n    </ul>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_25",
+                  "moduleType": "custom_html",
+                  "title": "Replacement",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"theme_cat_tab_content\">\n    <ul class=\"theme_cat_tab_content_list\">\n        <li> \n            <a href=\"part-categories/ac-and-heating/ac-and-heater-controls\">\n                <div class=\"theme_cat_tab_content_img\"> \n                    <img src=\"https://rparts-sites.s3.amazonaws.com/75bf26db20545d9b0eae8d22b96f2214/design/parts-accessories/mitsubishi-ac-01-md_v3.webp\" alt=\"Mitsubishi\"> \n                </div>\n                <p>A/C & Heater Controls</p>\n            </a> \n        </li>\n        <li> \n            <a href=\"part-categories/charging-and-starting-systems/alternators-and-generators\">\n                <div class=\"theme_cat_tab_content_img\"> \n                    <img src=\"https://rparts-sites.s3.amazonaws.com/75bf26db20545d9b0eae8d22b96f2214/design/parts-accessories/mitsubishi-alternator-01-md_v3.webp\" alt=\"Mitsubishi\"> \n                </div>\n                <p>Alternators</p>\n            </a> \n        </li>\n        <li> \n            <a href=\"part-categories/exterior/bumpers\">\n                <div class=\"theme_cat_tab_content_img\"> \n                    <img src=\"https://rparts-sites.s3.amazonaws.com/75bf26db20545d9b0eae8d22b96f2214/design/parts-accessories/2024-mitsubishi-outlander-phev-suv-rear-bumper-protector-chrome_v1.webp\" alt=\"Mitsubishi Bumpers\"> \n                </div>\n                <p>Bumpers</p>\n            </a> \n        </li>\n        <li> \n            <a href=\"part-categories/cooling-systems/radiators\">\n                <div class=\"theme_cat_tab_content_img\"> \n                    <img src=\"https://rparts-sites.s3.amazonaws.com/75bf26db20545d9b0eae8d22b96f2214/design/parts-accessories/mitsubishi-radiators-01-md_v5.webp\" alt=\"Mitsubishi\"> \n                </div>\n                <p>Radiators</p>\n            </a> \n        </li>\n        <li> \n            <a href=\"part-categories/suspension-and-steering/shocks-and-struts\">\n                <div class=\"theme_cat_tab_content_img\"> \n                    <img src=\"https://rparts-sites.s3.amazonaws.com/75bf26db20545d9b0eae8d22b96f2214/design/parts-accessories/shocks-struts.jpg\" alt=\"Mitsubishi\"> \n                </div>\n                <p>Shocks & Struts</p>\n            </a> \n        </li>\n        <li> \n            <a href=\"part-categories/lighting/headlights\">\n                <div class=\"theme_cat_tab_content_img\"> \n                    <img src=\"https://rparts-sites.s3.amazonaws.com/75bf26db20545d9b0eae8d22b96f2214/design/parts-accessories/mitsubishi-lighting-01-md_v2.webp\" alt=\"Mitsubishi\"> \n                </div>\n                <p>Headlights</p>\n            </a> \n        </li>\n        <li> \n            <a href=\"part-categories/exterior/mirrors\">\n                <div class=\"theme_cat_tab_content_img\"> \n                    <img src=\"https://rparts-sites.s3.amazonaws.com/75bf26db20545d9b0eae8d22b96f2214/design/parts-accessories/2024-mitsubishi-outlander-phev-suv-mirror-covers-chrome_v1.webp\" alt=\"Mitsubishi Mirror Covers\"> \n                </div>\n                <p>Mirrors</p>\n            </a> \n        </li>\n        <li> \n            <a href=\"part-categories/charging-and-starting-systems/starters\">\n                <div class=\"theme_cat_tab_content_img\"> \n                    <img src=\"https://rparts-sites.s3.amazonaws.com/75bf26db20545d9b0eae8d22b96f2214/design/parts-accessories/starters_v1.webp\" alt=\"Mitsubishi\"> \n                </div>\n                <p>Starters</p>\n            </a> \n        </li>\n    </ul>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "tabContent tabContentEv",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_26",
+                  "moduleType": "custom_html",
+                  "title": "Maintenance",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"theme_cat_tab_content\">\n    <ul class=\"theme_cat_tab_content_list\">\n        <li> \n            <a href=\"part-categories/filters/air-filters\">\n                <div class=\"theme_cat_tab_content_img\"> \n                    <img src=\"https://rparts-sites.s3.amazonaws.com/75bf26db20545d9b0eae8d22b96f2214/design/parts-accessories/Engine_Air_Filter_v2.webp\" alt=\"Mitsubishi\"> \n                </div>\n                <p>Air Filters</p>\n            </a> \n        </li>\n        <li> \n            <a href=\"part-categories/cooling-systems/hoses-and-clamps\">\n                <div class=\"theme_cat_tab_content_img\"> \n                    <img src=\"https://rparts-sites.s3.amazonaws.com/75bf26db20545d9b0eae8d22b96f2214/design/parts-accessories/Drive_Belt_v2.webp\" alt=\"Mitsubishi\"> \n                </div>\n                <p>Belts & Hoses</p>\n            </a> \n        </li>\n        <li> \n            <a href=\"part-categories/brakes/pads-and-shoes\">\n                <div class=\"theme_cat_tab_content_img\"> \n                    <img src=\"https://rparts-sites.s3.amazonaws.com/75bf26db20545d9b0eae8d22b96f2214/design/parts-accessories/Brake_Pads_v2.webp\" alt=\"Mitsubishi\"> \n                </div>\n                <p>Brake Pads</p>\n            </a> \n        </li>\n        <li> \n            <a href=\"part-categories/charging-and-starting-systems/batteries\">\n                <div class=\"theme_cat_tab_content_img\"> \n                    <img src=\"https://rparts-sites.s3.amazonaws.com/75bf26db20545d9b0eae8d22b96f2214/design/parts-accessories/battery_v2.webp\" alt=\"Mitsubishi\"> \n                </div>\n                <p>Batteries</p>\n            </a> \n        </li>\n        <li> \n            <a href=\"part-categories/filters/oil-filters\">\n                <div class=\"theme_cat_tab_content_img\"> \n                    <img src=\"https://rparts-sites.s3.amazonaws.com/75bf26db20545d9b0eae8d22b96f2214/design/parts-accessories/Oil_Filter.webp\" alt=\"Mitsubishi\"> \n                </div>\n                <p>Oil Filters</p>\n            </a> \n        </li>\n        <li> \n            <a href=\"part-categories/ignition/spark-plugs-and-glow-plugs\">\n                <div class=\"theme_cat_tab_content_img\"> \n                    <img src=\"https://rparts-sites.s3.amazonaws.com/75bf26db20545d9b0eae8d22b96f2214/design/parts-accessories/mitsubishi-spark-plugs-01-md_v1.webp\" alt=\"Mitsubishi\"> \n                </div>\n                <p>Spark Plugs</p>\n            </a> \n        </li>\n        <li> \n            <a href=\"part-categories/wheels-and-tires/wheels\">\n                <div class=\"theme_cat_tab_content_img\"> \n                    <img src=\"https://rparts-sites.s3.amazonaws.com/75bf26db20545d9b0eae8d22b96f2214/design/accessories/exterior/tire_v1.webp\" alt=\"Mitsubishi\"> \n                </div>\n                <p>Wheels</p>\n            </a> \n        </li>\n        <li> \n            <a href=\"part-categories/exterior/windshield-wiper-blades\">\n                <div class=\"theme_cat_tab_content_img\"> \n                    <img src=\"https://rparts-sites.s3.amazonaws.com/75bf26db20545d9b0eae8d22b96f2214/design/parts-accessories/Wiper_Blades_v2.webp\" alt=\"Mitsubishi\"> \n                </div>\n                <p>Wiper Blades</p>\n            </a> \n        </li>\n    </ul>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "tabContent tabContentSeries",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_27",
+                  "moduleType": "custom_html",
+                  "title": "Accessories",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"theme_cat_tab_content\">\n    <ul class=\"theme_cat_tab_content_list\">\n        <li> \n            <a href=\"accessories/cargo-nets-trays-and-liners\">\n                <div class=\"theme_cat_tab_content_img\"> \n                    <img src=\"https://rparts-sites.s3.amazonaws.com/75bf26db20545d9b0eae8d22b96f2214/design/parts-accessories/mitsubishi-cargo-trays-01-md-2.webp\" alt=\"Mitsubishi Cargo Trays\"> \n                </div>\n                <p>Cargo Trays</p>\n            </a> \n        </li>\n        <li> \n            <a href=\"accessories/door-sills\">\n                <div class=\"theme_cat_tab_content_img\"> \n                    <img src=\"https://rparts-sites.s3.amazonaws.com/75bf26db20545d9b0eae8d22b96f2214/design/parts-accessories/mitsubishi-door-sills-01-md-5.webp\" alt=\"Mitsubishi Door Sills\"> \n                </div>\n                <p>Door Sills</p>\n            </a> \n        </li>\n        <li> \n            <a href=\"part-categories/electronics/keys-and-transponders\">\n                <div class=\"theme_cat_tab_content_img\"> \n                    <img src=\"https://rparts-sites.s3.amazonaws.com/75bf26db20545d9b0eae8d22b96f2214/design/parts-accessories/keyfobs_v3.webp\" alt=\"Mitsubishi Key Fobs\"> \n                </div>\n                <p>Key Fobs</p>\n            </a> \n        </li>\n        <li> \n            <a href=\"accessories/floor-mats-and-carpets\">\n                <div class=\"theme_cat_tab_content_img\"> \n                    <img src=\"https://rparts-sites.s3.amazonaws.com/75bf26db20545d9b0eae8d22b96f2214/design/parts-accessories/mitsubishi-floor-mats-01-md-2.webp\" alt=\"Mitsubishi Floor Mats\"> \n                </div>\n                <p>Floor Mats</p>\n            </a> \n        </li>\n        <li> \n            <a href=\"accessories/towing-and-hauling\">\n                <div class=\"theme_cat_tab_content_img\"> \n                    <img src=\"https://rparts-sites.s3.amazonaws.com/75bf26db20545d9b0eae8d22b96f2214/design/parts-accessories/towing_1.webp\" alt=\"Mitsubishi Towing\"> \n                </div>\n                <p>Towing</p>\n            </a> \n        </li>\n        <li> \n            <a href=\"accessories/racks\">\n                <div class=\"theme_cat_tab_content_img\"> \n                    <img src=\"https://rparts-sites.s3.amazonaws.com/75bf26db20545d9b0eae8d22b96f2214/design/parts-accessories/roof_racks-4.webp\" alt=\"Mitsubishi Roof Racks\"> \n                </div>\n                <p>Roof Racks</p>\n            </a> \n        </li>\n        <li> \n            <a href=\"/part-categories/exterior/mouldings-and-trim\">\n                <div class=\"theme_cat_tab_content_img\"> \n                    <img src=\"https://rparts-sites.s3.amazonaws.com/75bf26db20545d9b0eae8d22b96f2214/design/parts-accessories/2024-mitsubishi-outlander-phev-suv-body-side-molding-chrome_v1.webp\" alt=\"Mitsubishi Molding Chrome\"> \n                </div>\n                <p>Moulding & Badges</p>\n            </a> \n        </li>\n        <li> \n            <a href=\"accessories/shields-and-deflectors\">\n                <div class=\"theme_cat_tab_content_img\"> \n                    <img src=\"https://rparts-sites.s3.amazonaws.com/75bf26db20545d9b0eae8d22b96f2214/design/parts-accessories/wind_deflectors-v1.webp\" alt=\"Mitsubishi Wind Deflectors\"> \n                </div>\n                <p>Wind Deflectors</p>\n            </a> \n        </li>\n    </ul>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "tabContent tabContentParallel",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_1",
+      "htmlId": "",
+      "htmlClasses": "theme_jd_power margin_bottom_section",
+      "contentWidth": "wide",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_17",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_18",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_19",
+                  "moduleType": "custom_html",
+                  "title": "Yout Style",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"theme_row theme_align_center\">\n    <div class=\"theme_col theme_col_6\">\n        <div class=\"theme_content\">\n            <small>Mitsubishi Accessories</small>\n            <h3>Your Vehicle, Your Style</h3>\n            <p>With Genuine Mitsubishi accessories you can rest assured that you are styling your vehicle with the highest quality parts with guaranteed fitment. This includes accessories for the family car, the sports car, the offroad adventurer or however you like to drive your Mitsubishi.</p>\n            <div class=\"main--slider-buttton\"> <a href=\"/accessories\">Explore All Accessories</a> </div>\n        </div>\n    </div>\n    <div class=\"theme_col theme_col_6\">\n        <div class=\"theme_img\">\n            <img src=\"https://rparts-sites.s3.amazonaws.com/75bf26db20545d9b0eae8d22b96f2214/design/img/2023-mitsubishi-ralliart-outlander-suv-desert-background_v3.webp\" alt=\"desert\">\n        </div>\n    </div>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_32",
+      "htmlId": "",
+      "htmlClasses": "theme_card_section margin_bottom_section",
+      "contentWidth": "wide",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_33",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_34",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_35",
+                  "moduleType": "custom_html",
+                  "title": "Cards",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"theme_row theme_row_gap_30\">\n    <div class=\"theme_col theme_col_4\">\n        <div class=\"theme_card\">\n            <div class=\"theme_card_img\">\n                <a href=\"blog/2024-mitsubishi-outlander\"><img src=\"https://rparts-sites.s3.amazonaws.com/75bf26db20545d9b0eae8d22b96f2214/design/img/2023-mitsubishi-outlander-plug-in-hybrid-white-iihs-homepage_v2.webp\" alt=\"The 2024 Mitsubishi Outlander Blog\"></a>\n            </div>\n            <h3><a href=\"blog/2024-mitsubishi-outlander\">The 2024 Mitsubishi Outlander: Redefining Luxury</a></h3>\n            <h4>Luxury in a Compact SUV</h4>\n            <p>Discover the luxurious interior features of the 2024 Mitsubishi Outlander.</p>\n        </div>\n    </div>\n    <div class=\"theme_col theme_col_4\">\n        <div class=\"theme_card\">\n            <div class=\"theme_card_img\">\n                <a href=\"blog/keep-your-mitsubishi-lancing-running-forever\"><img src=\"https://rparts-sites.s3.amazonaws.com/75bf26db20545d9b0eae8d22b96f2214/design/Mitsu_Blog_6-v3.webp\" alt=\"Keep Your Mitsubishi Lancer Running Forever Blog\" data-image=\"75bf26db20545d9b0eae8d22b96f2214/design/Mitsu_Blog_6.png\"></a>\n            </div>\n            <h3><a href=\"blog/keep-your-mitsubishi-lancing-running-forever\">Keep Your Mitsubishi Lancer Running Forever</a></h3>\n            <h4>Your Guide to Lancer Maintenance</h4>\n            <p>Discover the top tips and maintenance strategies to keep your Mitsubishi Lancer running smoothly for years to come.</p>\n        </div>\n    </div>\n    <div class=\"theme_col theme_col_4\">\n        <div class=\"theme_card\">\n            <div class=\"theme_card_img\">\n                <a href=\"blog/mitsubishi-ralliart-editions\"><img src=\"https://rparts-sites.s3.amazonaws.com/75bf26db20545d9b0eae8d22b96f2214/design/Mitsu_blog_1_v2.webp\" data-image=\"75bf26db20545d9b0eae8d22b96f2214/design/Mitsu_blog_1.png\" alt=\"Exploring Mitsubishi Ralliart Editions Blog\"></a>\n            </div>\n            <h3><a href=\"blog/mitsubishi-ralliart-editions\">Exploring Mitsubishi Ralliart Editions</a></h3>\n            <h4>Unleashing the Thrill</h4>\n            <p>From the iconic Lancer Evolution to the versatile Outlander Ralliart, delve into the history, key features, and popular models that define these adrenaline-fueled vehicles.</p>\n        </div>\n    </div>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_42",
+      "htmlId": "",
+      "htmlClasses": "theme_dealer_section margin_bottom_section d-none",
+      "contentWidth": "wide",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_43",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_44",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_45",
+                  "moduleType": "custom_html",
+                  "title": "Dealer",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"theme_row theme_align_center\">\n    <div class=\"theme_col theme_col_6\">\n        <div class=\"theme_content\">\n            <small>DEALERS</small>\n            <h3>Find Local Dealerships</h3>\n            <p>We’ve got 350 Mitsubishi dealerships across the US, why not come visit?</p>\n            <div class=\"main--slider-buttton\"> \n                <a href=\"#\">Find a Dealer</a> \n            </div>\n        </div>\n    </div>\n    <div class=\"theme_col theme_col_6\">\n        <div class=\"theme_img\">\n            <img src=\"https://rparts-sites.s3.amazonaws.com/75bf26db20545d9b0eae8d22b96f2214/design/img/mitsubishi-homepage-dealers.webp\" alt=\"award\">\n        </div>\n    </div>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_6",
+      "htmlId": "",
+      "htmlClasses": "themeGarageSection",
+      "contentWidth": "wide",
+      "backgroundColor": "",
+      "backgroundImage": "https://rparts-sites.s3.amazonaws.com/75bf26db20545d9b0eae8d22b96f2214/design/My_Garage.png",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_7",
+          "rowLayout": 12,
+          "htmlId": "",
+          "htmlClasses": "themeNewsWrap",
+          "columns": [
+            {
+              "columnId": "column_8",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_15",
+                  "moduleType": "custom_html",
+                  "title": "My Garage",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"themeMyGarageWrap\">\n    <div class=\"themeMyGarageContent\">\n        <h3>Sign Up for Mitsubishi Parts Offers</h3>\n        <p>\n            Join to receive special offers, insights, and more.\n        </p>\n        <form class=\"js-cm-form\" id=\"subForm\" action=\"https://www.createsend.com/t/subscribeerror?description=\" method=\"post\" data-id=\"A61C50BEC994754B1D79C5819EC1255C962944AD2E423A3E8C056AC14EAC6B3B71B7460770230F4F458370216D626802342C1B314F381F45F8695B2F3912F82E\">\n        <div class=\"themeFormGroupWrap\">\n            <div class=\"themeFormGroup\">\n                <input aria-label=\"Name\" id=\"fieldName\" maxlength=\"200\" name=\"cm-name\" placeholder=\"Your name\">\n            </div>\n            <div class=\"themeFormGroup\">\n                <input autocomplete=\"Email\" aria-label=\"Email\" class=\"js-cm-email-input qa-input-email\" id=\"fieldEmail\" maxlength=\"200\" name=\"cm-tyiiudu-tyiiudu\" required=\"\" type=\"email\" placeholder=\"Your email\">\n            </div>\n        </div>\n        <p><a href=\"https://www.mitsubishicars.com/privacy\" rel=\"noopener\" target=\"_blank\">Privacy Policy</a></p>\n        <div class=\"themeFormGroupButton\">\n            <button type=\"submit\">Subscribe</button>\n        </div>\n    </form>\n    <script type=\"text/javascript\" src=\"https://js.createsend1.com/javascript/copypastesubscribeformlogic.js\"></script>\n    </div>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

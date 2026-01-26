@@ -1,0 +1,2681 @@
+{
+  "pageId": "footer",
+  "pageName": "Footer",
+  "pageType": null,
+  "layoutEnabled": true,
+  "moduleCategories": [
+    "header",
+    "images",
+    "text",
+    "search",
+    "categories_products",
+    "forms",
+    "navigation",
+    "footer"
+  ],
+  "VFSPath": "layouts/footer.json",
+  "requiredModules": [
+    "powered_by_rp"
+  ],
+  "scripts": null,
+  "sections": [
+    {
+      "sectionId": "section_1",
+      "htmlId": "",
+      "htmlClasses": "",
+      "contentWidth": "wide",
+      "backgroundColor": "#000000",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "desktop-only",
+      "rows": [
+        {
+          "rowId": "row_57",
+          "rowLayout": 12,
+          "htmlId": "",
+          "htmlClasses": "",
+          "columns": [
+            {
+              "columnId": "column_58",
+              "columnWidth": 12,
+              "htmlId": "footer-links",
+              "htmlClasses": "d-flex",
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_64",
+                  "moduleType": "links_list",
+                  "title": "List - Need Help",
+                  "options": {
+                    "links": {
+                      "name": "Links",
+                      "type": "object",
+                      "default_value": [],
+                      "value": [
+                        {
+                          "linkId": "link_25",
+                          "text": "Roadside Assistance",
+                          "url": "https://www.mopar.com/en-us/assistance/roadside-assistance.html",
+                          "target": "blank",
+                          "icon": "",
+                          "type": "direct"
+                        },
+                        {
+                          "linkId": "link_26",
+                          "text": "For First Responders",
+                          "url": "https://www.mopar.com/en-us/assistance/first-responders.html",
+                          "target": "_blank",
+                          "icon": "",
+                          "type": "direct"
+                        },
+                        {
+                          "linkId": "link_27",
+                          "text": "Chat With Us",
+                          "url": "https://fcacommunity.force.com/Jeep/apex/NAFTA_ContactCenterPreChat?endpoint=https%3A%2F%2F2bn27.la3-c1-ph2.salesforceliveagent.com%2Fcontent%2Fs%2Fchat%3Flanguage%3Den_US%23deployment_id%3D572f1000000GxJ3%26org_id%3D00Dj0000001qsDF%26button_id%3D573f1000000GzmF%26session_id%3Dabdde0e6-a2e3-4dff-8fdd-99ce54cf23d1",
+                          "target": "blank",
+                          "icon": "",
+                          "type": "direct"
+                        },
+                        {
+                          "linkId": "link_28",
+                          "text": "Email Us",
+                          "url": "contact-us",
+                          "target": "",
+                          "icon": "",
+                          "type": "direct"
+                        },
+                        {
+                          "linkId": "link_29",
+                          "text": "FAQs",
+                          "url": "https://fcacommunity.force.com/Mopar/s/",
+                          "target": "blank",
+                          "icon": "",
+                          "type": "direct"
+                        },
+                        {
+                          "linkId": "link_30",
+                          "text": "Site Map",
+                          "url": "sitemap",
+                          "target": "",
+                          "icon": "",
+                          "type": "direct"
+                        }
+                      ]
+                    },
+                    "links_image": {
+                      "name": "List Image",
+                      "type": "image_upload",
+                      "default_value": null,
+                      "value": ""
+                    },
+                    "links_title": {
+                      "name": "List Title",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "Need Help"
+                    },
+                    "links_title_url": {
+                      "name": "List Title Link",
+                      "type": "string",
+                      "default_value": null,
+                      "value": ""
+                    },
+                    "links_stock": {
+                      "name": "List Style",
+                      "type": "select",
+                      "default_value": "none",
+                      "value": "none",
+                      "possible_values": [
+                        {
+                          "value": "none",
+                          "label": "None"
+                        },
+                        {
+                          "value": "mobile_menu",
+                          "label": "Mobile Menu"
+                        },
+                        {
+                          "value": "policies",
+                          "label": "Policies"
+                        }
+                      ]
+                    },
+                    "header_tag": {
+                      "name": "Header Tag",
+                      "type": "select",
+                      "default_value": "strong",
+                      "value": "h3",
+                      "possible_values": [
+                        {
+                          "value": "strong",
+                          "label": "STRONG"
+                        },
+                        {
+                          "value": "h3",
+                          "label": "H3"
+                        }
+                      ]
+                    },
+                    "links_display": {
+                      "name": "List Display",
+                      "type": "select",
+                      "default_value": "block",
+                      "value": "block",
+                      "possible_values": [
+                        {
+                          "value": "inline",
+                          "label": "Inline"
+                        },
+                        {
+                          "value": "block",
+                          "label": "Block"
+                        },
+                        {
+                          "value": "dropdown",
+                          "label": "Drop Down"
+                        }
+                      ]
+                    },
+                    "list_style": {
+                      "name": "List Style",
+                      "type": "select",
+                      "default_value": "none",
+                      "value": "none",
+                      "possible_values": [
+                        {
+                          "value": "none",
+                          "label": "No Style"
+                        },
+                        {
+                          "value": "footer",
+                          "label": "Footer"
+                        },
+                        {
+                          "value": "header",
+                          "label": "Header"
+                        },
+                        {
+                          "value": "navigation",
+                          "label": "Navigation Bar"
+                        },
+                        {
+                          "value": "menu",
+                          "label": "Menu Bar"
+                        }
+                      ]
+                    },
+                    "footer_link": {
+                      "name": "Footer Link",
+                      "type": "string",
+                      "default_value": null,
+                      "value": ""
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": true,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_79",
+                  "moduleType": "links_list",
+                  "title": "List - Resources",
+                  "options": {
+                    "links": {
+                      "name": "Links",
+                      "type": "object",
+                      "default_value": [],
+                      "value": [
+                        {
+                          "linkId": "link_40",
+                          "text": "Find a Dealer",
+                          "url": "https://www.mopar.com/en-us/service-maintenance/find-dealer.html",
+                          "target": "blank",
+                          "icon": "",
+                          "type": "direct"
+                        },
+                        {
+                          "linkId": "link_41",
+                          "text": "Recalls",
+                          "url": "https://www.mopar.com/en-us/my-vehicle/recalls/search.html",
+                          "target": "blank",
+                          "icon": "",
+                          "type": "direct"
+                        },
+                        {
+                          "linkId": "link_42",
+                          "text": "Owner's Apps",
+                          "url": "https://www.mopar.com/en-us/technology/mobile-app.html",
+                          "target": "blank",
+                          "icon": "",
+                          "type": "direct"
+                        },
+                        {
+                          "linkId": "link_43",
+                          "text": "Owner's Manual",
+                          "url": "https://www.mopar.com/en-us/my-vehicle/vehicle-information.html?redirect=om",
+                          "target": "blank",
+                          "icon": "",
+                          "type": "direct"
+                        },
+                        {
+                          "linkId": "link_44",
+                          "text": "Maintenance Schedule",
+                          "url": "https://www.mopar.com/en-us/my-vehicle/vehicle-information.html?redirect=ms",
+                          "target": "blank",
+                          "icon": "",
+                          "type": "direct"
+                        },
+                        {
+                          "linkId": "link_45",
+                          "text": "Warranty Information",
+                          "url": "https://www.mopar.com/en-us/my-vehicle/current-model-year-coverage.html",
+                          "target": "blank",
+                          "icon": "",
+                          "type": "direct"
+                        },
+                        {
+                          "linkId": "link_46",
+                          "text": "Parts & Accessories Catalogs",
+                          "url": "https://www.mopar.com/en-us/performance-catalogs.html",
+                          "target": "_blank",
+                          "icon": "",
+                          "type": "direct"
+                        }
+                      ]
+                    },
+                    "links_image": {
+                      "name": "List Image",
+                      "type": "image_upload",
+                      "default_value": null,
+                      "value": ""
+                    },
+                    "links_title": {
+                      "name": "List Title",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "Resources"
+                    },
+                    "links_title_url": {
+                      "name": "List Title Link",
+                      "type": "string",
+                      "default_value": null,
+                      "value": ""
+                    },
+                    "links_stock": {
+                      "name": "List Style",
+                      "type": "select",
+                      "default_value": "none",
+                      "value": "none",
+                      "possible_values": [
+                        {
+                          "value": "none",
+                          "label": "None"
+                        },
+                        {
+                          "value": "mobile_menu",
+                          "label": "Mobile Menu"
+                        },
+                        {
+                          "value": "policies",
+                          "label": "Policies"
+                        }
+                      ]
+                    },
+                    "header_tag": {
+                      "name": "Header Tag",
+                      "type": "select",
+                      "default_value": "strong",
+                      "value": "h3",
+                      "possible_values": [
+                        {
+                          "value": "strong",
+                          "label": "STRONG"
+                        },
+                        {
+                          "value": "h3",
+                          "label": "H3"
+                        }
+                      ]
+                    },
+                    "links_display": {
+                      "name": "List Display",
+                      "type": "select",
+                      "default_value": "block",
+                      "value": "block",
+                      "possible_values": [
+                        {
+                          "value": "inline",
+                          "label": "Inline"
+                        },
+                        {
+                          "value": "block",
+                          "label": "Block"
+                        },
+                        {
+                          "value": "dropdown",
+                          "label": "Drop Down"
+                        }
+                      ]
+                    },
+                    "list_style": {
+                      "name": "List Style",
+                      "type": "select",
+                      "default_value": "none",
+                      "value": "none",
+                      "possible_values": [
+                        {
+                          "value": "none",
+                          "label": "No Style"
+                        },
+                        {
+                          "value": "footer",
+                          "label": "Footer"
+                        },
+                        {
+                          "value": "header",
+                          "label": "Header"
+                        },
+                        {
+                          "value": "navigation",
+                          "label": "Navigation Bar"
+                        },
+                        {
+                          "value": "menu",
+                          "label": "Menu Bar"
+                        }
+                      ]
+                    },
+                    "footer_link": {
+                      "name": "Footer Link",
+                      "type": "string",
+                      "default_value": null,
+                      "value": ""
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": true,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_126",
+                  "moduleType": "links_list",
+                  "title": "List - For Dealers",
+                  "options": {
+                    "links": {
+                      "name": "Links",
+                      "type": "object",
+                      "default_value": [],
+                      "value": [
+                        {
+                          "linkId": "link_56",
+                          "text": "Mopar<sub>®</sub> Repair Connection",
+                          "url": "https://www.moparrepairconnect.com/",
+                          "target": "blank",
+                          "icon": "",
+                          "type": "direct"
+                        },
+                        {
+                          "linkId": "link_57",
+                          "text": "Mopar<sub>®</sub> Dealers",
+                          "url": "https://www.dealers-mopar.com/moparone/credentials/fca-dealer-connect-sso.jsp",
+                          "target": "blank",
+                          "icon": "",
+                          "type": "direct"
+                        },
+                        {
+                          "linkId": "link_58",
+                          "text": "Mopar<sub>®</sub> Cap",
+                          "url": "https://www.mopar.com/en-us/mopar-cap.html",
+                          "target": "blank",
+                          "icon": "",
+                          "type": "direct"
+                        },
+                        {
+                          "linkId": "link_59",
+                          "text": "DealerCONNECT",
+                          "url": "https://dealerconnect.chrysler.com/login/login.html?TYPE=33554433&REALMOID=06-d5cf97a8-bccd-103a-bcc8-83e513310cb3&GUID=&SMAUTHREASON=0&METHOD=GET&SMAGENTNAME=Qia4LI8EuEsRnvE1wNDd9FcaayO7200XazEuJrBPFkV7jlgcVunZKs25oQUfPJE1nW8PPofGJKN3iEGW8JexEaJ0z30I8ORm&TARGET=-SM-https%3a%2f%2fdealerconnect%2echrysler%2ecom%2fportal%2fController%2fPortal",
+                          "target": "blank",
+                          "icon": "",
+                          "type": "direct"
+                        }
+                      ]
+                    },
+                    "links_image": {
+                      "name": "List Image",
+                      "type": "image_upload",
+                      "default_value": null,
+                      "value": ""
+                    },
+                    "links_title": {
+                      "name": "List Title",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "For Dealers"
+                    },
+                    "links_title_url": {
+                      "name": "List Title Link",
+                      "type": "string",
+                      "default_value": null,
+                      "value": ""
+                    },
+                    "links_stock": {
+                      "name": "List Style",
+                      "type": "select",
+                      "default_value": "none",
+                      "value": "none",
+                      "possible_values": [
+                        {
+                          "value": "none",
+                          "label": "None"
+                        },
+                        {
+                          "value": "mobile_menu",
+                          "label": "Mobile Menu"
+                        },
+                        {
+                          "value": "policies",
+                          "label": "Policies"
+                        }
+                      ]
+                    },
+                    "header_tag": {
+                      "name": "Header Tag",
+                      "type": "select",
+                      "default_value": "strong",
+                      "value": "h3",
+                      "possible_values": [
+                        {
+                          "value": "strong",
+                          "label": "STRONG"
+                        },
+                        {
+                          "value": "h3",
+                          "label": "H3"
+                        }
+                      ]
+                    },
+                    "links_display": {
+                      "name": "List Display",
+                      "type": "select",
+                      "default_value": "block",
+                      "value": "block",
+                      "possible_values": [
+                        {
+                          "value": "inline",
+                          "label": "Inline"
+                        },
+                        {
+                          "value": "block",
+                          "label": "Block"
+                        },
+                        {
+                          "value": "dropdown",
+                          "label": "Drop Down"
+                        }
+                      ]
+                    },
+                    "list_style": {
+                      "name": "List Style",
+                      "type": "select",
+                      "default_value": "none",
+                      "value": "none",
+                      "possible_values": [
+                        {
+                          "value": "none",
+                          "label": "No Style"
+                        },
+                        {
+                          "value": "footer",
+                          "label": "Footer"
+                        },
+                        {
+                          "value": "header",
+                          "label": "Header"
+                        },
+                        {
+                          "value": "navigation",
+                          "label": "Navigation Bar"
+                        },
+                        {
+                          "value": "menu",
+                          "label": "Menu Bar"
+                        }
+                      ]
+                    },
+                    "footer_link": {
+                      "name": "Footer Link",
+                      "type": "string",
+                      "default_value": null,
+                      "value": ""
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": true,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_136",
+                  "moduleType": "links_list",
+                  "title": "List - Company",
+                  "options": {
+                    "links": {
+                      "name": "Links",
+                      "type": "object",
+                      "default_value": [],
+                      "value": [
+                        {
+                          "linkId": "link_69",
+                          "text": "Careers",
+                          "url": "https://careers.fcagroup.com/where-we-are/north-america-careers-home/",
+                          "target": "blank",
+                          "icon": "",
+                          "type": "direct"
+                        },
+                        {
+                          "linkId": "link_70",
+                          "text": "Legal, Safety & Trademarks",
+                          "url": "https://www.mopar.com/en-us/legal-trademarks.html",
+                          "target": "blank",
+                          "icon": "",
+                          "type": "direct"
+                        },
+                        {
+                          "linkId": "link_71",
+                          "text": "Copyright",
+                          "url": "https://www.chrysler.com/universal/Copyright.html",
+                          "target": "blank",
+                          "icon": "",
+                          "type": "direct"
+                        },
+                        {
+                          "linkId": "link_72",
+                          "text": "Terms of Use",
+                          "url": "https://www.mopar.com/en-us/terms-of-use.html",
+                          "target": "blank",
+                          "icon": "",
+                          "type": "direct"
+                        },
+                        {
+                          "linkId": "link_73",
+                          "text": "Accessibility",
+                          "url": "https://fcacommunity.force.com/Mopar/s/article/What-steps-do-you-take-to-ensure-website-accessibility",
+                          "target": "blank",
+                          "icon": "",
+                          "type": "direct"
+                        },
+                        {
+                          "linkId": "link_74",
+                          "text": "Contact",
+                          "url": "https://www.mopar.com/en-us/contact-us.html",
+                          "target": "blank",
+                          "icon": "",
+                          "type": "direct"
+                        }
+                      ]
+                    },
+                    "links_image": {
+                      "name": "List Image",
+                      "type": "image_upload",
+                      "default_value": null,
+                      "value": ""
+                    },
+                    "links_title": {
+                      "name": "List Title",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "Company"
+                    },
+                    "links_title_url": {
+                      "name": "List Title Link",
+                      "type": "string",
+                      "default_value": null,
+                      "value": ""
+                    },
+                    "links_stock": {
+                      "name": "List Style",
+                      "type": "select",
+                      "default_value": "none",
+                      "value": "none",
+                      "possible_values": [
+                        {
+                          "value": "none",
+                          "label": "None"
+                        },
+                        {
+                          "value": "mobile_menu",
+                          "label": "Mobile Menu"
+                        },
+                        {
+                          "value": "policies",
+                          "label": "Policies"
+                        }
+                      ]
+                    },
+                    "header_tag": {
+                      "name": "Header Tag",
+                      "type": "select",
+                      "default_value": "strong",
+                      "value": "h3",
+                      "possible_values": [
+                        {
+                          "value": "strong",
+                          "label": "STRONG"
+                        },
+                        {
+                          "value": "h3",
+                          "label": "H3"
+                        }
+                      ]
+                    },
+                    "links_display": {
+                      "name": "List Display",
+                      "type": "select",
+                      "default_value": "block",
+                      "value": "block",
+                      "possible_values": [
+                        {
+                          "value": "inline",
+                          "label": "Inline"
+                        },
+                        {
+                          "value": "block",
+                          "label": "Block"
+                        },
+                        {
+                          "value": "dropdown",
+                          "label": "Drop Down"
+                        }
+                      ]
+                    },
+                    "list_style": {
+                      "name": "List Style",
+                      "type": "select",
+                      "default_value": "none",
+                      "value": "none",
+                      "possible_values": [
+                        {
+                          "value": "none",
+                          "label": "No Style"
+                        },
+                        {
+                          "value": "footer",
+                          "label": "Footer"
+                        },
+                        {
+                          "value": "header",
+                          "label": "Header"
+                        },
+                        {
+                          "value": "navigation",
+                          "label": "Navigation Bar"
+                        },
+                        {
+                          "value": "menu",
+                          "label": "Menu Bar"
+                        }
+                      ]
+                    },
+                    "footer_link": {
+                      "name": "Footer Link",
+                      "type": "string",
+                      "default_value": null,
+                      "value": ""
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": true,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_146",
+                  "moduleType": "links_list",
+                  "title": "List - Privacy Center",
+                  "options": {
+                    "links": {
+                      "name": "Links",
+                      "type": "object",
+                      "default_value": [],
+                      "value": [
+                        {
+                          "linkId": "link_305",
+                          "text": "Privacy Policy",
+                          "url": "https://www.chrysler.com/crossbrand_us/privacy.html",
+                          "target": "blank",
+                          "icon": "",
+                          "type": "direct"
+                        },
+                        {
+                          "linkId": "link_306",
+                          "text": "Do Not Sell My Personal Info",
+                          "url": "https://privacyportal-cdn.onetrust.com/dsarwebform/abdee64f-f547-46bd-97a7-f56d58479fce/1c3a169b-1230-4a2e-b664-8785e3763e2c.html",
+                          "target": "blank",
+                          "icon": "",
+                          "type": "direct"
+                        },
+                        {
+                          "linkId": "link_307",
+                          "text": "Cookie Settings",
+                          "url": "javascript:Optanon.ToggleInfoDisplay();",
+                          "target": "",
+                          "icon": "",
+                          "type": "direct"
+                        }
+                      ]
+                    },
+                    "links_image": {
+                      "name": "List Image",
+                      "type": "image_upload",
+                      "default_value": null,
+                      "value": ""
+                    },
+                    "links_title": {
+                      "name": "List Title",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "Privacy Center"
+                    },
+                    "links_title_url": {
+                      "name": "List Title Link",
+                      "type": "string",
+                      "default_value": null,
+                      "value": ""
+                    },
+                    "links_stock": {
+                      "name": "List Style",
+                      "type": "select",
+                      "default_value": "none",
+                      "value": "none",
+                      "possible_values": [
+                        {
+                          "value": "none",
+                          "label": "None"
+                        },
+                        {
+                          "value": "mobile_menu",
+                          "label": "Mobile Menu"
+                        },
+                        {
+                          "value": "policies",
+                          "label": "Policies"
+                        }
+                      ]
+                    },
+                    "header_tag": {
+                      "name": "Header Tag",
+                      "type": "select",
+                      "default_value": "strong",
+                      "value": "h3",
+                      "possible_values": [
+                        {
+                          "value": "strong",
+                          "label": "STRONG"
+                        },
+                        {
+                          "value": "h3",
+                          "label": "H3"
+                        }
+                      ]
+                    },
+                    "links_display": {
+                      "name": "List Display",
+                      "type": "select",
+                      "default_value": "block",
+                      "value": "block",
+                      "possible_values": [
+                        {
+                          "value": "inline",
+                          "label": "Inline"
+                        },
+                        {
+                          "value": "block",
+                          "label": "Block"
+                        },
+                        {
+                          "value": "dropdown",
+                          "label": "Drop Down"
+                        }
+                      ]
+                    },
+                    "list_style": {
+                      "name": "List Style",
+                      "type": "select",
+                      "default_value": "none",
+                      "value": "none",
+                      "possible_values": [
+                        {
+                          "value": "none",
+                          "label": "No Style"
+                        },
+                        {
+                          "value": "footer",
+                          "label": "Footer"
+                        },
+                        {
+                          "value": "header",
+                          "label": "Header"
+                        },
+                        {
+                          "value": "navigation",
+                          "label": "Navigation Bar"
+                        },
+                        {
+                          "value": "menu",
+                          "label": "Menu Bar"
+                        }
+                      ]
+                    },
+                    "footer_link": {
+                      "name": "Footer Link",
+                      "type": "string",
+                      "default_value": null,
+                      "value": ""
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": true,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "rowId": "row_55",
+          "rowLayout": "6_6",
+          "htmlId": "",
+          "htmlClasses": "brand-row",
+          "columns": [
+            {
+              "columnId": "column_56",
+              "columnWidth": 6,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_288",
+                  "moduleType": "custom_html",
+                  "title": "Custom - Image",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<a href=\"https://www.stellantis.com/\" target=\"_blank\" class=\"footer-img-link\">\n    <figure class=\"footer-img\">\n        <img src=\"https://cdn.revolutionparts.com/8ae4b64986c61872a339a5e6aa224aeb/design/fca.png\" data-image=\"&quot;2326d4572095809af9e02f946c017539&quot;\" alt=\"Fiat Chrylser Automobiles\">\n    </figure>\n</a>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": true
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            },
+            {
+              "columnId": "column_57",
+              "columnWidth": 6,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_87",
+                  "moduleType": "links_list",
+                  "title": "List - Brands",
+                  "options": {
+                    "links": {
+                      "name": "Links",
+                      "type": "object",
+                      "default_value": [],
+                      "value": [
+                        {
+                          "linkId": "link_113",
+                          "text": "CHRYSLER",
+                          "url": "https://www.chrysler.com/",
+                          "target": "blank",
+                          "icon": "",
+                          "type": "direct"
+                        },
+                        {
+                          "linkId": "link_114",
+                          "text": "ALFAROMEO",
+                          "url": "https://www.alfaromeousa.com/",
+                          "target": "blank",
+                          "icon": "",
+                          "type": "direct"
+                        },
+                        {
+                          "linkId": "link_115",
+                          "text": "DODGE",
+                          "url": "https://www.dodge.com/",
+                          "target": "blank",
+                          "icon": "",
+                          "type": "direct"
+                        },
+                        {
+                          "linkId": "link_116",
+                          "text": "FIAT®",
+                          "url": "https://www.fiatusa.com/",
+                          "target": "blank",
+                          "icon": "",
+                          "type": "direct"
+                        },
+                        {
+                          "linkId": "link_117",
+                          "text": "JEEP<sub>®</sub>",
+                          "url": "https://www.jeep.com/",
+                          "target": "blank",
+                          "icon": "",
+                          "type": "direct"
+                        },
+                        {
+                          "linkId": "link_118",
+                          "text": "RAMTRUCKS",
+                          "url": "https://www.ramtrucks.com/",
+                          "target": "blank",
+                          "icon": "",
+                          "type": "direct"
+                        },
+                        {
+                          "linkId": "link_119",
+                          "text": "MOPAR<sub>®</sub>",
+                          "url": "https://www.mopar.com/en-us.html",
+                          "target": "blank",
+                          "icon": "",
+                          "type": "direct"
+                        }
+                      ]
+                    },
+                    "links_image": {
+                      "name": "List Image",
+                      "type": "image_upload",
+                      "default_value": null,
+                      "value": ""
+                    },
+                    "links_title": {
+                      "name": "List Title",
+                      "type": "string",
+                      "default_value": null,
+                      "value": ""
+                    },
+                    "links_title_url": {
+                      "name": "List Title Link",
+                      "type": "string",
+                      "default_value": null,
+                      "value": ""
+                    },
+                    "links_stock": {
+                      "name": "List Style",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "none",
+                      "values": [
+                        {
+                          "id": "none",
+                          "label": "None"
+                        },
+                        {
+                          "id": "mobile_menu",
+                          "label": "Mobile Menu"
+                        },
+                        {
+                          "id": "policies",
+                          "label": "Policies"
+                        }
+                      ]
+                    },
+                    "header_tag": {
+                      "name": "Header Tag",
+                      "type": "string",
+                      "default_value": "strong",
+                      "value": "strong",
+                      "values": [
+                        {
+                          "id": "strong",
+                          "label": "STRONG"
+                        },
+                        {
+                          "id": "h3",
+                          "label": "H3"
+                        }
+                      ]
+                    },
+                    "links_display": {
+                      "name": "List Display",
+                      "type": "string",
+                      "default_value": "block",
+                      "value": "block",
+                      "values": [
+                        {
+                          "id": "inline",
+                          "label": "Inline"
+                        },
+                        {
+                          "id": "block",
+                          "label": "Block"
+                        },
+                        {
+                          "id": "dropdown",
+                          "label": "Drop Down"
+                        }
+                      ]
+                    },
+                    "list_style": {
+                      "name": "List Style",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "none",
+                      "values": [
+                        {
+                          "id": "none",
+                          "label": "No Style"
+                        },
+                        {
+                          "id": "footer",
+                          "label": "Footer"
+                        },
+                        {
+                          "id": "header",
+                          "label": "Header"
+                        },
+                        {
+                          "id": "navigation",
+                          "label": "Navigation Bar"
+                        },
+                        {
+                          "id": "menu",
+                          "label": "Menu Bar"
+                        }
+                      ]
+                    },
+                    "footer_link": {
+                      "name": "Footer Link",
+                      "type": "string",
+                      "default_value": null,
+                      "value": ""
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "footer-brand-list",
+                  "minColumnWidth": 0,
+                  "customAdmin": true,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "rowId": "row_140",
+          "rowLayout": "6_6",
+          "htmlId": "",
+          "htmlClasses": "social-row",
+          "columns": [
+            {
+              "columnId": "column_141",
+              "columnWidth": 6,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_291",
+                  "moduleType": "custom_html",
+                  "title": "Custom - Image",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<a href=\"https://www.fcausdriveability.com/\" target=\"_blank\" class=\"footer-img-link\">\n    <figure class=\"footer-img\">\n        <img src=\"https://rparts-sites.s3.amazonaws.com/8ae4b64986c61872a339a5e6aa224aeb/design/img/driveability_white2.png\" data-image=\"&quot;43f2e57a424eaf083571ca7e9260dd6f&quot;\" alt=\"FCA DriveAbility Program\">\n    </figure>\n</a>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": true
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            },
+            {
+              "columnId": "column_142",
+              "columnWidth": 6,
+              "htmlId": "",
+              "htmlClasses": "",
+              "moduleArrangement": "block",
+              "textAlignment": "text-right",
+              "modules": [
+                {
+                  "moduleId": "module_150",
+                  "moduleType": "social_links",
+                  "title": "Social Links",
+                  "options": {
+                    "display_title": {
+                      "name": "Display Title",
+                      "type": "string",
+                      "default_value": "Stay Connected",
+                      "value": "Stay Connected"
+                    },
+                    "hide_heading": {
+                      "name": "Hide Heading",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": true
+                    },
+                    "header_tag": {
+                      "name": "Header Tag",
+                      "type": "select",
+                      "default_value": "strong",
+                      "value": "strong",
+                      "possible_values": [
+                        {
+                          "value": "strong",
+                          "label": "STRONG"
+                        },
+                        {
+                          "value": "h3",
+                          "label": "H3"
+                        }
+                      ]
+                    },
+                    "social_style": {
+                      "name": "Social Icon Style",
+                      "type": "select",
+                      "possible_values": [
+                        {
+                          "value": "style-circle",
+                          "label": "Circle"
+                        },
+                        {
+                          "value": "style-square",
+                          "label": "Square"
+                        },
+                        {
+                          "value": "style-icon",
+                          "label": "Icon"
+                        }
+                      ],
+                      "default_value": "style-circle",
+                      "value": "style-circle"
+                    },
+                    "ebay_style": {
+                      "name": "eBay Icon Style",
+                      "type": "select",
+                      "possible_values": [
+                        {
+                          "value": "ebay-bag",
+                          "label": "Shopping Bag Icon"
+                        },
+                        {
+                          "value": "ebay-text",
+                          "label": "Text"
+                        }
+                      ],
+                      "default_value": "ebay-bag",
+                      "value": "ebay-bag"
+                    },
+                    "layout_style": {
+                      "name": "Layout Style",
+                      "type": "select",
+                      "possible_values": [
+                        {
+                          "value": "layout-inline",
+                          "label": "Inline"
+                        },
+                        {
+                          "value": "layout-stack",
+                          "label": "Stacked"
+                        }
+                      ],
+                      "default_value": "layout-inline",
+                      "value": "layout-inline"
+                    },
+                    "layout_size": {
+                      "name": "Size",
+                      "type": "select",
+                      "possible_values": [
+                        {
+                          "value": "size-small",
+                          "label": "Small"
+                        },
+                        {
+                          "value": "size-medium",
+                          "label": "Medium"
+                        },
+                        {
+                          "value": "size-large",
+                          "label": "Large"
+                        }
+                      ],
+                      "default_value": "size-small",
+                      "value": "size-small"
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "footer-social-links",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_2",
+      "htmlId": "",
+      "htmlClasses": "mobile-footer-wrap",
+      "contentWidth": "normal",
+      "backgroundColor": "#000000",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "mobile-only",
+      "rows": [
+        {
+          "rowId": "row_3",
+          "rowLayout": 12,
+          "htmlId": "",
+          "htmlClasses": "",
+          "columns": [
+            {
+              "columnId": "column_4",
+              "columnWidth": 12,
+              "htmlId": "mobile-footer-links",
+              "htmlClasses": "",
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_19",
+                  "moduleType": "links_list",
+                  "title": "List - Need Help",
+                  "options": {
+                    "links": {
+                      "name": "Links",
+                      "type": "object",
+                      "default_value": [],
+                      "value": [
+                        {
+                          "linkId": "link_221",
+                          "text": "Roadside Assistance",
+                          "url": "https://www.mopar.com/en-us/assistance/roadside-assistance.html",
+                          "target": "blank",
+                          "icon": "",
+                          "type": "direct"
+                        },
+                        {
+                          "linkId": "link_222",
+                          "text": "Chat With Us",
+                          "url": "https://fcacommunity.force.com/Jeep/apex/NAFTA_ContactCenterPreChat?endpoint=https%3A%2F%2F2bn27.la3-c1-ph2.salesforceliveagent.com%2Fcontent%2Fs%2Fchat%3Flanguage%3Den_US%23deployment_id%3D572f1000000GxJ3%26org_id%3D00Dj0000001qsDF%26button_id%3D573f1000000GzmF%26session_id%3Dabdde0e6-a2e3-4dff-8fdd-99ce54cf23d1",
+                          "target": "blank",
+                          "icon": "",
+                          "type": "direct"
+                        },
+                        {
+                          "linkId": "link_223",
+                          "text": "Email Us",
+                          "url": "contact-us",
+                          "target": "",
+                          "icon": "",
+                          "type": "direct"
+                        },
+                        {
+                          "linkId": "link_224",
+                          "text": "FAQs",
+                          "url": "https://fcacommunity.force.com/Mopar/s/",
+                          "target": "blank",
+                          "icon": "",
+                          "type": "direct"
+                        },
+                        {
+                          "linkId": "link_225",
+                          "text": "Site Map",
+                          "url": "sitemap",
+                          "target": "",
+                          "icon": "",
+                          "type": "direct"
+                        },
+                        {
+                          "linkId": "link_226",
+                          "text": "For First Responders",
+                          "url": "https://www.mopar.com/en-us/assistance/first-responders.html",
+                          "target": "",
+                          "icon": "",
+                          "type": "direct"
+                        }
+                      ]
+                    },
+                    "links_image": {
+                      "name": "List Image",
+                      "type": "image_upload",
+                      "default_value": null,
+                      "value": ""
+                    },
+                    "links_title": {
+                      "name": "List Title",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "Need Help"
+                    },
+                    "links_title_url": {
+                      "name": "List Title Link",
+                      "type": "string",
+                      "default_value": null,
+                      "value": ""
+                    },
+                    "links_stock": {
+                      "name": "List Style",
+                      "type": "select",
+                      "default_value": "none",
+                      "value": "",
+                      "possible_values": [
+                        {
+                          "value": "none",
+                          "label": "None"
+                        },
+                        {
+                          "value": "mobile_menu",
+                          "label": "Mobile Menu"
+                        },
+                        {
+                          "value": "policies",
+                          "label": "Policies"
+                        }
+                      ]
+                    },
+                    "header_tag": {
+                      "name": "Header Tag",
+                      "type": "select",
+                      "default_value": "strong",
+                      "value": "",
+                      "possible_values": [
+                        {
+                          "value": "strong",
+                          "label": "STRONG"
+                        },
+                        {
+                          "value": "h3",
+                          "label": "H3"
+                        }
+                      ]
+                    },
+                    "links_display": {
+                      "name": "List Display",
+                      "type": "select",
+                      "default_value": "block",
+                      "value": "",
+                      "possible_values": [
+                        {
+                          "value": "inline",
+                          "label": "Inline"
+                        },
+                        {
+                          "value": "block",
+                          "label": "Block"
+                        },
+                        {
+                          "value": "dropdown",
+                          "label": "Drop Down"
+                        }
+                      ]
+                    },
+                    "list_style": {
+                      "name": "List Style",
+                      "type": "select",
+                      "default_value": "none",
+                      "value": "",
+                      "possible_values": [
+                        {
+                          "value": "none",
+                          "label": "No Style"
+                        },
+                        {
+                          "value": "footer",
+                          "label": "Footer"
+                        },
+                        {
+                          "value": "header",
+                          "label": "Header"
+                        },
+                        {
+                          "value": "navigation",
+                          "label": "Navigation Bar"
+                        },
+                        {
+                          "value": "menu",
+                          "label": "Menu Bar"
+                        }
+                      ]
+                    },
+                    "footer_link": {
+                      "name": "Footer Link",
+                      "type": "string",
+                      "default_value": null,
+                      "value": ""
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": true,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_29",
+                  "moduleType": "links_list",
+                  "title": "List - Resources",
+                  "options": {
+                    "links": {
+                      "name": "Links",
+                      "type": "object",
+                      "default_value": [],
+                      "value": [
+                        {
+                          "linkId": "link_132",
+                          "text": "Find a Dealer",
+                          "url": "https://www.mopar.com/en-us/service-maintenance/find-dealer.html",
+                          "target": "blank",
+                          "icon": "",
+                          "type": "direct"
+                        },
+                        {
+                          "linkId": "link_133",
+                          "text": "Recalls",
+                          "url": "https://www.mopar.com/en-us/my-vehicle/recalls/search.html",
+                          "target": "blank",
+                          "icon": "",
+                          "type": "direct"
+                        },
+                        {
+                          "linkId": "link_134",
+                          "text": "Owner's Apps",
+                          "url": "https://www.mopar.com/en-us/technology/mobile-app.html",
+                          "target": "blank",
+                          "icon": "",
+                          "type": "direct"
+                        },
+                        {
+                          "linkId": "link_135",
+                          "text": "Owner's Manual",
+                          "url": "https://www.mopar.com/en-us/my-vehicle/vehicle-information.html?redirect=om",
+                          "target": "blank",
+                          "icon": "",
+                          "type": "direct"
+                        },
+                        {
+                          "linkId": "link_136",
+                          "text": "Maintenance Schedule",
+                          "url": "https://www.mopar.com/en-us/my-vehicle/vehicle-information.html?redirect=ms",
+                          "target": "blank",
+                          "icon": "",
+                          "type": "direct"
+                        },
+                        {
+                          "linkId": "link_137",
+                          "text": "Warranty Information",
+                          "url": "https://www.mopar.com/en-us/my-vehicle/current-model-year-coverage.html",
+                          "target": "blank",
+                          "icon": "",
+                          "type": "direct"
+                        },
+                        {
+                          "linkId": "link_138",
+                          "text": "Parts & Accessories Catalogs",
+                          "url": "https://www.mopar.com/en-us/performance-catalogs.html",
+                          "target": "blank",
+                          "icon": "",
+                          "type": "direct"
+                        }
+                      ]
+                    },
+                    "links_image": {
+                      "name": "List Image",
+                      "type": "image_upload",
+                      "default_value": null,
+                      "value": ""
+                    },
+                    "links_title": {
+                      "name": "List Title",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "Resources"
+                    },
+                    "links_title_url": {
+                      "name": "List Title Link",
+                      "type": "string",
+                      "default_value": null,
+                      "value": ""
+                    },
+                    "links_stock": {
+                      "name": "List Style",
+                      "type": "select",
+                      "default_value": "none",
+                      "value": "",
+                      "possible_values": [
+                        {
+                          "value": "none",
+                          "label": "None"
+                        },
+                        {
+                          "value": "mobile_menu",
+                          "label": "Mobile Menu"
+                        },
+                        {
+                          "value": "policies",
+                          "label": "Policies"
+                        }
+                      ]
+                    },
+                    "header_tag": {
+                      "name": "Header Tag",
+                      "type": "select",
+                      "default_value": "strong",
+                      "value": "",
+                      "possible_values": [
+                        {
+                          "value": "strong",
+                          "label": "STRONG"
+                        },
+                        {
+                          "value": "h3",
+                          "label": "H3"
+                        }
+                      ]
+                    },
+                    "links_display": {
+                      "name": "List Display",
+                      "type": "select",
+                      "default_value": "block",
+                      "value": "",
+                      "possible_values": [
+                        {
+                          "value": "inline",
+                          "label": "Inline"
+                        },
+                        {
+                          "value": "block",
+                          "label": "Block"
+                        },
+                        {
+                          "value": "dropdown",
+                          "label": "Drop Down"
+                        }
+                      ]
+                    },
+                    "list_style": {
+                      "name": "List Style",
+                      "type": "select",
+                      "default_value": "none",
+                      "value": "",
+                      "possible_values": [
+                        {
+                          "value": "none",
+                          "label": "No Style"
+                        },
+                        {
+                          "value": "footer",
+                          "label": "Footer"
+                        },
+                        {
+                          "value": "header",
+                          "label": "Header"
+                        },
+                        {
+                          "value": "navigation",
+                          "label": "Navigation Bar"
+                        },
+                        {
+                          "value": "menu",
+                          "label": "Menu Bar"
+                        }
+                      ]
+                    },
+                    "footer_link": {
+                      "name": "Footer Link",
+                      "type": "string",
+                      "default_value": null,
+                      "value": ""
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": true,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_39",
+                  "moduleType": "links_list",
+                  "title": "List - For Dealers",
+                  "options": {
+                    "links": {
+                      "name": "Links",
+                      "type": "object",
+                      "default_value": [],
+                      "value": [
+                        {
+                          "linkId": "link_123",
+                          "text": "Mopar<sub>®</sub> Repair Connection",
+                          "url": "https://www.moparrepairconnect.com/",
+                          "target": "blank",
+                          "icon": "",
+                          "type": "direct"
+                        },
+                        {
+                          "linkId": "link_124",
+                          "text": "Mopar<sub>®</sub> Dealers",
+                          "url": "https://www.dealers-mopar.com/moparone/credentials/fca-dealer-connect-sso.jsp",
+                          "target": "blank",
+                          "icon": "",
+                          "type": "direct"
+                        },
+                        {
+                          "linkId": "link_125",
+                          "text": "Mopar<sub>®</sub> Cap",
+                          "url": "https://www.mopar.com/en-us/mopar-cap.html",
+                          "target": "blank",
+                          "icon": "",
+                          "type": "direct"
+                        },
+                        {
+                          "linkId": "link_126",
+                          "text": "Dealer",
+                          "url": "https://dealerconnect.chrysler.com/login/login.html?TYPE=33554433&REALMOID=06-d5cf97a8-bccd-103a-bcc8-83e513310cb3&GUID=&SMAUTHREASON=0&METHOD=GET&SMAGENTNAME=Qia4LI8EuEsRnvE1wNDd9FcaayO7200XazEuJrBPFkV7jlgcVunZKs25oQUfPJE1nW8PPofGJKN3iEGW8JexEaJ0z30I8ORm&TARGET=-SM-https%3a%2f%2fdealerconnect%2echrysler%2ecom%2fportal%2fController%2fPortal",
+                          "target": "blank",
+                          "icon": "",
+                          "type": "direct"
+                        }
+                      ]
+                    },
+                    "links_image": {
+                      "name": "List Image",
+                      "type": "image_upload",
+                      "default_value": null,
+                      "value": ""
+                    },
+                    "links_title": {
+                      "name": "List Title",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "For Dealers"
+                    },
+                    "links_title_url": {
+                      "name": "List Title Link",
+                      "type": "string",
+                      "default_value": null,
+                      "value": ""
+                    },
+                    "links_stock": {
+                      "name": "List Style",
+                      "type": "select",
+                      "default_value": "none",
+                      "value": "none",
+                      "possible_values": [
+                        {
+                          "value": "none",
+                          "label": "None"
+                        },
+                        {
+                          "value": "mobile_menu",
+                          "label": "Mobile Menu"
+                        },
+                        {
+                          "value": "policies",
+                          "label": "Policies"
+                        }
+                      ]
+                    },
+                    "header_tag": {
+                      "name": "Header Tag",
+                      "type": "select",
+                      "default_value": "strong",
+                      "value": "h3",
+                      "possible_values": [
+                        {
+                          "value": "strong",
+                          "label": "STRONG"
+                        },
+                        {
+                          "value": "h3",
+                          "label": "H3"
+                        }
+                      ]
+                    },
+                    "links_display": {
+                      "name": "List Display",
+                      "type": "select",
+                      "default_value": "block",
+                      "value": "dropdown",
+                      "possible_values": [
+                        {
+                          "value": "inline",
+                          "label": "Inline"
+                        },
+                        {
+                          "value": "block",
+                          "label": "Block"
+                        },
+                        {
+                          "value": "dropdown",
+                          "label": "Drop Down"
+                        }
+                      ]
+                    },
+                    "list_style": {
+                      "name": "List Style",
+                      "type": "select",
+                      "default_value": "none",
+                      "value": "none",
+                      "possible_values": [
+                        {
+                          "value": "none",
+                          "label": "No Style"
+                        },
+                        {
+                          "value": "footer",
+                          "label": "Footer"
+                        },
+                        {
+                          "value": "header",
+                          "label": "Header"
+                        },
+                        {
+                          "value": "navigation",
+                          "label": "Navigation Bar"
+                        },
+                        {
+                          "value": "menu",
+                          "label": "Menu Bar"
+                        }
+                      ]
+                    },
+                    "footer_link": {
+                      "name": "Footer Link",
+                      "type": "string",
+                      "default_value": null,
+                      "value": ""
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": true,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_49",
+                  "moduleType": "links_list",
+                  "title": "List - Company",
+                  "options": {
+                    "links": {
+                      "name": "Links",
+                      "type": "object",
+                      "default_value": [],
+                      "value": [
+                        {
+                          "linkId": "link_136",
+                          "text": "Careers",
+                          "url": "https://careers.fcagroup.com/where-we-are/north-america-careers-home/",
+                          "target": "blank",
+                          "icon": "",
+                          "type": "direct"
+                        },
+                        {
+                          "linkId": "link_137",
+                          "text": "Legal, Safety, & Trademarks",
+                          "url": "https://www.mopar.com/en-us/legal-trademarks.html",
+                          "target": "blank",
+                          "icon": "",
+                          "type": "direct"
+                        },
+                        {
+                          "linkId": "link_138",
+                          "text": "Copyright",
+                          "url": "https://www.chrysler.com/universal/Copyright.html",
+                          "target": "blank",
+                          "icon": "",
+                          "type": "direct"
+                        },
+                        {
+                          "linkId": "link_139",
+                          "text": "Terms of Use",
+                          "url": "https://www.mopar.com/en-us/terms-of-use.html",
+                          "target": "blank",
+                          "icon": "",
+                          "type": "direct"
+                        },
+                        {
+                          "linkId": "link_140",
+                          "text": "Accessibility",
+                          "url": "https://fcacommunity.force.com/Mopar/s/article/What-steps-do-you-take-to-ensure-website-accessibility",
+                          "target": "blank",
+                          "icon": "",
+                          "type": "direct"
+                        },
+                        {
+                          "linkId": "link_141",
+                          "text": "Contact",
+                          "url": "https://www.mopar.com/en-us/contact-us.html",
+                          "target": "blank",
+                          "icon": "",
+                          "type": "direct"
+                        }
+                      ]
+                    },
+                    "links_image": {
+                      "name": "List Image",
+                      "type": "image_upload",
+                      "default_value": null,
+                      "value": ""
+                    },
+                    "links_title": {
+                      "name": "List Title",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "Company"
+                    },
+                    "links_title_url": {
+                      "name": "List Title Link",
+                      "type": "string",
+                      "default_value": null,
+                      "value": ""
+                    },
+                    "links_stock": {
+                      "name": "List Style",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "none",
+                      "values": [
+                        {
+                          "id": "none",
+                          "label": "None"
+                        },
+                        {
+                          "id": "mobile_menu",
+                          "label": "Mobile Menu"
+                        },
+                        {
+                          "id": "policies",
+                          "label": "Policies"
+                        }
+                      ]
+                    },
+                    "header_tag": {
+                      "name": "Header Tag",
+                      "type": "string",
+                      "default_value": "strong",
+                      "value": "h3",
+                      "values": [
+                        {
+                          "id": "strong",
+                          "label": "STRONG"
+                        },
+                        {
+                          "id": "h3",
+                          "label": "H3"
+                        }
+                      ]
+                    },
+                    "links_display": {
+                      "name": "List Display",
+                      "type": "string",
+                      "default_value": "block",
+                      "value": "dropdown",
+                      "values": [
+                        {
+                          "id": "inline",
+                          "label": "Inline"
+                        },
+                        {
+                          "id": "block",
+                          "label": "Block"
+                        },
+                        {
+                          "id": "dropdown",
+                          "label": "Drop Down"
+                        }
+                      ]
+                    },
+                    "list_style": {
+                      "name": "List Style",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "none",
+                      "values": [
+                        {
+                          "id": "none",
+                          "label": "No Style"
+                        },
+                        {
+                          "id": "footer",
+                          "label": "Footer"
+                        },
+                        {
+                          "id": "header",
+                          "label": "Header"
+                        },
+                        {
+                          "id": "navigation",
+                          "label": "Navigation Bar"
+                        },
+                        {
+                          "id": "menu",
+                          "label": "Menu Bar"
+                        }
+                      ]
+                    },
+                    "footer_link": {
+                      "name": "Footer Link",
+                      "type": "string",
+                      "default_value": null,
+                      "value": ""
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": true,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_59",
+                  "moduleType": "links_list",
+                  "title": "List - Privacy Center",
+                  "options": {
+                    "links": {
+                      "name": "Links",
+                      "type": "object",
+                      "default_value": [],
+                      "value": [
+                        {
+                          "linkId": "link_317",
+                          "text": "Privacy Policy",
+                          "url": "https://www.chrysler.com/crossbrand_us/privacy.html",
+                          "target": "blank",
+                          "icon": "",
+                          "type": "direct"
+                        },
+                        {
+                          "linkId": "link_318",
+                          "text": "Do Not Sell My Personal Info",
+                          "url": "https://privacyportal-cdn.onetrust.com/dsarwebform/abdee64f-f547-46bd-97a7-f56d58479fce/1c3a169b-1230-4a2e-b664-8785e3763e2c.html",
+                          "target": "blank",
+                          "icon": "",
+                          "type": "direct"
+                        },
+                        {
+                          "linkId": "link_319",
+                          "text": "Cookie Settings",
+                          "url": "javascript:Optanon.ToggleInfoDisplay();",
+                          "target": "",
+                          "icon": "",
+                          "type": "direct"
+                        }
+                      ]
+                    },
+                    "links_image": {
+                      "name": "List Image",
+                      "type": "image_upload",
+                      "default_value": null,
+                      "value": ""
+                    },
+                    "links_title": {
+                      "name": "List Title",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "Privacy Center"
+                    },
+                    "links_title_url": {
+                      "name": "List Title Link",
+                      "type": "string",
+                      "default_value": null,
+                      "value": ""
+                    },
+                    "links_stock": {
+                      "name": "List Style",
+                      "type": "select",
+                      "default_value": "none",
+                      "value": "none",
+                      "possible_values": [
+                        {
+                          "value": "none",
+                          "label": "None"
+                        },
+                        {
+                          "value": "mobile_menu",
+                          "label": "Mobile Menu"
+                        },
+                        {
+                          "value": "policies",
+                          "label": "Policies"
+                        }
+                      ]
+                    },
+                    "header_tag": {
+                      "name": "Header Tag",
+                      "type": "select",
+                      "default_value": "strong",
+                      "value": "h3",
+                      "possible_values": [
+                        {
+                          "value": "strong",
+                          "label": "STRONG"
+                        },
+                        {
+                          "value": "h3",
+                          "label": "H3"
+                        }
+                      ]
+                    },
+                    "links_display": {
+                      "name": "List Display",
+                      "type": "select",
+                      "default_value": "block",
+                      "value": "dropdown",
+                      "possible_values": [
+                        {
+                          "value": "inline",
+                          "label": "Inline"
+                        },
+                        {
+                          "value": "block",
+                          "label": "Block"
+                        },
+                        {
+                          "value": "dropdown",
+                          "label": "Drop Down"
+                        }
+                      ]
+                    },
+                    "list_style": {
+                      "name": "List Style",
+                      "type": "select",
+                      "default_value": "none",
+                      "value": "none",
+                      "possible_values": [
+                        {
+                          "value": "none",
+                          "label": "No Style"
+                        },
+                        {
+                          "value": "footer",
+                          "label": "Footer"
+                        },
+                        {
+                          "value": "header",
+                          "label": "Header"
+                        },
+                        {
+                          "value": "navigation",
+                          "label": "Navigation Bar"
+                        },
+                        {
+                          "value": "menu",
+                          "label": "Menu Bar"
+                        }
+                      ]
+                    },
+                    "footer_link": {
+                      "name": "Footer Link",
+                      "type": "string",
+                      "default_value": null,
+                      "value": ""
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": true,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "rowId": "row_1",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_2",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_5",
+                  "moduleType": "custom_html",
+                  "title": "Custom HTML",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<a href=\"https://www.stellantis.com/\" target=\"_blank\" class=\"footer-img-link\">\n    <figure class=\"footer-img\">\n        <img src=\"https://cdn.revolutionparts.com/8ae4b64986c61872a339a5e6aa224aeb/design/fca.png\" data-image=\"&quot;2326d4572095809af9e02f946c017539&quot;\" alt=\"Fiat Chrylser Automobiles\">\n    </figure>\n</a>\n<a href=\"https://www.fcausdriveability.com/\" target=\"_blank\" class=\"footer-img-link\">\n    <figure class=\"footer-img\">\n        <img src=\"https://rparts-sites.s3.amazonaws.com/8ae4b64986c61872a339a5e6aa224aeb/design/img/driveability_white2.png\" data-image=\"&quot;43f2e57a424eaf083571ca7e9260dd6f&quot;\" alt=\"FCA DriveAbility Program\">\n    </figure>\n</a>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": true
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_293",
+                  "moduleType": "custom_html",
+                  "title": "OneTrust",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<!-- OneTrust Cookies Consent Notice start for mopar.com -->\n<script src=https://cdn.cookielaw.org/scripttemplates/otSDKStub.js data-document-language=\"true\" type=\"text/javascript\" charset=\"UTF-8\" data-domain-script=\"2a04b361-58e4-4ee4-803f-062fd2912b52\" ></script>\n<script type=\"text/javascript\">\nfunction OptanonWrapper() { }\n</script>\n<!-- OneTrust Cookies Consent Notice end for mopar.com -->"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "rowId": "row_30",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_31",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_32",
+                  "moduleType": "links_list",
+                  "title": "List - Brands",
+                  "options": {
+                    "links": {
+                      "name": "Links",
+                      "type": "object",
+                      "default_value": [],
+                      "value": [
+                        {
+                          "linkId": "link_44",
+                          "text": "CHRYSLER",
+                          "url": "https://www.chrysler.com/",
+                          "target": "blank",
+                          "icon": "",
+                          "type": "direct"
+                        },
+                        {
+                          "linkId": "link_45",
+                          "text": "ALFAROMEO",
+                          "url": "https://www.alfaromeousa.com/",
+                          "target": "blank",
+                          "icon": "",
+                          "type": "direct"
+                        },
+                        {
+                          "linkId": "link_46",
+                          "text": "DODGE",
+                          "url": "https://www.dodge.com/",
+                          "target": "blank",
+                          "icon": "",
+                          "type": "direct"
+                        },
+                        {
+                          "linkId": "link_47",
+                          "text": "FIAT®",
+                          "url": "https://www.fiatusa.com/",
+                          "target": "blank",
+                          "icon": "",
+                          "type": "direct"
+                        },
+                        {
+                          "linkId": "link_48",
+                          "text": "JEEP<sub>®</sub>",
+                          "url": "https://www.jeep.com/",
+                          "target": "blank",
+                          "icon": "",
+                          "type": "direct"
+                        },
+                        {
+                          "linkId": "link_49",
+                          "text": "RAMTRUCKS",
+                          "url": "https://www.ramtrucks.com/",
+                          "target": "blank",
+                          "icon": "",
+                          "type": "direct"
+                        },
+                        {
+                          "linkId": "link_50",
+                          "text": "MOPAR<sub>®</sub>",
+                          "url": "https://www.mopar.com/en-us.html",
+                          "target": "blank",
+                          "icon": "",
+                          "type": "direct"
+                        }
+                      ]
+                    },
+                    "links_image": {
+                      "name": "List Image",
+                      "type": "image_upload",
+                      "default_value": null,
+                      "value": ""
+                    },
+                    "links_title": {
+                      "name": "List Title",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "View All FCA Brands"
+                    },
+                    "links_title_url": {
+                      "name": "List Title Link",
+                      "type": "string",
+                      "default_value": null,
+                      "value": ""
+                    },
+                    "links_stock": {
+                      "name": "List Style",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "none",
+                      "values": [
+                        {
+                          "id": "none",
+                          "label": "None"
+                        },
+                        {
+                          "id": "mobile_menu",
+                          "label": "Mobile Menu"
+                        },
+                        {
+                          "id": "policies",
+                          "label": "Policies"
+                        }
+                      ]
+                    },
+                    "header_tag": {
+                      "name": "Header Tag",
+                      "type": "string",
+                      "default_value": "strong",
+                      "value": "strong",
+                      "values": [
+                        {
+                          "id": "strong",
+                          "label": "STRONG"
+                        },
+                        {
+                          "id": "h3",
+                          "label": "H3"
+                        }
+                      ]
+                    },
+                    "links_display": {
+                      "name": "List Display",
+                      "type": "string",
+                      "default_value": "block",
+                      "value": "dropdown",
+                      "values": [
+                        {
+                          "id": "inline",
+                          "label": "Inline"
+                        },
+                        {
+                          "id": "block",
+                          "label": "Block"
+                        },
+                        {
+                          "id": "dropdown",
+                          "label": "Drop Down"
+                        }
+                      ]
+                    },
+                    "list_style": {
+                      "name": "List Style",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "none",
+                      "values": [
+                        {
+                          "id": "none",
+                          "label": "No Style"
+                        },
+                        {
+                          "id": "footer",
+                          "label": "Footer"
+                        },
+                        {
+                          "id": "header",
+                          "label": "Header"
+                        },
+                        {
+                          "id": "navigation",
+                          "label": "Navigation Bar"
+                        },
+                        {
+                          "id": "menu",
+                          "label": "Menu Bar"
+                        }
+                      ]
+                    },
+                    "footer_link": {
+                      "name": "Footer Link",
+                      "type": "string",
+                      "default_value": null,
+                      "value": ""
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "brands-list",
+                  "minColumnWidth": 0,
+                  "customAdmin": true,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "rowId": "row_415",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_416",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_417",
+                  "moduleType": "social_links",
+                  "title": "Social Links",
+                  "options": {
+                    "display_title": {
+                      "name": "Display Title",
+                      "type": "string",
+                      "default_value": "Stay Connected",
+                      "value": "Stay Connected"
+                    },
+                    "hide_heading": {
+                      "name": "Hide Heading",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": true
+                    },
+                    "header_tag": {
+                      "name": "Header Tag",
+                      "type": "select",
+                      "default_value": "strong",
+                      "value": "strong",
+                      "possible_values": [
+                        {
+                          "value": "strong",
+                          "label": "STRONG"
+                        },
+                        {
+                          "value": "h3",
+                          "label": "H3"
+                        }
+                      ]
+                    },
+                    "social_style": {
+                      "name": "Social Icon Style",
+                      "type": "select",
+                      "possible_values": [
+                        {
+                          "value": "style-circle",
+                          "label": "Circle"
+                        },
+                        {
+                          "value": "style-square",
+                          "label": "Square"
+                        },
+                        {
+                          "value": "style-icon",
+                          "label": "Icon"
+                        }
+                      ],
+                      "default_value": "style-circle",
+                      "value": "style-square"
+                    },
+                    "ebay_style": {
+                      "name": "eBay Icon Style",
+                      "type": "select",
+                      "possible_values": [
+                        {
+                          "value": "ebay-bag",
+                          "label": "Shopping Bag Icon"
+                        },
+                        {
+                          "value": "ebay-text",
+                          "label": "Text"
+                        }
+                      ],
+                      "default_value": "ebay-bag",
+                      "value": "ebay-bag"
+                    },
+                    "layout_style": {
+                      "name": "Layout Style",
+                      "type": "select",
+                      "possible_values": [
+                        {
+                          "value": "layout-inline",
+                          "label": "Inline"
+                        },
+                        {
+                          "value": "layout-stack",
+                          "label": "Stacked"
+                        }
+                      ],
+                      "default_value": "layout-inline",
+                      "value": "layout-inline"
+                    },
+                    "layout_size": {
+                      "name": "Size",
+                      "type": "select",
+                      "possible_values": [
+                        {
+                          "value": "size-small",
+                          "label": "Small"
+                        },
+                        {
+                          "value": "size-medium",
+                          "label": "Medium"
+                        },
+                        {
+                          "value": "size-large",
+                          "label": "Large"
+                        }
+                      ],
+                      "default_value": "size-small",
+                      "value": "size-small"
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_27",
+      "htmlId": "",
+      "htmlClasses": "use-padding",
+      "contentWidth": "wide",
+      "backgroundColor": "#000000",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_312",
+          "rowLayout": "8_4",
+          "htmlId": "",
+          "htmlClasses": "footer-meta",
+          "columns": [
+            {
+              "columnId": "column_313",
+              "columnWidth": 8,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_317",
+                  "moduleType": "custom_html",
+                  "title": "Custom HTML",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<p><span id=\"cache124\">&copy;2026 FCA US LLC. All Rights Reserved.</span></p><p><span id=\"cache126\">Chrysler, Dodge, Jeep, Ram, Mopar</span><span id=\"cache128\">&nbsp;and SRT are registered trademarks of FCA US LLC.</span></p><p><span id=\"cache130\">ALFA ROMEO and FIAT are registered trademarks of FCA Group Marketing S.p.A., used with permission.</span></p>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            },
+            {
+              "columnId": "column_314",
+              "columnWidth": 4,
+              "htmlId": "",
+              "htmlClasses": "",
+              "moduleArrangement": "block",
+              "textAlignment": "text-right",
+              "modules": [
+                {
+                  "moduleId": "module_320",
+                  "moduleType": "powered_by_rp",
+                  "title": "Powered By RP",
+                  "options": {
+                    "rp_logo": {
+                      "name": "RP Logo Color",
+                      "type": "select",
+                      "default_value": "red",
+                      "value": "red",
+                      "possible_values": [
+                        {
+                          "value": "red",
+                          "label": "Red"
+                        },
+                        {
+                          "value": "grey",
+                          "label": "Grey"
+                        },
+                        {
+                          "value": "none",
+                          "label": "None"
+                        }
+                      ]
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

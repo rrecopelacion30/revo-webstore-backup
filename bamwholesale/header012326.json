@@ -1,0 +1,911 @@
+{
+  "pageId": "header",
+  "pageName": "Header",
+  "pageType": null,
+  "layoutEnabled": true,
+  "moduleCategories": [
+    "header",
+    "images",
+    "text",
+    "search",
+    "categories_products",
+    "forms",
+    "navigation",
+    "footer"
+  ],
+  "VFSPath": "layouts/header.json",
+  "requiredModules": [],
+  "scripts": null,
+  "sections": [
+    {
+      "sectionId": "section_2",
+      "htmlId": "",
+      "htmlClasses": "themeLiveChat",
+      "contentWidth": "normal",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_3",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_4",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_1",
+                  "moduleType": "custom_html",
+                  "title": "Live Chat Script",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<script>    window.__lc = window.__lc || {};\n    window.__lc.license = 15758433;\n    ;(function(n,t,c){function i(n){return e._h?e._h.apply(null,n):e._q.push(n)}var e={_q:[],_h:null,_v:\"2.0\",on:function(){i([\"on\",c.call(arguments)])},once:function(){i([\"once\",c.call(arguments)])},off:function(){i([\"off\",c.call(arguments)])},get:function(){if(!e._h)throw new Error(\"[LiveChatWidget] You can't use getters before load.\");return i([\"get\",c.call(arguments)])},call:function(){i([\"call\",c.call(arguments)])},init:function(){var n=t.createElement(\"script\");n.async=!0,n.type=\"text/javascript\",n.src=\"https://cdn.livechatinc.com/tracking.js\",t.head.appendChild(n)}};!n.__lc.asyncInit&&e.init(),n.LiveChatWidget=n.LiveChatWidget||e}(window,document,[].slice))\n</script>\n<noscript><a href=\"https://www.livechat.com/chat-with/15758433/\" rel=\"nofollow\">Chat with us</a>, powered by <a href=\"https://www.livechat.com/?welcome\" rel=\"noopener nofollow\" target=\"_blank\">LiveChat</a></noscript>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_2",
+                  "moduleType": "custom_html",
+                  "title": "Email Signup Popup",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<script type=\"text/javascript\" src=\"https://confirmsubscription.com/h/j/A23E9FE80BB7A163/77DB96F9FBF8BD52/popup.js\"></script>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "d-none",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_1",
+      "htmlId": "",
+      "htmlClasses": "main_header_top",
+      "contentWidth": "wide",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "desktop-only",
+      "rows": [
+        {
+          "rowId": "row_2",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_3",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_5",
+                  "moduleType": "store_logo",
+                  "title": "Store Logo",
+                  "options": {
+                    "logo_dark_background": {
+                      "name": "Use Dark Background Logo",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": true
+                    },
+                    "logo_height": {
+                      "name": "Logo Height (px)",
+                      "type": "string",
+                      "default_value": "",
+                      "value": ""
+                    },
+                    "logo_width": {
+                      "name": "Logo Width (px)",
+                      "type": "string",
+                      "default_value": "",
+                      "value": ""
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_6",
+                  "moduleType": "links_list",
+                  "title": "Nav List",
+                  "options": {
+                    "links": {
+                      "name": "Links",
+                      "type": "object",
+                      "default_value": [],
+                      "value": [
+                        {
+                          "linkId": "link_327",
+                          "text": "My Account",
+                          "url": "account/login",
+                          "target": "",
+                          "icon": "",
+                          "type": "direct"
+                        },
+                        {
+                          "linkId": "link_328",
+                          "text": "Contact Us",
+                          "url": "contact-us",
+                          "target": "",
+                          "icon": "",
+                          "type": "direct"
+                        },
+                        {
+                          "linkId": "link_329",
+                          "text": "Track Order",
+                          "url": "account/order-status",
+                          "target": "",
+                          "icon": "",
+                          "type": "direct"
+                        },
+                        {
+                          "linkId": "link_330",
+                          "text": "Returns",
+                          "url": "/policies/returns",
+                          "target": "",
+                          "icon": "",
+                          "type": "direct"
+                        }
+                      ]
+                    },
+                    "links_image": {
+                      "name": "List Image",
+                      "type": "image_upload",
+                      "default_value": null,
+                      "value": ""
+                    },
+                    "links_title": {
+                      "name": "List Title",
+                      "type": "string",
+                      "default_value": null,
+                      "value": ""
+                    },
+                    "links_title_url": {
+                      "name": "List Title Link",
+                      "type": "string",
+                      "default_value": null,
+                      "value": ""
+                    },
+                    "links_stock": {
+                      "name": "List Style",
+                      "type": "select",
+                      "default_value": "none",
+                      "value": "none",
+                      "possible_values": [
+                        {
+                          "value": "none",
+                          "label": "None"
+                        },
+                        {
+                          "value": "mobile_menu",
+                          "label": "Mobile Menu"
+                        },
+                        {
+                          "value": "policies",
+                          "label": "Policies"
+                        }
+                      ]
+                    },
+                    "header_tag": {
+                      "name": "Header Tag",
+                      "type": "select",
+                      "default_value": "strong",
+                      "value": "strong",
+                      "possible_values": [
+                        {
+                          "value": "strong",
+                          "label": "STRONG"
+                        },
+                        {
+                          "value": "h3",
+                          "label": "H3"
+                        }
+                      ]
+                    },
+                    "links_display": {
+                      "name": "List Display",
+                      "type": "select",
+                      "default_value": "block",
+                      "value": "block",
+                      "possible_values": [
+                        {
+                          "value": "inline",
+                          "label": "Inline"
+                        },
+                        {
+                          "value": "block",
+                          "label": "Block"
+                        },
+                        {
+                          "value": "dropdown",
+                          "label": "Drop Down"
+                        }
+                      ]
+                    },
+                    "list_style": {
+                      "name": "List Style",
+                      "type": "select",
+                      "default_value": "none",
+                      "value": "none",
+                      "possible_values": [
+                        {
+                          "value": "none",
+                          "label": "No Style"
+                        },
+                        {
+                          "value": "footer",
+                          "label": "Footer"
+                        },
+                        {
+                          "value": "header",
+                          "label": "Header"
+                        },
+                        {
+                          "value": "navigation",
+                          "label": "Navigation Bar"
+                        },
+                        {
+                          "value": "menu",
+                          "label": "Menu Bar"
+                        }
+                      ]
+                    },
+                    "footer_link": {
+                      "name": "Footer Link",
+                      "type": "string",
+                      "default_value": null,
+                      "value": ""
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": true,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_8",
+                  "moduleType": "bulk_product_upload",
+                  "title": "Bulk Order",
+                  "options": {
+                    "button_text": {
+                      "name": "Modal Button Label",
+                      "type": "string",
+                      "default_value": "Add to Cart",
+                      "value": "Add to Cart"
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_7",
+      "htmlId": "",
+      "htmlClasses": "main_header_logo",
+      "contentWidth": "wide",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "desktop-only",
+      "rows": [
+        {
+          "rowId": "row_9",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_11",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_12",
+                  "moduleType": "custom_html",
+                  "title": "Hamburger",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"desk_hamburger_menu_wrapper\"> \n    <div class=\"desk_hamburger_menu_lines\"> \n        <div class=\"desk_hamburger_menu_span\">\n            <svg xmlns=\"http://www.w3.org/2000/svg\" height=\"1em\" viewBox=\"0 0 448 512\"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d=\"M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z\"/></svg>\n        </div> \n    </div> \n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_15",
+                  "moduleType": "search_bar",
+                  "title": "Search Bar",
+                  "options": {
+                    "placeholder": {
+                      "name": "Placeholder Text",
+                      "type": "string",
+                      "default_value": "Part Number(s), Keywords, or VIN",
+                      "value": "Part Number(s), Keywords, or VIN"
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_13",
+                  "moduleType": "car_selected",
+                  "title": "Current Car Selected",
+                  "options": {
+                    "not_selected_text": {
+                      "name": "No Vehicle Selected Text",
+                      "type": "string",
+                      "default_value": null,
+                      "value": ""
+                    },
+                    "use_svg_icons": {
+                      "name": "Use SVG Icons",
+                      "type": "select",
+                      "possible_values": [
+                        {
+                          "label": "Garage Icon",
+                          "value": "garage_icon"
+                        },
+                        {
+                          "label": "Car Icon",
+                          "value": "car_icon"
+                        }
+                      ],
+                      "default_value": "garage_icon",
+                      "value": "car_icon"
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_18",
+                  "moduleType": "cart_button",
+                  "title": "Cart Button",
+                  "options": {
+                    "cart_label": {
+                      "name": "Cart Label",
+                      "type": "string",
+                      "default_value": "Cart",
+                      "value": "Cart"
+                    },
+                    "use_svg_icons": {
+                      "name": "Use SVG Icons",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_7",
+                  "moduleType": "custom_html",
+                  "title": "Triangle",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"themeTriangle\"></div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_19",
+      "htmlId": "",
+      "htmlClasses": "left_panel",
+      "contentWidth": "normal",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_20",
+          "rowLayout": 12,
+          "htmlId": "",
+          "htmlClasses": "left_panel_wrapper",
+          "columns": [
+            {
+              "columnId": "column_21",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_22",
+                  "moduleType": "custom_html",
+                  "title": "Left Panel Header",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"left_panel_header_wrapper\">\n            <ul class=\"left_panel_header_list\">\n                <li class=\"left_panel_header_item\">\n                    <a href=\"/account/login\" class=\"left_panel_header_link\">\n                        Sign in or Create Account\n                    </a>\n                </li>\n                <li class=\"left_panel_header_item\">\n                    <a href=\"/account/order-status\" class=\"left_panel_header_link\">\n                        Track Order\n                    </a>\n                </li>\n                <li class=\"left_panel_header_item\">\n                    <a href=\"/contact-us\" class=\"left_panel_header_link\">\n                        Contact Us\n                    </a>\n                </li>\n<li class=\"left_panel_header_item\">\n                    <a href=\"javascript:openVehiclePicker();\" class=\"left_panel_header_link\">\n                        Select Vehicle\n                    </a>\n                </li>\n            </ul>\n            <div class=\"left_panel_child_header\">\n                <a href=\"#\" class=\"left_panel_child_back_button\">Back</a>\n                <h4 class=\"left_panel_child_title\">Accessories</h4>\n            </div>   \n        </div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "left_panel_header",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_23",
+                  "moduleType": "custom_html",
+                  "title": "Left Panel Content",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div id=\"mobile-headerv2\">\n    <div id=\"mobile-menu\">\n        <ul class=\"mobile-nav main\">\n            <li class=\"mobile-nav-item has-child\">\n                <a href=\"#\" class=\"mobile-dropdown-toggle\">\n                    Shop By Make\n                    <em class=\"fa fa-chevron-down\" role=\"presentation\"></em>\n                </a>\n                <div class=\"mobile-mega-menu menu-child\">\n                    <ul class=\"mobile-mega-wrap\">\n                      <li class=\"mobile-nav-item mobile-menu-wrap\">\n                            <a href=\"v-chrysler\" class=\"mobile-dropdown-toggle-child\">\n                                Chrysler\n                            </a>\n                        </li>\n                      <li class=\"mobile-nav-item mobile-menu-wrap\">\n                            <a href=\"v-dodge\" class=\"mobile-dropdown-toggle-child\">\n                                Dodge\n                            </a>\n                        </li>                      <li class=\"mobile-nav-item mobile-menu-wrap\">\n                            <a href=\"v-fiat\" class=\"mobile-dropdown-toggle-child\">\n                                Fiat\n                            </a>\n                        </li>                      <li class=\"mobile-nav-item mobile-menu-wrap\">\n                            <a href=\"v-jeep\" class=\"mobile-dropdown-toggle-child\">\n                                Jeep\n                            </a>\n                        </li>                      <li class=\"mobile-nav-item mobile-menu-wrap\">\n                            <a href=\"v-mazda\" class=\"mobile-dropdown-toggle-child\">\n                                Mazda\n                            </a>\n                        </li>                      <li class=\"mobile-nav-item mobile-menu-wrap\">\n                            <a href=\"v-ram\" class=\"mobile-dropdown-toggle-child\">\n                                Ram Truck\n                            </a>\n                        </li>                      <li class=\"mobile-nav-item mobile-menu-wrap\">\n                            <a href=\"v-scion\" class=\"mobile-dropdown-toggle-child\">\n                                Scion\n                            </a>\n                        </li>                      <li class=\"mobile-nav-item mobile-menu-wrap\">\n                            <a href=\"v-subaru\" class=\"mobile-dropdown-toggle-child\">\n                                Subaru\n                            </a>\n                        </li>                      <li class=\"mobile-nav-item mobile-menu-wrap\">\n                            <a href=\"v-toyota\" class=\"mobile-dropdown-toggle-child\">\n                                Toyota\n                            </a>\n                        </li>                      <li class=\"mobile-nav-item mobile-menu-wrap\">\n                            <a href=\"v-volkswagen\" class=\"mobile-dropdown-toggle-child\">\n                                Volkswagen\n                            </a>\n                        </li>\n                    </ul>\n                </div>\n            </li>           \n            <li class=\"mobile-nav-item has-child\">\n                <a href=\"#\" class=\"mobile-dropdown-toggle\">\n                    Parts\n                    <em class=\"fa fa-chevron-down\" role=\"presentation\"></em>\n                </a>\n                <div class=\"mobile-mega-menu menu-child\">\n                    <ul class=\"mobile-mega-wrap\">\n                        <li class=\"mobile-nav-item mobile-menu-wrap has-child\">\n                            <a href=\"#\" class=\"mobile-dropdown-toggle-child\">\n                                Air Intake & Fuel Delivery<em class=\"fa fa-chevron-down\" role=\"presentation\"></em>\n                            </a>\n                            <ul class=\"menu-wrap\">\n                                <li class=\"mobile-nav-item\">\n                                    <a href=\"/fuel-tanks\"> Fuel Tanks</a>\n                                </li>\n                                <li class=\"mobile-nav-item\">\n                                    <a href=\"/air-intake-systems\">Air Intake Systems</a>\n                                </li>\n                                <li class=\"mobile-nav-item\">\n                                    <a href=\"/fuel-injectors\">Fuel Injectors</a>\n                                </li>\n                                <li class=\"mobile-nav-item\">\n                                    <a href=\"/air-cleaner-assemblies\">Air Cleaner Assemblies</a>\n                                </li>\n                                <li class=\"mobile-nav-item\">\n                                    <a href=\"/fuel-pumps\">Fuel Pumps</a>\n                                </li>\n                            </ul>\n                        </li>\n                        <li class=\"mobile-nav-item mobile-menu-wrap has-child\">\n                            <a href=\"#\" class=\"mobile-dropdown-toggle-child\">\n                                Body Parts<em class=\"fa fa-chevron-down\" role=\"presentation\"></em>\n                            </a>\n                            <ul class=\"menu-wrap\">\n                                <li class=\"mobile-nav-item\">\n                                    <a href=\"/body-parts\"> Body Parts</a>\n                                </li>\n                                <li class=\"mobile-nav-item\">\n                                    <a href=\"/fenders\">Fenders</a>\n                                </li>\n                                <li class=\"mobile-nav-item\">\n                                    <a href=\"/front-masks\">Front Masks</a>\n                                </li>\n                                <li class=\"mobile-nav-item\">\n                                    <a href=\"/mouldings-trim\">Mouldings and Trim</a>\n                                </li>\n                            </ul>\n                        </li>\n                        <li class=\"mobile-nav-item mobile-menu-wrap has-child\">\n                            <a href=\"#\" class=\"mobile-dropdown-toggle-child\">\n                                Brakes<em class=\"fa fa-chevron-down\" role=\"presentation\"></em>\n                            </a>\n                            <ul class=\"menu-wrap\">\n                                <li class=\"mobile-nav-item\">\n                                    <a href=\"/brake-calipers\">Brake Calipers</a>\n                                </li>\n                                <li class=\"mobile-nav-item\">\n                                    <a href=\"/brake-pads\">Brake Pads</a>\n                                </li>\n                                <li class=\"mobile-nav-item\">\n                                    <a href=\"/brake-drums\">Brake Drums</a>\n                                </li>\n                                <li class=\"mobile-nav-item\">\n                                    <a href=\"/brake-rotors\">Brake Rotors</a>\n                                </li>\n                                <li class=\"mobile-nav-item\">\n                                    <a href=\"/brake-shoes\">Brake Shoes</a>\n                                </li> \n                            </ul>\n                        </li>\n                        <li class=\"mobile-nav-item mobile-menu-wrap has-child\">\n                            <a href=\"#\" class=\"mobile-dropdown-toggle-child\">\n                                Cooling Systems<em class=\"fa fa-chevron-down\" role=\"presentation\"></em>\n                            </a>\n                            <ul class=\"menu-wrap\">\n                            \t<li class=\"mobile-nav-item\">\n                                    <a href=\"cooling-systems\">Cooling Systems</a>\n                                </li>\n                                <li class=\"mobile-nav-item\">\n                                    <a href=\"hoses-clamps\">Hoses & Clamps</a>\n                                </li>\n                                <li class=\"mobile-nav-item\">\n                                    <a href=\"radiators\">Radiators</a>\n                                </li>\n                                <li class=\"mobile-nav-item\">\n                                    <a href=\"radiator-hoses\">Radiator Hoses</a>\n                                </li>\n                                <li class=\"mobile-nav-item\">\n                                    <a href=\"thermostats\">Thermostats & Parts</a>\n                                </li>\n                                <li class=\"mobile-nav-item\">\n                                    <a href=\"water-pumps\">Water Pumps</a>\n                                </li>\n                                <li class=\"mobile-nav-item\">\n                                    <a href=\"oil-coolers\">Oil Coolers</a>\n                                </li>\n                            </ul>\n                        </li>\n                        <li class=\"mobile-nav-item mobile-menu-wrap has-child\">\n                            <a href=\"#\" class=\"mobile-dropdown-toggle-child\">\n                                Electrical<em class=\"fa fa-chevron-down\" role=\"presentation\"></em>\n                            </a>\n                            <ul class=\"menu-wrap\">\n                            \t<li class=\"mobile-nav-item\">\n                                    <a href=\"alternators\">Alternators</a>\n                                </li>\n                                <li class=\"mobile-nav-item\">\n                                    <a href=\"electronics\">Electronics</a>\n                                </li>\n                                <li class=\"mobile-nav-item\">\n                                    <a href=\"fuses\">Fuses</a>\n                                </li>\n                                <li class=\"mobile-nav-item\">\n                                    <a href=\"generators\">Generators</a>\n                                </li>\n                                <li class=\"mobile-nav-item\">\n                                    <a href=\"ignition\">Ignition Parts</a>\n                                </li>\n                                <li class=\"mobile-nav-item\">\n                                    <a href=\"spark-plugs\">Spark Plugs</a>\n                                </li>\n                                <li class=\"mobile-nav-item\">\n                                    <a href=\"starter-solenoids\">Starter Solenoids</a>\n                                </li>\n                                <li class=\"mobile-nav-item\">\n                                    <a href=\"starters\">Starters</a>\n                                </li>\n                                <li class=\"mobile-nav-item\">\n                                    <a href=\"switches-controls\">Switches & Controls</a>\n                                </li>\n                            </ul>\n                        </li>\n                        <li class=\"mobile-nav-item mobile-menu-wrap has-child\">\n                            <a href=\"#\" class=\"mobile-dropdown-toggle-child\">\n                                Engine Components<em class=\"fa fa-chevron-down\" role=\"presentation\"></em>\n                            </a>\n                            <ul class=\"menu-wrap\">\n                                <li class=\"mobile-nav-item\">\n                                    <a href=\"engine-parts\">Engine Parts</a>\n                                </li>\n                                <li class=\"mobile-nav-item\">\n                                    <a href=\"camshafts-lifters\">Camshafts, Lifters & Parts</a>\n                                </li>\n                                <li class=\"mobile-nav-item\">\n                                    <a href=\"fan-parts\">Fan Parts</a>\n                                </li>\n                                <li class=\"mobile-nav-item\">\n                                    <a href=\"motor-mounts\">Motor Mounts</a>\n                                </li>\n                                <li class=\"mobile-nav-item\">\n                                    <a href=\"oxygen-sensors\">Oxygen Sensors</a>\n                                </li>\n                                <li class=\"mobile-nav-item\">\n                                    <a href=\"pulleys\">Pulleys</a>\n                                </li>\n                                <li class=\"mobile-nav-item\">\n                                    <a href=\"serpentine-belts\">Serpentine Belts</a>\n                                </li>\n                                <li class=\"mobile-nav-item\">\n                                    <a href=\"timing-belts\">Timing Belts</a>\n                                </li>\n                                <li class=\"mobile-nav-item\">\n                                    <a href=\"valve-covers\">Valve Covers</a>\n                                </li>\n                                <li class=\"mobile-nav-item\">\n                                    <a href=\"belts-pulleys-brackets\">Belts, Pulleys & Brackets</a>\n                                </li>\n                                <li class=\"mobile-nav-item\">\n                                    <a href=\"cylinder-heads\">Cylinder Heads & Parts</a>\n                                </li>\n                            </ul>\n                        </li>\n                        <li class=\"mobile-nav-item mobile-menu-wrap has-child\">\n                            <a href=\"#\" class=\"mobile-dropdown-toggle-child\">\n                                Filters<em class=\"fa fa-chevron-down\" role=\"presentation\"></em>\n                            </a>\n                            <ul class=\"menu-wrap\">\n                                <li class=\"mobile-nav-item\">\n                                    <a href=\"air-filters\">Air Filters</a>\n                                </li>\n                                <li class=\"mobile-nav-item\">\n                                    <a href=\"cabin-air-filters\">Cabin Air Filters</a>\n                                </li>\n                                <li class=\"mobile-nav-item\">\n                                    <a href=\"filters\">Filters</a>\n                                </li>\n                                <li class=\"mobile-nav-item\">\n                                    <a href=\"fuel-filters\">Fuel Filters</a>\n                                </li>\n                                <li class=\"mobile-nav-item\">\n                                    <a href=\"oil-filters\">Oil Filters</a>\n                                </li>\n                            </ul>\n                        </li>\n                        <li class=\"mobile-nav-item mobile-menu-wrap has-child\">\n                            <a href=\"#\" class=\"mobile-dropdown-toggle-child\">\n                                Gaskets<em class=\"fa fa-chevron-down\" role=\"presentation\"></em>\n                            </a>\n                            <ul class=\"menu-wrap\">\n                                <li class=\"mobile-nav-item\">\n                                    <a href=\"oil-pan-gaskets\">Oil Pan Gaskets</a>\n                                </li>\n                                <li class=\"mobile-nav-item\">\n                                    <a href=\"intake-gaskets\">Intake Gaskets</a>\n                                </li>\n                                <li class=\"mobile-nav-item\">\n                                    <a href=\"exhaust-gaskets\">Exhaust Gaskets</a>\n                                </li>\n                                <li class=\"mobile-nav-item\">\n                                    <a href=\"full-set-gaskets\">Full Set Gaskets</a>\n                                </li>\n                                <li class=\"mobile-nav-item\">\n                                    <a href=\"gaskets\">Gaskets</a>\n                                </li>\n                            </ul>\n                        </li>\n                        <li class=\"mobile-nav-item mobile-menu-wrap has-child\">\n                            <a href=\"#\" class=\"mobile-dropdown-toggle-child\">\n                                Lighting<em class=\"fa fa-chevron-down\" role=\"presentation\"></em>\n                            </a>\n                            <ul class=\"menu-wrap\">\n                                <li class=\"mobile-nav-item\">\n                                    <a href=\"brake-lights\">Brake Lights</a>\n                                </li>\n                                <li class=\"mobile-nav-item\">\n                                    <a href=\"tail-lights\">Tail Lights</a>\n                                </li>\n                                <li class=\"mobile-nav-item\">\n                                    <a href=\"taillight-bulbs\">Tail Light Bulbs</a>\n                                </li>\n                                <li class=\"mobile-nav-item\">\n                                    <a href=\"headlights\">Headlights</a>\n                                </li>\n                                <li class=\"mobile-nav-item\">\n                                    <a href=\"headlight-bulbs\">Headlight Bulbs</a>\n                                </li>\n                                <li class=\"mobile-nav-item\">\n                                    <a href=\"instrument-panel\">Instrument Panel</a>\n                                </li>\n                                <li class=\"mobile-nav-item\">\n                                    <a href=\"light-assemblies\">Light Assemblies</a>\n                                </li>\n                                <li class=\"mobile-nav-item\">\n                                    <a href=\"turn-signals\">Turn Signals</a>\n                                </li>\n                                <li class=\"mobile-nav-item\">\n                                    <a href=\"side-marker-lights\">Side Marker Lights</a>\n                                </li>\n                            </ul>\n                        </li>\n                        <li class=\"mobile-nav-item mobile-menu-wrap has-child\">\n                            <a href=\"#\" class=\"mobile-dropdown-toggle-child\">\n                                Suspension & Steering<em class=\"fa fa-chevron-down\" role=\"presentation\"></em>\n                            </a>\n                            <ul class=\"menu-wrap\">\n                                <li class=\"mobile-nav-item\">\n                                    <a href=\"control-arms\">Control Arms & Parts</a>\n                                </li>\n                                <li class=\"mobile-nav-item\">\n                                    <a href=\"coil-springs\">Coil Springs</a>\n                                </li>\n                                <li class=\"mobile-nav-item\">\n                                    <a href=\"lift-supports\">Lift Supports</a>\n                                </li>\n                                <li class=\"mobile-nav-item\">\n                                    <a href=\"power-steering-belts\">Power Steering Belts</a>\n                                </li>\n                                <li class=\"mobile-nav-item\">\n                                    <a href=\"shocks-struts\">Shocks & Struts</a>\n                                </li>\n                                <li class=\"mobile-nav-item\">\n                                    <a href=\"steering\">Steering Parts</a>\n                                </li>\n                                <li class=\"mobile-nav-item\">\n                                    <a href=\"sway-bars\">Sway Bars</a>\n                                </li>\n                                <li class=\"mobile-nav-item\">\n                                    <a href=\"tie-rod-linkages\">Tie Rod Linkages</a>\n                                </li>\n                            </ul>\n                        </li>\n                        <li class=\"mobile-nav-item mobile-menu-wrap has-child\">\n                            <a href=\"#\" class=\"mobile-dropdown-toggle-child\">\n                                Wheels, Tires & Parts<em class=\"fa fa-chevron-down\" role=\"presentation\"></em>\n                            </a>\n                            <ul class=\"menu-wrap\">\n                                <li class=\"mobile-nav-item\">\n                                    <a href=\"wheel-accessories\">Wheel Accessories</a>\n                                </li>\n                                <li class=\"mobile-nav-item\">\n                                    <a href=\"wheel-center-caps\">Wheel Center Caps</a>\n                                </li>\n                                <li class=\"mobile-nav-item\">\n                                    <a href=\"wheel-locks\">Wheel Locks</a>\n                                </li>\n                                <li class=\"mobile-nav-item\">\n                                    <a href=\"wheel-lugs\">Wheel Lugs</a>\n                                </li>\n                                <li class=\"mobile-nav-item\">\n                                    <a href=\"wheel-hubs-bearings\">Wheel Hubs & Bearings</a>\n                                </li>\n                                <li class=\"mobile-nav-item\">\n                                    <a href=\"wheels\">Wheels</a>\n                                </li>\n                                <li class=\"mobile-nav-item\">\n                                    <a href=\"tire-pressure-monitoring-systems\">Tire Pressure Monitoring System</a>\n                                </li>\n                            </ul>\n                        </li>\n                        <li class=\"mobile-nav-item mobile-menu-wrap has-child\">\n                            <a href=\"#\" class=\"mobile-dropdown-toggle-child\">\n                                Wiper System<em class=\"fa fa-chevron-down\" role=\"presentation\"></em>\n                            </a>\n                            <ul class=\"menu-wrap\">\n                                <li class=\"mobile-nav-item\">\n                                    <a href=\"rear-wiper-blades\">Rear Wiper Blades</a>\n                                </li>\n                                <li class=\"mobile-nav-item\">\n                                    <a href=\"windshield-washer-pumps\">Washer Pumps</a>\n                                </li>\n                                <li class=\"mobile-nav-item\">\n                                    <a href=\"windshield-wiper-arms\">Wiper Arms</a>\n                                </li>\n                                <li class=\"mobile-nav-item\">\n                                    <a href=\"windshield-wiper-refills\">Windshield Wiper Refills</a>\n                                </li>\n                                <li class=\"mobile-nav-item\">\n                                    <a href=\"wiper-blades\">Wiper Blades</a>\n                                </li>\n                            </ul>\n                        </li>\n                    </ul>\n                </div>\n            </li>\n            <li class=\"mobile-nav-item has-child\">\n                <a href=\"#\" class=\"mobile-dropdown-toggle\">\n                    Accessories\n                    <em class=\"fa fa-chevron-down\" role=\"presentation\"></em>\n                </a>\n                <div class=\"mobile-mega-menu menu-child\">\n                    <ul class=\"mobile-mega-wrap\">\n                        <li class=\"mobile-nav-item mobile-menu-wrap has-child\">\n                            <a href=\"#\" class=\"mobile-dropdown-toggle-child\">\n                                Interior Accessories<em class=\"fa fa-chevron-down\" role=\"presentation\"></em>\n                            </a>\n                            <ul class=\"menu-wrap\">\n                                <li class=\"mobile-nav-item\">\n                                    <a href=\"/trim\">Trim</a>\n                                </li>\n                                <li class=\"mobile-nav-item\">\n                                    <a href=\"cargo\">Cargo Accessories</a>\n                                </li>\n                                <li class=\"mobile-nav-item\">\n                                    <a href=\"cargo-organizers\">Cargo Organizers</a>\n                                </li>\n                                <li class=\"mobile-nav-item\">\n                                    <a href=\"cargo-trays\">Cargo Trays</a>\n                                </li>\n                                <li class=\"mobile-nav-item\">\n                                    <a href=\"cup-holders\">Cup Holders</a>\n                                </li>\n                                <li class=\"mobile-nav-item\">\n                                    <a href=\"door-panels\">Door Panels & Parts</a>\n                                </li>\n                                <li class=\"mobile-nav-item\">\n                                    <a href=\"door-sills\">Door Sills</a>\n                                </li>\n                                <li class=\"mobile-nav-item\">\n                                    <a href=\"entertainment\">Entertainment</a>\n                                </li>\n                                <li class=\"mobile-nav-item\">\n                                    <a href=\"interior-mirrors\">Interior Mirrors</a>\n                                </li>\n                                <li class=\"mobile-nav-item\">\n                                    <a href=\"pedal-kits\">Pedal Kits</a>\n                                </li>\n                                <li class=\"mobile-nav-item\">\n                                    <a href=\"shift-knobs\">Shift Knobs</a>\n                                </li>\n                                <li class=\"mobile-nav-item\">\n                                    <a href=\"sun-shades\">Sun Shades</a>\n                                </li>\n                                <li class=\"mobile-nav-item\">\n                                    <a href=\"sun-visors\">Sun Visors</a>\n                                </li>\n                            </ul>\n                        </li>\n                        <li class=\"mobile-nav-item mobile-menu-wrap has-child\">\n                            <a href=\"#\" class=\"mobile-dropdown-toggle-child\">\n                                Exterior Accessories<em class=\"fa fa-chevron-down\" role=\"presentation\"></em>\n                            </a>\n                            <ul class=\"menu-wrap\">\n                                <li class=\"mobile-nav-item\">\n                                    <a href=\"bumpers\">Bumpers</a>\n                                </li>\n                                <li class=\"mobile-nav-item\">\n                                    <a href=\"car-covers\">Car Covers</a>\n                                </li>\n                                <li class=\"mobile-nav-item\">\n                                    <a href=\"door-handles\">Door Handles</a>\n                                </li>\n                                <li class=\"mobile-nav-item\">\n                                    <a href=\"exterior-mirrors\">Exterior Mirrors</a>\n                                </li>\n                                <li class=\"mobile-nav-item\">\n                                    <a href=\"floor-mats-carpets\">Floor Mats & Carpets</a>\n                                </li>\n                                <li class=\"mobile-nav-item\">\n                                    <a href=\"grilles\">Grilles</a>\n                                </li>\n                                <li class=\"mobile-nav-item\">\n                                    <a href=\"mud-guards\">Mud Guards</a>\n                                </li>\n                                <li class=\"mobile-nav-item\">\n                                    <a href=\"roof-racks\">Roof Racks </a>\n                                </li>\n                                <li class=\"mobile-nav-item\">\n                                    <a href=\"splash-guards-mud-flaps\">Splash Guards & Mud Flaps</a>\n                                </li>\n                                <li class=\"mobile-nav-item\">\n                                    <a href=\"step-rails\">Step Rails</a>\n                                </li>\n                                <li class=\"mobile-nav-item\">\n                                    <a href=\"spoilers-wings\">Spoilers & Wings</a>\n                                </li>\n                                <li class=\"mobile-nav-item\">\n                                    <a href=\"tire-accessories\">Tire Accessories</a>\n                                </li>\n                                <li class=\"mobile-nav-item\">\n                                    <a href=\"wind-deflectors\">Wind Deflectors</a>\n                                </li>\n                            </ul>\n                        </li>\n                    </ul>\n                </div>\n            </li>\n            <li class=\"mobile-nav-item has-child\">\n                <a href=\"#\" class=\"mobile-dropdown-toggle\">\n                    JL Accessories\n                    <em class=\"fa fa-chevron-down\" role=\"presentation\"></em>\n                </a>\n                <div class=\"mobile-mega-menu menu-child\">\n                    <ul class=\"mobile-mega-wrap\">\n                        <li class=\"mobile-nav-item mobile-menu-wrap\">\n                            <a href=\"/oem-parts/mopar-jeepandreg-performance-parts-rock-rails-82215165ac\" class=\"mobile-dropdown-toggle-child\">\n                                Rock Rails 4 Door\n                            </a>\n                        </li>\n                        <li class=\"mobile-nav-item mobile-menu-wrap\">\n                            <a href=\"/oem-parts/mopar-tire-cover-82215446ab\" class=\"mobile-dropdown-toggle-child\">\n                                Spare Tire Cover Denim Black With Compass Logo\n                            </a>\n                        </li>\n                        <li class=\"mobile-nav-item mobile-menu-wrap\">\n                            <a href=\"/oem-parts/mopar-82215447-jeep-wrangler-jl-spare-tire-cover-sahara-logo-genuine-mopar-2018-2021-82215447\" class=\"mobile-dropdown-toggle-child\">\n                                JL Cover Kit\n                            </a>\n                        </li>\n                        <li class=\"mobile-nav-item mobile-menu-wrap\">\n                            <a href=\"/oem-parts/mopar-82216623ab-all-weather-floor-mats-jeep-wrangler-jl-4-door-red-lettering-2018-2023-oem-82216623ab\" class=\"mobile-dropdown-toggle-child\">\n                                JL Slush Mat 4 Door All Weather\n                            </a>\n                        </li>\n                        <li class=\"mobile-nav-item mobile-menu-wrap\">\n                            <a href=\"/oem-parts/mopar-hood-graphic-82215734\" class=\"mobile-dropdown-toggle-child\">\n                                1941 Hood Graphic\n                            </a>\n                        </li>\n                        <li class=\"mobile-nav-item mobile-menu-wrap\">\n                            <a href=\"/oem-parts/mopar-hood-graphic-american-flag-jeep-wrangler-jl-2018-82215735\" class=\"mobile-dropdown-toggle-child\">\n                                Hood Graphic American Flag\n                            </a>\n                        </li>\n                    </ul>\n                </div>\n            </li>\n            <li class=\"mobile-nav-item has-child\">\n                <a href=\"#\" class=\"mobile-dropdown-toggle\">\n                    bproauto Parts\n                    <em class=\"fa fa-chevron-down\" role=\"presentation\"></em>\n                </a>\n                <div class=\"mobile-mega-menu menu-child\">\n                    <ul class=\"mobile-mega-wrap\">\n<li class=\"mobile-nav-item mobile-menu-wrap\">\n<a href=\"bproauto/ac-compressors\">\nA/C Compressors\n</a>\n</li>\n<li class=\"mobile-nav-item mobile-menu-wrap\">\n<a href=\"bproauto/ac-condensers\">\nA/C Condensers\n</a>\n</li>\n<li class=\"mobile-nav-item mobile-menu-wrap\">\n<a href=\"bproauto/air-filters\">\nAir Filters\n</a>\n</li>\n<li class=\"mobile-nav-item mobile-menu-wrap\">\n<a href=\"bproauto/alternators\">\nAlternators\n</a>\n</li>\n<li class=\"mobile-nav-item mobile-menu-wrap\">\n<a href=\"bproauto/brake-calipers\">\nBrake Calipers\n</a>\n</li>\n<li class=\"mobile-nav-item mobile-menu-wrap\">\n<a href=\"bproauto/brake-drums\">\nBrake Drums\n</a>\n</li>\n<li class=\"mobile-nav-item mobile-menu-wrap\">\n<a href=\"bproauto/brake-hardware\">\nBrake Hardware\n</a>\n</li>\n<li class=\"mobile-nav-item mobile-menu-wrap\">\n<a href=\"bproauto/brake-pads\">\nBrake Pads\n</a>\n</li>\n<li class=\"mobile-nav-item mobile-menu-wrap\">\n<a href=\"bproauto/brake-rotors\">\nBrake Rotors\n</a>\n</li>\n<li class=\"mobile-nav-item mobile-menu-wrap\">\n<a href=\"bproauto/brake-shoes\">\nBrake Shoes\n</a>\n</li>\n<li class=\"mobile-nav-item mobile-menu-wrap\">\n<a href=\"bproauto/bulbs\">\nBulbs\n</a>\n</li>\n<li class=\"mobile-nav-item mobile-menu-wrap\">\n<a href=\"bproauto/cabin-air-filters\">\nCabin Air Filters\n</a>\n</li>\n<li class=\"mobile-nav-item mobile-menu-wrap\">\n<a href=\"bproauto/fuel-filters\">\nFuel Filters\n</a>\n</li>\n<li class=\"mobile-nav-item mobile-menu-wrap\">\n<a href=\"bproauto/fuel-injectors\">\nFuel Injectors\n</a>\n</li>\n<li class=\"mobile-nav-item mobile-menu-wrap\">\n<a href=\"bproauto/fuel-pumps\">\nFuel Pumps\n</a>\n</li>\n<li class=\"mobile-nav-item mobile-menu-wrap\">\n<a href=\"bproauto/ignition-coils\">\nIgnition Coils\n</a>\n</li>\n<li class=\"mobile-nav-item mobile-menu-wrap\">\n<a href=\"bproauto/oil-filters\">\nOil Filters\n</a>\n</li>\n<li class=\"mobile-nav-item mobile-menu-wrap\">\n<a href=\"bproauto/radiators\">\nRadiators\n</a>\n</li>\n<li class=\"mobile-nav-item mobile-menu-wrap\">\n<a href=\"bproauto/spark-plugs\">\nSpark Plugs\n</a>\n</li>\n<li class=\"mobile-nav-item mobile-menu-wrap\">\n<a href=\"bproauto/starters\">\nStarters\n</a>\n</li>\n<li class=\"mobile-nav-item mobile-menu-wrap\">\n<a href=\"bproauto/suspension-ball-joints\">\nSuspension Ball Joints\n</a>\n</li>\n<li class=\"mobile-nav-item mobile-menu-wrap\">\n<a href=\"bproauto/suspension-struts\">\nSuspension Struts\n</a>\n</li>\n<li class=\"mobile-nav-item mobile-menu-wrap\">\n<a href=\"bproauto/thermostats\">\nThermostats\n</a>\n</li>\n<li class=\"mobile-nav-item mobile-menu-wrap\">\n<a href=\"bproauto/tie-rod-ends\">\nTie-Rod Ends\n</a>\n</li>\n<li class=\"mobile-nav-item mobile-menu-wrap\">\n<a href=\"bproauto/tpms\">\nTPMS\n</a>\n</li>\n<li class=\"mobile-nav-item mobile-menu-wrap\">\n<a href=\"bproauto/wheel-bearings\">\nWheel Bearings\n</a>\n</li>\n<li class=\"mobile-nav-item mobile-menu-wrap\">\n<a href=\"bproauto/wiper-blades\">\nWiper Blades\n</a>\n</li>\n<li class=\"mobile-nav-item mobile-menu-wrap\">\n<a href=\"bproauto\">\nAll bproauto Parts\n</a>\n</li>\n                    </ul>\n                </div>\n            </li>\n            <li class=\"mobile-nav-item\">\n                <a href=\"interactive-garage\">Mopar Customizer</a>\n            </li>\n        </ul>\n    </div>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "left_panel_content",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_24",
+                  "moduleType": "custom_html",
+                  "title": "Close Panel",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"left_panel_close\">\n        <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\" viewBox=\"0 0 20 20\">\n            <g id=\"Close\" transform=\"translate(-77 -444.835)\">\n                <g id=\"Group_40503\" data-name=\"Group 40503\" transform=\"translate(77 445.403)\">\n                <path id=\"Path_269033\" data-name=\"Path 269033\" d=\"M0,.192,18.26,17.934,20,16.243,1.739-1.5Z\" transform=\"translate(0 1.498)\" fill=\"#093452\"/>\n                </g>\n                <g id=\"Group_40504\" data-name=\"Group 40504\" transform=\"translate(77 444.835)\">\n                <path id=\"Path_269034\" data-name=\"Path 269034\" d=\"M0,2.015l1.642,1.6L19.857-14.084v-.089l-1.6-1.55Z\" transform=\"translate(0 15.723)\" fill=\"#093452\"/>\n                </g>\n            </g>\n        </svg>          \n    </div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_25",
+      "htmlId": "",
+      "htmlClasses": "left_panel_overlay",
+      "contentWidth": "normal",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_26",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_27",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_28",
+                  "moduleType": "custom_html",
+                  "title": "Overlay",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": ""
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_29",
+      "htmlId": "",
+      "htmlClasses": "theme_mobile_header",
+      "contentWidth": "wide",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "mobile-only",
+      "rows": [
+        {
+          "rowId": "row_30",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_33",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_34",
+                  "moduleType": "store_logo",
+                  "title": "Store Logo",
+                  "options": {
+                    "logo_dark_background": {
+                      "name": "Use Dark Background Logo",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    },
+                    "logo_height": {
+                      "name": "Logo Height (px)",
+                      "type": "string",
+                      "default_value": "",
+                      "value": ""
+                    },
+                    "logo_width": {
+                      "name": "Logo Width (px)",
+                      "type": "string",
+                      "default_value": "",
+                      "value": ""
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "rowId": "row_31",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_35",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_36",
+                  "moduleType": "custom_html",
+                  "title": "Search Mobile Icon",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"mobile_search\">\n    <em class=\"fa fa-search\"></em>\n</div>\n"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_11",
+                  "moduleType": "custom_html",
+                  "title": "Mobile Bulk",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<a href=\"javascript:void(0)\" class=\"bulk-product-upload-button bulk-product-upload-button-link\" data-toggle=\"modal\" data-target=\"#bulkProductUploadModal\"> <em class=\"fa fa-upload\"></em> </a>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_37",
+                  "moduleType": "cart_button",
+                  "title": "Cart Button",
+                  "options": {
+                    "cart_label": {
+                      "name": "Cart Label",
+                      "type": "string",
+                      "default_value": "Cart",
+                      "value": "Cart"
+                    },
+                    "use_svg_icons": {
+                      "name": "Use SVG Icons",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_38",
+                  "moduleType": "custom_html",
+                  "title": "Mobile Hamburger",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"desk_hamburger_menu_wrapper\"> \n    <div class=\"desk_hamburger_menu_lines\"> \n        <div class=\"desk_hamburger_menu_span\">\n            <img src=\"https://rparts-sites.s3.amazonaws.com/fe24ce93d3a277b22a53498fdd0aad51/design/icons/hamburger.svg\" alt=\"hamburger\">\n        </div> \n    </div> \n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "rowId": "row_32",
+          "rowLayout": 12,
+          "htmlId": "",
+          "htmlClasses": "search_mobile_wrapper",
+          "columns": [
+            {
+              "columnId": "column_39",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_41",
+                  "moduleType": "search_bar",
+                  "title": "Search Bar",
+                  "options": {
+                    "placeholder": {
+                      "name": "Placeholder Text",
+                      "type": "string",
+                      "default_value": "Part Number(s), Keywords, or VIN",
+                      "value": "Part Number(s), Keywords, or VIN"
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_42",
+                  "moduleType": "car_selected",
+                  "title": "Current Car Selected",
+                  "options": {
+                    "not_selected_text": {
+                      "name": "No Vehicle Selected Text",
+                      "type": "string",
+                      "default_value": null,
+                      "value": ""
+                    },
+                    "use_svg_icons": {
+                      "name": "Use SVG Icons",
+                      "type": "select",
+                      "possible_values": [
+                        {
+                          "label": "Garage Icon",
+                          "value": "garage_icon"
+                        },
+                        {
+                          "label": "Car Icon",
+                          "value": "car_icon"
+                        }
+                      ],
+                      "default_value": "garage_icon",
+                      "value": "car_icon"
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

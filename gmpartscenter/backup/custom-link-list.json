@@ -1,0 +1,25 @@
+{
+  "moduleId": "module_23",
+  "moduleType": "custom_html",
+  "title": "Custom Links List",
+  "options": {
+    "html_content": {
+      "name": "Custom HTML Content",
+      "type": "html_content",
+      "default_value": "",
+      "value": "<ul class=\"links-list\">\n    <li>\n        <a href=\"/\">\n            Home \n        </a>\n    </li>\n    <li>\n        <a href=\"/about\">\n            About \n        </a>\n    </li>\n    <li class=\"hasDropdown\">\n        <a href=\"/find-parts\">\n            Find Parts \n        </a>\n        <ul class=\"theDropdown\">\n            <li><a href=\"v-buick\">OEM Buick Parts</a></li>\n            <li><a href=\"v-cadillac\">OEM Cadillac Parts</a></li>\n            <li><a href=\"v-chevrolet\">OEM Chevy Parts</a></li>\n            <li><a href=\"v-gmc\">OEM GMC Parts</a></li>\n            <li><a href=\"vin-decoder\">GM VIN Decoder</a></li>\n        </ul>\n    </li>\n    <li>\n        <a href=\"/blog\">\n            Our Blog \n        </a>\n    </li>\n</ul>"
+    },
+    "force_lazy": {
+      "name": "Lazy Load Images",
+      "type": "boolean",
+      "default_value": false,
+      "value": false
+    }
+  },
+  "htmlId": "",
+  "htmlClasses": "navigationMenuModule menuLeft d-none",
+  "minColumnWidth": 0,
+  "customAdmin": false,
+  "modulePadding": "padding-0",
+  "display": "normal"
+}

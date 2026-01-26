@@ -1,0 +1,2222 @@
+<script>
+// Begin Override for v-picker in product page
+    if (document.getElementById("page-product")) {
+      const fitmentLink = document.getElementById("part-fitment-info");
+
+      if (fitmentLink) {
+        fitmentLink.style.cursor = "pointer";
+
+        document.addEventListener('click', function (e) {
+          const link = e.target.closest('#part-fitment-info');
+          if (!link) return;
+
+          e.preventDefault();
+          e.stopPropagation();
+          if (e.stopImmediatePropagation) e.stopImmediatePropagation();
+
+          link.removeAttribute("href");
+          link.removeAttribute("data-fitment-info");
+          link.removeAttribute("data-redirect");
+
+          link.setAttribute("data-toggle", "modal");
+          link.setAttribute("data-target", "#themeVehicleModalSelector");
+          
+
+          const modal = document.querySelector('#themeVehicleModalSelector');
+          
+          if (modal && typeof $ === 'function' && $.fn.modal) {
+	    	const redirectUrl =  document.querySelector('#part-fitment-info').getAttribute('data-redirect');
+	    	if (redirectUrl && typeof redirectUrl !== 'undefined') {
+              const vehiclePickerDropdown = document.querySelector('.vehicle-picker-dropdown'); 
+              vehiclePickerDropdown.setAttribute('data-redirect', redirectUrl);
+            }
+            $(modal).modal('show');
+          } else {
+            modal?.classList.add('is-open');
+          }
+        }, true);
+      }
+    }
+// End Override for v-picker in product page    
+    
+    
+    $(document).ready(function() {
+        // Toggle disclaimer on click
+        $(document).on('click', '.themeBannerTermWrap', function(e) {
+            e.stopPropagation();
+            $('.themeBannerTermWrap').not(this).removeClass('openDisclaimer');
+            $(this).toggleClass('openDisclaimer');
+        });
+
+		$('#themeVehicleModalSelector').on('shown.bs.modal', function(event){ 
+            const trigger = $(event.relatedTarget); 
+            if (trigger && trigger.closest('.custom-html-module') && trigger.closest('.custom-html-module').length) {
+            const vehiclePickerDropdown = document.querySelector('.vehicle-picker-dropdown'); 
+            if (vehiclePickerDropdown.getAttribute('data-redirect')) {
+                  vehiclePickerDropdown.removeAttribute('data-redirect');
+             }
+            }
+        });
+
+        // Click outside to close
+        $(document).on('click', function(e) {
+            if (!$(e.target).closest('.themeBannerTermWrap').length) {
+                $('.themeBannerTermWrap').removeClass('openDisclaimer');
+            }
+        });
+        
+        // cart sku slides
+        $('#layout_cart .themeCartAccessories').addClass('owl-carousel owl-theme');
+        $('#layout_cart .themeCartAccessories').owlCarousel({
+            items: 3,
+            loop: true,
+            margin: 10,
+            autoplay: false,
+            autoplayTimeout: 4000,
+            autoplayHoverPause: false,
+            dots: false,
+            nav: false,
+            navText: [
+                "<span class='theme_arrow theme_arrow_left'>",
+                "<span class='theme_arrow theme_arrow_right'>"
+            ],
+            center: false,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                730: {
+                    items: 2
+                },
+                1200: {
+                    items: 3
+                }
+            }
+        });
+        
+        //new mega nav
+        $(".themeNewMegaNavList").on("mouseenter", ".themeNewMegaNavItemHasChild", function () {
+            $(".themeNewMegaNavList .themeNewMegaNavItemHasChild").removeClass("active");
+            $(this).addClass("active");
+        });
+
+        $(".themeNewMegaNavList").on("mouseleave", ".themeNewMegaNavItemHasChild", function () {
+            $(this).removeClass("active");
+        });
+        
+        // When any focusable element inside the nav gets focused
+        $('.themeNewMegaNavList').on('focusin', function (e) {
+            // Remove existing .tabbed classes
+            $('.themeNewMegaNavList .active').removeClass('active');
+
+            // Add .tabbed to the focused element
+            $(e.target).addClass('active');
+
+            // Add .tabbed to all parent li elements
+            $(e.target).closest('li').addClass('active');
+            $(e.target).parents('li').addClass('active');
+        });
+
+        // Optional: remove .tabbed when focus leaves the nav
+        $('.themeNewMegaNavList').on('focusout', function (e) {
+            // Delay slightly to avoid removing class before the next element gains focus
+            setTimeout(function () {
+                if (!$('.themeNewMegaNavList').find(':focus').length) {
+                    $('.themeNewMegaNavList .active').removeClass('active');
+                }
+            }, 10);
+        });
+        
+        // Dream vehicle tabs
+        //$('.themeDreamVehicleTabList li:first-child').addClass('active');
+        $('.themeDreamVehicleTabCategory').hide();
+        //$('.themeDreamVehicleTabCategory:first').show();
+
+        // Click function (excluding last li)
+        $('.themeDreamVehicleTabList li:not(:last-child)').click(function(e) {
+            e.preventDefault();
+            $('.themeDreamVehicleTabList li').removeClass('active');
+            $(this).addClass('active');
+            $('.themeDreamVehicleTabCategory').hide();
+            var activeTab = $(this).find('a').attr('data-toggle-target');
+            $(activeTab).show();
+        });
+        
+        //brand slider
+        $('#themeBrandList').owlCarousel({
+            items:6,
+            loop: true,
+            margin:10,
+            autoplay: true,
+            autoplayTimeout:4000,
+            autoplayHoverPause:false,
+            dots: false,
+            nav: true,
+            navText: ["<span class='theme_arrow theme_arrow_left'>","<span class='theme_arrow theme_arrow_right'>"],
+            responsive: {
+                0: {
+                    items: 1
+                },
+                360: {
+                    items: 2
+                },
+                600: {
+                    items: 3
+                },
+                990: {
+                    items: 5
+                },
+            }
+        });
+        
+        //new home featured slider
+        $('.themeFeaturedNew .featured-products').addClass('owl-carousel owl-theme');
+        $('.themeFeaturedNew .featured-products').owlCarousel({
+            items: 5,
+            loop: true,
+            margin: 10,
+            autoplay: true,
+            autoplayTimeout: 4000,
+            autoplayHoverPause: false,
+            dots: false,
+            nav: true,
+            navText: [
+                "<span class='theme_arrow theme_arrow_left'></span>",
+                "<span class='theme_arrow theme_arrow_right'></span>"
+            ],
+            center: false,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                450: {
+                    items: 2
+                },
+                730: {
+                    items: 3
+                },
+                990: {
+                    items: 4
+                },
+                1200: {
+                    items: 6
+                }
+            }
+        });
+        
+        //new homepage banner carousel
+    	$('#themeNewBannerSlider').owlCarousel({
+            items:3,
+            loop:true,
+            margin:20,
+            autoplay:5000,
+            autoplayTimeout:5000,
+            autoplayHoverPause:true,
+            dots: false,
+            nav: true,
+            navText: ["<span class='theme_arrow theme_arrow_left'>","<span class='theme_arrow theme_arrow_right'>"],
+            responsive: {
+                0: {
+                    items: 1
+                },
+                770: {
+                    items: 2
+                },
+                990: {
+                    items: 3
+                },
+            }
+        });
+        
+        //clone vcontent copy
+        var vContentCopy = $('.themeVAboutContent');
+        $('#layout_oem-vehicle-picker #vehicle-data-lists').after(vContentCopy);
+        
+        //vpage tab truck
+        $('#layout_oem-vehicle-picker .themeDreamVehicleTabContentList li:first-child').addClass('active');
+        $('#layout_oem-vehicle-picker .themeVehicleHotspotListItemCategory').hide();
+        $('#layout_oem-vehicle-picker .themeVehicleHotspotListItemCategory:first').show();
+        // Click function
+        $('#layout_oem-vehicle-picker .themeDreamVehicleTabContentList li').click(function(e){
+            e.preventDefault();
+            $('#layout_oem-vehicle-picker .themeDreamVehicleTabContentList li').removeClass('active');
+            $(this).addClass('active');
+            $('#layout_oem-vehicle-picker .themeVehicleHotspotListItemCategory').hide();
+            var activeTab = $(this).find('a').attr('data-toggle-target');
+            $(activeTab).show();
+        });
+        //vpage tab clickable 01
+        $('#layout_oem-vehicle-picker .themeVehicleHotspotClickable01 li:first-child').addClass('active');
+        $('#layout_oem-vehicle-picker .themeVehicleHotspotProdListCategory01').hide();
+        $('#layout_oem-vehicle-picker .themeVehicleHotspotProdListCategory01:first').show();
+        // Click function
+        $('#layout_oem-vehicle-picker .themeVehicleHotspotClickable01 li').click(function(){
+            $('#layout_oem-vehicle-picker .themeVehicleHotspotClickable01 li').removeClass('active');
+            $(this).addClass('active');
+            $('#layout_oem-vehicle-picker .themeVehicleHotspotProdListCategory01').hide();
+            var activeTab = $(this).find('a').attr('data-toggle-target');
+            $(activeTab).show();
+            return false;
+        });
+        //vpage tab clickable 02
+        $('#layout_oem-vehicle-picker .themeVehicleHotspotClickable02 li:first-child').addClass('active');
+        $('#layout_oem-vehicle-picker .themeVehicleHotspotProdListCategory02').hide();
+        $('#layout_oem-vehicle-picker .themeVehicleHotspotProdListCategory02:first').show();
+        // Click function
+        $('#layout_oem-vehicle-picker .themeVehicleHotspotClickable02 li').click(function(){
+            $('#layout_oem-vehicle-picker .themeVehicleHotspotClickable02 li').removeClass('active');
+            $(this).addClass('active');
+            $('#layout_oem-vehicle-picker .themeVehicleHotspotProdListCategory02').hide();
+            var activeTab = $(this).find('a').attr('data-toggle-target');
+            $(activeTab).show();
+            return false;
+        });
+        //vpage tab clickable 03
+        $('#layout_oem-vehicle-picker .themeVehicleHotspotClickable03 li:first-child').addClass('active');
+        $('#layout_oem-vehicle-picker .themeVehicleHotspotProdListCategory03').hide();
+        $('#layout_oem-vehicle-picker .themeVehicleHotspotProdListCategory03:first').show();
+        // Click function
+        $('#layout_oem-vehicle-picker .themeVehicleHotspotClickable03 li').click(function(){
+            $('#layout_oem-vehicle-picker .themeVehicleHotspotClickable03 li').removeClass('active');
+            $(this).addClass('active');
+            $('#layout_oem-vehicle-picker .themeVehicleHotspotProdListCategory03').hide();
+            var activeTab = $(this).find('a').attr('data-toggle-target');
+            $(activeTab).show();
+            return false;
+        });
+        //vpage tab clickable 04
+        $('#layout_oem-vehicle-picker .themeVehicleHotspotClickable04 li:first-child').addClass('active');
+        $('#layout_oem-vehicle-picker .themeVehicleHotspotProdListCategory04').hide();
+        $('#layout_oem-vehicle-picker .themeVehicleHotspotProdListCategory04:first').show();
+        // Click function
+        $('#layout_oem-vehicle-picker .themeVehicleHotspotClickable04 li').click(function(){
+            $('#layout_oem-vehicle-picker .themeVehicleHotspotClickable04 li').removeClass('active');
+            $(this).addClass('active');
+            $('#layout_oem-vehicle-picker .themeVehicleHotspotProdListCategory04').hide();
+            var activeTab = $(this).find('a').attr('data-toggle-target');
+            $(activeTab).show();
+            return false;
+        });
+        //vpage tab clickable 05
+        $('#layout_oem-vehicle-picker .themeVehicleHotspotClickable05 li:first-child').addClass('active');
+        $('#layout_oem-vehicle-picker .themeVehicleHotspotProdListCategory05').hide();
+        $('#layout_oem-vehicle-picker .themeVehicleHotspotProdListCategory05:first').show();
+        // Click function
+        $('#layout_oem-vehicle-picker .themeVehicleHotspotClickable05 li').click(function(){
+            $('#layout_oem-vehicle-picker .themeVehicleHotspotClickable05 li').removeClass('active');
+            $(this).addClass('active');
+            $('#layout_oem-vehicle-picker .themeVehicleHotspotProdListCategory05').hide();
+            var activeTab = $(this).find('a').attr('data-toggle-target');
+            $(activeTab).show();
+            return false;
+        });
+        //vpage tab clickable chrysler
+        $('#layout_oem-vehicle-picker .themeVehicleHotspotClickableChrysler li:first-child').addClass('active');
+        $('#layout_oem-vehicle-picker .themeVehicleHotspotProdListCategoryChrysler').hide();
+        $('#layout_oem-vehicle-picker .themeVehicleHotspotProdListCategoryChrysler:first').show();
+        // Click function
+        $('#layout_oem-vehicle-picker .themeVehicleHotspotClickableChrysler li').click(function(){
+            $('#layout_oem-vehicle-picker .themeVehicleHotspotClickableChrysler li').removeClass('active');
+            $(this).addClass('active');
+            $('#layout_oem-vehicle-picker .themeVehicleHotspotProdListCategoryChrysler').hide();
+            var activeTab = $(this).find('a').attr('data-toggle-target');
+            $(activeTab).show();
+            return false;
+        });
+        //vpage tab clickable dodge01
+        $('#layout_oem-vehicle-picker .themeVehicleHotspotClickableDodge01 li:first-child').addClass('active');
+        $('#layout_oem-vehicle-picker .themeVehicleHotspotProdListCategoryDodge01').hide();
+        $('#layout_oem-vehicle-picker .themeVehicleHotspotProdListCategoryDodge01:first').show();
+        // Click function
+        $('#layout_oem-vehicle-picker .themeVehicleHotspotClickableDodge01 li').click(function(){
+            $('#layout_oem-vehicle-picker .themeVehicleHotspotClickableDodge01 li').removeClass('active');
+            $(this).addClass('active');
+            $('#layout_oem-vehicle-picker .themeVehicleHotspotProdListCategoryDodge01').hide();
+            var activeTab = $(this).find('a').attr('data-toggle-target');
+            $(activeTab).show();
+            return false;
+        });
+        //vpage tab clickable dodge02
+        $('#layout_oem-vehicle-picker .themeVehicleHotspotClickableDodge02 li:first-child').addClass('active');
+        $('#layout_oem-vehicle-picker .themeVehicleHotspotProdListCategoryDodge02').hide();
+        $('#layout_oem-vehicle-picker .themeVehicleHotspotProdListCategoryDodge02:first').show();
+        // Click function
+        $('#layout_oem-vehicle-picker .themeVehicleHotspotClickableDodge02 li').click(function(){
+            $('#layout_oem-vehicle-picker .themeVehicleHotspotClickableDodge02 li').removeClass('active');
+            $(this).addClass('active');
+            $('#layout_oem-vehicle-picker .themeVehicleHotspotProdListCategoryDodge02').hide();
+            var activeTab = $(this).find('a').attr('data-toggle-target');
+            $(activeTab).show();
+            return false;
+        });
+        //vpage tab clickable jeepcherokee
+        $('#layout_oem-vehicle-picker .themeVehicleHotspotClickableCherokee li:first-child').addClass('active');
+        $('#layout_oem-vehicle-picker .themeVehicleHotspotProdListCategoryCherokee').hide();
+        $('#layout_oem-vehicle-picker .themeVehicleHotspotProdListCategoryCherokee:first').show();
+        // Click function
+        $('#layout_oem-vehicle-picker .themeVehicleHotspotClickableCherokee li').click(function(){
+            $('#layout_oem-vehicle-picker .themeVehicleHotspotClickableCherokee li').removeClass('active');
+            $(this).addClass('active');
+            $('#layout_oem-vehicle-picker .themeVehicleHotspotProdListCategoryCherokee').hide();
+            var activeTab = $(this).find('a').attr('data-toggle-target');
+            $(activeTab).show();
+            return false;
+        });
+        //vpage tab clickable jeepwagon
+        $('#layout_oem-vehicle-picker .themeVehicleHotspotClickableWagon li:first-child').addClass('active');
+        $('#layout_oem-vehicle-picker .themeVehicleHotspotProdListCategoryWagon').hide();
+        $('#layout_oem-vehicle-picker .themeVehicleHotspotProdListCategoryWagon:first').show();
+        // Click function
+        $('#layout_oem-vehicle-picker .themeVehicleHotspotClickableWagon li').click(function(){
+            $('#layout_oem-vehicle-picker .themeVehicleHotspotClickableWagon li').removeClass('active');
+            $(this).addClass('active');
+            $('#layout_oem-vehicle-picker .themeVehicleHotspotProdListCategoryWagon').hide();
+            var activeTab = $(this).find('a').attr('data-toggle-target');
+            $(activeTab).show();
+            return false;
+        });
+        //vpage tab clickable ram
+        $('#layout_oem-vehicle-picker .themeVehicleHotspotClickableRam li:first-child').addClass('active');
+        $('#layout_oem-vehicle-picker .themeVehicleHotspotProdListCategoryRam').hide();
+        $('#layout_oem-vehicle-picker .themeVehicleHotspotProdListCategoryRam:first').show();
+        // Click function
+        $('#layout_oem-vehicle-picker .themeVehicleHotspotClickableRam li').click(function(){
+            $('#layout_oem-vehicle-picker .themeVehicleHotspotClickableRam li').removeClass('active');
+            $(this).addClass('active');
+            $('#layout_oem-vehicle-picker .themeVehicleHotspotProdListCategoryRam').hide();
+            var activeTab = $(this).find('a').attr('data-toggle-target');
+            $(activeTab).show();
+            return false;
+        });
+        
+        //slide tab category
+    	$('#themeCategoryList').owlCarousel({
+            items:7,
+            loop:false,
+            autoWidth: true,
+            margin:30,
+            autoplay:false,
+            autoplayTimeout:4000,
+            autoplayHoverPause:false,
+            dots: false,
+            nav: true,
+            navText: ["<span class='theme_arrow theme_arrow_left'>","<span class='theme_arrow theme_arrow_right'>"],
+            responsive: {
+                0: {
+                    items: 2
+                },
+                770: {
+                    items: 5
+                },
+                990: {
+                    items: 7
+                },
+            }
+        });
+        
+        //featured vpage 
+        $('#themeVFeaturedList').owlCarousel({
+            items: 5,
+            loop: false,
+            margin: 10,
+            autoplay: false,
+            autoplayTimeout: 4000,
+            autoplayHoverPause: false,
+            dots: false,
+            nav: true,
+            autoHeight:true,
+            navText: [
+                "<span class='theme_arrow theme_arrow_left'></span>",
+                "<span class='theme_arrow theme_arrow_right'></span>"
+            ],
+            center: false,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                450: {
+                    items: 2
+                },
+                730: {
+                    items: 3
+                },
+                990: {
+                    items: 4
+                },
+                1200: {
+                    items: 6
+                }
+            }
+        });
+        
+        //category tabs for homepage and vpage
+        $('.themeCategoryList li:first-child').addClass('active');
+        $('.tabCategory').hide();
+        $('.tabCategory:first').show();
+        // Click function
+        $('.themeCategoryList li').click(function(e){
+            e.preventDefault();
+            $('.themeCategoryList li').removeClass('active');
+            $(this).addClass('active');
+            $('.tabCategory').hide();
+            var activeTab = $(this).find('a').attr('data-toggle-target');
+            $(activeTab).show();
+        });
+        $('.themeCategoryList .themeCategoryListItem:first-child').addClass('active');
+        $('.tabCategory').hide();
+        $('.tabCategory:first').show();
+        // Click function
+        $('.themeCategoryList .themeCategoryListItem').click(function(e){
+            e.preventDefault();
+            $('.themeCategoryList .themeCategoryListItem').removeClass('active');
+            $(this).addClass('active');
+            $('.tabCategory').hide();
+            var activeTab = $(this).find('a').attr('data-toggle-target');
+            $(activeTab).show();
+        });
+        
+    	// pdp fitment accordion
+        $('.themeNewPDPAccordionSection .product-fitment-title').click(function(e) {
+            e.preventDefault();
+            $(this).toggleClass('open')
+            let $this = $(this);
+            if ($this.next().hasClass('show')) {
+                $this.next().removeClass('show');
+                $this.next().slideUp(350);
+            } else {
+                $this.parent().parent().find('.themeNewPDPAccordionSection .fitment-table-wrap').removeClass('show');
+                $this.parent().parent().find('.themeNewPDPAccordionSection .fitment-table-wrap').slideUp(350);
+                $this.next().toggleClass('show');
+                $this.next().slideToggle(350);
+            }
+        });
+        // pdp policies accordion
+        $('.themeNewPDPAccordionSection .product-policies-title').click(function(e) {
+            e.preventDefault();
+            $(this).toggleClass('open')
+            let $this = $(this);
+            if ($this.next().hasClass('show')) {
+                $this.next().removeClass('show');
+                $this.next().slideUp(350);
+            } else {
+                $this.parent().parent().find('.themeNewPDPAccordionSection .product-policies').removeClass('show');
+                $this.parent().parent().find('.themeNewPDPAccordionSection .product-policies').slideUp(350);
+                $this.next().toggleClass('show');
+                $this.next().slideToggle(350);
+            }
+        });
+        
+        //pdp recommended
+        $('.themeNewPDPAccordionSection .product-recommended-module .product-section-title').click(function(e) {
+            e.preventDefault();
+            $(this).toggleClass('open')
+            let $this = $(this);
+            if ($this.next().hasClass('show')) {
+                $this.next().removeClass('show');
+                $this.next().slideUp(350);
+            } else {
+                $this.parent().parent().find('.themeNewPDPAccordionSection .product-recommended-module .recommended-products-response').removeClass('show');
+                $this.parent().parent().find('.themeNewPDPAccordionSection .product-recommended-module .recommended-products-response').slideUp(350);
+                $this.next().toggleClass('show');
+                $this.next().slideToggle(350);
+            }
+        });
+    })
+    
+  
+    
+    
+
+    
+    //get the name of vehicle selected
+       	var vehicleNameSelected = $('.themeVehicleTabCurrentCar .garage-text').html();
+        console.log(vehicleNameSelected);
+        $('.themeShopVehicleToggle a').html(vehicleNameSelected)
+    
+    //tab category
+        $('.themeVehicleTabList li:first-child').addClass('active');
+        $('.themeVehicleTabContent').hide();
+        $('.themeVehicleTabContent:first').show();
+        // Click function
+        $('.themeVehicleTabList li').click(function(){
+            $('.themeVehicleTabList li').removeClass('active');
+            $(this).addClass('active');
+            $('.themeVehicleTabContent').hide();
+            var activeTab = $(this).find('p').attr('data-toggle-target');
+            $(activeTab).show();
+            return false;
+        });
+    
+    
+    //Remove Genuine on title
+	document.addEventListener("DOMContentLoaded", function() {
+    const h3Element = document.querySelector('h3[data-test-id="top-selling-categories__autoparts_title"]');
+    if (h3Element) {
+        let text = h3Element.textContent;
+        text = text.replace(/Genuine/i, '').trim();
+        h3Element.textContent = text;
+    }
+	});
+    // Move Mopar on table for all bproauto 
+	$(document).ready(function() {
+    if (window.location.pathname.startsWith('/oem-parts')){
+        const titleElement = document.querySelector('h1.product-title');
+        const table = document.querySelector('.product-interchange-table');
+        if (titleElement.textContent.includes('bproauto') && table) {
+            console.log('Table found');
+            const rows = Array.from(table.children);
+            const headers = rows.slice(0, 2);
+            const brand = 'Mopar';
+            let moparElements = [];
+            let otherElements = [];
+            for (let i = 2; i < rows.length; i += 2) {
+                if (brand && rows[i].textContent.trim() && rows[i].textContent.trim().toLowerCase().includes(brand.toLowerCase())) {
+                    moparElements.push(rows[i], rows[i + 1]);
+                    console.log('Mopar element found');
+                } else {
+                    otherElements.push(rows[i], rows[i + 1]);
+                }
+            }
+            table.innerHTML = '';
+            table.append(...headers, ...moparElements, ...otherElements);
+        } 
+    }
+});
+    
+//Force Badge Hide
+if (window.location.pathname.startsWith('/oem-parts')) {
+    const titleElement = document.querySelector('h1.product-title');
+    if (titleElement && (titleElement.textContent.includes('bproauto') || titleElement.textContent.includes('Affiliated Accessories'))){
+        const badgesModule = document.querySelector('.product-badges-module');
+        if (badgesModule) {
+            badgesModule.style.display = 'none';
+        }
+    }
+}
+    
+    //redirect accessories to homepage
+    /*if(window.location.href === "https://store.mopar.com/accessories" || window.location.href === "https://store.mopar.com/accessories/") {
+        window.location.replace("https://store.mopar.com");
+    }*/
+    
+    $(document).ready(function(){   
+
+        
+        /*$('.vehicle-picker-dropdown button').on('click', function() {
+            
+            window.digitalData.newEvent({
+                type: "CustomTagEvent",
+                eventName: "generalCTA",
+                eventAction: "pageElementInteraction",
+                attributes: {
+                    linkType: "func",
+                    linkName: "vehicle-selector-modal|vehicle-picker"
+                }
+            });
+        });*/
+
+       
+        //cannot purchase
+        $('.catalog-product').each(function() {
+            if ($(this).find('.cannot-purchase').length > 0) {
+                $(this).addClass('cannot-purchase-parent');
+            }
+        });
+        
+        /*$(".themeFaqAccordionTitle").click(function(){
+            $(this).parent(".themeFaqAccordionItem").find(".themeFaqAccordionContent").slideToggle();
+            $(this).parent(".themeFaqAccordionItem").prevAll(".themeFaqAccordionItem").find(".themeFaqAccordionContent").slideUp();
+            $(this).parent(".themeFaqAccordionItem").nextAll(".themeFaqAccordionItem").find(".themeFaqAccordionContent").slideUp();
+        });*/
+        
+        //change text
+        $('.dealer-selection-modal .enter-zip-button').text('Search by Zip Code');
+        
+        // Get the div element by its ID
+        var selectedDealerContainer = document.getElementById('selectedDealerContainer');
+        // Check if the div has content
+        if (selectedDealerContainer.innerHTML.trim() !== "") {
+            $('.dealer-selection .body-heading').text('Shopping At')
+            $('.find-dealer-icon').html('<p style="margin-bottom: 0;font-size: 14px;font-weight: 700">Shopping At</p>');
+            
+        } else {
+            $('.dealer-selection .body-heading').text('CHOOSE A DEALER')
+        }
+        
+        if( $('#selectedDealerContainer .clear-dealer-link').text() === 'Clear Dealer' ) {
+            console.log('nice')
+            $('#selectedDealerContainer .selected-dealer .clear-dealer-link').text('test')
+        } else {
+            console.log('way nice')
+        }
+        
+        //Close Hambuerger Menu on Click in Find-Dealer-Button
+        $('.find-dealer-button').on('click', function() {
+    		$('.left_panel_close').trigger('click');
+		});
+ 
+    });
+    
+    
+    $(document).ready(function() {
+        
+        // sticky on scroll
+        $(window).scroll(function() {
+        if ($(this).scrollTop() > 250){  
+            $('header.container-header').addClass("sticky");
+          }
+          else{
+            $('header.container-header').removeClass("sticky");
+          }
+        });
+        
+        //get height category
+        var shopCat = $('.moparCatList').height() + 50;
+        
+        $('.moparCatList').css({ height: `calc(${shopCat}px / 2)` })
+        
+        
+        //load more button
+        /*var batch = 4;
+        $("#layout_dynamic-seo .catalog-product").each(function (index) {
+          if (index >= batch) {
+            $(this).fadeOut("slow").addClass("hide");
+          }
+        });
+        $("#theme_load_more").on("click", function (e) {
+          e.preventDefault();
+          $("#layout_dynamic-seo .catalog-product:hidden").slice(0, batch).slideDown().addClass('flex');
+          if ($("#layout_dynamic-seo .catalog-product:hidden").length == 0) {
+            $(this).fadeOut("slow");
+          }
+        });
+        if ($("#layout_dynamic-seo .catalog-product:hidden").length == 0) {
+          $("#theme_load_more").fadeOut("slow");
+        } else {
+          $("#theme_load_more").fadeIn("slow");
+        }*/
+        
+        
+        //mobile tab
+    $('.mobile-nav-item.has-child .mobile-dropdown-toggle').click(function(e) {
+        e.preventDefault();
+        var dropDown = $(this).closest('.mobile-nav-item.has-child').find('.mobile-mega-menu.menu-child');
+		
+		$(this).closest('.mobile-nav.main').find('.mobile-mega-menu.menu-child').not(dropDown).slideUp();
+		
+		if($(this).hasClass('active')) {
+			$(this).removeClass('active');
+		} else {
+			$(this).closest('.mobile-nav.main').find('.mobile-nav-item.has-child .mobile-dropdown-toggle.active').removeClass('active');
+      		$(this).addClass('active');
+		}
+		
+		dropDown.stop(false, true).slideToggle();
+		
+    })
+    
+    $('.mobile-menu-wrap.has-child .mobile-dropdown-toggle-child').click(function(e) {
+        e.preventDefault();
+        var dropDown = $(this).closest('.mobile-menu-wrap.has-child').find('.menu-wrap');
+		
+		$(this).closest('.mobile-nav.main').find('.menu-wrap').not(dropDown).slideUp();
+		
+		if($(this).hasClass('active')) {
+			$(this).removeClass('active');
+		} else {
+			$(this).closest('.mobile-nav.main').find('.mobile-menu-wrap.has-child .mobile-dropdown-toggle-child.active').removeClass('active');
+      		$(this).addClass('active');
+		}
+		
+		dropDown.stop(false, true).slideToggle();
+		
+    })
+        
+        //get the prod quantity
+        var dataQuantity = $('.product-inventory-msg').attr('data-quantity');
+        if( dataQuantity > 1 ) {
+        	console.log('kuha bai')
+        } else {
+        	console.log('wla bai')
+        }
+        
+    	// open left panel
+        $('.desk_hamburger_menu_wrapper').on('click', function(e) {
+        	e.preventDefault();
+            $('body').addClass('left-panel-show');
+        })
+        
+        $('.left_panel_overlay').on('click', function(e) {
+        	e.preventDefault();
+            $('body').removeClass('left-panel-show');
+            $('body').removeClass('openChild');
+            $('.left_panel_item_has_child').removeClass('openChildActive')
+            $('.hamburger_menu').removeClass('openHamburger')
+        })
+        
+        $('.left_panel_close').on('click', function(e) {
+        	e.preventDefault();
+            $('body').removeClass('left-panel-show');
+            $('body').removeClass('openChild');
+            $('.left_panel_item_has_child').removeClass('openChildActive')
+            $('.hamburger_menu').removeClass('openHamburger')
+        })
+        
+        $('.hamburger_menu').on('click', function(e) {
+        	e.preventDefault();
+            $('body').toggleClass('left-panel-show');
+        })
+        
+        $('.left_panel_item_has_child').on('click', function(e) {
+        	e.preventDefault();
+            $('.left_panel_item_has_child').removeClass('openChildActive');
+            $(this).addClass('openChildActive');
+            $('body').addClass('openChild');
+            var html = $(e.target).html();
+  			$('.left_panel_child_title').html(html);
+        });
+        
+        $('.left_panel_child_item_has_child').on('click', function(e) {
+        	e.preventDefault();
+            $('.left_panel_child_item_has_child').removeClass('openSecondActive');
+            $('.left_panel_item_has_child').removeClass('openChildActive');
+            $(this).addClass('openSecondActive');
+            $('body').addClass('openChildSecond');
+            var html = $(e.target).html();
+  			$('.left_panel_child_title').html(html);
+        });
+        
+        $('.left_panel_child_back_button').on('click', function(e) {
+        	e.preventDefault();
+            $('body').removeClass('openChild');
+            $('body').removeClass('openChildSecond');
+            $('.left_panel_item_has_child').removeClass('openChildActive')
+            $('.left_panel_child_item_has_child').removeClass('openSecondActive')
+        })
+        
+        /*$('.left_panel_child_link').on('click', function(e) {
+        	e.preventDefault();
+            window.location.href = $(this).attr('href');
+        })*/
+        
+        $('.left_panel_child_link_force').on('click', function(e) {
+        	e.preventDefault();
+            window.location.href = $(this).attr('href');
+        })
+        
+        $('.left_panel_child_item_link').on('click', function(e) {
+        	e.preventDefault();
+            window.location.href = $(this).attr('href');
+        })
+        
+        //Product Tabs
+        $('.latest_catalog_item:first-child').addClass('active');
+        $('.tab_content').hide();
+        $('.tab_content:first').show();
+        // Click function
+        $('.latest_catalog_list .latest_catalog_item').click(function(){
+          $('.latest_catalog_list .latest_catalog_item').removeClass('active');
+          $(this).addClass('active');
+          $('.tab_content').hide();
+          var activeTab = $(this).find('a').attr('data-toggle-target');
+          $(activeTab).show();
+          return false;
+        });
+        
+    })
+    
+    
+    
+ // Add Blog Link in Social Media Icon
+
+// $('.nav_social').append('<li><a href="https://blog.mopar.com/" target="_blank" rel="noreferrer" class="blog" title="Visit us on Mopar Blog"> <div //class="social-circle social-bg"><em class="fa fa-rss fa-inverse"></em></div> <span class="sr-only">Blog</span> </a> </li>');
+    
+var megaLinks = document.querySelectorAll('.header-nav li');
+var menuVisbile = false;
+
+var megaMenu = document.getElementById('mega-menu');
+var megaMenuCards = document.querySelectorAll('.mega-menu_card');
+var megaMenuCardsArr = Array.prototype.slice.call(megaMenuCards);
+
+megaMenu.addEventListener('mouseleave', hideMegaMenu)
+
+var i;
+for (i = 0; i < megaLinks.length; i++) {
+    megaLinks[i].setAttribute('index', i)
+    megaLinks[i].addEventListener('click', function(e) {
+        if (menuVisbile === true) {
+            hideCard();
+        }
+        
+        setActiveLink(e);
+        showMegaMenu(e);
+        menuVisbile = true;
+    });
+};
+
+function showMegaMenu(e) {
+    var index = e.target.getAttribute('index')
+
+    megaMenu.classList.add('open');
+    showCard(index);
+};
+
+function hideMegaMenu() {
+    hideCard();
+    unsetActiveLink();
+    megaMenu.classList.remove('open');
+    menuVisbile = false;
+};
+
+function showCard(index) {
+    megaMenuCardsArr[index].classList.add('active');
+};
+
+function hideCard() {
+    var activeCard = document.querySelector('.mega-menu_card.active');
+    activeCard.classList.remove('active');
+};
+
+function setActiveLink(e) {
+    var item = e.target;
+
+    unsetActiveLink();
+
+    item.classList.add('active');
+};
+
+function unsetActiveLink() {
+    if (menuVisbile) {
+        document.querySelector('.nav-wrap li.active').classList.remove('active');
+    }
+}
+ </script>
+ <script>
+    /* Highlight correct tab on closed-orders page */
+    var pageURL = window.location.href;
+    var lastURLSegment = pageURL.substr(pageURL.lastIndexOf('/') + 1);
+     if (lastURLSegment === 'closed-orders') {
+		var accountNav = document.querySelector('.account-nav');
+        var activeNavItem = accountNav.querySelector('.active');
+        var closedOrdersNavItem = accountNav.querySelector('a[href="/account/closed-orders"]');
+        activeNavItem.classList.remove('active');
+        closedOrdersNavItem.parentElement.classList.add('active');
+     }
+</script>
+<script>
+	/* Hot swap mobile menu links */
+    var termsLink = document.querySelector(".mobile-header-module a[href='/policies/terms-and-conditions']");
+    var privacyLink = document.querySelector(".mobile-header-module a[href='/policies/privacy']");
+    
+    termsLink.setAttribute('href', 'https://www.mopar.com/en-us/terms-of-use.html');
+    privacyLink.setAttribute('href', 'https://www.chrysler.com/crossbrand_us/privacy.html');
+
+</script>
+<script>
+    var dealerButton = document.querySelector('.find-dealer-button');
+    var dealerSelectModal = document.getElementById('dealerSelectionModal');
+    var dealerSelectContainer = dealerSelectModal.querySelector('.cart-content-container');
+    var currentMessage = dealerSelectContainer.firstChild;
+    var newMessageDiv = document.createElement('p');
+    var evChargers = ['HCS40PM', 'HCS40PJ', 'HCS40J', 'HCS40M'];
+    var i;
+    var j;
+    var disclaimers = document.createElement('div');
+    var disclaimElementA = document.createElement('p');
+    var disclaimElementB = document.createElement('p');
+    var disclaimA = "<strong>Please Note:</strong> EV chargers must be ordered separately from any other part or accessory."
+    var disclaimB = "Please complete your checkout for EV Chargers without adding other products to your cart."
+    
+    /* Replace original message */
+    currentMessage.remove();
+    newMessageDiv.innerHTML = "Changing dealers will impact the following items in your cart:";
+    dealerSelectContainer.prepend(newMessageDiv);
+
+    /* Add disclaimer text in dealer modal */
+    disclaimers.className = 'ev-charger-disclaimers';
+    disclaimElementA.innerHTML = disclaimA;
+    disclaimElementA.className = 'ev-charger-disclaimer';
+    disclaimElementB.innerHTML = disclaimB;
+    disclaimElementB.className ='ev-charger-disclaimer';
+    
+    window.addEventListener('click', function(e) {
+        
+        // Make sure click was on change dealer button
+        if ( e.target.classList.contains('find-dealer-text')
+            || e.target.classList.contains('find-dealer-button')
+            || e.target.parentNode.classList.contains('find-dealer-button')) {
+            
+            setTimeout(function() {
+                var evChargerExists = false;
+                var cartContentList = dealerSelectContainer.querySelectorAll('.cart-item-sku');        
+
+                for ( i = 0; i < cartContentList.length; i++) {
+                    for ( j = 0; j < evChargers.length; j++ ) {
+                        if ( evChargers[j] === cartContentList[i].innerHTML ) {
+                            evChargerExists = true;
+                            break;
+                        };
+                    };
+                };
+
+                if ( evChargerExists === true ) {
+                    dealerSelectContainer.append(disclaimers);
+                    disclaimers.append(disclaimElementA);
+                    disclaimers.append(disclaimElementB);
+                    evChargerExists = false;
+                };
+            }, 500);
+        }
+    });
+</script>
+<script>
+    const warrantyTitles = document.querySelectorAll('.warranty .badge-text strong');
+    if ( warrantyTitles ) {
+        // warrantyTitles.innerHTML = 'Superior OEM Quality';
+        for ( i = 0; i <= warrantyTitles.length; i++ ) {
+            if (warrantyTitles[i]) {
+        		warrantyTitles[i].innerHTML = 'Superior OEM Quality';
+            }
+        };
+    };
+</script>
+<script>
+    // D-Coder Expander
+// ====================================================================//
+    /*
+const expanderButton = document.getElementById('expander-toggle')
+const expander = document.getElementById('d-coder-expander');
+    console.log(" ++++++  ");
+console.log(expanderButton);
+    if (expander) {
+const expanderHeight = expander.offsetHeight;
+
+expander.style.height = 0;
+    }
+if (expanderButton){
+expanderButton.addEventListener('click', function() {
+    if (expanderButton.classList.contains('expanded')) {
+        expander.style.height = 0;
+    } else {
+        expander.style.height = expanderHeight + 'px';
+    }
+    expander.classList.toggle('expanded');
+    expanderButton.classList.toggle('expanded');
+})}
+*/
+    
+    $(document).ready(function() {
+    
+    	$('#expander-toggle').click(function(e) {
+        	e.preventDefault();
+        	$('#d-coder-expander').toggleClass('show');
+        })
+        
+    });
+    
+</script>
+
+<script>
+
+    // Check if the product title contains "Affiliated Accessories"
+    function isAffiliatedAccessoriesProduct() {
+        var productTitle = document.querySelector('.product-title');
+        if (productTitle && productTitle.textContent.includes('Affiliated Accessories')) {
+            return true;
+        }
+        return false;
+    }
+
+    // Remove the brand from breadcrumbs
+    function removeBrandBreadcrumbs() {
+        // Check if it's an Affiliated Accessories product
+        if (isAffiliatedAccessoriesProduct()) {
+            // Find the breadcrumbs
+            var breadcrumbs = document.querySelector('.page-bread-crumbs a.tail');
+            if (breadcrumbs) {
+                // Remove the brand from breadcrumbs
+                $('.page-bread-crumbs:contains("AFFILIATED ACCESSORIES")').each(function(){
+    			$(this).html($(this).html().split("AFFILIATED ACCESSORIES").join(""));
+				});
+            }
+        }
+    }
+    
+    // Call the function to edit breadcrumbs
+    removeBrandBreadcrumbs();
+    
+    // Check if the product subtitle contains "Affiliated Accessories"
+    function isAffiliatedAccessoriesProduct() {
+        var productTitle = document.querySelector('.product-title');
+        if (productTitle && productTitle.textContent.includes('Affiliated Accessories')) {
+            return true;
+        }
+        return false;
+    }
+
+    // Remove the product subtitle
+    function removeProductSubtitle() {
+        // Check if it's an Affiliated Accessories product
+        if (isAffiliatedAccessoriesProduct()) {
+            // Find the product subtitle
+            var productSubtitle = document.querySelector('.product-subtitle');
+            if (productSubtitle) {
+                // Remove the product subtitle
+                productSubtitle.remove();
+            }
+        }
+    }
+
+    // Call the function to edit brand row
+    removeProductSubtitle();
+
+</script>
+
+<script>
+    // regex patterns to identify known bot instances:
+	let botPattern = "(googlebot\/|bot|Googlebot-Mobile|Googlebot-Image|Google favicon|Mediapartners-Google|bingbot|slurp|java|wget|curl|Commons-HttpClient|Python-urllib|libwww|httpunit|nutch|phpcrawl|msnbot|jyxobot|FAST-WebCrawler|FAST Enterprise Crawler|biglotron|teoma|convera|seekbot|gigablast|exabot|ngbot|ia_archiver|GingerCrawler|webmon |httrack|webcrawler|grub.org|UsineNouvelleCrawler|antibot|netresearchserver|speedy|fluffy|bibnum.bnf|findlink|msrbot|panscient|yacybot|AISearchBot|IOI|ips-agent|tagoobot|MJ12bot|dotbot|woriobot|yanga|buzzbot|mlbot|yandexbot|purebot|Linguee Bot|Voyager|CyberPatrol|voilabot|baiduspider|citeseerxbot|spbot|twengabot|postrank|turnitinbot|scribdbot|page2rss|sitebot|linkdex|Adidxbot|blekkobot|ezooms|dotbot|Mail.RU_Bot|discobot|heritrix|findthatfile|europarchive.org|NerdByNature.Bot|sistrix crawler|ahrefsbot|Aboundex|domaincrawler|wbsearchbot|summify|ccbot|edisterbot|seznambot|ec2linkfinder|gslfbot|aihitbot|intelium_bot|facebookexternalhit|yeti|RetrevoPageAnalyzer|lb-spider|sogou|lssbot|careerbot|wotbox|wocbot|ichiro|DuckDuckBot|lssrocketcrawler|drupact|webcompanycrawler|acoonbot|openindexspider|gnam gnam spider|web-archive-net.com.bot|backlinkcrawler|coccoc|integromedb|content crawler spider|toplistbot|seokicks-robot|it2media-domain-crawler|ip-web-crawler.com|siteexplorer.info|elisabot|proximic|changedetection|blexbot|arabot|WeSEE:Search|niki-bot|CrystalSemanticsBot|rogerbot|360Spider|psbot|InterfaxScanBot|Lipperhey SEO Service|CC Metadata Scaper|g00g1e.net|GrapeshotCrawler|urlappendbot|brainobot|fr-crawler|binlar|SimpleCrawler|Livelapbot|Twitterbot|cXensebot|smtbot|bnf.fr_bot|A6-Indexer|ADmantX|Facebot|Twitterbot|OrangeBot|memorybot|AdvBot|MegaIndex|SemanticScholarBot|ltx71|nerdybot|xovibot|BUbiNG|Qwantify|archive.org_bot|Applebot|TweetmemeBot|crawler4j|findxbot|SemrushBot|yoozBot|lipperhey|y!j-asr|Domain Re-Animator Bot|AddThis)";
+
+	let regex = new RegExp(botPattern, 'i');
+    let defaultSampleRate = 1;
+
+// define var conditionalSampleRate as 0 if the userAgent matches a pattern in botPatterns
+// otherwise, define conditionalSampleRate as 100
+	let conditionalSampleRate = regex.test(navigator.userAgent) ? 0 : defaultSampleRate;
+  (function(h,o,u,n,d) {
+    h=h[d]=h[d]||{q:[],onReady:function(c){h.q.push(c)}}
+    d=o.createElement(u);d.async=1;d.src=n
+    n=o.getElementsByTagName(u)[0];n.parentNode.insertBefore(d,n)
+  })(window,document,'script','https://www.datadoghq-browser-agent.com/us1/v5/datadog-rum.js','DD_RUM')
+  window.DD_RUM.onReady(function() {
+    window.DD_RUM.init({
+      clientToken: 'pubfbeef67ef485da82bcd36ef3097bed3b',
+      applicationId: 'f5013f2a-b40a-4b34-8760-82d781d308d0',
+      // `site` refers to the Datadog site parameter of your organization
+      // see https://docs.datadoghq.com/getting_started/site/
+      site: 'datadoghq.com',
+      service: 'webstore',
+      env: 'production',
+      version: 'custom-script',
+      // Specify a version number to identify the deployed version of your application in Datadog
+      // version: '1.0.0',
+      sessionSampleRate: conditionalSampleRate,
+      sessionReplaySampleRate: conditionalSampleRate,
+      trackUserInteractions: true,
+      trackResources: true,
+      trackLongTasks: true,
+      defaultPrivacyLevel: 'allow',
+      allowedTracingUrls: ['https://store.mopar.com'],
+    });
+  })
+</script>
+
+<script>(function(w,d,t,r,u){var f,n,i;w[u]=w[u]||[],f=function(){var o={ti:"151014204", enableAutoSpaTracking: true};o.q=w[u],w[u]=new UET(o),w[u].push("pageLoad")},n=d.createElement(t),n.src=r,n.async=1,n.onload=n.onreadystatechange=function(){var s=this.readyState;s&&s!=="loaded"&&s!=="complete"||(f(),n.onload=n.onreadystatechange=null)},i=d.getElementsByTagName(t)[0],i.parentNode.insertBefore(n,i)})(window,document,"script","//bat.bing.com/bat.js","uetq");</script>
+
+<script>
+	/* ----- Adobe analytics using adobe datalayer ----- */
+
+	window.adobeDataLayer = window.adobeDataLayer || [];
+    
+    const fireDigitalData = true;
+
+	const formatText = text => text?.toString().trim().toLowerCase().replace(/[-\s]+/g, ' ').replace(/\s+/g, '-') || '';
+
+	const getPageName = () => formatText(window.digitalData?.page?.pageInfo?.pageName?.replace(/^mopar\|store\|en-us\|/, '') || '');
+
+	/* -- page load --*/
+	const getEventTypeForPageView = (pageType, siteSection) => {
+		const products = window.digitalData.products;
+
+		switch (true) {
+			case pageType === 'home' || pageType === 'search-results' || pageType === 'dseo-page':
+				return {
+					'eventType': '',
+					'items': getItemsPayload(products.impressions),
+				};
+			case pageType === 'product-page':
+				return {
+					'eventType': { 'isProductView': true, },
+					'items': getItemsPayload(products.productDetail),
+				};
+			case pageType === 'checkout' && siteSection === 'cart':
+				return {
+					'eventType': { 'isCartView': true, },
+					'items': getItemsPayload(products.cart),
+				};
+			case pageType === 'order-confirmation':
+				return {
+					'eventType': '',
+					'items': getItemsPayload(products.purchased),
+				};
+			case pageType === 'consumer-friendly-categories' || pageType === 'oem-categories-parts':
+				return {
+					'eventType': '',
+					'items': getItemsPayload(products.listing),
+				};
+			default:
+				return {
+					'eventType': '',
+					'items': [],
+				};
+		}
+	};
+
+	const getItemsPayload = (data) => {
+		if (!data || data.length === 0) {
+			return [];
+		}
+
+		let itemData = [];
+
+		if (Array.isArray(data)) {
+			itemData = data;
+		} else if (typeof data === 'object' && data.id !== 'undefined') {
+			itemData = [data];
+		} else if (typeof data === 'object') {
+			itemData = Object.values(data);
+		}
+
+		return itemData.map((item) => ({
+			id: formatText(String(item.id)),
+			price: String(item.price),
+			...(item.quantity ? { quantity: String(item.quantity) } : {}),
+			description: formatText(String(item.name)),
+			type: formatText(item.type ?? ''),
+			brand: formatText(String(item.brand)),
+		}));
+	};
+
+	const mapVehicle = (vehicle) => {
+		return [{
+			year: formatText(vehicle.vehicleYear?.toString() ?? ''),
+			make: formatText(vehicle.vehicleMake ?? ''),
+			model: formatText(vehicle.vehicleModel ?? ''),
+			trim: formatText(vehicle.vehicleTrim ?? ''),
+			vin: formatText(vehicle.vehicleVin ?? ''),
+		}];
+	};
+
+	const handleAdobePageLoadEvent = (e, data) => {
+		const digitalData = window.digitalData;
+		const vehicle = digitalData?.user?.vehicle;
+		const mappedVehicle = vehicle ? mapVehicle(vehicle) : [];
+		const pageType = digitalData.page.category.pageType;
+		const pageName = getPageName();
+		const siteSection = digitalData.page.category.siteSection;
+		const { eventType, items } = getEventTypeForPageView(pageType, siteSection);
+
+		const adobeDataLayerObject = {
+			'event': 'page-load',
+			'eventType': eventType,
+			'page': {
+				'type': formatText(pageType),
+				'name': pageName,
+				'siteType': formatText(digitalData.page.pageInfo.siteName),
+				'url': digitalData.page.pageInfo.url,
+				'responsiveState': formatText(digitalData.page.pageInfo.responsiveState),
+				'language': formatText(digitalData.page.pageInfo.language),
+				'version': digitalData.version,
+				'templateId': '',
+			},
+			'dealer': {
+				'id': digitalData.page.pageInfo.dealerID,
+			},
+			'user': {
+				'userId': digitalData.user.userId,
+				'hashEmail': digitalData.user.hashEmail,
+				'authenticationState': formatText(digitalData.user.authenticationState),
+				'vehicle': mappedVehicle,
+			},
+			item: items,
+		};
+
+		window.adobeDataLayer.push(adobeDataLayerObject);
+
+		// handle error event
+		handleAdobeErrorDisplayEvent('h1.page-error-500-content', 'service-availability');
+	};
+
+	$(document).on('tracking-event:JSpageView', handleAdobePageLoadEvent);
+	/* -- end -- */
+
+	/* search interaction */
+	const handleAdobeSearchInteractionEvent = (suggested_query = null, isFromLayoutProduct = false, data = null) => {
+		let searchText = localStorage.getItem('adobeSearchText');
+		if (!suggested_query && searchText) {
+			localStorage.removeItem('adobeSearchText');
+			return;
+		}
+
+		if (typeof data === "object" && data?.attributes?.query === 'search-by-vehicle') {
+			localStorage.setItem('adobeSearchByVehicle', 'true');
+			return;
+		}
+
+		const query = formatText(suggested_query ?? digitalData.search_details.query);
+		let resultCount = digitalData?.search_details?.resultCount ?? (suggested_query ? (isFromLayoutProduct ? 1 : 0) : 0);
+		window.adobeDataLayer.push({
+			"event": "search-interaction",
+			"eventType": "",
+			"search": {
+				"query": formatText(query),
+				"resultCount": `${resultCount}`
+			}
+		});
+	};
+
+	$(document).on('click', 'div.suggestion-container a.search-suggestion', function () {
+		let suggestionTitle = $(this).find('div.suggestion-title').text();
+		let searchText = document.querySelector('div.fallback-suggestion .suggestion-title').textContent;
+
+		localStorage.setItem('adobeSuggestedQuery', `suggestedQuery:${suggestionTitle}`);
+		localStorage.setItem('adobeSearchText', searchText);
+	});
+
+	const handleSearchByVehicle = (vehicle) => {
+		window.adobeDataLayer.push({
+			"event": "search-interaction",
+			"eventType": "",
+			"search": {
+				"query": 'search-by-vehicle',
+			},
+			"user": {
+				"vehicle": vehicle,
+			},
+		});
+	};
+
+	const handleAdobeSearchInteractionEventForSuggestedQuery = () => {
+		let suggestedQuery = localStorage.getItem('adobeSuggestedQuery');
+		if (suggestedQuery) {
+			localStorage.removeItem('adobeSuggestedQuery');
+			handleAdobeSearchInteractionEvent(suggestedQuery);
+		}
+
+		let searchByVehicle = localStorage.getItem('adobeSearchByVehicle');
+		if (searchByVehicle) {
+			localStorage.removeItem('adobeSearchByVehicle');
+			const vehicle = digitalData?.user?.vehicle;
+			const mappedVehicle = vehicle ? mapVehicle(vehicle) : [];
+			handleSearchByVehicle(mappedVehicle);
+		}
+	};
+
+	$(document).on('tracking-event:search', (e, data) => handleAdobeSearchInteractionEvent(null, false, data));
+	$(document).on('tracking-event:JSpageView', e => handleAdobeSearchInteractionEventForSuggestedQuery());
+
+	$(document).on('click', 'div.search-by-vin-module #button-submit', function () {
+		const $vinInput = $(this).siblings('input.vin_search_str');
+		const vin = $vinInput.val() ?? '';
+		window.adobeDataLayer.push({
+			"event": "search-interaction",
+			"eventType": "",
+			"search": {
+				"query": 'search-by-vin',
+			},
+			"user": {
+				"vin": vin,
+			},
+		});
+	});
+	/* -- end -- */
+
+	/* cart interaction */
+	const getCartPayload = (eventType, data) => {
+		const { cartID, cartItems, totalPrice } = digitalData.page.pageInfo;
+
+		const adobeDataLayerObject = {
+			'event': 'cart-interaction',
+			'cart': {
+				'eventType': {
+					[eventType]: 'true',
+				},
+				'id': cartID,
+				'totalPrice': `${totalPrice}`,
+			},
+			'item': getItemsPayload(data),
+		};
+
+		return adobeDataLayerObject;
+	};
+
+	const getEmptyCartPayload = (eventType, data) => {
+		const { cartID } = digitalData.page.pageInfo;
+		const cartTotalPrice = 0;
+
+		const adobeDataLayerObject = {
+			'event': 'cart-interaction',
+			'cart': {
+				'eventType': {
+					[eventType]: 'true',
+				},
+				'id': cartID,
+				'totalPrice': `${cartTotalPrice}`,
+			},
+			item: getItemsPayload(data),
+		};
+
+		return adobeDataLayerObject;
+	};
+
+	const handleAdobeAddToCartEvent = (e, data) => {
+		let { attributes } = data;
+
+		if (!Object.keys(attributes).length && window.digitalData.products.productDetail[0]) {
+			attributes = window.digitalData.products.productDetail[0];
+			attributes.quantity = $('.product-purchase .quantity-control input[name="quantity"]').val();
+		}
+		window.adobeDataLayer.push(getCartPayload('isItemAdd', attributes));
+
+		if (!localStorage.getItem('adobeIsCartOpen') && window.digitalData.products.cart.length === 1) {
+			localStorage.setItem('adobeIsCartOpen', true);
+			window.adobeDataLayer.push(getCartPayload('isCartOpen', attributes));
+		}
+	};
+
+	const handleAdobeRemoveCartEvent = (e, data) => {
+		const { attributes } = data;
+
+		handleResetIsCartOpen();
+		window.adobeDataLayer.push(getCartPayload('isItemRemove', attributes));
+	};
+
+	const handleAdobeRemoveAllCartEvent = (e, data) => {
+		const attributes = digitalData.products.cart;
+
+		window.adobeDataLayer.push(getEmptyCartPayload('isCartEmpty', attributes));
+	};
+
+	const handleResetIsCartOpen = () => {
+		if (!window.digitalData.page.pageInfo.cartItems) {
+			localStorage.removeItem('adobeIsCartOpen');
+		};
+	};
+
+	$(document).on('tracking-event:cartAdd', handleAdobeAddToCartEvent);
+	$(document).on('tracking-event:cartRemove', handleAdobeRemoveCartEvent);
+	$(document).on('tracking-event:cartRemoveAll', handleAdobeRemoveAllCartEvent);
+	$(document).on('tracking-event:JSpageView', handleResetIsCartOpen);
+	/* -- end -- */
+
+	/* -- checkout-interaction -- */
+	const handleAdobeCheckoutInteractionProceedEvent = () => {
+		localStorage.setItem('adobeCheckout', true);
+		const cartId = window.digitalData.page.pageInfo.cartID;
+		const purchasedItems = window.digitalData.products.cart;
+
+		const items = purchasedItems.map(item => ({
+			id: item.id,
+			price: `${parseFloat(item.price)}`,
+			quantity: `${item.quantity}`,
+			brand: formatText(item.brand),
+			description: formatText(item.name),
+			type: formatText(item.type ?? ''),
+		}));
+
+		const totalPrice = items.reduce((sum, item) => sum + item.price * item.quantity, 0).toFixed(2);
+
+		window.adobeDataLayer.push({
+			event: 'checkout-interaction',
+			eventType: { isProceedCheckout: true },
+			cart: { id: cartId, totalPrice },
+			item: items,
+			flow: {
+				name: 'checkout',
+				stepName: 'checkout-process',
+				stepNumber: '1',
+				stepStatus: 'in-progress'
+			}
+		});
+	};
+
+	const handleAdobeCheckoutInteractionFailedEvent = () => {
+		const isCartPage = window.digitalData.page.category.pageType === 'checkout' &&
+			window.digitalData.page.category.siteSection === 'cart';
+
+		const checkoutFlag = localStorage.getItem('adobeCheckout');
+		const urlParams = new URLSearchParams(window.location.search);
+		const errorCode = urlParams.get('code');
+
+		if (errorCode && isCartPage && checkoutFlag) {
+			const cartId = window.digitalData.page.pageInfo.cartID;
+			const purchasedItems = window.digitalData.products.cart;
+
+			const items = purchasedItems.map(item => ({
+				id: item.id,
+				price: `${parseFloat(item.price)}`,
+				quantity: item.quantity,
+				brand: formatText(item.brand),
+				description: formatText(item.name),
+				type: formatText(item.type ?? ''),
+			}));
+
+			const totalPrice = items.reduce((sum, item) => sum + item.price * item.quantity, 0).toFixed(2);
+
+			window.adobeDataLayer.push({
+				event: 'checkout-interaction',
+				eventType: '',
+				cart: { id: cartId, totalPrice },
+				item: items,
+				error: { code: errorCode },
+				flow: {
+					name: 'checkout',
+					stepName: 'checkout-failed',
+					stepNumber: '2',
+					stepStatus: 'failed'
+				}
+			});
+
+			// handle error event
+			handleAdobeErrorDisplayEvent('.card-page-error .card-text', 'checkout');
+		}
+		localStorage.removeItem('adobeCheckout');
+	};
+
+	const handleAdobeCheckoutInteractionSuccessEvent = () => {
+        const sequenceNumber = window.digitalData.transaction.sequenceNumber;
+		const orderId = window.digitalData.transaction.orderID;
+        const placedDate = window.digitalData.transaction.date;
+		const shipmentPrice = `${parseFloat(window.digitalData.transaction.shippingTotal)}`;
+		const orderTotal = `${parseFloat(window.digitalData.transaction.orderTotal)}`;
+		const cartId = window.digitalData.transaction.cartID;
+		const purchasedItems = window.digitalData.products.purchased;
+		const paymentStatus = formatText(window.digitalData.transaction.transactionStatus);
+		const paymentTransactionId = window.digitalData.transaction.transactionId;
+		const offers = window.digitalData.transaction.offers;
+		const filterOffers = offers.map((item) => {
+			const discountValue = parseFloat(item.discount);
+
+			return {
+				...item,
+				id: formatText(item.id),
+				status: 'Active',
+				discount: discountValue.toString(),
+				usageLimit: '',
+				promotionCode: formatText(item.id)
+			};
+		});
+
+		const items = purchasedItems.map(item => ({
+			id: item.id,
+			price: `${parseFloat(item.price)}`,
+			quantity: item.quantity,
+			brand: formatText(item.brand),
+			description: formatText(item.name),
+			type: formatText(item.type ?? ''),
+		}));
+
+		const totalPrice = items.reduce((sum, item) => sum + parseFloat(item.price), 0).toFixed(2);
+
+		window.adobeDataLayer.push({
+			event: 'checkout-interaction',
+			eventType: { 'isOrderComplete': true, },
+			cart: { id: cartId, totalPrice },
+			item: items,
+			payment: {
+				status: paymentStatus,
+				transactionId: paymentTransactionId
+			},
+			order: {
+				id: orderId,
+				shipmentPrice,
+				total: orderTotal
+			},
+			offers: filterOffers,
+			flow: {
+				name: 'checkout',
+				stepName: 'complete-order',
+				stepNumber: '2',
+				stepStatus: 'completed'
+			}
+		});
+	};
+
+	$(document).on('tracking-event:checkout', handleAdobeCheckoutInteractionProceedEvent);
+	$(document).on('tracking-event:JSpageView', handleAdobeCheckoutInteractionFailedEvent);
+	$(document).on('tracking-event:purchase', handleAdobeCheckoutInteractionSuccessEvent);
+	/* -- end -- */
+
+	/* -- form-interaction -- */
+	let formStarted = false;
+	$(document).on('input change', '.contact-form-fields input, .contact-form-fields select, .contact-form-fields textarea', function () {
+		if (!formStarted) {
+			formStarted = true;
+
+			adobeDataLayer.push({
+				event: 'form-start',
+				eventType: '',
+				form: {
+					id: 'contact-form',
+					name: 'contact-form',
+					type: 'contact',
+					position: 'contact-us'
+				}
+			});
+		}
+	});
+    
+    const spanElement = $('#dealer-dropdownMenuButton .label-value')[0];
+	if (spanElement) {
+		const observer = new MutationObserver((mutations) => {
+			mutations.forEach((mutation) => {
+				if ((mutation.type === 'characterData' || mutation.type === 'childList') && !formStarted) {
+					formStarted = true;
+					adobeDataLayer.push({
+						event: 'form-start',
+						eventType: '',
+						form: {
+							id: 'contact-form',
+							name: 'contact-form',
+							type: 'contact',
+							position: 'contact-us'
+						}
+					});
+				}
+			});
+		});
+
+		observer.observe(spanElement, {
+			childList: true,
+			characterData: true,
+			subtree: true
+		});
+	}
+
+	$(document).on('click', '.contact-form-fields .contact-form-submit', function () {
+		adobeDataLayer.push({
+			event: 'form-complete',
+			eventType: '',
+			form: {
+				id: 'contact-form',
+				name: 'contact-form',
+				type: 'contact',
+				position: 'contact-us'
+			}
+		});
+	});
+
+	/* -- error display -- */
+	const handleAdobeErrorDisplayEvent = (errorElementSelector, location) => {
+		const errorElement = $(errorElementSelector);
+
+		if (errorElement.length > 0) {
+			adobeDataLayer.push({
+				'event': 'error-display',
+				'eventType': '',
+				'error': {
+					'location': formatText(location),
+					'details': formatText(errorElement.text()),
+				},
+			});
+		}
+	};
+	/* -- end -- */
+
+	/* -- interaction click -- */
+	const triggerAdobeDigitalDataInteractionClickEvent = ({ type = '', location = '', description = '', linkNameType = null }) => {
+		window.digitalData.newEvent({
+			type: 'CustomTagEvent',
+			eventName: 'generalCTA',
+			eventAction: 'pageElementInteraction',
+			attributes: {
+				linkType: type,
+				linkName: `mopar:store|${linkNameType || type}|${getPageName()}|${location}|${description}`,
+			}
+		});
+	};
+	
+	const triggerAdobeIntractionClickEvent = ({ eventType = null, type = '', location = '', description = '', linkNameType = null, ...remaining } = {}) => {
+		adobeDataLayer.push({
+			'event': 'interaction-click',
+			'eventType': eventType ? { [eventType]: 'true' } : '',
+			'interaction': {
+				'type': type,
+				'page': getPageName(),
+				'location': location,
+				'description': description,
+			},
+			...(Object.keys(remaining || {}).length > 0 ? remaining : {}),
+		});
+
+		fireDigitalData && triggerAdobeDigitalDataInteractionClickEvent({ type, location, description, linkNameType });
+	};
+
+	// Listen for mobile menu click
+	$('.links-list-module a, .mobile-nav-item a').on('click', function (event) {
+		const linkDiscription = formatText(this.textContent);
+		triggerAdobeIntractionClickEvent({ type: 'nav', location: 'menu', description: linkDiscription });
+	});
+
+	// Listen to social click
+	$('.nav_social a').on('click', function (event) {
+		const link = formatText($(this).text());
+		triggerAdobeIntractionClickEvent({ type: 'nav', location: 'social', description: link });
+	});
+
+	// Listen to product policies click
+	$('.product-policies-module a').on('click', function (event) {
+		const link = formatText($(this).text());
+		triggerAdobeIntractionClickEvent({ type: 'nav', location: 'policy', description: link });
+	});
+
+	// Listen to product click
+	$('.catalog-product a, .product-purchase-button a.view-details').on('click', function (event) {
+		const $link = $(this);
+		const targetAttr = $link.attr('data-target');
+		const isInMoreCategory = $link.closest('.catalog-product-more-in-category').length > 0;
+		const isProductBrand = $link.closest('.product-brand-link').length > 0;
+
+		if ((targetAttr && targetAttr.includes('#dealerSelectionModal')) || isInMoreCategory || isProductBrand) {
+			return;
+		}
+
+		let productTitle = $(this).closest('.catalog-product').find('a.title-link').text().trim();
+		if (!productTitle) {
+			productTitle = $(this).closest('.catalog-product').find('.product-title a').text().trim();
+		}
+        
+        if (window.location.pathname === '/accessories') {
+            const ctaText = $link.closest('.catalog-product').find('.place-order-button').text();
+            const productDetails = digitalData.products?.impressions?.find(item => item.name === productTitle) || null;
+            
+            if (productDetails) {
+            	productDetails['quantity'] = '1';
+                productDetails['description'] = formatText(productTitle);
+                productDetails['id'] = formatText(productDetails['id']);
+                productDetails['brand'] = formatText(productDetails['brand']);
+                delete productDetails['name'];
+            }
+            
+            triggerAdobeIntractionClickEvent({ type: 'nav', location: 'shop-all', description: formatText(`${productTitle}:${ctaText}`), ...(productDetails && { item: [productDetails] }) });
+        } else {
+        	triggerAdobeIntractionClickEvent({ type: 'cta', location: 'catalog-product', description: formatText(productTitle) });
+        }
+	});
+
+	// Listen to product click - recommended products
+	$(document).on('click', '.each-recommended-products .recommendation', function (event) {
+		const productTitle = $(this).find('.recommendation-name').text();
+		triggerAdobeIntractionClickEvent({ type: 'cta', location: 'recommended-product', description: formatText(productTitle) });
+	});
+
+	// Listen to product click - bundle products
+	$('.product-details-module .required-parts a').on('click', function (event) {
+		const productTitle = $(this).text();
+		triggerAdobeIntractionClickEvent({ type: 'cta', location: 'product-details', description: formatText(productTitle) });
+	});
+
+	// Listen to product click - bundle recommendation
+	$('.bundle-recommendation-module .catalog-product a').on('click', function (event) {
+		const $link = $(this);
+		const targetAttr = $link.attr('data-target');
+		const isInMoreCategory = $link.closest('.catalog-product-more-in-category').length > 0;
+		const isProductBrand = $link.closest('.product-brand-link').length > 0;
+
+		if ((targetAttr && targetAttr.includes('#dealerSelectionModal')) || isInMoreCategory || isProductBrand) {
+			return;
+		}
+
+		const productTitle = $(this).closest('.catalog-product').find('a.title-link').text();
+		triggerAdobeIntractionClickEvent({ type: 'cta', location: 'bundle-recommendation', description: formatText(productTitle) });
+	});
+
+	// Listen to product click - fitting products
+	$('.browse-fitting-products .suggested-products a').on('click', function (event) {
+		const productTitle = $(this).closest('.suggested-product-details').find('.product-name').text();
+		triggerAdobeIntractionClickEvent({ type: 'cta', location: 'suggested-product', description: formatText(productTitle) });
+	});
+
+	// Listen to product click - cart
+	$('.cart-listing-module tbody a:not(.update-cart-link):not(.remove-item-link)').on('click', function (event) {
+		const productTitle = $(this).text();
+		triggerAdobeIntractionClickEvent({ type: 'cta', location: 'cart', description: formatText(productTitle) });
+	});
+
+	// Listen to product click - cart model
+	$(document).on('click', '.cart-listing a.order-item.order_item', function (event) {
+		const productTitle = $(this)
+			.contents()
+			.filter(function () {
+				return this.nodeType === 3;
+			})
+			.text();
+		triggerAdobeIntractionClickEvent({ type: 'cta', location: 'cart-listing', description: formatText(productTitle) });
+	});
+
+	// Listener for Select a Vehicle
+	$('[data-target="#themeVehicleModalSelector"]').on('click', function (event) {
+		event.preventDefault();
+		triggerAdobeIntractionClickEvent({ type: 'func', location: 'topnav', description: 'vehicle-selector' });
+	});
+
+	$('.select-vehicle-link').on('click', function (event) {
+		triggerAdobeIntractionClickEvent({ type: 'func', location: 'topnav', description: 'vehicle-selector' });
+	});
+
+	// Listener for the 'Make/Model' link
+	$('.themeVehicleTabWrap [data-toggle-target=".themeVehicleTabContentMake"]').on('click', function (event) {
+		event.preventDefault();
+		triggerAdobeIntractionClickEvent({ type: 'func', location: 'vehicle-selector-modal', description: 'pick-by:make-model' });
+	});
+
+	// Listener for the 'VIN' link
+	$('.themeVehicleTabWrap [data-toggle-target=".themeVehicleTabContentVIN"]').on('click', function (event) {
+		event.preventDefault();
+		triggerAdobeIntractionClickEvent({ type: 'func', location: 'vehicle-selector-modal', description: 'pick-by:vin' });
+	});
+
+	// Listener for Close Button
+	$('.themeVehicleTabWrap .close[data-dismiss="modal"]').on('click', function (event) {
+		triggerAdobeIntractionClickEvent({ type: 'func', location: 'vehicle-selector-modal', description: 'close' });
+	});
+
+	// Listener for Vehicle Modal Selector - Success - via VIN
+	$('.themeVehicleTabContentVIN  #button-submit').on('click', function (event) {
+		const vinValue = document.querySelector('.themeVehicleTabContentVIN .vin_search_str').value;
+		triggerAdobeIntractionClickEvent({ type: 'func', location: 'vehicle-selector-modal', description: `success-via-vin:${vinValue}` });
+	});
+
+	// Listener for the themeVehicleTabCurrentCar div
+	$('.themeVehicleTabCurrentCar .garage-text-wrap').on('click', function (event) {
+		triggerAdobeIntractionClickEvent({ type: 'func', location: 'vehicle-selector-modal', description: 'vehicle-picker' });
+	});
+
+	// Listener for the New Vehicles
+	$('.themeVehicleTabCurrentCar a[href="javascript:openVehiclePicker();"]').on('click', function (event) {
+		triggerAdobeIntractionClickEvent({ type: 'func', location: 'vehicle-selector-modal', description: 'vehicle-picker:new-vehicle' });
+	});
+
+	// Listener for Search All Vehicles
+	$('.themeVehicleTabCurrentCar a[href="/auto-parts/search-all-cars"]').on('click', function (event) {
+		triggerAdobeIntractionClickEvent({ type: 'func', location: 'vehicle-selector-modal', description: 'vehicle-picker:search-all-vehicles' });
+	});
+
+	// Listener for Clear Recent
+	$('.themeVehicleTabCurrentCar a[href="/auto-parts/clear-all-cars"]').on('click', function (event) {
+		triggerAdobeIntractionClickEvent({ type: 'func', location: 'vehicle-selector-modal', description: 'vehicle-picker:clear-recent-vehicles' });
+	});
+
+	// Listener for Vehicle Modal Selector - Locate Vin
+	$('.themeVehicleTabContentVIN .find-vin-link').on('click', function (event) {
+		triggerAdobeIntractionClickEvent({ type: 'func', location: 'vehicle-selector-modal', description: 'locate-vin' });
+	});
+
+	// Listener for Vehicle Modal Selector - Vehicle Picker - Recent Search - Update Vehicle Selection
+	const $recentCarsElement = $('.themeVehicleTabCurrentCar .recent-cars');
+
+	if ($recentCarsElement.length) {
+		$recentCarsElement.on('click', function (event) {
+			const $carElement = $('.themeVehicleTabCurrentCar a[data-flyout="garage_flyout"]');
+			const carValue = $carElement.length ? $carElement.text() : '';
+			triggerAdobeIntractionClickEvent({
+				type: 'func',
+				location: 'vehicle-selector-modal',
+				description: `vehicle-picker:recent-search:${formatText(carValue)}`
+			});
+		});
+	}
+
+	// Listen for Vehicle Modal Selector - Vehicle Picker Dropdoen Buttons
+	$(document).ready(function () {
+		$('.vehicle-picker-dropdown button').on('click', function () {
+			triggerAdobeIntractionClickEvent({ type: 'func', location: 'vehicle-selector-modal', description: 'vehicle-picker' });
+		});
+	});
+
+	// Listen for vehicle picker actions
+	$(document).ready(function () {
+		$('.vehiclepicker_link').on('click', function () {
+			triggerAdobeIntractionClickEvent({ type: 'cta', description: 'vehicle-picker' });
+		});
+
+		$(document).on('mousedown', '.vp_option', function (event) {
+			event.preventDefault();
+			const tabName = $(this).closest('.rp_vehiclepicker_chooser').find('.vp_breadcrumbs .vp_chooser_bc.active').text();
+			const optionName = $(this).text();
+			triggerAdobeIntractionClickEvent({ type: 'func', location: 'vehicle-picker', description: `selection:${formatText(tabName)}:${formatText(optionName)}` });
+		});
+
+		$(document).on('mousedown', '.vp_reset_button', function (event) {
+			event.preventDefault();
+			triggerAdobeIntractionClickEvent({ type: 'func', location: 'vehicle-picker', description: 'selection:reset' });
+		});
+
+		$(document).on('mousedown', '.vp_cancel_button', function (event) {
+			event.preventDefault();
+			triggerAdobeIntractionClickEvent({ type: 'func', location: 'vehicle-picker', description: 'selection:close' });
+		});
+
+		$(document).on('mousedown', '.vp_closer .close', function (event) {
+			event.preventDefault();
+			triggerAdobeIntractionClickEvent({ type: 'func', location: 'vehicle-picker', description: 'selection:close' });
+		});
+	});
+
+	// Listen for dealer selection
+	$('.find-dealer-button').on('click', function (event) {
+		event.preventDefault();
+		triggerAdobeIntractionClickEvent({ eventType: 'isDealerSearchInitiation', type: 'func', location: 'topnav', description: 'dealer-selector' });
+	});
+
+	// Listener for Dealer Modal Selector - Search - refresh
+	$('.dealer-selection-modal  #enterZipButton').on('click', function (event) {
+		const searchValue = $('.dealer-selection-modal #zipInput').val();
+
+		// Set to localStorage
+		localStorage.setItem('adobeSearchDealer', true);
+
+		triggerAdobeIntractionClickEvent({
+			eventType: 'isDealerSearchRefresh',
+			type: 'func',
+			location: 'dealer-selector-modal',
+			description: `search-refresh:${searchValue}`
+		});
+	});
+
+	// Listener for Dealer - Search - zero result
+	$(document).ready(function () {
+		const dealerListContainer = document.querySelector('.dealer-selection-container');
+
+		const observer = new MutationObserver(function (mutations) {
+			mutations.forEach(function (mutation) {
+				if (mutation.attributeName === 'class') {
+					const searchDealer = localStorage.getItem('adobeSearchDealer');
+					const hasLoading = dealerListContainer.classList.contains('loading');
+					if (searchDealer && !hasLoading) {
+						// Loading class has been removed → search probably finished
+						const $list = $(dealerListContainer).find('.dealers-list');
+						if ($list.children().length === 0) {
+							triggerAdobeIntractionClickEvent({
+								eventType: 'isDealerSearchResultCountZero',
+								type: 'func',
+								location: 'dealer-selector-modal',
+								description: 'search-result:zero'
+							});
+						}
+
+						localStorage.removeItem('adobeSearchDealer');
+					}
+				}
+			});
+		});
+
+		observer.observe(dealerListContainer, { attributes: true });
+	});
+
+	// Listener for Dealer Modal Selector - Search - result - click
+	$(document).on('click', '.select-dealer-map-button, .select-dealer-button', function (event) {
+		const dealerId = $(this).attr('data-hash');
+
+		// Set to localStorage
+		localStorage.setItem('adobeChangedDealerId', dealerId);
+
+		triggerAdobeIntractionClickEvent({
+			eventType: 'isDealerSearchResultCountClick',
+			type: 'func',
+			location: 'dealer-selector-modal',
+			description: `${dealerId}`
+		});
+	});
+
+	// Listener for Dealer Modal Selector - change dealer
+	const handleAdobeDealerChangeEvent = () => {
+		const changedDealerId = localStorage.getItem('adobeChangedDealerId');
+
+		if (changedDealerId) {
+			triggerAdobeIntractionClickEvent({
+				eventType: 'isDealerSearchChangeDealer',
+				type: 'func',
+				location: 'dealer-selector-modal',
+				description: `change:${changedDealerId}`
+			});
+
+			localStorage.removeItem('adobeChangedDealerId');
+		}
+	};
+	$(document).on('tracking-event:JSpageView', handleAdobeDealerChangeEvent);
+
+	// Listener for clearing dealer
+	$(document).on('click', '.clear-dealer-link', function (event) {
+		triggerAdobeIntractionClickEvent({ type: 'func', location: 'dealer-selector-modal', description: 'clear' });
+	});
+
+	// Listener for order status click
+	$('a[href="/account/order-status"]').on('click', function (event) {
+		triggerAdobeIntractionClickEvent({ type: 'func', location: 'topnav', description: 'order-status' });
+	});
+
+	// Listen for proceed to checkout
+	$(document).on('click', '.place-order-button:not(.view-details)', function (event) {
+		triggerAdobeIntractionClickEvent({ type: 'nav', location: 'in-page', description: 'proceed-to-checkout' });
+	});
+
+	// Listener for login
+	$(document).on('click', '#account_login a[href="/account/login"]', function (event) {
+		localStorage.setItem('adobeLoginInitiated', true);
+	});
+
+	const handleAdobeLoginEvent = () => {
+		const loginInitiated = localStorage.getItem('adobeLoginInitiated');
+
+		if (loginInitiated) {
+			localStorage.removeItem('adobeLoginInitiated');
+
+			if (digitalData.user.authenticationState === 'Authenticated') {
+				triggerAdobeIntractionClickEvent({ eventType: 'isSsoLogin', type: 'func', location: 'topnav', description: 'login-success' });
+			}
+		};
+	};
+	$(document).on('tracking-event:JSpageView', handleAdobeLoginEvent);
+
+	// Listener for Logout
+	$(document).on('click', 'a.log-out-link', function (event) {
+		localStorage.setItem('adobeLogoutInitiated', true);
+	});
+
+	const handleAdobeLogoutEvent = () => {
+		const logoutInitiated = localStorage.getItem('adobeLogoutInitiated');
+
+		if (logoutInitiated) {
+			localStorage.removeItem('adobeLogoutInitiated');
+
+			if (digitalData.user.authenticationState === 'Non-authenticated') {
+				triggerAdobeIntractionClickEvent({ eventType: 'isSsoLogout', type: 'func', location: 'topnav', description: 'logout-success' });
+			}
+		};
+	};
+	$(document).on('tracking-event:JSpageView', handleAdobeLogoutEvent);
+
+	// -------------- new theme -------------
+	// Listen for menu click
+	$('.themeNewMegaNavWrap a').on('click', function (event) {
+		let linkDiscription = '';
+		let brandDescription = '';
+		let categoryDescription = '';
+		const $link = $(this);
+
+		if ($link.hasClass('themeNewMegaNavLink')) {
+			const $img = $link.find('img');
+
+			if ($img.length) {
+				linkDiscription = formatText($img.attr('alt') || '');
+			} else {
+				linkDiscription = formatText(this.textContent);
+			}
+		} else {
+			if ($(this).parent().is('h4')) {
+				brandDescription = formatText($(this).text());
+			} else {
+				const $parent = $link.closest('.themeNewMegaNavCardListItem');
+				const $li = $parent.find('li').first();
+				const $firstChild = $li.children().first();
+
+				if ($firstChild.is('h4')) {
+					const $anchor = $firstChild.find('a');
+
+					if ($anchor.length) {
+						brandDescription = formatText($anchor.text());
+					}
+				} else {
+					const $categoryParent = $link.closest('.themeNewMegaNavItem').find('.themeNewMegaNavLink');
+					const $img = $categoryParent.find('img');
+
+					if ($img.length) {
+						categoryDescription = formatText($img.attr('alt') || '');
+					} else {
+						categoryDescription = formatText($categoryParent.text());
+					}
+				}
+				linkDiscription = formatText(this.textContent);
+			}
+		}
+
+		const renderBaseDescription = () => {
+			let baseDescription = '';
+
+			if (categoryDescription) {
+				baseDescription += `${categoryDescription}${linkDiscription ? ':' : ''}`;
+			}
+
+			if (brandDescription) {
+				baseDescription += `model-${brandDescription}${linkDiscription ? ':' : ''}`;
+			}
+
+			return baseDescription;
+		};
+
+		triggerAdobeIntractionClickEvent({
+			type: (categoryDescription || brandDescription) ? 'nav' : 'func',
+			location: 'sec-nav',
+			description: `${renderBaseDescription()}${linkDiscription}`
+		});
+	});
+
+	// Listen for banner click
+	$(document).on('click', '.themeNewBannerWrapper a, .themeNewBannerWrapper button', function (event) {
+		const $element = $(this);
+
+		if ($element.is('a')) {
+            const linkTitle = formatText($element.closest('.themeNewBannerSliderItem').find('h4').text());
+			const linkDescription = formatText($element.closest('.themeNewBannerSliderItem').find('.themeNewBannerSliderButton').text());
+
+			triggerAdobeIntractionClickEvent({ type: 'nav', location: 'hero-title', description: `${linkTitle}:${linkDescription}` });
+		} else {
+			const buttonDescription = formatText($element.attr('aria-label').trim().split(/\s+/)[0]);
+
+			triggerAdobeIntractionClickEvent({ type: 'nav', location: 'hero-title', description: buttonDescription });
+		}
+	});
+
+	// Listen for part category
+	$(document).on('click', '.themeCatTabWrapper a', function (event) {
+		const $link = $(this);
+		const linkDescription = formatText($link.find('p').text());
+		const categoryDescription = formatText($(document).find('.themeCategoryWrapper .themeCategoryListItem.active a').text());
+
+		triggerAdobeIntractionClickEvent({ type: 'nav', location: 'part-category', description: `${categoryDescription}:${linkDescription}` });
+	});
+
+	$(document).on('click', '.themeCategoryWrapper a, .themeCategoryWrapper button', function (event) {
+		const $element = $(this);
+
+		if ($element.is('a')) {
+			const linkDescription = formatText($element.text());
+
+			triggerAdobeIntractionClickEvent({ type: 'func', location: 'part-category', description: linkDescription, linkNameType: 'nav' });
+		} else {
+			const buttonDescription = formatText($element.attr('aria-label').trim().split(/\s+/)[0]);
+
+			triggerAdobeIntractionClickEvent({ type: 'func', location: 'part-category', description: buttonDescription, linkNameType: 'nav' });
+		}
+	});
+
+	// Listen for find by brand
+	$(document).on('click', '.themeDreamVehicleTab a', function (event) {
+		const linkDescription = formatText($(this).find('img').attr('alt') || $(this).find('div').text() || '');
+
+		triggerAdobeIntractionClickEvent({ type: 'func', location: 'find-by-brand', description: linkDescription, linkNameType: 'nav' });
+	});
+
+	$(document).on('click', '.themeDreamVehicleTabContentList a', function (event) {
+		const linkDescription = formatText($(this).find('img').attr('alt') || $(this).find('h3').text() || '');
+		const brandDescription = formatText($(document).find('.themeDreamVehicleTab li.active img').attr('alt') || '');
+
+		triggerAdobeIntractionClickEvent({ type: 'nav', location: 'find-by-brand', description: `${brandDescription}:${linkDescription}` });
+	});
+
+	// Listen for featured products
+	$(document).on('click', '.featured-products a, .featured-products button', function (event) {
+		const $element = $(this);
+
+		if ($element.is('a')) {
+			const $parent = $element.parent();
+			const productName = formatText($parent.data('name'));
+			const linkDescription = formatText($element.find('.product-details-link').text());
+
+			triggerAdobeIntractionClickEvent({
+				type: 'nav',
+				location: 'feature-products',
+				description: `${productName}:${linkDescription}`,
+				item: [{
+					id: formatText($parent.data('sku')),
+					name: formatText($parent.data('name')),
+					brand: formatText($parent.data('brand')),
+					price: formatText($parent.data('price')),
+					type: '',
+				}],
+			});
+		} else {
+			const buttonDescription = formatText($element.attr('aria-label').trim().split(/\s+/)[0]);
+
+			triggerAdobeIntractionClickEvent({ type: 'nav', location: 'feature-products', description: buttonDescription });
+		}
+	});
+
+	// Listen for latest catalogs
+	$('.latest_catalog_wrapper a').on('click', function (event) {
+		const linkDescription = formatText($(this).text());
+
+		triggerAdobeIntractionClickEvent({ type: 'nav', location: 'latest-catalogs', description: linkDescription });
+	});
+
+	$('.theme_cat_tab_content a').on('click', function (event) {
+		const $link = $(this);
+		const linkDescription = formatText($link.text());
+		const catalogDescription = formatText($link.closest('.theme_cat_tab_content_wrapper').find('p').text());
+		const brandDescription = formatText($(document).find('.latest_catalog_wrapper li.active a').text());
+
+		triggerAdobeIntractionClickEvent({
+			type: 'nav',
+			location: 'latest-catalogs',
+			description: `${brandDescription}:${catalogDescription}:${linkDescription}`,
+		});
+	});
+
+	// Listen for affilicate brands
+	$(document).on('click', '.themeBrandWrap a, .themeBrandWrap button', function (event) {
+		const $element = $(this);
+
+		if ($element.is('a')) {
+			const brandDescription = formatText($element.find('img').attr('alt') || '');
+
+			triggerAdobeIntractionClickEvent({ type: 'nav', location: 'affilicate-brands', description: brandDescription });
+		} else {
+			const buttonDescription = formatText($element.attr('aria-label').trim().split(/\s+/)[0]);
+
+			triggerAdobeIntractionClickEvent({ type: 'nav', location: 'affilicate-brands', description: buttonDescription });
+		}
+	});
+
+	// Listen to bparts
+	$('.bparts-button').on('click', function (event) {
+		triggerAdobeIntractionClickEvent({ type: 'nav', location: 'in-page', description: 'b-parts' });
+	});
+    
+    // Accessories page
+    $(document).on('click', '.themeBannerTermWrap', function(e) {
+        if ($(this).hasClass('openDisclaimer')) {
+        	triggerAdobeIntractionClickEvent({ type: 'func', location: 'hero-banner', description: 'close-disclaimer' });
+        } else {
+        	triggerAdobeIntractionClickEvent({ type: 'func', location: 'hero-banner', description: 'open-disclaimer' });
+        }
+    });
+    
+    $('.moparCatList li').on('click', function (event) {
+        const linkDescription = formatText($(this).find('a').text());
+        
+		triggerAdobeIntractionClickEvent({ type: 'nav', location: 'shop-by-category', description: linkDescription });
+	});
+    
+    $(document).on('click', '.search-pagination li', function(e) {
+        const link = $(this).find('a');
+        let linkDescription = '';
+        
+        if (link.children().length > 0) {
+        	linkDescription = formatText(link.find('span').text());
+        } else {
+        	linkDescription = formatText(link.text());
+        }
+        
+		triggerAdobeIntractionClickEvent({ type: 'nav', location: 'pagination', description: linkDescription });
+	});
+    
+    $(document).ready(function(){
+        const page = $('.main').attr('id');
+        if ((page === 'page-product' || page === 'page-search' || page === 'page-dynamic-seo' || page === 'page-oem-assemblies')) {
+            const dealerCode = $('.find-dealer-button[data-ig-dealer-code]').attr('data-ig-dealer-code');
+            $.igViewOnVehicle(page === 'page-product' ? 'product' : 'list', dealerCode || null, igViewOnVehicleSettings); 
+         }
+         $('#ig_modal').on('shown.bs.modal', function () {
+          $('body').overlaySpinner.remove();
+        });
+    });
+    $(document).on('searchResults:response', (e, response={}) => {
+        if (response) {
+            setTimeout(function () {
+                const dealerCode = $('.find-dealer-button[data-ig-dealer-code]').attr('data-ig-dealer-code');
+  				$.igViewOnVehicle('list', dealerCode || null, igViewOnVehicleSettings); 
+			}, 1);
+        }
+    });
+	/* -- end -- */
+</script>

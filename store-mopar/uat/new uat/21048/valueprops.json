@@ -1,0 +1,55 @@
+{
+  "sectionId": "section_44",
+  "htmlId": "themeValuePropSection",
+  "htmlClasses": "themeValuePropSection",
+  "contentWidth": "wide",
+  "backgroundColor": "",
+  "backgroundImage": "",
+  "textColor": "dark",
+  "display": "normal",
+  "rows": [
+    {
+      "rowId": "row_45",
+      "rowLayout": 12,
+      "htmlId": null,
+      "htmlClasses": null,
+      "columns": [
+        {
+          "columnId": "column_46",
+          "columnWidth": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "moduleArrangement": "block",
+          "textAlignment": "text-left",
+          "modules": [
+            {
+              "moduleId": "module_47",
+              "moduleType": "custom_html",
+              "title": "Value Props",
+              "options": {
+                "html_content": {
+                  "name": "Custom HTML Content",
+                  "type": "html_content",
+                  "default_value": "",
+                  "value": "<div class=\"themeValuePropsWrapper\">\n  <div class=\"themeValuePropsCard\">\n    <div class=\"themeValuePropsContent\">\n      <div class=\"themeValuePropsBoxLeft\" style=\"background-image: url(https://rparts-sites.s3.amazonaws.com/8ae4b64986c61872a339a5e6aa224aeb/design/new-home/banner_value_props.webp);\">\n        <div class=\"themeValuePropsLogo\">\n          <img src=\"https://cdn.revolutionparts.io/21ebc25a592052689288153b3e3fb858/images/logo.png\" alt=\"Mopar Logo\">\n        </div>\n        <div class=\"themeValuePropsDesc\">\n          <p>\n            Mopar is original equipment&mdash;designed by the same people who made your Dodge brand vehicle.\n            No one understands the entirety of your vehicle’s functionality and design like we do.\n          </p>\n        </div>\n      </div>\n      <div class=\"themeValuePropsBoxRight\">\n        <h3>We Only Make Original Parts</h3>\n        <ul>\n          <li>\n            <h4>\n              We don’t design parts or accessories in a vacuum.\n            </h4>\n            <p>\n              We consider the vehicle as a whole when engineering our components. Our parts are\n              exclusively designed to complement your vehicle without compromising its aesthetic,\n              functionality, or performance.\n            </p>\n          </li>\n          <li>\n            <h4>\n              Our standards are sky high.\n            </h4>\n            <p>\n              Factory original equipment must adhere to a strict standard of testing. Drive with\n              confidence knowing your Mopar® parts and accessories have passed this rigorous testing.\n            </p>\n          </li>\n          <li>\n            <h4>\n              We only use the good stuff.\n            </h4>\n            <p>\n              We only use high-quality materials because we know that our parts and accessories will\n              impact the appearance, durability, and value of your vehicle for years to come.\n            </p>\n          </li>\n          <li>\n            <h4>\n              We have it. Others don’t.\n            </h4>\n            <p>\n              Only Mopar has direct, exclusive access to your vehicle’s specifications. This\n              information allows us to use an integrated design approach to create precise-fitting\n              parts and accessories.\n            </p>\n          </li>\n          <li>\n            <h4>\n              Easy-as-it-can-be installation.\n            </h4>\n            <p>\n              Installing aftermarket pieces often requires cutting or drilling into the vehicle\n              body. Most Mopar accessories use existing openings and weld nuts for secure installation.\n              This makes the job easier, helps prevent rust and corrosion, and protects the structural\n              integrity of your Dodge brand vehicle.\n            </p>\n          </li>\n        </ul>\n      </div>\n    </div>\n  </div>\n</div>"
+                },
+                "force_lazy": {
+                  "name": "Lazy Load Images",
+                  "type": "boolean",
+                  "default_value": false,
+                  "value": false
+                }
+              },
+              "htmlId": "",
+              "htmlClasses": "",
+              "minColumnWidth": 0,
+              "customAdmin": false,
+              "modulePadding": "padding-0",
+              "display": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

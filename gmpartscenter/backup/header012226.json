@@ -1,0 +1,770 @@
+{
+  "pageId": "header",
+  "pageName": "Header",
+  "pageType": null,
+  "layoutEnabled": true,
+  "moduleCategories": [
+    "header",
+    "images",
+    "text",
+    "search",
+    "categories_products",
+    "forms",
+    "navigation",
+    "footer",
+    "account_page",
+    "order_page"
+  ],
+  "VFSPath": "layouts/header.json",
+  "requiredModules": [],
+  "scripts": "",
+  "sections": [
+    {
+      "sectionId": "section_95",
+      "htmlId": "addedScripts",
+      "htmlClasses": "",
+      "contentWidth": "normal",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_96",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_97",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_98",
+                  "moduleType": "custom_html",
+                  "title": "Email Pop Up Scripts",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<script type=\"text/javascript\" src=\"https://confirmsubscription.com/h/j/6F1307AAA4F614D1/DDB7DDE3331887A4/popup.js\"></script>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_2",
+      "htmlId": "topHeader",
+      "htmlClasses": "",
+      "contentWidth": "wide",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_3",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_4",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "left",
+              "modules": [
+                {
+                  "moduleId": "module_45",
+                  "moduleType": "custom_html",
+                  "title": "Top Text tBanner",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<p>We Specialize in Finding Those Hard to Find and Backordered GM Parts! Just Place Your Order and Let Our Professional Parts Team go to Work For You!</p>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_5",
+                  "moduleType": "custom_html",
+                  "title": "Live Chat Script",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<script>    window.__lc = window.__lc || {};\n    window.__lc.license = 15758433;\n    window.__lc.integration_name = \"manual_channels\";\n    window.__lc.product_name = \"livechat\";\n    ;(function(n,t,c){function i(n){return e._h?e._h.apply(null,n):e._q.push(n)}var e={_q:[],_h:null,_v:\"2.0\",on:function(){i([\"on\",c.call(arguments)])},once:function(){i([\"once\",c.call(arguments)])},off:function(){i([\"off\",c.call(arguments)])},get:function(){if(!e._h)throw new Error(\"[LiveChatWidget] You can't use getters before load.\");return i([\"get\",c.call(arguments)])},call:function(){i([\"call\",c.call(arguments)])},init:function(){var n=t.createElement(\"script\");n.async=!0,n.type=\"text/javascript\",n.src=\"https://cdn.livechatinc.com/tracking.js\",t.head.appendChild(n)}};!n.__lc.asyncInit&&e.init(),n.LiveChatWidget=n.LiveChatWidget||e}(window,document,[].slice))\n</script>\n<noscript><a href=\"https://www.livechat.com/chat-with/15758433/\" rel=\"nofollow\">Chat with us</a>, powered by <a href=\"https://www.livechat.com/?welcome\" rel=\"noopener nofollow\" target=\"_blank\">LiveChat</a></noscript>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_12",
+      "htmlId": "topNavigation",
+      "htmlClasses": "",
+      "contentWidth": "wide",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_13",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_14",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_15",
+                  "moduleType": "store_logo",
+                  "title": "Store Logo",
+                  "options": {
+                    "logo_dark_background": {
+                      "name": "Use Dark Background Logo",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    },
+                    "logo_height": {
+                      "name": "Logo Height (px)",
+                      "type": "string",
+                      "default_value": "",
+                      "value": ""
+                    },
+                    "logo_width": {
+                      "name": "Logo Width (px)",
+                      "type": "string",
+                      "default_value": "",
+                      "value": ""
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "storeLogo",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_16",
+                  "moduleType": "actions_bar",
+                  "title": "Actions Bar",
+                  "options": {
+                    "show_disclosure": {
+                      "name": "Show Disclosure",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "actionBar",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_17",
+                  "moduleType": "custom_html",
+                  "title": "Van GM Logo",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"store-logo-module\">\n<a href=\"/\" class=\"store-logo-link_2\" data-test-id=\"store-logo-home-link\"> <img class=\"image-logo\" src=\"https://rparts-sites.s3.amazonaws.com/e462c2e0d9f1da0757c98d083caed71e/design/right_logo.webp\" alt=\"Van/GM Parts Center UAT Logo\" loading=\"lazy\"> </a>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "vanLogo",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_18",
+      "htmlId": "bottomNavigation",
+      "htmlClasses": "",
+      "contentWidth": "wide",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "light",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_19",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_20",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_21",
+                  "moduleType": "store_logo",
+                  "title": "Store Logo",
+                  "options": {
+                    "logo_dark_background": {
+                      "name": "Use Dark Background Logo",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    },
+                    "logo_height": {
+                      "name": "Logo Height (px)",
+                      "type": "string",
+                      "default_value": "",
+                      "value": ""
+                    },
+                    "logo_width": {
+                      "name": "Logo Width (px)",
+                      "type": "string",
+                      "default_value": "",
+                      "value": ""
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "mobileStoreLogo",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_22",
+                  "moduleType": "custom_html",
+                  "title": "Van GM Logo",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"second_logo\">\n    <a href=\"/\">\n    \t<img src=\"https://cdn.revolutionparts.com/95f18403ccc9a78a9b3f543a7caf9ba3/design/brands/right_logo.webp\" alt=\"Van GM Parts Center\">\n    </a>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "vanLogo",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_23",
+                  "moduleType": "custom_html",
+                  "title": "Custom Links List",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<ul class=\"links-list\">\n    <li>\n        <a href=\"/\">\n            Home \n        </a>\n    </li>\n    <li>\n        <a href=\"/about\">\n            About \n        </a>\n    </li>\n    <li class=\"hasDropdown\">\n        <a href=\"/find-parts\">\n            Find Parts \n        </a>\n        <ul class=\"theDropdown\">\n            <li><a href=\"v-buick\">OEM Buick Parts</a></li>\n            <li><a href=\"v-cadillac\">OEM Cadillac Parts</a></li>\n            <li><a href=\"v-chevrolet\">OEM Chevy Parts</a></li>\n            <li><a href=\"v-gmc\">OEM GMC Parts</a></li>\n            <li><a href=\"vin-decoder\">GM VIN Decoder</a></li>\n        </ul>\n    </li>\n    <li>\n        <a href=\"/blog\">\n            Our Blog \n        </a>\n    </li>\n</ul>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "navigationMenuModule menuLeft",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_24",
+                  "moduleType": "custom_html",
+                  "title": "Search Icon",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"mobile_search\">\n    <svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n    \t<path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M4.83191 2.22029C6.38857 1.18016 8.21869 0.625 10.0909 0.625C12.6013 0.62516 15.0089 1.6225 16.7841 3.39765C18.5592 5.17279 19.5566 7.58036 19.5567 10.0908C19.5567 11.963 19.0016 13.7932 17.9614 15.3498C16.9213 16.9065 15.443 18.1197 13.7133 18.8362C11.9836 19.5526 10.0804 19.7401 8.24417 19.3748C6.40797 19.0096 4.72132 18.1081 3.39749 16.7842C2.07367 15.4604 1.17213 13.7738 0.806888 11.9376C0.441646 10.1014 0.629101 8.19809 1.34555 6.46843C2.062 4.73877 3.27526 3.26041 4.83191 2.22029ZM10.0908 2.375C8.56477 2.37501 7.07301 2.82754 5.80416 3.67536C4.5353 4.52319 3.54633 5.72824 2.96234 7.13813C2.37834 8.54802 2.22554 10.0994 2.52326 11.5961C2.82098 13.0929 3.55585 14.4677 4.63493 15.5468C5.71401 16.6259 7.08884 17.3607 8.58558 17.6585C10.0823 17.9562 11.6337 17.8034 13.0436 17.2194C14.4535 16.6354 15.6585 15.6464 16.5064 14.3776C17.3542 13.1087 17.8067 11.6169 17.8067 10.0909M10.0908 2.375C12.1371 2.37514 14.0997 3.18811 15.5466 4.63508C16.9936 6.08206 17.8066 8.04459 17.8067 10.0909\" fill=\"#ffffff\"/>\n    \t<path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M15.8815 15.8815C16.2232 15.5398 16.7772 15.5398 17.119 15.8815L23.1187 21.8813C23.4604 22.223 23.4604 22.777 23.1187 23.1187C22.777 23.4604 22.223 23.4604 21.8813 23.1187L15.8815 17.119C15.5398 16.7772 15.5398 16.2232 15.8815 15.8815Z\" fill=\"#ffffff\"/>\n    </svg>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "mobileSearchIcon",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_25",
+                  "moduleType": "account_login",
+                  "title": "Account Login",
+                  "options": {
+                    "use_svg_icons": {
+                      "name": "Use SVG Icon",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "actionLogin",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_26",
+                  "moduleType": "cart_button",
+                  "title": "Cart Button",
+                  "options": {
+                    "cart_label": {
+                      "name": "Cart Label",
+                      "type": "string",
+                      "default_value": "Cart",
+                      "value": "Cart"
+                    },
+                    "use_svg_icons": {
+                      "name": "Use SVG Icons",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    },
+                    "show_disclosure": {
+                      "name": "Show Disclosure",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "cartButton",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_27",
+                  "moduleType": "links_list",
+                  "title": "Links List",
+                  "options": {
+                    "links": {
+                      "name": "Links",
+                      "type": "object",
+                      "default_value": [],
+                      "value": [
+                        {
+                          "linkId": "link_20",
+                          "text": "Contact Us",
+                          "url": "/contact-us",
+                          "target": "",
+                          "icon": "",
+                          "type": "direct"
+                        }
+                      ]
+                    },
+                    "links_image": {
+                      "name": "List Image",
+                      "type": "image_upload",
+                      "default_value": null,
+                      "value": null
+                    },
+                    "links_title": {
+                      "name": "List Title",
+                      "type": "string",
+                      "default_value": null,
+                      "value": ""
+                    },
+                    "links_title_url": {
+                      "name": "List Title Link",
+                      "type": "string",
+                      "default_value": null,
+                      "value": ""
+                    },
+                    "links_stock": {
+                      "name": "List Style",
+                      "type": "select",
+                      "default_value": "none",
+                      "value": "none",
+                      "possible_values": [
+                        {
+                          "value": "none",
+                          "label": "None"
+                        },
+                        {
+                          "value": "mobile_menu",
+                          "label": "Mobile Menu"
+                        },
+                        {
+                          "value": "policies",
+                          "label": "Policies"
+                        }
+                      ]
+                    },
+                    "header_tag": {
+                      "name": "Header Tag",
+                      "type": "select",
+                      "default_value": "strong",
+                      "value": "strong",
+                      "possible_values": [
+                        {
+                          "value": "strong",
+                          "label": "STRONG"
+                        },
+                        {
+                          "value": "h3",
+                          "label": "H3"
+                        }
+                      ]
+                    },
+                    "links_display": {
+                      "name": "List Display",
+                      "type": "select",
+                      "default_value": "block",
+                      "value": "block",
+                      "possible_values": [
+                        {
+                          "value": "inline",
+                          "label": "Inline"
+                        },
+                        {
+                          "value": "block",
+                          "label": "Block"
+                        },
+                        {
+                          "value": "dropdown",
+                          "label": "Drop Down"
+                        }
+                      ]
+                    },
+                    "list_style": {
+                      "name": "List Style",
+                      "type": "select",
+                      "default_value": "none",
+                      "value": "none",
+                      "possible_values": [
+                        {
+                          "value": "none",
+                          "label": "No Style"
+                        },
+                        {
+                          "value": "footer",
+                          "label": "Footer"
+                        },
+                        {
+                          "value": "header",
+                          "label": "Header"
+                        },
+                        {
+                          "value": "navigation",
+                          "label": "Navigation Bar"
+                        },
+                        {
+                          "value": "menu",
+                          "label": "Menu Bar"
+                        }
+                      ]
+                    },
+                    "footer_link": {
+                      "name": "Footer Link",
+                      "type": "string",
+                      "default_value": null,
+                      "value": ""
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "navigationMenuModule menuRight",
+                  "minColumnWidth": 0,
+                  "customAdmin": true,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_28",
+                  "moduleType": "custom_html",
+                  "title": "Mobile Hamburger Menu",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"desk_hamburger_menu_wrapper\"> \n    <div class=\"desk_hamburger_menu_lines\"> \n        <div class=\"desk_hamburger_menu_span\">\n            <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"34px\" height=\"34px\" viewBox=\"0 0 24 24\" fill=\"none\">\n                <path d=\"M4 6H20M4 12H14M4 18H9\" stroke=\"#ffffff\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n            </svg>\n        </div> \n    </div> \n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "hamburgerMenuModule",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_29",
+      "htmlId": "",
+      "htmlClasses": "left_panel",
+      "contentWidth": "normal",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_30",
+          "rowLayout": 12,
+          "htmlId": "",
+          "htmlClasses": "left_panel_wrapper",
+          "columns": [
+            {
+              "columnId": "column_31",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_32",
+                  "moduleType": "custom_html",
+                  "title": "Left Panel Header",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"left_panel_header_wrapper\">\n    <ul class=\"left_panel_header_list\">\n        <li class=\"left_panel_header_item\">\n            <a href=\"/account/login\" class=\"left_panel_header_link\">\n                Sign in or Create Account\n            </a>\n        </li>\n        <li class=\"left_panel_header_item\">\n            <a href=\"/account/order-status\" class=\"left_panel_header_link\">\n                Track Order\n            </a>\n        </li>\n        <li class=\"left_panel_header_item\">\n            <a href=\"/contact-us\" class=\"left_panel_header_link\">\n                Contact Us\n            </a>\n        </li>\n        <li class=\"left_panel_header_item\">\n            <a href=\"javascript:openVehiclePicker();\" class=\"left_panel_header_link\">\n                Select Vehicle\n            </a>\n        </li>\n    </ul>\n    <div class=\"left_panel_child_header\">\n        <a href=\"#\" class=\"left_panel_child_back_button\">Back</a>\n        <h4 class=\"left_panel_child_title\">Find Parts</h4>\n    </div>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "left_panel_header",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_33",
+                  "moduleType": "custom_html",
+                  "title": "Left Panel Content",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"left_panel_content_wrapper\">\n    <h3>GM Parts Center</h3>\n    <ul class=\"left_panel_list\">\n        <li class=\"left_panel_item left_panel_item_has_child\">\n            <a href=\"#\" class=\"left_panel_link\">\n                Find Parts\n            </a>\n            <div class=\"left_panel_child_wrapper\">\n                <div class=\"left_panel_child_content\">\n                    <ul class=\"left_panel_child_list\">\n                        <li class=\"left_panel_child_item\">\n                            <a href=\"/v-buick\" class=\"left_panel_child_link\">OEM Buick Parts</a>\n                        </li>\n                        <li class=\"left_panel_child_item\">\n                            <a href=\"/v-cadillac\" class=\"left_panel_child_link\">OEM Cadillac Parts</a>\n                        </li>\n                        <li class=\"left_panel_child_item\">\n                            <a href=\"/v-chevrolet\" class=\"left_panel_child_link\">OEM Chevy Parts</a>\n                        </li>\n                        <li class=\"left_panel_child_item\">\n                            <a href=\"/v-gmc\" class=\"left_panel_child_link\">OEM GMC Parts</a>\n                        </li>\n                        <li class=\"left_panel_child_item\">\n                            <a href=\"/vin-decoder\" class=\"left_panel_child_link\">GM VIN Decoder</a>\n                        </li>\n                    </ul>\n                </div>\n            </div>\n        </li>\n        <li class=\"left_panel_item\">\n            <a href=\"/about\" class=\"left_panel_link\">\n                About\n            </a>\n        </li>\n        <li class=\"left_panel_item\">\n            <a href=\"/blog\" class=\"left_panel_link\">\n                Our Blog\n            </a>\n        </li>\n    </ul>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "left_panel_content",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_34",
+                  "moduleType": "custom_html",
+                  "title": "Close Panel",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"left_panel_close\">\n        <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\" viewBox=\"0 0 20 20\">\n            <g id=\"Close\" transform=\"translate(-77 -444.835)\">\n                <g id=\"Group_40503\" data-name=\"Group 40503\" transform=\"translate(77 445.403)\">\n                <path id=\"Path_269033\" data-name=\"Path 269033\" d=\"M0,.192,18.26,17.934,20,16.243,1.739-1.5Z\" transform=\"translate(0 1.498)\" fill=\"#093452\"/>\n                </g>\n                <g id=\"Group_40504\" data-name=\"Group 40504\" transform=\"translate(77 444.835)\">\n                <path id=\"Path_269034\" data-name=\"Path 269034\" d=\"M0,2.015l1.642,1.6L19.857-14.084v-.089l-1.6-1.55Z\" transform=\"translate(0 15.723)\" fill=\"#093452\"/>\n                </g>\n            </g>\n        </svg>          \n    </div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_35",
+      "htmlId": "",
+      "htmlClasses": "left_panel_overlay",
+      "contentWidth": "normal",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_36",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_37",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_38",
+                  "moduleType": "custom_html",
+                  "title": "Overlay",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": ""
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
