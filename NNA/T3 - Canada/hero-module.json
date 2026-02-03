@@ -1,0 +1,104 @@
+{
+  "sectionId": "section_68",
+  "htmlId": "",
+  "htmlClasses": "themeHeroSection",
+  "contentWidth": "full",
+  "backgroundColor": "",
+  "backgroundImage": "",
+  "textColor": "dark",
+  "display": "normal",
+  "rows": [
+    {
+      "rowId": "row_69",
+      "rowLayout": 12,
+      "htmlId": null,
+      "htmlClasses": null,
+      "columns": [
+        {
+          "columnId": "column_70",
+          "columnWidth": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "moduleArrangement": "block",
+          "textAlignment": "text-left",
+          "modules": [
+            {
+              "moduleId": "module_71",
+              "moduleType": "hero",
+              "title": "Hero",
+              "options": {
+                "hero_slides": {
+                  "name": "Hero Slides",
+                  "type": "object",
+                  "default_value": [],
+                  "value": [
+                    {
+                      "slideId": "slide_79",
+                      "type": null,
+                      "image": "https://cdn.revolutionparts.io/32631665aa8d4eaddcb34d8b125a3ab3/design/nissan_ship_feb_desktop_t3.webp",
+                      "mobile_image": "https://cdn.revolutionparts.io/32631665aa8d4eaddcb34d8b125a3ab3/design/nissan_ship_feb_mobile_all.webp",
+                      "image_overlay": "#000000",
+                      "image_overlay_opacity": "30",
+                      "alt": "The Parts and Accessories you love, with up to $50 off shipping on qualifying orders. Get up to $50 off shipping on qualifying orders when you spend $214+ on online purchases here, February 2–28.",
+                      "content": "<h1 style=\"text-transform: none !important;\">Get the Parts and Accessories You Love&mdash;with Up to $50 Off Shipping</h1>\n<p class=\"themeHeroTooltipWrap\">\n  Instantly save up to $50 on shipping when you spend $200 or more on online purchases here from 2/2–2/28\n  <a href=\"#\" class=\"themeHeroTooltipAnchor\">[*]</a>\n</p>\n<p class=\"themeHeroTooltip\">\n  <strong>\n    ELIGIBILITY REQUIREMENTS:\n  </strong>\n  Not all items sold here are shippable. Promotion valid only on online orders of shippable items with a minimum order value of $200 or more, made from 02/02/2026 through 02/28/2026 and fulfilled by a participating Canadian Nissan dealer. Offer code automatically applied at online checkout. Promotion covers up to $50 of the total shipping fee; any remaining shipping fee balance is the sole responsibility of the customer. No cash value. Void where prohibited. Other restrictions may apply. Contact participating Canadian Nissan dealer for details.\n</p>\n<a class=\"themeHeroButton\" href=\"javascript:openVehiclePicker();\">Shop Now</a>",
+                      "link": null,
+                      "link_text": null,
+                      "timeline": "permanent_slide",
+                      "duration": null
+                    }
+                  ]
+                },
+                "transition_style": {
+                  "name": "Transition Style",
+                  "type": "radio",
+                  "possible_values": [
+                    {
+                      "value": "slide",
+                      "label": "Slide to the next"
+                    },
+                    {
+                      "value": "fade",
+                      "label": "Fade to the next"
+                    }
+                  ],
+                  "value": "slide"
+                },
+                "transition_speed": {
+                  "name": "Transition Speed",
+                  "type": "select",
+                  "possible_values": [
+                    {
+                      "value": "5",
+                      "label": "5 seconds"
+                    },
+                    {
+                      "value": "10",
+                      "label": "10 seconds"
+                    }
+                  ],
+                  "value": "5"
+                },
+                "use_slide_arrow_control": {
+                  "name": "Previous/next arrows",
+                  "type": "boolean",
+                  "value": false
+                },
+                "use_slide_pagination_control": {
+                  "name": "Slide pagination",
+                  "type": "boolean",
+                  "value": false
+                }
+              },
+              "htmlId": "themeHeroSection_NissanUS",
+              "htmlClasses": "",
+              "minColumnWidth": 0,
+              "customAdmin": true,
+              "modulePadding": "padding-0",
+              "display": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

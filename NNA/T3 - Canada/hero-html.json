@@ -1,0 +1,55 @@
+{
+  "sectionId": "section_31",
+  "htmlId": "",
+  "htmlClasses": "themeHeroSection",
+  "contentWidth": "full",
+  "backgroundColor": "",
+  "backgroundImage": "",
+  "textColor": "dark",
+  "display": "normal",
+  "rows": [
+    {
+      "rowId": "row_32",
+      "rowLayout": 12,
+      "htmlId": null,
+      "htmlClasses": null,
+      "columns": [
+        {
+          "columnId": "column_33",
+          "columnWidth": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "moduleArrangement": "block",
+          "textAlignment": "text-left",
+          "modules": [
+            {
+              "moduleId": "module_121",
+              "moduleType": "custom_html",
+              "title": "Hero - HTML",
+              "options": {
+                "html_content": {
+                  "name": "Custom HTML Content",
+                  "type": "html_content",
+                  "default_value": "",
+                  "value": "<style>\n\t.themeBannerList .themeBannerListImage {\n\t\theight: 500px;\n\t\tbackground-size: cover;\n\t\tbackground-repeat: no-repeat;\n\t\tbackground-position: center center;\n\t}\n\t.themeBannerList .themeBannerListContent {\n\t\tposition: absolute;\n\t\tleft: 0;\n\t\tright: 0;\n\t\ttop: 0;\n\t\tbottom: 0;\n\t\tdisplay: flex;\n\t\talign-items: center;\n\t}\n\t.themeBannerList .themeBannerListContent::before {\n\t\tcontent: \"\";\n\t\tposition: absolute;\n\t\tleft: 0;\n\t\tright: 0;\n\t\tbottom: 0;\n\t\ttop: 0;\n\t\tbackground-color: rgba(0, 0, 0, 0.5);\n\t}\n\t.themeBannerList .slide-content {\n\t\tmax-width: 1250px;\n\t\twidth: 100%;\n\t\tmargin-left: auto;\n\t\tmargin-right: auto;\n\t\tpadding-left: 15px;\n\t\tpadding-right: 15px;\n\t\tposition: relative;\n\t}\n\t.themeBannerList .slide-box {\n\t\tmax-width: 575px;\n\t\twidth: 100%;\n\t\tposition: relative;\n\t}\n\t.themeBannerList .slide-content h1 {\n\t\tcolor: #fff;\n\t\tfont-family: var(--themeFontLight) !important;\n\t\tfont-size: 1.875rem;\n\t\tline-height: normal;\n\t\tmargin-bottom: 15px;\n\t}\n\t.themeBannerList .slide-content .themeHeroTooltipWrap {\n\t\tcolor: #fff;\n\t\tmargin-bottom: 40px;\n    \tfont-size: 14px;\n\t}\n\t.themeBannerList .slide-content .themeHeroTooltipAnchor {\n\t\tcolor: #fff;\n\t}\n\t.themeBannerList .themeHeroButton {\n\t\tdisplay: inline-block;\n\t\tfont-size: 16px;\n\t\tpadding: 10px 15px;\n\t\tborder: 1px solid var(--themeColor);\n\t\tbackground-color: var(--themeColor);\n\t\tmax-width: 200px;\n\t\ttext-align: center;\n\t\tfont-weight: 300;\n\t\twidth: 100%;\n\t\tcolor: #fff !important;\n\t\tfont-family: var(--themeFontRegular);\n\t\ttransition: all .3s ease-in-out;\n\t\tmargin-bottom: 0;\n\t}\n\t.themeBannerList .themeHeroButton:hover,\n\t.themeBannerList .themeHeroButton:focus {\n\t\ttext-decoration: none;\n\t}\n\t.promo_bold {\n\t\tfont-family: var(--themeFontBold) !important;\n\t}\n</style>\n<div class=\"themeBannerWrapper\">\n  <div class=\"themeBannerList\">\n    <div class=\"themeBannerListItem\">\n      <div class=\"themeBannerListCard\">\n        <div class=\"themeBannerListImage v-pc\" style=\"background-image: url(https://cdn.revolutionparts.io/60b6cc0fe940b1d1c2ff14edd1620999/design/nissan_ship_feb_desktop_t3.webp);\"></div>\n        <div class=\"themeBannerListImage v-sp\" style=\"background-image: url(https://cdn.revolutionparts.io/60b6cc0fe940b1d1c2ff14edd1620999/design/nissan_ship_feb_mobile_all.webp);\"></div>\n        <div class=\"themeBannerListContent\">\n          <div class=\"slide-content\">\n            <div class=\"slide-box\">\n              <h1>Get the Parts and Accessories You Love&mdash;with Up to $50 Off Shipping</h1>\n              <p class=\"themeHeroTooltipWrap\">\n                Instantly save up to $50 on shipping when you spend $200 or more on online purchases here from 2/2–2/28\n                <a href=\"#\" class=\"themeHeroTooltipAnchor\">[*]</a>\n              </p>\n              <p class=\"themeHeroTooltip\">\n                <strong>ELIGIBILITY REQUIREMENTS:</strong>\n                Not all items sold here are shippable. Promotion valid only on online orders of shippable items with a minimum\n                order value of $200 or more, made from 02/02/2026 through 02/28/2026 and fulfilled by a participating Canadian Nissan dealer.\n                Offer code automatically applied at online checkout. Promotion covers up to $50 of the total shipping fee; any remaining shipping fee balance is the sole responsibility of the customer.\n                No cash value. Void where prohibited. Other restrictions may apply. Contact participating Canadian Nissan dealer for details.\n              </p>\n              <a class=\"themeHeroButton\" href=\"javascript:openVehiclePicker();\">Shop Now</a>\n            </div>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>"
+                },
+                "force_lazy": {
+                  "name": "Lazy Load Images",
+                  "type": "boolean",
+                  "default_value": false,
+                  "value": false
+                }
+              },
+              "htmlId": "themeHeroSection_NissanCA",
+              "htmlClasses": "",
+              "minColumnWidth": 0,
+              "customAdmin": false,
+              "modulePadding": "padding-0",
+              "display": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
