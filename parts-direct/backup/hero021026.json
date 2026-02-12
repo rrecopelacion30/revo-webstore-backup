@@ -1,0 +1,74 @@
+{
+  "moduleId": "module_28",
+  "moduleType": "hero",
+  "title": "Hero",
+  "options": {
+    "hero_slides": {
+      "name": "Hero Slides",
+      "type": "object",
+      "default_value": [],
+      "value": [
+        {
+          "slideId": "slide_44",
+          "type": null,
+          "image": null,
+          "mobile_image": "",
+          "image_overlay": "#000000",
+          "image_overlay_opacity": "30",
+          "alt": "",
+          "content": "<h1>Superior Braking Performance</h1>\n<h2>\nPremium Brake Repair Parts, For Passenger, Medium-Duty, and Commercial Applications\n</h2>\n<a href=\"/all-products\">Shop Parts</a>",
+          "link": null,
+          "link_text": null,
+          "timeline": "permanent_slide",
+          "duration": null
+        }
+      ]
+    },
+    "transition_style": {
+      "name": "Transition Style",
+      "type": "radio",
+      "possible_values": [
+        {
+          "value": "slide",
+          "label": "Slide to the next"
+        },
+        {
+          "value": "fade",
+          "label": "Fade to the next"
+        }
+      ],
+      "value": "slide"
+    },
+    "transition_speed": {
+      "name": "Transition Speed",
+      "type": "select",
+      "possible_values": [
+        {
+          "value": "5",
+          "label": "5 seconds"
+        },
+        {
+          "value": "10",
+          "label": "10 seconds"
+        }
+      ],
+      "value": "10"
+    },
+    "use_slide_arrow_control": {
+      "name": "Previous/next arrows",
+      "type": "boolean",
+      "value": false
+    },
+    "use_slide_pagination_control": {
+      "name": "Slide pagination",
+      "type": "boolean",
+      "value": false
+    }
+  },
+  "htmlId": "",
+  "htmlClasses": "",
+  "minColumnWidth": 0,
+  "customAdmin": true,
+  "modulePadding": "padding-0",
+  "display": "normal"
+}

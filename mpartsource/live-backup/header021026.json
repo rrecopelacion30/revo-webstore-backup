@@ -1,0 +1,312 @@
+{
+  "pageId": "header",
+  "pageName": "Header",
+  "pageType": null,
+  "layoutEnabled": true,
+  "moduleCategories": [
+    "header",
+    "images",
+    "text",
+    "search",
+    "categories_products",
+    "forms",
+    "navigation",
+    "footer"
+  ],
+  "VFSPath": "layouts/header.json",
+  "requiredModules": [],
+  "scripts": null,
+  "sections": [
+    {
+      "sectionId": "section_1",
+      "htmlId": "",
+      "htmlClasses": "themeTopHeaderSection",
+      "contentWidth": "wide",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "desktop-only",
+      "rows": [
+        {
+          "rowId": "row_2",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_3",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_4",
+                  "moduleType": "dealer_selection_modal",
+                  "title": "Select Dealer",
+                  "options": {
+                    "layout": {
+                      "name": "Layout",
+                      "type": "select",
+                      "default_value": "inline",
+                      "value": "inline",
+                      "possible_values": [
+                        {
+                          "value": "inline",
+                          "label": "Inline"
+                        },
+                        {
+                          "value": "block",
+                          "label": "Block"
+                        }
+                      ]
+                    },
+                    "find_dealer_text": {
+                      "name": "Find Dealer Text",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "Find a Dealer"
+                    },
+                    "custom_dealer_name": {
+                      "name": "Seller Name",
+                      "type": "string",
+                      "default_value": null,
+                      "value": ""
+                    },
+                    "display_button_only": {
+                      "name": "Display Button Only",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false,
+                      "caption": "Set to true for possible second modal in page."
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "themeDealer",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_9",
+                  "moduleType": "car_selected",
+                  "title": "Current Car Selected",
+                  "options": {
+                    "not_selected_text": {
+                      "name": "No Vehicle Selected Text",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "My Garage"
+                    },
+                    "use_svg_icons": {
+                      "name": "Use SVG Icons",
+                      "type": "select",
+                      "possible_values": [
+                        {
+                          "label": "Garage Icon",
+                          "value": "garage_icon"
+                        },
+                        {
+                          "label": "Car Icon",
+                          "value": "car_icon"
+                        }
+                      ],
+                      "default_value": "garage_icon",
+                      "value": "garage_icon"
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "themeCurSelected",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_18",
+      "htmlId": "",
+      "htmlClasses": "themeMainHeaderSection",
+      "contentWidth": "wide",
+      "backgroundColor": "#000000",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_19",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_20",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_21",
+                  "moduleType": "custom_html",
+                  "title": "Hamburger Menu",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"themeHamburgerMenu\"> <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 448 512\"><path d=\"M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z\"></path></svg> </div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "themeHamburger",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_24",
+                  "moduleType": "store_logo",
+                  "title": "Store Logo",
+                  "options": {
+                    "logo_dark_background": {
+                      "name": "Use Dark Background Logo",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": true
+                    },
+                    "logo_height": {
+                      "name": "Logo Height (px)",
+                      "type": "string",
+                      "default_value": "",
+                      "value": ""
+                    },
+                    "logo_width": {
+                      "name": "Logo Width (px)",
+                      "type": "string",
+                      "default_value": "",
+                      "value": ""
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "themeLogo",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_28",
+                  "moduleType": "actions_bar",
+                  "title": "Actions Bar",
+                  "options": {},
+                  "htmlId": "",
+                  "htmlClasses": "themeActionBar",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_36",
+                  "moduleType": "custom_html",
+                  "title": "Mobile Search",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"mobile_search\"> <em class=\"fa fa-search\"></em> </div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "mobile-only"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_32",
+      "htmlId": "",
+      "htmlClasses": "themeFlyoutSection",
+      "contentWidth": "normal",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_33",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_34",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_35",
+                  "moduleType": "custom_html",
+                  "title": "Navigation Flyout",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"themeHeaderFlyout\">\n    <div class=\"themeHeaderFlyoutWrapper\">\n        <div class=\"themeHeaderFlyoutCard themeHeaderFlyoutCardBack\">\n            <a href=\"javascript:void(0);\" class=\"FlyoutBackButton\">Back</a>\n        </div>\n        <div class=\"themeHeaderFlyoutCard themeHeaderFlyoutCardClose\">\n            <a href=\"javascript:void(0);\" class=\"FlyoutCloseButton\">\n            \t<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 448 512\"><path d=\"M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z\"></path></svg>\n            </a>\n        </div>\n        <div class=\"themeHeaderFlyoutCard themeHeaderFlyoutCardTopTitle\">\n            <h3>Welcome</h3>\n            <ul>\n                <li>\n                    <a href=\"/account/login\">Login</a>\n                </li>\n                <li>\n                    <a href=\"/account/signup\">Signup</a>\n                </li>\n                <li>\n                    <a href=\"/account/order-status\">Order Status</a>\n                </li>\n            </ul>\n        </div>\n        <div class=\"themeHeaderFlyoutCard\">\n            <h3 class=\"themeHeaderTitle\">Select Your Vehicle</h3>\n            <ul class=\"themeHeaderFlyoutNavList\">\n                <li class=\"themeHeaderFlyoutNavItem hasChild\">\n                    <a class=\"themeHeaderFlyoutLink\" href=\"javascript:void(0)\">All Models</a>\n                    <div class=\"themeHeaderSubFlyout\">\n                        <div class=\"themeHeaderSubFlyoutWrap\">\n                            <a href=\"v-mercedes-benz\"><h3 class=\"themeHeaderSubFlyoutTitle\">All Mercedes-Benz Models</h3></a>\n                            <div class=\"themeHeaderSubFlyoutRow\">\n                                <div class=\"themeHeaderSubFlyoutCol60\">\n                                    <div class=\"themeHeaderSubFlyoutContent\">\n                                        <ul class=\"themeHeaderSubFlyoutListImg\">\n                                            <li><a href=\"v-mercedes-benz-190e\">190 E</a></li>\n                                            <li><a href=\"v-mercedes-benz-300d\">300 D</a></li>\n                                            <li><a href=\"v-mercedes-benz-300e\">300 E</a></li>\n                                            <li><a href=\"v-mercedes-benz-300sd\">300 SD</a></li>\n                                            <li><a href=\"v-mercedes-benz-300sl\">300 SL</a></li>\n                                            <li><a href=\"v-mercedes-benz-380sl\">380 SL</a></li>\n                                            <li><a href=\"v-mercedes-benz-420sel\">420 SEL</a></li>\n                                            <li><a href=\"v-mercedes-benz-500sec\">500 SEC</a></li>\n                                            <li><a href=\"v-mercedes-benz-500sel\">500 SEL</a></li>\n                                            <li><a href=\"v-mercedes-benz-560sl\">560 SL</a></li>\n                                            <li><a href=\"v-mercedes-benz-cla250\">CLA 250</a></li>\n                                            <li><a href=\"v-mercedes-benz-e320\">E 320</a></li>\n                                            <li><a href=\"v-mercedes-benz-gla250\">GLA 250</a></li>\n                                            <li><a href=\"v-mercedes-benz-glc300\">GLC 300</a></li>\n                                            <li><a href=\"v-mercedes-benz-gle350\">GLE 350</a></li>\n                                            <li><a href=\"v-mercedes-benz-glk350\">GLK 350</a></li>\n                                            <li><a href=\"v-mercedes-benz-ml320\">ML 320</a></li>\n                                            <li><a href=\"v-mercedes-benz-ml350\">ML 350</a></li>\n                                            <li><a href=\"v-mercedes-benz-sl500\">SL 500</a></li>\n                                            <li><a href=\"v-mercedes-benz-slk230\">SLK 230</a></li>\n                                        </ul>\n                                    </div>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                </li>\n            </ul>\n        </div>\n        <div class=\"themeHeaderFlyoutCard\">\n            <h3 class=\"themeHeaderTitle\">Shop Parts</h3>\n            <ul class=\"themeHeaderFlyoutNavList\">\n                <li class=\"themeHeaderFlyoutNavItem hasChild\">\n                    <a class=\"themeHeaderFlyoutLink\" href=\"javascript:void(0)\">All Parts</a>\n                    <div class=\"themeHeaderSubFlyout\">\n                        <div class=\"themeHeaderSubFlyoutWrap\">\n                            <div class=\"themeHeaderSubFlyoutRow\">\n                                <div class=\"themeHeaderSubFlyoutCol60\">\n                                    <div class=\"themeHeaderSubFlyoutContent\">\n                                        <ul class=\"themeHeaderSubFlyoutListImg\">\n                                            <li><a href=\"ac-and-heating\">A/C and Heating Parts</a></li>\n                                            <li><a href=\"air-filters\">Air Filters</a></li>\n                                            <li><a href=\"alternators\">Alternators</a></li>\n                                            <li><a href=\"belts-and-hoses\">Belts And Hoses</a></li>\n                                            <li><a href=\"brake-pads\">Brake Pads</a></li>\n                                            <li><a href=\"brakes\">Brakes</a></li>\n                                            <li><a href=\"cabin-air-filters\">Cabin Air Filters</a></li>\n                                            <li><a href=\"fuel-filters\">Fuel Filters</a></li>\n                                            <li><a href=\"ignition\">Ignition Parts</a></li>\n                                            <li><a href=\"oil-filters\">Oil Filters</a></li>\n                                            <li><a href=\"radiators\">Radiators</a></li>\n                                            <li><a href=\"remote-start\">Remote Start Parts</a></li>\n                                            <li><a href=\"shocks-and-struts\">Shocks and Struts</a></li>\n                                            <li><a href=\"spark-plugs\">Spark Plugs</a></li>\n                                            <li><a href=\"steering\">Steering Parts</a></li>\n                                            <li><a href=\"suspension\">Suspensions</a></li>\n                                            <li><a href=\"thermostat\">Thermostats</a></li>\n                                            <li><a href=\"c-mercedes-benz-tires-2\">Tires</a></li>\n                                            <li><a href=\"trailer-towing\">Trailer Towing Parts</a></li>\n                                            <li><a href=\"turbochargers\">Turbochargers</a></li>\n                                            <li><a href=\"wheels\">Wheels</a></li>\n                                            <li><a href=\"wiper-blades\">Wiper Blades</a></li>\n                                        </ul>\n                                    </div>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                </li>\n            </ul>\n        </div>\n        <div class=\"themeHeaderFlyoutCard\">\n            <h3 class=\"themeHeaderTitle\">Shop Accessories</h3>\n            <ul class=\"themeHeaderFlyoutNavList\">\n                <li class=\"themeHeaderFlyoutNavItem hasChild\">\n                    <a class=\"themeHeaderFlyoutLink\" href=\"javascript:void(0)\">All Accessories</a>\n                    <div class=\"themeHeaderSubFlyout\">\n                        <div class=\"themeHeaderSubFlyoutWrap\">\n                            <div class=\"themeHeaderSubFlyoutRow\">\n                                <div class=\"themeHeaderSubFlyoutCol60\">\n                                    <div class=\"themeHeaderSubFlyoutContent\">\n                                        <ul class=\"themeHeaderSubFlyoutListImg\">\n                                            <li><a href=\"car-covers\">Car Covers</a></li>\n                                            <li><a href=\"cargo-trays\">Cargo Trays</a></li>\n                                            <li><a href=\"door-sills\">Door Sills</a></li>\n                                            <li><a href=\"entertainment\">Entertainment</a></li>\n                                            <li><a href=\"exterior-accessories\">Exterior Accessories</a></li>\n                                            <li><a href=\"floor-mats\">Floor Mats</a></li>\n                                            <li><a href=\"front-masks\">Front Masks</a></li>\n                                            <li><a href=\"interior-accessories\">Interior Accessories</a></li>\n                                            <li><a href=\"lighting\">Lights</a></li>\n                                            <li><a href=\"pedal-kits\">Pedal Kits</a></li>\n                                            <li><a href=\"roadside-assistance\">Roadside Assistance Parts</a></li>\n                                            <li><a href=\"roof-racks\">Roof Racks</a></li>\n                                            <li><a href=\"shift-knobs\">Shift Knobs</a></li>\n                                            <li><a href=\"splash-guards\">Splash Guards</a></li>\n                                            <li><a href=\"spoilers\">Spoilers</a></li>\n                                            <li><a href=\"step-rails\">Step Rails</a></li>\n                                            <li><a href=\"sun-shades\">Sun Shades</a></li>\n                                            <li><a href=\"wheel-accessories\">Wheel Accessories</a></li>\n                                            <li><a href=\"wheel-locks\">Wheel Locks</a></li>\n                                            <li><a href=\"wind-deflectors\">Wind Deflectors</a></li>\n                                        </ul>\n                                    </div>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                </li>\n            </ul>\n        </div>\n        <div class=\"themeHeaderFlyoutCard\">\n            <h3 class=\"themeHeaderTitle\">About</h3>\n            <ul class=\"themeHeaderFlyoutNavList\">\n                <li class=\"themeHeaderFlyoutNavItem\"><a class=\"themeHeaderFlyoutLink\" href=\"about\">About Us</a></li>\n                <li class=\"themeHeaderFlyoutNavItem\"><a class=\"themeHeaderFlyoutLink\" href=\"contact-us\">Contact Us</a></li>\n                <li class=\"themeHeaderFlyoutNavItem\"><a class=\"themeHeaderFlyoutLink\" href=\"c-mercedes-benz-merchandise-11\">Merchandise</a></li>\n                <li class=\"themeHeaderFlyoutNavItem\"><a class=\"themeHeaderFlyoutLink\" href=\"policies/shipping\">Shipping Policy</a></li>\n                <li class=\"themeHeaderFlyoutNavItem\"><a class=\"themeHeaderFlyoutLink\" href=\"policies/returns\">Return Policy</a></li>\n            </ul>\n        </div>\n    </div>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
