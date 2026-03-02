@@ -1,0 +1,130 @@
+{
+  "sectionId": "section_11",
+  "htmlId": "",
+  "htmlClasses": "cyberacc_category_section category_section padding_section",
+  "contentWidth": "wide",
+  "backgroundColor": "",
+  "backgroundImage": "",
+  "textColor": "dark",
+  "display": "normal",
+  "rows": [
+    {
+      "rowId": "row_12",
+      "rowLayout": 12,
+      "htmlId": null,
+      "htmlClasses": null,
+      "columns": [
+        {
+          "columnId": "column_13",
+          "columnWidth": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "moduleArrangement": "block",
+          "textAlignment": "text-left",
+          "modules": [
+            {
+              "moduleId": "module_14",
+              "moduleType": "custom_html",
+              "title": "Tab Category List",
+              "options": {
+                "html_content": {
+                  "name": "Custom HTML Content",
+                  "type": "html_content",
+                  "default_value": "",
+                  "value": "<div class=\"theme_cat_tab_wrapper\">\n    <h2 class=\"main_title\">Explore Popular Accessory Categories</h2>\n    <ul class=\"theme_cat_tab_list\">\n        \n        <li class=\"theme_cat_tab_item\">\n            <a href=\"#\" class=\"theme_cat_tab_link\" data-toggle-target=\".tab_content_in\">Interior Accessories</a>\n        </li>\n        <li class=\"theme_cat_tab_item\">\n            <a href=\"#\" class=\"theme_cat_tab_link\" data-toggle-target=\".tab_content_ex\">Exterior Accessories</a>\n        </li>\n    </ul>\n</div>"
+                },
+                "force_lazy": {
+                  "name": "Lazy Load Images",
+                  "type": "boolean",
+                  "default_value": false,
+                  "value": false
+                }
+              },
+              "htmlId": "",
+              "htmlClasses": "",
+              "minColumnWidth": 0,
+              "customAdmin": false,
+              "modulePadding": "padding-0",
+              "display": "normal"
+            },
+            {
+              "moduleId": "module_96",
+              "moduleType": "custom_html",
+              "title": "Accessories Content",
+              "options": {
+                "html_content": {
+                  "name": "Custom HTML Content",
+                  "type": "html_content",
+                  "default_value": "",
+                  "value": "<div class=\"theme_cat_tab_content\">\n    <ul class=\"theme_cat_tab_content_list\">\n        <li>\n            <a href=\"https://parts.infinitiusa.com/genuine-infiniti-exterior-accessories\">\n                <div class=\"theme_cat_tab_content_img\">\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/491217ffddd9a9fb5aff9990c170c053/design/category/accessories/roofrail_accys.webp\" alt=\"Exterior Accessories\" loading=\"lazy\">\n                </div>\n                <p>Exterior Accessories</p>\n            </a>\n        </li>\n        <li>\n            <a href=\"https://parts.infinitiusa.com/genuine-infiniti-interior-accessories\">\n                <div class=\"theme_cat_tab_content_img\">\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/491217ffddd9a9fb5aff9990c170c053/design/category/accessories/floormat_accys.webp\" alt=\"Interior Accessories\" loading=\"lazy\">\n                </div>\n                <p>Interior Accessories</p>\n            </a>\n        </li>\n        <li>\n            <a href=\"https://parts.infinitiusa.com/genuine-infiniti-lighting-and-tech-accessories\">\n                <div class=\"theme_cat_tab_content_img\">\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/491217ffddd9a9fb5aff9990c170c053/design/category/accessories/lighting_accessories_img.webp\" alt=\"Lighting & Technology Accessories\" loading=\"lazy\">\n                </div>\n                <p>Lighting & Technology Accessories</p>\n            </a>\n        </li>\n\t\t<li>\n            <a href=\"https://parts.infinitiusa.com/infiniti-motorsport\">\n                <div class=\"theme_cat_tab_content_img\">\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/491217ffddd9a9fb5aff9990c170c053/design/category/accessories/all_accys_new.webp\" alt=\"All Accessories\" loading=\"lazy\">\n                </div>\n                <p>INFINITI Performance</p>\n            </a>\n        </li>\n        <li>\n            <a href=\"https://parts.infinitiusa.com/accessories/towing-and-hauling\">\n                <div class=\"theme_cat_tab_content_img\">\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/491217ffddd9a9fb5aff9990c170c053/design/category/accessories/towing_accessories_img.webp\" alt=\"Towing Accessories\" loading=\"lazy\">\n                </div>\n                <p>Towing Accessories</p>\n            </a>\n        </li>\n        <li>\n            <a href=\"/go/Infiniti-Pet-Accessories.html\">\n                <div class=\"theme_cat_tab_content_img\">\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/491217ffddd9a9fb5aff9990c170c053/design/category/accessories/pet_accessories.webp\" alt=\"Pet Accessories\" loading=\"lazy\">\n                </div>\n                <p>Pet Accessories</p>\n            </a>\n        </li>\n        <li>\n            <a href=\"https://parts.infinitiusa.com/accessories/cargo\">\n                <div class=\"theme_cat_tab_content_img\">\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/491217ffddd9a9fb5aff9990c170c053/design/category/accessories/cargo_accys_new_02.webp\" alt=\"Cargo Accessories\" loading=\"lazy\">\n                </div>\n                <p>Cargo Accessories</p>\n            </a>\n        </li>\n        <li>\n            <a href=\"https://parts.infinitiusa.com/affiliated-yakima-accessories\">\n                <div class=\"theme_cat_tab_content_img\">\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/491217ffddd9a9fb5aff9990c170c053/design/category/accessories/yakima_accys_new.webp\" alt=\"Yakima Accessories\" loading=\"lazy\">\n                </div>\n                <p>Affiliated: Yakima® Accessories</p>\n            </a>\n        </li>\n    </ul>\n</div>"
+                },
+                "force_lazy": {
+                  "name": "Lazy Load Images",
+                  "type": "boolean",
+                  "default_value": false,
+                  "value": false
+                }
+              },
+              "htmlId": "",
+              "htmlClasses": "tab_content tab_content_in",
+              "minColumnWidth": 0,
+              "customAdmin": false,
+              "modulePadding": "padding-0",
+              "display": "normal"
+            },
+            {
+              "moduleId": "module_15",
+              "moduleType": "custom_html",
+              "title": "Interior Content",
+              "options": {
+                "html_content": {
+                  "name": "Custom HTML Content",
+                  "type": "html_content",
+                  "default_value": "",
+                  "value": "<div class=\"theme_cat_tab_content\">\n    <ul class=\"theme_cat_tab_content_list\">\n        <li>\n            <a href=\"/accessories/cargo-nets-trays-and-liners\">\n                <div class=\"theme_cat_tab_content_img\">\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/491217ffddd9a9fb5aff9990c170c053/design/popular/cargo.webp\" alt=\"Nissan Cargo Trays Image\" loading=\"lazy\">\n                </div>\n                <p>Cargo Trays</p>\n            </a>\n        </li>\n        <li>\n            <a href=\"/accessories/door-sills\">\n                <div class=\"theme_cat_tab_content_img\">\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/491217ffddd9a9fb5aff9990c170c053/design/popular/door.webp\" alt=\"Nissan Door Sills\" loading=\"lazy\">\n                </div>\n                <p>Door Sills</p>\n            </a>\n        </li>\n        <li>\n            <a href=\"/part-categories/interior/stereos\">\n                <div class=\"theme_cat_tab_content_img\">\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/491217ffddd9a9fb5aff9990c170c053/design/popular/entertain.webp\" alt=\"Nissan Entertainment Image\" loading=\"lazy\">\n                </div>\n                <p>Entertainment</p>\n            </a>\n        </li>\n        <li>\n            <a href=\"/accessories/floor-mats-and-carpets\">\n                <div class=\"theme_cat_tab_content_img\">\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/491217ffddd9a9fb5aff9990c170c053/design/popular/mat.webp\" alt=\"Nissan Floor Mats Image\" loading=\"lazy\">\n                </div>\n                <p>Floor Mats</p>\n            </a>\n        </li>\n        <li>\n            <a href=\"/part-categories/interior/pedals-and-pads\">\n                <div class=\"theme_cat_tab_content_img\">\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/491217ffddd9a9fb5aff9990c170c053/design/popular/pedal.webp\" alt=\"Nissan Pedal Kits\" loading=\"lazy\">\n                </div>\n                <p>Pedal Kits</p>\n            </a>\n        </li>\n        <li>\n            <a href=\"/part-categories/electronics/remote-start-and-entry-systems\">\n                <div class=\"theme_cat_tab_content_img\">\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/491217ffddd9a9fb5aff9990c170c053/design/popular/remote.webp\" alt=\"Nissan Remote Start\" loading=\"lazy\">\n                </div>\n                <p>Remote Start</p>\n            </a>\n        </li>\n        <li>\n            <a href=\"/part-categories/interior/shift-knobs-and-boots\">\n                <div class=\"theme_cat_tab_content_img\">\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/491217ffddd9a9fb5aff9990c170c053/design/popular/knob.webp\" alt=\"Nissan Shift Knobs\" loading=\"lazy\">\n                </div>\n                <p>Shift Knobs</p>\n            </a>\n        </li>\n        <li>\n            <a href=\"/part-categories/interior/sun-shades\">\n                <div class=\"theme_cat_tab_content_img\">\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/491217ffddd9a9fb5aff9990c170c053/design/popular/shade.webp\" alt=\"Nissan Sun Sades\" loading=\"lazy\">\n                </div>\n                <p>Sun Shades</p>\n            </a>\n        </li>\n    </ul>\n</div>"
+                },
+                "force_lazy": {
+                  "name": "Lazy Load Images",
+                  "type": "boolean",
+                  "default_value": false,
+                  "value": false
+                }
+              },
+              "htmlId": "",
+              "htmlClasses": "tab_content tab_content_in",
+              "minColumnWidth": 0,
+              "customAdmin": false,
+              "modulePadding": "padding-0",
+              "display": "normal"
+            },
+            {
+              "moduleId": "module_16",
+              "moduleType": "custom_html",
+              "title": "Exterior Content",
+              "options": {
+                "html_content": {
+                  "name": "Custom HTML Content",
+                  "type": "html_content",
+                  "default_value": "",
+                  "value": "<div class=\"theme_cat_tab_content\">\n    <ul class=\"theme_cat_tab_content_list\">\n        <li>\n            <a href=\"/accessories/car-covers\">\n                <div class=\"theme_cat_tab_content_img\">\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/491217ffddd9a9fb5aff9990c170c053/design/popular/covers.webp\" alt=\"Nissan Car Covers Image\" loading=\"lazy\">\n                </div>\n                <p>Car Covers</p>\n            </a>\n        </li>\n        <li>\n            <a href=\"/parts/nissan-emergency-road-kit-999a3sz001\">\n                <div class=\"theme_cat_tab_content_img\">\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/491217ffddd9a9fb5aff9990c170c053/design/popular/road.webp\" alt=\"Nissan Roadside Assistance Image\" loading=\"lazy\">\n                </div>\n                <p>Roadside Assistance</p>\n            </a>\n        </li>\n        <li>\n            <a href=\"accessories/racks\">\n                <div class=\"theme_cat_tab_content_img\">\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/491217ffddd9a9fb5aff9990c170c053/design/popular/roof.webp\" alt=\"Nissan Roof Racks Image\" loading=\"lazy\">\n                </div>\n                <p>Roof Racks</p>\n            </a>\n        </li>\n        <li>\n            <a href=\"/accessories/splash-guards-and-mud-flaps\">\n                <div class=\"theme_cat_tab_content_img\">\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/491217ffddd9a9fb5aff9990c170c053/design/popular/splash.webp\" alt=\"Nissan Splash Guards Image\" loading=\"lazy\">\n                </div>\n                <p>Splash Guards</p>\n            </a>\n        </li>\n        <li>\n            <a href=\"/accessories/spoilers-and-wings\">\n                <div class=\"theme_cat_tab_content_img\">\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/491217ffddd9a9fb5aff9990c170c053/design/popular/spoiler.webp\" alt=\"Nissan Spoilers Image\" loading=\"lazy\">\n                </div>\n                <p>Spoilers</p>\n            </a>\n        </li>\n        <li>\n            <a href=\"/accessories/nerf-bars-and-running-boards\">\n                <div class=\"theme_cat_tab_content_img\">\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/491217ffddd9a9fb5aff9990c170c053/design/popular/step.webp\" alt=\"Nissan Step Rails Image\" loading=\"lazy\">\n                </div>\n                <p>Nerf Bars & Running Boards</p>\n            </a>\n        </li>\n        <li>\n            <a href=\"accessories/towing-and-hauling\">\n                <div class=\"theme_cat_tab_content_img\">\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/491217ffddd9a9fb5aff9990c170c053/design/popular/trailer.webp\" alt=\"Nissan Trailer/Towing\" loading=\"lazy\">\n                </div>\n                <p>Towing</p>\n            </a>\n        </li>\n        <li>\n            <a href=\"accessories/shields-and-deflectors\">\n                <div class=\"theme_cat_tab_content_img\">\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/491217ffddd9a9fb5aff9990c170c053/design/popular/wind.webp\" alt=\"Nissan Wind Deflectors\" loading=\"lazy\">\n                </div>\n                <p>Wind Deflectors</p>\n            </a>\n        </li>\n    </ul>\n</div>"
+                },
+                "force_lazy": {
+                  "name": "Lazy Load Images",
+                  "type": "boolean",
+                  "default_value": false,
+                  "value": false
+                }
+              },
+              "htmlId": "",
+              "htmlClasses": "tab_content tab_content_ex",
+              "minColumnWidth": 0,
+              "customAdmin": false,
+              "modulePadding": "padding-0",
+              "display": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

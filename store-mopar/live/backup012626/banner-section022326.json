@@ -1,0 +1,123 @@
+{
+  "sectionId": "section_4",
+  "htmlId": "",
+  "htmlClasses": "themeNewBanner",
+  "contentWidth": "wide",
+  "backgroundColor": "",
+  "backgroundImage": "",
+  "textColor": "dark",
+  "display": "normal",
+  "rows": [
+    {
+      "rowId": "row_1",
+      "rowLayout": 12,
+      "htmlId": null,
+      "htmlClasses": null,
+      "columns": [
+        {
+          "columnId": "column_2",
+          "columnWidth": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "moduleArrangement": "block",
+          "textAlignment": "text-left",
+          "modules": [
+            {
+              "moduleId": "module_42",
+              "moduleType": "custom_html",
+              "title": "H1 Title",
+              "options": {
+                "html_content": {
+                  "name": "Custom HTML Content",
+                  "type": "html_content",
+                  "default_value": "",
+                  "value": "<h1>Shop Genuine Mopar<sub>®</sub> Parts & Accessories Online</h1>"
+                },
+                "force_lazy": {
+                  "name": "Lazy Load Images",
+                  "type": "boolean",
+                  "default_value": false,
+                  "value": false
+                }
+              },
+              "htmlId": "",
+              "htmlClasses": "",
+              "minColumnWidth": 0,
+              "customAdmin": false,
+              "modulePadding": "padding-0",
+              "display": "normal"
+            },
+            {
+              "moduleId": "module_3",
+              "moduleType": "custom_html",
+              "title": "Banner Slider",
+              "options": {
+                "html_content": {
+                  "name": "Custom HTML Content",
+                  "type": "html_content",
+                  "default_value": "",
+                  "value": "<div class=\"themeNewBannerWrapper\">\n    <div id=\"themeNewBannerSlider\" class=\"themeNewBannerSlider owl-carousel owl-theme\">\n        <div class=\"themeNewBannerSliderItem\">\n            <div class=\"themeNewBannerSliderBox\">\n                <a href=\"https://www.dcperformance.com/?mt1carousel\">\n                    <div class=\"themeNewBannerSliderBox\">\n                        <div class=\"themeNewBAnnerSliderContent\">\n                            <div class=\"themeNewBannerSliderContentBox\">\n                                <h4>The Direct Connection Story</h4>\n                                <p class=\"themeNewBannerSliderText\">\n                                    Created 40 year ago, Direct Connection was the answer for the high demand for Mopar<sub>®</sub> performance parts.\n                                </p>\n                                <p class=\"themeNewBannerSliderButton\">\n                                    SHOP NOW\n                                </p>\n                            </div>\n                        </div>\n                        <div class=\"themeNewBannerSliderImg\">\n                            <img src=\"https://rparts-sites.s3.amazonaws.com/21ebc25a592052689288153b3e3fb858/design/new-home/slider/MOPAR_Direct_Connection_Banner_new_.webp\" fetchpriority=\"high\" alt=\"The Direct Connection Story\">\n                        </div>\n                    </div>\n                </a>\n            </div>\n        </div>\n        <div class=\"themeNewBannerSliderItem\">\n            <div class=\"themeNewBannerSliderBox\">\n                <a href=\"interactive-garage?mt1carousel\">\n                    <div class=\"themeNewBannerSliderBox\">\n                        <div class=\"themeNewBAnnerSliderContent\">\n                            <div class=\"themeNewBannerSliderContentBox\">\n                                <h4>MOPAR<sub>®</sub> CUSTOMIZER IS HERE</h4>\n                                <p class=\"themeNewBannerSliderText\">\n                                    Try new Mopar<sub>®</sub> Customizer and see your accessories in action before you buy.\n                                </p>\n                                <p class=\"themeNewBannerSliderButton\">\n                                    Visualize Now\n                                </p>\n                            </div>\n                        </div>\n                        <div class=\"themeNewBannerSliderImg\">\n                            <img src=\"https://rparts-sites.s3.amazonaws.com/21ebc25a592052689288153b3e3fb858/design/new-home/slider/ig-promo-tile_.webp\" fetchpriority=\"high\" alt=\"MOPAR CUSTOMIZER IS HERE\">\n                        </div>\n                    </div>\n                </a>\n            </div>\n        </div>\n        <div class=\"themeNewBannerSliderItem\">\n          <div class=\"themeNewBannerSliderBox\">\n            <a href=\"javascript:openVehiclePicker();\">\n              <div class=\"themeNewBannerSliderImg\">\n                <img src=\"https://rparts-sites.s3.amazonaws.com/00d43a1703c9241dcca9da0d452449dc/design/promos/feb/ship_feb2.webp\" fetchpriority=\"high\" alt=\"Free Shipping on Mopar Orders $214+ - Max $50 Shipping Value\">\n              </div>\n            </a>\n            <div class=\"themeNewBAnnerSliderContent\">\n              <div class=\"themeNewBannerSliderContentBox\">\n                <a href=\"javascript:openVehiclePicker();\">\n                  <h4>\n                    SHOW YOUR RIDE SOME LOVE: GET FREE SHIPPING ON ORDERS $214+\n                  </h4>\n                </a>\n                <p class=\"themeNewBannerSliderText\">\n                  Offer code automatically applied at checkout. Max shipping value $50\n                  <span class=\"themeBannerTermWrap\">\n                    <span style=\"text-decoration: underline; cursor: pointer;\">[*]</span>\n                    <span class=\"themeBannerTermBox\">\n                      \n                        Not all items sold on store.mopar.com are shippable.\n                        Promotion valid only on online orders of shippable items with a minimum\n                        order value of $214+, made from <strong>02/14/2026 through 02/28/2026</strong>,\n                        fulfilled by a participating U.S. Mopar Dealer. Offer code automatically\n                        applied at online checkout. Promotion covers up to <strong>$50 of the total\n                        shipping fee</strong>; any remaining shipping fee balance is the sole\n                        responsibility of the customer. No cash value. Void where prohibited.\n                        Other restrictions may apply. Contact participating U.S. Mopar Dealer\n                        for details.\n                      \n                    </span>\n                  </span>\n                </p>\n                <a href=\"javascript:openVehiclePicker();\" class=\"themeNewBannerSliderButton\">\n                  Shop Now\n                </a>\n              </div>\n            </div>\n          </div>\n        </div>\n        <div class=\"themeNewBannerSliderItem\">\n            <a href=\"javascript:void(0)\" data-toggle=\"modal\" data-target=\"#creditCardPromoModal\">\n                <div class=\"themeNewBannerSliderBox\">\n                    <div class=\"themeNewBannerSliderImg\">\n                        <img src=\"https://rparts-sites.s3.amazonaws.com/21ebc25a592052689288153b3e3fb858/design/new-home/slider/Mopar_75LTO_Banner_978x700-EO-n.webp\" fetchpriority=\"high\" alt=\"MOPAR Authentic Parts & Accessories\">\n                    </div>\n                </div>\n            </a>\n        </div>\n        <div class=\"themeNewBannerSliderItem\">\n            <div class=\"themeNewBannerSliderBox\">\n                <a href=\"rho-magnaflow-exhaust/?mt1carousel\">\n                    <div class=\"themeNewBannerSliderBox\">\n                        <div class=\"themeNewBAnnerSliderContent\">\n                            <div class=\"themeNewBannerSliderContentBox\">\n                                <h4>RHO Exhaust Kits</h4>\n                                <p class=\"themeNewBannerSliderText\">\n                                    MagnaFlow RAM RHO xMOD and SPEQ Series Cat-Back Performance Exhaust\n                                </p>\n                                <p class=\"themeNewBannerSliderButton\">\n                                    Shop Now\n                                </p>\n                            </div>\n                        </div>\n                        <div class=\"themeNewBannerSliderImg\">\n                            <img src=\"https://rparts-sites.s3.amazonaws.com/21ebc25a592052689288153b3e3fb858/design/new-home/slider/rho-exhaust-tile_.webp\" fetchpriority=\"high\" alt=\"RAM RHO Cat-Back Performance Exhaust\">\n                        </div>\n                    </div>\n                </a>\n            </div>\n        </div>\n        <div class=\"themeNewBannerSliderItem\">\n            <div class=\"themeNewBannerSliderBox\">\n                <a href=\"https://store.mopar.com/jeep-wrangler-catalog?mt1carousel\">\n                    <div class=\"themeNewBannerSliderBox\">\n                        <div class=\"themeNewBAnnerSliderContent\">\n                            <div class=\"themeNewBannerSliderContentBox\">\n                                <h4>Jeep Wrangler Interactive Catalog</h4>\n                                <p class=\"themeNewBannerSliderText\">\n                                    An immersive catalog featuring top selling accessories in an interactive experience.\n                                </p>\n                                <p class=\"themeNewBannerSliderButton\">\n                                    Shop Now\n                                </p>\n                            </div>\n                        </div>\n                        <div class=\"themeNewBannerSliderImg\">\n                            <img src=\"https://rparts-sites.s3.amazonaws.com/21ebc25a592052689288153b3e3fb858/design/new-home/slider/banner_wrangler_.webp\" fetchpriority=\"high\" alt=\"Jeep Wrangler Interactive Catalog\">\n                        </div>\n                    </div>\n                </a>\n            </div>\n        </div>\n        <div class=\"themeNewBannerSliderItem\">\n            <a href=\"/affiliated-accessories/?mt1carousel\">\n                <div class=\"themeNewBannerSliderBox\">\n                    <div class=\"themeNewBannerSliderImg\">\n                        <img src=\"https://rparts-sites.s3.amazonaws.com/21ebc25a592052689288153b3e3fb858/design/new-home/slider/square_1a_.webp\" fetchpriority=\"high\" alt=\"MOPAR Authentic Parts & Accessories\">\n                    </div>\n                    <div class=\"themeNewBAnnerSliderContent\">\n                        <div class=\"themeNewBannerSliderContentBox\">\n                            <h4>Mopar<sub>®</sub> Affiliated Accessories</h4>\n                            <p class=\"themeNewBannerSliderText\">\n                                <strong>Partnered with 30+ trusted brands</strong> to offer top accessories and customization options for your vehicle.\n                            </p>\n                            <p class=\"themeNewBannerSliderButton\">\n                                Shop Now\n                            </p>\n                        </div>\n                    </div>\n                </div>\n            </a>\n        </div>\n        <div class=\"themeNewBannerSliderItem\">\n            <a href=\"bproauto?mt1carousel\">\n                <div class=\"themeNewBannerSliderBox\">\n                    <div class=\"themeNewBAnnerSliderContent\">\n                        <div class=\"themeNewBannerSliderContentBox\">\n                            <h4>BPROAUTO PARTS</h4>\n                            <p class=\"themeNewBannerSliderText\">\n                                bproauto parts are quality-tested, O.E.-backed aftermarket parts for most vehicles – affordable and warranty-backed.\n                            </p>\n                            <p class=\"themeNewBannerSliderButton\">\n                                Shop Now\n                            </p>\n                        </div>\n                    </div>\n                    <div class=\"themeNewBannerSliderImg\">\n                        <img src=\"https://rparts-sites.s3.amazonaws.com/21ebc25a592052689288153b3e3fb858/design/new-home/slider/square_2_.webp\" fetchpriority=\"high\" alt=\"MOPAR Authentic Parts & Accessories\">\n                    </div>\n                </div>\n            </a>\n        </div>\n        <div class=\"themeNewBannerSliderItem\">\n            <a href=\"oem-parts/mopar-free2move-charge-in-home-ev-charger-level-2-48-amp-82219155ab?mt1carousel\">\n                <div class=\"themeNewBannerSliderBox\">\n                    <div class=\"themeNewBannerSliderImg\">\n                        <img src=\"https://rparts-sites.s3.amazonaws.com/21ebc25a592052689288153b3e3fb858/design/new-home/slider/square_3_.webp\" fetchpriority=\"high\" alt=\"MOPAR Authentic Parts & Accessories\">\n                    </div>\n                    <div class=\"themeNewBAnnerSliderContent\">\n                        <div class=\"themeNewBannerSliderContentBox\">\n                            <h4>FREE2MOVE LEVEL 2 CHARGING</h4>\n                            <p class=\"themeNewBannerSliderText\">\n                                Increase charging time at home with the new 48A Level 2 charging station.\n                            </p>\n                            <p class=\"themeNewBannerSliderButton\">\n                                Shop Now\n                            </p>\n                        </div>\n                    </div>\n                </div>\n            </a>\n        </div>\n    </div>\n</div>"
+                },
+                "force_lazy": {
+                  "name": "Lazy Load Images",
+                  "type": "boolean",
+                  "default_value": false,
+                  "value": false
+                }
+              },
+              "htmlId": "",
+              "htmlClasses": "",
+              "minColumnWidth": 0,
+              "customAdmin": false,
+              "modulePadding": "padding-0",
+              "display": "normal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rowId": "row_40",
+      "rowLayout": 12,
+      "htmlId": null,
+      "htmlClasses": null,
+      "columns": [
+        {
+          "columnId": "column_41",
+          "columnWidth": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "moduleArrangement": "block",
+          "textAlignment": "text-left",
+          "modules": [
+            {
+              "moduleId": "module_868",
+              "moduleType": "custom_html",
+              "title": "Yotpo Reviews TAB",
+              "options": {
+                "html_content": {
+                  "name": "Custom HTML Content",
+                  "type": "html_content",
+                  "default_value": "",
+                  "value": "<div class=\"yotpo-widget-instance\" data-yotpo-instance-id=\"1170142\" data-yotpo-product-id=\"\"></div>"
+                },
+                "force_lazy": {
+                  "name": "Lazy Load Images",
+                  "type": "boolean",
+                  "default_value": false,
+                  "value": false
+                }
+              },
+              "htmlId": "",
+              "htmlClasses": "",
+              "minColumnWidth": 0,
+              "customAdmin": false,
+              "modulePadding": "padding-0",
+              "display": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
