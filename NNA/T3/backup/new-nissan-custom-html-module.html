@@ -1,0 +1,242 @@
+<style>
+	#layout_homepage .themeHeroSection .themeNewHeroCard {
+		position: relative;
+	}
+	#layout_homepage .themeHeroSection .themeNewHeroCard::before {
+		content: "";
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		background-color: rgba(0,0,0,0.5);
+		z-index: 1;
+	}
+	@media screen and (max-width: 767px) {
+		#layout_homepage .themeHeroSection .themeNewHeroCard::before {
+			display: none;
+		}
+	}
+	#layout_homepage .themeHeroSection .themeNewHeroContainer {
+		max-width: 1250px;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		display: flex;
+		align-items: center;
+		z-index: 2;
+	}
+	@media screen and (max-width: 1350px) {
+		#layout_homepage .themeHeroSection .themeNewHeroContainer {
+			padding-left: 60px;
+			padding-right: 60px;
+		}
+	}
+	@media screen and (max-width: 767px) {
+		#layout_homepage .themeHeroSection .themeNewHeroContainer {
+			position: relative;
+			margin-top: -50px;
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+	}
+	#layout_homepage .themeHeroSection .themeNewHeroContent {
+		max-width: 480px;
+		width: 100%;
+		position: relative;
+	}
+	@media screen and (max-width: 767px) {
+		#layout_homepage .themeHeroSection .themeNewHeroContent {
+			max-width: 100%;
+			background-color: #000;
+			padding: 20px 25px;
+			border-radius: 6px;
+			position: unset;
+		}
+	}
+	#layout_homepage .themeHeroSection .themeNewHeroTitle {
+		color: #fff !important;
+		font-family: var(--themeFontLight) !important;
+		font-size: 1.875rem !important;
+		line-height: normal !important;
+		margin-bottom: 15px !important;
+		text-align: left !important;
+	}
+	@media screen and (max-width: 767px) {
+		#layout_homepage .themeHeroSection .themeNewHeroTitle {
+			font-size: 1.5rem !important;
+		}
+	}
+	#layout_homepage .themeHeroSection .themeHeroTooltipWrap {
+		margin-bottom: 40px;
+	}
+	@media screen and (max-width: 767px) {
+		#layout_homepage .themeHeroSection .themeHeroTooltipWrap {
+			margin-bottom: 30px;
+		}
+	}
+	#layout_homepage .themeHeroSection .themeHeroTooltipWrap,
+	#layout_homepage .themeHeroSection .themeHeroTooltipWrap a {
+		color: #fff;
+	}
+	#layout_homepage .themeHeroSection .themeHeroTooltip {
+		max-height: 150px;
+		overflow: auto;
+	}
+	#layout_homepage .themeHeroSection .themeNewHeroButton a {
+		display: inline-block;
+		font-size: 16px;
+		padding: 10px 15px;
+		border: 1px solid var(--themeColor);
+		background-color: var(--themeColor);
+		max-width: 200px;
+		text-align: center;
+		font-weight: 300;
+		width: 100%;
+		color: #fff !important;
+		font-family: var(--themeFontRegular);
+		transition: all .3s ease-in-out;
+		margin-bottom: 0;
+		border-radius: 50px;
+	}
+	#layout_homepage .themeHeroSection .themeHeroFontBold {
+		font-family: var(--themeFontBold);
+	}
+	#layout_homepage .themeHeroSection .themeNewHeroImg {
+		height: 500px;
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	@media screen and (max-width: 767px) {
+		#layout_homepage .themeHeroSection .themeNewHeroImg {
+			height: calc(210px + (500 - 210) * ((100vw - 320px) / (767 - 320)));
+			background-size: contain;
+		}
+		#layout_homepage .themeHeroSection .themeHeroTooltip {
+			left: 0;
+			right: 0;
+			bottom: auto;
+			top: 0;
+		}
+	}
+	#layout_homepage .themeHeroSection .owl-nav button {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		width: 30px;
+		height: 30px;
+		border: 1px solid #fff;
+		border-radius: 30px;
+		margin: auto;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	@media screen and (max-width: 767px) {
+		#layout_homepage .themeHeroSection .owl-nav button {
+			top: calc(80px + (230 - 80) * ((100vw - 320px) / (767 - 320)));
+			bottom: auto;
+		}
+	}
+	#layout_homepage .themeHeroSection .owl-nav button.owl-prev {
+		left: 15px;
+	}
+	#layout_homepage .themeHeroSection .owl-nav button.owl-next {
+		right: 15px;
+	}
+	#layout_homepage .themeHeroSection .owl-nav button .theme_arrow {
+		width: 9px;
+    	height: 15px;
+	}
+	#layout_homepage .themeHeroSection .owl-nav button svg {
+		fill: #fff;
+	}
+	#layout_homepage .themeHeroSection .owl-dots {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 5px;
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 15px;
+	}
+	@media screen and (max-width: 767px) {
+		#layout_homepage .themeHeroSection .owl-dots {
+			position: unset;
+			margin-top: 15px;
+		}
+	}
+	#layout_homepage .themeHeroSection .owl-dots button {
+		display: inline-block;
+		width: 10px;
+		height: 10px;
+		border-radius: 10px;
+		opacity: .25;
+    	background-color: #fff;
+	}
+	@media screen and (max-width: 767px) {
+		#layout_homepage .themeHeroSection .owl-dots button {
+			background-color: #000;
+		}
+	}
+	#layout_homepage .themeHeroSection .owl-dots button.active {
+		background-color: var(--themeColor);
+		opacity: 1;
+	}
+</style>
+<div class="themeNewHeroWrapper">
+	<div id="themeBannerList" class="themeNewHeroList owl-carousel owl-theme">
+		<div class="themeNewHeroItem">
+			<div class="themeNewHeroCard">
+				<div class="themeNewHeroImg v-pc" style="background-image: url(https://cdn.revolutionparts.io/764b1b87e53d42c6b5be6d7845e3e3b0/design/promo/march2026/nissan_ship_mar_desktop_t3b.webp);">
+				</div>
+				<div class="themeNewHeroImg v-sp" style="background-image: url(https://cdn.revolutionparts.io/764b1b87e53d42c6b5be6d7845e3e3b0/design/promo/march2026/nissan_ship_mar_mobile_allb.webp);">
+				</div>
+				<div class="themeNewHeroContainer">
+					<div class="themeNewHeroContent">
+						<h1 class="themeNewHeroTitle">Score up to $25 off Shipping on qualifying online orders</h1>
+						<p class="themeHeroTooltipWrap"> Instantly save up to $25 on shipping when you spend $100 on qualifying orders placed here 3/2–3/16. <a href="#" class="themeHeroTooltipAnchor">[*]</a> </p>
+						<p class="themeHeroTooltip"> 
+							<span class="themeHeroFontBold">
+								ELIGIBILITY REQUIREMENTS: Not all items sold here are shippable. Promotion valid only on orders placed here for shippable parts and accessories with a minimum subtotal of $100, made from 3/2/26 through 3/16/26, and fulfilled by a participating U.S. Nissan dealer. Offer code automatically applied at online checkout. 
+							</span> 
+							Promotion covers up to $25 of the total shipping fee; any remaining shipping fee balance is the sole responsibility of the customer. No cash value. Void where prohibited. Other restrictions may apply. Contact participating U.S. Nissan dealer for details. 
+						</p>
+						<div class="themeNewHeroButton">
+							<a href="javascript:openVehiclePicker();">Shop Now</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="themeNewHeroItem">
+			<div class="themeNewHeroCard">
+				<div class="themeNewHeroImg v-pc" style="background-image: url(https://cdn.revolutionparts.io/764b1b87e53d42c6b5be6d7845e3e3b0/design/promo/march2026/nissan_acc_mar_desktop_t3.webp);">
+				</div>
+				<div class="themeNewHeroImg v-sp" style="background-image: url(https://cdn.revolutionparts.io/764b1b87e53d42c6b5be6d7845e3e3b0/design/promo/march2026/nissan_acc_mar_mobile_t3.webp);">
+				</div>
+				<div class="themeNewHeroContainer">
+					<div class="themeNewHeroContent">
+						<h1 class="themeNewHeroTitle">Get Road-Trip Ready with up to 20% off Select Genuine Nissan Accessories</h1>
+						<p class="themeHeroTooltipWrap"> 
+							Save up to 20% on select Genuine Nissan Accessories with code <span class="themeHeroFontBold">ROADTRIP26</span> when you shop online here 3/2–3/31. <a href="#" class="themeHeroTooltipAnchor">[*]</a> 
+						</p>
+						<p class="themeHeroTooltip"> 
+							<span class="themeHeroFontBold">ELIGIBILITY REQUIREMENTS:  Offer valid on select Genuine Nissan Accessories, excluding  Affiliated Yakima Accessories, Nismo Accessories and all Merchandise. Promotion valid on online purchase made from 3/2/2026 through 03/31/2026 and fulfilled by participating U.S. Nissan dealer. Must apply offer code ROADTRIP26 at time of online checkout. Max discount $500. </span> Installation, shipping, handling, and tax additional. No cash value. Void where prohibited. Other restrictions may apply. Contact participating U.S. Nissan dealer for details. 
+						</p>
+						<div class="themeNewHeroButton">
+							<a href="javascript:openVehiclePicker();">Shop Now</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
