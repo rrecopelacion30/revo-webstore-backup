@@ -1,0 +1,55 @@
+{
+  "sectionId": "section_574",
+  "htmlId": "",
+  "htmlClasses": "",
+  "contentWidth": "wide",
+  "backgroundColor": "",
+  "backgroundImage": "",
+  "textColor": "dark",
+  "display": "normal",
+  "rows": [
+    {
+      "rowId": "row_567",
+      "rowLayout": 12,
+      "htmlId": null,
+      "htmlClasses": null,
+      "columns": [
+        {
+          "columnId": "column_568",
+          "columnWidth": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "moduleArrangement": "block",
+          "textAlignment": "text-left",
+          "modules": [
+            {
+              "moduleId": "module_569",
+              "moduleType": "custom_html",
+              "title": "Accessories Banner",
+              "options": {
+                "html_content": {
+                  "name": "Custom HTML Content",
+                  "type": "html_content",
+                  "default_value": "",
+                  "value": "<div class=\"themeInnerPageBanner\" style=\"margin-top: 40px;\">\n\t<div class=\"themeInnerPageBannerWrap\">\n\t\t<div class=\"themeInnerPageBannerList\">\n\t\t\t<div class=\"themeInnerPageBannerItem\">\n\t\t\t\t<div class=\"themeInnerPageBannerCard\">\n\t\t\t\t\t<div class=\"themeInnerPageBannerImg\" style=\"background-image: url(https://cdn.revolutionparts.io/491217ffddd9a9fb5aff9990c170c053/design/2026promo/inf_acc_feb_desktop_t1_new.webp);\"></div>\n\t\t\t\t\t<div class=\"themeInnerPageBannerContent\">\n\t\t\t\t\t\t<div class=\"themeInnerPageBannerBox\">\n\t\t\t\t\t\t\t<h1>Take up to 10% off Select Genuine INFINITI Accessories</h1>\n\t\t\t\t\t\t\t<p>           Save up to 10% on select Genuine INFINITI Technology and Lighting, Pet, and Interior Accessories with code\n          <span style=\"font-family: var(--themeFontBold) !important;\">HEART10</span>           when you shop online 2/2–2/28 at\n          <a href=\"https://parts.infinitiusa.com\" style=\"color:#ffffff;\">Parts.INFINITIUSA.com</a> <span class=\"themeBannerTermWrap\"> <a href=\"javascript:void(0);\">[*]</a> <span class=\"themeBannerTermBox\" style=\"display: none;\"> <span style=\"font-family: var(--themeFontBold) !important;\">                 ELIGIBILITY REQUIREMENTS: Offer valid only on select Genuine INFINITI Interior, Lighting and Technology and Pet Accessories.\n                Promotion valid on online purchase made from 2/02/2026 through 02/28/2026 and fulfilled by participating U.S. INFINITI Retailer.\n                Must apply offer code HEART10 at time of online checkout. Max discount $500.\n              </span>               Installation, shipping, handling, and tax additional. No cash value. Void where prohibited.\n              Other restrictions may apply. Contact participating U.S. INFINITI retailer for details.\n            </span> </span> </p>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>"
+                },
+                "force_lazy": {
+                  "name": "Lazy Load Images",
+                  "type": "boolean",
+                  "default_value": false,
+                  "value": false
+                }
+              },
+              "htmlId": "",
+              "htmlClasses": "",
+              "minColumnWidth": 0,
+              "customAdmin": false,
+              "modulePadding": "padding-0",
+              "display": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

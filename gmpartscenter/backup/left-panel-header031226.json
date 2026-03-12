@@ -1,0 +1,105 @@
+{
+  "sectionId": "section_29",
+  "htmlId": "",
+  "htmlClasses": "left_panel",
+  "contentWidth": "normal",
+  "backgroundColor": "",
+  "backgroundImage": "",
+  "textColor": "dark",
+  "display": "normal",
+  "rows": [
+    {
+      "rowId": "row_30",
+      "rowLayout": 12,
+      "htmlId": "",
+      "htmlClasses": "left_panel_wrapper",
+      "columns": [
+        {
+          "columnId": "column_31",
+          "columnWidth": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "moduleArrangement": "block",
+          "textAlignment": "text-left",
+          "modules": [
+            {
+              "moduleId": "module_32",
+              "moduleType": "custom_html",
+              "title": "Left Panel Header",
+              "options": {
+                "html_content": {
+                  "name": "Custom HTML Content",
+                  "type": "html_content",
+                  "default_value": "",
+                  "value": "<div class=\"left_panel_header_wrapper\">\n    <ul class=\"left_panel_header_list\">\n        <li class=\"left_panel_header_item\">\n            <a href=\"/account/login\" class=\"left_panel_header_link\">\n                Sign in or Create Account\n            </a>\n        </li>\n        <li class=\"left_panel_header_item\">\n            <a href=\"/account/order-status\" class=\"left_panel_header_link\">\n                Track Order\n            </a>\n        </li>\n        <li class=\"left_panel_header_item\">\n            <a href=\"/contact-us\" class=\"left_panel_header_link\">\n                Contact Us\n            </a>\n        </li>\n        <li class=\"left_panel_header_item\">\n            <a href=\"javascript:openVehiclePicker();\" class=\"left_panel_header_link\">\n                Select Vehicle\n            </a>\n        </li>\n    </ul>\n    <div class=\"left_panel_child_header\">\n        <a href=\"#\" class=\"left_panel_child_back_button\">Back</a>\n        <h4 class=\"left_panel_child_title\">Find Parts</h4>\n    </div>\n</div>"
+                },
+                "force_lazy": {
+                  "name": "Lazy Load Images",
+                  "type": "boolean",
+                  "default_value": false,
+                  "value": false
+                }
+              },
+              "htmlId": "",
+              "htmlClasses": "left_panel_header",
+              "minColumnWidth": 0,
+              "customAdmin": false,
+              "modulePadding": "padding-0",
+              "display": "normal"
+            },
+            {
+              "moduleId": "module_33",
+              "moduleType": "custom_html",
+              "title": "Left Panel Content",
+              "options": {
+                "html_content": {
+                  "name": "Custom HTML Content",
+                  "type": "html_content",
+                  "default_value": "",
+                  "value": "<div class=\"left_panel_content_wrapper\">\n    <h3>GM Parts Center</h3>\n    <ul class=\"left_panel_list\">\n        <li class=\"left_panel_item left_panel_item_has_child\">\n            <a href=\"#\" class=\"left_panel_link\">\n                Find Parts\n            </a>\n            <div class=\"left_panel_child_wrapper\">\n                <div class=\"left_panel_child_content\">\n                    <ul class=\"left_panel_child_list\">\n                        <li class=\"left_panel_child_item\">\n                            <a href=\"/v-buick\" class=\"left_panel_child_link\">OEM Buick Parts</a>\n                        </li>\n                        <li class=\"left_panel_child_item\">\n                            <a href=\"/v-cadillac\" class=\"left_panel_child_link\">OEM Cadillac Parts</a>\n                        </li>\n                        <li class=\"left_panel_child_item\">\n                            <a href=\"/v-chevrolet\" class=\"left_panel_child_link\">OEM Chevy Parts</a>\n                        </li>\n                        <li class=\"left_panel_child_item\">\n                            <a href=\"/v-gmc\" class=\"left_panel_child_link\">OEM GMC Parts</a>\n                        </li>\n                        <li class=\"left_panel_child_item\">\n                            <a href=\"/vin-decoder\" class=\"left_panel_child_link\">GM VIN Decoder</a>\n                        </li>\n                    </ul>\n                </div>\n            </div>\n        </li>\n        <li class=\"left_panel_item\">\n            <a href=\"/about\" class=\"left_panel_link\">\n                About\n            </a>\n        </li>\n        <li class=\"left_panel_item\">\n            <a href=\"/blog\" class=\"left_panel_link\">\n                Our Blog\n            </a>\n        </li>\n    </ul>\n</div>"
+                },
+                "force_lazy": {
+                  "name": "Lazy Load Images",
+                  "type": "boolean",
+                  "default_value": false,
+                  "value": false
+                }
+              },
+              "htmlId": "",
+              "htmlClasses": "left_panel_content",
+              "minColumnWidth": 0,
+              "customAdmin": false,
+              "modulePadding": "padding-0",
+              "display": "normal"
+            },
+            {
+              "moduleId": "module_34",
+              "moduleType": "custom_html",
+              "title": "Close Panel",
+              "options": {
+                "html_content": {
+                  "name": "Custom HTML Content",
+                  "type": "html_content",
+                  "default_value": "",
+                  "value": "<div class=\"left_panel_close\">\n        <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\" viewBox=\"0 0 20 20\">\n            <g id=\"Close\" transform=\"translate(-77 -444.835)\">\n                <g id=\"Group_40503\" data-name=\"Group 40503\" transform=\"translate(77 445.403)\">\n                <path id=\"Path_269033\" data-name=\"Path 269033\" d=\"M0,.192,18.26,17.934,20,16.243,1.739-1.5Z\" transform=\"translate(0 1.498)\" fill=\"#093452\"/>\n                </g>\n                <g id=\"Group_40504\" data-name=\"Group 40504\" transform=\"translate(77 444.835)\">\n                <path id=\"Path_269034\" data-name=\"Path 269034\" d=\"M0,2.015l1.642,1.6L19.857-14.084v-.089l-1.6-1.55Z\" transform=\"translate(0 15.723)\" fill=\"#093452\"/>\n                </g>\n            </g>\n        </svg>          \n    </div>"
+                },
+                "force_lazy": {
+                  "name": "Lazy Load Images",
+                  "type": "boolean",
+                  "default_value": false,
+                  "value": false
+                }
+              },
+              "htmlId": "",
+              "htmlClasses": "",
+              "minColumnWidth": 0,
+              "customAdmin": false,
+              "modulePadding": "padding-0",
+              "display": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
