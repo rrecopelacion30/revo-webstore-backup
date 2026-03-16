@@ -1,0 +1,155 @@
+{
+  "sectionId": "section_10",
+  "htmlId": "",
+  "htmlClasses": "latest_catalog_section",
+  "contentWidth": "wide",
+  "backgroundColor": "",
+  "backgroundImage": "",
+  "textColor": "dark",
+  "display": "normal",
+  "rows": [
+    {
+      "rowId": "row_12",
+      "rowLayout": 12,
+      "htmlId": null,
+      "htmlClasses": null,
+      "columns": [
+        {
+          "columnId": "column_13",
+          "columnWidth": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "moduleArrangement": "block",
+          "textAlignment": "text-left",
+          "modules": [
+            {
+              "moduleId": "module_14",
+              "moduleType": "custom_html",
+              "title": "Tab Latest Catalog",
+              "options": {
+                "html_content": {
+                  "name": "Custom HTML Content",
+                  "type": "html_content",
+                  "default_value": "",
+                  "value": "<div class=\"latest_catalog_wrapper\">\n    <div class=\"latest_catalog_title\">\n        <h3>Explore Our Latest Catalogs</h3>\n    </div>\n    <ul class=\"latest_catalog_list\">\n        <li class=\"latest_catalog_item\">\n            <a href=\"#\" data-toggle-target=\".tab_content_chrysler\">\n                Chrysler\n            </a>\n        </li>\n        <li class=\"latest_catalog_item\">\n            <a href=\"#\" data-toggle-target=\".tab_content_dodge\">\n                Dodge\n            </a>\n        </li>\n        <li class=\"latest_catalog_item\">\n            <a href=\"#\" data-toggle-target=\".tab_content_jeep\">\n                Jeep®\n            </a>\n        </li>\n        <li class=\"latest_catalog_item\">\n            <a href=\"#\" data-toggle-target=\".tab_content_ram\">\n                Ram\n            </a>\n        </li>\n    </ul>\n</div>"
+                },
+                "force_lazy": {
+                  "name": "Lazy Load Images",
+                  "type": "boolean",
+                  "default_value": false,
+                  "value": false
+                }
+              },
+              "htmlId": "",
+              "htmlClasses": "",
+              "minColumnWidth": 0,
+              "customAdmin": false,
+              "modulePadding": "padding-0",
+              "display": "normal"
+            },
+            {
+              "moduleId": "module_15",
+              "moduleType": "custom_html",
+              "title": "Chrysler",
+              "options": {
+                "html_content": {
+                  "name": "Custom HTML Content",
+                  "type": "html_content",
+                  "default_value": "",
+                  "value": "<div class=\"theme_cat_tab_content\">\n    <ul class=\"theme_cat_tab_content_list\">\n        <li>\n            <div class=\"theme_cat_tab_content_wrapper\">\n                <div class=\"theme_cat_tab_content_img\">\n                    <img alt=\"Mopar®  Accessory Brochure - Chrysler 300\" src=\"https://rparts-sites.s3.amazonaws.com/21ebc25a592052689288153b3e3fb858/design/new-home/catalogs/chrysler_300_.webp\">\n                </div>\n                <p>Mopar®  Accessory Brochure - Chrysler 300</p>\n                <div class=\"theme_tab_link\">\n                    <a href=\"\">Explore More</a>\n                </div>\n                <a href=\"https://mydigimag.rrd.com/publication/?co=US&pid=538&pc=MC-LX-web&bt_field_name%5b%5d=source&bt_field_value%5b%5d=null\" target=\"_blank\"></a>\n            </div>\n        </li>\n        <li>\n            <div class=\"theme_cat_tab_content_wrapper\">\n                <div class=\"theme_cat_tab_content_img\">\n                    <img alt=\"Mopar®  Accessory Brochure - Chrysler Pacifica\" src=\"https://rparts-sites.s3.amazonaws.com/21ebc25a592052689288153b3e3fb858/design/new-home/catalogs/chrysler_pacifica_.webp\">\n                </div>\n                <p>Mopar®  Accessory Brochure - Chrysler Pacifica</p>\n                <div class=\"theme_tab_link\">\n                    <a href=\"\">Explore More</a>\n                </div>\n                <a href=\"https://mydigimag.rrd.com/publication/?co=US&pid=538&pc=MC-RU-web&bt_field_name%5b%5d=source&bt_field_value%5b%5d=null\" target=\"_blank\"></a>\n            </div>\n        </li>\n    </ul>\n</div>"
+                },
+                "force_lazy": {
+                  "name": "Lazy Load Images",
+                  "type": "boolean",
+                  "default_value": false,
+                  "value": false
+                }
+              },
+              "htmlId": "",
+              "htmlClasses": "tab_content tab_content_chrysler",
+              "minColumnWidth": 0,
+              "customAdmin": false,
+              "modulePadding": "padding-0",
+              "display": "normal"
+            },
+            {
+              "moduleId": "module_16",
+              "moduleType": "custom_html",
+              "title": "Dodge",
+              "options": {
+                "html_content": {
+                  "name": "Custom HTML Content",
+                  "type": "html_content",
+                  "default_value": "",
+                  "value": "<div class=\"theme_cat_tab_content\">\n    <ul class=\"theme_cat_tab_content_list\">\n        <li>\n            <div class=\"theme_cat_tab_content_wrapper\">\n                <div class=\"theme_cat_tab_content_img\">\n                    <img alt=\"Mopar® Accessory Brochure - Dodge Durango\" src=\"https://rparts-sites.s3.amazonaws.com/00d43a1703c9241dcca9da0d452449dc/design/new-home/catalogs/dodge_durango.webp\">\n                </div>\n                <p>Mopar® Accessory Brochure - Dodge Durango</p>\n                <div class=\"theme_tab_link\">\n                    <a href=\"\">Explore More</a>\n                </div>\n                <a href=\"https://mydigimag.rrd.com/publication/?co=US&pid=538&pc=MD-WD-web&bt_field_name%5b%5d=source&bt_field_value%5b%5d=null\" target=\"_blank\"></a>\n            </div>\n        </li>\n        <li>\n            <div class=\"theme_cat_tab_content_wrapper\">\n                <div class=\"theme_cat_tab_content_img\">\n                    <img alt=\"Mopar® Accessory Brochure - Dodge Challenger\" src=\"https://rparts-sites.s3.amazonaws.com/00d43a1703c9241dcca9da0d452449dc/design/new-home/catalogs/dodge_challenger.webp\">\n                </div>\n                <p>Mopar® Accessory Brochure - Dodge Challenger</p>\n                <div class=\"theme_tab_link\">\n                    <a href=\"\">Explore More</a>\n                </div>\n                <a href=\"https://mydigimag.rrd.com/publication/?co=US&pid=538&pc=MD-LA-web&bt_field_name%5b%5d==source&bt_field_value%5b%5d==null\" target=\"_blank\"></a>\n            </div>\n        </li>\n        <li>\n            <div class=\"theme_cat_tab_content_wrapper\">\n                <div class=\"theme_cat_tab_content_img\">\n                    <img alt=\"Mopar® Accessory Brochure - Dodge Charger\" src=\"https://rparts-sites.s3.amazonaws.com/00d43a1703c9241dcca9da0d452449dc/design/new-home/catalogs/dodge_charger.webp\">\n                </div>\n                <p>Mopar® Accessory Brochure - Dodge Charger</p>\n                <div class=\"theme_tab_link\">\n                    <a href=\"\">Explore More</a>\n                </div>\n                <a href=\"https://mydigimag.rrd.com/publication/?co=US&pid=538&pc=MD-LD-web&bt_field_name%5b%5d=source&bt_field_value%5b%5d=null\" target=\"_blank\"></a>\n            </div>\n        </li>\n        <li>\n            <div class=\"theme_cat_tab_content_wrapper\">\n                <div class=\"theme_cat_tab_content_img\">\n                    <img alt=\"Mopar® Accessory Brochure - Dodge Hornet\" src=\"https://rparts-sites.s3.amazonaws.com/00d43a1703c9241dcca9da0d452449dc/design/new-home/catalogs/dodge_hornet.webp\">\n                </div>\n                <p>Mopar® Accessory Brochure - Dodge Hornet</p>\n                <div class=\"theme_tab_link\">\n                    <a href=\"\">Explore More</a>\n                </div>\n                <a href=\"https://mydigimag.rrd.com/publication/?co=US&pid=538&pc=MD-HR-web&bt_field_name%5b%5d=source&bt_field_value%5b%5d=null\" target=\"_blank\"></a>\n            </div>\n        </li>\n        <li>\n            <div class=\"theme_cat_tab_content_wrapper\">\n                <div class=\"theme_cat_tab_content_img\">\n                    <img alt=\"Mopar® Accessory Brochure - Dodge Charger Daytona\" src=\"https://rparts-sites.s3.amazonaws.com/00d43a1703c9241dcca9da0d452449dc/design/new-home/catalogs/dodge_daytona.webp\">\n                </div>\n                <p>Mopar® Accessory Brochure - Dodge Charger Daytona</p>\n                <div class=\"theme_tab_link\">\n                    <a href=\"\">Explore More</a>\n                </div>\n                <a href=\"https://mydigimag.rrd.com/publication/?co=US&pid=538&pc=MD-LY-web&bt_field_name=source&bt_field_value=null\" target=\"_blank\"></a>\n            </div>\n        </li>\n    </ul>\n</div>"
+                },
+                "force_lazy": {
+                  "name": "Lazy Load Images",
+                  "type": "boolean",
+                  "default_value": false,
+                  "value": false
+                }
+              },
+              "htmlId": "",
+              "htmlClasses": "tab_content tab_content_dodge",
+              "minColumnWidth": 0,
+              "customAdmin": false,
+              "modulePadding": "padding-0",
+              "display": "normal"
+            },
+            {
+              "moduleId": "module_17",
+              "moduleType": "custom_html",
+              "title": "Jeep",
+              "options": {
+                "html_content": {
+                  "name": "Custom HTML Content",
+                  "type": "html_content",
+                  "default_value": "",
+                  "value": "<div class=\"theme_cat_tab_content\">\n    <ul class=\"theme_cat_tab_content_list\">\n        <li>\n            <div class=\"theme_cat_tab_content_wrapper\">\n                <div class=\"theme_cat_tab_content_img\">\n                    <img alt=\"Jeep® Performance Parts Catalog\" src=\"https://rparts-sites.s3.amazonaws.com/00d43a1703c9241dcca9da0d452449dc/design/new-home/catalogs/jeep.webp\">\n                </div>\n                <p>Jeep® Performance Parts Catalog</p>\n                <div class=\"theme_tab_link\">\n                    <a href=\"\">Explore More</a>\n                </div>\n                <a href=\"https://www.mopar.com/content/dam/mopar/pdf/mopar-cap/2524_MOP144936_Jeep_Performance_Parts_Catalog_v01_r06.pdf\" target=\"_blank\"></a>\n            </div>\n        </li>\n        <li>\n            <div class=\"theme_cat_tab_content_wrapper\">\n                <div class=\"theme_cat_tab_content_img\">\n                    <img alt=\"Mopar®  Accessory Brochure - Jeep Grand Cherokee WL\" src=\"https://rparts-sites.s3.amazonaws.com/00d43a1703c9241dcca9da0d452449dc/design/new-home/catalogs/jeep_grand_cherokee.webp\">\n                </div>\n                <p>Mopar®  Accessory Brochure - Jeep Grand Cherokee WL</p>\n                <div class=\"theme_tab_link\">\n                    <a href=\"\">Explore More</a>\n                </div>\n                <a href=\"https://mydigimag.rrd.com/publication/?co=US&pid=538&pc=MJ-WL-web&bt_field_name%5b%5d=source&bt_field_value%5b%5d=null\" target=\"_blank\"></a>\n            </div>\n        </li>\n        <li>\n            <div class=\"theme_cat_tab_content_wrapper\">\n                <div class=\"theme_cat_tab_content_img\">\n                    <img alt=\"Mopar®  Accessory Brochure - Jeep Grand Cherokee WK\" src=\"https://rparts-sites.s3.amazonaws.com/00d43a1703c9241dcca9da0d452449dc/design/new-home/catalogs/jeep_grand_cherokee_wk.webp\">\n                </div>\n                <p>Mopar®  Accessory Brochure - Jeep Grand Cherokee WK</p>\n                <div class=\"theme_tab_link\">\n                    <a href=\"\">Explore More</a>\n                </div>\n                <a href=\"https://mydigimag.rrd.com/publication/?co=US&pid=538&pc=MJ-WK-web&bt_field_name%5b%5d=source&bt_field_value%5b%5d=null\" target=\"_blank\"></a>\n            </div>\n        </li>\n        <li>\n            <div class=\"theme_cat_tab_content_wrapper\">\n                <div class=\"theme_cat_tab_content_img\">\n                    <img alt=\"Mopar®  Accessory Brochure - Jeep Renegade\" src=\"https://rparts-sites.s3.amazonaws.com/00d43a1703c9241dcca9da0d452449dc/design/new-home/catalogs/jeep_renegade.webp\">\n                </div>\n                <p>Mopar®  Accessory Brochure - Jeep Renegade</p>\n                <div class=\"theme_tab_link\">\n                    <a href=\"\">Explore More</a>\n                </div>\n                <a href=\"https://mydigimag.rrd.com/publication/?co=US&pid=538&pc=MJ-BV-web&bt_field_name%5b%5d=source&bt_field_value%5b%5d=null\" target=\"_blank\"></a>\n            </div>\n        </li>\n        <li>\n            <div class=\"theme_cat_tab_content_wrapper\">\n                <div class=\"theme_cat_tab_content_img\">\n                    <img alt=\"Mopar®  Accessory Brochure - Jeep Wrangler\" src=\"https://rparts-sites.s3.amazonaws.com/00d43a1703c9241dcca9da0d452449dc/design/new-home/catalogs/jeep_wrangler.webp\">\n                </div>\n                <p>Mopar®  Accessory Brochure - Jeep Wrangler</p>\n                <div class=\"theme_tab_link\">\n                    <a href=\"\">Explore More</a>\n                </div>\n                <a href=\"jeep-wrangler-catalog\"></a>\n            </div>\n        </li>\n        <li>\n            <div class=\"theme_cat_tab_content_wrapper\">\n                <div class=\"theme_cat_tab_content_img\">\n                    <img alt=\"Mopar®  Accessory Brochure - Jeep Gladiator\" src=\"https://rparts-sites.s3.amazonaws.com/00d43a1703c9241dcca9da0d452449dc/design/new-home/catalogs/jeep_gladiator.webp\">\n                </div>\n                <p>Mopar®  Accessory Brochure - Jeep Gladiator</p>\n                <div class=\"theme_tab_link\">\n                    <a href=\"\">Explore More</a>\n                </div>\n                <a href=\"jeep-gladiator-catalog\"></a>\n            </div>\n        </li>\n        <li>\n            <div class=\"theme_cat_tab_content_wrapper\">\n                <div class=\"theme_cat_tab_content_img\">\n                    <img alt=\"Mopar®  Accessory Brochure - Jeep Cherokee\" src=\"https://rparts-sites.s3.amazonaws.com/8ae4b64986c61872a339a5e6aa224aeb/design/new-home/catalogs/new_cherokee_copy.webp\">\n                </div>\n                <p>Mopar®  Accessory Brochure - Jeep Cherokee</p>\n                <div class=\"theme_tab_link\">\n                    <a href=\"\">Explore More</a>\n                </div>\n                <a href=\"https://mydigimag.rrd.com/publication/?co=US&pid=538&pc=MJ-KL-web&bt_field_name%5b%5d=source&bt_field_value%5b%5d=null\" target=\"_blank\"></a>\n            </div>\n        </li>\n        <li>\n            <div class=\"theme_cat_tab_content_wrapper\">\n                <div class=\"theme_cat_tab_content_img\">\n                    <img alt=\"Mopar®  Accessory Brochure - Jeep Compass\" src=\"https://rparts-sites.s3.amazonaws.com/00d43a1703c9241dcca9da0d452449dc/design/new-home/catalogs/jeep_compass.webp\">\n                </div>\n                <p>Mopar®  Accessory Brochure - Jeep Compass</p>\n                <div class=\"theme_tab_link\">\n                    <a href=\"\">Explore More</a>\n                </div>\n                <a href=\"https://mydigimag.rrd.com/publication/?co=US&pid=538&pc=MJ-MP-web&bt_field_name%5b%5d=source&bt_field_value%5b%5d=null\" target=\"_blank\"></a>\n            </div>\n        </li>\n        <li>\n            <div class=\"theme_cat_tab_content_wrapper\">\n                <div class=\"theme_cat_tab_content_img\">\n                    <img alt=\"Mopar® Accessory Brochure - Jeep® Wagoneer/Grand Wagoneer\" src=\"https://rparts-sites.s3.amazonaws.com/00d43a1703c9241dcca9da0d452449dc/design/new-home/catalogs/jeep_wagoneer.webp\">\n                </div>\n                <p>Mopar® Accessory Brochure - Jeep® Wagoneer/Grand Wagoneer</p>\n                <div class=\"theme_tab_link\">\n                    <a href=\"\">Explore More</a>\n                </div>\n                <a href=\"https://mydigimag.rrd.com/publication/?co=US&pid=538&pc=MJ-WS-web&bt_field_name%5b%5d=source&bt_field_value%5b%5d=null\" target=\"_blank\"></a>\n            </div>\n        </li>\n        <li>\n            <div class=\"theme_cat_tab_content_wrapper\">\n                <div class=\"theme_cat_tab_content_img\">\n                    <img alt=\"Mopar® Accessory Brochure - Jeep® Wagoneer S\" src=\"https://rparts-sites.s3.amazonaws.com/00d43a1703c9241dcca9da0d452449dc/design/new-home/catalogs/jeep_wagoneer_2.webp\">\n                </div>\n                <p>Mopar® Accessory Brochure - Jeep® Wagoneer S</p>\n                <div class=\"theme_tab_link\">\n                    <a href=\"\">Explore More</a>\n                </div>\n                <a href=\"https://mydigimag.rrd.com/publication/?i=833844&p=1&view=issueViewer&bt_field_name%5b%5d=source&bt_field_value%5b%5d=null&co=US&pid=538&pc=MJ-W2-web\" target=\"_blank\"></a>\n            </div>\n        </li>\n    </ul>\n</div>"
+                },
+                "force_lazy": {
+                  "name": "Lazy Load Images",
+                  "type": "boolean",
+                  "default_value": false,
+                  "value": false
+                }
+              },
+              "htmlId": "",
+              "htmlClasses": "tab_content tab_content_jeep",
+              "minColumnWidth": 0,
+              "customAdmin": false,
+              "modulePadding": "padding-0",
+              "display": "normal"
+            },
+            {
+              "moduleId": "module_18",
+              "moduleType": "custom_html",
+              "title": "RAM",
+              "options": {
+                "html_content": {
+                  "name": "Custom HTML Content",
+                  "type": "html_content",
+                  "default_value": "",
+                  "value": "<div class=\"theme_cat_tab_content\">\n    <ul class=\"theme_cat_tab_content_list\">\n        <li>\n            <div class=\"theme_cat_tab_content_wrapper\">\n                <div class=\"theme_cat_tab_content_img\">\n                    <img alt=\"Mopar®  Accessory Brochure - Ram 1500\" src=\"https://rparts-sites.s3.amazonaws.com/00d43a1703c9241dcca9da0d452449dc/design/new-home/catalogs/ram_1500.webp\">\n                </div>\n                <p>Mopar®  Accessory Brochure - Ram 1500</p>\n                <div class=\"theme_tab_link\">\n                    <a href=\"\">Explore More</a>\n                </div>\n                <a href=\"ram-1500-catalog\"></a>\n            </div>\n        </li>\n        <li>\n            <div class=\"theme_cat_tab_content_wrapper\">\n                <div class=\"theme_cat_tab_content_img\">\n                    <img alt=\"Mopar®  Accessory Brochure - Ram 1500 Classic\" src=\"https://rparts-sites.s3.amazonaws.com/00d43a1703c9241dcca9da0d452449dc/design/new-home/catalogs/ram_1500_classic.webp\">\n                </div>\n                <p>Mopar®  Accessory Brochure - Ram 1500 Classic</p>\n                <div class=\"theme_tab_link\">\n                    <a href=\"\">Explore More</a>\n                </div>\n                <a href=\"https://mydigimag.rrd.com/publication/?co=US&pid=538&pc=MR-DS-web&bt_field_name%5b%5d=source&bt_field_value%5b%5d=null\" target=\"_blank\"></a>\n            </div>\n        </li>\n        <li>\n            <div class=\"theme_cat_tab_content_wrapper\">\n                <div class=\"theme_cat_tab_content_img\">\n                    <img alt=\"Mopar®  Accessory Brochure - Ram Heavy Duty\" src=\"https://rparts-sites.s3.amazonaws.com/00d43a1703c9241dcca9da0d452449dc/design/new-home/catalogs/ram_heavy_duty.webp\">\n                </div>\n                <p>Mopar®  Accessory Brochure - Ram Heavy Duty</p>\n                <div class=\"theme_tab_link\">\n                    Explore More\n                </div>\n                <a href=\"ram-heavy-duty-catalog\"></a>\n            </div>\n        </li>\n        <li>\n            <div class=\"theme_cat_tab_content_wrapper\">\n                <div class=\"theme_cat_tab_content_img\">\n                    <img alt=\"Mopar®  Accessory Brochure - Ram ProMaster\" src=\"https://rparts-sites.s3.amazonaws.com/00d43a1703c9241dcca9da0d452449dc/design/new-home/catalogs/ram_pro_master.webp\">\n                </div>\n                <p>Mopar®  Accessory Brochure - Ram ProMaster</p>\n                <div class=\"theme_tab_link\">\n                    <a href=\"\">Explore More</a>\n                </div>\n                <a href=\"https://mydigimag.rrd.com/publication/?co=US&pid=538&pc=MR-VF-web&bt_field_name%5b%5d=source&bt_field_value%5b%5d=null\" target=\"_blank\"></a>\n            </div>\n        </li>\n        <li>\n            <div class=\"theme_cat_tab_content_wrapper\">\n                <div class=\"theme_cat_tab_content_img\">\n                    <img alt=\"Mopar®  Accessory Brochure - Ram ProMaster City\" src=\"https://rparts-sites.s3.amazonaws.com/00d43a1703c9241dcca9da0d452449dc/design/new-home/catalogs/ram_promaster_city.webp\">\n                </div>\n                <p>Mopar®  Accessory Brochure - Ram ProMaster City</p>\n                <div class=\"theme_tab_link\">\n                    <a href=\"\">Explore More</a>\n                </div>\n                <a href=\"https://mydigimag.rrd.com/publication/?co=US&pid=538&pc=MR-VM-web&bt_field_name%5b%5d=source&bt_field_value%5b%5d=null\" target=\"_blank\"></a>\n            </div>\n        </li>\n    </ul>\n</div>"
+                },
+                "force_lazy": {
+                  "name": "Lazy Load Images",
+                  "type": "boolean",
+                  "default_value": false,
+                  "value": false
+                }
+              },
+              "htmlId": "",
+              "htmlClasses": "tab_content tab_content_ram",
+              "minColumnWidth": 0,
+              "customAdmin": false,
+              "modulePadding": "padding-0",
+              "display": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
