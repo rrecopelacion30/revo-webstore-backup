@@ -1,0 +1,1284 @@
+<script>
+    // START MAR-3294 - Update Vehicle pages on Nissan USA to include H1 titles and Breadcrumb Links
+    function toggleSectionByVehicleYear() {
+        const path = window.location.pathname;
+        const vehicleSegment = path.split('/').find(segment => segment.startsWith('v-'));
+
+        if (vehicleSegment) {
+            const parts = vehicleSegment.replace('v-', '').split('-');
+
+            const hasYear = /^\d{4}$/.test(parts[0]);
+
+            if (hasYear) {
+                document.body.classList.add('has-year');
+                document.body.classList.remove('no-year');
+            } else {
+                document.body.classList.add('no-year');
+                document.body.classList.remove('has-year');
+            }
+        }
+    }
+    toggleSectionByVehicleYear();
+    // END of MAR-3294
+    
+    //update the copyright year
+    let currentYear = new Date().getFullYear();
+    $('.themeFooterBottomEnd .listRight .links-list li').html(`© ${currentYear} Nissan North America, Inc.`);
+    
+$(document).ready(function () {
+    
+    //new page layout
+    var $carousel = $('#themeNewPageCardList');
+    var owlInitialized = false;
+
+    function initOwl() {
+        if ($(window).width() < 768) {
+            if (!owlInitialized) {
+                $carousel.owlCarousel({
+                    items: 1,
+                    loop: false,
+                    margin: 20,
+                    autoplay: false,
+                    autoplayTimeout: 4000,
+                    autoplayHoverPause: false,
+                    dots: false,
+                    nav: true,
+                    navText: [
+                        "<span class='theme_arrow theme_arrow_left'><svg xmlns='http://www.w3.org/2000/svg' height='1em' viewBox='0 0 320 512'><path d='M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z'/></svg></span>",
+                        "<span class='theme_arrow theme_arrow_right'><svg xmlns='http://www.w3.org/2000/svg' height='1em' viewBox='0 0 320 512'><path d='M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z'/></svg></span>"
+                    ]
+                });
+                owlInitialized = true;
+            }
+        } else {
+            if (owlInitialized) {
+                $carousel.trigger('destroy.owl.carousel');
+                $carousel.find('.owl-stage-outer').children().unwrap();
+                $carousel.removeClass('owl-loaded');
+                owlInitialized = false;
+            }
+        }
+    }
+
+    initOwl(); // Initialize on page load
+
+    $(window).on('resize', function() {
+        initOwl(); // Recheck on resize
+    });
+    
+    var $carousel2 = $('#themeNewPageCardList02');
+    var owlInitialized2 = false;
+
+    function initOwl2() {
+        if ($(window).width() < 768) {
+            if (!owlInitialized2) {
+                $carousel2.owlCarousel({
+                    items: 1,
+                    loop: false,
+                    margin: 20,
+                    autoplay: false,
+                    autoplayTimeout: 4000,
+                    autoplayHoverPause: false,
+                    dots: false,
+                    nav: true,
+                    navText: [
+                        "<span class='theme_arrow theme_arrow_left'><svg xmlns='http://www.w3.org/2000/svg' height='1em' viewBox='0 0 320 512'><path d='M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z'/></svg></span>",
+                        "<span class='theme_arrow theme_arrow_right'><svg xmlns='http://www.w3.org/2000/svg' height='1em' viewBox='0 0 320 512'><path d='M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z'/></svg></span>"
+                    ]
+                });
+                owlInitialized2 = true;
+            }
+        } else {
+            if (owlInitialized2) {
+                $carousel2.trigger('destroy.owl.carousel');
+                $carousel2.find('.owl-stage-outer').children().unwrap();
+                $carousel2.removeClass('owl-loaded');
+                owlInitialized2 = false;
+            }
+        }
+    }
+
+    initOwl2(); // Initialize on page load
+
+    $(window).on('resize', function() {
+        initOwl2(); // Recheck on resize
+    });
+    
+    //car tab
+    $('.themeForsbergPackageImgListItem:first-child').addClass('active');
+    $('.tabCard').hide();
+    $('.tabCard:first').show();
+    // Click function
+    $('.themeForsbergPackageImgList .themeForsbergPackageImgListItem').click(function(){
+        $('.themeForsbergPackageImgList .themeForsbergPackageImgListItem').removeClass('active');
+        $(this).addClass('active');
+        $('.tabCard').hide();
+        var activeTab = $(this).find('a').attr('data-toggle-target');
+        $(activeTab).show();
+        return false;
+    });
+    
+    //car tab 02
+    $('.themeForsbergPackageImgListItemNew:first-child').addClass('active');
+    $('.tabCardNew').hide();
+    $('.tabCardNew:first').show();
+    // Click function
+    $('.themeForsbergPackageImgList .themeForsbergPackageImgListItemNew').click(function(){
+        $('.themeForsbergPackageImgList .themeForsbergPackageImgListItemNew').removeClass('active');
+        $(this).addClass('active');
+        $('.tabCardNew').hide();
+        var activeTab = $(this).find('a').attr('data-toggle-target');
+        $(activeTab).show();
+        return false;
+    });
+    
+  $('.tooltip-anchor').on('click', function (e) {
+    e.preventDefault();
+
+    const anchor = $(this);
+    const wrapper = anchor.closest('.custom-tooltip-wrapper');
+    const tooltip = wrapper.find('.custom-tooltip');
+
+    // Hide all tooltips first
+    $('.custom-tooltip').hide();
+
+    const anchorOffset = anchor.offset();
+    const anchorWidth = anchor.outerWidth();
+    const anchorCenter = anchorOffset.left + anchorWidth / 2;
+
+    const tooltipWidth = tooltip.outerWidth();
+    const windowWidth = $(window).width();
+
+    // Reset styles
+    tooltip.css({ left: '', right: '', transform: '' });
+
+    let top = anchor.position().top + anchor.outerHeight() + 8;
+
+    if (anchorCenter < tooltipWidth / 2) {
+      // Left edge case
+      tooltip.css({
+        left: '0',
+        right: 'auto',
+        top: top + 'px'
+      });
+    } else if (windowWidth - anchorCenter < tooltipWidth / 2) {
+      // Right edge case
+      tooltip.css({
+        right: '0',
+        left: 'auto',
+        top: top + 'px'
+      });
+    } else {
+      // Centered
+      const tooltipLeft = anchor.position().left + anchorWidth / 2 - tooltipWidth / 2;
+      tooltip.css({
+        left: tooltipLeft + 'px',
+        top: top + 'px'
+      });
+    }
+
+    tooltip.show();
+  });
+
+  // Hide tooltip on outside click
+  $(document).on('click', function (e) {
+    if (!$(e.target).closest('.tooltip-anchor, .custom-tooltip').length) {
+      $('.custom-tooltip').hide();
+    }
+  });
+});
+    
+</script>
+
+<script>
+// Adapter Text 10/2025
+  document.addEventListener("DOMContentLoaded", function () {
+    // Run only on the specific NACS Adapter product page
+    if (window.location.href.includes("nissan-ariya-nacs-adapter-t99f95mp1b")) {
+      const fitmentModule = document.querySelector(".product-fitment-confirmation-module");
+      if (fitmentModule) {
+        const disclaimer = document.createElement("div");
+        disclaimer.innerHTML = `
+          <p style="
+            margin: 18px 0;
+            font-size: 13px;
+            line-height: 1.6;
+            color: #222;
+            background: #f4f4f4;
+            padding: 14px 16px;
+            border-radius: 6px;
+            border-left: 4px solid #c00;
+          ">
+            <strong>
+              *The NACS Adapter Kit provided by Nissan or purchased from a U.S. Nissan Dealership is deemed by Nissan as the only compatible adapter for Nissan EVs (“Nissan-Compliant NACS Adapter”). Use of an adapter that is not a Nissan-Compliant NACS Adapter is strictly prohibited.
+            </strong>
+          </p>
+        `;
+        // Insert the disclaimer above the fitment confirmation module
+        fitmentModule.insertAdjacentElement("beforebegin", disclaimer);
+      }
+    }
+  });
+
+
+// Begin App Fix
+
+// Immediate self-executing function for faster execution
+(function() {
+    // Function to handle URL parameter conversion
+    function convertPromoParameter() {
+        
+        // Get current URL parameters
+        const urlParams = new URLSearchParams(window.location.search);
+
+        // Check if the "promo" parameter exists and not already "promocode"
+        if (urlParams.has("promo") && !urlParams.has("promocode")) {
+            // Get the value from the "promo" parameter
+            const promoValue = urlParams.get("promo");
+
+            // Update parameters: remove "promo" and add "promocode"
+            urlParams.delete("promo");
+            urlParams.set("promocode", promoValue);
+            
+            // Build the new URL with updated parameters
+            const newUrl = window.location.origin + window.location.pathname + "?" + urlParams.toString();
+            
+            // Preserve hash if present
+            if (window.location.hash) {
+                newUrl += window.location.hash;
+            }
+
+            
+            // Redirect to the new URL
+            window.location.href = newUrl; // Using href instead of replace for better compatibility
+        } 
+    }
+
+    // Try to run immediately
+    convertPromoParameter();
+    
+    // Also run when DOM is loaded as fallback
+    if (document.readyState === "loading") {
+        document.addEventListener("DOMContentLoaded", convertPromoParameter);
+    }
+    
+    // Final fallback - run after window loads completely
+    window.addEventListener("load", function() {
+        const urlParams = new URLSearchParams(window.location.search);
+        if (!urlParams.has("promocode")) {
+            convertPromoParameter();
+        }
+    });
+})();
+
+document.addEventListener("DOMContentLoaded", function () {
+  const promoKey = "promocode";
+  const promoValue = "NISSANAPP10";
+  const cookieName = "promoMessageShown";
+  const cookieDays = 15;
+  const localStorageKey = "promoMessageStored";
+  
+  function getQueryParam(param) {
+    const urlParams = new URLSearchParams(window.location.search);
+    return urlParams.get(param);
+  }
+  
+  function setCookie(name, value, days) {
+    const date = new Date();
+    date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000);
+    document.cookie = `${name}=${value}; expires=${date.toUTCString()}; path=/`;
+  }
+  
+  function getCookie(name) {
+    const cookies = document.cookie.split("; ");
+    for (let i = 0; i < cookies.length; i++) {
+      const [key, value] = cookies[i].split("=");
+      if (key === name) return value;
+    }
+    return null;
+  }
+  
+  function activateCookieClass() {
+    const themePromoDiv = document.querySelector(".themeCookiePromo");
+    if (themePromoDiv) {
+      themePromoDiv.classList.add("cookieActive");
+    }
+  }
+  
+  const queryPromo = getQueryParam(promoKey);
+  const cookieValue = getCookie(cookieName);
+  const localStorageValue = localStorage.getItem(localStorageKey);
+  
+  if (queryPromo === promoValue || cookieValue === "true" || localStorageValue === "true") {
+    // Promo code is valid - you can uncomment the code below if needed
+    /*
+    // Add promo ticker
+    const newTickerItem = document.createElement("div");
+    newTickerItem.classList.add("ticker-item");
+    newTickerItem.innerHTML =
+      '<a href="nissan-owners">MyNissan App Users Save 10% | Use Promo Code: <strong>NISSANAPP10</strong></a>';
+    const tickerContainer = document.querySelector(".ticker");
+    if (tickerContainer) {
+      tickerContainer.appendChild(newTickerItem);
+    }
+    
+    // Ensure banner is visible in cart
+    if (window.location.pathname.includes("/cart")) {
+      const checkThemePromo = setInterval(() => {
+        const themePromoElement = document.querySelector(
+          ".page-builder-layout-module.themeCookiePromo.d-none.cookieActive"
+        );
+        if (themePromoElement) {
+          themePromoElement.classList.remove("d-none");
+          themePromoElement.style.setProperty("display", "block", "important");
+          clearInterval(checkThemePromo);
+        }
+      }, 500);
+    }
+    
+    activateCookieClass();
+    
+    if (queryPromo === promoValue) {
+      setCookie(cookieName, "true", cookieDays);
+      localStorage.setItem(localStorageKey, "true"); // Store in local storage
+    }
+    */
+  }
+});
+// End App Fix
+   
+    
+    
+$(document).ready(function() {
+    
+    // cart sku slides
+    $('#layout_cart .themeCartAccessories').addClass('owl-carousel owl-theme');
+    $('#layout_cart .themeCartAccessories').owlCarousel({
+        items: 3,
+        loop: true,
+        margin: 10,
+        autoplay: false,
+        autoplayTimeout: 4000,
+        autoplayHoverPause: false,
+        dots: false,
+        nav: false,
+        navText: [
+            "<span class='theme_arrow theme_arrow_left'>",
+            "<span class='theme_arrow theme_arrow_right'>"
+        ],
+        center: false,
+        responsive: {
+            0: {
+                items: 1
+            },
+            730: {
+                items: 2
+            },
+            1200: {
+                items: 3
+            }
+        }
+    });
+    
+    //new PDP Layout
+    $('.themeNewNNAPDPProductLayout .product-details-module .field-list').wrapAll('<div class="field-list-wrapper"></div>');
+    
+    $('.themeNewNNAPDPProductLayout .product-details-module .product-details-title').click(function(e) {
+        e.preventDefault();
+        let $this = $(this);
+
+        // Close all other tabs
+        $('.themeNewNNAPDPProductLayout .product-details-module .product-details-title').not($this).removeClass('open');
+        $('.themeNewNNAPDPProductLayout .product-details-module .field-list-wrapper').not($this.next()).removeClass('show').slideUp(350);
+
+        // Toggle this tab
+        $this.toggleClass('open');
+        if ($this.next().hasClass('show')) {
+            $this.next().removeClass('show').slideUp(350);
+        } else {
+            $this.next().addClass('show').slideDown(350);
+        }
+    });
+
+    // OPEN FIRST TAB INITIALLY
+    $(document).ready(function() {
+        let $firstTitle = $('.themeNewNNAPDPProductLayout .product-details-module .product-details-title').first();
+        $firstTitle.addClass('open');
+        $firstTitle.next('.field-list-wrapper').addClass('show').slideDown(0);
+    });
+    
+    $('.themeNewNNAPDPProductLayout .product-fitment-module .product-fitment-title').click(function(e) {
+        e.preventDefault();
+        $(this).toggleClass('open')
+        let $this = $(this);
+        if ($this.next().hasClass('show')) {
+            $this.next().removeClass('show');
+            $this.next().slideUp(350);
+        } else {
+            $this.parent().parent().find('.themeNewNNAPDPProductLayout .product-fitment-module .product-fitment-vehicle-picker').removeClass('show');
+            $this.parent().parent().find('.themeNewNNAPDPProductLayout .product-fitment-module .product-fitment-vehicle-picker').slideUp(350);
+            $this.next().toggleClass('show');
+            $this.next().slideToggle(350);
+        }
+    });
+    
+    $('.themeNewNNAPDPProductLayout .product-policies-module .product-policies-title').click(function(e) {
+        e.preventDefault();
+        $(this).toggleClass('open')
+        let $this = $(this);
+        if ($this.next().hasClass('show')) {
+            $this.next().removeClass('show');
+            $this.next().slideUp(350);
+        } else {
+            $this.parent().parent().find('.themeNewNNAPDPProductLayout .product-policies-module .product-policies').removeClass('show');
+            $this.parent().parent().find('.themeNewNNAPDPProductLayout .product-policies-module .product-policies').slideUp(350);
+            $this.next().toggleClass('show');
+            $this.next().slideToggle(350);
+        }
+    });
+    
+    //modal signin
+    // Check if user has already seen the modal
+    if (!localStorage.getItem('modalCmDismissed')) {
+        $('.modalCm').addClass('is-visible');
+    }
+
+    // When user closes the modal
+    $('.modalCm-close').on('click', function () {
+        $('.modalCm').removeClass('is-visible');
+        // Set localStorage key so we don't show it again
+        localStorage.setItem('modalCmDismissed', 'true');
+    });
+    
+    //login
+    var loginText = $('#action_account .design-text').text();
+    if( loginText == 'Welcome!' ) {
+    	$('.themeHeaderFlyoutCardTopTitle ul li:nth-child(1)').html('<a href="/account/login">Login</a>');
+    }else {
+    	$('.themeHeaderFlyoutCardTopTitle ul li:nth-child(1)').html('<a href="/account/profile">My Account</a>');
+    } 
+    
+    const $tickerItems = $('.ticker-item');
+    let currentIndex = 0; 
+    function showNextPromo() {
+        $tickerItems.eq(currentIndex).removeClass('active');
+        currentIndex = (currentIndex + 1) % $tickerItems.length;
+        $tickerItems.eq(currentIndex).addClass('active');
+    }
+    setInterval(showNextPromo, 6000);
+    
+    //open disclaimer accessories
+    $('.themeAccessoriesDisclaimerButton').on('click', function(e) {
+        e.preventDefault();
+        $('.themeAccessoriesDisclaimerBox').toggleClass('openAccessoriesDisclaimer');
+    })
+
+    $(document).on('click', function(e) {
+        if (!$(e.target).closest('.themeAccessoriesDisclaimerButton').length) {
+            $('.themeAccessoriesDisclaimerBox').removeClass('openAccessoriesDisclaimer');
+        }
+    });
+    
+    // START NEW SEARCH UI SCRIPTS
+    // Sets up new search UI filters to match expected functionality of all open by default
+
+    function isNewSearchPage() {
+      const allowedIds = new Set([
+        'page-search',
+        'page-dynamic-seo',
+        'page-catalog',
+        'page-categories-parts',
+        'page-category-listing-page',
+        'page-subcategory-listing-page',
+        'page-vehicle-picker-category',
+        'page-oem-assemblies',
+      ]);
+
+      const mainId = $('body > .main').attr('id');
+      return allowedIds.has(mainId);
+    }
+
+    let stylesheetCleanupDone = false;
+
+    function openFacetAccordions(retries = 10) {
+      if (!isNewSearchPage()) {
+        return false;
+      }
+      const wrappers = $('.search-facets-module.search-based-v-page .facet-wrapper');
+      const contents = $('.search-facets-module.search-based-v-page .facet-wrapper .facet-content');
+
+      if (wrappers.length > 0) {
+        wrappers.attr('data-collapsed', false);
+        contents.removeAttr('hidden');
+      } else if (retries > 0) {
+        return setTimeout(() => openFacetAccordions(retries - 1), 300);
+      }
+
+      if (!stylesheetCleanupDone) {
+        stylesheetCleanupDone = true;
+
+        const stylesheets = Array.from(document.styleSheets);
+
+        for (let sheet of stylesheets) {
+          try {
+            const rules = sheet.cssRules || sheet.rules;
+            for (let i = rules.length - 1; i >= 0; i--) {
+              const rule = rules[i];
+
+              if (
+                rule.selectorText &&
+                rule.selectorText.includes('.search-based-v-page') &&
+                rule.selectorText.includes('.facet-content[hidden]') &&
+                rule.selectorText.includes('.search-facets-module') &&
+                rule.style &&
+                rule.style.display === 'none'
+              ) {
+                sheet.deleteRule(i);
+              }
+            }
+          } catch (e) {
+            continue;
+          }
+        }
+      }
+    }
+
+    setTimeout(() => openFacetAccordions(), 100);
+
+    // END NEW SEARCH UI SCRIPTS
+    
+});
+</script>
+
+<script>    
+    //msrp add
+    document.addEventListener('DOMContentLoaded', function() {
+        var fullName = document.querySelector('#action_account strong.design-text').textContent.trim();
+		if (fullName && fullName != 'Welcome!' ) {
+			document.querySelector('.themeHeaderFlyoutCard h3').textContent = fullName;
+		}
+        // Delay the execution by 4 seconds
+        setTimeout(function() {
+            // Find all elements with the class 'price-label'
+            let priceLabels = document.querySelectorAll('.list-label.price-label');
+
+            priceLabels.forEach(function(label) {
+                if (label.textContent.includes('MSRP:')) {
+                    // Replace 'MSRP:' with custom string and linkable [*]
+                    label.innerHTML = label.innerHTML.replace('MSRP:', 
+                        'MSRP <a href="#" class="term-toggle" style="color: #595959; font-size: 13px; text-decoration: none;">[*]</a> :' +
+                        '<span class="themeBannerTermBox themeBannerTermBoxProduct" style="display:none;">' + 
+                        "Manufacturer's Suggested Retail Prices (MSRP) excludes installation (except if factory-installed), taxes and other costs, and is subject to change without prior notice. Dealer sets actual price. Pictures are for informational purposes only." +
+                        '</span>');
+                }
+            });
+
+            // Toggle visibility of the banner term box when [*] is clicked
+            document.querySelectorAll('.term-toggle').forEach(function(link) {
+                link.addEventListener('click', function(event) {
+                    event.preventDefault();
+                    let termBox = this.nextElementSibling;
+                    if (termBox) {
+                        termBox.style.display = (termBox.style.display === 'none' || termBox.style.display === '') ? 'block' : 'none';
+                    }
+                });
+            });
+
+            // Close the term box when clicking anywhere outside
+            document.addEventListener('click', function(event) {
+                let termBoxes = document.querySelectorAll('.themeBannerTermBox');
+                termBoxes.forEach(function(termBox) {
+                    if (!event.target.closest('.term-toggle') && !event.target.closest('.themeBannerTermBox')) {
+                        termBox.style.display = 'none';
+                    }
+                });
+            });
+        }, 4000); // Delay for 4 seconds
+    });
+
+
+    //detect the vehicle name 
+    $(document).ready(function() {
+        
+        //make slider on categories
+        /*$('.themeVehiclePicker .categories-table tbody').addClass('owl-carousel owl-theme');
+        $('.themeVehiclePicker .categories-table tbody').owlCarousel({
+            items:1,
+            loop:true,
+            margin:0,
+            autoplay: false,
+            autoplayTimeout:4000,
+            autoplayHoverPause:false,
+            nav: true,
+            navText: ["<span class='theme_arrow theme_arrow_left'>","<span class='theme_arrow theme_arrow_right'>"],
+            center: false,
+    	});*/
+        
+        //open disclaimer
+        /*$('.themeBannerTermWrap').on('click', function(e) {
+        	e.preventDefault();
+            $(this).toggleClass('openDisclaimer');
+            $('body').toggleClass('bodyopenDisclaimer');
+        })
+        
+        $(document).on('click', function(e) {
+            if (!$(e.target).closest('.themeBannerTermWrap').length) {
+                $('.themeBannerTermWrap').removeClass('openDisclaimer');
+                $('body').removeClass('bodyopenDisclaimer');
+            }
+        });*/
+        
+        // Open / close disclaimer
+        $(document).on('click', '.themeBannerTermWrap > a', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            let $wrap = $(this).closest('.themeBannerTermWrap');
+
+            if ($wrap.hasClass('openDisclaimer')) {
+                $wrap.removeClass('openDisclaimer');
+                $('body').removeClass('bodyopenDisclaimer');
+            } else {
+                $('.themeBannerTermWrap').removeClass('openDisclaimer');
+                $wrap.addClass('openDisclaimer');
+                $('body').addClass('bodyopenDisclaimer');
+            }
+        });
+
+        // Close all when clicking outside
+        $(document).on('click', function(e) {
+            if (!$(e.target).closest('.themeBannerTermWrap').length) {
+                $('.themeBannerTermWrap').removeClass('openDisclaimer');
+                $('body').removeClass('bodyopenDisclaimer');
+            }
+        });
+        
+        var partsText = $(".vehicle-categories h3").eq(0).text();
+        var accessoriesText = $(".vehicle-categories h3").eq(1).text();
+
+        // Use a regular expression to extract the car year, name, and model
+        var regex = /(\d{4})\s+([\w\s-]+)\s+(Parts|Accessories)\s+Categories/;
+
+        // Initialize default values
+        var carYear = "";
+        var carNameModel = "";
+
+        // Extract information from the parts h3 element
+        var partsMatch = partsText.match(regex);
+        if (partsMatch) {
+            carYear = partsMatch[1] || "";
+            carNameModel = partsMatch[2].trim() || "";  // Assuming name and model are the same
+        }
+
+        // Extract information from the accessories h3 element
+        var accessoriesMatch = accessoriesText.match(regex);
+        if (accessoriesMatch) {
+            carNameModel = accessoriesMatch[2].trim() || "";  // Redundant extraction
+        }
+
+        // Check if the current URL path is exactly /v-nissan
+        var currentPath = window.location.pathname;
+        var defaultText = (currentPath === "/v-nissan") ? `<h2>Select Nissan Vehicle</h2>` : null;
+
+        // Prepare the content for the h2 tag
+        var carInfoText = (carYear && carNameModel) ? `<h2>${carYear} ${carNameModel} Select Engine</h2>` : defaultText;
+
+        // Prepend the h2 tag to the #vehicle-data-lists element if carInfoText is not null
+        if (carInfoText) {
+            $("#vehicle-data-lists").prepend(carInfoText);
+        }
+
+        // Log the extracted information
+        console.log("Car Year:", carYear || "Unknown Year");
+        console.log("Car Name and Model:", carNameModel || "Unknown Model");
+    });
+    
+    //Detect Vehicle + Add to Part Cat Title
+    document.addEventListener("DOMContentLoaded", function() {
+        if (window.location.pathname.startsWith('/part-categories/')) {
+            const vehicleElement = document.querySelector(".garage-text.flyout-select");
+            const h3Element = document.querySelector(".themePartsCategoryWrap h3");
+
+            if (vehicleElement && h3Element) {
+                const vehicleText = vehicleElement.textContent.trim();
+
+                if (!vehicleText.includes("Select Vehicle")) {
+                    const vehicleDetails = vehicleText.split(" ");
+                    const vehicleYear = vehicleDetails[0];
+                    const vehicleModel = vehicleDetails.slice(1).join(" ");
+
+                    h3Element.innerHTML = h3Element.innerHTML.replace("Nissan", `${vehicleYear} ${vehicleModel}`);
+                }
+            }
+        }
+    });
+    
+    //get the banner of vehicle picker
+    var vehiclePickerBanner = $('#page-oem-vehicle-picker .themeVehicleBannerSection .themeVehicleBannerImg img').attr('src');
+    $('#page-oem-vehicle-picker .themeVehicleBannerSection').attr('style', 'background-image: url("' + vehiclePickerBanner + '")');
+    
+    //get the banner of pages
+    var pageBanner = $('#layout_page .themeVehicleBannerSection .themeVehicleBannerImg img').attr('src');
+    $('#layout_page .themeVehicleBannerSection').attr('style', 'background-image: url("' + pageBanner + '")');
+    
+    //change text to logo
+    $(".description_body li:contains('[Nissan]')").each(function() {
+        var newText = $(this).html().replace(/\[Nissan\]/g, '<div class="manufacturer-logos"> <img src="https://cdn-static.revolutionparts.io/assets/images/nissan.png" alt=" Parts"></div>');
+        $(this).html(newText);
+    });
+    
+    //vehicle picker slider
+    //carousel parts categories
+    $('#layout_oem-vehicle-picker .themeAccList').owlCarousel({
+        items:4,
+        loop:false,
+        margin:10,
+        autoplay:false,
+        autoplayTimeout:4000,
+        autoplayHoverPause:false,
+        nav: true,
+        navText: ["<span class='theme_arrow theme_arrow_left'>","<span class='theme_arrow theme_arrow_right'>"],
+        responsive: {
+                0: {
+                  items: 1
+                },
+                600: {
+                  items: 2
+                },
+                730: {
+                  items: 3
+                },
+                990: {
+                  items: 4
+                },
+            }
+    });
+    
+    //Vehicle picker Tabs
+    $('.themePartsCategoryList li:first-child').addClass('active');
+    $('.tabContent').hide();
+    $('.tabContent:first').show();
+    // Click function
+    $('.themePartsCategoryList li').click(function(){
+        $('.themePartsCategoryList li').removeClass('active');
+        $(this).addClass('active');
+        $('.tabContent').hide();
+        var activeTab = $(this).find('a').attr('data-toggle-target');
+        $(activeTab).show();
+        return false;
+    });
+    
+    //vehicle picker clone faq
+    var cloneFAQ = $(".themeFaqSection").clone();
+    cloneFAQ.appendTo("#themeCloneFAQ");
+    
+    // vehicle picker accordion
+    $(".themeAccordionTitle").click(function(){
+        $(this).parent(".themeAccordionItem").find(".themeAccordionContent").slideToggle();
+        $(this).parent(".themeAccordionItem").prevAll(".themeAccordionItem").find(".themeAccordionContent").slideUp();
+        $(this).parent(".themeAccordionItem").nextAll(".themeAccordionItem").find(".themeAccordionContent").slideUp();
+    });
+    
+    //flyout nav accordion
+    $(document).on('click', '.themeHeaderTitle', function () {
+    // Toggle the visibility of the ul (checkbox list)
+        $(this).toggleClass('activeAccordion');
+        $(this).siblings('.themeHeaderFlyoutNavList').slideToggle();
+    });
+    
+    //carousel parts categories
+    $('.theme_cat_tab_content_list02').owlCarousel({
+        items:5,
+        loop:false,
+        margin:10,
+        autoplay:false,
+        autoplayTimeout:4000,
+        autoplayHoverPause:false,
+        nav: true,
+        navText: ['<i class="fa fa-angle-left">', '<i class="fa fa-angle-right">'],
+        responsive: {
+                0: {
+                  items: 1
+                },
+                600: {
+                  items: 2
+                },
+                730: {
+                  items: 3
+                },
+                990: {
+                  items: 5
+                },
+            }
+    });
+    
+    //accordion facet
+    /*$(document).on('click', '.facet-wrapper .facet-title', function () {
+    // Toggle the visibility of the ul (checkbox list)
+        $(this).toggleClass('activeAccordion');
+        $(this).siblings('ul').slideToggle();
+    });*/
+    // Fix facet accordion - completely override source code behavior
+    // Aggressively override facet accordion behavior
+  (function() {
+      var facetOverrideInitialized = false;
+
+      function initCustomFacetBehavior() {
+          // Remove ALL click handlers using event delegation
+          $(document).off('click', '.search-facets-module .facet-header');
+          $(document).off('click', '.search-facets-module .facet-title');
+          $(document).off('click', '.search-facets-module .facet-toggle-btn');
+          $(document).off('click', '.facet-header');
+          $(document).off('click', '.facet-title');
+          $(document).off('click', '.facet-toggle-btn');
+
+          // Also remove any handlers directly on the elements
+          $('.search-facets-module .facet-header, .search-facets-module .facet-title, .search-facets-module .facet-toggle-btn').off('click');
+
+          // Set initial expanded state
+          $('.search-facets-module .facet-title').addClass('activeAccordion');
+          $('.search-facets-module .facet-content').show().attr('style', 'display: block !important');
+
+          // Our custom handler with highest priority
+          $(document).on('click.customFacets', '.search-facets-module .facet-header', function(e) {
+              e.preventDefault();
+              e.stopPropagation();
+              e.stopImmediatePropagation();
+
+              var $title = $(this).find('.facet-title');
+              var $content = $(this).closest('.facet-wrapper').find('.facet-content');
+
+              // Get current state before toggling
+              var isExpanded = $title.hasClass('activeAccordion');
+
+              // Toggle class
+              $title.toggleClass('activeAccordion');
+
+              // Manually handle the animation
+              if (isExpanded) {
+                  // Collapsing
+                  $content.slideUp(300);
+              } else {
+                  // Expanding
+                  $content.slideDown(300);
+              }
+
+              return false;
+          });
+
+          facetOverrideInitialized = true;
+      }
+
+      // Initialize on page load
+      $(document).ready(function() {
+          setTimeout(initCustomFacetBehavior, 500);
+      });
+
+      // Re-initialize after AJAX search results (source code re-initializes facets)
+      $(document).on('searchResults:response', function() {
+          setTimeout(initCustomFacetBehavior, 100);
+      });
+
+      // Also try after any DOM changes (fallback)
+      var observer = new MutationObserver(function(mutations) {
+          if (!facetOverrideInitialized) {
+              initCustomFacetBehavior();
+          }
+      });
+
+      $(document).ready(function() {
+          var target = document.querySelector('.search-facets-module');
+          if (target) {
+              observer.observe(target, { childList: true, subtree: true });
+          }
+      });
+    })();
+    
+    
+    //Product Tabs
+    $('.product_tab_list_item:first-child').addClass('active');
+    $('.product_tab_content').hide();
+    $('.product_tab_content:first').show();
+    // Click function
+    $('.product_tab_list .product_tab_list_item').click(function(){
+        $('.product_tab_list .product_tab_list_item').removeClass('active');
+        $(this).addClass('active');
+        $('.product_tab_content').hide();
+        var activeTab = $(this).find('a').attr('data-toggle-target');
+        $(activeTab).show();
+        return false;
+    });
+    
+    //tab category
+    $('.theme_cat_tab_item:first-child').addClass('active');
+    $('.tab_content').hide();
+    $('.tab_content:first').show();
+    // Click function
+    $('.theme_cat_tab_list .theme_cat_tab_item').click(function(){
+        $('.theme_cat_tab_list .theme_cat_tab_item').removeClass('active');
+        $(this).addClass('active');
+        $('.tab_content').hide();
+        var activeTab = $(this).find('a').attr('data-toggle-target');
+        $(activeTab).show();
+        return false;
+    });
+    
+    //facet title
+    var resutlText = $('.page-subheader-module .result-text-wrap .result-text').text();
+    console.log(resutlText)
+    $('#layout_search .page-subheader-module').append('<a href="/" class="themeKeyword"><span>KEYWORD:</span> ' + resutlText + '</a>')
+    
+    // Nav Mega Menu
+    $(".main_nav_list").on("click", ".main_nav_item_has_child", function() {
+        $(".main_nav_list .main_nav_item_has_child").removeClass("active");
+        $(this).addClass("active");
+    });
+
+    $(document).on("click", function(e) {
+        if (!$(e.target).closest(".main_nav_list .main_nav_item_has_child").length) {
+            $(".main_nav_list .main_nav_item_has_child").removeClass("active");
+            $('.main_nav_mega_menu_wrapperViewAll').removeClass('active')
+            $('.themeMainNavMegaNewViewAll').removeClass('active')
+            $('.themeMainNavMegaListNew').removeClass('hideCard');
+        }
+    });
+        
+    //View All 
+    $('.themeMainNavMegaNewViewAll').click(function(e) {
+        // Get the data attribute value of the clicked div
+        e.preventDefault();
+        var clickedDataAttributeValue = $(this).data('view');
+        console.log(clickedDataAttributeValue)
+        // Remove any existing 'selected' class from all div elements
+        $('.themeMainNavMegaNewViewAll').removeClass('active');
+        $('.main_nav_mega_menu_wrapperViewAll').removeClass('active');
+        // Add 'selected' class to all div elements with the same data attribute value
+        $('.themeMainNavMegaNewViewAll[data-view="' + clickedDataAttributeValue + '"]').addClass('active');
+        $('.main_nav_mega_menu_wrapperViewAll[data-view="' + clickedDataAttributeValue + '"]').addClass('active');
+        $('.themeMainNavMegaListNew').addClass('hideCard')
+
+
+    });
+        
+    // Back All
+    $('.themeMainNavMegaNewBackButton').click(function(e) {
+        e.preventDefault();
+        $('.main_nav_mega_menu_wrapperViewAll').removeClass('active')
+        $('.themeMainNavMegaNewViewAll').removeClass('active')
+        $('.themeMainNavMegaListNew').removeClass('hideCard');
+    })
+    
+    //Smooth Scroll
+        $('.to_top_wrapper').click(function(){
+            $("html, body").animate({ scrollTop: 0 }, 600);
+            return false;
+        });
+    
+    //hamburger menu
+        $('.themeHamburgerWrap').click(function(e) {
+            e.preventDefault();
+            $('.themeFlyoutSection').addClass('openFlyout')
+            $('body').addClass('openFlyoutBefore')
+        })
+        $('.themeHeaderFlyoutNavItem.hasChild').on('click', function(e) {
+            e.preventDefault();
+            $('.themeHeaderFlyoutNavItem.hasChild').removeClass('openSubFlyout');
+            $(this).addClass('openSubFlyout');
+            $('body').addClass('openChildFlyout');
+        });
+        $('.FlyoutBackButton').on('click', function(e) {
+            e.preventDefault();
+            $('.themeHeaderFlyoutNavItem.hasChild').removeClass('openSubFlyout');
+            //$('.themeFlyoutSection').removeClass('openFlyout');
+            $('body').removeClass('openChildFlyout');
+        })
+        $('.themeHeaderSubFlyoutWrap a').on('click', function(e) {
+            e.preventDefault();
+            window.location.href = $(this).attr('href');
+        })
+        $('.themeHeaderFlyoutCardClose').click(function(e) {
+            e.preventDefault();
+            $('.themeHeaderFlyoutNavItem.hasChild').removeClass('openSubFlyout');
+            $('.themeFlyoutSection').removeClass('openFlyout');
+            $('body').removeClass('openChildFlyout');
+            $('body').removeClass('openFlyoutBefore')
+        })
+    
+    //Slider
+        var mainSlider = $('#themeBannerList');
+        mainSlider.owlCarousel({
+            items:1,
+            loop:true,
+            margin:0,
+            dots: true,
+            nav: true,
+            navText: ["<span class='theme_arrow theme_arrow_left'><svg xmlns='http://www.w3.org/2000/svg' height='1em' viewBox='0 0 320 512'><path d='M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z'/>","<span class='theme_arrow theme_arrow_right'><svg xmlns='http://www.w3.org/2000/svg' height='1em' viewBox='0 0 320 512'><path d='M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z'/>"],
+            autoplay:true,
+            //autoplay:6000,
+            autoplayTimeout:6000,
+    		smartSpeed: 1500,
+            autoplayHoverPause:true,
+        });
+    
+    //is homepage
+        if( !$('#page-home').length > 0 ) {
+        	$('body').addClass('notHome')
+        } 
+    //cart icon
+    var cartIcon = $('.themeHeader .cart-icon');
+        cartIcon.append('<div class="cart_icon"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M6.787 15.981l14.11-1.008L23.141 6H5.345L5.06 4.37a1.51 1.51 0 0 0-1.307-1.23l-2.496-.286-.114.994 2.497.286a.502.502 0 0 1 .435.41l1.9 10.853-.826 1.301A1.497 1.497 0 0 0 6 18.94v.153a1.5 1.5 0 1 0 1 0V19h11.5a.497.497 0 0 1 .356.15 1.502 1.502 0 1 0 1.074-.08A1.497 1.497 0 0 0 18.5 18H6.416a.5.5 0 0 1-.422-.768zM19.5 21a.5.5 0 1 1 .5-.5.5.5 0 0 1-.5.5zm-13 0a.5.5 0 1 1 .5-.5.5.5 0 0 1-.5.5zM21.86 7l-1.757 7.027-13.188.942L5.52 7z"/><path fill="none" d="M0 0h24v24H0z"/></svg></div>');
+    
+    // sticky on scroll
+        $(window).scroll(function() {
+        if ($(this).scrollTop() > 50){  
+            $('header.container-header').addClass("sticky");
+            $('body').addClass('stickyHead')
+          }
+          else{
+            $('header.container-header').removeClass("sticky");
+              $('body').removeClass('stickyHead')
+          }
+        });
+    
+    //Tabs
+        // Show the first tab and hide the rest
+    $('.themeModelCatList li:first-child').addClass('active');
+    $('.tabModelContent').hide();
+    $('.tabModelContent:first').show();
+    // Click function
+    $('.themeModelCatList li').click(function(){
+        $('.themeModelCatList li').removeClass('active');
+        $(this).addClass('active');
+        $('.tabModelContent').hide();
+        var activeTab = $(this).find('a').attr('data-toggle-target');
+        $(activeTab).show();
+        return false;
+    });
+    
+    $('.themeCatList .themeCatItem:first-child').addClass('active');
+    $('.tabContent').hide();
+    $('.tabContent:first').show();
+    // Click function
+    $('.themeCatList .themeCatItem').click(function(){
+        $('.themeCatList .themeCatItem').removeClass('active');
+        $(this).addClass('active');
+        $('.tabContent').hide();
+        var activeTab = $(this).find('a').attr('data-toggle-target');
+        $(activeTab).show();
+        return false;
+    });
+    
+    $(document).ready(function() {
+        
+        //toggle search mobile
+        $('.themeSearchMobile').on('click', function() {
+        	$(this).toggleClass('openSearch');
+            $('.themeSearchBar').toggleClass('searchOpen')
+        })
+        
+        //model carousel
+    	$('.themeModelContentList01').owlCarousel({
+            items:5,
+            loop:true,
+            margin:0,
+            autoplay:false,
+            autoplayTimeout:4000,
+            autoplayHoverPause:false,
+            nav: true,
+            navText: ["<span class='theme_arrow theme_arrow_left'>","<span class='theme_arrow theme_arrow_right'>"],
+            responsive: {
+                0: {
+                    items: 1
+                },
+                450: {
+                    items: 2
+                },
+                600: {
+                    items: 3
+                },
+                730: {
+                    items: 5
+                },
+            }
+        });
+        $('.themeModelContentList02').owlCarousel({
+            items:5,
+            loop:false,
+            margin:0,
+            autoplay:false,
+            autoplayTimeout:4000,
+            autoplayHoverPause:false,
+            nav: true,
+            navText: ["<span class='theme_arrow theme_arrow_left'>","<span class='theme_arrow theme_arrow_right'>"],
+            responsive: {
+                0: {
+                    items: 1
+                },
+                450: {
+                    items: 2
+                },
+                600: {
+                    items: 3
+                },
+                730: {
+                    items: 5
+                },
+            }
+        });
+        $('.themeModelContentList03').owlCarousel({
+            items:5,
+            loop:false,
+            margin:0,
+            autoplay:false,
+            autoplayTimeout:4000,
+            autoplayHoverPause:false,
+            nav: true,
+            navText: ["<span class='theme_arrow theme_arrow_left'>","<span class='theme_arrow theme_arrow_right'>"],
+            responsive: {
+                0: {
+                    items: 1
+                },
+                450: {
+                    items: 2
+                },
+                600: {
+                    items: 3
+                },
+                730: {
+                    items: 5
+                },
+            }
+        });
+        $('.themeModelContentList04').owlCarousel({
+            items:5,
+            loop:true,
+            margin:0,
+            autoplay:false,
+            autoplayTimeout:4000,
+            autoplayHoverPause:false,
+            nav: true,
+            navText: ["<span class='theme_arrow theme_arrow_left'>","<span class='theme_arrow theme_arrow_right'>"],
+            responsive: {
+                0: {
+                    items: 1
+                },
+                450: {
+                    items: 2
+                },
+                600: {
+                    items: 3
+                },
+                730: {
+                    items: 5
+                },
+            }
+        });
+        $('.themeModelContentList05').owlCarousel({
+            items:5,
+            loop:false,
+            margin:0,
+            autoplay:false,
+            autoplayTimeout:4000,
+            autoplayHoverPause:false,
+            nav: true,
+            navText: ["<span class='theme_arrow theme_arrow_left'>","<span class='theme_arrow theme_arrow_right'>"],
+            responsive: {
+                0: {
+                    items: 1
+                },
+                450: {
+                    items: 2
+                },
+                600: {
+                    items: 3
+                },
+                730: {
+                    items: 5
+                },
+            }
+        });
+        
+        //accessories carousel
+        function initOwlCaroulselAcc() {
+        	$('.themeAccList').owlCarousel({
+                items:5,
+                loop:true,
+                margin:20,
+                autoplay:false,
+                autoplayTimeout:4000,
+                autoplayHoverPause:false,
+                nav: false,
+                responsive: {
+                        0: {
+                          items: 1
+                        },
+                    	500: {
+                          items: 2
+                        },
+                        730: {
+                          items: 3
+                        },
+                        900: {
+                          items: 4
+                        },
+                    }
+            });
+        }
+        
+        // Check if the screen width is less than or equal to 768 pixels (adjust this value as needed)
+        if ($(window).width() <= 768) {
+            initOwlCaroulselAcc(); // Initialize Owl Carousel if on a mobile device
+        }
+
+        // Optional: Re-initialize Owl Carousel on window resize
+        // Optional: Re-initialize Owl Carousel on window resize
+        $(window).resize(function() {
+            if ($(window).width() <= 768) {
+                initOwlCaroulselAcc();
+            }
+        });
+        
+        
+    })
+    
+</script>
+
+
+<script>(function(w,d,t,r,u){var f,n,i;w[u]=w[u]||[],f=function(){var o={ti:"151011531", enableAutoSpaTracking: true};o.q=w[u],w[u]=new UET(o),w[u].push("pageLoad")},n=d.createElement(t),n.src=r,n.async=1,n.onload=n.onreadystatechange=function(){var s=this.readyState;s&&s!=="loaded"&&s!=="complete"||(f(),n.onload=n.onreadystatechange=null)},i=d.getElementsByTagName(t)[0],i.parentNode.insertBefore(n,i)})(window,document,"script","//bat.bing.com/bat.js","uetq");</script>
+
+<!--Ad Roll Pixel-->
+
+<script type="text/javascript">
+    adroll_adv_id = "CGVAH332HRCS3IEM7M7O3E";
+    adroll_pix_id = "3PZFJWSN3FFZXLXBIJCU6Z";
+    adroll_version = "2.0";
+
+    (function(w, d, e, o, a) {
+        w.__adroll_loaded = true;
+        w.adroll = w.adroll || [];
+        w.adroll.f = [ 'setProperties', 'identify', 'track', 'identify_email', 'get_cookie' ];
+        var roundtripUrl = "https://s.adroll.com/j/" + adroll_adv_id
+                + "/roundtrip.js";
+        for (a = 0; a < w.adroll.f.length; a++) {
+            w.adroll[w.adroll.f[a]] = w.adroll[w.adroll.f[a]] || (function(n) {
+                return function() {
+                    w.adroll.push([ n, arguments ])
+                }
+            })(w.adroll.f[a])
+        }
+
+        e = d.createElement('script');
+        o = d.getElementsByTagName('script')[0];
+        e.async = 1;
+        e.src = roundtripUrl;
+        o.parentNode.insertBefore(e, o);
+    })(window, document);
+    adroll.track("pageView");
+</script>
+
+<!-- Reddit Pixel -->
+<script>
+!function(w,d){if(!w.rdt){var p=w.rdt=function(){p.sendEvent?p.sendEvent.apply(p,arguments):p.callQueue.push(arguments)};p.callQueue=[];var t=d.createElement("script");t.src="https://www.redditstatic.com/ads/pixel.js",t.async=!0;var s=d.getElementsByTagName("script")[0];s.parentNode.insertBefore(t,s)}}(window,document);rdt('init','a2_gt13imy5ppqx');rdt('track', 'PageVisit');
+</script>
+<!-- DO NOT MODIFY UNLESS TO REPLACE A USER IDENTIFIER -->
+<!-- End Reddit Pixel -->

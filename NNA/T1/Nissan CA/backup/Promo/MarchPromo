@@ -1,0 +1,63 @@
+<div class="themeBannerWrapper">
+<ul id="themeBannerList" class="themeBannerList owl-carousel owl-theme">
+<li class="themeBannerItem">
+  <div class="themeBannerCard">
+    <div class="themeBannerImage v-pc" style="background-image: url(https://rparts-sites.s3.amazonaws.com/043762c8bc258c5f283beb7fa50915ef/design/2026promo/mar/nissan_ship_mar_desktop_t1b.webp);"></div>
+    <div class="themeBannerImage v-sp" style="background-image: url(https://rparts-sites.s3.amazonaws.com/043762c8bc258c5f283beb7fa50915ef/design/2026promo/mar/nissan_ship_mar_mobile_allb.webp);"></div>
+    <div class="themeBannerContent">
+      <div class="themeBannerContentBox">
+        <p class="h1">Gear up for Spring with Free Shipping &mdash; $50 Max Value</p>
+        <p>
+          Shop <a href="https://parts.nissan.ca/" style="color:#ffffff !important;">Parts.Nissan.ca</a> 3/01–3/31 and get free shipping up to $50 on qualifying orders of $200 or more.
+          <span class="themeBannerTermWrap">
+            <a href="#">[*]</a>
+            <span class="themeBannerTermBox">
+              <span style="font-family: var(--themeFontBold) !important;">
+                ELIGIBILITY REQUIREMENTS:
+                Not all items sold on <a href="https://parts.nissan.ca/" style="color:#000000 !important;">Parts.Nissan.ca</a> are shippable. Promotion valid only on online orders of shippable items with minimum order value of $200, made from 03/01/2026 through 03/31/2026 and fulfilled by a participating Canadian Nissan dealer.
+              </span>
+              Offer code automatically applied at online checkout. Promotion covers up to $50 of the total shipping fee; any remaining shipping fee balance is the sole responsibility of the customer. No cash value. Void where prohibited. Other restrictions may apply. Contact participating Canadian Nissan dealer for details.
+            </span>
+          </span>
+        </p>
+        <div class="themeBannerButton">
+          <a href="javascript:openVehiclePicker();" class="themeBannerCard">
+            <p>Shop Now</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</li>
+<li class="themeBannerItem">
+  <div class="themeBannerCard">
+    <div class="themeBannerImage v-pc" style="background-image: url(https://rparts-sites.s3.amazonaws.com/043762c8bc258c5f283beb7fa50915ef/design/2026promo/mar/nissan_acc_mar_desktop_t1.webp);"></div>
+    <div class="themeBannerImage v-sp" style="background-image: url(https://rparts-sites.s3.amazonaws.com/043762c8bc258c5f283beb7fa50915ef/design/2026promo/mar/nissan_acc_mar_mobile_t1.webp);"></div>
+    <div class="themeBannerContent">
+      <div class="themeBannerContentBox">
+        <p class="h1">Get Adventure Ready with 15% Select Nissan Accessories!</p>
+        <p>
+          Available exclusively on <a href="https://parts.nissan.ca/" style="color:#ffffff !important;">Parts.Nissan.ca</a> with promo code 
+          <span style="font-family: var(--themeFontBold) !important;">SPRING26</span> 
+          from 3/01–3/31 &mdash; Limited-Time Offer
+          <span class="themeBannerTermWrap">
+            <a href="#">[*]</a>
+            <span class="themeBannerTermBox">
+              <span style="font-family: var(--themeFontBold) !important;">
+                ELIGIBILITY REQUIREMENTS:
+              </span>
+              Not all items sold on Parts.Nissan.ca are shippable. Promotion valid on online orders of select Nissan Accessory items using promo code <span style="font-family: var(--themeFontBold) !important;">SPRING26</span> at checkout from 03/01/2026 through 03/31/2026. Offer may be combined with other promotions. Any remaining shipping balance is the sole responsibility of the customer. No cash value. Void where prohibited. Other restrictions may apply. Contact participating Canadian Nissan dealer for details.
+            </span>
+          </span>
+        </p>
+        <div class="themeBannerButton">
+          <a href="https://parts.nissan.ca/lifestyle-accessories-discounts" class="themeBannerCard">
+            <p>Shop Now</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</li>
+  </ul>
+</div>
