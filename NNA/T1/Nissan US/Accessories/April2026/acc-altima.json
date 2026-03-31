@@ -1,0 +1,805 @@
+{
+  "pageId": "page",
+  "pageName": "Text Page",
+  "pageType": null,
+  "layoutEnabled": true,
+  "moduleCategories": [
+    "header",
+    "images",
+    "text",
+    "search",
+    "categories_products",
+    "forms",
+    "navigation",
+    "footer"
+  ],
+  "VFSPath": "layouts/page.json",
+  "requiredModules": [],
+  "scripts": "",
+  "sections": [
+    {
+      "sectionId": "section_71",
+      "htmlId": "themeNewPageBannerSection",
+      "htmlClasses": "themeNewPageBannerSection",
+      "contentWidth": "full",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_72",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_73",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_77",
+                  "moduleType": "banner_vpicker",
+                  "title": "Banner ",
+                  "options": {
+                    "banner_slides": {
+                      "name": "Banner Slides",
+                      "type": "object",
+                      "default_value": [],
+                      "value": [
+                        {
+                          "slideId": "slide_430",
+                          "image": "https://cdn.revolutionparts.io/223b3e40451187171b9a7229149b1553/design/altima_banner_v2.webp",
+                          "link": "",
+                          "alt": ""
+                        }
+                      ]
+                    },
+                    "overlay_header": {
+                      "name": "Overlay Header",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "<span class=\"themeNewPageBannerDate\">NISSAN</span>Altima®<br> Accessories"
+                    },
+                    "overlay_content": {
+                      "name": "Overlay Content",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "<div class=\"custom-tooltip-wrapper\">\n    Genuine Nissan Accessories are custom-fit & durability-tested for your Altima. <a href=\"#\" class=\"tooltip-anchor\">[*]</a> \n    <span class=\"custom-tooltip\">                 \n        Images shown for illustrative purposes only. For complete limited warranty details, see your Nissan dealer and read the vehicle’s Warranty Information Booklet.\n    </span> \n</div>"
+                    },
+                    "picker_title": {
+                      "name": "Picker Title",
+                      "type": "string",
+                      "default_value": "Select Your Vehicle",
+                      "value": "Select Your Vehicle"
+                    },
+                    "hide_vehicle_picker": {
+                      "name": "Hide Vehicle Picker",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": true
+                    },
+                    "slider_timeout": {
+                      "name": "Slider Speed",
+                      "type": "string",
+                      "default_value": "4000",
+                      "value": "4000"
+                    },
+                    "banner_height": {
+                      "name": "Banner Height",
+                      "type": "string",
+                      "default_value": "290",
+                      "value": "700"
+                    },
+                    "use_overlay_shadows": {
+                      "name": "Overlay Shadows",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    },
+                    "banner_image_fill": {
+                      "name": "Banner Image Fill",
+                      "type": "select",
+                      "possible_values": [
+                        {
+                          "value": "cover",
+                          "label": "Cover"
+                        },
+                        {
+                          "value": "contain",
+                          "label": "Contain"
+                        }
+                      ],
+                      "default_value": "cover",
+                      "value": "cover"
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": true,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_32",
+      "htmlId": "",
+      "htmlClasses": "",
+      "contentWidth": "wide",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_130",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_132",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_27",
+                  "moduleType": "custom_html",
+                  "title": "Cart Main Title",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"themeCardMainTitleWrap\">\n    <p class=\"themeCardMainTitleTagline\">\n        ALTIMA EXTERIOR ACCESSORIES\n    </p>\n    <h3>\n        Make a lasting impression\n    </h3>\n    <p class=\"themeCardMainTitleDescription\">\n        Stand out with a wide array of accessories that put your sense of style on display and help guard against the unexpected. Your Altima can be equipped with many available accessories, such as a Rear Spoiler or a Satin Chrome Rear Bumper Protector.\n    </p>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_128",
+      "htmlId": "themeForsbergPackageSection",
+      "htmlClasses": "themeForsbergPackageSection themeForsbergPackageSectionDark",
+      "contentWidth": "wide",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_129",
+          "rowLayout": "8_4",
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_130",
+              "columnWidth": 8,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_133",
+                  "moduleType": "custom_html",
+                  "title": "Rear Spoiler",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"themeForsbergPackageBigCard\">\n    <div class=\"themeForsbergPackageBigCardImg\">\n        <img alt=\"Altima Image\" src=\"https://rparts-sites.s3.amazonaws.com/223b3e40451187171b9a7229149b1553/design/accessories/altima/altima_spoiler.webp\">\n    </div>\n    <div class=\"themeForsbergPackageBigCardContent\">\n        <h3>\n\t\t\tRear Spoiler\n\t\t</h3>\n        <ul>\n\t\t<li>Add a sporty accent to your Altima<br>\n\t\t</li>\n\t\t<li>Comes pre-painted in factory-matched colors<br>\n\t\t</li>\n\t\t</ul>\n        <p class=\"themeMsrp custom-tooltip-wrapper\">\n            MSRP $420 <a href=\"#\" class=\"tooltip-anchor\">[*]</a>\n            <span class=\"custom-tooltip\">\n                Price is Manufacturer's Suggested Retail Price (MSRP). MSRP excludes installation (except if factory-installed), taxes and other costs, and is subject to change without prior notice. Dealer sets actual price. Pictures are for informational purposes only.\n            </span>\n        </p>\n        <div class=\"themeVehicleBannerButton\"> \n            <a href=\"parts/nissan-rear-spoiler-kch-gray-sky-pearl-t99j19hf1a\">View Item</a>\n        </div>\n    </div>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "tabCard tabCard01",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_134",
+                  "moduleType": "custom_html",
+                  "title": "19\" Aluminum-Alloy Wheels",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"themeForsbergPackageBigCard\">\n    <div class=\"themeForsbergPackageBigCardImg\">\n        <img alt=\"Altima Image\" src=\"https://rparts-sites.s3.amazonaws.com/223b3e40451187171b9a7229149b1553/design/accessories/altima/b1-img2.webp\">\n    </div>\n    <div class=\"themeForsbergPackageBigCardContent\">\n        <h3>\n\t\t\t19\" Bronze Aluminum-Alloy Wheels\n\t\t</h3>\n        <ul>\n\t\t\t<li>Bold, strong, and lightweight<br>\n\t\t\t</li>\n\t\t\t<li>Bronze painted finish<br>\n\t\t\t</li>\n\t\t</ul>\n        <p class=\"themeMsrp custom-tooltip-wrapper\">\n            MSRP $670 <a href=\"#\" class=\"tooltip-anchor\">[*]</a>\n            <span class=\"custom-tooltip\">\n                Price is Manufacturer's Suggested Retail Price (MSRP). MSRP excludes installation (except if factory-installed), taxes and other costs, and is subject to change without prior notice. Dealer sets actual price. Pictures are for informational purposes only.\n            </span>\n        </p>\n        <div class=\"themeVehicleBannerButton\"> \n            <a href=\"parts/nissan-wheel-19-quot-aluminum-alloy-t99w19hf1j\">View Item</a>\n        </div>\n    </div>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "tabCard tabCard02",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_135",
+                  "moduleType": "custom_html",
+                  "title": "Chrome Rear Bumper Protector",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"themeForsbergPackageBigCard\">\n    <div class=\"themeForsbergPackageBigCardImg\">\n        <img alt=\"Altima Image\" src=\"https://rparts-sites.s3.amazonaws.com/223b3e40451187171b9a7229149b1553/design/accessories/altima/bumper_protector_altima.webp\">\n    </div>\n    <div class=\"themeForsbergPackageBigCardContent\">\n        <h3>\n            Chrome Rear Bumper Protector\n        </h3>\n        <ul>\n\t\t<li>Designed to help prevent scratches and scuffs when loading cargo<br>\n\t\t</li>\n\t\t<li>Chrome finish provides protection with style<br>\n\t\t</li>\n\t\t</ul>\n        <p class=\"themeMsrp custom-tooltip-wrapper\">\n            MSRP $147 <a href=\"#\" class=\"tooltip-anchor\">[*]</a>\n            <span class=\"custom-tooltip\">\n                Price is Manufacturer's Suggested Retail Price (MSRP). MSRP excludes installation (except if factory-installed), taxes and other costs, and is subject to change without prior notice. Dealer sets actual price. Pictures are for informational purposes only.\n            </span>\n        </p>\n        <div class=\"themeVehicleBannerButton\"> \n            <a href=\"parts/nissan-rear-bumper-protector-chrome-t99b16ca0a\">View Item</a>\n        </div>\n    </div>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "tabCard tabCard03",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_136",
+                  "moduleType": "custom_html",
+                  "title": "Exterior Ground Lighting w/ Logo",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"themeForsbergPackageBigCard\">\n    <div class=\"themeForsbergPackageBigCardImg\">\n        <img alt=\"Altima Image\" src=\"https://rparts-sites.s3.amazonaws.com/223b3e40451187171b9a7229149b1553/design/accessories/altima/exterior_ground_lighting.webp\">\n    </div>\n    <div class=\"themeForsbergPackageBigCardContent\">\n        <h3>\n            Exterior Ground Lighting w/ Logo\n        </h3>\n        <ul>\n\t\t<li>Just click for a sense of security with lights that brighten up the area beneath and around your vehicle<br>\n\t\t</li>\n\t\t<li>Illuminates the ground near the front doors with the Nissan logo<br>\n\t\t</li>\n\t\t<li>Goes on when you press the key fob, press the entry button, or open doors<br>\n\t\t</li>\n\t\t</ul>\n        <p class=\"themeMsrp custom-tooltip-wrapper\">\n            MSRP $570 <a href=\"#\" class=\"tooltip-anchor\">[*]</a>\n            <span class=\"custom-tooltip\">\n                Price is Manufacturer's Suggested Retail Price (MSRP). MSRP excludes installation (except if factory-installed), taxes and other costs, and is subject to change without prior notice. Dealer sets actual price. Pictures are for informational purposes only.\n            </span>\n        </p>\n        <div class=\"themeVehicleBannerButton\"> \n            <a href=\"parts/nissan-exterior-ground-lighting-w-logo-t99f46ca3c\">View Item</a>\n        </div>\n    </div>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "tabCard tabCard04",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_103",
+                  "moduleType": "custom_html",
+                  "title": "Splash Guards",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"themeForsbergPackageBigCard\">\n    <div class=\"themeForsbergPackageBigCardImg\">\n        <img alt=\"Altima Image\" src=\"https://cdn-product-images.revolutionparts.io/assets/3252949c2b8c79b31b2583c2e4eb6fdc.webp\">\n    </div>\n    <div class=\"themeForsbergPackageBigCardContent\">\n        <h3>\n            Splash Guards\n        </h3>\n        <ul>\n\t\t<li>\t\n            • Save your Altima from an unwelcome mud bath <br>\n            • Contoured to match wheel openings, while helping prevent dirt and debris from nicking and scratching the finish <br>\n            • Add value and style while helping protect the sides of your vehicle <br>\n            . • Save your Altima from an unwelcome mud bath <br>\n            • Contoured to match wheel openings, while helping prevent dirt and debris from nicking and scratching the finish <br>\n            • Add value and style while helping protect the sides of your vehicle\n\t\t</li>\n\t\t</ul>\n        <p class=\"themeMsrp custom-tooltip-wrapper\">\n            MSRP $99 <a href=\"#\" class=\"tooltip-anchor\">[*]</a>\n            <span class=\"custom-tooltip\">\n                Price is Manufacturer's Suggested Retail Price (MSRP). MSRP excludes installation (except if factory-installed), taxes and other costs, and is subject to change without prior notice. Dealer sets actual price. Pictures are for informational purposes only.\n            </span>\n        </p>\n        <div class=\"themeVehicleBannerButton\"> \n            <a href=\"parts/nissan-splash-guards-4-piece-set-t99j26ca5b\">View Item</a>\n        </div>\n    </div>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "tabCard tabCard05",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_110",
+                  "moduleType": "custom_html",
+                  "title": "Wheel Locks",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"themeForsbergPackageBigCard\">\n    <div class=\"themeForsbergPackageBigCardImg\">\n        <img alt=\"Altima Image\" src=\"https://cdn-product-images.revolutionparts.io/assets/bbb7eb03abacd7c43629d5d63b1323c1.webp\">\n    </div>\n    <div class=\"themeForsbergPackageBigCardContent\">\n        <h3>\n            Wheel Locks\n        </h3>\n        <ul>\n\t\t<li>\t\n        • Helps protect against wheel and tire theft. <br>\n        • Set of 4 <br>\n        • Hardened steel construction for superior durability and corrosion resistance <br>\n        • Each set contains four chrome locks, one for each wheel, and a special coded socket with a narrow-groove key pattern to provide maximum security\n\t\t</li>\n\t\t</ul>\n        <p class=\"themeMsrp custom-tooltip-wrapper\">\n            MSRP $78 <a href=\"#\" class=\"tooltip-anchor\">[*]</a>\n            <span class=\"custom-tooltip\">\n                Price is Manufacturer's Suggested Retail Price (MSRP). MSRP excludes installation (except if factory-installed), taxes and other costs, and is subject to change without prior notice. Dealer sets actual price. Pictures are for informational purposes only.\n            </span>\n        </p>\n        <div class=\"themeVehicleBannerButton\"> \n            <a href=\"parts/nissan-wheel-locks-t99w2a7010\">View Item</a>\n        </div>\n    </div>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "tabCard tabCard06",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_557",
+                  "moduleType": "custom_html",
+                  "title": "Chrome Body-Side Moldings",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"themeForsbergPackageBigCard\">\n    <div class=\"themeForsbergPackageBigCardImg\">\n        <img alt=\"Altima Image\" src=\"https://cdn.revolutionparts.io/223b3e40451187171b9a7229149b1553/design/accessories/altima/chrome_body_side_altima.webp\">\n    </div>\n    <div class=\"themeForsbergPackageBigCardContent\">\n        <h3>\n            Chrome Body-Side Moldings\n        </h3>\n        <ul>\n\t\t<li>Body Side Moldings Arm your vehicle against parking lot dings, dents, and scratches. Adds protection with a sharp, stylish accent to your vehicle.</li>\n\t\t</ul>\n        <p class=\"themeMsrp custom-tooltip-wrapper\">\n            MSRP $314 <a href=\"#\" class=\"tooltip-anchor\">[*]</a>\n            <span class=\"custom-tooltip\">\n                Price is Manufacturer's Suggested Retail Price (MSRP). MSRP excludes installation (except if factory-installed), taxes and other costs, and is subject to change without prior notice. Dealer sets actual price. Pictures are for informational purposes only.\n            </span>\n        </p>\n        <div class=\"themeVehicleBannerButton\"> \n            <a href=\"parts/nissan-chrome-rear-bumper-protector-t99g26ca0a\">View Item</a>\n        </div>\n    </div>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "tabCard tabCard07",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            },
+            {
+              "columnId": "column_131",
+              "columnWidth": 4,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_132",
+                  "moduleType": "custom_html",
+                  "title": "Package Image Link",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<ul class=\"themeForsbergPackageImgList\">\n    <li class=\"themeForsbergPackageImgListItem\">\n        <a href=\"#\" data-toggle-target=\".tabCard01\" class=\"themeForsbergPackageImgListLink\">\n            <img alt=\"Sentra Image\" src=\"https://rparts-sites.s3.amazonaws.com/223b3e40451187171b9a7229149b1553/design/accessories/altima/altima_spoiler.webp\" class=\"themeForsbergPackageImgListCard\">\n        </a>\n    </li>\n    <li class=\"themeForsbergPackageImgListItem\">\n        <a href=\"#\" data-toggle-target=\".tabCard02\" class=\"themeForsbergPackageImgListLink\">\n            <img alt=\"Sentra Image\" src=\"https://rparts-sites.s3.amazonaws.com/223b3e40451187171b9a7229149b1553/design/accessories/altima/b1-img2.webp\" class=\"themeForsbergPackageImgListCard\">\n        </a>\n    </li>\n    <li class=\"themeForsbergPackageImgListItem\">\n        <a href=\"#\" data-toggle-target=\".tabCard03\" class=\"themeForsbergPackageImgListLink\">\n            <img alt=\"Sentra Image\" src=\"https://rparts-sites.s3.amazonaws.com/223b3e40451187171b9a7229149b1553/design/accessories/altima/bumper_protector_altima.webp\" class=\"themeForsbergPackageImgListCard\">\n        </a>\n    </li>\n    <li class=\"themeForsbergPackageImgListItem\">\n        <a href=\"#\" data-toggle-target=\".tabCard04\" class=\"themeForsbergPackageImgListLink\">\n            <img alt=\"Sentra Image\" src=\"https://rparts-sites.s3.amazonaws.com/223b3e40451187171b9a7229149b1553/design/accessories/altima/exterior_ground_lighting.webp\" class=\"themeForsbergPackageImgListCard\">\n        </a>\n    </li>\n    <li class=\"themeForsbergPackageImgListItem\">\n        <a href=\"#\" data-toggle-target=\".tabCard05\" class=\"themeForsbergPackageImgListLink\">\n            <img alt=\"Sentra Image\" src=\"https://cdn-product-images.revolutionparts.io/assets/3252949c2b8c79b31b2583c2e4eb6fdc.webp\" class=\"themeForsbergPackageImgListCard\">\n        </a>\n    </li>\n    <li class=\"themeForsbergPackageImgListItem\">\n        <a href=\"#\" data-toggle-target=\".tabCard06\" class=\"themeForsbergPackageImgListLink\">\n            <img alt=\"Sentra Image\" src=\"https://cdn-product-images.revolutionparts.io/assets/bbb7eb03abacd7c43629d5d63b1323c1.webp\" class=\"themeForsbergPackageImgListCard\">\n        </a>\n    </li>\n    <li class=\"themeForsbergPackageImgListItem\">\n        <a href=\"#\" data-toggle-target=\".tabCard07\" class=\"themeForsbergPackageImgListLink\">\n            <img alt=\"Sentra Image\" src=\"https://rparts-sites.s3.amazonaws.com/223b3e40451187171b9a7229149b1553/design/accessories/altima/chrome_body_side_altima.webp\" class=\"themeForsbergPackageImgListCard\">\n        </a>\n    </li>\n    <li class=\"themeForsbergPackageImgListItemLink\">\n        <a href=\"https://parts.nissanusa.com/accessories/exterior\" class=\"themeForsbergPackageImgListLinkText\">\n            Shop All Exterior\n        </a>\n    </li>\n</ul>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "desktop-only"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_27",
+      "htmlId": "",
+      "htmlClasses": "",
+      "contentWidth": "wide",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_28",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_29",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_32",
+                  "moduleType": "custom_html",
+                  "title": "Cart Main Title",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"themeCardMainTitleWrap\">\n    <p class=\"themeCardMainTitleTagline\">\n        ALTIMA INTERIOR, LIGHTING AND TECH ACCESSORIES\n    </p>\n    <h3>\n        Interior designer: you\n    </h3>\n    <p class=\"themeCardMainTitleDescription\">\n        Showcase your creativity with a wide array of accessories. Take the time to choose pieces that best express your personality.\n    </p>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_166",
+      "htmlId": "themeForsbergPackageSection",
+      "htmlClasses": "themeForsbergPackageSection themeForsbergPackageSectionDark",
+      "contentWidth": "wide",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_167",
+          "rowLayout": "4_8",
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_168",
+              "columnWidth": 4,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_172",
+                  "moduleType": "custom_html",
+                  "title": "Package Image Link",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<ul class=\"themeForsbergPackageImgList\">\n    <li class=\"themeForsbergPackageImgListItemNew\">\n        <a href=\"#\" data-toggle-target=\".tabCardNew01\" class=\"themeForsbergPackageImgListLink\">\n            <img alt=\"Altima Image\" src=\"https://cdn-product-images.revolutionparts.io/assets/e82f347ae6d9aca1b0c7eb42f33ddf27.webp\" class=\"themeForsbergPackageImgListCard\">\n        </a>\n    </li>\n    <li class=\"themeForsbergPackageImgListItemNew\">\n        <a href=\"#\" data-toggle-target=\".tabCardNew02\" class=\"themeForsbergPackageImgListLink\">\n            <img alt=\"Altima Image\" src=\"https://rparts-sites.s3.amazonaws.com/223b3e40451187171b9a7229149b1553/design/accessories/altima/b2-img2.webp\" class=\"themeForsbergPackageImgListCard\">\n        </a>\n    </li>\n    <li class=\"themeForsbergPackageImgListItemNew\">\n        <a href=\"#\" data-toggle-target=\".tabCardNew03\" class=\"themeForsbergPackageImgListLink\">\n            <img alt=\"Altima Image\" src=\"https://rparts-sites.s3.amazonaws.com/223b3e40451187171b9a7229149b1553/design/accessories/altima/b2-img3.webp\" class=\"themeForsbergPackageImgListCard\">\n        </a>\n    </li>\n    <li class=\"themeForsbergPackageImgListItemNew\">\n        <a href=\"#\" data-toggle-target=\".tabCardNew04\" class=\"themeForsbergPackageImgListLink\">\n            <img alt=\"Altima Image\" src=\"https://cdn-product-images.revolutionparts.io/assets/cfd9883126f1a09a78acd38be7248024.webp\" class=\"themeForsbergPackageImgListCard\">\n        </a>\n    </li>\n\t<li class=\"themeForsbergPackageImgListItemNew\">\n        <a href=\"#\" data-toggle-target=\".tabCardNew05\" class=\"themeForsbergPackageImgListLink\">\n            <img alt=\"Altima Image\" src=\"https://rparts-sites.s3.amazonaws.com/223b3e40451187171b9a7229149b1553/design/accessories/altima/b2-img5.webp\" class=\"themeForsbergPackageImgListCard\">\n        </a>\n    </li>\n    <li class=\"themeForsbergPackageImgListItemNew\">\n        <a href=\"#\" data-toggle-target=\".tabCardNew06\" class=\"themeForsbergPackageImgListLink\">\n            <img alt=\"Altima Image\" src=\"https://cdn.revolutionparts.io/223b3e40451187171b9a7229149b1553/design/accessories/altima/hideway_cargo_net.webp\" class=\"themeForsbergPackageImgListCard\">\n        </a>\n    </li>\n    <li class=\"themeForsbergPackageImgListItemNew\">\n        <a href=\"#\" data-toggle-target=\".tabCardNew07\" class=\"themeForsbergPackageImgListLink\">\n            <img alt=\"Altima Image\" src=\"https://cdn.revolutionparts.io/223b3e40451187171b9a7229149b1553/design/accessories/altima/all_season_cargo_altima.webp\" class=\"themeForsbergPackageImgListCard\">\n        </a>\n    </li>\n    <li class=\"themeForsbergPackageImgListItemLink\">\n        <a href=\"https://parts.nissanusa.com/accessories/interior\" class=\"themeForsbergPackageImgListLinkText\">\n            Shop All Interior\n        </a>\n    </li>\n</ul>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "desktop-only"
+                }
+              ]
+            },
+            {
+              "columnId": "column_169",
+              "columnWidth": 8,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_175",
+                  "moduleType": "custom_html",
+                  "title": "All-Season Floor Mats — High Wall Liners",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"themeForsbergPackageBigCard\">\n    <div class=\"themeForsbergPackageBigCardImg\">\n        <img alt=\"Sentra Image\" src=\"https://cdn-product-images.revolutionparts.io/assets/e82f347ae6d9aca1b0c7eb42f33ddf27.webp\">\n    </div>\n    <div class=\"themeForsbergPackageBigCardContent\">\n        <h3>\n            All-Season Floor Mats &mdash; High Wall Liners (4-piece set)\n        </h3>\n        <ul>\n\t\t<li>Stepping in from the rain or snow? You need a set of All-Season Floor Mats &mdash; High Wall Liners<br>\n\t\t</li>\n\t\t<li>Custom-made of durable and long-wearing material<br>\n\t\t</li>\n\t\t<li>Driver and front-passenger liners secure with a grommet hole/positioning hook system<br>\n\t\t</li>\n\t\t</ul>\n        <p class=\"themeMsrp custom-tooltip-wrapper\">\n            MSRP $195 <a href=\"#\" class=\"tooltip-anchor\">[*]</a>\n            <span class=\"custom-tooltip\">\n                Price is Manufacturer's Suggested Retail Price (MSRP). MSRP excludes installation (except if factory-installed), taxes and other costs, and is subject to change without prior notice. Dealer sets actual price. Pictures are for informational purposes only.\n            </span>\n        </p>\n        <div class=\"themeVehicleBannerButton\"> \n            <a href=\"parts/nissan-all-season-floor-mats-high-wall-liners-rubber-4-piece-black-t99e46ca1a\">View Item</a>\n        </div>\n    </div>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "tabCardNew tabCardNew01",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_178",
+                  "moduleType": "custom_html",
+                  "title": "Removable Tote Cargo Organizer",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"themeForsbergPackageBigCard\">\n    <div class=\"themeForsbergPackageBigCardImg\">\n        <img alt=\"Altima Image\" src=\"https://rparts-sites.s3.amazonaws.com/223b3e40451187171b9a7229149b1553/design/accessories/altima/b2-img2.webp\">\n    </div>\n    <div class=\"themeForsbergPackageBigCardContent\">\n        <h3>\n            Removable Tote Cargo Organizer\n        </h3>\n        <ul>\n\t\t<li>\n\t\t\t<p class=\"custom-tooltip-wrapper\">\n\t\t\t\tYou can fit more than you think with dividers that let you customize the space <a href=\"#\" class=\"tooltip-anchor\">[*]</a>\n\t\t\t\t<span class=\"custom-tooltip\">\n\t\t\t\t\tCargo shown for display purposes only. Cargo and load capacity limited by weight and distribution. Always secure all cargo.\n\t\t\t\t</span>\n\t\t\t</p>\n\t\t</li>\n\t\t<li>Collapsible for easy storage when not in use</li>\n\t\t</ul>\n        <p class=\"themeMsrp custom-tooltip-wrapper\">\n            MSRP $152 <a href=\"#\" class=\"tooltip-anchor\">[*]</a>\n            <span class=\"custom-tooltip\">\n                Price is Manufacturer's Suggested Retail Price (MSRP). MSRP excludes installation (except if factory-installed), taxes and other costs, and is subject to change without prior notice. Dealer sets actual price. Pictures are for informational purposes only.\n            </span>\n        </p>\n        <div class=\"themeVehicleBannerButton\"> \n            <a href=\"parts/nissan-cargo-organizer-t99c25zw0a\">View Item</a>\n        </div>\n    </div>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "tabCardNew tabCardNew02",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_181",
+                  "moduleType": "custom_html",
+                  "title": "Rear USB-PD Charging Ports",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"themeForsbergPackageBigCard\">\n    <div class=\"themeForsbergPackageBigCardImg\">\n        <img alt=\"Altima Image\" src=\"https://rparts-sites.s3.amazonaws.com/223b3e40451187171b9a7229149b1553/design/accessories/altima/b2-img3.webp\">\n    </div>\n    <div class=\"themeForsbergPackageBigCardContent\">\n        <h3>\n            Rear USB-PD Charging Ports\n        </h3>\n        <ul>\n\t\t<li>\n\t\t\t<p class=\"custom-tooltip-wrapper\">\n\t\t\t\tQuickly charge your electronic devices <a href=\"#\" class=\"tooltip-anchor\">[*]</a>\n\t\t\t\t<span class=\"custom-tooltip\">\n\t\t\t\t\tDriving is serious business and requires your full attention. If you have to use the connected device while driving, exercise extreme caution at all times so full attention may be given to vehicle operation. External device not included.\n\t\t\t\t</span>\n\t\t\t</p>\n\t\t</li>\n\t\t<li>Includes both USB-A and USB-C charging ports to connect to your compatible devices<br>\n\t\t</li>\n\t\t<li>28 W continuous power rating when both ports are in use<br>\n\t\t</li>\n\t\t</ul>\n        <p class=\"themeMsrp custom-tooltip-wrapper\">\n            MSRP $179 <a href=\"#\" class=\"tooltip-anchor\">[*]</a>\n            <span class=\"custom-tooltip\">\n                Price is Manufacturer's Suggested Retail Price (MSRP). MSRP excludes installation (except if factory-installed), taxes and other costs, and is subject to change without prior notice. Dealer sets actual price. Pictures are for informational purposes only.\n            </span>\n        </p>\n        <div class=\"themeVehicleBannerButton\"> \n            <a href=\"parts/nissan-rear-usb-pd-charging-ports-t99q76gp0a\">View Item</a>\n        </div>\n    </div>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "tabCardNew tabCardNew03",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_184",
+                  "moduleType": "custom_html",
+                  "title": "Interior Accent Lighting",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"themeForsbergPackageBigCard\">\n    <div class=\"themeForsbergPackageBigCardImg\">\n        <img alt=\"Altima Image\" src=\"https://cdn-product-images.revolutionparts.io/assets/cfd9883126f1a09a78acd38be7248024.webp\">\n    </div>\n    <div class=\"themeForsbergPackageBigCardContent\">\n        <h3>\n            Interior Accent Lighting\n        </h3>\n        <ul>\n\t\t<li>Add a warm, welcoming glow to the cabin with LEDs that illuminate the footwells, console bin, and cup holders<br>\n\t\t</li>\n\t\t<li>20 color options<br>\n\t\t</li>\n\t\t<li>Works with the vehicle’s interior lighting when the door is opened<br>\n\t\t</li>\n\t\t</ul>\n        <p class=\"themeMsrp custom-tooltip-wrapper\">\n            MSRP $460 <a href=\"#\" class=\"tooltip-anchor\">[*]</a>\n            <span class=\"custom-tooltip\">\n                Price is Manufacturer's Suggested Retail Price (MSRP). MSRP excludes installation (except if factory-installed), taxes and other costs, and is subject to change without prior notice. Dealer sets actual price. Pictures are for informational purposes only.\n            </span>\n        </p>\n        <div class=\"themeVehicleBannerButton\"> \n            <a href=\"parts/nissan-lighting-interior-accent-t99f36ca00\">View Item</a>\n        </div>\n    </div>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "tabCardNew tabCardNew04",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_96",
+                  "moduleType": "custom_html",
+                  "title": "Illuminated Kick Plates",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"themeForsbergPackageBigCard\">\n    <div class=\"themeForsbergPackageBigCardImg\">\n        <img alt=\"Altima Image\" src=\"https://rparts-sites.s3.amazonaws.com/223b3e40451187171b9a7229149b1553/design/accessories/altima/b2-img5.webp\">\n    </div>\n    <div class=\"themeForsbergPackageBigCardContent\">\n        <h3>\n            Illuminated Kick Plates\n        </h3>\n        <ul>\n\t\t<li>Light up your entrance and protect your front sills<br>\n\t\t</li>\n\t\t<li>Contoured to match door openings<br>\n\t\t</li>\n\t\t<li>Stainless steel inserts feature illuminated Altima logos<br>\n\t\t</li>\n\t\t</ul>\n        <p class=\"themeMsrp custom-tooltip-wrapper\">\n            MSRP $405 <a href=\"#\" class=\"tooltip-anchor\">[*]</a>\n            <span class=\"custom-tooltip\">\n                Price is Manufacturer's Suggested Retail Price (MSRP). MSRP excludes installation (except if factory-installed), taxes and other costs, and is subject to change without prior notice. Dealer sets actual price. Pictures are for informational purposes only.\n            </span>\n        </p>\n        <div class=\"themeVehicleBannerButton\"> \n            <a href=\"parts/nissan-illuminated-kick-plates-t99g66ca00\">View Item</a>\n        </div>\n    </div>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "tabCardNew tabCardNew05",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_751",
+                  "moduleType": "custom_html",
+                  "title": "Cargo",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"themeForsbergPackageBigCard\">\n    <div class=\"themeForsbergPackageBigCardImg\">\n        <img alt=\"Altima Image\" src=\"https://cdn.revolutionparts.io/223b3e40451187171b9a7229149b1553/design/accessories/altima/hideway_cargo_net.webp\">\n    </div>\n    <div class=\"themeForsbergPackageBigCardContent\">\n        <h3>\n            Hideaway Trunk Net\n        </h3>\n        <ul>\n\t\t<li>Fight the forces of chaos with a Trunk Net that helps keep items in place.<br>\n\t\t</li>\n\t\t<li>This Hideaway Trunk Net stows away neatly in its own zippered case that secures to the trunk when not in use<br>\n\t\t</li>\n\t\t<li>Side Net keeps smaller items held down while driving<br>\n\t\t</li>\n        <li>Dealer-installed<br>\n\t\t</li>\n\t\t</ul>\n        <p class=\"themeMsrp custom-tooltip-wrapper\">\n            MSRP $60 <a href=\"#\" class=\"tooltip-anchor\">[*]</a>\n            <span class=\"custom-tooltip\">\n                Price is Manufacturer's Suggested Retail Price (MSRP). MSRP excludes installation (except if factory-installed), taxes and other costs, and is subject to change without prior notice. Dealer sets actual price. Pictures are for informational purposes only.\n            </span>\n        </p>\n        <div class=\"themeVehicleBannerButton\"> \n            <a href=\"parts/nissan-hideaway-trunk-net-999c1u5000\">View Item</a>\n        </div>\n    </div>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "tabCardNew tabCardNew06",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_566",
+                  "moduleType": "custom_html",
+                  "title": "All-Season Cargo Area Protector",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"themeForsbergPackageBigCard\">\n    <div class=\"themeForsbergPackageBigCardImg\">\n        <img alt=\"Altima Image\" src=\"https://cdn.revolutionparts.io/223b3e40451187171b9a7229149b1553/design/accessories/altima/all_season_cargo_altima.webp\">\n    </div>\n    <div class=\"themeForsbergPackageBigCardContent\">\n        <h3>\n            All-Season Cargo Area Protector\n        </h3>\n        <ul>\n\t\t<li>All-Weather Cargo Mats are made from thermoplastic elastomer material, for extreme-duty floor protection</li>\n\t\t</ul>\n        <p class=\"themeMsrp custom-tooltip-wrapper\">\n            MSRP $128 <a href=\"#\" class=\"tooltip-anchor\">[*]</a>\n            <span class=\"custom-tooltip\">\n                Price is Manufacturer's Suggested Retail Price (MSRP). MSRP excludes installation (except if factory-installed), taxes and other costs, and is subject to change without prior notice. Dealer sets actual price. Pictures are for informational purposes only.\n            </span>\n        </p>\n        <div class=\"themeVehicleBannerButton\"> \n            <a href=\"parts/nissan-all-season-trunk-area-protector-t99c36ca0a\">View Item</a>\n        </div>\n    </div>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "tabCardNew tabCardNew07",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_160",
+      "htmlId": "cyberacc_category_section",
+      "htmlClasses": "cyberacc_category_section category_section padding_section cyberacc_category_sectionFrontier",
+      "contentWidth": "wide",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_161",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_162",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_163",
+                  "moduleType": "custom_html",
+                  "title": "Tab Category List",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"theme_cat_tab_wrapper\">\n    <h2 class=\"main_title\">Explore Popular Accessory Categories</h2>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_164",
+                  "moduleType": "custom_html",
+                  "title": "Accessories Content",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"theme_cat_tab_content\">\n    <ul class=\"theme_cat_tab_content_list\">\n        <li>\n            <a href=\"https://parts.nissanusa.com/accessories/exterior\">\n                <div class=\"theme_cat_tab_content_img\">\n                    <img src=\"https://cdn-product-images.revolutionparts.io/assets/ae7a39e5f98a0976c74652b5cc46c4cd.webp\" alt=\"Nissan Exterior Image\">\n                </div>\n                <p>Exterior Accessories</p>\n            </a>\n        </li>\n        <li>\n            <a href=\"https://parts.nissanusa.com/accessories/interior\">\n                <div class=\"theme_cat_tab_content_img\">\n                    <img src=\"https://cdn-product-images.revolutionparts.io/assets/4ca832194b8d7f4488ba96196ca65d3f.webp\" alt=\"Nissan Interior\">\n                </div>\n                <p>Interior Accessories</p>\n            </a>\n        </li>\n        <li>\n            <a href=\"https://parts.nissanusa.com/accessories/lighting-technology\">\n                <div class=\"theme_cat_tab_content_img\">\n                    <img src=\"https://cdn-product-images.revolutionparts.io/assets/4d86e32b8e4b13098ffef17fdd393c03.webp\" alt=\"Nissan Technology Image\">\n                </div>\n                <p>Lighting & Technology Accessories</p>\n            </a>\n        </li>\n\t\t<li>\n            <a href=\"https://parts.nissanusa.com/go/Nissan-Pet-Accessories.html\">\n                <div class=\"theme_cat_tab_content_img\">\n                    <img src=\"https://cdn.revolutionparts.io/images/840d68cbbbfa627cd4635408a6c82009/af4487a139450404a022c01a4a3eefab.jpeg\" alt=\"Nissan Pet Accessories\">\n                </div>\n                <p>Pet Accessories</p>\n            </a>\n        </li>\n\t\t<li>\n            <a href=\"https://parts.nissanusa.com/accessories/cargo\">\n                <div class=\"theme_cat_tab_content_img\">\n                    <img src=\"https://cdn-product-images.revolutionparts.io/assets/d85b38fdce77c15a232429026661d708.gif\" alt=\"Nissan Cargo Accessories\">\n                </div>\n                <p>Cargo Accessories</p>\n            </a>\n        </li>\n    </ul>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "tab_content tab_content_in",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

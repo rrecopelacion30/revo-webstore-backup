@@ -1,0 +1,915 @@
+{
+  "pageId": "page",
+  "pageName": "Text Page",
+  "pageType": null,
+  "layoutEnabled": true,
+  "moduleCategories": [
+    "header",
+    "images",
+    "text",
+    "search",
+    "categories_products",
+    "forms",
+    "navigation",
+    "footer"
+  ],
+  "VFSPath": "layouts/page.json",
+  "requiredModules": [],
+  "scripts": "",
+  "sections": [
+    {
+      "sectionId": "section_71",
+      "htmlId": "themeNewPageBannerSection",
+      "htmlClasses": "themeNewPageBannerSection",
+      "contentWidth": "full",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_72",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_73",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_77",
+                  "moduleType": "banner_vpicker",
+                  "title": "Banner ",
+                  "options": {
+                    "banner_slides": {
+                      "name": "Banner Slides",
+                      "type": "object",
+                      "default_value": [],
+                      "value": [
+                        {
+                          "slideId": "slide_215",
+                          "image": "https://cdn.revolutionparts.io/223b3e40451187171b9a7229149b1553/design/rogue_banner_v2.webp",
+                          "link": "",
+                          "alt": ""
+                        }
+                      ]
+                    },
+                    "overlay_header": {
+                      "name": "Overlay Header",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "<span class=\"themeNewPageBannerDate\">NISSAN</span>Rogue®<br> Accessories"
+                    },
+                    "overlay_content": {
+                      "name": "Overlay Content",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "<p>\n    Genuine Nissan and Affiliated: Yakima® accessories provide customization options that can make your vision of your Rogue a reality. <span class=\"custom-tooltip-wrapper\"><a href=\"#\" class=\"tooltip-anchor\">[*]</a><span class=\"custom-tooltip\">                 \n        Images shown for illustrative purposes only. For complete limited warranty details, see your Nissan dealer and read the product warranty information.\n    </span></span><span class=\"custom-tooltip-wrapper\"><a href=\"#\" class=\"tooltip-anchor\">[*]</a><span class=\"custom-tooltip\">                 \n        Images shown for illustrative purposes only.  Affiliated: Yakima® accessories shown are not genuine Nissan parts/accessories. Not warrantied by Nissan. Refer to product manufacturer for warranty details. Nissan limited warranty does not cover damages or failures to the vehicle caused by improper installation or alterations of any accessory or component. Contact your dealer for details.\n    </span></span>\n</p>"
+                    },
+                    "picker_title": {
+                      "name": "Picker Title",
+                      "type": "string",
+                      "default_value": "Select Your Vehicle",
+                      "value": "Select Your Vehicle"
+                    },
+                    "hide_vehicle_picker": {
+                      "name": "Hide Vehicle Picker",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": true
+                    },
+                    "slider_timeout": {
+                      "name": "Slider Speed",
+                      "type": "string",
+                      "default_value": "4000",
+                      "value": "4000"
+                    },
+                    "banner_height": {
+                      "name": "Banner Height",
+                      "type": "string",
+                      "default_value": "290",
+                      "value": "700"
+                    },
+                    "use_overlay_shadows": {
+                      "name": "Overlay Shadows",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    },
+                    "banner_image_fill": {
+                      "name": "Banner Image Fill",
+                      "type": "select",
+                      "possible_values": [
+                        {
+                          "value": "cover",
+                          "label": "Cover"
+                        },
+                        {
+                          "value": "contain",
+                          "label": "Contain"
+                        }
+                      ],
+                      "default_value": "cover",
+                      "value": "cover"
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": true,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_32",
+      "htmlId": "",
+      "htmlClasses": "",
+      "contentWidth": "wide",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_130",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_132",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_27",
+                  "moduleType": "custom_html",
+                  "title": "Cart Main Title",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"themeCardMainTitleWrap\">\n    <p class=\"themeCardMainTitleTagline\">\n        ROGUE EXTERIOR ACCESSORIES\n    </p>\n    <h3>\n        Make a lasting impression\n    </h3>\n    <p class=\"themeCardMainTitleDescription\">\n        Stand out with a wide array of accessories that put your sense of style on display and help guard against the unexpected. Your Rogue can be equipped with many available accessories, such as Roof Rail Crossbars, a Hatch Tent, and a Satin Chrome Rear Bumper Protector.\n    </p>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_128",
+      "htmlId": "themeForsbergPackageSection",
+      "htmlClasses": "themeForsbergPackageSection themeForsbergPackageSectionDark",
+      "contentWidth": "wide",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_129",
+          "rowLayout": "8_4",
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_130",
+              "columnWidth": 8,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_133",
+                  "moduleType": "custom_html",
+                  "title": "Exterior Ground Lighting W/ Logo",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"themeForsbergPackageBigCard\">\n    <div class=\"themeForsbergPackageBigCardImg\">\n        <img alt=\"Rogue Image\" src=\"https://cdn.revolutionparts.io/223b3e40451187171b9a7229149b1553/design/accessories/rogue/b1-img1.webp\">\n    </div>\n    <div class=\"themeForsbergPackageBigCardContent\">\n        <h3>\n\t\t\tExterior Ground Lighting w/ Logo\n\t\t</h3>\n        <ul>\n\t\t<li>Just click for a sense of security with lights that brighten up the area beneath and around your vehicle</li>\n\t\t<li>Illuminates the ground near the front doors with the Nissan logo</li>\n\t\t<li>Goes on when you press the key fob, press the entry button, or open doors</li>\n\t\t</ul>\n        <p class=\"themeMsrp custom-tooltip-wrapper\">\n            MSRP $472 <a href=\"#\" class=\"tooltip-anchor\">[*]</a>\n            <span class=\"custom-tooltip\">\n                Price is Manufacturer's Suggested Retail Price (MSRP). MSRP excludes installation (except if factory-installed), taxes and other costs, and is subject to change without prior notice. Dealer sets actual price. Pictures are for informational purposes only.\n            </span>\n        </p>\n        <div class=\"themeVehicleBannerButton\"> \n            <a href=\"parts/nissan-exterior-ground-lighting-w-logo-t99f46rr3c\">View Item</a>\n        </div>\n    </div>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "tabCard tabCard01",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_134",
+                  "moduleType": "custom_html",
+                  "title": "Clear Hood Protector",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"themeForsbergPackageBigCard\">\n    <div class=\"themeForsbergPackageBigCardImg\">\n        <img alt=\"Rogue Image\" src=\"https://cdn.revolutionparts.io/223b3e40451187171b9a7229149b1553/design/accessories/rogue/b1-img2.webp\">\n    </div>\n    <div class=\"themeForsbergPackageBigCardContent\">\n        <h3>\n\t\t\tClear Hood Protector\n\t\t</h3>\n        <ul>\n\t\t<li>Transparent design provides protection without sacrificing style</li>\n\t\t<li>Easy, no-drill installation</li>\n\t\t</ul>\n        <p class=\"themeMsrp custom-tooltip-wrapper\">\n            MSRP $179 <a href=\"#\" class=\"tooltip-anchor\">[*]</a>\n            <span class=\"custom-tooltip\">\n                Price is Manufacturer's Suggested Retail Price (MSRP). MSRP excludes installation (except if factory-installed), taxes and other costs, and is subject to change without prior notice. Dealer sets actual price. Pictures are for informational purposes only.\n            </span>\n        </p>\n        <div class=\"themeVehicleBannerButton\"> \n            <a href=\"parts/nissan-clear-hood-protector-t99d86rr0a\">View Item</a>\n        </div>\n    </div>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "tabCard tabCard02",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_135",
+                  "moduleType": "custom_html",
+                  "title": "Side-Window Deflectors",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"themeForsbergPackageBigCard\">\n    <div class=\"themeForsbergPackageBigCardImg\">\n        <img alt=\"Rogue Image\" src=\"https://cdn.revolutionparts.io/223b3e40451187171b9a7229149b1553/design/accessories/rogue/window_side_deflector_rogue.webp\">\n    </div>\n    <div class=\"themeForsbergPackageBigCardContent\">\n        <h3>\n            Side-Window Deflectors\n        </h3>\n        <ul>\n\t\t<li>Stylish, Genuine Nissan Side-Window Deflectors help to fight glare and reduce wind noise within your ROGUE</li>\n        <li>Easy, tool-free installation</li>\n        <li>Comes in a set of four</li>\n\t\t</ul>\n        <p class=\"themeMsrp custom-tooltip-wrapper\">\n            MSRP $210 <a href=\"#\" class=\"tooltip-anchor\">[*]</a>\n            <span class=\"custom-tooltip\">\n                Price is Manufacturer's Suggested Retail Price (MSRP). MSRP excludes installation (except if factory-installed), taxes and other costs, and is subject to change without prior notice. Dealer sets actual price. Pictures are for informational purposes only.\n            </span>\n        </p>\n        <div class=\"themeVehicleBannerButton\"> \n            <a href=\"parts/nissan-side-window-deflectors-h08006rr2a\">View Item</a>\n        </div>\n    </div>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "tabCard tabCard03",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_136",
+                  "moduleType": "custom_html",
+                  "title": "Hatch Tent",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"themeForsbergPackageBigCard\">\n    <div class=\"themeForsbergPackageBigCardImg\">\n        <img alt=\"Rogue Image\" src=\"https://cdn.revolutionparts.io/223b3e40451187171b9a7229149b1553/design/accessories/rogue/b1-img4.webp\">\n    </div>\n    <div class=\"themeForsbergPackageBigCardContent\">\n        <h3>\n            Hatch Tent\n        </h3>\n        <ul>\n\t\t<li>Unfolds easily to a 10' x 10' tent, either connected to your Rogue or as a stand-alone</li>\n\t\t<li>6' x 6' canopy and external rain-fly</li>\n\t\t<li>Also available with 9' x 9' base (see dealer for pricing information)</li>\n\t\t</ul>\n        <p class=\"themeMsrp custom-tooltip-wrapper\">\n            MSRP $548 <a href=\"#\" class=\"tooltip-anchor\">[*]</a>\n            <span class=\"custom-tooltip\">\n                Price is Manufacturer's Suggested Retail Price (MSRP). MSRP excludes installation (except if factory-installed), taxes and other costs, and is subject to change without prior notice. Dealer sets actual price. Pictures are for informational purposes only.\n            </span>\n        </p>\n        <div class=\"themeVehicleBannerButton\"> \n            <a href=\"parts/nissan-hatch-tent-10-x-10-999t7xy100\">View Item</a>\n        </div>\n    </div>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "tabCard tabCard04",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_198",
+                  "moduleType": "custom_html",
+                  "title": "Satin Chrome Rear Bumper Protector",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"themeForsbergPackageBigCard\">\n    <div class=\"themeForsbergPackageBigCardImg\">\n        <img alt=\"Rogue Image\" src=\"https://cdn.revolutionparts.io/223b3e40451187171b9a7229149b1553/design/accessories/rogue/bumber_protector_img03.webp\">\n    </div>\n    <div class=\"themeForsbergPackageBigCardContent\">\n        <h3>\n            Satin Chrome Rear Bumper Protector\n        </h3>\n        <ul>\n\t\t<li>Designed to help prevent scratches and scuffs when loading cargo</li>\n\t\t<li>Easy, no-drill installation</li>\n\t\t</ul>\n        <p class=\"themeMsrp custom-tooltip-wrapper\">\n            MSRP $153 <a href=\"#\" class=\"tooltip-anchor\">[*]</a>\n            <span class=\"custom-tooltip\">\n                Price is Manufacturer's Suggested Retail Price (MSRP). MSRP excludes installation (except if factory-installed), taxes and other costs, and is subject to change without prior notice. Dealer sets actual price. Pictures are for informational purposes only.\n            </span>\n        </p>\n        <div class=\"themeVehicleBannerButton\"> \n            <a href=\"parts/nissan-satin-chrome-rear-bumper-protector-t99b16rr3e\">View Item</a>\n        </div>\n    </div>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "tabCard tabCard05",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_322",
+                  "moduleType": "custom_html",
+                  "title": "Black Roof Rail Crossbars",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"themeForsbergPackageBigCard\">\n    <div class=\"themeForsbergPackageBigCardImg\">\n        <img alt=\"Rogue Image\" src=\"https://cdn.revolutionparts.io/223b3e40451187171b9a7229149b1553/design/accessories/rogue/black_rail_crossbar_rogue.webp\">\n    </div>\n    <div class=\"themeForsbergPackageBigCardContent\">\n        <h3>\n            Black Roof Rail Crossbars\n        </h3>\n        <ul>\n\t\t<li>You can add roof rail attachments and increase your cargo-carrying options when you get Roof Rail Crossbars</li>\n        <li>Perfect for mounting a variety of Affiliated Yakima® accessories</li>\n        <li>Crossbars integrate into existing roof rails for maximum utility</li>\n        <li>Nissan Roof Rail Crossbars have a maximum weight limit of 100 lbs.</li>\n\t\t</ul>\n        <p class=\"themeMsrp custom-tooltip-wrapper\">\n            MSRP $371 <a href=\"#\" class=\"tooltip-anchor\">[*]</a>\n            <span class=\"custom-tooltip\">\n                Price is Manufacturer's Suggested Retail Price (MSRP). MSRP excludes installation (except if factory-installed), taxes and other costs, and is subject to change without prior notice. Dealer sets actual price. Pictures are for informational purposes only.\n            </span>\n        </p>\n        <div class=\"themeVehicleBannerButton\"> \n            <a href=\"parts/nissan-black-roof-rail-crossbars-t99r16rr0d\">View Item</a>\n        </div>\n    </div>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "tabCard tabCard06",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_323",
+                  "moduleType": "custom_html",
+                  "title": "Splash Guards",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"themeForsbergPackageBigCard\">\n    <div class=\"themeForsbergPackageBigCardImg\">\n        <img alt=\"Rogue Image\" src=\"https://cdn.revolutionparts.io/223b3e40451187171b9a7229149b1553/design/accessories/rogue/splash_guard_rogue.webp\">\n    </div>\n    <div class=\"themeForsbergPackageBigCardContent\">\n        <h3>\n            Splash Guards\n        </h3>\n        <ul>\n\t\t<li>Rear splash guards shown. Help prevent dirt spray for fewer nicks and scratches. Option: Rear 2-pc Set. (Save your Rogue from an unwelcome mud bath. Contoured to match the wheel openings and help protect the lower body panels).</li>\n\t\t</ul>\n        <p class=\"themeMsrp custom-tooltip-wrapper\">\n            MSRP $64 <a href=\"#\" class=\"tooltip-anchor\">[*]</a>\n            <span class=\"custom-tooltip\">\n                Price is Manufacturer's Suggested Retail Price (MSRP). MSRP excludes installation (except if factory-installed), taxes and other costs, and is subject to change without prior notice. Dealer sets actual price. Pictures are for informational purposes only.\n            </span>\n        </p>\n        <div class=\"themeVehicleBannerButton\"> \n            <a href=\"parts/nissan-splash-guards-g8810jm00a\">View Item</a>\n        </div>\n    </div>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "tabCard tabCard07",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            },
+            {
+              "columnId": "column_131",
+              "columnWidth": 4,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_132",
+                  "moduleType": "custom_html",
+                  "title": "Package Image Link",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<ul class=\"themeForsbergPackageImgList\">\n    <li class=\"themeForsbergPackageImgListItem\">\n        <a href=\"#\" data-toggle-target=\".tabCard01\" class=\"themeForsbergPackageImgListLink\">\n            <img alt=\"Rogue Image\" src=\"https://rparts-sites.s3.amazonaws.com/223b3e40451187171b9a7229149b1553/design/accessories/rogue/b1-img1.webp\" class=\"themeForsbergPackageImgListCard\">\n        </a>\n    </li>\n    <li class=\"themeForsbergPackageImgListItem\">\n        <a href=\"#\" data-toggle-target=\".tabCard02\" class=\"themeForsbergPackageImgListLink\">\n            <img alt=\"Rogue Image\" src=\"https://rparts-sites.s3.amazonaws.com/223b3e40451187171b9a7229149b1553/design/accessories/rogue/b1-img2.webp\" class=\"themeForsbergPackageImgListCard\">\n        </a>\n    </li>\n    <li class=\"themeForsbergPackageImgListItem\">\n        <a href=\"#\" data-toggle-target=\".tabCard03\" class=\"themeForsbergPackageImgListLink\">\n            <img alt=\"Rogue Image\" src=\"https://rparts-sites.s3.amazonaws.com/223b3e40451187171b9a7229149b1553/design/accessories/rogue/window_side_deflector_rogue.webp\" class=\"themeForsbergPackageImgListCard\">\n        </a>\n    </li>\n    <li class=\"themeForsbergPackageImgListItem\">\n        <a href=\"#\" data-toggle-target=\".tabCard04\" class=\"themeForsbergPackageImgListLink\">\n            <img alt=\"Rogue Image\" src=\"https://rparts-sites.s3.amazonaws.com/223b3e40451187171b9a7229149b1553/design/accessories/rogue/b1-img4.webp\" class=\"themeForsbergPackageImgListCard\">\n        </a>\n    </li>\n\t<li class=\"themeForsbergPackageImgListItem\">\n        <a href=\"#\" data-toggle-target=\".tabCard05\" class=\"themeForsbergPackageImgListLink\">\n            <img alt=\"Rogue Image\" src=\"https://rparts-sites.s3.amazonaws.com/223b3e40451187171b9a7229149b1553/design/accessories/rogue/b1-img5.webp\" class=\"themeForsbergPackageImgListCard\">\n        </a>\n    </li>\n    <li class=\"themeForsbergPackageImgListItem\">\n        <a href=\"#\" data-toggle-target=\".tabCard06\" class=\"themeForsbergPackageImgListLink\">\n            <img alt=\"Rogue Image\" src=\"https://rparts-sites.s3.amazonaws.com/223b3e40451187171b9a7229149b1553/design/accessories/rogue/black_rail_crossbar_rogue.webp\" class=\"themeForsbergPackageImgListCard\">\n        </a>\n    </li>\n    <li class=\"themeForsbergPackageImgListItem\">\n        <a href=\"#\" data-toggle-target=\".tabCard07\" class=\"themeForsbergPackageImgListLink\">\n            <img alt=\"Rogue Image\" src=\"https://rparts-sites.s3.amazonaws.com/223b3e40451187171b9a7229149b1553/design/accessories/rogue/splash_guard_rogue.webp\" class=\"themeForsbergPackageImgListCard\">\n        </a>\n    </li>\n    <li class=\"themeForsbergPackageImgListItemLink\">\n        <a href=\"https://parts.nissanusa.com/accessories/exterior\" class=\"themeForsbergPackageImgListLinkText\">\n            Shop All Exterior\n        </a>\n    </li>\n</ul>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "desktop-only"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_27",
+      "htmlId": "",
+      "htmlClasses": "",
+      "contentWidth": "wide",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_28",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_29",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_32",
+                  "moduleType": "custom_html",
+                  "title": "Cart Main Title",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"themeCardMainTitleWrap\">\n    <p class=\"themeCardMainTitleTagline\">\n        ROGUE INTERIOR, Lighting and Tech ACCESSORIES\n    </p>\n    <h3>\n        Interior designer: you\n    </h3>\n    <p class=\"themeCardMainTitleDescription\">\n        Showcase your creativity with a wide array of accessories. Take the time to choose pieces that best express your personality.\n    </p>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_166",
+      "htmlId": "themeForsbergPackageSection",
+      "htmlClasses": "themeForsbergPackageSection themeForsbergPackageSectionDark",
+      "contentWidth": "wide",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_167",
+          "rowLayout": "4_8",
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_168",
+              "columnWidth": 4,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_172",
+                  "moduleType": "custom_html",
+                  "title": "Package Image Link",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<ul class=\"themeForsbergPackageImgList\">\n    <li class=\"themeForsbergPackageImgListItemNew\">\n        <a href=\"#\" data-toggle-target=\".tabCardNew01\" class=\"themeForsbergPackageImgListLink\">\n            <img alt=\"Rogue Image\" src=\"https://rparts-sites.s3.amazonaws.com/223b3e40451187171b9a7229149b1553/design/accessories/rogue/b2-img1.webp\" class=\"themeForsbergPackageImgListCard\">\n        </a>\n    </li>\n    <li class=\"themeForsbergPackageImgListItemNew\">\n        <a href=\"#\" data-toggle-target=\".tabCardNew02\" class=\"themeForsbergPackageImgListLink\">\n            <img alt=\"Rogue Image\" src=\"https://rparts-sites.s3.amazonaws.com/223b3e40451187171b9a7229149b1553/design/accessories/rogue/b2-img2.webp\" class=\"themeForsbergPackageImgListCard\">\n        </a>\n    </li>\n    <li class=\"themeForsbergPackageImgListItemNew\">\n        <a href=\"#\" data-toggle-target=\".tabCardNew03\" class=\"themeForsbergPackageImgListLink\">\n            <img alt=\"Rogue Image\" src=\"https://cdn-product-images.revolutionparts.io/assets/e056eb1880ec02727b5cad45bb4dc2d5.webp\" class=\"themeForsbergPackageImgListCard\">\n        </a>\n    </li>\n    <li class=\"themeForsbergPackageImgListItemNew\">\n        <a href=\"#\" data-toggle-target=\".tabCardNew04\" class=\"themeForsbergPackageImgListLink\">\n            <img alt=\"Rogue Image\" src=\"https://rparts-sites.s3.amazonaws.com/223b3e40451187171b9a7229149b1553/design/accessories/rogue/b2-img4.webp\" class=\"themeForsbergPackageImgListCard\">\n        </a>\n    </li>\n\t<li class=\"themeForsbergPackageImgListItemNew\">\n        <a href=\"#\" data-toggle-target=\".tabCardNew05\" class=\"themeForsbergPackageImgListLink\">\n            <img alt=\"Rogue Image\" src=\"https://rparts-sites.s3.amazonaws.com/223b3e40451187171b9a7229149b1553/design/accessories/rogue/b2-img5.webp\" class=\"themeForsbergPackageImgListCard\">\n        </a>\n    </li>\n    <li class=\"themeForsbergPackageImgListItemNew\">\n        <a href=\"#\" data-toggle-target=\".tabCardNew06\" class=\"themeForsbergPackageImgListLink\">\n            <img alt=\"Rogue Image\" src=\"https://rparts-sites.s3.amazonaws.com/223b3e40451187171b9a7229149b1553/design/accessories/rogue/remote_engine_start_rogue.webp\" class=\"themeForsbergPackageImgListCard\">\n        </a>\n    </li>\n    <li class=\"themeForsbergPackageImgListItemNew\">\n        <a href=\"#\" data-toggle-target=\".tabCardNew07\" class=\"themeForsbergPackageImgListLink\">\n            <img alt=\"Rogue Image\" src=\"https://rparts-sites.s3.amazonaws.com/223b3e40451187171b9a7229149b1553/design/accessories/rogue/rear_cargo_area_rogue.webp\" class=\"themeForsbergPackageImgListCard\">\n        </a>\n    </li>\n    <li class=\"themeForsbergPackageImgListItemLink\">\n        <a href=\"https://parts.nissanusa.com/accessories/interior\" class=\"themeForsbergPackageImgListLinkText\">\n            Shop All Interior\n        </a>\n    </li>\n</ul>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "desktop-only"
+                }
+              ]
+            },
+            {
+              "columnId": "column_169",
+              "columnWidth": 8,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_175",
+                  "moduleType": "custom_html",
+                  "title": "All-Season Floor Mats - High Wall Liner",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"themeForsbergPackageBigCard\">\n    <div class=\"themeForsbergPackageBigCardImg\">\n        <img alt=\"Rogue Image\" src=\"https://cdn.revolutionparts.io/223b3e40451187171b9a7229149b1553/design/accessories/rogue/b2-img1.webp\">\n    </div>\n    <div class=\"themeForsbergPackageBigCardContent\">\n        <h3>\n            All-Season Floor Mats &mdash; High Wall Liners (4-piece set)\n        </h3>\n\t\t<ul>\n\t\t<li>Stepping in from the rain or snow? You need a set of All-Season Floor Mats &mdash; High Wall Liners&nbsp;</li>\n\t\t<li>Custom-made of durable and long-wearing material</li>\n\t\t<li>Driver and front-passenger mats secure with a grommet hole/positioning hook system</li>\n\t\t</ul>\n        <p class=\"themeMsrp custom-tooltip-wrapper\">\n            MSRP $200 <a href=\"#\" class=\"tooltip-anchor\">[*]</a>\n            <span class=\"custom-tooltip\">\n                Price is Manufacturer's Suggested Retail Price (MSRP). MSRP excludes installation (except if factory-installed), taxes and other costs, and is subject to change without prior notice. Dealer sets actual price. Pictures are for informational purposes only.\n            </span>\n        </p>\n        <div class=\"themeVehicleBannerButton\"> \n            <a href=\"parts/nissan-all-season-floor-mats-high-wall-liners-rubber-4-piece-black-t99e46rr0b\">View Item</a>\n        </div>\n    </div>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "tabCardNew tabCardNew01",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_178",
+                  "moduleType": "custom_html",
+                  "title": "Cargo Net",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"themeForsbergPackageBigCard\">\n    <div class=\"themeForsbergPackageBigCardImg\">\n        <img alt=\"Rogue Image\" src=\"https://cdn.revolutionparts.io/223b3e40451187171b9a7229149b1553/design/accessories/rogue/b2-img2.webp\">\n    </div>\n    <div class=\"themeForsbergPackageBigCardContent\">\n        <h3>\n            Cargo Net\n        </h3>\n        <ul>\n\t\t<li>Fight the forces of cargo chaos with a Cargo Net that helps keep items in place</li>\n\t\t<li>Secures with tie-down hooks in cargo area&nbsp;</li>\n\t\t<li>Flexible, nylon cord</li>\n\t\t</ul>\n        <p class=\"themeMsrp custom-tooltip-wrapper\">\n            MSRP $63 <a href=\"#\" class=\"tooltip-anchor\">[*]</a>\n            <span class=\"custom-tooltip\">\n                Price is Manufacturer's Suggested Retail Price (MSRP). MSRP excludes installation (except if factory-installed), taxes and other costs, and is subject to change without prior notice. Dealer sets actual price. Pictures are for informational purposes only.\n            </span>\n        </p>\n        <div class=\"themeVehicleBannerButton\"> \n            <a href=\"parts/nissan-cargo-net-t99c16rr0a\">View Item</a>\n        </div>\n    </div>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "tabCardNew tabCardNew02",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_181",
+                  "moduleType": "custom_html",
+                  "title": "Trash Bin",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"themeForsbergPackageBigCard\">\n    <div class=\"themeForsbergPackageBigCardImg\">\n        <img alt=\"Rogue Image\" src=\"https://cdn-product-images.revolutionparts.io/assets/e056eb1880ec02727b5cad45bb4dc2d5.webp\">\n    </div>\n    <div class=\"themeForsbergPackageBigCardContent\">\n        <h3>\n            Trash Bin\n        </h3>\n        <ul>\n\t\t<li>A convenient Trash Bin to keep things tidy</li>\n\t\t<li>Designed to fit in your vehicle cup holders</li>\n\t\t</ul>\n        <p class=\"themeMsrp custom-tooltip-wrapper\">\n            MSRP $54.60 <a href=\"#\" class=\"tooltip-anchor\">[*]</a>\n            <span class=\"custom-tooltip\">\n                Price is Manufacturer's Suggested Retail Price (MSRP). MSRP excludes installation (except if factory-installed), taxes and other costs, and is subject to change without prior notice. Dealer sets actual price. Pictures are for informational purposes only.\n            </span>\n        </p>\n        <div class=\"themeVehicleBannerButton\"> \n            <a href=\"parts/nissan-trash-bin-t99a76ta1a\">View Item</a>\n        </div>\n    </div>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "tabCardNew tabCardNew03",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_184",
+                  "moduleType": "custom_html",
+                  "title": "Dual Camera Drive Recorder",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"themeForsbergPackageBigCard\">\n    <div class=\"themeForsbergPackageBigCardImg\">\n        <img alt=\"Rogue Image\" src=\"https://cdn.revolutionparts.io/223b3e40451187171b9a7229149b1553/design/accessories/rogue/b2-img4.webp\">\n    </div>\n    <div class=\"themeForsbergPackageBigCardContent\">\n        <h3>\n            Dual Camera Drive Recorder\n        </h3>\n        <ul> \n\t\t\t<li>Points forward to capture what is in front of the vehicle, points to the inside to catch what happens in the cabin</li> \n\t\t\t<li>G-sensor can turn on the interior camera in case of break-in</li> \n\t\t\t<li>Saves footage that can be shared with insurance, police, or family members<br> </li> \n\t\t</ul>\n        <p class=\"themeMsrp custom-tooltip-wrapper\">\n            MSRP $376 <a href=\"#\" class=\"tooltip-anchor\">[*]</a>\n            <span class=\"custom-tooltip\">\n                Price is Manufacturer's Suggested Retail Price (MSRP). MSRP excludes installation (except if factory-installed), taxes and other costs, and is subject to change without prior notice. Dealer sets actual price. Pictures are for informational purposes only.\n            </span>\n        </p>\n        <div class=\"themeVehicleBannerButton\"> \n            <a href=\"parts/nissan-dual-camera-drive-recorder-t99q65vg0b\">View Item</a>\n        </div>\n    </div>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "tabCardNew tabCardNew04",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_96",
+                  "moduleType": "custom_html",
+                  "title": "Interior Accent Lighting",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"themeForsbergPackageBigCard\">\n    <div class=\"themeForsbergPackageBigCardImg\">\n        <img alt=\"Rogue Image\" src=\"https://cdn.revolutionparts.io/223b3e40451187171b9a7229149b1553/design/accessories/rogue/b2-img5.webp\">\n    </div>\n    <div class=\"themeForsbergPackageBigCardContent\">\n        <h3>\n            Interior Accent Lighting\n        </h3>\n        <ul>\n\t\t<li>LEDs with 20 pre-programmed color options light up the footwells and front cup holders</li>\n\t\t<li>Easily control light color and on/off function with a single knob</li>\n\t\t<li>Works with the vehicle’s interior lighting when the door is opened</li>\n\t\t</ul>\n        <p class=\"themeMsrp custom-tooltip-wrapper\">\n            MSRP $311 <a href=\"#\" class=\"tooltip-anchor\">[*]</a>\n            <span class=\"custom-tooltip\">\n                Price is Manufacturer's Suggested Retail Price (MSRP). MSRP excludes installation (except if factory-installed), taxes and other costs, and is subject to change without prior notice. Dealer sets actual price. Pictures are for informational purposes only.\n            </span>\n        </p>\n        <div class=\"themeVehicleBannerButton\"> \n            <a href=\"parts/nissan-interior-accent-lighting-t99f36rr0a\">View Item</a>\n        </div>\n    </div>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "tabCardNew tabCardNew05",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_340",
+                  "moduleType": "custom_html",
+                  "title": "Remote Engine Start",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"themeForsbergPackageBigCard\">\n    <div class=\"themeForsbergPackageBigCardImg\">\n        <img alt=\"Rogue Image\" src=\"https://cdn.revolutionparts.io/223b3e40451187171b9a7229149b1553/design/accessories/rogue/remote_engine_start_rogue.webp\">\n    </div>\n    <div class=\"themeForsbergPackageBigCardContent\">\n        <h3>\n            Remote Engine Start\n        </h3>\n        <ul>\n\t\t<li>Beat cold mornings or hot days</li>\n\t\t<li>The Remote Engine Start system allows you to start your NISSAN Rogue remotely so your vehicle will be ready when you begin driving</li>\n\t\t<li>Starts your vehicle from up to 295 ft. away</li>\n\t\t</ul>\n        <p class=\"themeMsrp custom-tooltip-wrapper\">\n            MSRP $305 <a href=\"#\" class=\"tooltip-anchor\">[*]</a>\n            <span class=\"custom-tooltip\">\n                Price is Manufacturer's Suggested Retail Price (MSRP). MSRP excludes installation (except if factory-installed), taxes and other costs, and is subject to change without prior notice. Dealer sets actual price. Pictures are for informational purposes only.\n            </span>\n        </p>\n        <div class=\"themeVehicleBannerButton\"> \n            <a href=\"parts/nissan-remote-engine-start-t99k16ta4b\">View Item</a>\n        </div>\n    </div>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "tabCardNew tabCardNew06",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_341",
+                  "moduleType": "custom_html",
+                  "title": "Rear Cargo Area Cover",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"themeForsbergPackageBigCard\">\n    <div class=\"themeForsbergPackageBigCardImg\">\n        <img alt=\"Rogue Image\" src=\"https://cdn.revolutionparts.io/223b3e40451187171b9a7229149b1553/design/accessories/rogue/rear_cargo_area_rogue.webp\">\n    </div>\n    <div class=\"themeForsbergPackageBigCardContent\">\n        <h3>\n            Rear Cargo Area Cover\n        </h3>\n        <ul>\n\t\t<li>Keep your cargo safely covered</li>\n\t\t<li>Removable cover keeps important items out of view</li>\n\t\t<li>Mounts and operates easily</li>\n        <li>Dealer-installed</li>\n\t\t</ul>\n        <p class=\"themeMsrp custom-tooltip-wrapper\">\n            MSRP $201 <a href=\"#\" class=\"tooltip-anchor\">[*]</a>\n            <span class=\"custom-tooltip\">\n                Price is Manufacturer's Suggested Retail Price (MSRP). MSRP excludes installation (except if factory-installed), taxes and other costs, and is subject to change without prior notice. Dealer sets actual price. Pictures are for informational purposes only.\n            </span>\n        </p>\n        <div class=\"themeVehicleBannerButton\"> \n            <a href=\"parts/nissan-rear-cargo-area-cover-t99n36rr0b\">View Item</a>\n        </div>\n    </div>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "tabCardNew tabCardNew07",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_514",
+      "htmlId": "",
+      "htmlClasses": "",
+      "contentWidth": "wide",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_515",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_516",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_517",
+                  "moduleType": "custom_html",
+                  "title": "Cart Main Title",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"themeCardMainTitleWrap\">\n    <p class=\"themeCardMainTitleTagline\">\n        NISSAN AFFILIATED: YAKIMA® ACCESSORIES\n    </p>\n    <h3>\n        How bold will you go?\n    </h3>\n    <p class=\"themeCardMainTitleDescription\">\n        Ready to go bigger, bolder, and even get a little dirtier? Make every day an adventure with Affiliated: Yakima® accessories.\n    </p>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_518",
+      "htmlId": "themeNewPageCardSection",
+      "htmlClasses": "themeNewPageCardSection themeNewPageCardSectionCol5",
+      "contentWidth": "wide",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_519",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_520",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_521",
+                  "moduleType": "custom_html",
+                  "title": "Card Section",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"themeNewPageCardWrapper\">\n    <div id=\"themeNewPageCardList02\" class=\"themeNewPageCardList owl-carousel owl-theme\">\n        <div class=\"themeNewPageCardItem\">\n            <div class=\"themeNewPageCardBox\">\n                <div class=\"themeNewPageCardImage\">\n                    <img alt=\"Rogue Image\" src=\"https://cdn.revolutionparts.io/223b3e40451187171b9a7229149b1553/design/accessories/rogue/b3-img1_new.webp\">\n                </div>\n                <div class=\"themeNewPageCardContent\">\n                    <h4>\n                        Affiliated: Yakima® RidgeBack 2 - Hitch Mount Bike Rack\n                        <div class=\"custom-tooltip-wrapper\">\n                            <a href=\"#\" class=\"tooltip-anchor\">[*]</a> \n                            <span class=\"custom-tooltip\">                 \n                                Accessories shown are not genuine Nissan parts/accessories. Not warranted by Nissan. Refer to product manufacturer for warranty details. Nissan limited warranty does not cover damages or failures to the vehicle caused by improper installation or alterations of any accessory or component. Contact your dealer for details.\n                            </span> \n                        </div>\n                        <div class=\"custom-tooltip-wrapper\">\n                            <a href=\"#\" class=\"tooltip-anchor\">[*]</a> \n                            <span class=\"custom-tooltip\">                 \n                                Cargo and load capacity limited by weight and distribution. Always secure cargo. Heavy loading of the vehicle with cargo, especially on the roof, will affect the handling and stability of the vehicle.\n                            </span> \n                        </div>\n                        <div class=\"custom-tooltip-wrapper\">\n                            <a href=\"#\" class=\"tooltip-anchor\">[*]</a> \n                            <span class=\"custom-tooltip\">                 \n                                The Nissan names, logos and slogans are trademarks owned by or licensed to Nissan Motor Co. Ltd. and/or its North American subsidiaries. Other trademarks and trade names are those of their respective owners.\n                            </span> \n                        </div>\n                        <div class=\"custom-tooltip-wrapper\">\n                            <a href=\"#\" class=\"tooltip-anchor\">[*]</a> \n                            <span class=\"custom-tooltip\">                 \n                                Vehicle shown is for illustrative purposes only. Not representative of named model year / model.\n                            </span> \n                        </div>\n                    </h4>\n                    <p class=\"themeMsrp custom-tooltip-wrapper\">\n                        MSRP $719 <a href=\"#\" class=\"tooltip-anchor\">[*]</a>\n                        <span class=\"custom-tooltip\">\n                            Price is Manufacturer's Suggested Retail Price (MSRP). MSRP excludes installation (except if factory-installed), taxes and other costs, and is subject to change without prior notice. Dealer sets actual price. Pictures are for informational purposes only.\n                        </span>\n                    </p>\n                    <ul>\n\t\t\t\t\t<li>\n\t\t\t\t\t\tCompatible with Genuine Nissan Accessory Tow Hitch Receiver\n\t\t\t\t\t</li>\n\t\t\t\t\t<li>Hitch-mounted rack tilts away for vehicle access</li>\n\t\t\t\t\t<li>Zero-hassle ZipStrips&trade; quickly secure bikes to rack</li>\n\t\t\t\t\t<li>Anti-sway cradles eliminate bike-to-bike contact<br>\n\t\t\t\t\t</li>\n\t\t\t\t\t</ul>\n                    <div class=\"themeVehicleBannerButton\"> \n\t\t\t\t\t\t<a href=\"parts/nissan-affiliated-yakima-reg-ridgeback-2-hitch-mount-bike-rack-t99r5a6802\">View Item</a> \n\t\t\t\t\t</div>\n                </div>\n            </div>\n        </div>\n        <div class=\"themeNewPageCardItem\">\n            <div class=\"themeNewPageCardBox\">\n                <div class=\"themeNewPageCardImage\">\n                    <img alt=\"Rogue Image\" src=\"https://cdn.revolutionparts.io/223b3e40451187171b9a7229149b1553/design/accessories/rogue/b3-img2.webp\">\n                </div>\n                <div class=\"themeNewPageCardContent\">\n                    <h4>\n                        Affiliated: Yakima® SupDawg &mdash; Surfboard Carrier\n                        <div class=\"custom-tooltip-wrapper\">\n                            <a href=\"#\" class=\"tooltip-anchor\">[*]</a> \n                            <span class=\"custom-tooltip\">                 \n                                Accessories shown are not genuine Nissan parts/accessories. Not warranted by Nissan. Refer to product manufacturer for warranty details. Nissan limited warranty does not cover damages or failures to the vehicle caused by improper installation or alterations of any accessory or component. Contact your dealer for details.\n                            </span> \n                        </div>\n                        <div class=\"custom-tooltip-wrapper\">\n                            <a href=\"#\" class=\"tooltip-anchor\">[*]</a> \n                            <span class=\"custom-tooltip\">                 \n                                Cargo and load capacity limited by weight and distribution. Always secure cargo. Heavy loading of the vehicle with cargo, especially on the roof, will affect the handling and stability of the vehicle.\n                            </span> \n                        </div>\n                        <div class=\"custom-tooltip-wrapper\">\n                            <a href=\"#\" class=\"tooltip-anchor\">[*]</a> \n                            <span class=\"custom-tooltip\">                 \n                                Vehicle shown is for illustrative purposes only. Not representative of named model year / model.\n                            </span> \n                        </div>\n                    </h4>\n                    <p class=\"themeMsrp custom-tooltip-wrapper\">\n                        MSRP $379 <a href=\"#\" class=\"tooltip-anchor\">[*]</a>\n                        <span class=\"custom-tooltip\">\n                            Price is Manufacturer's Suggested Retail Price (MSRP). MSRP excludes installation (except if factory-installed), taxes and other costs, and is subject to change without prior notice. Dealer sets actual price. Pictures are for informational purposes only.\n                        </span>\n                    </p>\n                    <ul>\n\t\t\t\t\t<li>\n\t\t\t\t\t\t<p class=\"custom-tooltip-wrapper\">\n\t\t\t\t\t\t\tCompatible with Genuine Nissan Accessory Roof Rail Crossbars <a href=\"#\" class=\"tooltip-anchor\">[*]</a>\n                        <span class=\"custom-tooltip\">\n                            Genuine Nissan Accessory Roof Rail Crossbars have a maximum weight limit of 100 lbs.\n                        </span>\n\t\t\t\t\t\t</p>\n\t\t\t\t\t</li>\n\t\t\t\t\t<li>Includes everything necessary to carry two surfboards or stand-up paddleboards</li>\n\t\t\t\t\t<li>Soft padding cradles and protects boards<br>\n\t\t\t\t\t</li>\n\t\t\t\t\t</ul>\n                    <div class=\"themeVehicleBannerButton\"> \n\t\t\t\t\t\t<a href=\"parts/nissan-affiliated-yakima-reg-supdawg-surf-board-carrier-t99r2a602a\">View Item</a> \n\t\t\t\t\t</div>\n                </div>\n            </div>\n        </div>\n        <div class=\"themeNewPageCardItem\">\n            <div class=\"themeNewPageCardBox\">\n                <div class=\"themeNewPageCardImage\">\n                    <img alt=\"Rogue Image\" src=\"https://cdn.revolutionparts.io/223b3e40451187171b9a7229149b1553/design/accessories/rogue/b3-img3.webp\">\n                </div>\n                <div class=\"themeNewPageCardContent\">\n                    <h4>\n                        Affiliated: Yakima® LoadWarrior &mdash; Cargo Basket\n                        <div class=\"custom-tooltip-wrapper\">\n                            <a href=\"#\" class=\"tooltip-anchor\">[*]</a> \n                            <span class=\"custom-tooltip\">                 \n                                Accessories shown are not genuine Nissan parts/accessories. Not warranted by Nissan. Refer to product manufacturer for warranty details. Nissan limited warranty does not cover damages or failures to the vehicle caused by improper installation or alterations of any accessory or component. Contact your dealer for details.\n                            </span> \n                        </div>\n                        <div class=\"custom-tooltip-wrapper\">\n                            <a href=\"#\" class=\"tooltip-anchor\">[*]</a> \n                            <span class=\"custom-tooltip\">                 \n                                Cargo and load capacity limited by weight and distribution. Always secure cargo. Heavy loading of the vehicle with cargo, especially on the roof, will affect the handling and stability of the vehicle.\n                            </span> \n                        </div>\n                        <div class=\"custom-tooltip-wrapper\">\n                            <a href=\"#\" class=\"tooltip-anchor\">[*]</a> \n                            <span class=\"custom-tooltip\">                 \n                                The Nissan names, logos and slogans are trademarks owned by or licensed to Nissan Motor Co. Ltd. and/or its North American subsidiaries. Other trademarks and trade names are those of their respective owners.\n                            </span> \n                        </div>\n                        <div class=\"custom-tooltip-wrapper\">\n                            <a href=\"#\" class=\"tooltip-anchor\">[*]</a> \n                            <span class=\"custom-tooltip\">                 \n                                Vehicle shown is for illustrative purposes only. Not representative of named model year / model.\n                            </span> \n                        </div>\n                    </h4>\n                    <p class=\"themeMsrp custom-tooltip-wrapper\">\n                        MSRP $529 <a href=\"#\" class=\"tooltip-anchor\">[*]</a>\n                        <span class=\"custom-tooltip\">\n                            Price is Manufacturer's Suggested Retail Price (MSRP). MSRP excludes installation (except if factory-installed), taxes and other costs, and is subject to change without prior notice. Dealer sets actual price. Pictures are for informational purposes only.\n                        </span>\n                    </p>\n                    <ul>\n\t\t\t\t\t<li>\n\t\t\t\t\t\t<p class=\"custom-tooltip-wrapper\">\n\t\t\t\t\t\t\tCompatible with Genuine Nissan Accessory Roof Rail Crossbars <a href=\"#\" class=\"tooltip-anchor\">[*]</a>\n                        <span class=\"custom-tooltip\">\n                            Genuine Nissan Accessory Roof Rail Crossbars have a maximum weight limit of 100 lbs.\n                        </span>\n\t\t\t\t\t\t</p>\n\t\t\t\t\t</li>\n\t\t\t\t\t<li>Weather-resistant, heavy-duty steel construction</li>\n\t\t\t\t\t<li>Custom wind fairing included to reduce wind noise</li>\n\t\t\t\t\t<li>Accommodates most Yakima® gear mounts for all your outdoor activities<br>\n\t\t\t\t\t</li>\n\t\t\t\t\t</ul>\n                    <div class=\"themeVehicleBannerButton\"> \n\t\t\t\t\t\t<a href=\"parts/nissan-affiliated-yakima-reg-loadwarrior-mdash-cargo-basket-t99r2a601a\">View Item</a> \n\t\t\t\t\t</div>\n                </div>\n            </div>\n        </div>\n\t\t<div class=\"themeNewPageCardItem\">\n            <div class=\"themeNewPageCardBox\">\n                <div class=\"themeNewPageCardImage\">\n                    <img alt=\"Rogue Image\" src=\"https://cdn.revolutionparts.io/223b3e40451187171b9a7229149b1553/design/accessories/rogue/b3-img4.webp\">\n                </div>\n                <div class=\"themeNewPageCardContent\">\n                    <h4>\n                        Affiliated: Yakima® FatCat EVO 6 &mdash; Ski Carrier\n                        <div class=\"custom-tooltip-wrapper\">\n                            <a href=\"#\" class=\"tooltip-anchor\">[*]</a> \n                            <span class=\"custom-tooltip\">                 \n                                Accessories shown are not genuine Nissan parts/accessories. Not warranted by Nissan. Refer to product manufacturer for warranty details. Nissan limited warranty does not cover damages or failures to the vehicle caused by improper installation or alterations of any accessory or component. Contact your dealer for details.\n                            </span> \n                        </div>\n                        <div class=\"custom-tooltip-wrapper\">\n                            <a href=\"#\" class=\"tooltip-anchor\">[*]</a> \n                            <span class=\"custom-tooltip\">                 \n                                Cargo and load capacity limited by weight and distribution. Always secure cargo. Heavy loading of the vehicle with cargo, especially on the roof, will affect the handling and stability of the vehicle.\n                            </span> \n                        </div>\n                        <div class=\"custom-tooltip-wrapper\">\n                            <a href=\"#\" class=\"tooltip-anchor\">[*]</a> \n                            <span class=\"custom-tooltip\">                 \n                                The Nissan names, logos and slogans are trademarks owned by or licensed to Nissan Motor Co. Ltd. and/or its North American subsidiaries. Other trademarks and trade names are those of their respective owners.\n                            </span> \n                        </div>\n                        <div class=\"custom-tooltip-wrapper\">\n                            <a href=\"#\" class=\"tooltip-anchor\">[*]</a> \n                            <span class=\"custom-tooltip\">                 \n                                Vehicle shown is for illustrative purposes only. Not representative of named model year / model.\n                            </span> \n                        </div>\n                    </h4>\n                    <p class=\"themeMsrp custom-tooltip-wrapper\">\n                        MSRP $399 <a href=\"#\" class=\"tooltip-anchor\">[*]</a>\n                        <span class=\"custom-tooltip\">\n                            Price is Manufacturer's Suggested Retail Price (MSRP). MSRP excludes installation (except if factory-installed), taxes and other costs, and is subject to change without prior notice. Dealer sets actual price. Pictures are for informational purposes only.\n                        </span>\n                    </p>\n                    <ul>\n\t\t\t\t\t<li>\n\t\t\t\t\t\t<p class=\"custom-tooltip-wrapper\">\n\t\t\t\t\t\t\tCompatible with Genuine Nissan Accessory Roof Rail Crossbars <a href=\"#\" class=\"tooltip-anchor\">[*]</a>\n                        <span class=\"custom-tooltip\">\n                            Genuine Nissan Accessory Roof Rail Crossbars have a maximum weight limit of 100 lbs.\n                        </span>\n\t\t\t\t\t\t</p>\n\t\t\t\t\t</li>\n\t\t\t\t\t<li>Aerodynamic design delivers a quiet ride and good looks</li>\n\t\t\t\t\t<li>Carries up to 6 pairs of snow skis or 4 snowboards</li>\n\t\t\t\t\t<li>Easy to open with gloves or mittens<br>\n\t\t\t\t\t</li>\n\t\t\t\t\t</ul>\n                    <div class=\"themeVehicleBannerButton\"> \n\t\t\t\t\t\t<a href=\"parts/nissan-affiliated-yakima-reg-fatcat-evo-6-mdash-ski-carrier-t99r2a605a\">View Item</a> \n\t\t\t\t\t</div>\n                </div>\n            </div>\n        </div>\n\t\t<div class=\"themeNewPageCardItem\">\n            <div class=\"themeNewPageCardBox\">\n                <div class=\"themeNewPageCardImage\">\n                    <img alt=\"Rogue Image\" src=\"https://cdn.revolutionparts.io/223b3e40451187171b9a7229149b1553/design/accessories/rogue/b3-img5.webp\">\n                </div>\n                <div class=\"themeNewPageCardContent\">\n                    <h4>\n                        Affiliated: Yakima® JayLow &mdash; Kayak Carrier\n                        <div class=\"custom-tooltip-wrapper\">\n                            <a href=\"#\" class=\"tooltip-anchor\">[*]</a> \n                            <span class=\"custom-tooltip\">                 \n                                Accessories shown are not genuine Nissan parts/accessories. Not warranted by Nissan. Refer to product manufacturer for warranty details. Nissan limited warranty does not cover damages or failures to the vehicle caused by improper installation or alterations of any accessory or component. Contact your dealer for details.\n                            </span> \n                        </div>\n                        <div class=\"custom-tooltip-wrapper\">\n                            <a href=\"#\" class=\"tooltip-anchor\">[*]</a> \n                            <span class=\"custom-tooltip\">                 \n                                Cargo and load capacity limited by weight and distribution. Always secure cargo. Heavy loading of the vehicle with cargo, especially on the roof, will affect the handling and stability of the vehicle.\n                            </span> \n                        </div>\n                        <div class=\"custom-tooltip-wrapper\">\n                            <a href=\"#\" class=\"tooltip-anchor\">[*]</a> \n                            <span class=\"custom-tooltip\">                 \n                                The Nissan names, logos and slogans are trademarks owned by or licensed to Nissan Motor Co. Ltd. and/or its North American subsidiaries. Other trademarks and trade names are those of their respective owners.\n                            </span> \n                        </div>\n                        <div class=\"custom-tooltip-wrapper\">\n                            <a href=\"#\" class=\"tooltip-anchor\">[*]</a> \n                            <span class=\"custom-tooltip\">                 \n                                Vehicle shown is for illustrative purposes only. Not representative of named model year / model.\n                            </span> \n                        </div>\n                    </h4>\n                    <p class=\"themeMsrp custom-tooltip-wrapper\">\n                        MSRP $399 <a href=\"#\" class=\"tooltip-anchor\">[*]</a>\n                        <span class=\"custom-tooltip\">\n                            Price is Manufacturer's Suggested Retail Price (MSRP). MSRP excludes installation (except if factory-installed), taxes and other costs, and is subject to change without prior notice. Dealer sets actual price. Pictures are for informational purposes only.\n                        </span>\n                    </p>\n                    <ul>\n\t\t\t\t\t<li>\n\t\t\t\t\t\t<p class=\"custom-tooltip-wrapper\">\n\t\t\t\t\t\t\tCompatible with Genuine Nissan Accessory Roof Rail Crossbars <a href=\"#\" class=\"tooltip-anchor\">[*]</a>\n                        <span class=\"custom-tooltip\">\n                            Genuine Nissan Accessory Roof Rail Crossbars have a maximum weight limit of 100 lbs.\n                        </span>\n\t\t\t\t\t\t</p>\n\t\t\t\t\t</li>\n\t\t\t\t\t<li>Carry 1 kayak in J-cradle position or 2 kayaks in vertical, stacker position</li>\n\t\t\t\t\t<li>Includes heavy-duty straps and bow/stern tie-downs</li>\n\t\t\t\t\t<li>Folds flat when not in use<br>\n\t\t\t\t\t</li>\n\t\t\t\t\t</ul>\n                    <div class=\"themeVehicleBannerButton\"> \n\t\t\t\t\t\t<a href=\"parts/nissan-affiliated-yakima-reg-jaylow-mdash-kayak-carrier-t99r2a606a\">View Item</a> \n\t\t\t\t\t</div>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_160",
+      "htmlId": "cyberacc_category_section",
+      "htmlClasses": "cyberacc_category_section category_section padding_section cyberacc_category_sectionFrontier",
+      "contentWidth": "wide",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_161",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_162",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_163",
+                  "moduleType": "custom_html",
+                  "title": "Tab Category List",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"theme_cat_tab_wrapper\">\n    <h2 class=\"main_title\">Explore Popular Accessory Categories</h2>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_164",
+                  "moduleType": "custom_html",
+                  "title": "Accessories Content",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"theme_cat_tab_content\">\n    <ul class=\"theme_cat_tab_content_list\">\n        <li>\n            <a href=\"https://parts.nissanusa.com/accessories/exterior\">\n                <div class=\"theme_cat_tab_content_img\">\n                    <img src=\"https://cdn-product-images.revolutionparts.io/assets/b36f503c7aefb3d27f57743183157fc2.webp\" alt=\"Nissan Exterior Image\">\n                </div>\n                <p>Exterior Accessories</p>\n            </a>\n        </li>\n        <li>\n            <a href=\"https://parts.nissanusa.com/accessories/interior\">\n                <div class=\"theme_cat_tab_content_img\">\n                    <img src=\"https://cdn-product-images.revolutionparts.io/assets/8feadd5011a160de5537421ca05de814.webp\" alt=\"Nissan Interior\">\n                </div>\n                <p>Interior Accessories</p>\n            </a>\n        </li>\n        <li>\n            <a href=\"https://parts.nissanusa.com/accessories/lighting-technology\">\n                <div class=\"theme_cat_tab_content_img\">\n                    <img src=\"https://cdn-product-images.revolutionparts.io/assets/e27fb9f3308f5079a7693d27e6137b10.webp\" alt=\"Nissan Technology Image\">\n                </div>\n                <p>Lighting & Technology Accessories</p>\n            </a>\n        </li>\n\t\t<li>\n            <a href=\"https://parts.nissanusa.com/go/Nissan-Pet-Accessories.html\">\n                <div class=\"theme_cat_tab_content_img\">\n                    <img src=\"https://cdn.revolutionparts.io/images/840d68cbbbfa627cd4635408a6c82009/af4487a139450404a022c01a4a3eefab.jpeg\" alt=\"Nissan Pet Accessories\">\n                </div>\n                <p>Pet Accessories</p>\n            </a>\n        </li>\n\t\t<li> \n\t\t\t<a href=\"https://parts.nissanusa.com/search?search_str=Towing+and+Hauling\">\n\t\t\t\t<div class=\"theme_cat_tab_content_img\"> \n\t\t\t\t\t<img src=\"https://cdn-product-images.revolutionparts.io/assets/f4f354bbead3b74dcc2ad5da6399d73f.webp\" alt=\"Nissan Towing\"> \n\t\t\t\t</div>\n\t\t\t\t<p>Towing Accessories</p>\n\t\t\t</a> \n\t\t</li>\n\t\t<li>\n            <a href=\"https://parts.nissanusa.com/accessories/cargo\">\n                <div class=\"theme_cat_tab_content_img\">\n                    <img src=\"https://cdn-product-images.revolutionparts.io/assets/264d5b188bf3c2061869b4d5edbb7d3f.webp\" alt=\"Nissan Cargo Accessories\">\n                </div>\n                <p>Cargo Accessories</p>\n            </a>\n        </li>\n\t\t<li> \n\t\t\t<a href=\"https://parts.nissanusa.com/accessories/yakima\">\n\t\t\t\t<div class=\"theme_cat_tab_content_img\"> \n\t\t\t\t\t<img src=\"https://cdn-product-images.revolutionparts.io/assets/69b9b6a65d346c1e2b680e5a32774c70.webp\" alt=\"Nissan Towing\"> \n\t\t\t\t</div>\n\t\t\t\t<p>Affiliated: Yakima® Accessories</p>\n\t\t\t</a> \n\t\t</li>\n    </ul>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "tab_content tab_content_in",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

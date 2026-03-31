@@ -1,0 +1,805 @@
+{
+  "pageId": "page",
+  "pageName": "Text Page",
+  "pageType": null,
+  "layoutEnabled": true,
+  "moduleCategories": [
+    "header",
+    "images",
+    "text",
+    "search",
+    "categories_products",
+    "forms",
+    "navigation",
+    "footer"
+  ],
+  "VFSPath": "layouts/page.json",
+  "requiredModules": [],
+  "scripts": "",
+  "sections": [
+    {
+      "sectionId": "section_71",
+      "htmlId": "themeNewPageBannerSection",
+      "htmlClasses": "themeNewPageBannerSection",
+      "contentWidth": "full",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_72",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_73",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_77",
+                  "moduleType": "banner_vpicker",
+                  "title": "Banner ",
+                  "options": {
+                    "banner_slides": {
+                      "name": "Banner Slides",
+                      "type": "object",
+                      "default_value": [],
+                      "value": [
+                        {
+                          "slideId": "slide_363",
+                          "image": "https://cdn.revolutionparts.io/223b3e40451187171b9a7229149b1553/design/sentra_banner_v2.webp",
+                          "link": "",
+                          "alt": ""
+                        }
+                      ]
+                    },
+                    "overlay_header": {
+                      "name": "Overlay Header",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "<span class=\"themeNewPageBannerDate\">NISSAN</span>Sentra®<br> Accessories"
+                    },
+                    "overlay_content": {
+                      "name": "Overlay Content",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "<div class=\"custom-tooltip-wrapper\">\n    Genuine Nissan Accessories deliver original-fit performance for your Sentra. <a href=\"#\" class=\"tooltip-anchor\">[*]</a> \n    <span class=\"custom-tooltip\">                 \n        Images shown for illustrative purposes only. For complete limited warranty details, see your Nissan dealer and read the vehicle’s Warranty Information Booklet.\n    </span> \n</div>"
+                    },
+                    "picker_title": {
+                      "name": "Picker Title",
+                      "type": "string",
+                      "default_value": "Select Your Vehicle",
+                      "value": "Select Your Vehicle"
+                    },
+                    "hide_vehicle_picker": {
+                      "name": "Hide Vehicle Picker",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": true
+                    },
+                    "slider_timeout": {
+                      "name": "Slider Speed",
+                      "type": "string",
+                      "default_value": "4000",
+                      "value": "4000"
+                    },
+                    "banner_height": {
+                      "name": "Banner Height",
+                      "type": "string",
+                      "default_value": "290",
+                      "value": "700"
+                    },
+                    "use_overlay_shadows": {
+                      "name": "Overlay Shadows",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    },
+                    "banner_image_fill": {
+                      "name": "Banner Image Fill",
+                      "type": "select",
+                      "possible_values": [
+                        {
+                          "value": "cover",
+                          "label": "Cover"
+                        },
+                        {
+                          "value": "contain",
+                          "label": "Contain"
+                        }
+                      ],
+                      "default_value": "cover",
+                      "value": "cover"
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": true,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_32",
+      "htmlId": "",
+      "htmlClasses": "",
+      "contentWidth": "wide",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_130",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_132",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_27",
+                  "moduleType": "custom_html",
+                  "title": "Cart Main Title",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"themeCardMainTitleWrap\">\n    <p class=\"themeCardMainTitleTagline\">\n        SENTRA EXTERIOR ACCESSORIES\n    </p>\n    <h3>\n        Your look, your Sentra\n    </h3>\n    <p class=\"themeCardMainTitleDescription\">\n        Dial in your Sentra with Nissan Genuine Accessories &mdash; built to fit, made to last, and designed to elevate your style. No guesswork, no compromises &mdash; just the perfect pieces to make your signature Sentra. \n    </p>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_128",
+      "htmlId": "themeForsbergPackageSection",
+      "htmlClasses": "themeForsbergPackageSection themeForsbergPackageSectionDark",
+      "contentWidth": "wide",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_129",
+          "rowLayout": "8_4",
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_130",
+              "columnWidth": 8,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_133",
+                  "moduleType": "custom_html",
+                  "title": "18\" Black Machined Finish Wheels",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"themeForsbergPackageBigCard\">\n    <div class=\"themeForsbergPackageBigCardImg\">\n        <img alt=\"Sentra Image\" src=\"https://rparts-sites.s3.amazonaws.com/223b3e40451187171b9a7229149b1553/design/accessories/sentra/block/b1-img1.webp\">\n    </div>\n    <div class=\"themeForsbergPackageBigCardContent\">\n        <h3>18\" Black Machined Finish Wheels</h3>\n        <ul>\n\t\t\t<li>Lightweight and strong aluminum-alloy</li>\n\t\t\t<li>Black with machined finish accents</li>\n\t\t\t<li>18\" 5-split spoke design<br>\n\t\t\t</li>\n\t\t</ul>\n        <p class=\"themeMsrp custom-tooltip-wrapper\">\n            MSRP $610 <a href=\"#\" class=\"tooltip-anchor\">[*]</a>\n            <span class=\"custom-tooltip\">\n                Price is Manufacturer's Suggested Retail Price (MSRP). MSRP excludes installation (except if factory-installed), taxes and other costs, and is subject to change without prior notice. Dealer sets actual price. Pictures are for informational purposes only.\n            </span>\n        </p>\n        <div class=\"themeVehicleBannerButton\"> \n            <a href=\"parts/nissan-18-quot-black-machined-finish-wheel-t99w17sf6j\">View Item</a>\n        </div>\n    </div>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "tabCard tabCard01",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_134",
+                  "moduleType": "custom_html",
+                  "title": "Splash Guards",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"themeForsbergPackageBigCard\">\n    <div class=\"themeForsbergPackageBigCardImg\">\n        <img alt=\"Sentra Image\" src=\"https://rparts-sites.s3.amazonaws.com/223b3e40451187171b9a7229149b1553/design/accessories/sentra/block/b1-img2_new.webp\">\n    </div>\n    <div class=\"themeForsbergPackageBigCardContent\">\n        <h3>Splash Guards</h3>\n        <ul>\n\t\t<li>Contoured to match wheel openings, while helping prevent dirt and debris from nicking and scratching the finish</li>\n\t\t<li>Add value and style while helping protect the sides of your vehicle</li>\n\t\t</ul>\n        <p class=\"themeMsrp custom-tooltip-wrapper\">\n            MSRP $84 <a href=\"#\" class=\"tooltip-anchor\">[*]</a>\n            <span class=\"custom-tooltip\">\n                Price is Manufacturer's Suggested Retail Price (MSRP). MSRP excludes installation (except if factory-installed), taxes and other costs, and is subject to change without prior notice. Dealer sets actual price. Pictures are for informational purposes only.\n            </span>\n        </p>\n        <div class=\"themeVehicleBannerButton\"> \n            <a href=\"parts/nissan-rear-splash-guards-t99j27sf0b\">View Item</a>\n        </div>\n    </div>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "tabCard tabCard02",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_135",
+                  "moduleType": "custom_html",
+                  "title": "Door Cup Paint Protection",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"themeForsbergPackageBigCard\">\n    <div class=\"themeForsbergPackageBigCardImg\">\n        <img alt=\"Sentra Image\" src=\"https://rparts-sites.s3.amazonaws.com/223b3e40451187171b9a7229149b1553/design/accessories/sentra/block/b1-img3.webp\">\n    </div>\n    <div class=\"themeForsbergPackageBigCardContent\">\n        <h3>\n            Door Cup Paint Protection\n        </h3>\n        <ul>\n\t\t<li>Transparent design provides protection without sacrificing style</li>\n\t\t<li>Helps prevent scratches and wear on outside door cups</li>\n\t\t<li>Includes four clear protectors for one vehicle set</li>\n\t\t<li>Easy, tool-free installation<br>\n\t\t</li>\n\t\t</ul>\n        <p class=\"themeMsrp custom-tooltip-wrapper\">\n            MSRP $47 <a href=\"#\" class=\"tooltip-anchor\">[*]</a>\n            <span class=\"custom-tooltip\">\n                Price is Manufacturer's Suggested Retail Price (MSRP). MSRP excludes installation (except if factory-installed), taxes and other costs, and is subject to change without prior notice. Dealer sets actual price. Pictures are for informational purposes only.\n            </span>\n        </p>\n        <div class=\"themeVehicleBannerButton\"> \n            <a href=\"parts/nissan-door-cup-paint-protection-t99d96ta0a\">View Item</a>\n        </div>\n    </div>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "tabCard tabCard03",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_136",
+                  "moduleType": "custom_html",
+                  "title": "Black Rear Bumper Protector",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"themeForsbergPackageBigCard\">\n    <div class=\"themeForsbergPackageBigCardImg\">\n        <img alt=\"Sentra Image\" src=\"https://rparts-sites.s3.amazonaws.com/223b3e40451187171b9a7229149b1553/design/accessories/sentra/block/b1-img4_new.webp\">\n    </div>\n    <div class=\"themeForsbergPackageBigCardContent\">\n        <h3>\n            Black Rear Bumper Protector\n        </h3>\n        <ul>\n\t\t<li>Designed to help prevent scratches and scuffs when loading cargo</li>\n\t\t<li>Easy, no-drill installation<br>\n\t\t</li>\n\t\t</ul>\n        <p class=\"themeMsrp custom-tooltip-wrapper\">\n            MSRP $90 <a href=\"#\" class=\"tooltip-anchor\">[*]</a>\n            <span class=\"custom-tooltip\">\n                Price is Manufacturer's Suggested Retail Price (MSRP). MSRP excludes installation (except if factory-installed), taxes and other costs, and is subject to change without prior notice. Dealer sets actual price. Pictures are for informational purposes only.\n            </span>\n        </p>\n        <div class=\"themeVehicleBannerButton\"> \n            <a href=\"parts/nissan-black-rear-bumper-protector-t99b17sf3e\">View Item</a>\n        </div>\n    </div>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "tabCard tabCard04",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_137",
+                  "moduleType": "custom_html",
+                  "title": "Wheel Locks",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"themeForsbergPackageBigCard\">\n    <div class=\"themeForsbergPackageBigCardImg\">\n        <img alt=\"Sentra Image\" src=\"https://rparts-sites.s3.amazonaws.com/223b3e40451187171b9a7229149b1553/design/accessories/sentra/block/b1-img5.webp\">\n    </div>\n    <div class=\"themeForsbergPackageBigCardContent\">\n        <h3>\n            Wheel Locks\n        </h3>\n        <ul>\n            <li>\n\t\t\t\t<p class=\"custom-tooltip-wrapper\">\n\t\t\t\t\tFour Wheel Locks and coded Wheel Lock socket to help keep your wheels out of the wrong hands <a href=\"#\" class=\"tooltip-anchor\">[*]</a>\n\t\t\t\t<span class=\"custom-tooltip\">\n\t\t\t\t\tAvailable only for vehicles with alloy wheels.\n\t\t\t\t</span>\n\t\t\t\t</p>\n\t\t\t</li>\n            <li>Superior durability, corrosion-resistant</li>\n        </ul>\n        <p class=\"themeMsrp custom-tooltip-wrapper\">\n            MSRP $78 <a href=\"#\" class=\"tooltip-anchor\">[*]</a>\n            <span class=\"custom-tooltip\">\n                Price is Manufacturer's Suggested Retail Price (MSRP). MSRP excludes installation (except if factory-installed), taxes and other costs, and is subject to change without prior notice. Dealer sets actual price. Pictures are for informational purposes only.\n            </span>\n        </p>\n        <div class=\"themeVehicleBannerButton\"> \n            <a href=\"parts/nissan-wheel-locks-t99w2a7010\">View Item</a>\n        </div>\n    </div>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "tabCard tabCard05",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_482",
+                  "moduleType": "custom_html",
+                  "title": "Side-Window Deflectors",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"themeForsbergPackageBigCard\">\n    <div class=\"themeForsbergPackageBigCardImg\">\n        <img alt=\"Sentra Image\" src=\"https://rparts-sites.s3.amazonaws.com/223b3e40451187171b9a7229149b1553/design/accessories/sentra/side_window_deflector_sentra.webp\">\n    </div>\n    <div class=\"themeForsbergPackageBigCardContent\">\n        <h3>\n            Side-Window Deflectors\n        </h3>\n        <ul>\n            <li>Stylish, Genuine Nissan Side-Window Deflectors help to fight glare and reduce wind noise within your Sentra</li>\n            <li>Installation is simple – doesn’t require any drilling or complicated bodywork</li>\n            <li>Easy, no-drill installation</li>\n            <li>Comes in a set of four.</li>\n        </ul>\n        <p class=\"themeMsrp custom-tooltip-wrapper\">\n            MSRP $126 <a href=\"#\" class=\"tooltip-anchor\">[*]</a>\n            <span class=\"custom-tooltip\">\n                Price is Manufacturer's Suggested Retail Price (MSRP). MSRP excludes installation (except if factory-installed), taxes and other costs, and is subject to change without prior notice. Dealer sets actual price. Pictures are for informational purposes only.\n            </span>\n        </p>\n        <div class=\"themeVehicleBannerButton\"> \n            <a href=\"parts/nissan-side-window-deflectors-4-piece-set-h08006lb0a\">View Item</a>\n        </div>\n    </div>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "tabCard tabCard06",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_483",
+                  "moduleType": "custom_html",
+                  "title": "Rear Spoiler ",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"themeForsbergPackageBigCard\">\n    <div class=\"themeForsbergPackageBigCardImg\">\n        <img alt=\"Sentra Image\" src=\"https://rparts-sites.s3.amazonaws.com/223b3e40451187171b9a7229149b1553/design/accessories/sentra/rear_spoiler_sentra.webp\">\n    </div>\n    <div class=\"themeForsbergPackageBigCardContent\">\n        <h3>\n            Rear Spoiler \n        </h3>\n        <ul>\n            <li>Add some style with an aerodynamic spoiler</li>\n            <li>Custom-designed to help enhance appearance</li>\n            <li>Comes pre-painted in factory-matched colors</li>\n        </ul>\n        <p class=\"themeMsrp custom-tooltip-wrapper\">\n            MSRP $231 <a href=\"#\" class=\"tooltip-anchor\">[*]</a>\n            <span class=\"custom-tooltip\">\n                Price is Manufacturer's Suggested Retail Price (MSRP). MSRP excludes installation (except if factory-installed), taxes and other costs, and is subject to change without prior notice. Dealer sets actual price. Pictures are for informational purposes only.\n            </span>\n        </p>\n        <div class=\"themeVehicleBannerButton\"> \n            <a href=\"parts/nissan-rear-spoiler-t99j16lw4a\">View Item</a>\n        </div>\n    </div>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "tabCard tabCard07",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            },
+            {
+              "columnId": "column_131",
+              "columnWidth": 4,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_132",
+                  "moduleType": "custom_html",
+                  "title": "Package Image Link",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<ul class=\"themeForsbergPackageImgList\">\n    <li class=\"themeForsbergPackageImgListItem\">\n        <a href=\"#\" data-toggle-target=\".tabCard01\" class=\"themeForsbergPackageImgListLink\">\n            <img alt=\"Sentra Image\" src=\"https://rparts-sites.s3.amazonaws.com/223b3e40451187171b9a7229149b1553/design/accessories/sentra/block/b1-img1.webp\" class=\"themeForsbergPackageImgListCard\">\n        </a>\n    </li>\n    <li class=\"themeForsbergPackageImgListItem\">\n        <a href=\"#\" data-toggle-target=\".tabCard02\" class=\"themeForsbergPackageImgListLink\">\n            <img alt=\"Sentra Image\" src=\"https://rparts-sites.s3.amazonaws.com/223b3e40451187171b9a7229149b1553/design/accessories/sentra/block/b1-img2_new.webp\" class=\"themeForsbergPackageImgListCard\">\n        </a>\n    </li>\n    <li class=\"themeForsbergPackageImgListItem\">\n        <a href=\"#\" data-toggle-target=\".tabCard03\" class=\"themeForsbergPackageImgListLink\">\n            <img alt=\"Sentra Image\" src=\"https://rparts-sites.s3.amazonaws.com/223b3e40451187171b9a7229149b1553/design/accessories/sentra/block/b1-img3.webp\" class=\"themeForsbergPackageImgListCard\">\n        </a>\n    </li>\n    <li class=\"themeForsbergPackageImgListItem\">\n        <a href=\"#\" data-toggle-target=\".tabCard04\" class=\"themeForsbergPackageImgListLink\">\n            <img alt=\"Sentra Image\" src=\"https://rparts-sites.s3.amazonaws.com/223b3e40451187171b9a7229149b1553/design/accessories/sentra/block/b1-img4_new.webp\" class=\"themeForsbergPackageImgListCard\">\n        </a>\n    </li>\n    <li class=\"themeForsbergPackageImgListItem\">\n        <a href=\"#\" data-toggle-target=\".tabCard05\" class=\"themeForsbergPackageImgListLink\">\n            <img alt=\"Sentra Image\" src=\"https://rparts-sites.s3.amazonaws.com/223b3e40451187171b9a7229149b1553/design/accessories/sentra/block/b1-img5.webp\" class=\"themeForsbergPackageImgListCard\">\n        </a>\n    </li>\n    <li class=\"themeForsbergPackageImgListItem\">\n        <a href=\"#\" data-toggle-target=\".tabCard06\" class=\"themeForsbergPackageImgListLink\">\n            <img alt=\"Sentra Image\" src=\"https://rparts-sites.s3.amazonaws.com/223b3e40451187171b9a7229149b1553/design/accessories/sentra/side_window_deflector_sentra.webp\" class=\"themeForsbergPackageImgListCard\">\n        </a>\n    </li>\n    <li class=\"themeForsbergPackageImgListItem\">\n        <a href=\"#\" data-toggle-target=\".tabCard07\" class=\"themeForsbergPackageImgListLink\">\n            <img alt=\"Sentra Image\" src=\"https://rparts-sites.s3.amazonaws.com/223b3e40451187171b9a7229149b1553/design/accessories/sentra/rear_spoiler_sentra.webp\" class=\"themeForsbergPackageImgListCard\">\n        </a>\n    </li>\n    <li class=\"themeForsbergPackageImgListItemLink\">\n        <a href=\"https://parts.nissanusa.com/accessories/exterior\" class=\"themeForsbergPackageImgListLinkText\">\n            Shop All Exterior\n        </a>\n    </li>\n</ul>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "desktop-only"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_27",
+      "htmlId": "",
+      "htmlClasses": "",
+      "contentWidth": "wide",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_28",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_29",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_32",
+                  "moduleType": "custom_html",
+                  "title": "Cart Main Title",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"themeCardMainTitleWrap\">\n    <p class=\"themeCardMainTitleTagline\">\n        SENTRA INTERIOR, Lighting & Tech ACCESSORIES\n    </p>\n    <h3>\n        Add your touch\n    </h3>\n    <p class=\"themeCardMainTitleDescription\">\n        Elevate your Sentra’s interior with Genuine Nissan Accessories &mdash; bold lighting upgrades, customized protection, and stylized details. Own every mile with a customized cabin that’s fresh, organized, and unmistakably yours. \n    </p>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_166",
+      "htmlId": "themeForsbergPackageSection",
+      "htmlClasses": "themeForsbergPackageSection themeForsbergPackageSectionDark",
+      "contentWidth": "wide",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_167",
+          "rowLayout": "4_8",
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_168",
+              "columnWidth": 4,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_172",
+                  "moduleType": "custom_html",
+                  "title": "Package Image Link",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<ul class=\"themeForsbergPackageImgList\">\n    <li class=\"themeForsbergPackageImgListItemNew\">\n        <a href=\"#\" data-toggle-target=\".tabCardNew01\" class=\"themeForsbergPackageImgListLink\">\n            <img alt=\"Sentra Image\" src=\"https://rparts-sites.s3.amazonaws.com/223b3e40451187171b9a7229149b1553/design/accessories/sentra/block/b2-img1_new.webp\" class=\"themeForsbergPackageImgListCard\">\n        </a>\n    </li>\n    <li class=\"themeForsbergPackageImgListItemNew\">\n        <a href=\"#\" data-toggle-target=\".tabCardNew02\" class=\"themeForsbergPackageImgListLink\">\n            <img alt=\"Sentra Image\" src=\"https://rparts-sites.s3.amazonaws.com/223b3e40451187171b9a7229149b1553/design/accessories/sentra/block/b2-img2_new.webp\" class=\"themeForsbergPackageImgListCard\">\n        </a>\n    </li>\n    <li class=\"themeForsbergPackageImgListItemNew\">\n        <a href=\"#\" data-toggle-target=\".tabCardNew03\" class=\"themeForsbergPackageImgListLink\">\n            <img alt=\"Sentra Image\" src=\"https://cdn-product-images.revolutionparts.io/assets/85ad81088da0543239ba7cb4f482db41.webp\" class=\"themeForsbergPackageImgListCard\">\n        </a>\n    </li>\n    <li class=\"themeForsbergPackageImgListItemNew\">\n        <a href=\"#\" data-toggle-target=\".tabCardNew04\" class=\"themeForsbergPackageImgListLink\">\n            <img alt=\"Sentra Image\" src=\"https://cdn-product-images.revolutionparts.io/assets/ff96c6e7c4c1a2f0a2bf7d23c299b3c4.webp\" class=\"themeForsbergPackageImgListCard\">\n        </a>\n    </li>\n\t<li class=\"themeForsbergPackageImgListItemNew\">\n        <a href=\"#\" data-toggle-target=\".tabCardNew05\" class=\"themeForsbergPackageImgListLink\">\n            <img alt=\"Sentra Image\" src=\"https://rparts-sites.s3.amazonaws.com/223b3e40451187171b9a7229149b1553/design/accessories/sentra/block/b2-img5.webp\" class=\"themeForsbergPackageImgListCard\">\n        </a>\n    </li>\n    <li class=\"themeForsbergPackageImgListItemNew\">\n        <a href=\"#\" data-toggle-target=\".tabCardNew06\" class=\"themeForsbergPackageImgListLink\">\n            <img alt=\"Sentra Image\" src=\"https://rparts-sites.s3.amazonaws.com/223b3e40451187171b9a7229149b1553/design/accessories/sentra/hideway_trunk_sentra.webp\" class=\"themeForsbergPackageImgListCard\">\n        </a>\n    </li>\n    <li class=\"themeForsbergPackageImgListItemNew\">\n        <a href=\"#\" data-toggle-target=\".tabCardNew07\" class=\"themeForsbergPackageImgListLink\">\n            <img alt=\"Sentra Image\" src=\"https://rparts-sites.s3.amazonaws.com/223b3e40451187171b9a7229149b1553/design/accessories/sentra/sport_pedal_sentra.webp\" class=\"themeForsbergPackageImgListCard\">\n        </a>\n    </li>\n    <li class=\"themeForsbergPackageImgListItemLink\">\n        <a href=\"https://parts.nissanusa.com/accessories/interior\" class=\"themeForsbergPackageImgListLinkText\">\n            Shop All Interior\n        </a>\n    </li>\n</ul>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "desktop-only"
+                }
+              ]
+            },
+            {
+              "columnId": "column_169",
+              "columnWidth": 8,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_175",
+                  "moduleType": "custom_html",
+                  "title": "Interior Accent Lighting",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"themeForsbergPackageBigCard\">\n    <div class=\"themeForsbergPackageBigCardImg\">\n        <img alt=\"Sentra Image\" src=\"https://rparts-sites.s3.amazonaws.com/223b3e40451187171b9a7229149b1553/design/accessories/sentra/block/b2-img1_new.webp\">\n    </div>\n    <div class=\"themeForsbergPackageBigCardContent\">\n        <h3>\n            Interior Accent Lighting\n        </h3>\n        <ul>\n\t\t<li>LEDs with 20 pre-programmed color options light up the front and rear footwells, cup holders, and console bin</li>\n\t\t<li>Easily control light color and on/off function with a single knob</li>\n\t\t<li>Works with the vehicle’s interior lighting when the door is opened<br>\n\t\t</li>\n\t\t</ul>\n        <p class=\"themeMsrp custom-tooltip-wrapper\">\n            MSRP $400 <a href=\"#\" class=\"tooltip-anchor\">[*]</a>\n            <span class=\"custom-tooltip\">\n                Price is Manufacturer's Suggested Retail Price (MSRP). MSRP excludes installation (except if factory-installed), taxes and other costs, and is subject to change without prior notice. Dealer sets actual price. Pictures are for informational purposes only.\n            </span>\n        </p>\n        <div class=\"themeVehicleBannerButton\"> \n            <a href=\"parts/nissan-interior-accent-lighting-t99f37sf2a\">View Item</a>\n        </div>\n    </div>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "tabCardNew tabCardNew01",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_178",
+                  "moduleType": "custom_html",
+                  "title": "Illuminated Trunk Scuff Plates",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"themeForsbergPackageBigCard\">\n    <div class=\"themeForsbergPackageBigCardImg\">\n        <img alt=\"Sentra Image\" src=\"https://rparts-sites.s3.amazonaws.com/223b3e40451187171b9a7229149b1553/design/accessories/sentra/block/b2-img2_new.webp\">\n    </div>\n    <div class=\"themeForsbergPackageBigCardContent\">\n        <h3>\n            Illuminated Trunk Scuff Plates\n        </h3>\n        <ul>\n\t\t<li>Designed to prevent scratches and scuffs when loading cargo</li>\n\t\t<li>Features stylish LEDs that help illuminate the trunk area</li>\n\t\t<li>Durable stainless steel finish</li>\n\t\t<li>Easy, no-drill installation<br>\n\t\t</li>\n\t\t</ul>\n        <p class=\"themeMsrp custom-tooltip-wrapper\">\n            MSRP $465 <a href=\"#\" class=\"tooltip-anchor\">[*]</a>\n            <span class=\"custom-tooltip\">\n                Price is Manufacturer's Suggested Retail Price (MSRP). MSRP excludes installation (except if factory-installed), taxes and other costs, and is subject to change without prior notice. Dealer sets actual price. Pictures are for informational purposes only.\n            </span>\n        </p>\n        <div class=\"themeVehicleBannerButton\"> \n            <a href=\"parts/nissan-illuminated-trunk-scuff-plates-t99f37sf00\">View Item</a>\n        </div>\n    </div>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "tabCardNew tabCardNew02",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_181",
+                  "moduleType": "custom_html",
+                  "title": "Floor Mats, All Season",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"themeForsbergPackageBigCard\">\n    <div class=\"themeForsbergPackageBigCardImg\">\n        <img alt=\"Sentra Image\" src=\"https://cdn-product-images.revolutionparts.io/assets/85ad81088da0543239ba7cb4f482db41.webp\">\n    </div>\n    <div class=\"themeForsbergPackageBigCardContent\">\n        <h3>\n            All-Season Floor Mats - High Wall Liners\n        </h3>\n        <ul>\n\t\t<li>Stepping in from the rain or snow? You need a set of All-season Floor Mats - High Wall Liners</li>\n\t\t<li>Custom-made of durable and long-wearing material<br>\n\t\t</li>\n        <li>Driver and front-passenger mats secure with a grommet hole/positioning hook system</li>\n\t\t</ul>\n        <p class=\"themeMsrp custom-tooltip-wrapper\">\n            MSRP $175 <a href=\"#\" class=\"tooltip-anchor\">[*]</a>\n            <span class=\"custom-tooltip\">\n                Price is Manufacturer's Suggested Retail Price (MSRP). MSRP excludes installation (except if factory-installed), taxes and other costs, and is subject to change without prior notice. Dealer sets actual price. Pictures are for informational purposes only.\n            </span>\n        </p>\n        <div class=\"themeVehicleBannerButton\"> \n            <a href=\"parts/nissan-all-season-floor-mats-high-wall-liners-4-piece-set-t99e47sf0a\">View Item</a>\n        </div>\n    </div>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "tabCardNew tabCardNew03",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_184",
+                  "moduleType": "custom_html",
+                  "title": "All-Season Trunk Protector - High Wall Liner",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"themeForsbergPackageBigCard\">\n    <div class=\"themeForsbergPackageBigCardImg\">\n        <img alt=\"Sentra Image\" src=\"https://cdn-product-images.revolutionparts.io/assets/ff96c6e7c4c1a2f0a2bf7d23c299b3c4.webp\">\n    </div>\n    <div class=\"themeForsbergPackageBigCardContent\">\n        <h3>\n            All-Season Trunk Protector - High Wall Liner\n        </h3>\n        <ul>\n\t\t<li>Helps keep the trunk area clean and protected</li>\n\t\t<li>Water-resistant, heavy-duty</li>\n\t\t<li>Made of durable rubber material</li>\n\t\t<li>Easy to remove and clean<br>\n\t\t</li>\n\t\t</ul>\n        <p class=\"themeMsrp custom-tooltip-wrapper\">\n            MSRP $120 <a href=\"#\" class=\"tooltip-anchor\">[*]</a>\n            <span class=\"custom-tooltip\">\n                Price is Manufacturer's Suggested Retail Price (MSRP). MSRP excludes installation (except if factory-installed), taxes and other costs, and is subject to change without prior notice. Dealer sets actual price. Pictures are for informational purposes only.\n            </span>\n        </p>\n        <div class=\"themeVehicleBannerButton\"> \n            <a href=\"parts/nissan-all-season-trunk-protector-high-wall-liner-t99c37sf0a\">View Item</a>\n        </div>\n    </div>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "tabCardNew tabCardNew04",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_96",
+                  "moduleType": "custom_html",
+                  "title": "Illuminated Kick Plates",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"themeForsbergPackageBigCard\">\n    <div class=\"themeForsbergPackageBigCardImg\">\n        <img alt=\"Sentra Image\" src=\"https://rparts-sites.s3.amazonaws.com/223b3e40451187171b9a7229149b1553/design/accessories/sentra/block/b2-img5.webp\">\n    </div>\n    <div class=\"themeForsbergPackageBigCardContent\">\n        <h3>\n            Illuminated Kick Plates\n        </h3>\n        <ul>\n\t\t<li>\n\t\t\t<p class=\"custom-tooltip-wrapper\">\n\t\t\t\tLight up your entrance and protect your door sills <a href=\"#\" class=\"tooltip-anchor\">[*]</a>\n\t\t\t\t<span class=\"custom-tooltip\">\n\t\t\t\t\tOnly front kick plates illuminate.\n\t\t\t\t</span>\n\t\t\t</p>\n\t\t</li>\n\t\t<li>Contoured to match door openings</li>\n\t\t<li>Stainless steel inserts feature an illuminated Sentra logo<br>\n\t\t</li>\n\t\t</ul>\n        <p class=\"themeMsrp custom-tooltip-wrapper\">\n            MSRP $370 <a href=\"#\" class=\"tooltip-anchor\">[*]</a>\n            <span class=\"custom-tooltip\">\n                Price is Manufacturer's Suggested Retail Price (MSRP). MSRP excludes installation (except if factory-installed), taxes and other costs, and is subject to change without prior notice. Dealer sets actual price. Pictures are for informational purposes only.\n            </span>\n        </p>\n        <div class=\"themeVehicleBannerButton\"> \n            <a href=\"parts/nissan-illuminated-kick-plates-t99g66lb00\">View Item</a>\n        </div>\n    </div>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "tabCardNew tabCardNew05",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_492",
+                  "moduleType": "custom_html",
+                  "title": "Hideaway Trunk Cargo Net",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"themeForsbergPackageBigCard\">\n    <div class=\"themeForsbergPackageBigCardImg\">\n        <img alt=\"Sentra Image\" src=\"https://rparts-sites.s3.amazonaws.com/223b3e40451187171b9a7229149b1553/design/accessories/sentra/hideway_trunk_sentra.webp\">\n    </div>\n    <div class=\"themeForsbergPackageBigCardContent\">\n        <h3>\n            Hideaway Trunk Cargo Net\n        </h3>\n        <ul>\n\t\t<li>Fight the forces of chaos with a Trunk Net that helps keep items in place. This Hideaway Trunk Net stows away neatly in its own zippered case that secures to the trunk when not in use.</li>\n\t\t</ul>\n        <p class=\"themeMsrp custom-tooltip-wrapper\">\n            MSRP $60 <a href=\"#\" class=\"tooltip-anchor\">[*]</a>\n            <span class=\"custom-tooltip\">\n                Price is Manufacturer's Suggested Retail Price (MSRP). MSRP excludes installation (except if factory-installed), taxes and other costs, and is subject to change without prior notice. Dealer sets actual price. Pictures are for informational purposes only.\n            </span>\n        </p>\n        <div class=\"themeVehicleBannerButton\"> \n            <a href=\"parts/nissan-cargo-trunk-net-999c1lz000\">View Item</a>\n        </div>\n    </div>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "tabCardNew tabCardNew06",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_493",
+                  "moduleType": "custom_html",
+                  "title": "Sport Pedals",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"themeForsbergPackageBigCard\">\n    <div class=\"themeForsbergPackageBigCardImg\">\n        <img alt=\"Sentra Image\" src=\"https://rparts-sites.s3.amazonaws.com/223b3e40451187171b9a7229149b1553/design/accessories/sentra/sport_pedal_sentra.webp\">\n    </div>\n    <div class=\"themeForsbergPackageBigCardContent\">\n        <h3>\n            Sport Pedals\n        </h3>\n        <ul>\n\t\t<li>Aluminum sport pedals bring added grip and an aggressive track-inspired look, combining style and utility</li>\n\t\t</ul>\n        <p class=\"themeMsrp custom-tooltip-wrapper\">\n            MSRP $156 <a href=\"#\" class=\"tooltip-anchor\">[*]</a>\n            <span class=\"custom-tooltip\">\n                Price is Manufacturer's Suggested Retail Price (MSRP). MSRP excludes installation (except if factory-installed), taxes and other costs, and is subject to change without prior notice. Dealer sets actual price. Pictures are for informational purposes only.\n            </span>\n        </p>\n        <div class=\"themeVehicleBannerButton\"> \n            <a href=\"parts/nissan-sport-pedals-t99e56lb0a\">View Item</a>\n        </div>\n    </div>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "tabCardNew tabCardNew07",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_160",
+      "htmlId": "cyberacc_category_section",
+      "htmlClasses": "cyberacc_category_section category_section padding_section cyberacc_category_sectionFrontier",
+      "contentWidth": "wide",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_161",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_162",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_163",
+                  "moduleType": "custom_html",
+                  "title": "Tab Category List",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"theme_cat_tab_wrapper\">\n    <h2 class=\"main_title\">Explore Popular Accessory Categories</h2>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_164",
+                  "moduleType": "custom_html",
+                  "title": "Accessories Content",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"theme_cat_tab_content\">\n    <ul class=\"theme_cat_tab_content_list\">\n        <li>\n            <a href=\"https://parts.nissanusa.com/accessories/exterior\">\n                <div class=\"theme_cat_tab_content_img\">\n                    <img src=\"https://cdn.revolutionparts.io/223b3e40451187171b9a7229149b1553/design/accessories/sentra/block/b1-img1.webp\" alt=\"Nissan Exterior Image\">\n                </div>\n                <p>Exterior Accessories</p>\n            </a>\n        </li>\n        <li>\n            <a href=\"https://parts.nissanusa.com/accessories/interior\">\n                <div class=\"theme_cat_tab_content_img\">\n                    <img src=\"https://cdn-product-images.revolutionparts.io/assets/7333e0a8cf72b0cdf1536c6295a7709a.webp\" alt=\"Nissan Interior\">\n                </div>\n                <p>Interior Accessories</p>\n            </a>\n        </li>\n        <li>\n            <a href=\"https://parts.nissanusa.com/accessories/lighting-technology\">\n                <div class=\"theme_cat_tab_content_img\">\n                    <img src=\"https://cdn-product-images.revolutionparts.io/assets/e27fb9f3308f5079a7693d27e6137b10.webp\" alt=\"Nissan Technology Image\">\n                </div>\n                <p>Lighting & Technology Accessories</p>\n            </a>\n        </li>\n\t\t<li>\n            <a href=\"https://parts.nissanusa.com/go/Nissan-Pet-Accessories.html\">\n                <div class=\"theme_cat_tab_content_img\">\n                    <img src=\"https://cdn.revolutionparts.io/images/840d68cbbbfa627cd4635408a6c82009/af4487a139450404a022c01a4a3eefab.jpeg\" alt=\"Nissan Pet Accessories\">\n                </div>\n                <p>Pet Accessories</p>\n            </a>\n        </li>\n\t\t<li>\n            <a href=\"https://parts.nissanusa.com/accessories/cargo\">\n                <div class=\"theme_cat_tab_content_img\">\n                    <img src=\"https://cdn-product-images.revolutionparts.io/assets/aaf0f0e228704ec721435e052c245b18.webp\" alt=\"Nissan Cargo Accessories\">\n                </div>\n                <p>Cargo Accessories</p>\n            </a>\n        </li>\n    </ul>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "tab_content tab_content_in",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,915 @@
+{
+  "pageId": "page",
+  "pageName": "Text Page",
+  "pageType": null,
+  "layoutEnabled": true,
+  "moduleCategories": [
+    "header",
+    "images",
+    "text",
+    "search",
+    "categories_products",
+    "forms",
+    "navigation",
+    "footer"
+  ],
+  "VFSPath": "layouts/page.json",
+  "requiredModules": [],
+  "scripts": "",
+  "sections": [
+    {
+      "sectionId": "section_71",
+      "htmlId": "themeNewPageBannerSection",
+      "htmlClasses": "themeNewPageBannerSection",
+      "contentWidth": "full",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_72",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_73",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_77",
+                  "moduleType": "banner_vpicker",
+                  "title": "Banner ",
+                  "options": {
+                    "banner_slides": {
+                      "name": "Banner Slides",
+                      "type": "object",
+                      "default_value": [],
+                      "value": [
+                        {
+                          "slideId": "slide_290",
+                          "image": "https://cdn.revolutionparts.io/223b3e40451187171b9a7229149b1553/design/kicks_banner_v2.webp",
+                          "link": "",
+                          "alt": ""
+                        }
+                      ]
+                    },
+                    "overlay_header": {
+                      "name": "Overlay Header",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "<span class=\"themeNewPageBannerDate\">NISSAN</span>KICKS®<br> Accessories"
+                    },
+                    "overlay_content": {
+                      "name": "Overlay Content",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "<p>\n    Genuine Nissan and Affiliated: Yakima® accessories provide customization options that can make your vision of your KICKS a reality. <span class=\"custom-tooltip-wrapper\"><a href=\"#\" class=\"tooltip-anchor\">[*]</a><span class=\"custom-tooltip\">                 \n        Images shown for illustrative purposes only. For complete limited warranty details, see your Nissan dealer and read the product warranty information.\n    </span> </span><span class=\"custom-tooltip-wrapper\"><a href=\"#\" class=\"tooltip-anchor\">[*]</a><span class=\"custom-tooltip\">                 \n        Images shown for illustrative purposes only.  Affiliated: Yakima® accessories shown are not genuine Nissan parts/accessories. Not warrantied by Nissan. Refer to product manufacturer for warranty details. Nissan limited warranty does not cover damages or failures to the vehicle caused by improper installation or alterations of any accessory or component. Contact your dealer for details.\n    </span> </span>\n</p>"
+                    },
+                    "picker_title": {
+                      "name": "Picker Title",
+                      "type": "string",
+                      "default_value": "Select Your Vehicle",
+                      "value": "Select Your Vehicle"
+                    },
+                    "hide_vehicle_picker": {
+                      "name": "Hide Vehicle Picker",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": true
+                    },
+                    "slider_timeout": {
+                      "name": "Slider Speed",
+                      "type": "string",
+                      "default_value": "4000",
+                      "value": "4000"
+                    },
+                    "banner_height": {
+                      "name": "Banner Height",
+                      "type": "string",
+                      "default_value": "290",
+                      "value": "700"
+                    },
+                    "use_overlay_shadows": {
+                      "name": "Overlay Shadows",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    },
+                    "banner_image_fill": {
+                      "name": "Banner Image Fill",
+                      "type": "select",
+                      "possible_values": [
+                        {
+                          "value": "cover",
+                          "label": "Cover"
+                        },
+                        {
+                          "value": "contain",
+                          "label": "Contain"
+                        }
+                      ],
+                      "default_value": "cover",
+                      "value": "cover"
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": true,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_32",
+      "htmlId": "",
+      "htmlClasses": "",
+      "contentWidth": "wide",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_130",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_132",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_27",
+                  "moduleType": "custom_html",
+                  "title": "Cart Main Title",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"themeCardMainTitleWrap\">\n    <p class=\"themeCardMainTitleTagline\">\n        KICKS EXTERIOR ACCESSORIES\n    </p>\n    <h3>\n        Make it your own\n    </h3>\n    <p class=\"themeCardMainTitleDescription\">\n        Stand out with a wide array of accessories that put your sense of style on display and help guard against the unexpected. Your KICKS can be equipped with many available accessories, such as Roof Rail Crossbars, Aluminum Alloy Wheels, and a Black Rear Bumper Protector.\n    </p>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_128",
+      "htmlId": "themeForsbergPackageSection",
+      "htmlClasses": "themeForsbergPackageSection themeForsbergPackageSectionDark",
+      "contentWidth": "wide",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_129",
+          "rowLayout": "8_4",
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_130",
+              "columnWidth": 8,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_133",
+                  "moduleType": "custom_html",
+                  "title": "19\" Dark Gray Aluminum-Alloy Wheels",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"themeForsbergPackageBigCard\">\n    <div class=\"themeForsbergPackageBigCardImg\">\n        <img alt=\"Kicks Image\" src=\"https://cdn.revolutionparts.io/223b3e40451187171b9a7229149b1553/design/accessories/kicks/b1-img1.webp\">\n    </div>\n    <div class=\"themeForsbergPackageBigCardContent\">\n        <h3>\n\t\t\t19\" Dark Gray Aluminum-Alloy Wheels\n\t\t</h3>\n        <ul>\n\t\t<li>Roll with some attitude. Add these unique 19\" alloy wheels</li>\n\t\t<li>Split multi-spoke design with recessed lug nuts<br>\n\t\t</li>\n\t\t</ul>\n        <p class=\"themeMsrp custom-tooltip-wrapper\">\n            MSRP $620 <a href=\"#\" class=\"tooltip-anchor\">[*]</a>\n            <span class=\"custom-tooltip\">\n                Price is Manufacturer's Suggested Retail Price (MSRP). MSRP excludes installation (except if factory-installed), taxes and other costs, and is subject to change without prior notice. Dealer sets actual price. Pictures are for informational purposes only.\n            </span>\n        </p>\n        <div class=\"themeVehicleBannerButton\"> \n            <a href=\"parts/nissan-19-dark-gray-aluminum-alloy-wheels-t99w17lc1j\">View Item</a>\n        </div>\n    </div>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "tabCard tabCard01",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_134",
+                  "moduleType": "custom_html",
+                  "title": "External Ground Lighting w/ logo",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"themeForsbergPackageBigCard\">\n    <div class=\"themeForsbergPackageBigCardImg\">\n        <img alt=\"Kicks Image\" src=\"https://cdn.revolutionparts.io/223b3e40451187171b9a7229149b1553/design/accessories/kicks/b1-img2.webp\">\n    </div>\n    <div class=\"themeForsbergPackageBigCardContent\">\n        <h3>\n\t\t\tExterior Ground Lighting w/ Logo\n\t\t</h3>\n        <ul>\n\t\t<li>Just click for a sense of security with lights that brighten up the area beneath and around your vehicle</li>\n\t\t<li>LED lights between front and rear tires</li>\n\t\t<li>Goes on when you press the key fob, press the entry button, or open doors</li>\n\t\t<li>Fades in and out with the dome light</li>\n\t\t</ul>\n        <p class=\"themeMsrp custom-tooltip-wrapper\">\n            MSRP $590 <a href=\"#\" class=\"tooltip-anchor\">[*]</a>\n            <span class=\"custom-tooltip\">\n                Price is Manufacturer's Suggested Retail Price (MSRP). MSRP excludes installation (except if factory-installed), taxes and other costs, and is subject to change without prior notice. Dealer sets actual price. Pictures are for informational purposes only.\n            </span>\n        </p>\n        <div class=\"themeVehicleBannerButton\"> \n            <a href=\"parts/nissan-exterior-ground-lighting-w-logo-t99f47lg1a\">View Item</a>\n        </div>\n    </div>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "tabCard tabCard02",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_135",
+                  "moduleType": "custom_html",
+                  "title": "Black Adhesive Rear Bumper Protector",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"themeForsbergPackageBigCard\">\n    <div class=\"themeForsbergPackageBigCardImg\">\n        <img alt=\"Kicks Image\" src=\"https://cdn.revolutionparts.io/223b3e40451187171b9a7229149b1553/design/accessories/kicks/b1-img3.webp\">\n    </div>\n    <div class=\"themeForsbergPackageBigCardContent\">\n        <h3>\n            Black Rear Bumper Protector\n        </h3>\n        <ul>\n\t\t<li>Designed to help prevent scratches and scuffs when loading cargo</li>\n\t\t<li>Easy, no-drill installation<br>\n\t\t</li>\n\t\t</ul>\n        <p class=\"themeMsrp custom-tooltip-wrapper\">\n            MSRP $92 <a href=\"#\" class=\"tooltip-anchor\">[*]</a>\n            <span class=\"custom-tooltip\">\n                Price is Manufacturer's Suggested Retail Price (MSRP). MSRP excludes installation (except if factory-installed), taxes and other costs, and is subject to change without prior notice. Dealer sets actual price. Pictures are for informational purposes only.\n            </span>\n        </p>\n        <div class=\"themeVehicleBannerButton\"> \n            <a href=\"parts/nissan-black-rear-bumper-protector-t99b27lg0a\">View Item</a>\n        </div>\n    </div>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "tabCard tabCard03",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_136",
+                  "moduleType": "custom_html",
+                  "title": "Clear Film Hood Protector",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"themeForsbergPackageBigCard\">\n    <div class=\"themeForsbergPackageBigCardImg\">\n        <img alt=\"Kicks Image\" src=\"https://cdn.revolutionparts.io/223b3e40451187171b9a7229149b1553/design/accessories/kicks/b1-img4.webp\">\n    </div>\n    <div class=\"themeForsbergPackageBigCardContent\">\n        <h3>\n            Clear Hood Protector\n        </h3>\n        <ul>\n\t\t<li>Transparent design provides protection without sacrificing style</li>\n\t\t<li>Easy, no-drill installation<br>\n\t\t</li>\n\t\t</ul>\n        <p class=\"themeMsrp custom-tooltip-wrapper\">\n            MSRP $170 <a href=\"#\" class=\"tooltip-anchor\">[*]</a>\n            <span class=\"custom-tooltip\">\n                Price is Manufacturer's Suggested Retail Price (MSRP). MSRP excludes installation (except if factory-installed), taxes and other costs, and is subject to change without prior notice. Dealer sets actual price. Pictures are for informational purposes only.\n            </span>\n        </p>\n        <div class=\"themeVehicleBannerButton\"> \n            <a href=\"/parts/nissan-clear-film-hood-protector-t99d87lg0a\">View Item</a>\n        </div>\n    </div>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "tabCard tabCard04",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_198",
+                  "moduleType": "custom_html",
+                  "title": "Roof Rail Crossbars",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"themeForsbergPackageBigCard\">\n    <div class=\"themeForsbergPackageBigCardImg\">\n        <img alt=\"Kicks Image\" src=\"https://cdn.revolutionparts.io/223b3e40451187171b9a7229149b1553/design/accessories/kicks/b1-img5_new.webp\">\n    </div>\n    <div class=\"themeForsbergPackageBigCardContent\">\n        <h3>\n            Black Roof Rail Crossbars\n        </h3>\n        <ul>\n\t\t<li>\n\t\t\t<div>\n\t\t\t\tYou can add roof rail attachments and increase your cargo-carrying options when you get Roof Rail Crossbars \n\t\t\t\t<span class=\"custom-tooltip-wrapper\">\n\t\t\t\t\t<a href=\"#\" class=\"tooltip-anchor\">[*]</a>\n\t\t\t\t\t<span class=\"custom-tooltip\">\n\t\t\t\t\t\tGenuine Nissan Accessory Roof Rail Crossbars have a maximum weight limit of 100 lbs.\n\t\t\t\t\t</span>\n\t\t\t\t</span>\n\t\t\t\t<span class=\"custom-tooltip-wrapper\">\n\t\t\t\t\t<a href=\"#\" class=\"tooltip-anchor\">[*]</a>\n\t\t\t\t\t<span class=\"custom-tooltip\">\n\t\t\t\t\t\tCargo and load capacity limited by weight and distribution. Always secure cargo. Heavy loading of the vehicle with cargo, especially on the roof, will affect the handling and stability of the vehicle.\n\t\t\t\t\t</span>\n\t\t\t\t</span>\n\t\t\t</div>\n\t\t</li>\n\t\t<li>\n\t\t\t<div>\n\t\t\t\tPerfect for mounting a variety of Affiliated: Yakima® Accessories \n\t\t\t\t<span class=\"custom-tooltip-wrapper\">\n\t\t\t\t\t<a href=\"#\" class=\"tooltip-anchor\">[*]</a>\n\t\t\t\t\t<span class=\"custom-tooltip\">\n\t\t\t\t\t\tAccessories shown are not genuine Nissan parts/accessories. Not warranted by Nissan. Refer to product manufacturer for warranty details. Nissan limited warranty does not cover damages or failures to the vehicle caused by improper installation or alterations of any accessory or component. Contact your dealer for details.\n\t\t\t\t\t</span>\n\t\t\t\t</span>\n\t\t\t\t<span class=\"custom-tooltip-wrapper\">\n\t\t\t\t\t<a href=\"#\" class=\"tooltip-anchor\">[*]</a>\n\t\t\t\t\t<span class=\"custom-tooltip\">\n\t\t\t\t\t\tThe Nissan names, logos and slogans are trademarks owned by or licensed to Nissan Motor Co. Ltd. and/or its North American subsidiaries. Other trademarks and trade names are those of their respective owners.\n\t\t\t\t\t</span>\n\t\t\t\t</span>\n\t\t\t</div>\n\t\t</li>\n\t\t<li>Nissan Roof Rail Crossbars have a maximum weight limit of 100 lbs.<br>\n\t\t</li>\n\t\t</ul>\n        <p class=\"themeMsrp custom-tooltip-wrapper\">\n            MSRP $365 <a href=\"#\" class=\"tooltip-anchor\">[*]</a>\n            <span class=\"custom-tooltip\">\n                Price is Manufacturer's Suggested Retail Price (MSRP). MSRP excludes installation (except if factory-installed), taxes and other costs, and is subject to change without prior notice. Dealer sets actual price. Pictures are for informational purposes only.\n            </span>\n        </p>\n        <div class=\"themeVehicleBannerButton\"> \n            <a href=\"parts/nissan-roof-rail-crossbars-t99r15rl0d\">View Item</a>\n        </div>\n    </div>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "tabCard tabCard05",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_405",
+                  "moduleType": "custom_html",
+                  "title": "Side-Window Deflectors",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"themeForsbergPackageBigCard\">\n    <div class=\"themeForsbergPackageBigCardImg\">\n        <img alt=\"Kicks Image\" src=\"https://cdn.revolutionparts.io/223b3e40451187171b9a7229149b1553/design/accessories/kicks/side_window_deflectors_kicks.webp\">\n    </div>\n    <div class=\"themeForsbergPackageBigCardContent\">\n        <h3>\n            Side-Window Deflectors\n        </h3>\n        <ul>\n\t\t<li>Stylish, Genuine Nissan Side-Window Deflectors help to fight glare and reduce wind noise within your Kicks</li>\n        <li>Installation is simple – doesn’t require any drilling or complicated bodywork</li>\n        <li>Easy, [tool-free][no-drill] installation [on front doors]</li>\n        <li>Comes in a set of four.</li>\n\t\t</ul>\n        <p class=\"themeMsrp custom-tooltip-wrapper\">\n            MSRP $126 <a href=\"#\" class=\"tooltip-anchor\">[*]</a>\n            <span class=\"custom-tooltip\">\n                Price is Manufacturer's Suggested Retail Price (MSRP). MSRP excludes installation (except if factory-installed), taxes and other costs, and is subject to change without prior notice. Dealer sets actual price. Pictures are for informational purposes only.\n            </span>\n        </p>\n        <div class=\"themeVehicleBannerButton\"> \n            <a href=\"parts/nissan-side-window-deflectors-h08007la0a\">View Item</a>\n        </div>\n    </div>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "tabCard tabCard06",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_406",
+                  "moduleType": "custom_html",
+                  "title": "Wheel Locks",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"themeForsbergPackageBigCard\">\n    <div class=\"themeForsbergPackageBigCardImg\">\n        <img alt=\"Kicks Image\" src=\"https://cdn.revolutionparts.io/223b3e40451187171b9a7229149b1553/design/accessories/kicks/wheel_locks_kicks.webp\">\n    </div>\n    <div class=\"themeForsbergPackageBigCardContent\">\n        <h3>\n            Wheel Locks\n        </h3>\n        <ul>\n\t\t<li>Helps protect against wheel and tire theft.</li>\n        <li>Set of 4</li>\n        <li>Hardened steel construction for superior durability and corrosion resistance</li>\n        <li>Each set contains four chrome locks, one for each wheel, and a special coded socket with a narrow-groove key pattern to provide maximum security</li>\n\t\t</ul>\n        <p class=\"themeMsrp custom-tooltip-wrapper\">\n            MSRP $78 <a href=\"#\" class=\"tooltip-anchor\">[*]</a>\n            <span class=\"custom-tooltip\">\n                Price is Manufacturer's Suggested Retail Price (MSRP). MSRP excludes installation (except if factory-installed), taxes and other costs, and is subject to change without prior notice. Dealer sets actual price. Pictures are for informational purposes only.\n            </span>\n        </p>\n        <div class=\"themeVehicleBannerButton\"> \n            <a href=\"parts/nissan-wheel-locks-t99w2a7010\">View Item</a>\n        </div>\n    </div>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "tabCard tabCard07",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            },
+            {
+              "columnId": "column_131",
+              "columnWidth": 4,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_132",
+                  "moduleType": "custom_html",
+                  "title": "Package Image Link",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<ul class=\"themeForsbergPackageImgList\">\n    <li class=\"themeForsbergPackageImgListItem\">\n        <a href=\"#\" data-toggle-target=\".tabCard01\" class=\"themeForsbergPackageImgListLink\">\n            <img alt=\"Kicks Image\" src=\"https://rparts-sites.s3.amazonaws.com/223b3e40451187171b9a7229149b1553/design/accessories/kicks/b1-img1.webp\" class=\"themeForsbergPackageImgListCard\">\n        </a>\n    </li>\n    <li class=\"themeForsbergPackageImgListItem\">\n        <a href=\"#\" data-toggle-target=\".tabCard02\" class=\"themeForsbergPackageImgListLink\">\n            <img alt=\"Kicks Image\" src=\"https://rparts-sites.s3.amazonaws.com/223b3e40451187171b9a7229149b1553/design/accessories/kicks/b1-img2.webp\" class=\"themeForsbergPackageImgListCard\">\n        </a>\n    </li>\n    <li class=\"themeForsbergPackageImgListItem\">\n        <a href=\"#\" data-toggle-target=\".tabCard03\" class=\"themeForsbergPackageImgListLink\">\n            <img alt=\"Kicks Image\" src=\"https://rparts-sites.s3.amazonaws.com/223b3e40451187171b9a7229149b1553/design/accessories/kicks/b1-img3.webp\" class=\"themeForsbergPackageImgListCard\">\n        </a>\n    </li>\n    <li class=\"themeForsbergPackageImgListItem\">\n        <a href=\"#\" data-toggle-target=\".tabCard04\" class=\"themeForsbergPackageImgListLink\">\n            <img alt=\"Kicks Image\" src=\"https://rparts-sites.s3.amazonaws.com/223b3e40451187171b9a7229149b1553/design/accessories/kicks/b1-img4.webp\" class=\"themeForsbergPackageImgListCard\">\n        </a>\n    </li>\n\t<li class=\"themeForsbergPackageImgListItem\">\n        <a href=\"#\" data-toggle-target=\".tabCard05\" class=\"themeForsbergPackageImgListLink\">\n            <img alt=\"Kicks Image\" src=\"https://rparts-sites.s3.amazonaws.com/223b3e40451187171b9a7229149b1553/design/accessories/kicks/b1-img5_new.webp\" class=\"themeForsbergPackageImgListCard\">\n        </a>\n    </li>\n    <li class=\"themeForsbergPackageImgListItem\">\n        <a href=\"#\" data-toggle-target=\".tabCard06\" class=\"themeForsbergPackageImgListLink\">\n            <img alt=\"Kicks Image\" src=\"https://rparts-sites.s3.amazonaws.com/223b3e40451187171b9a7229149b1553/design/accessories/kicks/side_window_deflectors_kicks.webp\" class=\"themeForsbergPackageImgListCard\">\n        </a>\n    </li>\n    <li class=\"themeForsbergPackageImgListItem\">\n        <a href=\"#\" data-toggle-target=\".tabCard07\" class=\"themeForsbergPackageImgListLink\">\n            <img alt=\"Kicks Image\" src=\"https://rparts-sites.s3.amazonaws.com/223b3e40451187171b9a7229149b1553/design/accessories/kicks/wheel_locks_kicks.webp\" class=\"themeForsbergPackageImgListCard\">\n        </a>\n    </li>\n    <li class=\"themeForsbergPackageImgListItemLink\">\n        <a href=\"https://parts.nissanusa.com/accessories/exterior\" class=\"themeForsbergPackageImgListLinkText\">\n            Shop All Exterior\n        </a>\n    </li>\n</ul>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "desktop-only"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_27",
+      "htmlId": "",
+      "htmlClasses": "",
+      "contentWidth": "wide",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_28",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_29",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_32",
+                  "moduleType": "custom_html",
+                  "title": "Cart Main Title",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"themeCardMainTitleWrap\">\n    <p class=\"themeCardMainTitleTagline\">\n        KICKS INTERIOR, PET, LIGHTING AND TECH ACCESSORIES\n    </p>\n    <h3>\n        Gear up for every drive\n    </h3>\n    <p class=\"themeCardMainTitleDescription\">\n        Showcase your creativity with a wide array of accessories. Take the time to choose pieces that best express your personality.\n    </p>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_166",
+      "htmlId": "themeForsbergPackageSection",
+      "htmlClasses": "themeForsbergPackageSection themeForsbergPackageSectionDark",
+      "contentWidth": "wide",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_167",
+          "rowLayout": "4_8",
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_168",
+              "columnWidth": 4,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_172",
+                  "moduleType": "custom_html",
+                  "title": "Package Image Link",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<ul class=\"themeForsbergPackageImgList\">\n    <li class=\"themeForsbergPackageImgListItemNew\">\n        <a href=\"#\" data-toggle-target=\".tabCardNew01\" class=\"themeForsbergPackageImgListLink\">\n            <img alt=\"Kicks Image\" src=\"https://rparts-sites.s3.amazonaws.com/223b3e40451187171b9a7229149b1553/design/accessories/kicks/panoramic_headliner.webp\" class=\"themeForsbergPackageImgListCard\">\n        </a>\n    </li>\n    <li class=\"themeForsbergPackageImgListItemNew\">\n        <a href=\"#\" data-toggle-target=\".tabCardNew02\" class=\"themeForsbergPackageImgListLink\">\n            <img alt=\"Kicks Image\" src=\"https://rparts-sites.s3.amazonaws.com/223b3e40451187171b9a7229149b1553/design/accessories/kicks/b2-img2.webp\" class=\"themeForsbergPackageImgListCard\">\n        </a>\n    </li>\n    <li class=\"themeForsbergPackageImgListItemNew\">\n        <a href=\"#\" data-toggle-target=\".tabCardNew03\" class=\"themeForsbergPackageImgListLink\">\n            <img alt=\"Kicks Image\" src=\"https://rparts-sites.s3.amazonaws.com/223b3e40451187171b9a7229149b1553/design/accessories/kicks/b2-img3.webp\" class=\"themeForsbergPackageImgListCard\">\n        </a>\n    </li>\n    <li class=\"themeForsbergPackageImgListItemNew\">\n        <a href=\"#\" data-toggle-target=\".tabCardNew04\" class=\"themeForsbergPackageImgListLink\">\n            <img alt=\"Kicks Image\" src=\"https://rparts-sites.s3.amazonaws.com/223b3e40451187171b9a7229149b1553/design/accessories/kicks/b2-img4.webp\" class=\"themeForsbergPackageImgListCard\">\n        </a>\n    </li>\n\t<li class=\"themeForsbergPackageImgListItemNew\">\n        <a href=\"#\" data-toggle-target=\".tabCardNew05\" class=\"themeForsbergPackageImgListLink\">\n            <img alt=\"Kicks Image\" src=\"https://rparts-sites.s3.amazonaws.com/223b3e40451187171b9a7229149b1553/design/accessories/kicks/b2-img5.webp\" class=\"themeForsbergPackageImgListCard\">\n        </a>\n    </li>\n    <li class=\"themeForsbergPackageImgListItemNew\">\n        <a href=\"#\" data-toggle-target=\".tabCardNew06\" class=\"themeForsbergPackageImgListLink\">\n            <img alt=\"Kicks Image\" src=\"https://rparts-sites.s3.amazonaws.com/223b3e40451187171b9a7229149b1553/design/accessories/kicks/illuminated_kick_plates_kicks.webp\" class=\"themeForsbergPackageImgListCard\">\n        </a>\n    </li>\n    <li class=\"themeForsbergPackageImgListItemNew\">\n        <a href=\"#\" data-toggle-target=\".tabCardNew07\" class=\"themeForsbergPackageImgListLink\">\n            <img alt=\"Kicks Image\" src=\"https://rparts-sites.s3.amazonaws.com/223b3e40451187171b9a7229149b1553/design/accessories/kicks/rear_usb_ports_kicks.webp\" class=\"themeForsbergPackageImgListCard\">\n        </a>\n    </li>\n    <li class=\"themeForsbergPackageImgListItemLink\">\n        <a href=\"https://parts.nissanusa.com/accessories/interior\" class=\"themeForsbergPackageImgListLinkText\">\n            Shop All Interior\n        </a>\n    </li>\n</ul>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "desktop-only"
+                }
+              ]
+            },
+            {
+              "columnId": "column_169",
+              "columnWidth": 8,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_175",
+                  "moduleType": "custom_html",
+                  "title": "Panoramic Illuminated Headliner",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"themeForsbergPackageBigCard\">\n    <div class=\"themeForsbergPackageBigCardImg\">\n        <img alt=\"Kicks Image\" src=\"https://cdn.revolutionparts.io/223b3e40451187171b9a7229149b1553/design/accessories/kicks/panoramic_headliner.webp\">\n    </div>\n    <div class=\"themeForsbergPackageBigCardContent\">\n        <h3>\n            Panoramic Illuminated Headliner\n        </h3>\n\t\t<ul>\n\t\t<li>Hidden white LEDs illuminate the headliner area around the panoramic moonroof</li>\n\t\t<li>Easily control on/off function with a single button</li>\n\t\t<li>Works with the vehicle’s interior lighting when the door is opened<br>\n\t\t</li>\n\t\t</ul>\n        <p class=\"themeMsrp custom-tooltip-wrapper\">\n            MSRP $460 <a href=\"#\" class=\"tooltip-anchor\">[*]</a>\n            <span class=\"custom-tooltip\">\n                Price is Manufacturer's Suggested Retail Price (MSRP). MSRP excludes installation (except if factory-installed), taxes and other costs, and is subject to change without prior notice. Dealer sets actual price. Pictures are for informational purposes only.\n            </span>\n        </p>\n        <div class=\"themeVehicleBannerButton\"> \n            <a href=\"parts/nissan-panoramic-illuminated-headliner-t99f37lg1a\">View Item</a>\n        </div>\n    </div>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "tabCardNew tabCardNew01",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_178",
+                  "moduleType": "custom_html",
+                  "title": "Dual Camera Drive Recorder ",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"themeForsbergPackageBigCard\">\n    <div class=\"themeForsbergPackageBigCardImg\">\n        <img alt=\"Kicks Image\" src=\"https://cdn.revolutionparts.io/223b3e40451187171b9a7229149b1553/design/accessories/kicks/b2-img2.webp\">\n    </div>\n    <div class=\"themeForsbergPackageBigCardContent\">\n        <h3>\n            Dual Camera Drive Recorder\n        </h3>\n        <ul>\n\t\t<li>\n\t\t\t<div>\n\t\t\t\tPoints forward to capture what is in front of the vehicle, points to the inside to catch what happens in the cabin \n\t\t\t\t<span class=\"custom-tooltip-wrapper\">\n\t\t\t\t\t<a href=\"#\" class=\"tooltip-anchor\">[*]</a>\n\t\t\t\t\t<span class=\"custom-tooltip\">\n\t\t\t\t\t\tDriving Recorder to be used only in accordance with any laws or rules in effect in your vehicle’s location that may apply to audio or video recordings of drivers and passengers.\n\t\t\t\t\t</span>\n\t\t\t\t</span>\n\t\t\t\t<span class=\"custom-tooltip-wrapper\">\n\t\t\t\t\t<a href=\"#\" class=\"tooltip-anchor\">[*]</a>\n\t\t\t\t\t<span class=\"custom-tooltip\">\n\t\t\t\t\t\tVehicle shown is for illustrative purposes only. Not representative of named model year / model.\n\t\t\t\t\t</span>\n\t\t\t\t</span>\n\t\t\t</div>\n\t\t</li>\n\t\t<li>G-sensor can turn on the interior camera in case of break-in</li>\n\t\t<li>Saves footage that can be shared with insurance, police, or family members<br>\n\t\t</li>\n\t\t</ul>\n        <p class=\"themeMsrp custom-tooltip-wrapper\">\n            MSRP $410 <a href=\"#\" class=\"tooltip-anchor\">[*]</a>\n            <span class=\"custom-tooltip\">\n                Price is Manufacturer's Suggested Retail Price (MSRP). MSRP excludes installation (except if factory-installed), taxes and other costs, and is subject to change without prior notice. Dealer sets actual price. Pictures are for informational purposes only.\n            </span>\n        </p>\n        <div class=\"themeVehicleBannerButton\"> \n            <a href=\"parts/nissan-dual-camera-drive-recorder-t99q65vg0b\">View Item</a>\n        </div>\n    </div>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "tabCardNew tabCardNew02",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_181",
+                  "moduleType": "custom_html",
+                  "title": "Trunk Side Utility Bin",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"themeForsbergPackageBigCard\">\n    <div class=\"themeForsbergPackageBigCardImg\">\n        <img alt=\"Kicks Image\" src=\"https://cdn.revolutionparts.io/223b3e40451187171b9a7229149b1553/design/accessories/kicks/b2-img3.webp\">\n    </div>\n    <div class=\"themeForsbergPackageBigCardContent\">\n        <h3>\n            Trunk Side Utility Bins\n        </h3>\n        <ul>\n\t\t<li>Secure loose items within easy reach</li>\n\t\t<li>Spill-proof and removable</li>\n\t\t<li>Made of durable black plastic<br>\n\t\t</li>\n\t\t</ul>\n        <p class=\"themeMsrp custom-tooltip-wrapper\">\n            MSRP $101 <a href=\"#\" class=\"tooltip-anchor\">[*]</a>\n            <span class=\"custom-tooltip\">\n                Price is Manufacturer's Suggested Retail Price (MSRP). MSRP excludes installation (except if factory-installed), taxes and other costs, and is subject to change without prior notice. Dealer sets actual price. Pictures are for informational purposes only.\n            </span>\n        </p>\n        <div class=\"themeVehicleBannerButton\"> \n            <a href=\"parts/nissan-trunk-side-utility-bin-t99c67lg0a\">View Item</a>\n        </div>\n    </div>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "tabCardNew tabCardNew03",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_184",
+                  "moduleType": "custom_html",
+                  "title": "Illuminated Cargo Scuff Plate",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"themeForsbergPackageBigCard\">\n    <div class=\"themeForsbergPackageBigCardImg\">\n        <img alt=\"Kicks Image\" src=\"https://cdn.revolutionparts.io/223b3e40451187171b9a7229149b1553/design/accessories/kicks/b2-img4.webp\">\n    </div>\n    <div class=\"themeForsbergPackageBigCardContent\">\n        <h3>\n            Illuminated Cargo Scuff Plates\n        </h3>\n        <ul>\n\t\t<li>Designed to prevent scratches and scuffs when loading cargo</li>\n\t\t<li>Features LED illumination</li>\n\t\t<li>Durable stainless steel finish<br>\n\t\t</li>\n\t\t</ul>\n        <p class=\"themeMsrp custom-tooltip-wrapper\">\n            MSRP $426 <a href=\"#\" class=\"tooltip-anchor\">[*]</a>\n            <span class=\"custom-tooltip\">\n                Price is Manufacturer's Suggested Retail Price (MSRP). MSRP excludes installation (except if factory-installed), taxes and other costs, and is subject to change without prior notice. Dealer sets actual price. Pictures are for informational purposes only.\n            </span>\n        </p>\n        <div class=\"themeVehicleBannerButton\"> \n            <a href=\"parts/nissan-illuminated-cargo-scuff-plates-t99f37lg00\">View Item</a>\n        </div>\n    </div>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "tabCardNew tabCardNew04",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_96",
+                  "moduleType": "custom_html",
+                  "title": "Pet Ramp",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"themeForsbergPackageBigCard\">\n    <div class=\"themeForsbergPackageBigCardImg\">\n        <img alt=\"Kicks Image\" src=\"https://cdn.revolutionparts.io/223b3e40451187171b9a7229149b1553/design/accessories/kicks/b2-img5.webp\">\n    </div>\n    <div class=\"themeForsbergPackageBigCardContent\">\n        <h3>\n            Pet Ramp\n        </h3>\n        <ul>\n\t\t<li>Telescoping ramp expands to 64 inches</li>\n\t\t<li>Safe for dogs up to 150 lbs.</li>\n\t\t<li>Textured polyester (660D) surface for grip</li>\n\t\t<li>Includes a durable carry bag with Nissan logo<br>\n\t\t</li>\n\t\t</ul>\n        <p class=\"themeMsrp custom-tooltip-wrapper\">\n            MSRP $333 <a href=\"#\" class=\"tooltip-anchor\">[*]</a>\n            <span class=\"custom-tooltip\">\n                Price is Manufacturer's Suggested Retail Price (MSRP). MSRP excludes installation (except if factory-installed), taxes and other costs, and is subject to change without prior notice. Dealer sets actual price. Pictures are for informational purposes only.\n            </span>\n        </p>\n        <div class=\"themeVehicleBannerButton\"> \n            <a href=\"parts/nissan-pet-ramp-t99h46ta0a\">View Item</a>\n        </div>\n    </div>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "tabCardNew tabCardNew05",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_415",
+                  "moduleType": "custom_html",
+                  "title": "Illuminated Kick Plates",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"themeForsbergPackageBigCard\">\n    <div class=\"themeForsbergPackageBigCardImg\">\n        <img alt=\"Kicks Image\" src=\"https://cdn.revolutionparts.io/223b3e40451187171b9a7229149b1553/design/accessories/kicks/illuminated_kick_plates_kicks.webp\">\n    </div>\n    <div class=\"themeForsbergPackageBigCardContent\">\n        <h3>\n            Illuminated Kick Plates\n        </h3>\n        <ul>\n\t\t<li>Light up your entrance and protect your front sills</li>\n\t\t<li>Contoured to match door openings</li>\n\t\t<li>[Brushed-aluminum][Stainless Steel] inserts feature an illuminated Kicks logo.</li>\n\t\t</ul>\n        <p class=\"themeMsrp custom-tooltip-wrapper\">\n            MSRP $320 <a href=\"#\" class=\"tooltip-anchor\">[*]</a>\n            <span class=\"custom-tooltip\">\n                Price is Manufacturer's Suggested Retail Price (MSRP). MSRP excludes installation (except if factory-installed), taxes and other costs, and is subject to change without prior notice. Dealer sets actual price. Pictures are for informational purposes only.\n            </span>\n        </p>\n        <div class=\"themeVehicleBannerButton\"> \n            <a href=\"parts/nissan-illuminated-kick-plates-t99g67lg00\">View Item</a>\n        </div>\n    </div>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "tabCardNew tabCardNew06",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_416",
+                  "moduleType": "custom_html",
+                  "title": "Rear USB-PD Charging Ports",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"themeForsbergPackageBigCard\">\n    <div class=\"themeForsbergPackageBigCardImg\">\n        <img alt=\"Kicks Image\" src=\"https://cdn.revolutionparts.io/223b3e40451187171b9a7229149b1553/design/accessories/kicks/rear_usb_ports_kicks.webp\">\n    </div>\n    <div class=\"themeForsbergPackageBigCardContent\">\n        <h3>\n            Rear USB-PD Charging Ports\n        </h3>\n        <ul>\n\t\t<li>Quickly charge your electronic devices</li>\n\t\t<li>Includes both USB-A and USB-C charging ports to connect to your compatible devices</li>\n\t\t<li>28W continuous power rating when both ports are in use</li>\n\t\t</ul>\n        <p class=\"themeMsrp custom-tooltip-wrapper\">\n            MSRP $215 <a href=\"#\" class=\"tooltip-anchor\">[*]</a>\n            <span class=\"custom-tooltip\">\n                Price is Manufacturer's Suggested Retail Price (MSRP). MSRP excludes installation (except if factory-installed), taxes and other costs, and is subject to change without prior notice. Dealer sets actual price. Pictures are for informational purposes only.\n            </span>\n        </p>\n        <div class=\"themeVehicleBannerButton\"> \n            <a href=\"parts/nissan-rear-usb-power-delivery-charging-ports-t99q75rl0a\">View Item</a>\n        </div>\n    </div>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "tabCardNew tabCardNew07",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_514",
+      "htmlId": "",
+      "htmlClasses": "",
+      "contentWidth": "wide",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_515",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_516",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_517",
+                  "moduleType": "custom_html",
+                  "title": "Cart Main Title",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"themeCardMainTitleWrap\">\n    <p class=\"themeCardMainTitleTagline\">\n        NISSAN AFFILIATED: YAKIMA® ACCESSORIES\n    </p>\n    <h3>\n        Take on the road with Yakima® Accessories\n    </h3>\n    <p class=\"themeCardMainTitleDescription\">\n        Ready to go bigger, bolder, and even get a little dirtier? Make every day an adventure.\n    </p>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_518",
+      "htmlId": "themeNewPageCardSection",
+      "htmlClasses": "themeNewPageCardSection themeNewPageCardSectionCol5",
+      "contentWidth": "wide",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_519",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_520",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_521",
+                  "moduleType": "custom_html",
+                  "title": "Card Section",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"themeNewPageCardWrapper\">\n    <div id=\"themeNewPageCardList02\" class=\"themeNewPageCardList owl-carousel owl-theme\">\n        <div class=\"themeNewPageCardItem\">\n            <div class=\"themeNewPageCardBox\">\n                <div class=\"themeNewPageCardImage\">\n                    <img alt=\"Kicks Image\" src=\"https://cdn.revolutionparts.io/223b3e40451187171b9a7229149b1553/design/accessories/kicks/b3-img1.webp\">\n                </div>\n                <div class=\"themeNewPageCardContent\">\n                    <h4>\n                        Affiliated: Yakima® OffGrid &mdash; Cargo Basket\n                        <div class=\"custom-tooltip-wrapper\">\n                            <a href=\"#\" class=\"tooltip-anchor\">[*]</a> \n                            <span class=\"custom-tooltip\">                 \n                                Accessories shown are not genuine Nissan parts/accessories. Not warranted by Nissan. Refer to product manufacturer for warranty details. Nissan limited warranty does not cover damages or failures to the vehicle caused by improper installation or alterations of any accessory or component. Contact your dealer for details.\n                            </span> \n                        </div>\n                        <div class=\"custom-tooltip-wrapper\">\n                            <a href=\"#\" class=\"tooltip-anchor\">[*]</a> \n                            <span class=\"custom-tooltip\">                 \n                                Cargo and load capacity limited by weight and distribution. Always secure cargo. Heavy loading of the vehicle with cargo, especially on the roof, will affect the handling and stability of the vehicle.\n                            </span> \n                        </div>\n                        <div class=\"custom-tooltip-wrapper\">\n                            <a href=\"#\" class=\"tooltip-anchor\">[*]</a> \n                            <span class=\"custom-tooltip\">                 \n                                The Nissan names, logos and slogans are trademarks owned by or licensed to Nissan Motor Co. Ltd. and/or its North American subsidiaries. Other trademarks and trade names are those of their respective owners.\n                            </span> \n                        </div>\n                        <div class=\"custom-tooltip-wrapper\">\n                            <a href=\"#\" class=\"tooltip-anchor\">[*]</a> \n                            <span class=\"custom-tooltip\">                 \n                                Vehicle shown is for illustrative purposes only. Not representative of named model year / model.\n                            </span> \n                        </div>\n                    </h4>\n                    <p class=\"themeMsrp custom-tooltip-wrapper\">\n                        MSRP $629 <a href=\"#\" class=\"tooltip-anchor\">[*]</a>\n                        <span class=\"custom-tooltip\">\n                            Price is Manufacturer's Suggested Retail Price (MSRP). MSRP excludes installation (except if factory-installed), taxes and other costs, and is subject to change without prior notice. Dealer sets actual price. Pictures are for informational purposes only.\n                        </span>\n                    </p>\n                    <ul>\n\t\t\t\t\t<li>\n\t\t\t\t\t\t<p class=\"custom-tooltip-wrapper\">\n\t\t\t\t\t\t\tCompatible with Genuine Nissan Accessory Roof Rail Crossbars <a href=\"#\" class=\"tooltip-anchor\">[*]</a>\n                        <span class=\"custom-tooltip\">\n                            Genuine Nissan Accessory Roof Rail Crossbars have a maximum weight limit of 100 lbs.\n                        </span>\n\t\t\t\t\t\t</p>\n\t\t\t\t\t</li>\n\t\t\t\t\t<li>Burly cargo basket with a clean, modern design</li>\n\t\t\t\t\t<li>Integrated fairing reduces wind noise</li>\n\t\t\t\t\t<li>Made from strong, durable steel</li>\n\t\t\t\t\t</ul>\n                    <div class=\"themeVehicleBannerButton\"> \n\t\t\t\t\t\t<a href=\"parts/nissan-affiliated-yakima-reg-offgrid-mdash-cargo-basket-t99r2a600a\">View Item</a> \n\t\t\t\t\t</div>\n                </div>\n            </div>\n        </div>\n        <div class=\"themeNewPageCardItem\">\n            <div class=\"themeNewPageCardBox\">\n                <div class=\"themeNewPageCardImage\">\n                    <img alt=\"Kicks Image\" src=\"https://cdn.revolutionparts.io/223b3e40451187171b9a7229149b1553/design/accessories/kicks/b3-img2.webp\">\n                </div>\n                <div class=\"themeNewPageCardContent\">\n                    <h4>\n                        Affiliated: Yakima® SupDawg &mdash; Surfboard Carrier\n                        <div class=\"custom-tooltip-wrapper\">\n                            <a href=\"#\" class=\"tooltip-anchor\">[*]</a> \n                            <span class=\"custom-tooltip\">                 \n                                Accessories shown are not genuine Nissan parts/accessories. Not warranted by Nissan. Refer to product manufacturer for warranty details. Nissan limited warranty does not cover damages or failures to the vehicle caused by improper installation or alterations of any accessory or component. Contact your dealer for details.\n                            </span> \n                        </div>\n                        <div class=\"custom-tooltip-wrapper\">\n                            <a href=\"#\" class=\"tooltip-anchor\">[*]</a> \n                            <span class=\"custom-tooltip\">                 \n                                Cargo and load capacity limited by weight and distribution. Always secure cargo. Heavy loading of the vehicle with cargo, especially on the roof, will affect the handling and stability of the vehicle.\n                            </span> \n                        </div>\n\t\t\t\t\t\t<div class=\"custom-tooltip-wrapper\">\n                            <a href=\"#\" class=\"tooltip-anchor\">[*]</a> \n                            <span class=\"custom-tooltip\">                 \n                                The Nissan names, logos and slogans are trademarks owned by or licensed to Nissan Motor Co. Ltd. and/or its North American subsidiaries. Other trademarks and trade names are those of their respective owners.\n                            </span> \n                        </div>\n                        <div class=\"custom-tooltip-wrapper\">\n                            <a href=\"#\" class=\"tooltip-anchor\">[*]</a> \n                            <span class=\"custom-tooltip\">                 \n                                Vehicle shown is for illustrative purposes only. Not representative of named model year / model.\n                            </span> \n                        </div>\n                    </h4>\n                    <p class=\"themeMsrp custom-tooltip-wrapper\">\n                        MSRP $379 <a href=\"#\" class=\"tooltip-anchor\">[*]</a>\n                        <span class=\"custom-tooltip\">\n                            Price is Manufacturer's Suggested Retail Price (MSRP). MSRP excludes installation (except if factory-installed), taxes and other costs, and is subject to change without prior notice. Dealer sets actual price. Pictures are for informational purposes only.\n                        </span>\n                    </p>\n                    <ul>\n\t\t\t\t\t<li>\n\t\t\t\t\t\t<p class=\"custom-tooltip-wrapper\">\n\t\t\t\t\t\t\tCompatible with Genuine Nissan Accessory Roof Rail Crossbars <a href=\"#\" class=\"tooltip-anchor\">[*]</a>\n                        <span class=\"custom-tooltip\">\n                            Genuine Nissan Accessory Roof Rail Crossbars have a maximum weight limit of 100 lbs.\n                        </span>\n\t\t\t\t\t\t</p>\n\t\t\t\t\t</li>\n\t\t\t\t\t<li>Includes everything necessary to carry two surfboards or stand-up paddleboards</li>\n\t\t\t\t\t<li>Fully assembled out of the box</li>\n\t\t\t\t\t<li>Locks included</li>\n\t\t\t\t\t</ul>\n                    <div class=\"themeVehicleBannerButton\"> \n\t\t\t\t\t\t<a href=\"parts/nissan-affiliated-yakima-reg-supdawg-surf-board-carrier-t99r2a602a\">View Item</a> \n\t\t\t\t\t</div>\n                </div>\n            </div>\n        </div>\n        <div class=\"themeNewPageCardItem\">\n            <div class=\"themeNewPageCardBox\">\n                <div class=\"themeNewPageCardImage\">\n                    <img alt=\"Kicks Image\" src=\"https://cdn.revolutionparts.io/223b3e40451187171b9a7229149b1553/design/accessories/kicks/b3-img3.webp\">\n                </div>\n                <div class=\"themeNewPageCardContent\">\n                    <h4>\n                        Affiliated: Yakima® JayLow Kayak Carrier\n                        <div class=\"custom-tooltip-wrapper\">\n                            <a href=\"#\" class=\"tooltip-anchor\">[*]</a> \n                            <span class=\"custom-tooltip\">                 \n                                Accessories shown are not genuine Nissan parts/accessories. Not warranted by Nissan. Refer to product manufacturer for warranty details. Nissan limited warranty does not cover damages or failures to the vehicle caused by improper installation or alterations of any accessory or component. Contact your dealer for details.\n                            </span> \n                        </div>\n                        <div class=\"custom-tooltip-wrapper\">\n                            <a href=\"#\" class=\"tooltip-anchor\">[*]</a> \n                            <span class=\"custom-tooltip\">                 \n                                Cargo and load capacity limited by weight and distribution. Always secure cargo. Heavy loading of the vehicle with cargo, especially on the roof, will affect the handling and stability of the vehicle.\n                            </span> \n                        </div>\n                        <div class=\"custom-tooltip-wrapper\">\n                            <a href=\"#\" class=\"tooltip-anchor\">[*]</a> \n                            <span class=\"custom-tooltip\">                 \n                                The Nissan names, logos and slogans are trademarks owned by or licensed to Nissan Motor Co. Ltd. and/or its North American subsidiaries. Other trademarks and trade names are those of their respective owners.\n                            </span> \n                        </div>\n                        <div class=\"custom-tooltip-wrapper\">\n                            <a href=\"#\" class=\"tooltip-anchor\">[*]</a> \n                            <span class=\"custom-tooltip\">                 \n                                Vehicle shown is for illustrative purposes only. Not representative of named model year / model.\n                            </span> \n                        </div>\n                    </h4>\n                    <p class=\"themeMsrp custom-tooltip-wrapper\">\n                        MSRP $239 <a href=\"#\" class=\"tooltip-anchor\">[*]</a>\n                        <span class=\"custom-tooltip\">\n                            Price is Manufacturer's Suggested Retail Price (MSRP). MSRP excludes installation (except if factory-installed), taxes and other costs, and is subject to change without prior notice. Dealer sets actual price. Pictures are for informational purposes only.\n                        </span>\n                    </p>\n                    <ul>\n\t\t\t\t\t<li>\n\t\t\t\t\t\t<p class=\"custom-tooltip-wrapper\">\n\t\t\t\t\t\t\tCompatible with Genuine Nissan Accessory Roof Rail Crossbars <a href=\"#\" class=\"tooltip-anchor\">[*]</a>\n                        <span class=\"custom-tooltip\">\n                            Genuine Nissan Accessory Roof Rail Crossbars have a maximum weight limit of 100 lbs.\n                        </span>\n\t\t\t\t\t\t</p>\n\t\t\t\t\t</li>\n\t\t\t\t\t<li>Carry 1 kayak in J-cradle position or 2 kayaks in vertical, stacker position</li>\n\t\t\t\t\t<li>Includes heavy-duty straps and bow/stern tie-downs</li>\n\t\t\t\t\t<li>Folds flat when not in use</li>\n\t\t\t\t\t</ul>\n                    <div class=\"themeVehicleBannerButton\"> \n\t\t\t\t\t\t<a href=\"parts/nissan-affiliated-yakima-reg-jaylow-mdash-kayak-carrier-t99r2a606a\">View Item</a> \n\t\t\t\t\t</div>\n                </div>\n            </div>\n        </div>\n\t\t<div class=\"themeNewPageCardItem\">\n            <div class=\"themeNewPageCardBox\">\n                <div class=\"themeNewPageCardImage\">\n                    <img alt=\"Kicks Image\" src=\"https://cdn.revolutionparts.io/223b3e40451187171b9a7229149b1553/design/accessories/kicks/b3-img4.webp\">\n                </div>\n                <div class=\"themeNewPageCardContent\">\n                    <h4>\n                        Affiliated: Yakima® LoadWarrior &mdash; Cargo Basket\n                        <div class=\"custom-tooltip-wrapper\">\n                            <a href=\"#\" class=\"tooltip-anchor\">[*]</a> \n                            <span class=\"custom-tooltip\">                 \n                                Accessories shown are not genuine Nissan parts/accessories. Not warranted by Nissan. Refer to product manufacturer for warranty details. Nissan limited warranty does not cover damages or failures to the vehicle caused by improper installation or alterations of any accessory or component. Contact your dealer for details.\n                            </span> \n                        </div>\n                        <div class=\"custom-tooltip-wrapper\">\n                            <a href=\"#\" class=\"tooltip-anchor\">[*]</a> \n                            <span class=\"custom-tooltip\">                 \n                                Cargo and load capacity limited by weight and distribution. Always secure cargo. Heavy loading of the vehicle with cargo, especially on the roof, will affect the handling and stability of the vehicle.\n                            </span> \n                        </div>\n                        <div class=\"custom-tooltip-wrapper\">\n                            <a href=\"#\" class=\"tooltip-anchor\">[*]</a> \n                            <span class=\"custom-tooltip\">                 \n                                The Nissan names, logos and slogans are trademarks owned by or licensed to Nissan Motor Co. Ltd. and/or its North American subsidiaries. Other trademarks and trade names are those of their respective owners.\n                            </span> \n                        </div>\n                        <div class=\"custom-tooltip-wrapper\">\n                            <a href=\"#\" class=\"tooltip-anchor\">[*]</a> \n                            <span class=\"custom-tooltip\">                 \n                                Vehicle shown is for illustrative purposes only. Not representative of named model year / model.\n                            </span> \n                        </div>\n                    </h4>\n                    <p class=\"themeMsrp custom-tooltip-wrapper\">\n                        MSRP $529 <a href=\"#\" class=\"tooltip-anchor\">[*]</a>\n                        <span class=\"custom-tooltip\">\n                            Price is Manufacturer's Suggested Retail Price (MSRP). MSRP excludes installation (except if factory-installed), taxes and other costs, and is subject to change without prior notice. Dealer sets actual price. Pictures are for informational purposes only.\n                        </span>\n                    </p>\n                    <ul>\n\t\t\t\t\t<li>\n\t\t\t\t\t\t<p class=\"custom-tooltip-wrapper\">\n\t\t\t\t\t\t\tCompatible with Genuine Nissan Accessory Roof Rail Crossbars <a href=\"#\" class=\"tooltip-anchor\">[*]</a>\n                        <span class=\"custom-tooltip\">\n                            Genuine Nissan Accessory Roof Rail Crossbars have a maximum weight limit of 100 lbs.\n                        </span>\n\t\t\t\t\t\t</p>\n\t\t\t\t\t</li>\n\t\t\t\t\t<li>Weather-resistant heavy-duty steel construction</li>\n\t\t\t\t\t<li>Custom wind fairing included to reduce wind noise</li>\n\t\t\t\t\t<li>\n\t\t\t\t\t\t<p class=\"custom-tooltip-wrapper\">\n\t\t\t\t\t\t\tAccommodates most Yakima® gear mounts for all your outdoor activities <a href=\"#\" class=\"tooltip-anchor\">[*]</a>\n                        <span class=\"custom-tooltip\">\n                            The Nissan names, logos and slogans are trademarks owned by or licensed to Nissan Motor Co. Ltd. and/or its North American subsidiaries. Other trademarks and trade names are those of their respective owners.\n                        </span>\n\t\t\t\t\t\t</p>\n\t\t\t\t\t</li>\n\t\t\t\t\t</ul>\n                    <div class=\"themeVehicleBannerButton\"> \n\t\t\t\t\t\t<a href=\"parts/nissan-affiliated-yakima-reg-loadwarrior-mdash-cargo-basket-t99r2a601a\">View Item</a> \n\t\t\t\t\t</div>\n                </div>\n            </div>\n        </div>\n\t\t<div class=\"themeNewPageCardItem\">\n            <div class=\"themeNewPageCardBox\">\n                <div class=\"themeNewPageCardImage\">\n                    <img alt=\"Kicks Image\" src=\"https://cdn.revolutionparts.io/223b3e40451187171b9a7229149b1553/design/accessories/kicks/b3-img5.webp\">\n                </div>\n                <div class=\"themeNewPageCardContent\">\n                    <h4>\n                        Affiliated: Yakima® FatCat EVO 6 &mdash; Ski Carrier\n                        <div class=\"custom-tooltip-wrapper\">\n                            <a href=\"#\" class=\"tooltip-anchor\">[*]</a> \n                            <span class=\"custom-tooltip\">                 \n                                Accessories shown are not genuine Nissan parts/accessories. Not warranted by Nissan. Refer to product manufacturer for warranty details. Nissan limited warranty does not cover damages or failures to the vehicle caused by improper installation or alterations of any accessory or component. Contact your dealer for details.\n                            </span> \n                        </div>\n                        <div class=\"custom-tooltip-wrapper\">\n                            <a href=\"#\" class=\"tooltip-anchor\">[*]</a> \n                            <span class=\"custom-tooltip\">                 \n                                Cargo and load capacity limited by weight and distribution. Always secure cargo. Heavy loading of the vehicle with cargo, especially on the roof, will affect the handling and stability of the vehicle.\n                            </span> \n                        </div>\n                        <div class=\"custom-tooltip-wrapper\">\n                            <a href=\"#\" class=\"tooltip-anchor\">[*]</a> \n                            <span class=\"custom-tooltip\">                 \n                                The Nissan names, logos and slogans are trademarks owned by or licensed to Nissan Motor Co. Ltd. and/or its North American subsidiaries. Other trademarks and trade names are those of their respective owners.\n                            </span> \n                        </div>\n                        <div class=\"custom-tooltip-wrapper\">\n                            <a href=\"#\" class=\"tooltip-anchor\">[*]</a> \n                            <span class=\"custom-tooltip\">                 \n                                Vehicle shown is for illustrative purposes only. Not representative of named model year / model.\n                            </span> \n                        </div>\n                    </h4>\n                    <p class=\"themeMsrp custom-tooltip-wrapper\">\n                        MSRP $399 <a href=\"#\" class=\"tooltip-anchor\">[*]</a>\n                        <span class=\"custom-tooltip\">\n                            Price is Manufacturer's Suggested Retail Price (MSRP). MSRP excludes installation (except if factory-installed), taxes and other costs, and is subject to change without prior notice. Dealer sets actual price. Pictures are for informational purposes only.\n                        </span>\n                    </p>\n                    <ul>\n\t\t\t\t\t<li>\n\t\t\t\t\t\t<p class=\"custom-tooltip-wrapper\">\n\t\t\t\t\t\t\tCompatible with Genuine Nissan Accessory Roof Rail Crossbars <a href=\"#\" class=\"tooltip-anchor\">[*]</a>\n                        <span class=\"custom-tooltip\">\n                            Genuine Nissan Accessory Roof Rail Crossbars have a maximum weight limit of 100 lbs.\n                        </span>\n\t\t\t\t\t\t</p>\n\t\t\t\t\t</li>\n\t\t\t\t\t<li>Aerodynamic design delivers a quiet ride and good looks</li>\n\t\t\t\t\t<li>Carries up to 6 pairs of snow skis or 4 snowboards</li>\n\t\t\t\t\t<li>Expands for easy use with thick snow skis or boards</li>\n\t\t\t\t\t</ul>\n                    <div class=\"themeVehicleBannerButton\"> \n\t\t\t\t\t\t<a href=\"parts/nissan-affiliated-yakima-reg-fatcat-evo-6-mdash-ski-carrier-t99r2a605a\">View Item</a> \n\t\t\t\t\t</div>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_160",
+      "htmlId": "cyberacc_category_section",
+      "htmlClasses": "cyberacc_category_section category_section padding_section cyberacc_category_sectionFrontier",
+      "contentWidth": "wide",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_161",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_162",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_163",
+                  "moduleType": "custom_html",
+                  "title": "Tab Category List",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"theme_cat_tab_wrapper\">\n    <h2 class=\"main_title\">Explore Popular Accessory Categories</h2>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_164",
+                  "moduleType": "custom_html",
+                  "title": "Accessories Content",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"theme_cat_tab_content\">\n    <ul class=\"theme_cat_tab_content_list\">\n        <li>\n            <a href=\"https://parts.nissanusa.com/accessories/exterior\">\n                <div class=\"theme_cat_tab_content_img\">\n                    <img src=\"https://cdn-product-images.revolutionparts.io/assets/c1487ea3be5e5722adb935f407438ae1.webp\" alt=\"Nissan Exterior Image\">\n                </div>\n                <p>Exterior Accessories</p>\n            </a>\n        </li>\n        <li>\n            <a href=\"https://parts.nissanusa.com/accessories/interior\">\n                <div class=\"theme_cat_tab_content_img\">\n                    <img src=\"https://cdn-product-images.revolutionparts.io/assets/8feadd5011a160de5537421ca05de814.webp\" alt=\"Nissan Interior\">\n                </div>\n                <p>Interior Accessories</p>\n            </a>\n        </li>\n        <li>\n            <a href=\"https://parts.nissanusa.com/accessories/lighting-technology\">\n                <div class=\"theme_cat_tab_content_img\">\n                    <img src=\"https://cdn-product-images.revolutionparts.io/assets/e27fb9f3308f5079a7693d27e6137b10.webp\" alt=\"Nissan Technology Image\">\n                </div>\n                <p>Lighting & Technology Accessories</p>\n            </a>\n        </li>\n\t\t<li>\n            <a href=\"https://parts.nissanusa.com/go/Nissan-Pet-Accessories.html\">\n                <div class=\"theme_cat_tab_content_img\">\n                    <img src=\"https://cdn.revolutionparts.io/images/840d68cbbbfa627cd4635408a6c82009/af4487a139450404a022c01a4a3eefab.jpeg\" alt=\"Nissan Pet Accessories\">\n                </div>\n                <p>Pet Accessories</p>\n            </a>\n        </li>\n\t\t<li>\n            <a href=\"https://parts.nissanusa.com/accessories/cargo\">\n                <div class=\"theme_cat_tab_content_img\">\n                    <img src=\"https://cdn.revolutionparts.io/223b3e40451187171b9a7229149b1553/design/accessories/kicks/kicks_cargo.webp\" alt=\"Nissan Cargo Accessories\">\n                </div>\n                <p>Cargo Accessories</p>\n            </a>\n        </li>\n\t\t<li> \n\t\t\t<a href=\"https://parts.nissanusa.com/accessories/yakima\">\n\t\t\t\t<div class=\"theme_cat_tab_content_img\"> \n\t\t\t\t\t<img src=\"https://cdn.revolutionparts.io/223b3e40451187171b9a7229149b1553/design/accessories/kicks/yakima_kicks.webp\" alt=\"Nissan Towing\"> \n\t\t\t\t</div>\n\t\t\t\t<p>Affiliated: Yakima® Accessories</p>\n\t\t\t</a> \n\t\t</li>\n    </ul>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "tab_content tab_content_in",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
