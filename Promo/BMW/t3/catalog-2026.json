@@ -1,0 +1,1166 @@
+{
+  "pageId": "page",
+  "pageName": "Text Page",
+  "pageType": null,
+  "layoutEnabled": true,
+  "moduleCategories": [
+    "header",
+    "images",
+    "text",
+    "search",
+    "categories_products",
+    "forms",
+    "navigation",
+    "footer"
+  ],
+  "VFSPath": "layouts/page.json",
+  "requiredModules": [],
+  "scripts": "",
+  "sections": [
+    {
+      "sectionId": "section_1",
+      "htmlId": "",
+      "htmlClasses": "newBMWBanner",
+      "contentWidth": "full",
+      "backgroundColor": "#000000",
+      "backgroundImage": "https://cdn.revolutionparts.io/29aae1a45f62e2c5224f4527f32ea58b/design/catalog_banner_2026_new.webp",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_2",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_3",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_4",
+                  "moduleType": "custom_html",
+                  "title": "New BMW Banner Content",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"newBMWBannerWrap\">\n    <div class=\"newBMWBannerContent\">\n        <h1 data-aos=\"fade-right\">\n            Product Guide <br> Collection 2026\n        </h1>\n        <div class=\"newBMWBannerMakeLife\">\n            <p>Make Life A Ride</p>\n        </div>\n    </div>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_2",
+      "htmlId": "newBMWTab",
+      "htmlClasses": "newBMWTab",
+      "contentWidth": "full",
+      "backgroundColor": "#5a5a5a",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_3",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_4",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_5",
+                  "moduleType": "custom_html",
+                  "title": "New BMW Tab",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"newBMWTabWrap\">\n    <ul class=\"newBMWTabList\">\n        <li class=\"newBMWTabListItem\">\n            <a href=\"#spirit\" class=\"newBMWTabListLink\">\n                Spirit of GS\n            </a>\n        </li>\n        <li class=\"newBMWTabListItem\">\n            <a href=\"#ride\" class=\"newBMWTabListLink\">\n                Ride and Share\n            </a>\n        </li>\n        <li class=\"newBMWTabListItem\">\n            <a href=\"#never\" class=\"newBMWTabListLink\">\n                Never Stop Challenging\n            </a>\n        </li>\n        <li class=\"newBMWTabListItem\">\n            <a href=\"#soul\" class=\"newBMWTabListLink\">\n                Soulfuel\n            </a>\n        </li>\n        <li class=\"newBMWTabListItem\">\n            <a href=\"/gear\" class=\"newBMWTabListLink\">\n                Shop All Gear\n            </a>\n        </li>\n    </ul>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_5",
+      "htmlId": "spirit",
+      "htmlClasses": "newBMWGS01 gsSection",
+      "contentWidth": "full",
+      "backgroundColor": "#000000",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_6",
+          "rowLayout": 12,
+          "htmlId": "",
+          "htmlClasses": "emCustom",
+          "columns": [
+            {
+              "columnId": "column_7",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_8",
+                  "moduleType": "custom_html",
+                  "title": "GS01",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"newBMWMainTitle\">\n    <h5>SPIRIT OF GS</h5>\n</div>\n<div class=\"newBMWGS02Wrap\">\n    <div data-aos=\"zoom-in\" data-aos-duration=\"1500\" class=\"newBMWGS02Img\">\n        <img src=\"https://rparts-sites.s3.amazonaws.com/29aae1a45f62e2c5224f4527f32ea58b/design/catalog/2026/gs_coro_banner_1@4x.webp\" alt=\"GS CORO GORE-TEX® JACKET & PANTS\">\n    </div>\n    <div class=\"newBMWGS02WrapFloat\">\n        <div class=\"newBMWGS02row\">\n            <div data-aos=\"fade-right\" class=\"newBMWGS02col\">\n                <div class=\"newBMWGS02Content\">\n                    <h4>\n                        GS CORO GORE-TEX® <br>\n                        JACKET & PANTS\n                    </h4>\n                    <p>\n                        The Z-Liner GS Coro GORE-TEX® jacket and pants offers a comfortable fit and excellent freedom of movement. It is windproof, waterproof and breathable. Removable protectors on the shoulders, elbows, back, hips and knees provide sufficient protection. Stretch inserts and other features enhance the rider‘s comfort. <br><br>\n                        MSRP: <strong>$689</strong> <br>\n                        Colors: Olive | Black <br>\n                        Sizes Men: 46-60 | 24-32 | 98-118 <br>\n                        Sizes Women: 34-48 <br><br>\n                    </p>\n                    <div class=\"newBMWListButton\">\n                        <a href=\"/p-womens-gs-coro-gtx-pants-black-womensgscorogtxpantsblack2026\">Shop Womens Pants Black</a>\n                        <a href=\"/p-womens-gs-coro-gtx-pants-olive-womensgscorogtxpantsolive2026\">Shop Womens Pants Olive</a>\n                        <a href=\"/p-mens-gs-coro-gtx-pants-black-mensgscorogtxpantsblack2026\">Shop Mens Pants Black</a>\n                        <a href=\"/p-mens-gs-coro-gtx-pants-olive-mensgscorogtxpantsolive2026\">Shop Mens Pants Olive</a>\n                        <a href=\"/p-womens-gs-coro-gtx-jacket-black-womensgscorogtxjacketblack2026\">Shop Womens Jacket Black</a>\n                        <a href=\"/p-womens-gs-coro-gtx-jacket-olive-womensgscorogtxjacketolive2026\">Shop Womens Jacket Olive</a>\n                        <a href=\"/p-mens-gs-coro-gtx-jacket-black-mensgscorogtxjacketblack2026\">Shop Mens Jacket Black</a>\n                        <a href=\"/p-mens-gs-coro-gtx-jacket-olive-mensgscorogtxjacketolive2026\">Shop Mens Jacket Olive</a>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_4",
+      "htmlId": "",
+      "htmlClasses": "newBMWGS03 gsSection",
+      "contentWidth": "full",
+      "backgroundColor": "#000000",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_5",
+          "rowLayout": "6_6",
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_6",
+              "columnWidth": 6,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_9",
+                  "moduleType": "custom_html",
+                  "title": "GS03 Left",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"newBMGWS03Wrap\">\n    <div class=\"newBMWGS03Img\">\n        <img src=\"https://rparts-sites.s3.amazonaws.com/29aae1a45f62e2c5224f4527f32ea58b/design/catalog/2026/gs_rallye_image_01.webp\" alt=\"GS RALLYE GORE-TEX® JACKET & PANTS\">\n    </div>\n    <div class=\"newBMWGS03row\">\n        <div class=\"newBMWGS03col\">\n            <div class=\"newBMWGS03Img newBMWGS03ImgFull\">\n                <img src=\"https://rparts-sites.s3.amazonaws.com/29aae1a45f62e2c5224f4527f32ea58b/design/catalog/2026/gs_rallye_image_03.webp\" alt=\"GS RALLYE GORE-TEX® JACKET & PANTS\">\n            </div>\n        </div>\n        <div class=\"newBMWGS03col\">\n            <div class=\"newBMWGS03Img newBMWGS03ImgFull\">\n                <img src=\"https://rparts-sites.s3.amazonaws.com/29aae1a45f62e2c5224f4527f32ea58b/design/catalog/2026/gs_rallye_image_02.webp\" alt=\"GS RALLYE GORE-TEX® JACKET & PANTS\">\n            </div>\n        </div>\n    </div>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            },
+            {
+              "columnId": "column_8",
+              "columnWidth": 6,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_1",
+                  "moduleType": "custom_html",
+                  "title": "GS03 Right",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"newBMGWS03Wrap newBMGWS03WrapRight\">\n    <div class=\"newBMWGS03row\">\n        <div data-aos=\"fade-right\" class=\"newBMWGS03col newBMWGS03col70\">\n            <div class=\"newBMWGS03Img\">\n                <img src=\"https://rparts-sites.s3.amazonaws.com/29aae1a45f62e2c5224f4527f32ea58b/design/catalog/2026/gs_rallye_jacket_and_pants@4x.webp\" alt=\"GS RALLYE GORE-TEX® JACKET & PANTS\">\n            </div>\n        </div>\n        <div data-aos=\"fade-left\" class=\"newBMWGS03col newBMWGS03col30\">\n            <div class=\"newBMWGS03Content newBMWGS03ContentPad\">\n                <h4>\n                    GS RALLYE GORE-TEX® <br>\n                    JACKET & PANTS\n                </h4>\n                <p>\n                    The GS Rallye GORE-TEX® jacket is perfectly suited for off-road use. The clever ventilation options offer a high level of comfort in warm to moderate temperatures. It offers outstanding performance, even in rainy and cold conditions, thanks to the water- and windproof GORE-TEX® outserts. <br><br>\n                    MSRP: <strong>$1,099</strong> <br>\n                    Colors: Red-Blue <br>\n                    Sizes Men: 46-60 | <br>\n                    24-32 | 98-118 <br>\n                    Sizes Women: 34-48 <br><br>\n                    </p><div class=\"newBMWListButton\">\n                        <a href=\"/p-womens-gs-rallye-gtx-jacket-red-blue-womensjacketgsrallyegtxredblue20251\">Shop Womens Jacket</a>\n                        <a href=\"/p-mens-gs-rallye-gtx-jacket-red-blue-mensjacketgsrallyegtxredblue20251\">Shop Mens Jacket</a>\n                        <a href=\"/p-womens-gs-rallye-gtx-pants-blue-red-womensgsrallyegtxpantsbluered2026\">Shop Womens Pants</a>\n                        <a href=\"/p-mens-gs-rallye-gtx-pants-blue-red-mensgsrallyegtxpantsbluered2026\">Shop Mens Pants</a>\n                    </div>\n                <p></p>\n            </div>\n        </div>\n    </div>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_26",
+      "htmlId": "",
+      "htmlClasses": "newBMWGS05 gsSection",
+      "contentWidth": "full",
+      "backgroundColor": "#000000",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_27",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_28",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_29",
+                  "moduleType": "custom_html",
+                  "title": "GS05",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"newBMWGS05Wrap\">\n    <div class=\"newBMWGS05row newBMWGS05rowReverse\">\n        <div class=\"newBMWGS05col\">\n            <div class=\"newBMWGS05RightWrap\">\n                <div class=\"newBMWGS05row\">\n                    <div class=\"newBMWGS05col\">\n                        <div data-aos=\"fade-down\" class=\"newBMWGS05ContentImg\"> \n                            <img src=\"https://rparts-sites.s3.amazonaws.com/29aae1a45f62e2c5224f4527f32ea58b/design/catalog/2026/gs_boots_tabernas.webp\" alt=\"GS TABERNAS GORE-TEX® BOOTS\"> \n                        </div>\n                        <div data-aos=\"fade-up\" class=\"newBMWGS05Content newBMWGS05Content01\">\n                            <h4>\n                                GS TABERNAS GORE-TEX® <br>\n                                BOOTS\n                            </h4>\n                            <p>\n                                The GS Tabernas GORE-TEX® boot is a modern leather enduro boot with synthetic elements, specially developed for demanding off-road and road use. This boot offers a perfect balance of high comfort and optimal protection. <br><br>\n                                MSRP: <strong>$525</strong> <br>\n                                Color: Olive <br>\n                                Size unisex: 36-48 <br><br>\n                            </p>\n                            <div class=\"newBMWListButton\">\n                                <a href=\"/p-unisex-gs-tabernas-gtx-boots-olive-unisexbootsgstabernasgtxolive2026\">Shop Olive</a>\n                            </div>\n                        </div>\n                    </div>\n                    <div class=\"newBMWGS05col\">\n                        <div data-aos=\"fade-down\" class=\"newBMWGS05ContentImg\"> \n                            <img src=\"https://rparts-sites.s3.amazonaws.com/29aae1a45f62e2c5224f4527f32ea58b/design/catalog/2026/gs_boots_tabernas_-_black_n.webp\" alt=\"GS TABERNAS GORE-TEX® BOOTS\"> \n                        </div>\n                        <div data-aos=\"fade-up\" class=\"newBMWGS05Content\">\n                            <p> \n                                MSRP: <strong>$525</strong> <br>\n                                Color: Black <br>\n                                Size unisex: 36-48 <br><br>\n                            </p>\n                            <div class=\"newBMWListButton\">\n                                <a href=\"/p-unisex-gs-tabernas-gtx-boots-black-unisexbootsgstabernasgtxblack2026\">Shop Black</a>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n        <div class=\"newBMWGS05col\">\n            <div class=\"newBMWGS05RightWrap\">\n                <div class=\"newBMWGS05row\">\n                    <div class=\"newBMWGS05col\">\n                        <div data-aos=\"fade-down\" class=\"newBMWGS05ContentImg\"> \n                            <img src=\"https://rparts-sites.s3.amazonaws.com/29aae1a45f62e2c5224f4527f32ea58b/design/catalog/2026/gs_boots_takyr_new.webp\" alt=\"GS Takyr GORE-TEX® sneakers\"> \n                        </div>\n                        <div data-aos=\"fade-up\" class=\"newBMWGS05Content newBMWGS05Content01\">\n                            <h4>\n                                GS TAKYR GORE-TEX® <br>\n                                SNEAKERS\n                            </h4>\n                            <p>\n                                The GS Takyr GORE-TEX® sneakers combine functionality and comfort. The robust GORE-TEX® membrane withstands all weather conditions, the sturdy VIBRAM sole with VIBRAM Traction Lug provides optimal grip and lateral stability on loose\n                                off-road surfaces. Thanks to the high-quality materials, the shoe not only offers protection against wind and weather, but also excellent cushioning and durability. <br><br>\n                                MSRP: <strong>$369</strong> <br>\n                                Color: Blue <br>\n                                Size unisex: 36-48 <br><br>\n                            </p>\n                            <div class=\"newBMWListButton\">\n                                <a href=\"/p-unisex-gs-takyr-gtx-sneaker-blue-unisexgstakyrgtxsneakerblue2026\">Shop Blue</a>\n                            </div>\n                        </div>\n                    </div>\n                    <div class=\"newBMWGS05col\">\n                        <div data-aos=\"fade-down\" class=\"newBMWGS05ContentImg\"> \n                            <img src=\"https://rparts-sites.s3.amazonaws.com/29aae1a45f62e2c5224f4527f32ea58b/design/catalog/2026/gs_boots_takyr_-_black_n.webp\" alt=\"GS Takyr GORE-TEX® sneakers\"> \n                        </div>\n                        <div data-aos=\"fade-up\" class=\"newBMWGS05Content\">\n                            <p> \n                                MSRP: <strong>$369</strong> <br>\n                                Color: Black <br>\n                                Size unisex: 36-48 <br><br>\n                            </p>\n                            <div class=\"newBMWListButton\">\n                                <a href=\"/p-unisex-gs-takyr-gtx-sneaker-black-unisexgstakyrgtxsneakerblack2026\">Shop Black</a>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_6",
+      "htmlId": "ride",
+      "htmlClasses": "newBMWRS01 gsSection",
+      "contentWidth": "full",
+      "backgroundColor": "#000000",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_7",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_9",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_12",
+                  "moduleType": "custom_html",
+                  "title": "RS01",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"newBMWMainTitle\">\n    <h5>RIDE AND SHARE</h5>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_7",
+      "htmlId": "",
+      "htmlClasses": "newBMWRS02 gsSection",
+      "contentWidth": "full",
+      "backgroundColor": "#000000",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_8",
+          "rowLayout": "6_6",
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_10",
+              "columnWidth": 6,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_13",
+                  "moduleType": "custom_html",
+                  "title": "RS02 Left",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"newBMWRS02Wrap\">\n    <div class=\"newBMWRS02WrapImg\">\n        <img src=\"https://rparts-sites.s3.amazonaws.com/29aae1a45f62e2c5224f4527f32ea58b/design/catalog/2026/ride_and_share_banner.webp\" alt=\"GLANDON AIR JACKETS\">\n    </div>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            },
+            {
+              "columnId": "column_11",
+              "columnWidth": 6,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_16",
+                  "moduleType": "custom_html",
+                  "title": "RS02 Right",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"newBMWRS02WrapRight\">\n    <div data-aos=\"fade-right\" class=\"newBMWRS02RightImg01\">\n        <img src=\"https://rparts-sites.s3.amazonaws.com/29aae1a45f62e2c5224f4527f32ea58b/design/catalog/2026/Asset_5@4x.webp\" alt=\"GLANDON AIR JACKETS\">\n    </div>\n    <div class=\"newBMWRS02Row\">\n        <div data-aos=\"fade-right\" class=\"newBMWRS02Col07\">\n            <div class=\"newBMWRS02RightImg\">\n                <img src=\"https://rparts-sites.s3.amazonaws.com/29aae1a45f62e2c5224f4527f32ea58b/design/catalog/2026/Asset_7@4x.webp\" alt=\"GLANDON AIR JACKETS\">\n            </div>\n        </div>\n        <div data-aos=\"fade-left\" class=\"newBMWRS02Col05\">\n            <div class=\"newBMWRS02Content\"> \n                <h4>\n                    GLANDON AIR JACKETS\n                </h4> \n                <p>\n                    The sporty blouson-cut Glandon AIR jacket is the ultimate summer jacket for short or long tours. The combination of abrasion resistant and breathable materials provide protection with optimal ventilation. For those who are environmentally conscious, this jacket focuses on the use of sustainable materials. <br><br>\n                    MSRP: <strong>$399</strong> <br>\n                    Colors: Olive | Anthracite | Grey <br>\n                    Sizes Men: 46-60 <br>\n                    Sizes Women: 34-48 <br><br>\n                </p>\n                <div class=\"newBMWListButton\">\n                    <a href=\"/p-womens-glandon-air-jacket-olive-womensglandonairjacketolive2026\">Shop Womens Olive</a>\n                    <a href=\"/p-womens-glandon-air-jacket-anthracite-womensglandonairjacketanthracite2026\">Shop Womens Anthracite</a>\n                    <a href=\"/p-mens-glandon-air-jacket-anthracite-mensglandonairjacketanthracite2026\">Shop Mens Anthracite</a>\n                    <a href=\"/p-mens-glandon-air-jacket-grey-mensglandonairjacketgrey2026\">Shop Mens Grey</a>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_37",
+      "htmlId": "",
+      "htmlClasses": "newBMWGS03 newBMWRS03 gsSection",
+      "contentWidth": "full",
+      "backgroundColor": "#000000",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_38",
+          "rowLayout": "6_6",
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_39",
+              "columnWidth": 6,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_43",
+                  "moduleType": "custom_html",
+                  "title": "RS03 Left",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"newBMGWS03Wrap\">\n    <div class=\"newBMWGS03Img\">\n        <img src=\"https://rparts-sites.s3.amazonaws.com/29aae1a45f62e2c5224f4527f32ea58b/design/catalog/2026/gloves_new.webp\" alt=\"Reschen Gloves\">\n    </div>\n    <div class=\"newBMWGS03row\">\n        <div class=\"newBMWGS03col\">\n            <div class=\"newBMWGS03row newBMWGS03row50\">\n                <div data-aos=\"fade-right\" class=\"newBMWGS03col\">\n                    <div class=\"newBMWGS03Img\">\n                        <img src=\"https://rparts-sites.s3.amazonaws.com/29aae1a45f62e2c5224f4527f32ea58b/design/catalog/2026/Asset_3@4x.webp\" alt=\"Reschen Gloves\">\n                    </div>\n                </div>\n                <div data-aos=\"fade-left\" class=\"newBMWGS03col\">\n                    <div class=\"newBMWGS03Content newBMWGS03ContentPad\">\n                        <h4>\n                            RESCHEN GORE-TEX® <br>\n                            GLOVES\n                        </h4>\n                        <p>\n                            Perfect for long tours, the GS Reschen GORE-TEX® gloves are designed for all weather conditions and provide excellent protection. This model features special cuts for men and women. Additionally,\n                            they pair perfectly with the GS Coro GORE-TEX® suit.  <br><br>\n                            MSRP: <strong>$159</strong> <br>\n                            Color: Anthracite <br>\n                            Sizes unisex: 6–8 <br><br>\n                            <a href=\"https://www.shopbmwmotorcycles.com/p-womens-reschen-gtx-gloves-womensglovereschengtxanthracite2025\">Shop Womens</a>\n                            <a href=\"https://www.shopbmwmotorcycles.com/p-mens-reschen-gtx-gloves-mensglovereschengtxanthracite2025\">Shop Mens</a>\n                            <a href=\"https://www.shopbmwmotorcycles.com/p-unisex-tenda-2in1-gtx-gloves-unisexglovetenda2in1gtxblack2025\">Shop Tenda Gloves</a>\n                        </p>\n                    </div>\n                </div>\n            </div>\n        </div>\n        <div class=\"newBMWGS03col\">\n            <div class=\"newBMWGS03Img newBMWGS03ImgFull\">\n                <img src=\"https://rparts-sites.s3.amazonaws.com/29aae1a45f62e2c5224f4527f32ea58b/design/catalog/2026/boots_new_.webp\" alt=\"Soulor Boots\">\n            </div>\n        </div>\n    </div>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            },
+            {
+              "columnId": "column_40",
+              "columnWidth": 6,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_58",
+                  "moduleType": "custom_html",
+                  "title": "RS03 Right",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"newBMWGS05RightWrap\">\n    <h3> \n        THE PERFECT MATCHES\n    </h3>\n    <div class=\"newBMWGS05row mb-3\">\n        <div data-aos=\"fade-left\" class=\"newBMWGS05col\">\n            <div class=\"newBMWGS05Content\">\n                <h4>\n                    SOULOR GORE-TEX® BOOTS\n                </h4>\n                <p> \n                    Keep the bikers feet happy and dry on long tours with the effective 360° GORE-TEX® SURROUND ventilation system. The new Soulor GORE-TEX® boots are a reliable and highly protective choice for any tour.<br><br>\n                    MSRP: <strong>$399</strong> <br>\n                    Colors: Black <br>\n                    Sizes unisex: 36–48 <br><br>\n                </p>\n                <div class=\"newBMWListButton\">\n                    <a href=\"/p-unisex-soulor-gtx-boots-black-unisexbootssoulorgtxblack2026\">Shop Black</a>\n                </div>\n            </div>\n        </div>\n        <div data-aos=\"fade-right\" class=\"newBMWGS05col\">\n            <div class=\"newBMWGS05ContentImg\"> \n                <img src=\"https://rparts-sites.s3.amazonaws.com/29aae1a45f62e2c5224f4527f32ea58b/design/catalog/2026/taunus_plus_gore-tex@4x.webp\" alt=\"SOULOR GORE-TEX® BOOTS\"> \n            </div>\n        </div>\n    </div>\n    <div class=\"newBMWGS05row\">\n        <div data-aos=\"fade-left\" class=\"newBMWGS05col\">\n            <div class=\"newBMWGS05Content\">\n                <h4>\n                    TAUNUS PLUS GORE-TEX® BOOTS\n                </h4>\n                <p> \n                    The Taunus GORE-TEX® boots, made from durable leather, offer excellent comfort and reliable protection. For those seeking extra lift without it being noticeable, the Taunus Plus GORE-TEX® boots offer an invisible 2.4\" height increase. <br><br>\n                    MSRP: <strong>$359</strong> <br>\n                    Color: Black <br>\n                    Sizes unisex: 35–42 <br><br>\n                    <a href=\"/p-unisex-taunus-plus-gtx-boots-black-unisexbootstaunusplusgtxblack2026\">Shop Black</a>\n                </p>\n            </div>\n        </div>\n        <div data-aos=\"fade-right\" class=\"newBMWGS05col\">\n            <div class=\"newBMWGS05ContentImg\"> \n                <img src=\"https://rparts-sites.s3.amazonaws.com/29aae1a45f62e2c5224f4527f32ea58b/design/catalog/2026/solour_gore_tex@4x.webp\" alt=\"TAUNUS PLUS GORE-TEX® BOOTS\"> \n            </div>\n        </div>\n    </div>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_9",
+      "htmlId": "never",
+      "htmlClasses": "newBMWRS01 newBMWNS01 gsSection",
+      "contentWidth": "full",
+      "backgroundColor": "#000000",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_10",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_15",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_18",
+                  "moduleType": "custom_html",
+                  "title": "NS01",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"newBMWMainTitle\">\n    <h5>NEVER STOP CHALLENGING</h5>\n</div>\n<div class=\"newBMWRS01Wrap\">\n    <div data-aos=\"zoom-in\" data-aos-duration=\"1500\" class=\"newBMWRS01Img\">\n        <img src=\"https://rparts-sites.s3.amazonaws.com/29aae1a45f62e2c5224f4527f32ea58b/design/catalog/2026/pace_pro_banner@4x.webp\" alt=\"BMW Rs\">\n    </div>\n    <div class=\"newBMWRS01WrapFloat\">\n        <div class=\"newBMWRS01row\">\n            <div data-aos=\"fade-right\" class=\"newBMWRS01col\">\n                <div class=\"newBMWRS01Content\">\n                    <h4>\n                        PACE PRO JACKET\n                    </h4>\n                    <p>\n                        Sporty riders will love the Pace Pro Jacket! It combines\n                        extensive protective features with outstanding comfort and\n                        the eye-catching M-Sport Design. On top of that it includes\n                        an additional waterproof outsert. For more protection on\n                        fun rides and long-distance action. <br><br>\n                        MSRP: <strong>$1,250</strong> <br>\n                        Colors: Black <br>\n                        Sizes Men: 46–66 | 24–32 | 98–118 <br><br>\n                    </p>\n                    <div class=\"newBMWListButton\">\n                        <a href=\"/p-mens-pace-pro-jacket-mensjacketpaceproblack20251\">Shop Mens</a>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_32",
+      "htmlId": "",
+      "htmlClasses": "newBMWGS05 newBMWNS04 gsSection",
+      "contentWidth": "full",
+      "backgroundColor": "#000000",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_33",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_34",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_37",
+                  "moduleType": "custom_html",
+                  "title": "NS04",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"newBMWGS05Wrap\">\n    <div class=\"newBMWGS05row\">\n        <div class=\"newBMWGS05col\">\n            <div class=\"newBMWGS05RightWrap\">\n                <div class=\"newBMWGS05row\">\n                    <div data-aos=\"fade-right\" class=\"newBMWGS05col\">\n                        <div class=\"newBMWGS05ContentImg\"> \n                            <img src=\"https://rparts-sites.s3.amazonaws.com/29aae1a45f62e2c5224f4527f32ea58b/design/catalog/2026/nitrous_sneaker@4x.webp\" alt=\"Nitrous Sneakers\"> \n                        </div>\n                    </div>\n                    <div data-aos=\"fade-left\" class=\"newBMWGS05col\">\n                        <div class=\"newBMWGS05Content\">\n                            <h4>\n                                NITROUS SNEAKERS\n                            </h4>\n                            <p> \n                                he lightweight and airy Nitrous Sneakers in a BMW M Motorsport\n                                3D-knit design offer excellent comfort. The comfortable\n                                and lightweight two-tone sole with BMW MOTORRAD logo\n                                and “M” inlay as well as TPU-reinforced surfaces in particularly\n                                stress-prone areas, such as the toe and ankle protection\n                                (outside only), make them ideal for motorsport-savvy bikers. <br><br>\n                                MSRP: <strong>$299</strong> <br>\n                                Color: Black <br>\n                                Sizes unisex: 36–48 <br><br>\n                                <a href=\"/p-unisex-nitrous-sneaker-black-unisexnitroussneakerblack2026\">Shop Now</a>\n                            </p> \n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n        <div class=\"newBMWGS05col\">\n            <div class=\"newBMWGS05RightWrap\">\n                <div class=\"newBMWGS05row\">\n                    <div data-aos=\"fade-right\" class=\"newBMWGS05col\">\n                        <div class=\"newBMWGS05ContentImg\"> \n                            <img src=\"https://rparts-sites.s3.amazonaws.com/29aae1a45f62e2c5224f4527f32ea58b/design/catalog/2026/downforce@4x.webp\" alt=\"Downforce Jacket\"> \n                        </div>\n                    </div>\n                    <div data-aos=\"fade-left\" class=\"newBMWGS05col\">\n                        <div class=\"newBMWGS05Content\">\n                            <h4>\n                                DOWNFORCE JACKET\n                            </h4>\n                            <p> \n                                The sporty Downforce jacket stands out with its ﬂexibility – use it for commuting to work or touring from spring to autumn. Protectors on the shoulders, elbows and back provide ideal protection and high-quality materials guarantee optimum ventilation and comfort. A visual highlight is the striking M colors design. <br><br>\n                                MSRP: <strong>$599</strong> <br>\n                                Color: Black <br>\n                                Sizes: 46-60 <br><br>\n                                <a href=\"/p-mens-downforce-jacket-mensdownforcejacketblack\">Shop Mens Jacket</a>\n                            </p> \n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n    <div class=\"newBMWGS05row\">\n        <div class=\"newBMWGS05col\">\n            <div class=\"newBMWGS05RightWrap\">\n                <div class=\"newBMWGS05row\">\n                    <div class=\"newBMWGS05col\">\n                        <div data-aos=\"fade-down\" class=\"newBMWGS05ContentImg\"> \n                            <img src=\"https://rparts-sites.s3.amazonaws.com/29aae1a45f62e2c5224f4527f32ea58b/design/catalog/2026/side_pod_air_jacket@4x.webp\" alt=\"Sidepod Air Jacket\"> \n                        </div>\n                    </div>\n                    <div class=\"newBMWGS05col\">\n                        <div data-aos=\"fade-up\" class=\"newBMWGS05Content\">\n                            <h4>\n                                SIDEPOD AIR JACKET\n                            </h4>\n                            <p> \n                                The Sidepod AIR jacket stands out with its sporty look and is\n                                ideal for warm temperatures thanks to its optimum ventilation.\n                                Reliable protection thanks to the incorporated elbow and\n                                shoulder protectors. Multiple pockets provide sufficient stowage\n                                space. A visual highlight with the striking design in M colors. <br><br>\n                                MSRP: <strong>$359</strong> <br>\n                                Color: White <br>\n                                Sizes: 46–60 <br><br>\n                                <a href=\"/p-mens-sidepod-air-jacket-white-menssidepodairjacketwhite2026\">Shop Mens Jacket</a>\n                            </p>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n        <div class=\"newBMWGS05col\">\n            <div class=\"newBMWGS05Img\">\n                <img src=\"https://rparts-sites.s3.amazonaws.com/29aae1a45f62e2c5224f4527f32ea58b/design/catalog/2026/nitrous_bg.webp\" alt=\"Downforce Jacket\">\n            </div>\n        </div>\n    </div>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_12",
+      "htmlId": "soul",
+      "htmlClasses": "newBMWRS01 newBMWSF01 newBMWSF01Edit gsSection",
+      "contentWidth": "full",
+      "backgroundColor": "#000000",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_13",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_17",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_20",
+                  "moduleType": "custom_html",
+                  "title": "SF01",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"newBMWMainTitle\">\n    <h5>SOULFUEL</h5>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_25",
+      "htmlId": "",
+      "htmlClasses": "newBMWRS02 newBMWNS02 gsSection",
+      "contentWidth": "full",
+      "backgroundColor": "#000000",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_26",
+          "rowLayout": "6_6",
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_27",
+              "columnWidth": 6,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_34",
+                  "moduleType": "custom_html",
+                  "title": "SF02 Left",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"newBMWGS05RightWrap\">\n    <h3 class=\"mb-3\"> \n        HERITAGE COLLECTION\n    </h3>\n    <div class=\"newBMWGS05row mb-3\">\n        <div data-aos=\"fade-left\" class=\"newBMWGS05col\">\n            <div class=\"newBMWGS05Content\">\n                <h4>\n                    MITTE JACKET\n                </h4> \n                <p>\n                    The Mitte jacket combines a classic button-up jacket look with functionality and protection. It looks great even in everyday life. Personal items can be conveniently stored in the four outside and three inside pockets. The NP Flex 3D protectors on shoulders and elbows reduce the risk of injury without restricting freedom of movement. <br><br>\n                    MSRP: <strong>$399</strong> <br>\n                    Colors: Dark-Blue <br>\n                    Sizes: S, M, XL, 2XL <br><br>\n                </p>\n                <div class=\"newBMWListButton\">\n                    <a href=\"/p-mens-mitte-jacket-mittemensjacket092023\">Shop Now</a>\n                </div>\n            </div>\n        </div>\n        <div data-aos=\"fade-right\" class=\"newBMWGS05col\">\n            <div class=\"newBMWGS05ContentImg\"> \n                <img src=\"https://rparts-sites.s3.amazonaws.com/29aae1a45f62e2c5224f4527f32ea58b/design/catalog/2026/Asset_13@4x.webp\" alt=\"MITTE JACKET\"> \n            </div>\n        </div>\n    </div>\n    <div class=\"newBMWGS05row\">\n        <div data-aos=\"fade-left\" class=\"newBMWGS05col\">\n            <div class=\"newBMWGS05Content\">\n                <h4>\n                    GATOW GLOVES\n                </h4> \n                <p>\n                    The classic Gatow gloves are made of high-quality and pleasantly soft elk leather, durable and particularly comfortable to wear. The width of the clasp can be adjusted by the closure on the wrist. This prevents the glove from unintentionally slipping off. Another practical feature is that the index finger can be used to operate touchscreen devices. <br><br>\n                    MSRP: <strong>$189</strong> <br>\n                    Colors: Black <br>\n                    Sizes unisex: xs, S, M, L, XL, 2XL, 3XL <br><br>\n                </p>\n                <div class=\"newBMWListButton\">\n                    <a href=\"/p-unisex-gatow-gloves-unisexgatowglovesblack\">Shop Now</a>\n                </div>\n            </div>\n        </div>\n        <div data-aos=\"fade-right\" class=\"newBMWGS05col\">\n            <div class=\"newBMWGS05ContentImg\"> \n                <img src=\"https://rparts-sites.s3.amazonaws.com/29aae1a45f62e2c5224f4527f32ea58b/design/catalog/2026/Asset_14@4x.webp\" alt=\"GATOW GLOVES\">\n            </div>\n        </div>\n    </div>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            },
+            {
+              "columnId": "column_29",
+              "columnWidth": 6,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_39",
+                  "moduleType": "custom_html",
+                  "title": "SF02 Right",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"newBMWRS02Wrap\">\n    <div class=\"newBMWRS02WrapImg\">\n        <img src=\"https://rparts-sites.s3.amazonaws.com/29aae1a45f62e2c5224f4527f32ea58b/design/catalog/2026/heritage_bg.webp\" alt=\"HERITAGE COLLECTION\">\n    </div>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_78",
+      "htmlId": "",
+      "htmlClasses": "newBMWSF04 newBMWGS05 newBMWNS03 gsSection",
+      "contentWidth": "full",
+      "backgroundColor": "#000000",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_84",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_85",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_86",
+                  "moduleType": "custom_html",
+                  "title": "SF04",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"newBMWGS05Wrap\">\n    <div class=\"newBMWGS05row\">\n        <div class=\"newBMWGS05col\">\n            <div class=\"newBMWGS05RightWrap\">\n                <div class=\"newBMWGS05row\">\n                    <div class=\"newBMWGS05col\">\n                        <div data-aos=\"fade-down\" class=\"newBMWGS05ContentImg\"> \n                            <img src=\"https://rparts-sites.s3.amazonaws.com/29aae1a45f62e2c5224f4527f32ea58b/design/catalog/2026/Asset_15@4x.webp\" alt=\"SCHWABING LTD EDITION JACKET\"> \n                        </div>\n                    </div>\n                    <div class=\"newBMWGS05col\">\n                        <div data-aos=\"fade-up\" class=\"newBMWGS05Content\">\n                            <h4>\n                                SCHWABING LTD EDITION JACKET\n                            </h4>\n                            <p> \n                                Ride in style with the classic Schwabing\n                                Limited Edition Jacket. Made from water repellent nubuck leather, it features essential protective elements and a unique embroidered serial number. Be quick to grab yours!\n                                <br><br>\n                                MSRP: <strong>$679</strong> <br>\n                                Color: Black <br>\n                                Sizes Men: S, M, L, XL, 2XL, 3XL <br>\n                                Sizes Women: XS, S, M, L, XL, 2XL <br><br>\n                            </p>\n                            <div class=\"newBMWListButton\">\n                                <a href=\"/p-mens-schwabing-ltd-jacket-black-mensschwabingltdjacketblack2026\">Shop Mens</a>\n                                <a href=\"/p-womens-schwabing-ltd-jacket-black-womensschwabingltdjacketblack2026\">Shop Womens</a>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n        <div class=\"newBMWGS05col\">\n            <div class=\"newBMWGS05RightWrap\">\n                <div class=\"newBMWGS05row\">\n                    <div data-aos=\"fade-right\" class=\"newBMWGS05col\">\n                        <div class=\"newBMWGS05ContentImg\"> \n                            <img src=\"https://rparts-sites.s3.amazonaws.com/29aae1a45f62e2c5224f4527f32ea58b/design/catalog/2026/Asset_16@4x.webp\" alt=\"SCHWABING JACKET\"> \n                        </div>\n                    </div>\n                    <div data-aos=\"fade-left\" class=\"newBMWGS05col\">\n                        <div class=\"newBMWGS05Content\">\n                            <h4>\n                                SCHWABING JACKET\n                            </h4>\n                            <p> \n                                The Schwabing jacket revives a classic in a new design.\n                                Twin stripes on the sleeves set striking visual accents. Under\n                                the high-quality cowhide leather, NP Flex protectors on the\n                                Shoulders and elbows offer protection while four outside pockets\n                                and three inside pockets provide multiple stowage options.\n                                Several ventilation options at the front offer increased comfort. <br><br>\n                                MSRP: <strong>$559</strong> <br>\n                                Colors: Black-BLue <br>\n                                Sizes Men: S, M, L, XL, 2XL, 3XL <br>\n                                Sizes Women: XS, S, M, L, XL, 2XL <br><br>\n                            </p>\n                            <div class=\"newBMWListButton\">\n                                <a href=\"/p-mens-schwabing-jacket-mensjacketschwabingblackblue2025\">Shop Mens</a>\n                                <a href=\"/p-womens-schwabing-jacket-womensjacketschwabingblackblue2025\">Shop Womens</a>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_13",
+      "htmlId": "plugged",
+      "htmlClasses": "d-none newBMWPL01 newBMWRS01 newBMWSF01 gsSection",
+      "contentWidth": "full",
+      "backgroundColor": "#000000",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_15",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_18",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_23",
+                  "moduleType": "custom_html",
+                  "title": "PL01",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"newBMWMainTitle\">\n    <h5>PLUGGED TO LIFE</h5>\n</div>\n<div class=\"newBMWRS01Wrap\">\n    <div data-aos=\"zoom-in\" data-aos-duration=\"1500\" class=\"newBMWRS01Img\">\n        <img src=\"https://rparts-sites.s3.amazonaws.com/70d5d97723fe403ece6928ae8a9ddc0c/design/bmwm/pl01.png\" alt=\"TOKYO CONNECT GORE-TEX JACKET\">\n    </div>\n    <div class=\"newBMWRS01WrapFloat\">\n        <div class=\"newBMWRS01row\">\n            <div data-aos=\"fade-right\" class=\"newBMWRS01col\">\n                <div class=\"newBMWRS01Content\">\n                    <h4>\n                        TOKYO CONNECT GORE-TEX JACKET\n                    </h4>\n                    <p>\n                        Commuters will light up the city with this\nsmart, connected jacket. Active lighting\non the back and sleeves enhances rider\nvisibility, while the wind- and waterproof\ndesign and removable inner jacket make\nit perfect for year-round wear. <br><br>\nMSRP: <strong>$1,099</strong> <br>\nColors: Blue <br>\nSizes Men: S–2XL <br><br>\n                        <a href=\"/p-mens-tokyo-connect-gtx-jacket-menstokyoconnectgtxjacketblue\">Shop Now</a>\n                    </p>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_27",
+      "htmlId": "",
+      "htmlClasses": "d-none newBMWPL02 newBMWSF03 newBMWRS02 newBMWNS02 gsSection",
+      "contentWidth": "full",
+      "backgroundColor": "#000000",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_28",
+          "rowLayout": "6_6",
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_30",
+              "columnWidth": 6,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_40",
+                  "moduleType": "custom_html",
+                  "title": "PL02 Left",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"newBMWPL02wrap\">\n    <div data-aos=\"fade-down\" class=\"newBMWGS05ContentImg\"> \n        <img src=\"https://rparts-sites.s3.amazonaws.com/70d5d97723fe403ece6928ae8a9ddc0c/design/bmwm/pl02-01.png\" alt=\"BMW BILBAO JACKET\"> \n    </div>\n    <div data-aos=\"fade-up\" class=\"newBMWGS05Content\">\n        <h4> \n            BILBAO JACKET\n        </h4>\n        <p>\n            Metropolitan riders need effortless\nstyle and protection&mdash;and this\nlightweight, breathable jacket delivers\nboth with ease. <br><br>\nMSRP: <strong>$299</strong> <br>\nColors: Blue <br>\nSizes Unisex: XS–3XL <br><br>\n            <a href=\"/p-unisex-bilbao-jacket-unisexjacketbilbaoblue2025\">Shop Now</a>\n        </p>\n    </div>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            },
+            {
+              "columnId": "column_33",
+              "columnWidth": 6,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_49",
+                  "moduleType": "custom_html",
+                  "title": "PL02 Right",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"newBMWPL02wrap\">\n    <div data-aos=\"fade-down\" class=\"newBMWGS05ContentImg\"> \n        <img src=\"https://rparts-sites.s3.amazonaws.com/70d5d97723fe403ece6928ae8a9ddc0c/design/bmwm/pl02-02.png\" alt=\"BMW NAPLES JACKET\"> \n    </div>\n    <div data-aos=\"fade-up\" class=\"newBMWGS05Content\">\n        <h4> \n            NAPLES JACKET\n        </h4>\n        <p>\n            This sporty zip-up hoodie is perfect for\nshort trips, combining a stylish look with\nbuilt-in rider protection. <br><br>\nMSRP: <strong>$279</strong> <br>\n            Color: Anthracite | Blue <br>\n            Sizes unisex: XS–3XL <br><br>\n            </p><div class=\"newBMWListButton\">\n                <a href=\"/p-mens-naples-jacket-blue-unisexjacketnaplesblue2025\">Shop Blue</a>\n                <a href=\"/p-mens-naples-jacket-anthracite-unisexjacketnaplesanthracite2025\">Shop Anthracite</a>\n        \t</div>\n        <p></p>\n    </div>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_15",
+      "htmlId": "",
+      "htmlClasses": "d-none newBMWGS03 newBMWRS03 gsSection",
+      "contentWidth": "full",
+      "backgroundColor": "#000000",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_16",
+          "rowLayout": "6_6",
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_19",
+              "columnWidth": 6,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_24",
+                  "moduleType": "custom_html",
+                  "title": "PL03 Left",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"newBMGWS03Wrap\">\n    <div class=\"newBMWGS03Img\">\n        <img src=\"https://rparts-sites.s3.amazonaws.com/70d5d97723fe403ece6928ae8a9ddc0c/design/bmwm/pl03-01.png\" alt=\"BMW SEOUL GORE-TEX SNEAKERS\">\n    </div>\n    <div class=\"newBMWGS03row\">\n        <div class=\"newBMWGS03col\">\n            <div class=\"newBMWGS03row newBMWGS03row50\">\n                <div data-aos=\"fade-right\" class=\"newBMWGS03col\">\n                    <div class=\"newBMWGS03Img\">\n                        <img src=\"https://rparts-sites.s3.amazonaws.com/70d5d97723fe403ece6928ae8a9ddc0c/design/bmwm/pl03-03.png\" alt=\"BMW SEOUL GORE-TEX SNEAKERS\">\n                    </div>\n                </div>\n                <div data-aos=\"fade-left\" class=\"newBMWGS03col\">\n                    <div class=\"newBMWGS03Content newBMWGS03ContentPad\">\n                        <h4>\n                            SEOUL GORE-TEX SNEAKERS\n                        </h4>\n                        <p>\n                            Whether for longer rides or daily use, these\nsneakers offer a stylish look along with wind\nand water protection.\n <br><br>\n MSRP: <strong>$299</strong> (Color) | $289 (White) <br>\n Colors: Black | Blue | Green | White <br>\n Sizes unisex: 36–48  <br><br>\n                            </p><div class=\"newBMWListButton newBMWListButton2col\">\n                                <a href=\"/p-unisex-seoul-gtx-sneakers-black-unisexsneakerseoulgtxblack2025\">Shop Black</a>\n                                <a href=\"/p-unisex-seoul-gtx-sneakers-blue-unisexsneakerseoulgtxblue2025\">Shop Blue</a>\n                                <a href=\"/p-unisex-seoul-gtx-sneakers-green-unisexsneakerseoulgtxgreen2025\">Shop Green</a>\n                                <a href=\"/p-unisex-seoul-gtx-sneakers-white-unisexsneakerseoulgtxwhite\">Shop White</a>\n                            </div>\n                        <p></p>\n                    </div>\n                </div>\n            </div>\n        </div>\n        <div class=\"newBMWGS03col\">\n            <div class=\"newBMWGS03Img newBMWGS03ImgFull\">\n                <img src=\"https://rparts-sites.s3.amazonaws.com/70d5d97723fe403ece6928ae8a9ddc0c/design/bmwm/pl03-05.png\" alt=\"BMW SEOUL GORE-TEX SNEAKERS\">\n            </div>\n        </div>\n    </div>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            },
+            {
+              "columnId": "column_20",
+              "columnWidth": 6,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_27",
+                  "moduleType": "custom_html",
+                  "title": "PL03 Right",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"newBMWGS05RightWrap\">\n    <div class=\"newBMWGS05row\">\n        <div data-aos=\"fade-left\" class=\"newBMWGS05col\">\n            <div class=\"newBMWGS05Content\">\n                <div class=\"newBMWGS03Img\" style=\"margin-bottom: 30px;\"> <img src=\"https://rparts-sites.s3.amazonaws.com/70d5d97723fe403ece6928ae8a9ddc0c/design/bmwm/pl03-04.png\" alt=\"BMW KNITLITE SNEAKERS \"> </div>\n                <h4>\n                    KNITLITE SNEAKERS \n                </h4>\n                <p> \n                    Perfect for short city trips or daily\nuse, these motorcycle sneakers are\nideal for dry conditions. Riders will\nappreciate the lightweight 3D knit\nconstruction with reinforced soles\nand heels. <br><br>\nMSRP: <strong>$289</strong> <br>\nColors: Black | Blue | Grey <br>\nSizes unisex: 36–48 \n <br><br>\n                    </p><div class=\"newBMWListButton\">\n                        <a href=\"/p-unisex-knitlite-sneakers-unisexknitlitesneakersblack\">Shop Black</a>\n                        <a href=\"/p-unisex-knitlite-sneakers-blue-unisexsneakerknitliteblue2025\">Shop Blue</a>\n                        <a href=\"/p-unisex-knitlite-sneakers-grey-unisexsneakerknitlitegrey2025\">Shop Grey</a>\n                    </div>\n                <p></p>\n            </div>\n        </div>\n        <div data-aos=\"fade-right\" class=\"newBMWGS05col\">\n            <div class=\"newBMWGS05ContentImg\"> \n                <img src=\"https://rparts-sites.s3.amazonaws.com/70d5d97723fe403ece6928ae8a9ddc0c/design/bmwm/pl03-06.png\" alt=\"BMW KNITLITE SNEAKERS \"> \n            </div>\n        </div>\n    </div>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_14",
+      "htmlId": "",
+      "htmlClasses": "main--hero main--heronewBMW",
+      "contentWidth": "full",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_17",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_21",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_25",
+                  "moduleType": "custom_html",
+                  "title": "Main Slider",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div id=\"main--slider\" class=\"owl-carousel owl-theme\">\n    <div class=\"main--slider-item\">\n        <div class=\"main--slider-bg\">\n            <img alt=\"BMW Motorrad Gear\" src=\"https://rparts-sites.s3.amazonaws.com/23908d49235005b9c1c9e417b84fee8e/design/main-slider/gearslider01.png\">\n        </div>\n        <div class=\"main--slider-wrapper\">\n            <div class=\"main--slider-content\">\n                <h2 class=\"main--slider-title\">\n                    SHOP ALL BMW MOTORRAD <br>\n                    GEAR\n                </h2>\n                \n                <div class=\"main--slider-button\"> <a href=\"gear\">Shop All Gear</a> </div>\n            </div>\n        </div>\n    </div>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

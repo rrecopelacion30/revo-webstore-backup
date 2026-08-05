@@ -1,0 +1,405 @@
+{
+  "pageId": "dynamic-seo",
+  "pageName": "Dynamic SEO Page",
+  "pageType": null,
+  "layoutEnabled": true,
+  "moduleCategories": [
+    "header",
+    "images",
+    "text",
+    "search",
+    "categories_products",
+    "forms",
+    "navigation",
+    "footer",
+    "search_page"
+  ],
+  "VFSPath": "layouts/dynamic-seo.json",
+  "requiredModules": [
+    "search_filters",
+    "search_listing"
+  ],
+  "scripts": "",
+  "sections": [
+    {
+      "sectionId": "section_10",
+      "htmlId": "",
+      "htmlClasses": "breadcrumb",
+      "contentWidth": "wide",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_11",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_12",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_13",
+                  "moduleType": "page_subheader",
+                  "title": "Page Subheader",
+                  "options": {
+                    "show_change_vehicle": {
+                      "name": "Afficher Changer de véhicule",
+                      "type": "boolean",
+                      "default_value": true,
+                      "value": false
+                    },
+                    "show_breadcrumbs": {
+                      "name": "Afficher le fil d’Ariane",
+                      "type": "boolean",
+                      "default_value": true,
+                      "value": true
+                    },
+                    "show_title": {
+                      "name": "Afficher le titre",
+                      "type": "boolean",
+                      "default_value": true,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_41",
+      "htmlId": "",
+      "htmlClasses": "products-search",
+      "contentWidth": "wide",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_42",
+          "rowLayout": "3_9",
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_43",
+              "columnWidth": 3,
+              "htmlId": "",
+              "htmlClasses": "with-sidebar",
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_48",
+                  "moduleType": "page_subheader",
+                  "title": "Page Subheader",
+                  "options": {
+                    "show_change_vehicle": {
+                      "name": "Afficher Changer de véhicule",
+                      "type": "boolean",
+                      "default_value": true,
+                      "value": true
+                    },
+                    "show_breadcrumbs": {
+                      "name": "Afficher le fil d’Ariane",
+                      "type": "boolean",
+                      "default_value": true,
+                      "value": false
+                    },
+                    "show_title": {
+                      "name": "Afficher le titre",
+                      "type": "boolean",
+                      "default_value": true,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "change-vehicle",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_19",
+                  "moduleType": "links_list",
+                  "title": "Links List",
+                  "options": {
+                    "links": {
+                      "name": "Liens",
+                      "type": "object",
+                      "default_value": [],
+                      "value": [
+                        {
+                          "linkId": "link_89",
+                          "text": "Modern Performance",
+                          "url": "/modern-performance",
+                          "target": "",
+                          "icon": "",
+                          "type": "direct"
+                        },
+                        {
+                          "linkId": "link_90",
+                          "text": "Crate Engine",
+                          "url": "/crate-engine",
+                          "target": "",
+                          "icon": "",
+                          "type": "direct"
+                        },
+                        {
+                          "linkId": "link_91",
+                          "text": "Race",
+                          "url": "/drag-pak",
+                          "target": "",
+                          "icon": "",
+                          "type": "direct"
+                        },
+                        {
+                          "linkId": "link_92",
+                          "text": "Vintage Muscle",
+                          "url": "/vintage-muscle",
+                          "target": "",
+                          "icon": "",
+                          "type": "direct"
+                        },
+                        {
+                          "linkId": "link_93",
+                          "text": "Modern Performance - Licensed Parts",
+                          "url": "/modern-performance/licensed-parts",
+                          "target": "",
+                          "icon": "",
+                          "type": "direct"
+                        },
+                        {
+                          "linkId": "link_94",
+                          "text": "Crate Engine - Licensed Parts",
+                          "url": "crate-engine-licensed-parts",
+                          "target": "",
+                          "icon": "",
+                          "type": "direct"
+                        },
+                        {
+                          "linkId": "link_95",
+                          "text": "Drag Pak - Licensed Parts",
+                          "url": "drag-pak-licensed-parts",
+                          "target": "",
+                          "icon": "",
+                          "type": "direct"
+                        },
+                        {
+                          "linkId": "link_96",
+                          "text": "Vintage Muscle - Licensed Parts",
+                          "url": "vintage-muscle-licensed-parts",
+                          "target": "",
+                          "icon": "",
+                          "type": "direct"
+                        }
+                      ]
+                    },
+                    "links_title": {
+                      "name": "Liste de titres",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "Categories"
+                    },
+                    "links_title_url": {
+                      "name": "Liste de liens des titres",
+                      "type": "string",
+                      "default_value": null,
+                      "value": ""
+                    },
+                    "links_display": {
+                      "name": "Liste d’affichage",
+                      "type": "select",
+                      "default_value": "block",
+                      "value": "block",
+                      "possible_values": [
+                        {
+                          "value": "inline",
+                          "label": "Inline"
+                        },
+                        {
+                          "value": "block",
+                          "label": "Block"
+                        },
+                        {
+                          "value": "dropdown",
+                          "label": "Drop Down"
+                        }
+                      ]
+                    },
+                    "list_style": {
+                      "name": "Liste de style",
+                      "type": "select",
+                      "default_value": "none",
+                      "value": "none",
+                      "possible_values": [
+                        {
+                          "value": "none",
+                          "label": "No Style"
+                        },
+                        {
+                          "value": "footer",
+                          "label": "Bas de page"
+                        },
+                        {
+                          "value": "header",
+                          "label": "En-tête"
+                        },
+                        {
+                          "value": "navigation",
+                          "label": "Barre de navigation"
+                        },
+                        {
+                          "value": "menu",
+                          "label": "Barre de menu"
+                        }
+                      ]
+                    },
+                    "header_tag": {
+                      "name": "Onglet d’en-tête",
+                      "type": "select",
+                      "default_value": "strong",
+                      "value": "strong",
+                      "possible_values": [
+                        {
+                          "value": "strong",
+                          "label": "STRONG"
+                        },
+                        {
+                          "value": "h3",
+                          "label": "H3"
+                        }
+                      ]
+                    },
+                    "links_image": {
+                      "name": "Liste d’images",
+                      "type": "image_upload",
+                      "default_value": null,
+                      "value": null
+                    },
+                    "links_stock": {
+                      "name": "Liste de style",
+                      "type": "select",
+                      "default_value": "none",
+                      "value": "none",
+                      "possible_values": [
+                        {
+                          "value": "none",
+                          "label": "Aucun"
+                        },
+                        {
+                          "value": "mobile_menu",
+                          "label": "Menu mobile"
+                        },
+                        {
+                          "value": "policies",
+                          "label": "Politiques"
+                        }
+                      ]
+                    },
+                    "footer_link": {
+                      "name": "Lien de bas de page",
+                      "type": "string",
+                      "default_value": null,
+                      "value": ""
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "links-sidebar",
+                  "minColumnWidth": 0,
+                  "customAdmin": true,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            },
+            {
+              "columnId": "column_44",
+              "columnWidth": 9,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_68",
+                  "moduleType": "page_subheader",
+                  "title": "Page Subheader",
+                  "options": {
+                    "show_change_vehicle": {
+                      "name": "Afficher Changer de véhicule",
+                      "type": "boolean",
+                      "default_value": true,
+                      "value": false
+                    },
+                    "show_breadcrumbs": {
+                      "name": "Afficher le fil d’Ariane",
+                      "type": "boolean",
+                      "default_value": true,
+                      "value": false
+                    },
+                    "show_title": {
+                      "name": "Afficher le titre",
+                      "type": "boolean",
+                      "default_value": true,
+                      "value": true
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "page-header",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_3",
+                  "moduleType": "custom_html",
+                  "title": "Custom HTML",
+                  "options": {
+                    "html_content": {
+                      "name": "Contenu HTML personnalisé",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"row mb-2\">\n    <div class=\"col-12\">\n        <p>Direct Connection can help you maintain your very own Drag Pak or Funny car to meet NHRA/NMCA rules with our service kits.</p></div>\n</div>\n<div class=\"row\"> <div class=\"col-12 col-sm-6 col-lg-4 mb-2\"> <figure> <a href=\"/race/funny-cars\"> <img class=\"img-responsive w-100\" src=\"https://rparts-sites.s3.amazonaws.com/6f87c75737bcc72b4674a498139b574d/design/New%20Race/FunnyCarKits.png\" alt=\"Funny Car Kits\"> <figcaption>Funny Car Kits</figcaption> </a> </figure> </div> <div class=\"col-12 col-sm-6 col-lg-4 mb-2\"> <figure> <a href=\"/race/drag-pak-kits\"> <img class=\"img-responsive w-100\" src=\"https://rparts-sites.s3.amazonaws.com/6f87c75737bcc72b4674a498139b574d/design/New%20Race/DragPakKits.png\" alt=\"Drag Pak Kits\"> <figcaption>Drag Pak Kits</figcaption> </a> </figure> </div> <div class=\"col-12 col-sm-6 col-lg-4 mb-2\"> <figure> <a href=\"drag-pak-licensed-parts\"> <img class=\"img-responsive w-100\" src=\"https://rparts-sites.s3.amazonaws.com/6f87c75737bcc72b4674a498139b574d/design/New%20Race/LicensePartsRace.png\" alt=\"Drag Pak - Licensed Parts\"> <figcaption>Drag Pak - Licensed Parts</figcaption> </a> </figure></div></div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lent chargement d’images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "custom-banner",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

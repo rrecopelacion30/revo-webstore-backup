@@ -1,0 +1,688 @@
+{
+  "pageId": "product",
+  "pageName": "Product Page",
+  "pageType": null,
+  "layoutEnabled": true,
+  "moduleCategories": [
+    "header",
+    "images",
+    "text",
+    "search",
+    "categories_products",
+    "forms",
+    "navigation",
+    "footer",
+    "product"
+  ],
+  "VFSPath": "layouts/product.json",
+  "requiredModules": [
+    "product_images",
+    "product_purchase"
+  ],
+  "scripts": "",
+  "sections": [
+    {
+      "sectionId": "section_2",
+      "htmlId": "",
+      "htmlClasses": "",
+      "contentWidth": "wide",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_2",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_3",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "left",
+              "modules": [
+                {
+                  "moduleId": "module_1",
+                  "moduleType": "product_breadcrumbs",
+                  "title": "Breadcrumbs",
+                  "options": {},
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_5",
+      "htmlId": "",
+      "htmlClasses": "themeNewPDP",
+      "contentWidth": "wide",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_6",
+          "rowLayout": "4_4_4",
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_7",
+              "columnWidth": 4,
+              "htmlId": "",
+              "htmlClasses": "themeNewPDPLeft",
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_59",
+                  "moduleType": "product_fitment_confirmation",
+                  "title": "Fitment Confirmation",
+                  "options": {
+                    "fitment_fits_car": {
+                      "name": "Part Fits Selected Car",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "",
+                      "placeholder": "This part fits your {ymm}",
+                      "caption": "Message displayed when the part fits the currently selected car ({ymm}: currently selected car)"
+                    },
+                    "fitment_may_fit_car": {
+                      "name": "Part May Fit Selected Car",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "",
+                      "placeholder": "This part may fit your {ymm}",
+                      "caption": "Message displayed when the part does not fit the currently selected car, but a part that supersedes to this part fits the currently selected car ({ymm}: currently selected car)"
+                    },
+                    "fitment_doesnt_fit_car": {
+                      "name": "Part Doesn't Fit Selected Car",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "",
+                      "placeholder": "This part does not fit your {ymm}",
+                      "caption": "Message displayed when the part does not fit the currently selected car ({ymm}: currently selected car)"
+                    },
+                    "fitment_select_car": {
+                      "name": "Select New Car Text",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "",
+                      "placeholder": "Change vehicle",
+                      "caption": "Message displayed when a car is selected, but may not be desired car"
+                    },
+                    "fitment_no_car_selected": {
+                      "name": "No Car Selected",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "",
+                      "placeholder": "Make sure this part fits your car",
+                      "caption": "Message displayed when fitment information exists, but no car is selected"
+                    },
+                    "fitment_display_no_fitment": {
+                      "name": "Display \\\"No Fitment\\\" Message",
+                      "type": "boolean",
+                      "default_value": null,
+                      "value": false
+                    },
+                    "fitment_no_fitment_message": {
+                      "name": "No Fitment Message",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "",
+                      "placeholder": "Provide your VIN at checkout and we will verify this part fits before shipping",
+                      "caption": "Message displayed when no fitment information exists"
+                    },
+                    "product_fitment_redesign": {
+                      "name": "Fitment Module Redesign",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    },
+                    "product_stock_indicator": {
+                      "name": "Display Stock Level Indicator",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    },
+                    "display_genuine_logo": {
+                      "name": "Display Brand Logo",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    },
+                    "display_message": {
+                      "name": "Display Message",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_10",
+                  "moduleType": "product_images",
+                  "title": "Product Images",
+                  "options": {
+                    "display_accessory_visualizer": {
+                      "name": "Vehicle Accessory Visualization",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": true,
+                      "caption": "For select accessories, allows customers to visualize the part on their selected vehicle"
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_58",
+                  "moduleType": "product_media",
+                  "title": "Product Media",
+                  "options": {
+                    "display_accessory_visualizer": {
+                      "name": "Vehicle Accessory Visualization",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false,
+                      "caption": "For select accessories, allows customers to visualize the part on their selected vehicle"
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            },
+            {
+              "columnId": "column_8",
+              "columnWidth": 4,
+              "htmlId": "",
+              "htmlClasses": "themeNewPDPCenter",
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_11",
+                  "moduleType": "product_title",
+                  "title": "Product Title",
+                  "options": {},
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_12",
+                  "moduleType": "product_fitment_confirmation",
+                  "title": "Fitment Confirmation",
+                  "options": {
+                    "fitment_fits_car": {
+                      "name": "Part Fits Selected Car",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "",
+                      "placeholder": "This part fits your {ymm}",
+                      "caption": "Message displayed when the part fits the currently selected car ({ymm}: currently selected car)"
+                    },
+                    "fitment_may_fit_car": {
+                      "name": "Part May Fit Selected Car",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "",
+                      "placeholder": "This part may fit your {ymm}",
+                      "caption": "Message displayed when the part does not fit the currently selected car, but a part that supersedes to this part fits the currently selected car ({ymm}: currently selected car)"
+                    },
+                    "fitment_doesnt_fit_car": {
+                      "name": "Part Doesn't Fit Selected Car",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "",
+                      "placeholder": "This part does not fit your {ymm}",
+                      "caption": "Message displayed when the part does not fit the currently selected car ({ymm}: currently selected car)"
+                    },
+                    "fitment_select_car": {
+                      "name": "Select New Car Text",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "",
+                      "placeholder": "Change vehicle",
+                      "caption": "Message displayed when a car is selected, but may not be desired car"
+                    },
+                    "fitment_no_car_selected": {
+                      "name": "No Car Selected",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "",
+                      "placeholder": "Make sure this part fits your car",
+                      "caption": "Message displayed when fitment information exists, but no car is selected"
+                    },
+                    "fitment_display_no_fitment": {
+                      "name": "Display \\\"No Fitment\\\" Message",
+                      "type": "boolean",
+                      "default_value": null,
+                      "value": false
+                    },
+                    "fitment_no_fitment_message": {
+                      "name": "No Fitment Message",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "",
+                      "placeholder": "Provide your VIN at checkout and we will verify this part fits before shipping",
+                      "caption": "Message displayed when no fitment information exists"
+                    },
+                    "product_fitment_redesign": {
+                      "name": "Fitment Module Redesign",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    },
+                    "product_stock_indicator": {
+                      "name": "Display Stock Level Indicator",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    },
+                    "display_genuine_logo": {
+                      "name": "Display Brand Logo",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    },
+                    "display_message": {
+                      "name": "Display Message",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_25",
+                  "moduleType": "product_details",
+                  "title": "Product Details",
+                  "options": {
+                    "universal_fitment_display": {
+                      "name": "Display \\\"Universal Fitment\\\" Image",
+                      "caption": "If an item has univseral fitment display a custom image",
+                      "type": "boolean",
+                      "default_value": null,
+                      "value": false
+                    },
+                    "universal_fitment_image_file": {
+                      "name": "Universal Fitment Image File",
+                      "type": "image_upload",
+                      "default_value": null,
+                      "value": ""
+                    },
+                    "universal_fitment_alt_text": {
+                      "name": "Universal Fitment Alt Text",
+                      "type": "string",
+                      "default_value": "Universal Fitment",
+                      "value": "Universal Fitment"
+                    },
+                    "warranty_html": {
+                      "name": "Warranty text",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": ""
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            },
+            {
+              "columnId": "column_9",
+              "columnWidth": 4,
+              "htmlId": "",
+              "htmlClasses": "themeNewPDPRight",
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_30",
+                  "moduleType": "product_purchase",
+                  "title": "Product Purchase",
+                  "options": {
+                    "display_fitment_confirmation": {
+                      "name": "Display Fitment Confirmation Section",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    },
+                    "fitment_fits_car": {
+                      "name": "Part Fits Selected Car",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "",
+                      "placeholder": "This part fits your {ymm}",
+                      "caption": "Message displayed when the part fits the currently selected car ({ymm}: currently selected car)"
+                    },
+                    "fitment_may_fit_car": {
+                      "name": "Part May Fit Selected Car",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "",
+                      "placeholder": "This part may fit your {ymm}",
+                      "caption": "Message displayed when the part does not fit the currently selected car, but a part that supersedes to this part fits the currently selected car ({ymm}: currently selected car)"
+                    },
+                    "fitment_doesnt_fit_car": {
+                      "name": "Part Doesn't Fit Selected Car",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "",
+                      "placeholder": "This part does not fit your {ymm}",
+                      "caption": "Message displayed when the part does not fit the currently selected car ({ymm}: currently selected car)"
+                    },
+                    "fitment_select_car": {
+                      "name": "Select New Car Text",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "",
+                      "placeholder": "Change vehicle",
+                      "caption": "Message displayed when a car is selected, but may not be desired car"
+                    },
+                    "fitment_no_car_selected": {
+                      "name": "No Car Selected",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "",
+                      "placeholder": "Make sure this part fits your car",
+                      "caption": "Message displayed when fitment information exists, but no car is selected"
+                    },
+                    "fitment_display_no_fitment": {
+                      "name": "Display \\\"No Fitment\\\" Message",
+                      "type": "boolean",
+                      "default_value": null,
+                      "value": false
+                    },
+                    "fitment_no_fitment_message": {
+                      "name": "No Fitment Message",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "",
+                      "placeholder": "Provide your VIN at checkout and we will verify this part fits before shipping",
+                      "caption": "Message displayed when no fitment information exists"
+                    },
+                    "display_accessory_visualizer": {
+                      "name": "Vehicle Accessory Visualization",
+                      "type": "boolean",
+                      "default_value": true,
+                      "value": false,
+                      "caption": "For select accessories, allows customers to visualize the part on their selected vehicle"
+                    },
+                    "dealer_selection_button_text": {
+                      "name": "Dealer Selection Display Text",
+                      "type": "string",
+                      "default_value": "Shop Now >>",
+                      "value": "Shop Now >>",
+                      "placeholder": "Text displayed on dealer selection button",
+                      "caption": "Text to be displayed on button while selecting a dealer"
+                    },
+                    "display_msrp": {
+                      "name": "Display MSRP",
+                      "type": "boolean",
+                      "default_value": true,
+                      "value": true
+                    },
+                    "msrp_custom_label": {
+                      "name": "MSRP Display Text",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "",
+                      "placeholder": "MSRP"
+                    },
+                    "discount_custom_label": {
+                      "name": "Discount Display Text",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "",
+                      "placeholder": "Discount"
+                    },
+                    "sale_price_custom_label": {
+                      "name": "Sale Price Display Text",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "",
+                      "placeholder": "Sale Price"
+                    },
+                    "display_genuine_logo": {
+                      "name": "Display Genuine Logo",
+                      "type": "boolean",
+                      "default_value": true,
+                      "value": false
+                    },
+                    "display_payment_message": {
+                      "name": "Display Payment Message",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    },
+                    "display_shipping_options": {
+                      "name": "Display Shipping Options",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": true
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_48",
+                  "moduleType": "custom_html",
+                  "title": "$100 Credit Card Promo",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div style=\"margin-top: 15px;margin-bottom: 15px;\">\n    <a class=\"imageClickPopup\" href=\"javascript:void(0)\" data-toggle=\"modal\" data-target=\"#creditCardPromoModal\">\n        <img src=\"https://rparts-sites.s3.amazonaws.com/00d43a1703c9241dcca9da0d452449dc/design/credit-card/2-25/Mopar_100_Banner_978x700.webp\" alt=\"Earn $100 for Today's Order\">\n    </a>    \n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_148",
+      "htmlId": "",
+      "htmlClasses": "themeNewPDPAccordionSection",
+      "contentWidth": "wide",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_149",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_150",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_151",
+                  "moduleType": "product_fitment",
+                  "title": "Product Fitment",
+                  "options": {
+                    "universal_fitment_display": {
+                      "name": "Display \\\"Universal Fitment\\\" Message",
+                      "caption": "If an item has univseral fitment display a custom image",
+                      "type": "boolean",
+                      "default_value": null,
+                      "value": false
+                    },
+                    "universal_fitment_text": {
+                      "name": "Universal Fitment Text",
+                      "type": "string",
+                      "default_value": "This Item Fits Most Vehicles",
+                      "value": "This Item Fits Most Vehicles"
+                    },
+                    "display_accessory_visualizer": {
+                      "name": "Vehicle Accessory Visualization",
+                      "type": "boolean",
+                      "default_value": true,
+                      "value": false,
+                      "caption": "For select accessories, allows customers to visualize the part on their selected vehicle"
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_156",
+                  "moduleType": "product_recommended",
+                  "title": "Recommended Products",
+                  "options": {
+                    "section_heading": {
+                      "name": "Display Heading",
+                      "caption": "This will be displayed on your product detail page. If left blank, the default heading will be \"Also Purchased\".",
+                      "type": "string",
+                      "default_value": "Also Purchased",
+                      "value": "Also Purchased"
+                    },
+                    "display_as": {
+                      "name": "Display As",
+                      "type": "select",
+                      "default_value": "slider",
+                      "value": "list",
+                      "possible_values": [
+                        {
+                          "value": "slider",
+                          "label": "Slider"
+                        },
+                        {
+                          "value": "list",
+                          "label": "List"
+                        }
+                      ]
+                    },
+                    "product_display_limit": {
+                      "name": "Product Display Limit",
+                      "caption": "Default limit is 5 products",
+                      "type": "string",
+                      "default_value": "5",
+                      "value": "4",
+                      "validate": "validate_maximum",
+                      "data_attributes": {
+                        "max_value": "8"
+                      }
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_155",
+                  "moduleType": "product_policies",
+                  "title": "Product Policies",
+                  "options": {},
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_45",
+                  "moduleType": "interactive_garage",
+                  "title": "Interactive Garage",
+                  "options": {
+                    "html_content": {
+                      "name": "Interactive Garage Script Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": ""
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

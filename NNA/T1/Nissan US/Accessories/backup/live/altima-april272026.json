@@ -1,0 +1,424 @@
+{
+  "pageId": "page",
+  "pageName": "Text Page",
+  "pageType": null,
+  "layoutEnabled": true,
+  "moduleCategories": [
+    "header",
+    "images",
+    "text",
+    "search",
+    "categories_products",
+    "forms",
+    "navigation",
+    "footer"
+  ],
+  "VFSPath": "layouts/page.json",
+  "requiredModules": [],
+  "scripts": "",
+  "sections": [
+    {
+      "sectionId": "section_2",
+      "htmlId": "",
+      "htmlClasses": "themeVehicleBannerSection themeVehicleBannerSectionAccessories",
+      "contentWidth": "full",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_3",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_4",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_7",
+                  "moduleType": "custom_html",
+                  "title": "Main Banner",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"themeVehicleBannerWrap\">\n    <div class=\"themeVehicleBannerCard\">\n        <div class=\"themeVehicleBannerImg\">\n            <img src=\"https://rparts-sites.s3.amazonaws.com/223b3e40451187171b9a7229149b1553/design/accessories/acc_altima.webp\" alt=\"Nissan Accessories Banner\">\n        </div>\n        <div class=\"themeVehicleBannerBoxCont\">\n            <div class=\"themeVehicleBannerContent\">\n                <h1>\n                    Drive in Style – Shop Genuine OEM Nissan Altima Accessories Online\n                </h1>\n                <p>\n                    Elevate your Nissan Altima experience with accessories that match your lifestyle. Whether you're upgrading with sleek interior touches, adding functionality with all-weather floor mats, or enhancing performance with aerodynamic upgrades, we've got everything you need to make it yours. Shop now and enjoy fast shipping anywhere in the US. Your Altima, your way, in no time.\n                </p>\n                \n            </div>\n        </div>\n    </div>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_12",
+      "htmlId": "",
+      "htmlClasses": "themeAccSection",
+      "contentWidth": "wide",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_13",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_14",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_17",
+                  "moduleType": "custom_html",
+                  "title": "Main Title",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"themeTitle\">\n    <h3>Top Sellers: Nissan Altima</h3>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_19",
+                  "moduleType": "custom_html",
+                  "title": "Featured List",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"themeAccWrapper\">\n  <ul class=\"themeAccList owl-carousel owl-theme\">\n    <li class=\"themeAccItem\">\n      <div class=\"themeAccLink\">\n        <div class=\"themeAccCard\">\n          <div class=\"themeAccImg\">\n            <a href=\"parts/nissan-wheel-19-quot-aluminum-alloy-t99w19hf1j\">\n              <img\n                src=\"https://s3.amazonaws.com/rp-part-images/assets/6f84996f4222907ed05f13ef8eea42a7.webp\"\n                alt=\"Nissan Image\"\n              />\n            </a>\n          </div>\n          <div class=\"themeAccContent\">\n            <h3>Wheel - 19\" Aluminum Alloy - Nissan (T99W1-9HF1J)</h3>\n          </div>\n          <div class=\"themeAccButton\">\n            <a href=\"parts/nissan-wheel-19-quot-aluminum-alloy-t99w19hf1j\"\n              >View Products</a\n            >\n          </div>\n        </div>\n      </div>\n    </li>\n    <li class=\"themeAccItem\">\n      <div class=\"themeAccLink\">\n        <div class=\"themeAccCard\">\n          <div class=\"themeAccImg\">\n            <a href=\"parts/nissan-floor-mats-all-season-t99e16ca0a\">\n              <img\n                src=\"https://s3.amazonaws.com/rp-part-images/assets/ebb2d2948924fb476344d752649d9c35.webp\"\n                alt=\"Nissan Image\"\n              />\n            </a>\n          </div>\n          <div class=\"themeAccContent\">\n            <h3>Floor Mats, All Season - Nissan (T99E1-6CA0A)</h3>\n          </div>\n          <div class=\"themeAccButton\">\n            <a href=\"parts/nissan-floor-mats-all-season-t99e16ca0a\">View Products</a>\n          </div>\n        </div>\n      </div>\n    </li>\n    <li class=\"themeAccItem\">\n      <div class=\"themeAccLink\">\n        <div class=\"themeAccCard\">\n          <div class=\"themeAccImg\">\n            <a href=\"parts/nissan-spoiler-rear-deck-lid-999j1uzkh3\">\n              <img\n                src=\"https://s3.amazonaws.com/rp-part-images/assets/e1563f108bf6e7c7b4109c2b307f7f5e.webp\"\n                alt=\"Nissan Image\"\n              />\n            </a>\n          </div>\n          <div class=\"themeAccContent\">\n            <h3>Spoiler, Rear Deck Lid - Nissan (999J1-UZKH3)</h3>\n          </div>\n          <div class=\"themeAccButton\">\n            <a href=\"parts/nissan-spoiler-rear-deck-lid-999j1uzkh3\"\n              >View Products</a\n            >\n          </div>\n        </div>\n      </div>\n    </li>\n    <li class=\"themeAccItem\">\n      <div class=\"themeAccLink\">\n        <div class=\"themeAccCard\">\n          <div class=\"themeAccImg\">\n            <a\n              href=\"parts/nissan-rear-bumper-protector-chrome-t99b16ca0a\"\n            >\n              <img\n                src=\"https://s3.amazonaws.com/rp-part-images/assets/d83d6a84a75d90068332a4f2f7ca87da.webp\"\n                alt=\"Nissan Image\"\n              />\n            </a>\n          </div>\n          <div class=\"themeAccContent\">\n            <h3>Rear Bumper Protector - Chrome - Nissan (T99B1-6CA0A)</h3>\n          </div>\n          <div class=\"themeAccButton\">\n            <a href=\"parts/nissan-rear-bumper-protector-chrome-t99b16ca0a\"\n              >View Products</a\n            >\n          </div>\n        </div>\n      </div>\n    </li>\n  </ul>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_11",
+      "htmlId": "",
+      "htmlClasses": "cyberacc_category_section category_section padding_section",
+      "contentWidth": "wide",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_12",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_13",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_14",
+                  "moduleType": "custom_html",
+                  "title": "Tab Category List",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"theme_cat_tab_wrapper\">\n    <h2 class=\"main_title\">Explore Nissan Altima Popular Accessory Categories</h2>\n    \n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_15",
+                  "moduleType": "custom_html",
+                  "title": "Interior Content",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"theme_cat_tab_content\">\n    <ul class=\"theme_cat_tab_content_list\">\n        <li>\n            <a href=\"/accessories/exterior/nissan-altima\">\n                <div class=\"theme_cat_tab_content_img\">\n                    <img src=\"https://cdn.revolutionparts.io/223b3e40451187171b9a7229149b1553/design/frontier/card01new.webp\" alt=\"Nissan Exterior Image\">\n                </div>\n                <p>Exterior Accessories</p>\n            </a>\n        </li>\n        <li>\n            <a href=\"/accessories/interior/nissan-altima\">\n                <div class=\"theme_cat_tab_content_img\">\n                    <img src=\"https://cdn.revolutionparts.io/223b3e40451187171b9a7229149b1553/design/frontier/card06newnew.webp\" alt=\"Nissan Interior\">\n                </div>\n                <p>Interior Accessories</p>\n            </a>\n        </li>\n        <li>\n            <a href=\"/accessories/lighting-technology/nissan-altima\">\n                <div class=\"theme_cat_tab_content_img\">\n                    <img src=\"https://cdn.revolutionparts.io/223b3e40451187171b9a7229149b1553/design/frontier/card07new_b.webp\" alt=\"Nissan Technology Image\">\n                </div>\n                <p>Lighting & Technology Accessories</p>\n            </a>\n        </li>\n\t\t<li>\n            <a href=\"https://parts.nissanusa.com/go/Nissan-Pet-Accessories.html\">\n                <div class=\"theme_cat_tab_content_img\">\n                    <img src=\"https://cdn.revolutionparts.io/images/840d68cbbbfa627cd4635408a6c82009/af4487a139450404a022c01a4a3eefab.jpeg\" alt=\"Nissan Pet Accessories\">\n                </div>\n                <p>Pet Accessories</p>\n            </a>\n        </li>\n\t\t<li>\n            <a href=\"/accessories/cargo/nissan-altima\">\n                <div class=\"theme_cat_tab_content_img\">\n                    <img src=\"https://cdn-product-images.revolutionparts.io/assets/ae623471cbf333c99cc33dbddbb82391.webp\" alt=\"Nissan Cargo Accessories\">\n                </div>\n                <p>Cargo Accessories</p>\n            </a>\n        </li>\n\t\t<li>\n            <a href=\"/accessories/yakima/nissan-altima\">\n                <div class=\"theme_cat_tab_content_img\">\n                    <img src=\"https://cdn.revolutionparts.io/223b3e40451187171b9a7229149b1553/design/frontier/cardm05.webp\" alt=\"Nissan Yakima Accessories\">\n                </div>\n                <p>Affiliated: Yakima® Accessories</p>\n            </a>\n        </li>\n    </ul>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "tab_content tab_content_in",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_33",
+      "htmlId": "",
+      "htmlClasses": "themeAccessoriesCardSection",
+      "contentWidth": "wide",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_8",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_9",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_3",
+                  "moduleType": "custom_html",
+                  "title": "Title",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<h2 class=\"main_title\">Explore Our Nissan Altima Favorite Accessories</h2>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "rowId": "row_34",
+          "rowLayout": "6_6",
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_35",
+              "columnWidth": 6,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_66",
+                  "moduleType": "custom_html",
+                  "title": "Call to Action",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"themeCalltoActionWrap\">\n    <div class=\"themeCalltoActionCard\">\n        <div class=\"themeCalltoActionImg\">\n            <img src=\"https://rparts-sites.s3.amazonaws.com/ddf1a4688f481343d29071cefb36dbca/design/cyber-accessories/card01.webp\" alt=\"Nissan Accessories\">\n        </div>\n        <div class=\"themeCalltoActionContent\">\n            <h3>Pet Accessories for your Nissan Friend</h3>\n            <div class=\"themeBannerButton\"> \n                <a href=\"go/Nissan-Pet-Accessories.html\" class=\"themeBannerCard\">\n                    <p>Shop Now</p>\n                </a> \n            </div>\n        </div>\n    </div>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            },
+            {
+              "columnId": "column_36",
+              "columnWidth": 6,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_75",
+                  "moduleType": "custom_html",
+                  "title": "Call to Action",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"themeCalltoActionWrap\">\n    <div class=\"themeCalltoActionCard\">\n        <div class=\"themeCalltoActionImg\">\n            <img src=\"https://rparts-sites.s3.amazonaws.com/223b3e40451187171b9a7229149b1553/design/cyber/altima/wheels.webp\" alt=\"Nissan Accessories\">\n        </div>\n        <div class=\"themeCalltoActionContent\">\n            <h3>Wheels & Rims</h3>\n            <div class=\"themeBannerButton\"> \n                <a href=\"part-categories/wheels-and-tires\" class=\"themeBannerCard\">\n                    <p>Shop Now</p>\n                </a> \n            </div>\n        </div>\n    </div>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_15",
+      "htmlId": "",
+      "htmlClasses": "themeTrustSteer themePagePadding",
+      "contentWidth": "wide",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_16",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_17",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_18",
+                  "moduleType": "custom_html",
+                  "title": "Why Buy",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"themePopularSteerWrap\">\n    <div class=\"themeSteerTitle\">\n        <h3>Why Buy Genuine Nissan Accessories?</h3>\n    </div>\n    <ul class=\"themeSteerList\">\n        <li>\n            <div class=\"themeSteerListCard\">\n                <div class=\"themeSteerListImg\">\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/ddf1a4688f481343d29071cefb36dbca/design/why/safety.avif\" alt=\"Safety Icon\">\n                </div>\n                <h4>Compatibility in, Guesswork Out</h4>\n                <p>From emblems to <a href=\"/part-categories/exterior/roof-rails\">roof racks</a>, our accessories come guaranteed to fit your <a href=\"/v-nissan\">Nissan</a>, work right the first time, and look the part. A lot of aftermarket accessories can't always say the same.</p>\n            </div>\n        </li>\n        <li>\n            <div class=\"themeSteerListCard\">\n                <div class=\"themeSteerListImg\">\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/ddf1a4688f481343d29071cefb36dbca/design/why/reli.avif\" alt=\"Reliability Icon\">\n                </div>\n                <h4>Nissan Quality Assured</h4>\n                <p>Genuine OEM means genuine Nissan -- accessories expertly crafted to the excellent standards you're familiar with. Expect nothing less.</p>\n            </div>\n        </li>\n        <li>\n            <div class=\"themeSteerListCard\">\n                <div class=\"themeSteerListImg\">\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/ddf1a4688f481343d29071cefb36dbca/design/why/perfect.avif\" alt=\"Perfect Fit Icon\">\n                </div>\n                <h4>Expertise at Your Service</h4>\n                <p>Nissan Genuine Parts and Accessories are made to perfectly fit your vehicle ensuring it runs at its optimum level, and is ready for any adventure.</p>\n            </div>\n        </li>\n        <li>\n            <div class=\"themeSteerListCard\">\n                <div class=\"themeSteerListImg\">\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/ddf1a4688f481343d29071cefb36dbca/design/why/future.avif\" alt=\"Future Proof Icon\">\n                </div>\n                <h4>Peace of Mind Included</h4>\n                <p>Buy with confidence -- genuine Nissan accessories are almost always warranty-backed. Using them won't void your factory warranty, either. That's an investment, covered.</p>\n            </div>\n        </li>\n    </ul>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

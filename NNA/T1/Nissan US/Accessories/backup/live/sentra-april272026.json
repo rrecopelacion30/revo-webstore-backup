@@ -1,0 +1,424 @@
+{
+  "pageId": "page",
+  "pageName": "Text Page",
+  "pageType": null,
+  "layoutEnabled": true,
+  "moduleCategories": [
+    "header",
+    "images",
+    "text",
+    "search",
+    "categories_products",
+    "forms",
+    "navigation",
+    "footer"
+  ],
+  "VFSPath": "layouts/page.json",
+  "requiredModules": [],
+  "scripts": "",
+  "sections": [
+    {
+      "sectionId": "section_2",
+      "htmlId": "",
+      "htmlClasses": "themeVehicleBannerSection themeVehicleBannerSectionAccessories",
+      "contentWidth": "full",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_3",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_4",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_7",
+                  "moduleType": "custom_html",
+                  "title": "Main Banner",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"themeVehicleBannerWrap\">\n    <div class=\"themeVehicleBannerCard\">\n        <div class=\"themeVehicleBannerImg\">\n            <img src=\"https://rparts-sites.s3.amazonaws.com/223b3e40451187171b9a7229149b1553/design/accessories/acc_sentra.webp\" alt=\"Nissan Accessories Banner\">\n        </div>\n        <div class=\"themeVehicleBannerBoxCont\">\n            <div class=\"themeVehicleBannerContent\">\n                <h1>\n                    Style Meets Comfort – Shop Genuine OEM Nissan Sentra Accessories Online\n                </h1>\n                <p>\n                    Elevate your Nissan Sentra with accessories that blend style and practicality. From premium seat covers to protect your interior, to tech upgrades that keep you connected, we have everything you need to make your Sentra uniquely yours. Shop now and enjoy fast shipping anywhere in the US. Your Sentra, your statement, your way!\n                </p>\n                \n            </div>\n        </div>\n    </div>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_24",
+      "htmlId": "",
+      "htmlClasses": "themeAccSection",
+      "contentWidth": "wide",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_25",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_26",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_27",
+                  "moduleType": "custom_html",
+                  "title": "Main Title",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"themeTitle\">\n    <h3>Top Sellers: Nissan Sentra</h3>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_28",
+                  "moduleType": "custom_html",
+                  "title": "Featured List",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"themeAccWrapper\">\n    <ul class=\"themeAccList owl-carousel owl-theme\">\n      <li class=\"themeAccItem\">\n        <div class=\"themeAccLink\">\n          <div class=\"themeAccCard\">\n            <div class=\"themeAccImg\">\n              <a href=\"/parts/nissan-floor-mats-carpet-999e2l2000\"><img src=\"https://s3.amazonaws.com/rp-part-images/assets/863394e331aa6d2c68cda8592c01ef25.webp\" alt=\"Floor Mats, Carpet - Nissan (999E2-L2000) Image\"></a>\n            </div>\n            <div class=\"themeAccContent\">\n              <h3>Floor Mats, Carpet - Nissan (999E2-L2000)</h3>\n            </div>\n            <div class=\"themeAccButton\">\n              <a href=\"/parts/nissan-floor-mats-carpet-999e2l2000\">View Product</a>\n            </div>\n          </div>\n        </div>\n      </li>\n      <li class=\"themeAccItem\">\n        <div class=\"themeAccLink\">\n          <div class=\"themeAccCard\">\n            <div class=\"themeAccImg\">\n              <a href=\"/parts/nissan-side-window-deflectors-4-piece-set-h08006lb0a\"><img src=\"https://s3.amazonaws.com/rp-part-images/assets/dc1c76996c07fb564c21abd34f0699b1.webp\" alt=\"Side Window Deflectors - 4 Piece Set - Nissan (H0800-6LB0A) Image\"></a>\n            </div>\n            <div class=\"themeAccContent\">\n              <h3>Side Window Deflectors - 4 Piece Set - Nissan (H0800-6LB0A)</h3>\n            </div>\n            <div class=\"themeAccButton\">\n              <a href=\"/parts/nissan-side-window-deflectors-4-piece-set-h08006lb0a\">View Product</a>\n            </div>\n          </div>\n        </div>\n      </li>\n      <li class=\"themeAccItem\">\n        <div class=\"themeAccLink\">\n          <div class=\"themeAccCard\">\n            <div class=\"themeAccImg\">\n              <a href=\"/parts/nissan-floor-mats-all-season-black-rubber-t99e16lb0a\"><img src=\"https://s3.amazonaws.com/rp-part-images/assets/0dbd5cd9e2a8b0b072d7b141e3074f86.webp\" alt=\"Floor Mats, All-Season - Black Rubber - Nissan (T99E1-6LB0A) Image\"></a>\n            </div>\n            <div class=\"themeAccContent\">\n              <h3>Floor Mats, All-Season - Black Rubber - Nissan (T99E1-6LB0A)</h3>\n            </div>\n            <div class=\"themeAccButton\">\n              <a href=\"/parts/nissan-floor-mats-all-season-black-rubber-t99e16lb0a\">View Product</a>\n            </div>\n          </div>\n        </div>\n      </li>\n      <li class=\"themeAccItem\">\n        <div class=\"themeAccLink\">\n          <div class=\"themeAccCard\">\n            <div class=\"themeAccImg\">\n              <a href=\"/parts/nissan-wheel-18-quot-aluminum-alloy-black-t99w16lw1k\"><img src=\"https://s3.amazonaws.com/rp-part-images/assets/d687e64e953e6de8cd0c8681277ea293.webp\" alt=\"Cushion Cover - Nissan (87320-3YU3A) Image\"></a>\n            </div>\n            <div class=\"themeAccContent\">\n              <h3>Wheel - 18\" Aluminum Alloy, Black - Nissan (T99W1-6LW1K)</h3>\n            </div>\n            <div class=\"themeAccButton\">\n              <a href=\"/parts/nissan-wheel-18-quot-aluminum-alloy-black-t99w16lw1k\">View Product</a>\n            </div>\n          </div>\n        </div>\n      </li>\n    </ul>\n  </div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_11",
+      "htmlId": "",
+      "htmlClasses": "cyberacc_category_section category_section padding_section",
+      "contentWidth": "wide",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_12",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_13",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_14",
+                  "moduleType": "custom_html",
+                  "title": "Tab Category List",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"theme_cat_tab_wrapper\">\n    <h2 class=\"main_title\">Explore Nissan Sentra Popular Accessory Categories</h2>\n    \n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_15",
+                  "moduleType": "custom_html",
+                  "title": "Interior Content",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"theme_cat_tab_content\">\n    <ul class=\"theme_cat_tab_content_list\">\n        <li>\n            <a href=\"/accessories/exterior/nissan-sentra\">\n                <div class=\"theme_cat_tab_content_img\">\n                    <img src=\"https://cdn.revolutionparts.io/223b3e40451187171b9a7229149b1553/design/frontier/card01new.webp\" alt=\"Nissan Exterior Image\">\n                </div>\n                <p>Exterior Accessories</p>\n            </a>\n        </li>\n        <li>\n            <a href=\"/accessories/interior/nissan-sentra\">\n                <div class=\"theme_cat_tab_content_img\">\n                    <img src=\"https://cdn.revolutionparts.io/223b3e40451187171b9a7229149b1553/design/frontier/card06newnew.webp\" alt=\"Nissan Interior\">\n                </div>\n                <p>Interior Accessories</p>\n            </a>\n        </li>\n        <li>\n            <a href=\"/accessories/lighting-technology/nissan-sentra\">\n                <div class=\"theme_cat_tab_content_img\">\n                    <img src=\"https://cdn.revolutionparts.io/223b3e40451187171b9a7229149b1553/design/frontier/card07new_b.webp\" alt=\"Nissan Technology Image\">\n                </div>\n                <p>Lighting & Technology Accessories</p>\n            </a>\n        </li>\n\t\t<li>\n            <a href=\"https://parts.nissanusa.com/go/Nissan-Pet-Accessories.html\">\n                <div class=\"theme_cat_tab_content_img\">\n                    <img src=\"https://cdn.revolutionparts.io/images/840d68cbbbfa627cd4635408a6c82009/af4487a139450404a022c01a4a3eefab.jpeg\" alt=\"Nissan Pet Accessories\">\n                </div>\n                <p>Pet Accessories</p>\n            </a>\n        </li>\n\t\t<li>\n            <a href=\"/accessories/cargo/nissan-sentra\">\n                <div class=\"theme_cat_tab_content_img\">\n                    <img src=\"https://cdn-product-images.revolutionparts.io/assets/ae623471cbf333c99cc33dbddbb82391.webp\" alt=\"Nissan Cargo Accessories\">\n                </div>\n                <p>Cargo Accessories</p>\n            </a>\n        </li>\n\t\t<li>\n            <a href=\"/accessories/yakima/nissan-sentra\">\n                <div class=\"theme_cat_tab_content_img\">\n                    <img src=\"https://cdn.revolutionparts.io/223b3e40451187171b9a7229149b1553/design/frontier/cardm05.webp\" alt=\"Nissan Yakima Accessories\">\n                </div>\n                <p>Affiliated: Yakima® Accessories</p>\n            </a>\n        </li>\n    </ul>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "tab_content tab_content_in",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_33",
+      "htmlId": "",
+      "htmlClasses": "themeAccessoriesCardSection",
+      "contentWidth": "wide",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_8",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_9",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_3",
+                  "moduleType": "custom_html",
+                  "title": "Title",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<h2 class=\"main_title\">Explore Our Nissan Sentra Favorite Accessories</h2>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "rowId": "row_34",
+          "rowLayout": "6_6",
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_35",
+              "columnWidth": 6,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_66",
+                  "moduleType": "custom_html",
+                  "title": "Call to Action",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"themeCalltoActionWrap\">\n    <div class=\"themeCalltoActionCard\">\n        <div class=\"themeCalltoActionImg\">\n            <img src=\"https://rparts-sites.s3.amazonaws.com/ddf1a4688f481343d29071cefb36dbca/design/cyber-accessories/card01.webp\" alt=\"Nissan Accessories\">\n        </div>\n        <div class=\"themeCalltoActionContent\">\n            <h3>Pet Accessories for your Nissan Friend</h3>\n            <div class=\"themeBannerButton\"> \n                <a href=\"go/Nissan-Pet-Accessories.html\" class=\"themeBannerCard\">\n                    <p>Shop Now</p>\n                </a> \n            </div>\n        </div>\n    </div>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            },
+            {
+              "columnId": "column_36",
+              "columnWidth": 6,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_75",
+                  "moduleType": "custom_html",
+                  "title": "Call to Action",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"themeCalltoActionWrap\">\n    <div class=\"themeCalltoActionCard\">\n        <div class=\"themeCalltoActionImg\">\n            <img src=\"https://rparts-sites.s3.amazonaws.com/223b3e40451187171b9a7229149b1553/design/cyber/sentra/wheels.webp\" alt=\"Nissan Accessories\">\n        </div>\n        <div class=\"themeCalltoActionContent\">\n            <h3>Wheels & Rims</h3>\n            <div class=\"themeBannerButton\"> \n                <a href=\"part-categories/wheels-and-tires\" class=\"themeBannerCard\">\n                    <p>Shop Now</p>\n                </a> \n            </div>\n        </div>\n    </div>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_15",
+      "htmlId": "",
+      "htmlClasses": "themeTrustSteer themePagePadding",
+      "contentWidth": "wide",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_16",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_17",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_18",
+                  "moduleType": "custom_html",
+                  "title": "Why Buy",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"themePopularSteerWrap\">\n    <div class=\"themeSteerTitle\">\n        <h3>Why Buy Genuine Nissan Accessories?</h3>\n    </div>\n    <ul class=\"themeSteerList\">\n        <li>\n            <div class=\"themeSteerListCard\">\n                <div class=\"themeSteerListImg\">\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/ddf1a4688f481343d29071cefb36dbca/design/why/safety.avif\" alt=\"Safety Icon\">\n                </div>\n                <h4>Compatibility in, Guesswork Out</h4>\n                <p>From emblems to <a href=\"/part-categories/exterior/roof-rails\">roof racks</a>, our accessories come guaranteed to fit your <a href=\"/v-nissan\">Nissan</a>, work right the first time, and look the part. A lot of aftermarket accessories can't always say the same.</p>\n            </div>\n        </li>\n        <li>\n            <div class=\"themeSteerListCard\">\n                <div class=\"themeSteerListImg\">\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/ddf1a4688f481343d29071cefb36dbca/design/why/reli.avif\" alt=\"Reliability Icon\">\n                </div>\n                <h4>Nissan Quality Assured</h4>\n                <p>Genuine OEM means genuine Nissan -- accessories expertly crafted to the excellent standards you're familiar with. Expect nothing less.</p>\n            </div>\n        </li>\n        <li>\n            <div class=\"themeSteerListCard\">\n                <div class=\"themeSteerListImg\">\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/ddf1a4688f481343d29071cefb36dbca/design/why/perfect.avif\" alt=\"Perfect Fit Icon\">\n                </div>\n                <h4>Expertise at Your Service</h4>\n                <p>Nissan Genuine Parts and Accessories are made to perfectly fit your vehicle ensuring it runs at its optimum level, and is ready for any adventure.</p>\n            </div>\n        </li>\n        <li>\n            <div class=\"themeSteerListCard\">\n                <div class=\"themeSteerListImg\">\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/ddf1a4688f481343d29071cefb36dbca/design/why/future.avif\" alt=\"Future Proof Icon\">\n                </div>\n                <h4>Peace of Mind Included</h4>\n                <p>Buy with confidence -- genuine Nissan accessories are almost always warranty-backed. Using them won't void your factory warranty, either. That's an investment, covered.</p>\n            </div>\n        </li>\n    </ul>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

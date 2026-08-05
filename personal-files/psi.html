@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulk PageSpeed Insights Dashboard</title>
+    <style>
+        /* Base Reset & Variables */
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        :root {
+            --primary: #1a73e8;
+            --dark: #202124;
+            --light-bg: #f8f9fa;
+            --card-bg: #ffffff;
+            --border: #dadce0;
+            --text: #3c4043;
+            --text-muted: #5f6368;
+            --success: #0cce6b;
+            --danger: #ff4e42;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--light-bg);
+            color: var(--text);
+            padding: 24px;
+            line-height: 1.5;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        }
+
+        h2 { color: var(--primary); margin-bottom: 20px; font-weight: 700; }
+        h4 { margin: 25px 0 10px 0; font-weight: 600; }
+
+        /* Form Layout */
+        .form-group { margin-bottom: 20px; }
+        label { display: block; font-weight: 600; margin-bottom: 8px; }
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            font-family: inherit;
+            font-size: 14px;
+            resize: vertical;
+        }
+        textarea:focus { border-color: var(--primary); outline: none; }
+
+        /* Buttons */
+        .btn-group { display: flex; justify-content: space-between; align-items: center; }
+        .btn {
+            padding: 10px 20px;
+            font-size: 14px;
+            font-weight: 600;
+            border-radius: 4px;
+            cursor: pointer;
+            border: 1px solid transparent;
+            transition: background 0.2s;
+        }
+        .btn-success { background-color: var(--success); color: white; }
+        .btn-success:hover { background-color: #0bba60; }
+        .btn-success:disabled { background-color: #a3e9c5; cursor: not-allowed; }
+        .btn-danger-outline { background-color: transparent; color: var(--danger); border-color: var(--danger); }
+        .btn-danger-outline:hover { background-color: var(--danger); color: white; }
+        .btn-sm { padding: 4px 8px; font-size: 12px; background-color: #5f6368; color: white; }
+
+        /* Progress Bar */
+        .progress-section {
+            display: none;
+            background-color: #e8f0fe;
+            color: #1967d2;
+            padding: 15px;
+            border-radius: 4px;
+            margin-bottom: 20px;
+            font-weight: 500;
+        }
+        .progress-bar-container {
+            background-color: #d2e3fc;
+            height: 12px;
+            border-radius: 6px;
+            margin-top: 8px;
+            overflow: hidden;
+        }
+        .progress-bar {
+            background-color: var(--primary);
+            height: 100%;
+            width: 0%;
+            transition: width 0.3s ease;
+        }
+
+        /* Log Panel */
+        .log-card {
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            margin-bottom: 25px;
+            overflow: hidden;
+        }
+        .log-header {
+            background-color: var(--dark);
+            color: white;
+            padding: 10px 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            font-size: 14px;
+        }
+        .log-body {
+            background-color: #f1f3f4;
+            padding: 12px;
+        }
+        #logConsole {
+            max-height: 160px;
+            overflow-y: auto;
+            font-family: "Courier New", Courier, monospace;
+            font-size: 13px;
+            color: #5f6368;
+        }
+
+        /* Data Tables */
+        .table-responsive { width: 100%; overflow-x: auto; margin-top: 15px; }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+            border: 1px solid var(--border);
+        }
+        th, td { padding: 12px 16px; border: 1px solid var(--border); vertical-align: middle; }
+        th { background-color: var(--dark); color: white; font-weight: 600; }
+        tr:nth-child(even) { background-color: #fafafa; }
+        
+        a { color: var(--primary); text-decoration: none; font-weight: 600; }
+        a:hover { text-decoration: underline; }
+
+        /* Gauge Item Grid Framework */
+        .gauge-container { display: flex; gap: 12px; justify-content: center; align-items: center; min-width: 280px; }
+        .gauge-item { text-align: center; font-size: 11px; font-weight: 700; color: var(--text-muted); }
+        .gauge-chart { width: 60px; height: 60px; margin-bottom: -15px; }
+        .timestamp-text { font-size: 13px; color: var(--text-muted); }
+        .badge-fail { background: #ff4e42; color: white; padding: 2px 6px; border-radius: 3px; font-size: 11px;}
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Bulk PageSpeed Insights Dashboard</h2>
+        
+        <div class="form-group">
+            <label for="urls">Target URLs to Test (One URL per line):</label>
+            <textarea id="urls" rows="4" placeholder="https://example.com&#10;https://google.com"></textarea>
+        </div>
+        
+        <div class="form-group btn-group">
+            <button id="startTest" class="btn btn-success">Run Bulk Test</button>
+            <button id="clearData" class="btn btn-danger-outline">Clear Saved Records</button>
+        </div>
+
+        <div id="progressSection" class="progress-section">
+            <span id="progressText">Preparing test runs...</span>
+            <div class="progress-bar-container">
+                <div id="progressBar" class="progress-bar"></div>
+            </div>
+        </div>
+
+        <div class="log-card">
+            <div class="log-header">
+                <span>Live Activity Logs</span>
+                <button id="clearLogs" class="btn btn-sm">Clear Logs</button>
+            </div>
+            <div class="log-body">
+                <div id="logConsole">Process sequences will stream down here dynamically...</div>
+            </div>
+        </div>
+
+        <h4>Stored Test Records</h4>
+        <div class="table-responsive">
+            <table>
+                <thead>
+                    <tr>
+                        <th style="width: 25%;">Target URL</th>
+                        <th style="width: 33%; text-align: center;">Mobile Performance Metrics</th>
+                        <th style="width: 33%; text-align: center;">Desktop Performance Metrics</th>
+                        <th style="width: 9%;">Timestamp</th>
+                    </tr>
+                </thead>
+                <tbody id="resultsTableBody">
+                    </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script>
+        // ===================================================
+        // INSERT YOUR API KEY DIRECTLY IN THIS LINE BELOW:
+        // ===================================================
+        const MY_PAGESPEED_API_KEY = "AIzaSyDbHTEP6HQp0Sw9x32zH2RS4JcWyfTrmoY"; 
+        // ===================================================
+
+        $(document).ready(function() {
+            loadSavedData();
+
+            $('#startTest').click(async function() {
+                const urlInput = $('#urls').val().trim();
+                
+                if (!urlInput) {
+                    alert('Please enter at least one URL targets.');
+                    return;
+                }
+
+                const urls = urlInput.split('\n').map(url => url.trim()).filter(url => url.length > 0);
+                
+                $('#progressSection').show();
+                $('#startTest').prop('disabled', true);
+                logMessage("=== Initiating Bulk Thread Testing Process ===");
+
+                let totalTasks = urls.length * 2; 
+                let completedTasks = 0;
+
+                for (let url of urls) {
+                    logMessage(`Analyzing asset string: <strong>${url}</strong>`);
+                    
+                    // 1. Mobile Analysis Route Execution
+                    updateProgress(completedTasks, totalTasks, `Running Mobile Audit Suite: ${url}`);
+                    logMessage(`[Mobile] Triggering active handshake API endpoint for ${url}...`);
+                    let mobileData = await fetchPageSpeed(url, 'mobile', MY_PAGESPEED_API_KEY);
+                    completedTasks++;
+
+                    // 2. Desktop Analysis Route Execution
+                    updateProgress(completedTasks, totalTasks, `Running Desktop Audit Suite: ${url}`);
+                    logMessage(`[Desktop] Triggering active handshake API endpoint for ${url}...`);
+                    let desktopData = await fetchPageSpeed(url, 'desktop', MY_PAGESPEED_API_KEY);
+                    completedTasks++;
+
+                    // Store Object Arrays & Render Layout Engines
+                    saveResult(url, mobileData, desktopData);
+                    logMessage(`[Data Matrix Cache] Saved schema references for ${url}.`);
+                    logMessage(`----------------------------------------------------------------------`);
+                }
+
+                $('#progressSection').hide();
+                $('#startTest').prop('disabled', false);
+                logMessage("=== Execution runtime sequences completed successfully! ===");
+                alert('Bulk processing routines finalized!');
+            });
+
+            $('#clearData').click(function() {
+                if (confirm('Are you certain you want to destroy all local cache analytics dashboards permanently?')) {
+                    localStorage.removeItem('psi_plain_css_results');
+                    $('#resultsTableBody').empty();
+                    logMessage("[System Matrix Control] Cache registries completely wiped clean.");
+                }
+            });
+
+            $('#clearLogs').click(function() {
+                $('#logConsole').html('Logs tracking cleared...');
+            });
+        });
+
+        async function fetchPageSpeed(targetUrl, strategy, apiKey) {
+            let apiUrl = `https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url=${encodeURIComponent(targetUrl)}&strategy=${strategy}&category=performance&category=accessibility&category=best-practices&category=seo`;
+            
+            if (apiKey && apiKey !== "AIzaSyDbHTEP6HQp0Sw9x32zH2RS4JcWyfTrmoY") {
+                apiUrl += `&key=${apiKey}`;
+            }
+
+            let errorResult = { perf: 'N/A', access: 'N/A', best: 'N/A', seo: 'N/A' };
+
+            try {
+                const response = await $.ajax({
+                    url: apiUrl,
+                    method: 'GET',
+                    dataType: 'json'
+                });
+                
+                const cats = response.lighthouseResult.categories;
+                return {
+                    perf: cats.performance ? Math.round(cats.performance.score * 100) : 'N/A',
+                    access: cats.accessibility ? Math.round(cats.accessibility.score * 100) : 'N/A',
+                    best: cats['best-practices'] ? Math.round(cats['best-practices'].score * 100) : 'N/A',
+                    seo: cats.seo ? Math.round(cats.seo.score * 100) : 'N/A'
+                };
+            } catch (error) {
+                console.error(`Error processing API callback standard request:`, error);
+                let errMsg = "Fetch Failure Object";
+                if(error.responseJSON && error.responseJSON.error) {
+                    errMsg = error.responseJSON.error.message;
+                }
+                logMessage(`<span class="badge-fail">[Exception Error] ${strategy} stack fault line for ${targetUrl}: ${errMsg}</span>`);
+                return errorResult;
+            }
+        }
+
+        function updateProgress(completed, total, text) {
+            let percentage = Math.round((completed / total) * 100);
+            $('#progressBar').css('width', percentage + '%');
+            $('#progressText').text(text + ` (${percentage}%)`);
+        }
+
+        function logMessage(message) {
+            let consoleBox = $('#logConsole');
+            if (consoleBox.text() === "Process sequences will stream down here dynamically...") {
+                consoleBox.empty();
+            }
+            let time = new Date().toLocaleTimeString();
+            consoleBox.append(`<div>[${time}] ${message}</div>`);
+            consoleBox.scrollTop(consoleBox[0].scrollHeight);
+        }
+
+        function saveResult(url, mobileObj, desktopObj) {
+            let records = JSON.parse(localStorage.getItem('psi_plain_css_results')) || [];
+            
+            let newRecord = {
+                id: 'row_' + Date.now() + '_' + Math.floor(Math.random() * 1000),
+                url: url,
+                mobile: mobileObj,
+                desktop: desktopObj,
+                timestamp: new Date().toLocaleString()
+            };
+
+            records.unshift(newRecord); 
+            localStorage.setItem('psi_plain_css_results', JSON.stringify(records));
+            
+            appendRowToTable(newRecord, true);
+        }
+
+        function loadSavedData() {
+            let records = JSON.parse(localStorage.getItem('psi_plain_css_results')) || [];
+            $('#resultsTableBody').empty();
+            records.forEach(record => {
+                appendRowToTable(record, false);
+            });
+        }
+
+        function getScoreColor(score) {
+            if (score === 'N/A' || score === 'Error') return '#6c757d';
+            if (score >= 90) return '#0cce6b'; 
+            if (score >= 50) return '#ffa400'; 
+            return '#ff4e42'; 
+        }
+
+        function appendRowToTable(record, isNew) {
+            let row = `<tr id="${record.id}">
+                <td><a href="${record.url}" target="_blank">${record.url}</a></td>
+                <td>
+                    <div class="gauge-container">
+                        <div class="gauge-item"><div class="gauge-chart" id="m-perf-${record.id}"></div>Perf</div>
+                        <div class="gauge-item"><div class="gauge-chart" id="m-acc-${record.id}"></div>Access</div>
+                        <div class="gauge-item"><div class="gauge-chart" id="m-best-${record.id}"></div>Best Prac.</div>
+                        <div class="gauge-item"><div class="gauge-chart" id="m-seo-${record.id}"></div>SEO</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="gauge-container">
+                        <div class="gauge-item"><div class="gauge-chart" id="d-perf-${record.id}"></div>Perf</div>
+                        <div class="gauge-item"><div class="gauge-chart" id="d-acc-${record.id}"></div>Access</div>
+                        <div class="gauge-item"><div class="gauge-chart" id="d-best-${record.id}"></div>Best Prac.</div>
+                        <div class="gauge-item"><div class="gauge-chart" id="d-seo-${record.id}"></div>SEO</div>
+                    </div>
+                </td>
+                <td class="timestamp-text">${record.timestamp}</td>
+            </tr>`;
+            
+            if(isNew) {
+                $('#resultsTableBody').prepend(row);
+            } else {
+                $('#resultsTableBody').append(row);
+            }
+
+            renderGauge(`m-perf-${record.id}`, record.mobile.perf);
+            renderGauge(`m-acc-${record.id}`, record.mobile.access);
+            renderGauge(`m-best-${record.id}`, record.mobile.best);
+            renderGauge(`m-seo-${record.id}`, record.mobile.seo);
+
+            renderGauge(`d-perf-${record.id}`, record.desktop.perf);
+            renderGauge(`d-acc-${record.id}`, record.desktop.access);
+            renderGauge(`d-best-${record.id}`, record.desktop.best);
+            renderGauge(`d-seo-${record.id}`, record.desktop.seo);
+        }
+
+        function renderGauge(elementId, score) {
+            let numericScore = (score === 'N/A' || score === 'Error') ? 0 : score;
+            let displayColor = getScoreColor(score);
+
+            let options = {
+                chart: { height: 75, type: 'radialBar', sparkline: { enabled: true } },
+                series: [numericScore],
+                colors: [displayColor],
+                plotOptions: {
+                    radialBar: {
+                        hollow: { size: '60%' },
+                        dataLabels: {
+                            show: true,
+                            name: { show: false },
+                            value: {
+                                offsetY: 5,
+                                fontSize: '13px',
+                                fontWeight: '700',
+                                color: displayColor,
+                                formatter: function (val) { return score === 'N/A' ? 'N/A' : val; }
+                            }
+                        }
+                    }
+                }
+            };
+
+            let chart = new ApexCharts(document.querySelector(`#${elementId}`), options);
+            chart.render();
+        }
+    </script>
+</body>
+</html>

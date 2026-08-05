@@ -1,0 +1,393 @@
+{
+  "pageId": "page",
+  "pageName": "Text Page",
+  "pageType": null,
+  "layoutEnabled": true,
+  "moduleCategories": [
+    "header",
+    "images",
+    "text",
+    "search",
+    "categories_products",
+    "forms",
+    "navigation",
+    "footer"
+  ],
+  "VFSPath": "layouts/page.json",
+  "requiredModules": [],
+  "scripts": "",
+  "sections": [
+    {
+      "sectionId": "section_11",
+      "htmlId": "",
+      "htmlClasses": "breadcrumb",
+      "contentWidth": "wide",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_2",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_4",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "left",
+              "modules": [
+                {
+                  "moduleId": "module_38",
+                  "moduleType": "page_subheader",
+                  "title": "Page Subheader",
+                  "options": {
+                    "show_change_vehicle": {
+                      "name": "Show Change Vehicle",
+                      "type": "boolean",
+                      "default_value": true,
+                      "value": false
+                    },
+                    "show_breadcrumbs": {
+                      "name": "Show Breadcrumbs",
+                      "type": "boolean",
+                      "default_value": true,
+                      "value": true
+                    },
+                    "show_title": {
+                      "name": "Show Title",
+                      "type": "boolean",
+                      "default_value": true,
+                      "value": true
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_9",
+      "htmlId": null,
+      "htmlClasses": null,
+      "contentWidth": "wide",
+      "backgroundColor": null,
+      "backgroundImage": null,
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_10",
+          "rowLayout": "3_9",
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_11",
+              "columnWidth": 3,
+              "htmlId": "",
+              "htmlClasses": "with-sidebar",
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_12",
+                  "moduleType": "page_subheader",
+                  "title": "Page Subheader",
+                  "options": {
+                    "show_change_vehicle": {
+                      "name": "Afficher Changer de véhicule",
+                      "type": "boolean",
+                      "default_value": true,
+                      "value": true
+                    },
+                    "show_breadcrumbs": {
+                      "name": "Afficher le fil d’Ariane",
+                      "type": "boolean",
+                      "default_value": true,
+                      "value": false
+                    },
+                    "show_title": {
+                      "name": "Afficher le titre",
+                      "type": "boolean",
+                      "default_value": true,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "change-vehicle",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_24",
+                  "moduleType": "links_list",
+                  "title": "Links List",
+                  "options": {
+                    "links": {
+                      "name": "Liens",
+                      "type": "object",
+                      "default_value": [],
+                      "value": [
+                        {
+                          "linkId": "link_11",
+                          "text": "Modern Performance",
+                          "url": "/modern-performance",
+                          "target": "",
+                          "icon": "",
+                          "type": "direct"
+                        },
+                        {
+                          "linkId": "link_12",
+                          "text": "Crate Engine",
+                          "url": "/crate-engine",
+                          "target": "",
+                          "icon": "",
+                          "type": "direct"
+                        },
+                        {
+                          "linkId": "link_13",
+                          "text": "Drag Pak",
+                          "url": "/drag-pak",
+                          "target": "",
+                          "icon": "",
+                          "type": "direct"
+                        },
+                        {
+                          "linkId": "link_14",
+                          "text": "Vintage Muscle",
+                          "url": "/vintage-muscle",
+                          "target": "",
+                          "icon": "",
+                          "type": "direct"
+                        },
+                        {
+                          "linkId": "link_15",
+                          "text": "Modern Performance - Licensed Parts",
+                          "url": "/modern-performance-licensed-parts",
+                          "target": "",
+                          "icon": "",
+                          "type": "direct"
+                        },
+                        {
+                          "linkId": "link_16",
+                          "text": "Drag Pak - Licensed Parts",
+                          "url": "/drag-pak-licensed-parts",
+                          "target": "",
+                          "icon": "",
+                          "type": "direct"
+                        },
+                        {
+                          "linkId": "link_17",
+                          "text": "Vintage Muscle - Licensed Parts",
+                          "url": "/vintage-muscle-licensed-parts",
+                          "target": "",
+                          "icon": "",
+                          "type": "direct"
+                        }
+                      ]
+                    },
+                    "links_title": {
+                      "name": "Liste de titres",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "&nbsp; Categories"
+                    },
+                    "links_title_url": {
+                      "name": "Liste de liens des titres",
+                      "type": "string",
+                      "default_value": null,
+                      "value": ""
+                    },
+                    "links_display": {
+                      "name": "Liste d’affichage",
+                      "type": "select",
+                      "default_value": "block",
+                      "value": "block",
+                      "possible_values": [
+                        {
+                          "value": "inline",
+                          "label": "Inline"
+                        },
+                        {
+                          "value": "block",
+                          "label": "Block"
+                        },
+                        {
+                          "value": "dropdown",
+                          "label": "Drop Down"
+                        }
+                      ]
+                    },
+                    "list_style": {
+                      "name": "Liste de style",
+                      "type": "select",
+                      "default_value": "none",
+                      "value": "footer",
+                      "possible_values": [
+                        {
+                          "value": "none",
+                          "label": "No Style"
+                        },
+                        {
+                          "value": "footer",
+                          "label": "Bas de page"
+                        },
+                        {
+                          "value": "header",
+                          "label": "En-tête"
+                        },
+                        {
+                          "value": "navigation",
+                          "label": "Barre de navigation"
+                        },
+                        {
+                          "value": "menu",
+                          "label": "Barre de menu"
+                        }
+                      ]
+                    },
+                    "header_tag": {
+                      "name": "Onglet d’en-tête",
+                      "type": "select",
+                      "default_value": "strong",
+                      "value": "strong",
+                      "possible_values": [
+                        {
+                          "value": "strong",
+                          "label": "STRONG"
+                        },
+                        {
+                          "value": "h3",
+                          "label": "H3"
+                        }
+                      ]
+                    },
+                    "links_image": {
+                      "name": "Liste d’images",
+                      "type": "image_upload",
+                      "default_value": null,
+                      "value": null
+                    },
+                    "links_stock": {
+                      "name": "Liste de style",
+                      "type": "select",
+                      "default_value": "none",
+                      "value": "none",
+                      "possible_values": [
+                        {
+                          "value": "none",
+                          "label": "Aucun"
+                        },
+                        {
+                          "value": "mobile_menu",
+                          "label": "Menu mobile"
+                        },
+                        {
+                          "value": "policies",
+                          "label": "Politiques"
+                        }
+                      ]
+                    },
+                    "footer_link": {
+                      "name": "Lien de bas de page",
+                      "type": "string",
+                      "default_value": null,
+                      "value": ""
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "links-sidebar",
+                  "minColumnWidth": 0,
+                  "customAdmin": true,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            },
+            {
+              "columnId": "column_12",
+              "columnWidth": 9,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_13",
+                  "moduleType": "page_subheader",
+                  "title": "Page Subheader",
+                  "options": {
+                    "show_change_vehicle": {
+                      "name": "Afficher Changer de véhicule",
+                      "type": "boolean",
+                      "default_value": true,
+                      "value": false
+                    },
+                    "show_breadcrumbs": {
+                      "name": "Afficher le fil d’Ariane",
+                      "type": "boolean",
+                      "default_value": true,
+                      "value": false
+                    },
+                    "show_title": {
+                      "name": "Afficher le titre",
+                      "type": "boolean",
+                      "default_value": true,
+                      "value": true
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "page-header",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_57",
+                  "moduleType": "custom_html",
+                  "title": "Custom HTML",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<p>Direct Connection has your modern Dodge Challenger and Charger covered for factory street, strip and track performance parts developed by SRT engineers and backed by a Mopar warranty for peace of mind.</p>\n<div class=\"row\">\n    <div class=\"col-12 col-sm-6 col-lg-4 mb-2 test\">\n        \n    </div>\n    <div class=\"col-12 col-sm-6 col-lg-4 mb-2\">\n        <figure>\n            <a href=\"modern-performance/stage-kits\">\n                <img class=\"img-responsive w-100\" src=\"https://rparts-sites.s3.amazonaws.com/6f87c75737bcc72b4674a498139b574d/design/stage-kits.png\" alt=\"Stage Kits\">\n                <figcaption>Stage Kits</figcaption>\n            </a>\n        </figure>\n    </div>\n</div>\n<div class=\"row\">\n    <div class=\"col-12 col-sm-6 col-lg-4 mb-2\">\n        <figure>\n            <a href=\"/modern-performance/brakes\">\n                <img class=\"img-responsive w-100\" src=\"https://rparts-sites.s3.amazonaws.com/968fb7a4242e855a91e9c9141892b67d/design/mp-brakes.jpg\" alt=\"Brakes\">\n                <figcaption>Brakes</figcaption>\n            </a>\n        </figure>\n    </div>\n    <div class=\"col-12 col-sm-6 col-lg-4 mb-2\">\n        <figure>\n            <a href=\"/modern-performance/drivetrain\">\n                <img class=\"img-responsive w-100\" src=\"https://rparts-sites.s3.amazonaws.com/968fb7a4242e855a91e9c9141892b67d/design/drivetrain.jpg\" alt=\"Shifter\">\n                <figcaption>Drivetrain</figcaption>\n            </a>\n        </figure>\n    </div>\n    <div class=\"col-12 col-sm-6 col-lg-4 mb-2\">\n        <figure>\n            <a href=\"/modern-performance/engine-parts\">\n                <img class=\"img-responsive w-100\" src=\"https://rp-dev-sites.s3.amazonaws.com/b8f5830bcf448305c8c7aaf17d23ed8a/design/mp-engine-parts.jpg\" alt=\"Engine Parts\">\n                <figcaption>Engine Parts</figcaption>\n            </a>\n        </figure>\n    </div>\n    <div class=\"col-12 col-sm-6 col-lg-4 mb-2\">\n        <figure>\n            <a href=\"/modern-performance/exhaust\">\n                <img class=\"img-responsive w-100\" src=\"https://rparts-sites.s3.amazonaws.com/968fb7a4242e855a91e9c9141892b67d/design/exhaust.jpg\" alt=\"Exhaust System\">\n                <figcaption>Exhaust</figcaption>\n            </a>\n        </figure>\n    </div>\n    <div class=\"col-12 col-sm-6 col-lg-4 mb-2\">\n        <figure>\n            <a href=\"/modern-performance/exterior-accessories\">\n                <img class=\"img-responsive w-100\" src=\"https://rparts-sites.s3.amazonaws.com/968fb7a4242e855a91e9c9141892b67d/design/mp-exterior-accessories.jpg\" alt=\"Headlight for Exterior Accessories\">\n                <figcaption>Exterior Accessories</figcaption>\n            </a>\n        </figure>\n    </div>\n\t<div class=\"col-12 col-sm-6 col-lg-4 mb-2\">\n\t\t<figure>\n            <a href=\"/modern-performance/intake-and-air\">\n\t\t\t\t<img class=\"img-responsive w-100\" src=\"https://rparts-sites.s3.amazonaws.com/968fb7a4242e855a91e9c9141892b67d/design/mp-intake-air.jpg\" alt=\"Intake and Air\">\n                <figcaption>Intake & Air</figcaption>\n            </a>\n\t\t</figure>\n\t</div>\n    <div class=\"col-12 col-sm-6 col-lg-4 mb-2\">\n        <figure>\n            <a href=\"/modern-performance/interior-accessories\">\n                <img class=\"img-responsive w-100\" src=\"https://rp-dev-sites.s3.amazonaws.com/b8f5830bcf448305c8c7aaf17d23ed8a/design/mp-interior-accessories.jpg\" alt=\"Interior Gauges\">\n                <figcaption>Interior Accessories</figcaption>\n            </a>\n        </figure>\n    </div>\n\t<div class=\"col-12 col-sm-6 col-lg-4 mb-2\">\n\t\t<figure>\n            <a href=\"/modern-performance/suspension\">\n\t\t\t\t<img class=\"img-responsive w-100\" src=\"https://rparts-sites.s3.amazonaws.com/968fb7a4242e855a91e9c9141892b67d/design/suspension.jpg\" alt=\"Suspension\">\n\t\t\t\t<figcaption>Suspension</figcaption>\n            </a>\n\t\t</figure>\n\t</div>\n\t<div class=\"col-12 col-sm-6 col-lg-4 mb-2\">\n\t\t<figure>\n            <a href=\"/modern-performance/wheels\">\n\t\t\t\t<img class=\"img-responsive w-100\" src=\"https://rparts-sites.s3.amazonaws.com/968fb7a4242e855a91e9c9141892b67d/design/wheels.jpg\" alt=\"Wheel\">\n\t\t\t\t<figcaption>Wheels</figcaption>\n            </a>\n\t\t</figure>\n\t</div>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "custom-banner",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

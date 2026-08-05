@@ -1,0 +1,424 @@
+{
+  "pageId": "page",
+  "pageName": "Text Page",
+  "pageType": null,
+  "layoutEnabled": true,
+  "moduleCategories": [
+    "header",
+    "images",
+    "text",
+    "search",
+    "categories_products",
+    "forms",
+    "navigation",
+    "footer"
+  ],
+  "VFSPath": "layouts/page.json",
+  "requiredModules": [],
+  "scripts": "",
+  "sections": [
+    {
+      "sectionId": "section_2",
+      "htmlId": "",
+      "htmlClasses": "themeVehicleBannerSection themeVehicleBannerSectionAccessories",
+      "contentWidth": "full",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_3",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_4",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_7",
+                  "moduleType": "custom_html",
+                  "title": "Main Banner",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"themeVehicleBannerWrap\">\n    <div class=\"themeVehicleBannerCard\">\n        <div class=\"themeVehicleBannerImg\">\n            <img src=\"https://rparts-sites.s3.amazonaws.com/223b3e40451187171b9a7229149b1553/design/accessories/acc_rogue.webp\" alt=\"Nissan Accessories Banner\">\n        </div>\n        <div class=\"themeVehicleBannerBoxCont\">\n            <div class=\"themeVehicleBannerContent\">\n                <h1>\n                    Redefine Versatility – Shop Genuine Nissan Rogue Accessories Online\n                </h1>\n                <p>\n                    Enhance your Nissan Rogue with accessories that suit your active lifestyle. Whether it’s all-weather floor mats for rugged adventures, cargo organizers for family trips, or roof rails for extra storage, we’ve got you covered. Shop now and enjoy fast shipping across the US. Make your Rogue as versatile as you are!\n                </p>\n                \n            </div>\n        </div>\n    </div>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_35",
+      "htmlId": "",
+      "htmlClasses": "themeAccSection",
+      "contentWidth": "wide",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_36",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_37",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_38",
+                  "moduleType": "custom_html",
+                  "title": "Main Title",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"themeTitle\">\n    <h3>Top Sellers: Nissan Rogue</h3>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_39",
+                  "moduleType": "custom_html",
+                  "title": "Featured List",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"themeAccWrapper\">\n    <ul class=\"themeAccList owl-carousel owl-theme\">\n      <li class=\"themeAccItem\">\n        <div class=\"themeAccLink\">\n          <div class=\"themeAccCard\">\n            <div class=\"themeAccImg\">\n              <a href=\"/parts/nissan-all-season-floor-mats-t99e46rr0b\"><img src=\"https://s3.amazonaws.com/rp-part-images/assets/07109872ebefc0004977f774d1bad983.webp\" alt=\"Cargo Area Cover - Black - Nissan (H4982-JM52C) Image\"></a>\n            </div>\n            <div class=\"themeAccContent\">\n              <h3>All-Season Floor Mats - Nissan (T99E4-6RR0B)</h3>\n            </div>\n            <div class=\"themeAccButton\">\n              <a href=\"/parts/nissan-all-season-floor-mats-t99e46rr0b\">View Product</a>\n            </div>\n          </div>\n        </div>\n      </li>\n      <li class=\"themeAccItem\">\n        <div class=\"themeAccLink\">\n          <div class=\"themeAccCard\">\n            <div class=\"themeAccImg\">\n              <a href=\"/parts/nissan-roof-rail-crossbars-black-t99r16rr0d\"><img src=\"https://s3.amazonaws.com/rp-part-images/assets/d72ef6b14db1b244e533ec3cddb376b2.webp\" alt=\"Floor Mats, All Season 2014-2020 Nissan Rogue (999E1-G2000) Image\"></a>\n            </div>\n            <div class=\"themeAccContent\">\n              <h3>Roof Rail Crossbars - Black - Nissan (T99R1-6RR0D)</h3>\n            </div>\n            <div class=\"themeAccButton\">\n              <a href=\"/parts/nissan-roof-rail-crossbars-black-t99r16rr0d\">View Product</a>\n            </div>\n          </div>\n        </div>\n      </li>\n      <li class=\"themeAccItem\">\n        <div class=\"themeAccLink\">\n          <div class=\"themeAccCard\">\n            <div class=\"themeAccImg\">\n              <a href=\"/parts/nissan-cargo-area-cover-rear-retractable-t99n36rr0b\"><img src=\"https://s3.amazonaws.com/rp-part-images/assets/3c9b04bd7284113767aa80a6a19cb884.webp\" alt=\"Roof Crossbars, Silver - Nissan (999R1-G2500) Image\"></a>\n            </div>\n            <div class=\"themeAccContent\">\n              <h3>Cargo Area Cover - Rear (Retractable) - Nissan (T99N3-6RR0B)</h3>\n            </div>\n            <div class=\"themeAccButton\">\n              <a href=\"/parts/nissan-cargo-area-cover-rear-retractable-t99n36rr0b\">View Product</a>\n            </div>\n          </div>\n        </div>\n      </li>\n      <li class=\"themeAccItem\">\n        <div class=\"themeAccLink\">\n          <div class=\"themeAccCard\">\n            <div class=\"themeAccImg\">\n              <a href=\"/parts/nissan-roof-crossbars-silver-999r1g2500\"><img src=\"https://s3.amazonaws.com/rp-part-images/assets/795e49e4af1f3fce01cfd5df2b180039.webp\" alt=\"Trans-Axle Assembly 2014-2016 Nissan Rogue (31020-3VX1C) Image\"></a>\n            </div>\n            <div class=\"themeAccContent\">\n              <h3>Roof Crossbars, Silver - Nissan (999R1-G2500)</h3>\n            </div>\n            <div class=\"themeAccButton\">\n              <a href=\"/parts/nissan-roof-crossbars-silver-999r1g2500\">View Product</a>\n            </div>\n          </div>\n        </div>\n      </li>\n    </ul>\n  </div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_11",
+      "htmlId": "",
+      "htmlClasses": "cyberacc_category_section category_section padding_section",
+      "contentWidth": "wide",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_12",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_13",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_14",
+                  "moduleType": "custom_html",
+                  "title": "Tab Category List",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"theme_cat_tab_wrapper\">\n    <h2 class=\"main_title\">Explore Nissan Rogue Popular Accessory Categories</h2>\n    <ul class=\"theme_cat_tab_list\">\n        \n        <li class=\"theme_cat_tab_item\">\n            <a href=\"#\" class=\"theme_cat_tab_link\" data-toggle-target=\".tab_content_in\">Interior Accessories</a>\n        </li>\n        <li class=\"theme_cat_tab_item\">\n            <a href=\"#\" class=\"theme_cat_tab_link\" data-toggle-target=\".tab_content_ex\">Exterior Accessories</a>\n        </li>\n    </ul>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_15",
+                  "moduleType": "custom_html",
+                  "title": "Interior Content",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"theme_cat_tab_content\">\n    <ul class=\"theme_cat_tab_content_list\">\n        <li>\n            <a href=\"/accessories/exterior/nissan-rogue\">\n                <div class=\"theme_cat_tab_content_img\">\n                    <img src=\"https://cdn.revolutionparts.io/223b3e40451187171b9a7229149b1553/design/frontier/card01new.webp\" alt=\"Nissan Exterior Image\">\n                </div>\n                <p>Exterior Accessories</p>\n            </a>\n        </li>\n        <li>\n            <a href=\"/accessories/interior/nissan-rogue\">\n                <div class=\"theme_cat_tab_content_img\">\n                    <img src=\"https://cdn.revolutionparts.io/223b3e40451187171b9a7229149b1553/design/frontier/card06newnew.webp\" alt=\"Nissan Interior\">\n                </div>\n                <p>Interior Accessories</p>\n            </a>\n        </li>\n        <li>\n            <a href=\"/accessories/lighting-technology/nissan-rogue\">\n                <div class=\"theme_cat_tab_content_img\">\n                    <img src=\"https://cdn.revolutionparts.io/223b3e40451187171b9a7229149b1553/design/frontier/card07new_b.webp\" alt=\"Nissan Technology Image\">\n                </div>\n                <p>Lighting & Technology Accessories</p>\n            </a>\n        </li>\n\t\t<li>\n            <a href=\"https://parts.nissanusa.com/go/Nissan-Pet-Accessories.html\">\n                <div class=\"theme_cat_tab_content_img\">\n                    <img src=\"https://cdn.revolutionparts.io/images/840d68cbbbfa627cd4635408a6c82009/af4487a139450404a022c01a4a3eefab.jpeg\" alt=\"Nissan Pet Accessories\">\n                </div>\n                <p>Pet Accessories</p>\n            </a>\n        </li>\n\t\t<li>\n            <a href=\"/accessories/cargo/nissan-rogue\">\n                <div class=\"theme_cat_tab_content_img\">\n                    <img src=\"https://cdn-product-images.revolutionparts.io/assets/ae623471cbf333c99cc33dbddbb82391.webp\" alt=\"Nissan Cargo Accessories\">\n                </div>\n                <p>Cargo Accessories</p>\n            </a>\n        </li>\n\t\t<li>\n            <a href=\"/accessories/yakima/nissan-rogue\">\n                <div class=\"theme_cat_tab_content_img\">\n                    <img src=\"https://cdn.revolutionparts.io/223b3e40451187171b9a7229149b1553/design/frontier/cardm05.webp\" alt=\"Nissan Yakima Accessories\">\n                </div>\n                <p>Affiliated: Yakima® Accessories</p>\n            </a>\n        </li>\n    </ul>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "tab_content tab_content_in",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_33",
+      "htmlId": "",
+      "htmlClasses": "themeAccessoriesCardSection",
+      "contentWidth": "wide",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_8",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_9",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_3",
+                  "moduleType": "custom_html",
+                  "title": "Title",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<h2 class=\"main_title\">Explore Our Nissan Rogue Favorite Accessories</h2>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "rowId": "row_34",
+          "rowLayout": "6_6",
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_35",
+              "columnWidth": 6,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_66",
+                  "moduleType": "custom_html",
+                  "title": "Call to Action",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"themeCalltoActionWrap\">\n    <div class=\"themeCalltoActionCard\">\n        <div class=\"themeCalltoActionImg\">\n            <img src=\"https://rparts-sites.s3.amazonaws.com/ddf1a4688f481343d29071cefb36dbca/design/cyber-accessories/card01.webp\" alt=\"Nissan Accessories\">\n        </div>\n        <div class=\"themeCalltoActionContent\">\n            <h3>Pet Accessories for your Nissan Friend</h3>\n            <div class=\"themeBannerButton\"> \n                <a href=\"go/Nissan-Pet-Accessories.html\" class=\"themeBannerCard\">\n                    <p>Shop Now</p>\n                </a> \n            </div>\n        </div>\n    </div>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            },
+            {
+              "columnId": "column_36",
+              "columnWidth": 6,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_75",
+                  "moduleType": "custom_html",
+                  "title": "Call to Action",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"themeCalltoActionWrap\">\n    <div class=\"themeCalltoActionCard\">\n        <div class=\"themeCalltoActionImg\">\n            <img src=\"https://rparts-sites.s3.amazonaws.com/223b3e40451187171b9a7229149b1553/design/cyber/rogue/wheels.webp\" alt=\"Nissan Accessories\">\n        </div>\n        <div class=\"themeCalltoActionContent\">\n            <h3>Wheels & Rims</h3>\n            <div class=\"themeBannerButton\"> \n                <a href=\"part-categories/wheels-and-tires\" class=\"themeBannerCard\">\n                    <p>Shop Now</p>\n                </a> \n            </div>\n        </div>\n    </div>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_15",
+      "htmlId": "",
+      "htmlClasses": "themeTrustSteer themePagePadding",
+      "contentWidth": "wide",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_16",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_17",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_18",
+                  "moduleType": "custom_html",
+                  "title": "Why Buy",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"themePopularSteerWrap\">\n    <div class=\"themeSteerTitle\">\n        <h3>Why Buy Genuine Nissan Accessories?</h3>\n    </div>\n    <ul class=\"themeSteerList\">\n        <li>\n            <div class=\"themeSteerListCard\">\n                <div class=\"themeSteerListImg\">\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/ddf1a4688f481343d29071cefb36dbca/design/why/safety.avif\" alt=\"Safety Icon\">\n                </div>\n                <h4>Compatibility in, Guesswork Out</h4>\n                <p>From emblems to <a href=\"/part-categories/exterior/roof-rails\">roof racks</a>, our accessories come guaranteed to fit your <a href=\"/v-nissan\">Nissan</a>, work right the first time, and look the part. A lot of aftermarket accessories can't always say the same.</p>\n            </div>\n        </li>\n        <li>\n            <div class=\"themeSteerListCard\">\n                <div class=\"themeSteerListImg\">\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/ddf1a4688f481343d29071cefb36dbca/design/why/reli.avif\" alt=\"Reliability Icon\">\n                </div>\n                <h4>Nissan Quality Assured</h4>\n                <p>Genuine OEM means genuine Nissan -- accessories expertly crafted to the excellent standards you're familiar with. Expect nothing less.</p>\n            </div>\n        </li>\n        <li>\n            <div class=\"themeSteerListCard\">\n                <div class=\"themeSteerListImg\">\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/ddf1a4688f481343d29071cefb36dbca/design/why/perfect.avif\" alt=\"Perfect Fit Icon\">\n                </div>\n                <h4>Expertise at Your Service</h4>\n                <p>Nissan Genuine Parts and Accessories are made to perfectly fit your vehicle ensuring it runs at its optimum level, and is ready for any adventure.</p>\n            </div>\n        </li>\n        <li>\n            <div class=\"themeSteerListCard\">\n                <div class=\"themeSteerListImg\">\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/ddf1a4688f481343d29071cefb36dbca/design/why/future.avif\" alt=\"Future Proof Icon\">\n                </div>\n                <h4>Peace of Mind Included</h4>\n                <p>Buy with confidence -- genuine Nissan accessories are almost always warranty-backed. Using them won't void your factory warranty, either. That's an investment, covered.</p>\n            </div>\n        </li>\n    </ul>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

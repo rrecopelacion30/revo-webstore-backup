@@ -1,0 +1,721 @@
+{
+  "pageId": "page",
+  "pageName": "Text Page",
+  "pageType": null,
+  "layoutEnabled": true,
+  "moduleCategories": [
+    "header",
+    "images",
+    "text",
+    "search",
+    "categories_products",
+    "forms",
+    "navigation",
+    "footer"
+  ],
+  "VFSPath": "layouts/page.json",
+  "requiredModules": [],
+  "scripts": "",
+  "sections": [
+    {
+      "sectionId": "section_110",
+      "htmlId": "themePageTitleSection",
+      "htmlClasses": "themePageTitleSection",
+      "contentWidth": "wide",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_111",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_112",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_113",
+                  "moduleType": "page_subheader",
+                  "title": "Page Subheader",
+                  "options": {
+                    "show_change_vehicle": {
+                      "name": "Show Change Vehicle",
+                      "type": "boolean",
+                      "default_value": true,
+                      "value": false
+                    },
+                    "show_breadcrumbs": {
+                      "name": "Show Breadcrumbs",
+                      "type": "boolean",
+                      "default_value": true,
+                      "value": false
+                    },
+                    "show_title": {
+                      "name": "Show Title",
+                      "type": "boolean",
+                      "default_value": true,
+                      "value": true
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_114",
+      "htmlId": "themeSliderBannerSection",
+      "htmlClasses": "themeSliderBannerSection themeSliderBannerSectionGuide",
+      "contentWidth": "full",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_115",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_116",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_117",
+                  "moduleType": "custom_html",
+                  "title": "Inner Slider",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"themeSliderBannerWrap\">\n\t<div class=\"themeSliderBannerList\">\n        <div class=\"themeSliderBannerListItem\">\n            <div class=\"themeSliderBannerCard\">\n                <div class=\"themeSliderBannerImg\" style=\"background-image: url(https://cdn.revolutionparts.io/00d43a1703c9241dcca9da0d452449dc/design/guides/cabin_filter_bg_3.webp);\"></div>\n                <div class=\"themeSliderBannerContainer\">\n                    <div class=\"themeSliderBannerBox\">\n                        <div class=\"themeSliderBannerContent\">\n                            <h3 class=\"themeSliderBannerTitle\">\n                                Cabin Air Filter Installation Guide\n                            </h3>\n                            <p class=\"themeSliderBannerDesc\">\n                                Your vehicle’s cabin air filter plays a quiet but important role in everyday driving comfort.   \nWhether you're commuting through city traffic or driving on dusty roads, the cabin air filter   \nhelps manage what enters the interior air system.  <br><br>\n                                For Jeep®, Ram, Dodge, and Chrysler owners, understanding how cabin air filters work can   \nhelp support a cleaner, more comfortable cabin environment year-round.\n                            </p>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n\t</div>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_130",
+      "htmlId": "",
+      "htmlClasses": "themeFindRightTitleSection no-padding",
+      "contentWidth": "wide",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_131",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_132",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_133",
+                  "moduleType": "custom_html",
+                  "title": "Title",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<h2 class=\"content-block__title\">Find the Right Mopar<sub>®</sub> Cabin Filter</h2>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_134",
+      "htmlId": "themeVehiclePickerSection",
+      "htmlClasses": "themeVehiclePickerSection pt-2 pb-2 mb-2",
+      "contentWidth": "wide",
+      "backgroundColor": "#f5f7fa",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_135",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_136",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_137",
+                  "moduleType": "vehicle_picker_dropdowns",
+                  "title": "Vehicle Picker Dropdowns",
+                  "options": {
+                    "title": {
+                      "name": "Picker Title",
+                      "type": "string",
+                      "default_value": "Select Your Vehicle",
+                      "value": "Select Your Vehicle"
+                    },
+                    "redirect_uri": {
+                      "name": "Redirect URL",
+                      "type": "string",
+                      "default_value": null,
+                      "value": ""
+                    },
+                    "select_button_text": {
+                      "name": "Select Button Text",
+                      "type": "string",
+                      "default_value": "Select",
+                      "value": "Select"
+                    },
+                    "make_text": {
+                      "name": "Select Make Text",
+                      "type": "string",
+                      "default_value": "",
+                      "value": ""
+                    },
+                    "model_text": {
+                      "name": "Select Model Text",
+                      "type": "string",
+                      "default_value": "",
+                      "value": ""
+                    },
+                    "year_text": {
+                      "name": "Select Year Text",
+                      "type": "string",
+                      "default_value": "",
+                      "value": ""
+                    },
+                    "trim_text": {
+                      "name": "Select Trim Text",
+                      "type": "string",
+                      "default_value": "",
+                      "value": ""
+                    },
+                    "engine_text": {
+                      "name": "Select Engine Text",
+                      "type": "string",
+                      "default_value": "",
+                      "value": ""
+                    },
+                    "use_button_submit": {
+                      "name": "Save on Button Click",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    },
+                    "show_filters": {
+                      "name": "Show filter input in dropdown",
+                      "type": "boolean",
+                      "default_value": true,
+                      "value": true
+                    },
+                    "filter_placeholder": {
+                      "name": "Filter placeholder text",
+                      "type": "string",
+                      "default_value": "Filter",
+                      "value": "Filter"
+                    },
+                    "style": {
+                      "name": "Display",
+                      "type": "select",
+                      "possible_values": [
+                        {
+                          "value": "classic",
+                          "label": "Classic"
+                        },
+                        {
+                          "value": "inline",
+                          "label": "Horizontal"
+                        }
+                      ],
+                      "default_value": "classic",
+                      "value": "classic"
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_138",
+                  "moduleType": "search_by_vin",
+                  "title": "Search By VIN",
+                  "options": {
+                    "title": {
+                      "name": "Box Title",
+                      "type": "string",
+                      "default_value": "Search By VIN",
+                      "value": "Search By VIN"
+                    },
+                    "box_icon": {
+                      "name": "Icon",
+                      "type": "string",
+                      "default_value": "fa-search",
+                      "value": "fa-search"
+                    },
+                    "message": {
+                      "name": "Message",
+                      "type": "string",
+                      "default_value": "Ensure Part Fitment",
+                      "value": "Ensure Part Fitment"
+                    },
+                    "placeholder": {
+                      "name": "Placeholder Text",
+                      "type": "string",
+                      "default_value": "Enter VIN number...",
+                      "value": "Enter VIN number..."
+                    },
+                    "button_text": {
+                      "name": "Button Text",
+                      "type": "string",
+                      "default_value": "Find Vehicle",
+                      "value": "Search"
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_118",
+      "htmlId": "themeListVideoSection",
+      "htmlClasses": "themeListVideoSection pb-0",
+      "contentWidth": "wide",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_119",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_120",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_121",
+                  "moduleType": "custom_html",
+                  "title": "Title: Cabin Filter Installation Guide",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"themeFeaturedInstallWrapper\">\n    <h3 class=\"themeFeaturedInstall\">Cabin Filter Installation Guide</h3>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "wiper-guide",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "rowId": "row_122",
+          "rowLayout": "6_6",
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_123",
+              "columnWidth": 6,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_125",
+                  "moduleType": "custom_html",
+                  "title": "Cabin Filter Video",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<iframe width=\"100%\" height=\"400\" src=\"https://www.youtube.com/embed/XXHWVYXU-IM\" title=\"Manual Climate Controls | How To | 2021 Ram ProMaster\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            },
+            {
+              "columnId": "column_124",
+              "columnWidth": 6,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_126",
+                  "moduleType": "custom_html",
+                  "title": "Featured Install",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<section class=\"content-block\">\n  <h2 class=\"content-block__title\">Before You Begin</h2>\n\n  <p>\n    Replacing your cabin air filter is a simple maintenance task that helps improve interior air quality and supports proper HVAC system performance.\n  </p>\n\n  <p>\n    Genuine Mopar<sub>®</sub> cabin air filters are engineered for Chrysler, Dodge, Jeep, and Ram vehicles and are designed to provide:\n  </p>\n\n  <ul class=\"icon-list\">\n    <li>Vehicle-specific fitment and easy installation</li>\n    <li>Improved filtration of dust, pollen, and airborne particles</li>\n    <li>Enhanced airflow through the heating and air conditioning system</li>\n    <li>Reliable performance and long-lasting durability</li>\n  </ul>\n\n  <div class=\"themeFeaturedInstallButton\">\n    <a href=\"https://store.mopar.com/cabin-air-filters\">Shop Mopar<sub>®</sub> Cabin Air Filters</a>\n  </div>\n</section>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "wiper-guide",
+                  "htmlClasses": "d-flex h-100 align-items-center",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_139",
+      "htmlId": "",
+      "htmlClasses": "",
+      "contentWidth": "wide",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_140",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_141",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_142",
+                  "moduleType": "custom_html",
+                  "title": "Title: Tools You'll Need",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"page-builder-layout-column-wrap full-height-wrapper \"> <div class=\"page-builder-layout-module    \"> <div class=\"custom-html-module\"> <div class=\"themeFeaturedInstallWrapper\"> <h3 class=\"themeFeaturedInstall\">TOOLS YOU'LL NEED</h3> </div> </div>  </div>   </div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_143",
+                  "moduleType": "custom_html",
+                  "title": "Tools You'll Need",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<section class=\"tools-section\">\n  <p class=\"tools-section__intro\">\n    Most cabin air filter replacements can be completed with minimal tools and only take a few minutes.<br>\n    Before you begin, gather:\n  </p>\n\n  <div class=\"tools-grid\">\n\n    <div class=\"tool-item\">\n      <div class=\"tool-icon\">\n        <!-- cabin filter icon -->\n        <svg viewBox=\"0 0 120 70\" aria-hidden=\"true\">\n          <rect x=\"30\" y=\"18\" width=\"60\" height=\"34\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"></rect>\n          <path d=\"M40 22 V48 M48 22 V48 M56 22 V48 M64 22 V48 M72 22 V48 M80 22 V48\" stroke=\"currentColor\" stroke-width=\"2\"></path>\n        </svg>\n      </div>\n      <p>New replacement<br>cabin air filter</p>\n    </div>\n\n    <div class=\"tool-item\">\n      <div class=\"tool-icon\">\n        <!-- screwdriver icon -->\n        <svg viewBox=\"0 0 120 70\" aria-hidden=\"true\">\n          <path d=\"M25 45 L75 20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"4\" stroke-linecap=\"round\"></path>\n          <path d=\"M75 20 L90 15 L95 25 L80 30 Z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"></path>\n          <rect x=\"18\" y=\"40\" width=\"15\" height=\"10\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"></rect>\n        </svg>\n      </div>\n      <p>Screwdriver<br>(if required)</p>\n    </div>\n\n    <div class=\"tool-item\">\n      <div class=\"tool-icon\">\n        <!-- microfiber cloth icon -->\n        <svg viewBox=\"0 0 120 70\" aria-hidden=\"true\">\n          <path d=\"M28 20 C45 12, 72 12, 92 22 L92 48 C70 39, 47 39, 28 48 Z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linejoin=\"round\"></path>\n          <path d=\"M28 20 L28 48\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"></path>\n          <path d=\"M92 22 L92 48\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"></path>\n        </svg>\n      </div>\n      <p>Clean cloth<br>or vacuum</p>\n    </div>\n\n  </div>\n</section>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-10",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "rowId": "row_144",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_145",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_146",
+                  "moduleType": "custom_html",
+                  "title": "Title: How to Replace Wiper Blades, Step-by-Step",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"page-builder-layout-column-wrap full-height-wrapper \"> <div class=\"page-builder-layout-module    \"> <div class=\"custom-html-module\"> <div class=\"themeFeaturedInstallWrapper\"> <h3 class=\"themeFeaturedInstall\">How to Replace Cabin Filter, Step-by-Step</h3> </div> </div>  </div>   </div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_147",
+                  "moduleType": "custom_html",
+                  "title": "How to Replace",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<section class=\"step-guide-section\">\n  <div class=\"step-guide-layout\">\n    <div class=\"step-guide-media\">\n      <img src=\"https://cdn.revolutionparts.io/00d43a1703c9241dcca9da0d452449dc/design/guides/cabin_filter_install.webp\" alt=\"Replacing cabin air filter\">\n    </div>\n    <div class=\"step-list\">\n      <div class=\"step-row\">\n        <div class=\"step-number\">1</div>\n        <h3>Park your vehicle safely</h3>\n        <p>Park on a level surface, turn off the ignition, and engage the parking brake before beginning the replacement process.</p>\n      </div>\n      <div class=\"step-row\">\n        <div class=\"step-number\">2</div>\n        <h3>Locate the cabin air filter housing</h3>\n        <p>Most cabin air filters are located behind the glove box, under the dashboard, or beneath the hood. Consult your owner’s manual for the exact location.</p>\n      </div>\n      <div class=\"step-row\">\n        <div class=\"step-number\">3</div>\n        <h3>Access the filter compartment</h3>\n        <p>Remove any retaining clips, covers, or panels necessary to reach the cabin air filter housing.</p>\n      </div>\n      <div class=\"step-row\">\n        <div class=\"step-number\">4</div>\n        <h3>Remove the old cabin air filter</h3>\n        <p>Carefully slide the old filter out of the housing, noting the airflow direction indicated on the filter.</p>\n      </div>\n      <div class=\"step-row\">\n        <div class=\"step-number\">5</div>\n        <h3>Clean the filter housing</h3>\n        <p>Remove any dust, leaves, or debris from the housing using a clean cloth or vacuum.</p>\n      </div>\n      <div class=\"step-row\">\n        <div class=\"step-number\">6</div>\n        <h3>Install the new cabin air filter</h3>\n        <p>Insert the new Mopar<sub>®</sub> cabin air filter, ensuring the airflow arrow is oriented correctly according to the housing markings.</p>\n      </div>\n      <div class=\"step-row\">\n        <div class=\"step-number\">7</div>\n        <h3>Reinstall the cover and components</h3>\n        <p>Secure the filter housing cover and reinstall any panels, clips, or glove box components that were removed.</p>\n      </div>\n      <div class=\"step-row\">\n        <div class=\"step-number\">8</div>\n        <h3>Test the HVAC system</h3>\n        <p>Start the vehicle and run the heating and air conditioning system to verify proper airflow and operation.</p>\n      </div>\n    </div>\n  </div>\n</section>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-10",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_148",
+      "htmlId": "themeDIYMaintenanceSection",
+      "htmlClasses": "themeDIYMaintenanceSection themeDIYMaintenanceSectionParts no-padding",
+      "contentWidth": "wide",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_149",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_150",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_151",
+                  "moduleType": "custom_html",
+                  "title": "Title: Popular DIY Maintenance",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"themeFeaturedInstallWrapper\">\n    <h3 class=\"themeFeaturedInstall\">Popular DIY Maintenance</h3>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "wiper-guide",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_152",
+                  "moduleType": "custom_html",
+                  "title": "Explore Parts",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"themeMainVPageImageTileGridFlex\">\n    <div class=\"themeMainVPageImageTileCol3 themeMainVPageImageTileMediaItemTop\"> \n        <a href=\"/guides/parts/wiper-blades\" class=\"themeMainVPageImageTileLink\">\n            <div class=\"themeMainVPageImageTileCard\">\n                <div class=\"themeMainVPageImageTileImg\"> \n                    <img src=\"https://cdn.revolutionparts.io/00d43a1703c9241dcca9da0d452449dc/design/guides/wiper_blades.webp\" alt=\"Mopar Image\"> \n                </div>\n                <div class=\"themeMainVPageImageTileTitle\">\n                    <p> Wiper Blades </p>\n                </div>\n            </div>\n        </a> \n    </div>\n    <div class=\"themeMainVPageImageTileCol3 themeMainVPageImageTileMediaItemTop\"> \n        <a href=\"/guides/parts/oil-filter\" class=\"themeMainVPageImageTileLink\">\n            <div class=\"themeMainVPageImageTileCard\">\n                <div class=\"themeMainVPageImageTileImg\"> \n                    <img src=\"https://cdn.revolutionparts.io/00d43a1703c9241dcca9da0d452449dc/design/guides/oil_filter.webp\" alt=\"Mopar Image\"> \n                </div>\n                <div class=\"themeMainVPageImageTileTitle\">\n                    <p> Oil Filter </p>\n                </div>\n            </div>\n        </a> \n    </div>\n    <div class=\"themeMainVPageImageTileCol3 themeMainVPageImageTileMediaItemTop\"> \n        <a href=\"/guides/parts/engine-components\" class=\"themeMainVPageImageTileLink\">\n            <div class=\"themeMainVPageImageTileCard\">\n                <div class=\"themeMainVPageImageTileImg\"> \n                    <img src=\"https://cdn.revolutionparts.io/00d43a1703c9241dcca9da0d452449dc/design/guides/engine_components.webp\" alt=\"Mopar Image\"> \n                </div>\n                <div class=\"themeMainVPageImageTileTitle\">\n                    <p> Engine Components </p>\n                </div>\n            </div>\n        </a> </div>\n    <div class=\"themeMainVPageImageTileCol3 themeMainVPageImageTileMediaItemTop\"> \n        <a href=\"/guides/parts/cabin-air-filters\" class=\"themeMainVPageImageTileLink\">\n            <div class=\"themeMainVPageImageTileCard\">\n                <div class=\"themeMainVPageImageTileImg\"> \n                    <img src=\"https://cdn.revolutionparts.io/00d43a1703c9241dcca9da0d452449dc/design/guides/cabin_filters.webp\" alt=\"Mopar Image\"> \n                </div>\n                <div class=\"themeMainVPageImageTileTitle\">\n                    <p> Cabin Filter </p>\n                </div>\n            </div>\n        </a> \n    </div>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

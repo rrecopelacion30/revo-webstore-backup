@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RevCommerce — Performance Marketing for Auto Parts</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --black: #0d0d0d;
+      --charcoal: #1a1a1a;
+      --gray-900: #1f1f1f;
+      --gray-700: #3a3a3a;
+      --gray-500: #6b6b6b;
+      --gray-300: #c4c4c4;
+      --gray-100: #f0f0f0;
+      --gray-50: #f7f7f7;
+      --white: #ffffff;
+      --blue: #4B9EFF;
+      --blue-dim: rgba(75,158,255,0.12);
+      --blue-dimmer: rgba(75,158,255,0.07);
+      --border: rgba(0,0,0,0.09);
+      --border-mid: rgba(0,0,0,0.14);
+      --radius-sm: 6px;
+      --radius-md: 10px;
+      --radius-lg: 14px;
+      --radius-xl: 20px;
+      --font: 'DM Sans', sans-serif;
+      --mono: 'DM Mono', monospace;
+      --max: 1120px;
+      --pad: 28px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: var(--font);
+      background: var(--white);
+      color: var(--charcoal);
+      font-size: 16px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    /* ── LAYOUT ── */
+    .wrap { max-width: var(--max); margin: 0 auto; padding: 0 var(--pad); }
+
+    /* ── NAV ── */
+    header {
+      position: sticky; top: 0; z-index: 100;
+      background: rgba(255,255,255,0.92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav-inner {
+      display: flex; align-items: center; justify-content: space-between;
+      height: 64px; gap: 24px;
+    }
+    .logo {
+      display: flex; align-items: center; gap: 10px;
+      flex-shrink: 0;
+    }
+    .logo-mark {
+      width: 34px; height: 34px; background: var(--charcoal);
+      border-radius: var(--radius-sm);
+      display: flex; align-items: center; justify-content: center;
+    }
+    .logo-mark span {
+      font-family: var(--mono); font-size: 10px; font-weight: 500;
+      color: var(--blue); letter-spacing: 0.5px;
+    }
+    .logo-name { font-size: 16px; font-weight: 500; letter-spacing: -0.3px; }
+    .logo-name em { font-style: normal; color: var(--blue); }
+    nav { display: flex; align-items: center; gap: 4px; }
+    nav a {
+      font-size: 14px; color: var(--gray-500); padding: 6px 14px;
+      border-radius: var(--radius-sm); transition: color 0.15s, background 0.15s;
+    }
+    nav a:hover { color: var(--charcoal); background: var(--gray-50); }
+    .nav-cta {
+      background: var(--charcoal); color: var(--white);
+      padding: 9px 20px; border-radius: var(--radius-sm);
+      font-size: 14px; font-weight: 500; border: none; cursor: pointer;
+      transition: background 0.15s; white-space: nowrap;
+    }
+    .nav-cta:hover { background: var(--black); }
+
+    /* ── HERO ── */
+    .hero {
+      padding: 88px 0 80px;
+      border-bottom: 1px solid var(--border);
+    }
+    .hero-pill {
+      display: inline-flex; align-items: center; gap: 7px;
+      font-size: 12px; font-weight: 500; color: var(--blue);
+      background: var(--blue-dim); padding: 5px 14px;
+      border-radius: 99px; margin-bottom: 32px;
+      letter-spacing: 0.6px; text-transform: uppercase;
+    }
+    .hero-pill::before {
+      content: ''; width: 6px; height: 6px; background: var(--blue);
+      border-radius: 50%;
+    }
+    .hero h1 {
+      font-size: clamp(40px, 5.5vw, 58px); font-weight: 500;
+      line-height: 1.08; letter-spacing: -1.5px;
+      color: var(--charcoal); max-width: 780px; margin-bottom: 26px;
+    }
+    .hero h1 .accent { color: var(--blue); }
+    .hero-sub {
+      font-size: 18px; color: var(--gray-500); max-width: 600px;
+      line-height: 1.7; margin-bottom: 44px; font-weight: 300;
+    }
+    .hero-actions { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; margin-bottom: 40px; }
+    .btn-dark {
+      background: var(--charcoal); color: var(--white);
+      padding: 13px 26px; border-radius: var(--radius-md);
+      font-size: 15px; font-weight: 500; border: none; cursor: pointer;
+      transition: background 0.15s; display: inline-flex; align-items: center; gap: 8px;
+    }
+    .btn-dark:hover { background: var(--black); }
+    .btn-outline {
+      background: transparent; color: var(--charcoal);
+      padding: 13px 26px; border-radius: var(--radius-md);
+      font-size: 15px; font-weight: 500; border: 1px solid var(--border-mid);
+      cursor: pointer; transition: border-color 0.15s, background 0.15s;
+    }
+    .btn-outline:hover { border-color: var(--gray-300); background: var(--gray-50); }
+    .mp-strip { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin-bottom: 64px; }
+    .mp-label { font-size: 12px; color: var(--gray-300); font-weight: 400; }
+    .mp-chip {
+      font-size: 12px; font-weight: 500; color: var(--gray-500);
+      padding: 4px 12px; border-radius: 99px;
+      border: 1px solid var(--border); background: var(--gray-50);
+    }
+    .hero-stats {
+      display: grid; grid-template-columns: repeat(3, 1fr);
+      border-top: 1px solid var(--border); padding-top: 40px;
+      gap: 0;
+    }
+    .stat {
+      padding-right: 40px;
+      border-right: 1px solid var(--border);
+    }
+    .stat:last-child { border-right: none; padding-right: 0; padding-left: 40px; }
+    .stat:nth-child(2) { padding-left: 40px; }
+    .stat-num {
+      font-size: 32px; font-weight: 500; letter-spacing: -1px;
+      color: var(--charcoal); margin-bottom: 5px;
+    }
+    .stat-label { font-size: 13px; color: var(--gray-500); }
+
+    /* ── SECTION BASE ── */
+    .section { padding: 80px 0; border-bottom: 1px solid var(--border); }
+    .section-eyebrow {
+      font-size: 11px; font-weight: 500; color: var(--blue);
+      letter-spacing: 1.2px; text-transform: uppercase; margin-bottom: 14px;
+      font-family: var(--mono);
+    }
+    .section-title {
+      font-size: clamp(28px, 3.5vw, 36px); font-weight: 500;
+      letter-spacing: -0.8px; line-height: 1.18;
+      color: var(--charcoal); max-width: 540px; margin-bottom: 16px;
+    }
+    .section-sub {
+      font-size: 16px; color: var(--gray-500); max-width: 480px;
+      line-height: 1.7; font-weight: 300;
+    }
+    .section-header { margin-bottom: 52px; }
+
+    /* ── AUDIENCE ── */
+    .audience-grid {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 16px;
+    }
+    .aud-card {
+      border: 1px solid var(--border); border-radius: var(--radius-lg);
+      padding: 36px 32px; background: var(--gray-50);
+    }
+    .aud-card.dark {
+      background: var(--charcoal); border-color: var(--charcoal);
+    }
+    .aud-card.dark .aud-tag { background: rgba(75,158,255,0.18); }
+    .aud-card.dark .aud-title,
+    .aud-card.dark .aud-desc,
+    .aud-card.dark .aud-item { color: rgba(255,255,255,0.85); }
+    .aud-card.dark .aud-item { border-color: rgba(255,255,255,0.1); }
+    .aud-card.dark .aud-title { color: #fff; }
+    .aud-tag {
+      display: inline-block; font-size: 11px; font-weight: 500;
+      padding: 3px 11px; border-radius: 99px;
+      background: var(--blue-dim); color: var(--blue);
+      letter-spacing: 0.6px; text-transform: uppercase;
+      margin-bottom: 22px; font-family: var(--mono);
+    }
+    .aud-title {
+      font-size: 22px; font-weight: 500; letter-spacing: -0.4px;
+      line-height: 1.25; margin-bottom: 12px; color: var(--charcoal);
+    }
+    .aud-desc {
+      font-size: 14px; color: var(--gray-500); line-height: 1.7;
+      margin-bottom: 28px; font-weight: 300;
+    }
+    .aud-list { list-style: none; }
+    .aud-item {
+      font-size: 13px; color: var(--gray-500);
+      padding: 10px 0; border-bottom: 1px solid var(--border);
+      display: flex; align-items: flex-start; gap: 10px;
+    }
+    .aud-item:last-child { border-bottom: none; }
+    .aud-dot {
+      width: 5px; height: 5px; background: var(--blue);
+      border-radius: 50%; flex-shrink: 0; margin-top: 7px;
+    }
+
+    /* ── SERVICES ── */
+    .services-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr);
+      border: 1px solid var(--border); border-radius: var(--radius-lg);
+      overflow: hidden;
+    }
+    .svc-cell {
+      padding: 32px 28px;
+      border-right: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      background: var(--white);
+      transition: background 0.15s;
+    }
+    .svc-cell:hover { background: var(--gray-50); }
+    .svc-cell:nth-child(3n) { border-right: none; }
+    .svc-cell:nth-child(n+4) { border-bottom: none; }
+    .svc-icon {
+      width: 38px; height: 38px; border-radius: var(--radius-sm);
+      background: var(--blue-dimmer); display: flex; align-items: center;
+      justify-content: center; margin-bottom: 18px;
+    }
+    .svc-icon svg { width: 16px; height: 16px; }
+    .svc-name {
+      font-size: 15px; font-weight: 500; color: var(--charcoal);
+      margin-bottom: 9px; letter-spacing: -0.2px;
+    }
+    .svc-desc { font-size: 13px; color: var(--gray-500); line-height: 1.65; font-weight: 300; }
+
+    /* ── DIFFERENTIATORS ── */
+    .diff-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+    .diff-card {
+      padding: 32px; border: 1px solid var(--border);
+      border-radius: var(--radius-lg); background: var(--white);
+    }
+    .diff-num {
+      font-size: 11px; font-weight: 500; color: var(--blue);
+      letter-spacing: 1px; margin-bottom: 18px; font-family: var(--mono);
+    }
+    .diff-title {
+      font-size: 17px; font-weight: 500; letter-spacing: -0.3px;
+      color: var(--charcoal); margin-bottom: 10px;
+    }
+    .diff-text { font-size: 13px; color: var(--gray-500); line-height: 1.7; font-weight: 300; }
+
+    /* ── CTA BAND ── */
+    .cta-band {
+      background: var(--charcoal); border-radius: var(--radius-xl);
+      padding: 60px 52px; margin: 72px 0;
+      display: flex; align-items: center; justify-content: space-between;
+      gap: 36px; flex-wrap: wrap;
+    }
+    .cta-band h2 {
+      font-size: clamp(24px, 3vw, 32px); font-weight: 500;
+      color: var(--white); line-height: 1.25; max-width: 480px;
+      letter-spacing: -0.6px;
+    }
+    .cta-band h2 span { color: var(--blue); }
+    .cta-band-btns { display: flex; gap: 12px; flex-wrap: wrap; flex-shrink: 0; }
+    .btn-blue {
+      background: var(--blue); color: var(--white); border: none;
+      padding: 13px 26px; border-radius: var(--radius-md);
+      font-size: 15px; font-weight: 500; cursor: pointer;
+      font-family: var(--font); transition: opacity 0.15s;
+      display: inline-flex; align-items: center; gap: 8px;
+    }
+    .btn-blue:hover { opacity: 0.88; }
+    .btn-ghost {
+      background: transparent; color: rgba(255,255,255,0.75);
+      border: 1px solid rgba(255,255,255,0.18); padding: 13px 26px;
+      border-radius: var(--radius-md); font-size: 15px; font-weight: 500;
+      cursor: pointer; font-family: var(--font); transition: border-color 0.15s, color 0.15s;
+    }
+    .btn-ghost:hover { border-color: rgba(255,255,255,0.4); color: var(--white); }
+
+    /* ── FOOTER ── */
+    footer {
+      padding: 36px 0;
+      border-top: 1px solid var(--border);
+    }
+    .footer-inner {
+      display: flex; align-items: center; justify-content: space-between;
+      gap: 20px; flex-wrap: wrap;
+    }
+    .footer-links { display: flex; gap: 24px; }
+    .footer-links a { font-size: 13px; color: var(--gray-500); transition: color 0.15s; }
+    .footer-links a:hover { color: var(--charcoal); }
+    .footer-copy { font-size: 13px; color: var(--gray-300); }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 860px) {
+      .audience-grid { grid-template-columns: 1fr; }
+      .diff-grid { grid-template-columns: 1fr; }
+      .services-grid { grid-template-columns: repeat(2, 1fr); }
+      .svc-cell:nth-child(3n) { border-right: 1px solid var(--border); }
+      .svc-cell:nth-child(2n) { border-right: none; }
+      .hero-stats { grid-template-columns: 1fr; gap: 24px; }
+      .stat { border-right: none !important; border-bottom: 1px solid var(--border); padding: 0 0 24px 0 !important; }
+      .stat:last-child { border-bottom: none; padding-bottom: 0 !important; }
+      nav { display: none; }
+      .cta-band { padding: 40px 28px; }
+    }
+    @media (max-width: 560px) {
+      .services-grid { grid-template-columns: 1fr; }
+      .svc-cell { border-right: none !important; }
+      .hero { padding: 60px 0 56px; }
+      .section { padding: 56px 0; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <header>
+    <div class="wrap">
+      <div class="nav-inner">
+        <a href="#" class="logo">
+          <div class="logo-mark"><span>RPM</span></div>
+          <span class="logo-name">Rev<em>Commerce</em></span>
+        </a>
+        <nav>
+          <a href="#">Services</a>
+          <a href="#">Solutions</a>
+          <a href="#">About</a>
+          <a href="#">Results</a>
+        </nav>
+        <button class="nav-cta">Get a growth plan</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-pill">Performance Marketing for Auto Parts</div>
+      <h1>Sell more parts.<br><span class="accent">Everywhere buyers shop.</span></h1>
+      <p class="hero-sub">RevCommerce helps automotive parts and accessories manufacturers and sellers grow revenue across their own channels and the marketplaces that matter most — Amazon, eBay, and beyond.</p>
+      <div class="hero-actions">
+        <button class="btn-dark">Get your growth plan <span>→</span></button>
+        <button class="btn-outline">See your market opportunity</button>
+      </div>
+      <div class="mp-strip">
+        <span class="mp-label">We grow your presence on</span>
+        <span class="mp-chip">Amazon</span>
+        <span class="mp-chip">eBay</span>
+        <span class="mp-chip">Your own store</span>
+        <span class="mp-chip">Dealer networks</span>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <div class="stat-num">500+</div>
+          <div class="stat-label">Clients served</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">$350M+</div>
+          <div class="stat-label">Parts revenue influenced</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">10+</div>
+          <div class="stat-label">Years of consistent growth</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AUDIENCE -->
+  <section class="section">
+    <div class="wrap">
+      <div class="section-header">
+        <div class="section-eyebrow">Who we serve</div>
+        <h2 class="section-title">Built for manufacturers and sellers of auto parts and accessories</h2>
+        <p class="section-sub">Whether you make the parts or sell them, we have a growth model built around your channels and your customers.</p>
+      </div>
+      <div class="audience-grid">
+        <div class="aud-card dark">
+          <div class="aud-tag">Manufacturers</div>
+          <h3 class="aud-title">Scale demand across every channel you sell through</h3>
+          <p class="aud-desc">RevCommerce helps OEM and aftermarket parts manufacturers grow revenue across direct, distributor, dealer, and marketplace channels — with consistent brand execution at every touchpoint.</p>
+          <ul class="aud-list">
+            <li class="aud-item"><span class="aud-dot"></span>Expand marketplace presence on Amazon and eBay</li>
+            <li class="aud-item"><span class="aud-dot"></span>Drive demand across dealer and distributor networks</li>
+            <li class="aud-item"><span class="aud-dot"></span>Ensure brand and pricing consistency across all sellers</li>
+            <li class="aud-item"><span class="aud-dot"></span>Optimize catalog data for fitment and discoverability</li>
+            <li class="aud-item"><span class="aud-dot"></span>Align D2C and wholesale channel strategies</li>
+          </ul>
+        </div>
+        <div class="aud-card">
+          <div class="aud-tag">Sellers &amp; Retailers</div>
+          <h3 class="aud-title">Capture more buyers. Convert more sales.</h3>
+          <p class="aud-desc">We help independent sellers, dealers, and retailers grow profitable revenue across Amazon, eBay, and their own ecommerce stores — from catalog to checkout.</p>
+          <ul class="aud-list">
+            <li class="aud-item"><span class="aud-dot"></span>Launch and scale on Amazon and eBay Motors</li>
+            <li class="aud-item"><span class="aud-dot"></span>Capture high-intent parts and accessories searches</li>
+            <li class="aud-item"><span class="aud-dot"></span>Increase conversion rates across every channel</li>
+            <li class="aud-item"><span class="aud-dot"></span>Expand catalog coverage and fitment accuracy</li>
+            <li class="aud-item"><span class="aud-dot"></span>Compete effectively against large marketplace sellers</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="section">
+    <div class="wrap">
+      <div class="section-header">
+        <div class="section-eyebrow">Services</div>
+        <h2 class="section-title">Every lever that moves parts revenue</h2>
+        <p class="section-sub">From marketplace listings to your own storefront, we operate across the full stack of acquisition, conversion, and retention.</p>
+      </div>
+      <div class="services-grid">
+        <div class="svc-cell">
+          <div class="svc-icon">
+            <svg viewBox="0 0 16 16" fill="none"><circle cx="7" cy="7" r="4.5" stroke="#4B9EFF" stroke-width="1.5"/><line x1="10.5" y1="10.5" x2="14" y2="14" stroke="#4B9EFF" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+          <div class="svc-name">Marketplace growth (Amazon &amp; eBay)</div>
+          <div class="svc-desc">Launch, optimize, and scale your parts and accessories catalog on Amazon and eBay Motors — from listings to sponsored ads.</div>
+        </div>
+        <div class="svc-cell">
+          <div class="svc-icon">
+            <svg viewBox="0 0 16 16" fill="none"><polyline points="2,12 6,7 9,10 14,4" stroke="#4B9EFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="svc-name">Search engine marketing</div>
+          <div class="svc-desc">Capture high-intent buyers actively searching for parts and accessories across Google and Bing.</div>
+        </div>
+        <div class="svc-cell">
+          <div class="svc-icon">
+            <svg viewBox="0 0 16 16" fill="none"><rect x="1" y="3" width="14" height="10" rx="2" stroke="#4B9EFF" stroke-width="1.5"/><line x1="4" y1="7" x2="12" y2="7" stroke="#4B9EFF" stroke-width="1.2" stroke-linecap="round"/><line x1="4" y1="10" x2="9" y2="10" stroke="#4B9EFF" stroke-width="1.2" stroke-linecap="round"/></svg>
+          </div>
+          <div class="svc-name">Search engine optimization</div>
+          <div class="svc-desc">Turn your catalog into an organic acquisition engine powered by fitment data, vehicle search, and long-tail demand.</div>
+        </div>
+        <div class="svc-cell">
+          <div class="svc-icon">
+            <svg viewBox="0 0 16 16" fill="none"><rect x="2" y="2" width="12" height="12" rx="2" stroke="#4B9EFF" stroke-width="1.5"/><line x1="5" y1="8" x2="11" y2="8" stroke="#4B9EFF" stroke-width="1.5" stroke-linecap="round"/><line x1="8" y1="5" x2="8" y2="11" stroke="#4B9EFF" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+          <div class="svc-name">Conversion rate optimization</div>
+          <div class="svc-desc">Optimize the buying experience — from fitment validation to checkout — to maximize revenue per visitor on any channel.</div>
+        </div>
+        <div class="svc-cell">
+          <div class="svc-icon">
+            <svg viewBox="0 0 16 16" fill="none"><rect x="2" y="3" width="12" height="10" rx="2" stroke="#4B9EFF" stroke-width="1.5"/><path d="M2 6h12" stroke="#4B9EFF" stroke-width="1.5"/><line x1="5" y1="9.5" x2="11" y2="9.5" stroke="#4B9EFF" stroke-width="1.2" stroke-linecap="round"/></svg>
+          </div>
+          <div class="svc-name">Email &amp; retention marketing</div>
+          <div class="svc-desc">Drive repeat purchases and lifetime value with lifecycle campaigns tailored to parts and accessories buyers.</div>
+        </div>
+        <div class="svc-cell">
+          <div class="svc-icon">
+            <svg viewBox="0 0 16 16" fill="none"><rect x="2" y="4" width="5" height="8" rx="1" stroke="#4B9EFF" stroke-width="1.5"/><rect x="9" y="2" width="5" height="10" rx="1" stroke="#4B9EFF" stroke-width="1.5"/></svg>
+          </div>
+          <div class="svc-name">Catalog &amp; data optimization</div>
+          <div class="svc-desc">Structure ACES &amp; PIES data to improve fitment accuracy, search visibility, and conversion across marketplaces and your own store.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DIFFERENTIATORS -->
+  <section class="section">
+    <div class="wrap">
+      <div class="section-header">
+        <div class="section-eyebrow">Why RevCommerce</div>
+        <h2 class="section-title">The auto parts industry needs a specialist</h2>
+        <p class="section-sub">We're not a generalist agency that added automotive. We're built from the ground up for parts and accessories commerce.</p>
+      </div>
+      <div class="diff-grid">
+        <div class="diff-card">
+          <div class="diff-num">01</div>
+          <div class="diff-title">Parts and accessories expertise</div>
+          <div class="diff-text">Deep knowledge of fitment complexity, ACES &amp; PIES data standards, and the nuances of OEM vs aftermarket — across both marketplace and direct channels.</div>
+        </div>
+        <div class="diff-card">
+          <div class="diff-num">02</div>
+          <div class="diff-title">Marketplace-native execution</div>
+          <div class="diff-text">We know how Amazon's catalog and eBay Motors work for parts. We optimize listings, sponsored ads, and catalog structure to win on the platforms where buyers already shop.</div>
+        </div>
+        <div class="diff-card">
+          <div class="diff-num">03</div>
+          <div class="diff-title">Full-channel growth strategy</div>
+          <div class="diff-text">Marketplaces, search, email, and your own store — we align every channel to a single revenue goal rather than running disconnected campaigns.</div>
+        </div>
+        <div class="diff-card">
+          <div class="diff-num">04</div>
+          <div class="diff-title">Performance-first model</div>
+          <div class="diff-text">We evaluate market opportunity, define growth targets, and tie every dollar of spend to measurable revenue outcomes — not activity reports.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BAND -->
+  <div class="wrap">
+    <div class="cta-band">
+      <h2>Ready to grow parts revenue <span>across every channel?</span></h2>
+      <div class="cta-band-btns">
+        <button class="btn-blue">Talk to a parts growth expert <span>→</span></button>
+        <button class="btn-ghost">See results</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="wrap">
+      <div class="footer-inner">
+        <a href="#" class="logo">
+          <div class="logo-mark"><span>RPM</span></div>
+          <span class="logo-name">Rev<em>Commerce</em></span>
+        </a>
+        <div class="footer-links">
+          <a href="#">Services</a>
+          <a href="#">Solutions</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+        </div>
+        <span class="footer-copy">© 2026 RevCommerce. All rights reserved.</span>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

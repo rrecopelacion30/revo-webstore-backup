@@ -1,0 +1,46 @@
+<script type="text/javascript"> 
+    $( document ).ready(function() {
+        /* Direct Connections */
+        $('.our-story .links-list a').click(function(e){
+            e.preventDefault();
+            var _this = $( this );
+            var idTab = _this.attr('href');
+            _this.parent().siblings().removeClass('active');
+            _this.parent().addClass('active')
+            $('.direct-tab').hide().removeClass('show');
+            $(idTab).fadeToggle().addClass('show');
+        });
+        
+        $('.our-story .links-list li:first-child').addClass('active');
+    });
+    /* Disabled Rotating images */
+    /*
+	$($('.drag-pak-bg')[0]).addClass('active');
+	var i = 0;
+	var l = $('.drag-pak-bg').length;
+    setInterval(function(){ 
+        $('.drag-pak-bg').removeClass('active');
+        $($('.drag-pak-bg')[i]).addClass('active');
+        if(i < l) {
+            i++;
+        } else {
+            i=0;
+        }
+
+    }, 5000);*/
+</script>
+
+<script>
+$(document).ready(function(){
+    $("#hero").owlCarousel();
+});
+  
+const hero = $('#hero');
+hero.owlCarousel({
+    items: 1,
+    loop: true,
+    margin: 10,
+    autoplay: true,
+    autoplayTimeout: 7000
+});
+</script>

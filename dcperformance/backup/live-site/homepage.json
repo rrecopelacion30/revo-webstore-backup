@@ -1,0 +1,917 @@
+{
+  "pageId": "homepage",
+  "pageName": "Home Page",
+  "pageType": null,
+  "layoutEnabled": true,
+  "moduleCategories": [
+    "header",
+    "images",
+    "text",
+    "search",
+    "categories_products",
+    "forms",
+    "navigation",
+    "footer"
+  ],
+  "VFSPath": "layouts/homepage.json",
+  "requiredModules": [
+    "featured_products"
+  ],
+  "scripts": "<script type=\"text/javascript\"> \n    $( document ).ready(function() {\n        /* Direct Connections */\n        $('.our-story .links-list a').click(function(e){\n            e.preventDefault();\n            var _this = $( this );\n            var idTab = _this.attr('href');\n            _this.parent().siblings().removeClass('active');\n            _this.parent().addClass('active')\n            $('.direct-tab').hide().removeClass('show');\n            $(idTab).fadeToggle().addClass('show');\n        });\n        \n        $('.our-story .links-list li:first-child').addClass('active');\n    });\n    /* Disabled Rotating images */\n    /*\n\t$($('.drag-pak-bg')[0]).addClass('active');\n\tvar i = 0;\n\tvar l = $('.drag-pak-bg').length;\n    setInterval(function(){ \n        $('.drag-pak-bg').removeClass('active');\n        $($('.drag-pak-bg')[i]).addClass('active');\n        if(i < l) {\n            i++;\n        } else {\n            i=0;\n        }\n\n    }, 5000);*/\n</script>\n\n",
+  "sections": [
+    {
+      "sectionId": "section_3",
+      "htmlId": "",
+      "htmlClasses": "no-padding home-slider",
+      "contentWidth": "full",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_15",
+          "rowLayout": 12,
+          "htmlId": "hero-row",
+          "htmlClasses": "",
+          "columns": [
+            {
+              "columnId": "column_16",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_17",
+                  "moduleType": "custom_html",
+                  "title": "Hero Slider",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div id=\"hero\" class=\"owl-carousel owl-theme\">\n    <div id=\"hero-slide_roadkill\" class=\"hero-slide\">\n        <a href=\"https://mtg.ticketspice.com/roadkill-nights-2026-powered-by-dodge-\" target=\"_blank\">\n            <img src=\"https://rparts-sites.s3.amazonaws.com/39085fea4858071f17714bc5d7edf50e/design/banner_0729.webp\" alt=\"Road Kill\" width=\"1000\" height=\"500\">\n        </a>\n    </div>\n    <div id=\"hero-slide_2\" class=\"hero-slide\">\n        <a href=\"/p-hellephant-a30-426-supercharged-crate-hemi-engine-p5160194ad\">\n            <img src=\"https://rparts-sites.s3.amazonaws.com/6f87c75737bcc72b4674a498139b574d/design/2714_Helephant_Promo_Banner_V02.webp\" alt=\"Hellephant A30 426 Supercharged Crate HEMI®\" width=\"1000px\" height=\"500px\">\n        </a>\n    </div>\n    <div id=\"hero-slide_1\" class=\"hero-slide\">\n        <a href=\"crate-engine/#hurricrate\">\n            <img src=\"https://rparts-sites.s3.amazonaws.com/6f87c75737bcc72b4674a498139b574d/design/dc_092025_hp.webp\" alt=\"take cover! crate engines now available.\" width=\"1000px\" height=\"500px\">\n        </a>\n    </div>\n    <div id=\"hero-slide_10\" class=\"hero-slide\">\n        <a href=\"#rebuilding-the-beast\"><img src=\"https://rparts-sites.s3.amazonaws.com/6f87c75737bcc72b4674a498139b574d/design/rebuilding%20the%20beast/ep_1_Rebuilding_the_Beast_hero_banner_c.webp\" alt=\"A Challenger Hellcat SRT car is elevated on a hydraulic lift inside a garage, with another covered vehicle in the background.\" width=\"1000px\" height=\"500px\" title=\"Rebuilding the Beast\"></a>\n        <div class=\"hero-caption\">\n            <h1>Rebuilding the Beast</h1>\n            <p>Don't miss Cristy Lee and Wesley Motorsports turn a Challenger SRT Hellcat into the ultimate road course sweeper with Direct Connection Parts.</p>\n            <a href=\"https://www.youtube.com/watch?v=x7tpGdu4DBA&t=4s\" class=\"btn dc-btn hero-btn\" target=\"_blank\">Watch Episode 3</a>\n        </div>\n    </div>\n    <div id=\"hero-slide_3\" class=\"hero-slide\">\n        <a href=\"contact-us\">\n            <img src=\"https://rparts-sites.s3.amazonaws.com/968fb7a4242e855a91e9c9141892b67d/design/mini_banner2.webp\" alt=\"mini, but mighty, jr dragster bodies are now available!\" width=\"1000px\" height=\"500px\">\n        </a>\n    </div>\n    <div id=\"hero-slide_5\" class=\"hero-slide\">\n        <a href=\"/race/funny-cars?utm_source=banner&utm_medium=direct&utm_campaign=funny-cars\">\n            <strong></strong><img src=\"https://rparts-sites.s3.amazonaws.com/968fb7a4242e855a91e9c9141892b67d/design/home-hero/funny_car_banner.jpg\" alt=\"Funny Car\" width=\"1000px\" height=\"500px\">\n        </a>\n    </div>    \n    <div id=\"hero-slide_6\" class=\"hero-slide\">\n        <a href=\"https://www.dcperformance.com/crate-engine#superchargers?utm_source=banner&utm_medium=direct&utm_campaign=superchargers\">\n            <img src=\"https://rparts-sites.s3.amazonaws.com/968fb7a4242e855a91e9c9141892b67d/design/Direct-Connection_Web-Banner_Updated_1.3.png\" alt=\"Half of front of Red Dodge Challenger fading to black with text\" width=\"1000px\" height=\"500px\">\n        </a>\n    </div>   \n    <div id=\"hero-slide_7\" class=\"hero-slide white-edge\">\n        <img src=\"https://d354nuoz4t18d4.cloudfront.net/6f87c75737bcc72b4674a498139b574d/design/home-hero/hero_05_tuner-min.jpeg\" alt=\"Performance tuner display device\" width=\"1000px\" height=\"500px\">\n        <div class=\"hero-caption\">\n            <img class=\"hero-caption_img\" src=\"https://d354nuoz4t18d4.cloudfront.net/6f87c75737bcc72b4674a498139b574d/design/Direct-Connection-Logo-october-21.png\" alt=\"Direct Connection Logo\">\n            <p>Get ready for action with our Exclusive Tuner Kit</p>\n            <a href=\"/modern-performance/stage-kits?utm_source=banner&utm_medium=direct&utm_campaign=stagekits\" class=\"btn dc-btn hero-btn\">Shop Now</a>\n        </div>\n    </div>\n    <div id=\"hero-slide_9\" class=\"hero-slide\">\n        <a href=\"#direct_connection_story\"><img src=\"https://d354nuoz4t18d4.cloudfront.net/6f87c75737bcc72b4674a498139b574d/design/home-hero/hero_02_story-min.jpeg\" alt=\"Dodge muscle car popping wheely at track\" width=\"1000px\" height=\"500px\" title=\"Dodge muscle car popping wheely at track\"></a>\n        <div class=\"hero-caption\">\n            <h1>The direct connection story</h1>\n            <p>Created 40 years ago, Direct Connection was Mopar's answer to the high demand for performance parts.</p>\n            <a href=\"#direct_connection_story\" class=\"btn dc-btn hero-btn\">Learn More</a>\n        </div>\n    </div></div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_286",
+      "htmlId": "vehicle-picker",
+      "htmlClasses": "vehicle-picker",
+      "contentWidth": "wide",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "light",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_287",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_288",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_89",
+                  "moduleType": "vehicle_picker_dropdowns",
+                  "title": "Vehicle Picker Dropdowns",
+                  "options": {
+                    "title": {
+                      "name": "Picker Title",
+                      "type": "string",
+                      "default_value": "Select Your Vehicle",
+                      "value": "Select Vehicle"
+                    },
+                    "redirect_uri": {
+                      "name": "Redirect URL",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "/modern-performance"
+                    },
+                    "select_button_text": {
+                      "name": "Select Button Text",
+                      "type": "string",
+                      "default_value": "Select",
+                      "value": "Select"
+                    },
+                    "make_text": {
+                      "name": "Select Make Text",
+                      "type": "string",
+                      "default_value": "",
+                      "value": ""
+                    },
+                    "model_text": {
+                      "name": "Select Model Text",
+                      "type": "string",
+                      "default_value": "",
+                      "value": ""
+                    },
+                    "year_text": {
+                      "name": "Select Year Text",
+                      "type": "string",
+                      "default_value": "",
+                      "value": ""
+                    },
+                    "trim_text": {
+                      "name": "Select Trim Text",
+                      "type": "string",
+                      "default_value": "",
+                      "value": ""
+                    },
+                    "engine_text": {
+                      "name": "Select Engine Text",
+                      "type": "string",
+                      "default_value": "",
+                      "value": ""
+                    },
+                    "use_button_submit": {
+                      "name": "Save on Button Click",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    },
+                    "show_filters": {
+                      "name": "Show filter input in dropdown",
+                      "type": "boolean",
+                      "default_value": true,
+                      "value": true
+                    },
+                    "filter_placeholder": {
+                      "name": "Filter placeholder text",
+                      "type": "string",
+                      "default_value": "Filter",
+                      "value": "Filter"
+                    },
+                    "style": {
+                      "name": "Display",
+                      "type": "select",
+                      "possible_values": [
+                        {
+                          "value": "classic",
+                          "label": "Classic"
+                        },
+                        {
+                          "value": "inline",
+                          "label": "Horizontal"
+                        }
+                      ],
+                      "default_value": "classic",
+                      "value": "inline"
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "select-vehicle  d-none",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_289",
+                  "moduleType": "vehicle_picker",
+                  "title": "Vehicle Picker",
+                  "options": {
+                    "title": {
+                      "name": "Picker Title",
+                      "type": "string",
+                      "default_value": "Select Your Vehicle",
+                      "value": "Select Your Vehicle"
+                    },
+                    "redirect_uri": {
+                      "name": "Redirect URL",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "/modern-performance"
+                    },
+                    "select_button_text": {
+                      "name": "Select Button Text",
+                      "type": "string",
+                      "default_value": "Select",
+                      "value": "Select"
+                    },
+                    "make_text": {
+                      "name": "Select Make Text",
+                      "type": "string",
+                      "default_value": "",
+                      "value": "Make"
+                    },
+                    "model_text": {
+                      "name": "Select Model Text",
+                      "type": "string",
+                      "default_value": "",
+                      "value": "Model"
+                    },
+                    "year_text": {
+                      "name": "Select Year Text",
+                      "type": "string",
+                      "default_value": "",
+                      "value": "Year"
+                    },
+                    "display_change_vehicle": {
+                      "name": "Change Vehicle Link",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    },
+                    "header_class": {
+                      "name": "Header Class",
+                      "type": "string",
+                      "default_value": "header-text",
+                      "value": "header-text"
+                    },
+                    "button_class": {
+                      "name": "Button Class",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "btn vehicle-picker-select-button"
+                    },
+                    "dropdown_class": {
+                      "name": "Dropdown Class",
+                      "type": "string",
+                      "default_value": "dropdown",
+                      "value": "dropdown"
+                    },
+                    "dropdown_icon_class": {
+                      "name": "Dropdown Icon Class",
+                      "type": "string",
+                      "default_value": null,
+                      "value": ""
+                    },
+                    "style": {
+                      "name": "Display",
+                      "type": "select",
+                      "possible_values": [
+                        {
+                          "value": "classic",
+                          "label": "Classic"
+                        },
+                        {
+                          "value": "horiz",
+                          "label": "Horizontal"
+                        }
+                      ],
+                      "default_value": "classic",
+                      "value": "horiz"
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "select-vehicle",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_131",
+      "htmlId": "shop-vehicle",
+      "htmlClasses": "shop-vehicle",
+      "contentWidth": "wide",
+      "backgroundColor": "",
+      "backgroundImage": "https://rparts-sites.s3.amazonaws.com/968fb7a4242e855a91e9c9141892b67d/design/section-bg-bak.jpeg",
+      "textColor": "light",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_132",
+          "rowLayout": 12,
+          "htmlId": "",
+          "htmlClasses": "custom-vehicles",
+          "columns": [
+            {
+              "columnId": "column_133",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_355",
+                  "moduleType": "custom_html",
+                  "title": "Shop by Vehicle - Custom HTML",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"row\">\n    <div class=\"col-12\"><h2 class=\"section-heading\">SHOP BY VEHICLE</h2></div>\n    <div class=\"col-4 col-sm-4 col-car\">\n      <figure>\n        <a id=\"shop-by-vehicle_challenger\" href=\"v-dodge-challenger\" title=\"Modern Performance\">\n          <img class=\"img-responsive lazy-load\" src=\"https://rparts-sites.s3.amazonaws.com/968fb7a4242e855a91e9c9141892b67d/design/home-optimized/vehicles-1-min.png\" alt=\"Dodge Challenger\" width=\"400px\" height=\"215px\">\n          <h3>Challenger</h3>\n        </a>\n      </figure>\n    </div>\n    <div class=\"col-4 col-sm-4 col-car\">\n      <figure>\n        <a id=\"shop-by-vehicle_durango\" href=\"v-dodge-durango\" title=\"Modern Performance\">\n          <img class=\"img-responsive lazy-load\" src=\"https://rparts-sites.s3.amazonaws.com/968fb7a4242e855a91e9c9141892b67d/design/home-optimized/vehicles-2-min.png\" alt=\"Dodge Durango\" width=\"400px\" height=\"215px\">\n          <h3>Durango</h3>\n        </a>\n      </figure>\n    </div>\n    <div class=\"col-4 col-sm-4 col-car\">\n      <figure>\n        <a id=\"shop-by-vehicle_charger\" href=\"v-dodge-charger\" title=\"Modern Performance\">\n          <img class=\"img-responsive lazy-load\" src=\"https://rparts-sites.s3.amazonaws.com/968fb7a4242e855a91e9c9141892b67d/design/home-optimized/vehicles-3-min.png\" alt=\"Dodge Charger\" width=\"400px\" height=\"215px\">\n          <h3>Charger</h3>\n        </a>\n      </figure>\n    </div>\n  </div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": true
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "rowId": "row_134",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_135",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_136",
+                  "moduleType": "search_by_vin",
+                  "title": "Search By VIN",
+                  "options": {
+                    "title": {
+                      "name": "Box Title",
+                      "type": "string",
+                      "default_value": "Search By VIN",
+                      "value": "Search By VIN"
+                    },
+                    "box_icon": {
+                      "name": "Icon",
+                      "type": "string",
+                      "default_value": "fa-search",
+                      "value": ""
+                    },
+                    "message": {
+                      "name": "Message",
+                      "type": "string",
+                      "default_value": "Ensure Part Fitment",
+                      "value": ""
+                    },
+                    "placeholder": {
+                      "name": "Placeholder Text",
+                      "type": "string",
+                      "default_value": "Enter VIN number...",
+                      "value": "Enter VIN number..."
+                    },
+                    "button_text": {
+                      "name": "Button Text",
+                      "type": "string",
+                      "default_value": "Find Vehicle",
+                      "value": "Find Vehicle"
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_405",
+      "htmlId": "shop-category",
+      "htmlClasses": "shop-category",
+      "contentWidth": "wide",
+      "backgroundColor": "#444444",
+      "backgroundImage": "",
+      "textColor": "light",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_406",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_407",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_408",
+                  "moduleType": "custom_html",
+                  "title": "Direct Connection Category  - Custom HTML",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"row\">\n\t<div class=\"col-12\"><h2 class=\"section-heading\">SHOP BY DIRECT CONNECTION CATEGORY</h2></div>\n\t<div class=\"col-12 col-sm-6 col-lg-3 mb-1\">\n\t\t<figure>\n            <a id=\"shop-category_modern-performance\" href=\"/modern-performance\">\n\t\t\t\t<img class=\"img-responsive w-100\" src=\"https://d354nuoz4t18d4.cloudfront.net/968fb7a4242e855a91e9c9141892b67d/design/home-categories/category_modern-performance_opt.jpeg\" alt=\"Blue Dodge Challenger performing a burnout\" width=\"293px\" height=\"239px\">\n\t\t\t\t<figcaption>Modern Performance</figcaption>\n            </a>\n\t\t</figure>\n\t</div>\n\t<div class=\"col-12 col-sm-6 col-lg-3 mb-1\">\n\t\t<figure>\n            <a id=\"shop-category_crate-engine\" href=\"/crate-engine\">\n                <img class=\"img-responsive w-100\" src=\"https://d354nuoz4t18d4.cloudfront.net/968fb7a4242e855a91e9c9141892b67d/design/home-categories/category_crate-engine_opt.jpeg\" alt=\"Dodge Crate Engine on gray background\" width=\"293px\" height=\"239px\">\n                <figcaption>Crate Engine</figcaption>\n            </a>\n\t\t</figure>\n\t</div>\n\t<div class=\"col-12 col-sm-6 col-lg-3 mb-1\">\n\t\t<figure>\n\t\t\t<a id=\"shop-category_Race\" href=\"/drag-pak\">\n\t            <img class=\"img-responsive w-100\" src=\"https://d354nuoz4t18d4.cloudfront.net/968fb7a4242e855a91e9c9141892b67d/design/home-categories/category_drak-pak_opt.jpeg\" alt=\"Dodge challenger popping a wheelie\" width=\"293px\" height=\"239px\" title=\"Dodge challenger popping a wheelie\">\n\t\t\t\t<figcaption>Race</figcaption>\n            </a>\n\t\t</figure>\n\t</div>\n\t<div class=\"col-12 col-sm-6 col-lg-3 mb-1\">\n\t\t<figure>\n            <a id=\"shop-category_vintage-muscle\" href=\"/vintage-muscle\">\n\t\t\t\t<img class=\"img-responsive w-100\" src=\"https://d354nuoz4t18d4.cloudfront.net/968fb7a4242e855a91e9c9141892b67d/design/home-categories/category_vintage-muscle_opt.jpeg\" alt=\"Vintage dodge muscle car\" width=\"293px\" height=\"239px\">\n\t\t\t\t<figcaption>Vintage Muscle</figcaption>\n            </a>\n\t\t</figure>\n\t</div>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_1",
+      "htmlId": "rebuilding-the-beast",
+      "htmlClasses": "rebuilding-the-beast",
+      "contentWidth": "wide",
+      "backgroundColor": "#000000",
+      "backgroundImage": "",
+      "textColor": "light",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_2",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_3",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_4",
+                  "moduleType": "custom_html",
+                  "title": "Rebuilding the Beast - Custom HTML",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"rebuilding-the-beast\">\n    <div class=\"sec-wrapper\">\n        <div class=\"left-sec\">\n            <div class=\"rebuilding-the-beast-logo\">\n                <figure>\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/6f87c75737bcc72b4674a498139b574d/design/rebuilding%20the%20beast/2712_001_REBUILDING_THE_BEAST_LIGHT.png\" alt=\"Rebuilding the Beast Logo\" width=\"300px\" height=\"67px\">\n                </figure>\n            </div>\n            <p class=\"desc\">\n                Cristy Lee is back in the garage – and this time, she’s teaming up with Direct Connection and Wesley\n                Motorsports to unleash some serious muscle on her Challenger SRT® Hellcat.\n            </p>\n        </div>\n        <div class=\"right-sec\">\n            <figure class=\"grid-item\">\n                <a href=\"https://www.youtube.com/watch?v=zrUS6zP3xH4\" target=\"_blank\">\n                <img src=\"https://rparts-sites.s3.amazonaws.com/6f87c75737bcc72b4674a498139b574d/design/rebuilding%20the%20beast/trailer_1.png\" alt=\"trailer\">\n                </a>    \n            </figure>\n            <figure class=\"grid-item ep1\">\n                <a href=\"https://www.youtube.com/watch?v=DMS9ao639lE\" target=\"_blank\">\n                    <span class=\"date-label\"><span class=\"month\">May</span><span class=\"day\">15</span></span>\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/6f87c75737bcc72b4674a498139b574d/design/rebuilding%20the%20beast/rebuilding-the-beast_ep1.png\" alt=\"Rebuilding the Beast Episode 1\">\n                    <figcaption>Episode 1</figcaption>\n                </a>\n            </figure>\n            <figure class=\"grid-item ep2\">\n                <a href=\"https://www.youtube.com/watch?v=d2oxp9o7cm8\" target=\"_blank\">\n                \t<span class=\"date-label\"><span class=\"month\">May</span><span class=\"day\">22</span></span>\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/6f87c75737bcc72b4674a498139b574d/design/rebuilding%20the%20beast/rebuilding-the-beast_ep-2.webp\" alt=\"Rebuilding the Beast Episode 2\">\n                    <figcaption>Episode 2</figcaption>\n                </a>\n            </figure>\n            <figure class=\"grid-item ep3\">\n                <a href=\"https://www.youtube.com/watch?v=x7tpGdu4DBA\" target=\"_blank\">\n                \t<span class=\"date-label\"><span class=\"month\">May</span><span class=\"day\">29</span></span>\n                    <img src=\"https://rparts-sites.s3.amazonaws.com/6f87c75737bcc72b4674a498139b574d/design/rebuilding%20the%20beast/rebuilding-the-beast_ep-3.webp\" alt=\"Rebuilding the Beast Episode 3\">\n                    <figcaption>Episode 3</figcaption>\n                </a>\n            </figure>\n        </div>\n    </div>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "text-center",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_450",
+      "htmlId": "featured-products",
+      "htmlClasses": "featured-products",
+      "contentWidth": "wide",
+      "backgroundColor": "#000000",
+      "backgroundImage": "https://rp-dev-sites.s3.amazonaws.com/b8f5830bcf448305c8c7aaf17d23ed8a/design/section-bg.jpg",
+      "textColor": "light",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_451",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_452",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_2",
+                  "moduleType": "custom_html",
+                  "title": "Featured Product - New",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"themeFeaturedWrap\">\n  <h2>FEATURED PRODUCTS</h2>\n  <ul id=\"themeFeaturedProdList\" class=\"owl-carousel owl-theme themeFeaturedProdList\">\n    <li>\n      <div class=\"themeFeaturedCard\">\n        <div class=\"themeFeaturedProdImg\">\n          <img src=\"https://rparts-sites.s3.amazonaws.com/968fb7a4242e855a91e9c9141892b67d/design/featured_products/stagekit.jpg\" alt=\"Stage Kit\">\n        </div>\n        <div class=\"themeFeaturedProdContent\">\n          <div class=\"details\">\n            <div class=\"details-display\">\n              <div class=\"details-title\">\n                <strong class=\"product-title\">\n                  Stage Kit\n                </strong>\n              </div>\n            </div>\n            <div class=\"product-actions\">\n              <a href=\"/modern-performance/stage-kits\" class=\"action-button no-icon\">Shop Now</a>\n            </div>\n          </div>\n        </div>\n      </div>\n    </li>\n    <li>\n      <div class=\"themeFeaturedCard\">\n        <div class=\"themeFeaturedProdImg\">\n          <img src=\"https://rparts-sites.s3.amazonaws.com/968fb7a4242e855a91e9c9141892b67d/design/featured_products/crate.jpg\" alt=\"Crate Engines\">\n        </div>\n        <div class=\"themeFeaturedProdContent\">\n          <div class=\"details\">\n            <div class=\"details-display\">\n              <div class=\"details-title\">\n                <strong class=\"product-title\">\n                  Crate Engines\n                </strong>\n              </div>\n            </div>\n            <div class=\"product-actions\">\n              <a href=\"/crate-engine\" class=\"action-button no-icon\">Shop Now</a>\n            </div>\n          </div>\n        </div>\n      </div>\n    </li>\n    <li>\n      <div class=\"themeFeaturedCard\">\n        <div class=\"themeFeaturedProdImg\">\n          <img src=\"https://rparts-sites.s3.amazonaws.com/968fb7a4242e855a91e9c9141892b67d/design/featured_products/supercharger.jpg\" alt=\"Supercharger\">\n        </div>\n        <div class=\"themeFeaturedProdContent\">\n          <div class=\"details\">\n            <div class=\"details-display\">\n              <div class=\"details-title\">\n                <strong class=\"product-title\">\n                  Supercharger\n                </strong>\n              </div>\n            </div>\n            <div class=\"product-actions\">\n              <a href=\"/crate-engine#superchargers\" class=\"action-button no-icon\">Shop Now</a>\n            </div>\n          </div>\n        </div>\n      </div>\n    </li>\n    <li>\n      <div class=\"themeFeaturedCard\">\n        <div class=\"themeFeaturedProdImg\">\n          <img src=\"https://rparts-sites.s3.amazonaws.com/968fb7a4242e855a91e9c9141892b67d/design/featured_products/transmission.jpg\" alt=\"Transmission Accessories\">\n        </div>\n        <div class=\"themeFeaturedProdContent\">\n          <div class=\"details\">\n            <div class=\"details-display\">\n              <div class=\"details-title\">\n                <strong class=\"product-title\">\n                  Transmission Accessories\n                </strong>\n              </div>\n            </div>\n            <div class=\"product-actions\">\n              <a href=\"/crate-engine#superchargers\" class=\"action-button no-icon\">Shop Now</a>\n            </div>\n          </div>\n        </div>\n      </div>\n    </li>\n  </ul>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_50",
+      "htmlId": "our-story",
+      "htmlClasses": "our-story",
+      "contentWidth": "wide",
+      "backgroundColor": "#ebebeb",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_36",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_37",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_1",
+                  "moduleType": "custom_html",
+                  "title": "Video Section",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div class=\"video-section\" id=\"direct_connection_story\">\n    <h2 class=\"heading\">THE DIRECT CONNECTION STORY</h2>\n\t\n    <div class=\"video-wrap\">\n        <iframe width=\"100%\" height=\"340\" src=\"https://www.youtube.com/embed/TRmcXVx8ZQA\" title=\"Direct Connection Preview | Dodge\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>\n    </div>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "rowId": "row_51",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_52",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_53",
+                  "moduleType": "links_list",
+                  "title": "Links List",
+                  "options": {
+                    "links": {
+                      "name": "Links",
+                      "type": "object",
+                      "default_value": [],
+                      "value": [
+                        {
+                          "linkId": "link_20",
+                          "text": "1950s",
+                          "url": "#1950s",
+                          "target": "",
+                          "icon": "",
+                          "type": "direct"
+                        },
+                        {
+                          "linkId": "link_21",
+                          "text": "1960s",
+                          "url": "#1960s",
+                          "target": "",
+                          "icon": "",
+                          "type": "direct"
+                        },
+                        {
+                          "linkId": "link_22",
+                          "text": "1970s",
+                          "url": "#1970s",
+                          "target": "",
+                          "icon": "",
+                          "type": "direct"
+                        },
+                        {
+                          "linkId": "link_23",
+                          "text": "1980s - TODAY",
+                          "url": "#the-return",
+                          "target": "",
+                          "icon": "",
+                          "type": "direct"
+                        }
+                      ]
+                    },
+                    "links_title": {
+                      "name": "List Title",
+                      "type": "string",
+                      "default_value": null,
+                      "value": ""
+                    },
+                    "links_title_url": {
+                      "name": "List Title Link",
+                      "type": "string",
+                      "default_value": null,
+                      "value": ""
+                    },
+                    "links_display": {
+                      "name": "List Display",
+                      "type": "select",
+                      "default_value": "block",
+                      "value": "inline",
+                      "possible_values": [
+                        {
+                          "value": "inline",
+                          "label": "Inline"
+                        },
+                        {
+                          "value": "block",
+                          "label": "Block"
+                        },
+                        {
+                          "value": "dropdown",
+                          "label": "Drop Down"
+                        }
+                      ]
+                    },
+                    "list_style": {
+                      "name": "List Style",
+                      "type": "select",
+                      "default_value": "none",
+                      "value": "footer",
+                      "possible_values": [
+                        {
+                          "value": "none",
+                          "label": "No Style"
+                        },
+                        {
+                          "value": "footer",
+                          "label": "Footer"
+                        },
+                        {
+                          "value": "header",
+                          "label": "Header"
+                        },
+                        {
+                          "value": "navigation",
+                          "label": "Navigation Bar"
+                        },
+                        {
+                          "value": "menu",
+                          "label": "Menu Bar"
+                        }
+                      ]
+                    },
+                    "header_tag": {
+                      "name": "Header Tag",
+                      "type": "select",
+                      "default_value": "strong",
+                      "value": "h3",
+                      "possible_values": [
+                        {
+                          "value": "strong",
+                          "label": "STRONG"
+                        },
+                        {
+                          "value": "h3",
+                          "label": "H3"
+                        }
+                      ]
+                    },
+                    "links_image": {
+                      "name": "List Image",
+                      "type": "image_upload",
+                      "default_value": null,
+                      "value": ""
+                    },
+                    "links_stock": {
+                      "name": "List Style",
+                      "type": "select",
+                      "default_value": "none",
+                      "value": "none",
+                      "possible_values": [
+                        {
+                          "value": "none",
+                          "label": "None"
+                        },
+                        {
+                          "value": "mobile_menu",
+                          "label": "Mobile Menu"
+                        },
+                        {
+                          "value": "policies",
+                          "label": "Policies"
+                        }
+                      ]
+                    },
+                    "footer_link": {
+                      "name": "Footer Link",
+                      "type": "string",
+                      "default_value": null,
+                      "value": ""
+                    }
+                  },
+                  "htmlId": "year-tabs",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": true,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_173",
+      "htmlId": "",
+      "htmlClasses": "direct-content",
+      "contentWidth": "wide",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_175",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_176",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_177",
+                  "moduleType": "custom_html",
+                  "title": "Story Tab Content  - Custom HTML",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div id=\"direct-content\" class=\"direct-content\">\n\t<div id=\"1950s\" class=\"direct-tab\">\n\t\t<div class=\"row\">\n\t\t\t<div class=\"col-12 col-sm-6 col-lg-5 direct-image\">\n\t\t\t\t<img class=\"img-responsive\" src=\"https://d354nuoz4t18d4.cloudfront.net/968fb7a4242e855a91e9c9141892b67d/design/home-story/1950s.jpeg\" alt=\"1950s drage race between two dodge vehicles on the track\" width=\"508\" height=\"290\">\n\t\t\t</div>\n\t\t\t<div class=\"col-12 col-sm-6 col-lg-7 direct-desc\">\n\t\t\t\t<h3 class=\"direct-heading\">1950s</h3>\n\t\t\t\t<div class=\"direct-list\">\n\t\t\t\t\t<div class=\"direct-row\">\n\t\t\t\t\t\t<div class=\"col-title\">1959</div>\n\t\t\t\t\t\t<div class=\"col-desc\">A group of Chrysler engineers with a passion for racing forms the legendary Ramchargers drag racing team, a skunk works program aimed at challenging the big-block engines run by top competitors.</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"direct-link\">\n\t\t\t\t\t<a id=\"shop-now_1950\" href=\"/modern-performance\" class=\"btn\">Shop Now</a>\n\t\t\t\t</div>\n\t\t\t</div>\t\t\t\t\n\t\t</div>\n\t</div>\n\t<div id=\"1960s\" class=\"direct-tab\">\n\t\t<div class=\"row\">\n\t\t\t<div class=\"col-12 col-sm-6 col-lg-5 direct-image\">\n\t\t\t\t<img class=\"img-responsive\" src=\"https://d354nuoz4t18d4.cloudfront.net/968fb7a4242e855a91e9c9141892b67d/design/home-story/1960s.jpeg\" alt=\"1960 dodge engine on rack\" width=\"496\" height=\"393\">\n\t\t\t</div>\n\t\t\t<div class=\"col-12 col-sm-6 col-lg-7 direct-desc\">\n\t\t\t\t<h3 class=\"direct-heading\">1960s</h3>\n\t\t\t\t<div class=\"direct-list\">\n\t\t\t\t\t<div class=\"direct-row\">\n\t\t\t\t\t\t<div class=\"col-title\">1962</div>\n\t\t\t\t\t\t<div class=\"col-desc\">Dodge and Plymouth disrupt the drag racing scene with the 413 Max Wedge engine, claiming victories across the country.</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"direct-row\">\n\t\t\t\t\t\t<div class=\"col-title\">1963</div>\n\t\t\t\t\t\t<div class=\"col-desc\">Chrysler forms Direct Connection featuring a massive portfolio of parts and a 1,400-page racing reference manual supported by Chrysler’s top performance experts available through a toll-free hotline.</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"direct-row\">\n\t\t\t\t\t\t<div class=\"col-title\">1964 -1965</div>\n\t\t\t\t\t\t<div class=\"col-desc\">The 426 HEMI® hits NHRA drag strips and NASCAR super speedways with immediate racing dominance.</div>\n\t\t\t\t\t</div>\n                    <div class=\"direct-row\">\n\t\t\t\t\t\t<div class=\"col-title\">1967</div>\n\t\t\t\t\t\t<div class=\"col-desc\">The 375 hp, 440-cubic-inch Magnum quickly takes over the streets while the infamous 426 Street HEMI® engine owns the drag strip.</div>\n\t\t\t\t\t</div>\n                    <div class=\"direct-row\">\n\t\t\t\t\t\t<div class=\"col-title\">1968</div>\n\t\t\t\t\t\t<div class=\"col-desc\">Chrysler publishes is first full-color performance parts catalog called \"Chrysler Hi-Performance Parts.\" Product offerings include items for small-block, big-block and HEMI® engines, as well as NHRA classification guides.</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"direct-link\">\n\t\t\t\t\t<a id=\"shop-now_1960\" href=\"/modern-performance\" class=\"btn\">Shop Now</a>\n\t\t\t\t</div>\n\t\t\t</div>\t\t\t\t\n\t\t</div>\n\t</div>\n\t<div id=\"1970s\" class=\"direct-tab\">\n\t\t<div class=\"row\">\n\t\t\t<div class=\"col-12 col-sm-6 col-lg-5 direct-image\">\n\t\t\t\t<img class=\"img-responsive\" src=\"https://d354nuoz4t18d4.cloudfront.net/968fb7a4242e855a91e9c9141892b67d/design/home-story/1970s.jpeg\" alt=\"1970s dodge promotional poster\" width=\"300\" height=\"400\">\n\t\t\t</div>\n\t\t\t<div class=\"col-12 col-sm-6 col-lg-7 direct-desc\">\n\t\t\t\t<h3 class=\"direct-heading\">1970s</h3>\n\t\t\t\t<div class=\"direct-list\">\n\t\t\t\t\t<div class=\"direct-row\">\n\t\t\t\t\t\t<div class=\"col-title\">1970 - 1971</div>\n\t\t\t\t\t\t<div class=\"col-desc\">Chrysler increases its support of street/strip performance enthusiasts through the creation of “Hustle Stuff,” offering everything from hardcore racing parts to cool dress-up parts.</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"direct-row\">\n\t\t\t\t\t\t<div class=\"col-title\">1974</div>\n\t\t\t\t\t\t<div class=\"col-desc\">Chrysler forms Direct Connection featuring a massive portfolio of parts and a 1,400-page racing reference manual supported by Chrysler’s top performance experts available through a toll-free hotline.</div>\n\t\t\t\t\t</div>\n                    <div class=\"direct-row\">\n\t\t\t\t\t\t<div class=\"col-title\">1975 - 1980 </div>\n\t\t\t\t\t\t<div class=\"col-desc\">Direct Connection expands its parts to include circle track and off-road racers. The infamous \"P\" prefix on part numbers is assigned to performance parts. A 1,400-page racing manual written by Chrysler's top performance engineers for modifying the engine, transmission, chassis and suspension is known as \"The Bible\" among Mopar enthusiasts.</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"direct-link\">\n\t\t\t\t\t<a id=\"shop-now_1970\" href=\"/modern-performance\" class=\"btn\">Shop Now</a>\n\t\t\t\t</div>\n\t\t\t</div>\t\t\t\t\n\t\t</div>\n\t</div>\n\t<div id=\"the-return\" class=\"direct-tab\">\n\t\t<div class=\"row\">\n\t\t\t<div class=\"col-12 col-sm-6 col-lg-5 direct-image\">\n\t\t\t\t<img class=\"img-responsive\" src=\"https://d354nuoz4t18d4.cloudfront.net/968fb7a4242e855a91e9c9141892b67d/design/home-story/1980s_logo_508px-min.png\" alt=\"Direct connection new logo\" width=\"508\" height=\"103\">\n\t\t\t</div>\n\t\t\t<div class=\"col-12 col-sm-6 col-lg-7 direct-desc\">\n\t\t\t\t<h3 class=\"direct-heading\">1980s - TODAY</h3>\n\t\t\t\t<div class=\"direct-list\">\n                    <div class=\"direct-row\">\n                        <div class=\"direct-row\">\n                            <div class=\"col-title\">1980-1986</div>\n                            <div class=\"col-desc\">Direct Connection adapts to changing consumer interests by offering superchargers, turbochargers and more for 2.2L four-cylinder Chrysler engines.</div>\n                        </div>\n\t\t\t\t\t\t<div class=\"col-title\">1987-2020</div>\n\t\t\t\t\t\t<div class=\"col-desc\">With a redirection on performance parts and a revised brand strategy, Direct Connection becomes Mopar Performance, ushering in a new era of modern performance parts and high-performance crate engines.</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"direct-row\">\n\t\t\t\t\t\t<div class=\"col-title\">2022</div>\n\t\t\t\t\t\t<div class=\"col-desc\">Direct Connection returns to support the burgeoning demand for Mopar street/strip performance, reintroducing more than 300 performance products, including 14 all-new performance kits.</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"direct-link\">\n\t\t\t\t\t<a id=\"shop-now_1980\" href=\"/modern-performance\" class=\"btn\">Shop Now</a>\n\t\t\t\t</div>\n\t\t\t</div>\t\t\t\t\n\t\t</div>\n\t</div>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_5",
+      "htmlId": null,
+      "htmlClasses": null,
+      "contentWidth": "wide",
+      "backgroundColor": null,
+      "backgroundImage": null,
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_6",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_7",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_8",
+                  "moduleType": "featured_products",
+                  "title": "Featured Products",
+                  "options": {
+                    "display_as_slider": {
+                      "name": "Display As slider",
+                      "caption": "Displays featured products in a slider format",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "d-none",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

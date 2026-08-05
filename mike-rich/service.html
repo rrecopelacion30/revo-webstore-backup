@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services — RevCommerce</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --black: #0d0d0d;
+      --charcoal: #1a1a1a;
+      --gray-900: #1f1f1f;
+      --gray-700: #3a3a3a;
+      --gray-500: #6b6b6b;
+      --gray-400: #909090;
+      --gray-300: #c4c4c4;
+      --gray-100: #f0f0f0;
+      --gray-50: #f7f7f7;
+      --white: #ffffff;
+      --blue: #4B9EFF;
+      --blue-dim: rgba(75,158,255,0.12);
+      --blue-dimmer: rgba(75,158,255,0.07);
+      --border: rgba(0,0,0,0.09);
+      --border-mid: rgba(0,0,0,0.14);
+      --radius-sm: 6px;
+      --radius-md: 10px;
+      --radius-lg: 14px;
+      --radius-xl: 20px;
+      --font: 'DM Sans', sans-serif;
+      --mono: 'DM Mono', monospace;
+      --max: 1120px;
+      --pad: 28px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: var(--font);
+      background: var(--white);
+      color: var(--charcoal);
+      font-size: 16px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: inherit; text-decoration: none; }
+
+    /* ── LAYOUT ── */
+    .wrap { max-width: var(--max); margin: 0 auto; padding: 0 var(--pad); }
+
+    /* ── NAV ── */
+    header {
+      position: sticky; top: 0; z-index: 100;
+      background: rgba(255,255,255,0.92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav-inner {
+      display: flex; align-items: center; justify-content: space-between;
+      height: 64px; gap: 24px;
+    }
+    .logo { display: flex; align-items: center; gap: 10px; flex-shrink: 0; }
+    .logo-mark {
+      width: 34px; height: 34px; background: var(--charcoal);
+      border-radius: var(--radius-sm);
+      display: flex; align-items: center; justify-content: center;
+    }
+    .logo-mark span {
+      font-family: var(--mono); font-size: 10px; font-weight: 500;
+      color: var(--blue); letter-spacing: 0.5px;
+    }
+    .logo-name { font-size: 16px; font-weight: 500; letter-spacing: -0.3px; }
+    .logo-name em { font-style: normal; color: var(--blue); }
+    nav { display: flex; align-items: center; gap: 4px; }
+    nav a {
+      font-size: 14px; color: var(--gray-500); padding: 6px 14px;
+      border-radius: var(--radius-sm); transition: color 0.15s, background 0.15s;
+    }
+    nav a:hover, nav a.active { color: var(--charcoal); }
+    nav a.active { font-weight: 500; }
+    .nav-cta {
+      background: var(--charcoal); color: var(--white);
+      padding: 9px 20px; border-radius: var(--radius-sm);
+      font-size: 14px; font-weight: 500; border: none; cursor: pointer;
+      transition: background 0.15s; white-space: nowrap; font-family: var(--font);
+    }
+    .nav-cta:hover { background: var(--black); }
+
+    /* ── PAGE HERO ── */
+    .page-hero {
+      padding: 80px 0 72px;
+      border-bottom: 1px solid var(--border);
+    }
+    .breadcrumb {
+      display: flex; align-items: center; gap: 8px;
+      font-size: 12px; color: var(--gray-400); margin-bottom: 28px;
+      font-family: var(--mono);
+    }
+    .breadcrumb a { color: var(--gray-400); transition: color 0.15s; }
+    .breadcrumb a:hover { color: var(--charcoal); }
+    .breadcrumb-sep { color: var(--gray-300); }
+    .page-hero h1 {
+      font-size: clamp(38px, 5vw, 54px); font-weight: 500;
+      line-height: 1.1; letter-spacing: -1.5px;
+      color: var(--charcoal); max-width: 640px; margin-bottom: 22px;
+    }
+    .page-hero h1 span { color: var(--blue); }
+    .page-hero-sub {
+      font-size: 18px; color: var(--gray-500); max-width: 560px;
+      line-height: 1.7; font-weight: 300; margin-bottom: 48px;
+    }
+    .service-nav {
+      display: flex; gap: 8px; flex-wrap: wrap;
+    }
+    .snav-item {
+      font-size: 13px; font-weight: 500; padding: 7px 16px;
+      border-radius: 99px; border: 1px solid var(--border);
+      color: var(--gray-500); cursor: pointer; transition: all 0.15s;
+      background: var(--white); font-family: var(--font);
+    }
+    .snav-item:hover { border-color: var(--gray-300); color: var(--charcoal); }
+    .snav-item.active {
+      background: var(--charcoal); color: var(--white); border-color: var(--charcoal);
+    }
+
+    /* ── SERVICE SECTIONS ── */
+    .svc-section {
+      padding: 88px 0;
+      border-bottom: 1px solid var(--border);
+      scroll-margin-top: 80px;
+    }
+    .svc-section:last-of-type { border-bottom: none; }
+
+    /* Two-col layout: content left, detail right */
+    .svc-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 72px;
+      align-items: start;
+    }
+    .svc-layout.reverse { direction: rtl; }
+    .svc-layout.reverse > * { direction: ltr; }
+
+    /* Left: heading block */
+    .svc-eyebrow {
+      display: flex; align-items: center; gap: 10px; margin-bottom: 22px;
+    }
+    .svc-num {
+      font-family: var(--mono); font-size: 11px; color: var(--blue);
+      letter-spacing: 1px; font-weight: 500;
+    }
+    .svc-divider { width: 24px; height: 1px; background: var(--border-mid); }
+    .svc-category {
+      font-family: var(--mono); font-size: 11px; color: var(--gray-400);
+      letter-spacing: 0.8px; text-transform: uppercase;
+    }
+    .svc-title {
+      font-size: clamp(26px, 3vw, 34px); font-weight: 500;
+      letter-spacing: -0.8px; line-height: 1.18;
+      color: var(--charcoal); margin-bottom: 18px;
+    }
+    .svc-desc {
+      font-size: 16px; color: var(--gray-500); line-height: 1.75;
+      font-weight: 300; margin-bottom: 32px;
+    }
+    .svc-outcomes {
+      display: flex; flex-direction: column; gap: 0;
+      border: 1px solid var(--border); border-radius: var(--radius-lg);
+      overflow: hidden; margin-bottom: 32px;
+    }
+    .outcome-row {
+      display: flex; align-items: flex-start; gap: 14px; padding: 14px 18px;
+      border-bottom: 1px solid var(--border);
+      font-size: 13px; color: var(--gray-500); line-height: 1.5;
+    }
+    .outcome-row:last-child { border-bottom: none; }
+    .outcome-icon {
+      width: 20px; height: 20px; border-radius: 50%;
+      background: var(--blue-dim); display: flex; align-items: center;
+      justify-content: center; flex-shrink: 0; margin-top: 1px;
+    }
+    .outcome-icon svg { width: 10px; height: 10px; }
+    .svc-cta-link {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-size: 14px; font-weight: 500; color: var(--charcoal);
+      border-bottom: 1px solid var(--border-mid); padding-bottom: 2px;
+      transition: border-color 0.15s, color 0.15s;
+    }
+    .svc-cta-link:hover { color: var(--blue); border-color: var(--blue); }
+
+    /* Right: feature panel */
+    .svc-panel {
+      background: var(--gray-50);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-xl);
+      padding: 36px 32px;
+      position: sticky; top: 88px;
+    }
+    .panel-label {
+      font-family: var(--mono); font-size: 10px; color: var(--gray-400);
+      letter-spacing: 1.2px; text-transform: uppercase; margin-bottom: 20px;
+    }
+    .panel-metrics {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 28px;
+    }
+    .metric-card {
+      background: var(--white); border: 1px solid var(--border);
+      border-radius: var(--radius-md); padding: 18px 16px;
+    }
+    .metric-num {
+      font-size: 26px; font-weight: 500; letter-spacing: -0.8px;
+      color: var(--charcoal); margin-bottom: 4px;
+    }
+    .metric-label { font-size: 12px; color: var(--gray-500); line-height: 1.4; }
+    .panel-divider { height: 1px; background: var(--border); margin: 0 0 24px; }
+    .panel-checklist { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .check-item {
+      display: flex; align-items: flex-start; gap: 10px;
+      font-size: 13px; color: var(--gray-500); line-height: 1.5;
+    }
+    .check-dot {
+      width: 16px; height: 16px; border-radius: 50%;
+      background: var(--blue-dim); display: flex; align-items: center;
+      justify-content: center; flex-shrink: 0; margin-top: 1px;
+    }
+    .check-dot svg { width: 8px; height: 8px; }
+
+    /* Dark panel variant */
+    .svc-panel.dark {
+      background: var(--charcoal); border-color: var(--charcoal);
+    }
+    .svc-panel.dark .panel-label { color: rgba(255,255,255,0.35); }
+    .svc-panel.dark .metric-card { background: rgba(255,255,255,0.06); border-color: rgba(255,255,255,0.1); }
+    .svc-panel.dark .metric-num { color: var(--white); }
+    .svc-panel.dark .metric-label { color: rgba(255,255,255,0.45); }
+    .svc-panel.dark .panel-divider { background: rgba(255,255,255,0.1); }
+    .svc-panel.dark .check-item { color: rgba(255,255,255,0.6); }
+    .svc-panel.dark .check-dot { background: rgba(75,158,255,0.2); }
+
+    /* ── CTA BAND ── */
+    .cta-band {
+      background: var(--charcoal); border-radius: var(--radius-xl);
+      padding: 60px 52px; margin: 72px 0;
+      display: flex; align-items: center; justify-content: space-between;
+      gap: 36px; flex-wrap: wrap;
+    }
+    .cta-band h2 {
+      font-size: clamp(24px, 3vw, 32px); font-weight: 500;
+      color: var(--white); line-height: 1.25; max-width: 480px;
+      letter-spacing: -0.6px;
+    }
+    .cta-band h2 span { color: var(--blue); }
+    .cta-band-btns { display: flex; gap: 12px; flex-wrap: wrap; flex-shrink: 0; }
+    .btn-blue {
+      background: var(--blue); color: var(--white); border: none;
+      padding: 13px 26px; border-radius: var(--radius-md);
+      font-size: 15px; font-weight: 500; cursor: pointer;
+      font-family: var(--font); transition: opacity 0.15s;
+      display: inline-flex; align-items: center; gap: 8px;
+    }
+    .btn-blue:hover { opacity: 0.88; }
+    .btn-ghost {
+      background: transparent; color: rgba(255,255,255,0.75);
+      border: 1px solid rgba(255,255,255,0.18); padding: 13px 26px;
+      border-radius: var(--radius-md); font-size: 15px; font-weight: 500;
+      cursor: pointer; font-family: var(--font); transition: all 0.15s;
+    }
+    .btn-ghost:hover { border-color: rgba(255,255,255,0.4); color: var(--white); }
+
+    /* ── FOOTER ── */
+    footer { padding: 36px 0; border-top: 1px solid var(--border); }
+    .footer-inner {
+      display: flex; align-items: center; justify-content: space-between;
+      gap: 20px; flex-wrap: wrap;
+    }
+    .footer-links { display: flex; gap: 24px; }
+    .footer-links a { font-size: 13px; color: var(--gray-500); transition: color 0.15s; }
+    .footer-links a:hover { color: var(--charcoal); }
+    .footer-copy { font-size: 13px; color: var(--gray-300); }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 860px) {
+      .svc-layout { grid-template-columns: 1fr; gap: 40px; }
+      .svc-layout.reverse { direction: ltr; }
+      .svc-panel { position: static; }
+      nav { display: none; }
+      .cta-band { padding: 40px 28px; }
+    }
+    @media (max-width: 560px) {
+      .panel-metrics { grid-template-columns: 1fr; }
+      .page-hero { padding: 52px 0 48px; }
+      .svc-section { padding: 60px 0; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <header>
+    <div class="wrap">
+      <div class="nav-inner">
+        <a href="revcommerce.html" class="logo">
+          <div class="logo-mark"><span>RPM</span></div>
+          <span class="logo-name">Rev<em>Commerce</em></span>
+        </a>
+        <nav>
+          <a href="#" class="active">Services</a>
+          <a href="#">Solutions</a>
+          <a href="#">About</a>
+          <a href="#">Results</a>
+        </nav>
+        <button class="nav-cta">Get a growth plan</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="wrap">
+      <div class="breadcrumb">
+        <a href="revcommerce.html">Home</a>
+        <span class="breadcrumb-sep">/</span>
+        <span>Services</span>
+      </div>
+      <h1>Every service that <span>moves parts revenue</span></h1>
+      <p class="page-hero-sub">From marketplace listings to your own storefront, we run the complete playbook for automotive parts and accessories growth — acquisition, conversion, retention, and data.</p>
+      <div class="service-nav">
+        <button class="snav-item active" onclick="scrollTo('marketplace')">Marketplace Growth</button>
+        <button class="snav-item" onclick="scrollTo('sem')">Search Marketing</button>
+        <button class="snav-item" onclick="scrollTo('seo')">SEO</button>
+        <button class="snav-item" onclick="scrollTo('cro')">Conversion Optimization</button>
+        <button class="snav-item" onclick="scrollTo('email')">Email &amp; Retention</button>
+        <button class="snav-item" onclick="scrollTo('data')">Catalog &amp; Data</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 01 MARKETPLACE -->
+  <section class="svc-section" id="marketplace">
+    <div class="wrap">
+      <div class="svc-layout">
+        <div class="svc-left">
+          <div class="svc-eyebrow">
+            <span class="svc-num">01</span>
+            <span class="svc-divider"></span>
+            <span class="svc-category">Marketplace Growth</span>
+          </div>
+          <h2 class="svc-title">Dominate Amazon &amp; eBay Motors — where parts buyers already shop</h2>
+          <p class="svc-desc">The majority of auto parts searches start on Amazon or eBay before they ever hit Google. We build and manage marketplace presences that win on both platforms — from catalog structure and fitment data to sponsored ads and storefront design.</p>
+          <div class="svc-outcomes">
+            <div class="outcome-row">
+              <div class="outcome-icon"><svg viewBox="0 0 10 10" fill="none"><polyline points="1,5 4,8 9,2" stroke="#4B9EFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+              Amazon Parts &amp; Accessories catalog setup and optimization
+            </div>
+            <div class="outcome-row">
+              <div class="outcome-icon"><svg viewBox="0 0 10 10" fill="none"><polyline points="1,5 4,8 9,2" stroke="#4B9EFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+              eBay Motors listing management and compatibility data
+            </div>
+            <div class="outcome-row">
+              <div class="outcome-icon"><svg viewBox="0 0 10 10" fill="none"><polyline points="1,5 4,8 9,2" stroke="#4B9EFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+              Sponsored Products, Sponsored Brands, and Display ad management
+            </div>
+            <div class="outcome-row">
+              <div class="outcome-icon"><svg viewBox="0 0 10 10" fill="none"><polyline points="1,5 4,8 9,2" stroke="#4B9EFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+              Buy Box strategy and competitive pricing guidance
+            </div>
+            <div class="outcome-row">
+              <div class="outcome-icon"><svg viewBox="0 0 10 10" fill="none"><polyline points="1,5 4,8 9,2" stroke="#4B9EFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+              Review generation and seller reputation management
+            </div>
+          </div>
+          <a href="#" class="svc-cta-link">Talk to a marketplace specialist →</a>
+        </div>
+        <div class="svc-right">
+          <div class="svc-panel dark">
+            <div class="panel-label">Typical client results</div>
+            <div class="panel-metrics">
+              <div class="metric-card">
+                <div class="metric-num">3.4×</div>
+                <div class="metric-label">Average ROAS on Amazon Sponsored Ads</div>
+              </div>
+              <div class="metric-card">
+                <div class="metric-num">+62%</div>
+                <div class="metric-label">Increase in organic marketplace visibility</div>
+              </div>
+              <div class="metric-card">
+                <div class="metric-num">90 days</div>
+                <div class="metric-label">Average time to first meaningful revenue lift</div>
+              </div>
+              <div class="metric-card">
+                <div class="metric-num">2 platforms</div>
+                <div class="metric-label">Amazon + eBay Motors — managed together</div>
+              </div>
+            </div>
+            <div class="panel-divider"></div>
+            <div class="panel-label">What's included</div>
+            <ul class="panel-checklist">
+              <li class="check-item"><div class="check-dot"><svg viewBox="0 0 8 8" fill="none"><polyline points="1,4 3,6.5 7,1.5" stroke="#4B9EFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>Full catalog audit and gap analysis</li>
+              <li class="check-item"><div class="check-dot"><svg viewBox="0 0 8 8" fill="none"><polyline points="1,4 3,6.5 7,1.5" stroke="#4B9EFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>Listing copywriting and image guidance</li>
+              <li class="check-item"><div class="check-dot"><svg viewBox="0 0 8 8" fill="none"><polyline points="1,4 3,6.5 7,1.5" stroke="#4B9EFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>Ad campaign build, management &amp; reporting</li>
+              <li class="check-item"><div class="check-dot"><svg viewBox="0 0 8 8" fill="none"><polyline points="1,4 3,6.5 7,1.5" stroke="#4B9EFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>Monthly performance reviews</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 02 SEM -->
+  <section class="svc-section" id="sem">
+    <div class="wrap">
+      <div class="svc-layout reverse">
+        <div class="svc-left">
+          <div class="svc-eyebrow">
+            <span class="svc-num">02</span>
+            <span class="svc-divider"></span>
+            <span class="svc-category">Search Engine Marketing</span>
+          </div>
+          <h2 class="svc-title">Capture buyers the moment they search for the part</h2>
+          <p class="svc-desc">High-intent search traffic is the most valuable traffic in auto parts. We build and manage Google and Bing campaigns that reach buyers at the exact moment they're ready to purchase — from branded part numbers to broad fitment queries.</p>
+          <div class="svc-outcomes">
+            <div class="outcome-row">
+              <div class="outcome-icon"><svg viewBox="0 0 10 10" fill="none"><polyline points="1,5 4,8 9,2" stroke="#4B9EFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+              Google Shopping and Search campaign management
+            </div>
+            <div class="outcome-row">
+              <div class="outcome-icon"><svg viewBox="0 0 10 10" fill="none"><polyline points="1,5 4,8 9,2" stroke="#4B9EFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+              Fitment-based keyword strategy (year/make/model targeting)
+            </div>
+            <div class="outcome-row">
+              <div class="outcome-icon"><svg viewBox="0 0 10 10" fill="none"><polyline points="1,5 4,8 9,2" stroke="#4B9EFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+              OEM part number and aftermarket brand term campaigns
+            </div>
+            <div class="outcome-row">
+              <div class="outcome-icon"><svg viewBox="0 0 10 10" fill="none"><polyline points="1,5 4,8 9,2" stroke="#4B9EFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+              Performance Max campaigns for catalog-wide coverage
+            </div>
+            <div class="outcome-row">
+              <div class="outcome-icon"><svg viewBox="0 0 10 10" fill="none"><polyline points="1,5 4,8 9,2" stroke="#4B9EFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+              Retargeting and abandoned cart recovery
+            </div>
+          </div>
+          <a href="#" class="svc-cta-link">Explore search marketing →</a>
+        </div>
+        <div class="svc-right">
+          <div class="svc-panel">
+            <div class="panel-label">Typical client results</div>
+            <div class="panel-metrics">
+              <div class="metric-card">
+                <div class="metric-num">4.1×</div>
+                <div class="metric-label">Average ROAS across Google Shopping campaigns</div>
+              </div>
+              <div class="metric-card">
+                <div class="metric-num">−28%</div>
+                <div class="metric-label">Reduction in cost per acquisition within 60 days</div>
+              </div>
+              <div class="metric-card">
+                <div class="metric-num">+110%</div>
+                <div class="metric-label">Increase in click-through rate after copy optimization</div>
+              </div>
+              <div class="metric-card">
+                <div class="metric-num">Weekly</div>
+                <div class="metric-label">Bid and budget optimization cadence</div>
+              </div>
+            </div>
+            <div class="panel-divider"></div>
+            <div class="panel-label">What's included</div>
+            <ul class="panel-checklist">
+              <li class="check-item"><div class="check-dot"><svg viewBox="0 0 8 8" fill="none"><polyline points="1,4 3,6.5 7,1.5" stroke="#4B9EFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>Full account audit or new build</li>
+              <li class="check-item"><div class="check-dot"><svg viewBox="0 0 8 8" fill="none"><polyline points="1,4 3,6.5 7,1.5" stroke="#4B9EFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>Keyword research and negative keyword strategy</li>
+              <li class="check-item"><div class="check-dot"><svg viewBox="0 0 8 8" fill="none"><polyline points="1,4 3,6.5 7,1.5" stroke="#4B9EFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>Ad copy creation and A/B testing</li>
+              <li class="check-item"><div class="check-dot"><svg viewBox="0 0 8 8" fill="none"><polyline points="1,4 3,6.5 7,1.5" stroke="#4B9EFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>Conversion tracking and monthly reporting</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 03 SEO -->
+  <section class="svc-section" id="seo">
+    <div class="wrap">
+      <div class="svc-layout">
+        <div class="svc-left">
+          <div class="svc-eyebrow">
+            <span class="svc-num">03</span>
+            <span class="svc-divider"></span>
+            <span class="svc-category">Search Engine Optimization</span>
+          </div>
+          <h2 class="svc-title">Turn your parts catalog into a search acquisition engine</h2>
+          <p class="svc-desc">Auto parts SEO is uniquely complex — every part has year, make, model, and trim variations that need to be indexed correctly. We build scalable SEO programs that leverage fitment data to capture millions of long-tail searches your competitors miss.</p>
+          <div class="svc-outcomes">
+            <div class="outcome-row">
+              <div class="outcome-icon"><svg viewBox="0 0 10 10" fill="none"><polyline points="1,5 4,8 9,2" stroke="#4B9EFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+              Fitment-driven SEO architecture and page templates
+            </div>
+            <div class="outcome-row">
+              <div class="outcome-icon"><svg viewBox="0 0 10 10" fill="none"><polyline points="1,5 4,8 9,2" stroke="#4B9EFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+              Technical SEO: crawlability, site speed, structured data
+            </div>
+            <div class="outcome-row">
+              <div class="outcome-icon"><svg viewBox="0 0 10 10" fill="none"><polyline points="1,5 4,8 9,2" stroke="#4B9EFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+              Product and category page content optimization
+            </div>
+            <div class="outcome-row">
+              <div class="outcome-icon"><svg viewBox="0 0 10 10" fill="none"><polyline points="1,5 4,8 9,2" stroke="#4B9EFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+              Link acquisition and domain authority building
+            </div>
+            <div class="outcome-row">
+              <div class="outcome-icon"><svg viewBox="0 0 10 10" fill="none"><polyline points="1,5 4,8 9,2" stroke="#4B9EFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+              Competitor gap analysis and keyword opportunity mapping
+            </div>
+          </div>
+          <a href="#" class="svc-cta-link">Learn about our SEO approach →</a>
+        </div>
+        <div class="svc-right">
+          <div class="svc-panel dark">
+            <div class="panel-label">Typical client results</div>
+            <div class="panel-metrics">
+              <div class="metric-card">
+                <div class="metric-num">+187%</div>
+                <div class="metric-label">Increase in organic traffic within 12 months</div>
+              </div>
+              <div class="metric-card">
+                <div class="metric-num">50K+</div>
+                <div class="metric-label">New keywords ranked in first 6 months</div>
+              </div>
+              <div class="metric-card">
+                <div class="metric-num">$0 CPL</div>
+                <div class="metric-label">Marginal cost per lead once ranked</div>
+              </div>
+              <div class="metric-card">
+                <div class="metric-num">6–12 mo</div>
+                <div class="metric-label">Typical timeline to significant organic revenue</div>
+              </div>
+            </div>
+            <div class="panel-divider"></div>
+            <div class="panel-label">What's included</div>
+            <ul class="panel-checklist">
+              <li class="check-item"><div class="check-dot"><svg viewBox="0 0 8 8" fill="none"><polyline points="1,4 3,6.5 7,1.5" stroke="#4B9EFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>Full technical and content SEO audit</li>
+              <li class="check-item"><div class="check-dot"><svg viewBox="0 0 8 8" fill="none"><polyline points="1,4 3,6.5 7,1.5" stroke="#4B9EFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>Fitment keyword research and page mapping</li>
+              <li class="check-item"><div class="check-dot"><svg viewBox="0 0 8 8" fill="none"><polyline points="1,4 3,6.5 7,1.5" stroke="#4B9EFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>On-page optimization and content production</li>
+              <li class="check-item"><div class="check-dot"><svg viewBox="0 0 8 8" fill="none"><polyline points="1,4 3,6.5 7,1.5" stroke="#4B9EFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>Monthly ranking, traffic and revenue reporting</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 04 CRO -->
+  <section class="svc-section" id="cro">
+    <div class="wrap">
+      <div class="svc-layout reverse">
+        <div class="svc-left">
+          <div class="svc-eyebrow">
+            <span class="svc-num">04</span>
+            <span class="svc-divider"></span>
+            <span class="svc-category">Conversion Rate Optimization</span>
+          </div>
+          <h2 class="svc-title">More revenue from traffic you're already paying for</h2>
+          <p class="svc-desc">Fitment confusion is the #1 reason parts buyers abandon their carts. We identify and eliminate every friction point — from vehicle lookup to payment — so more of your visitors become buyers without spending more on acquisition.</p>
+          <div class="svc-outcomes">
+            <div class="outcome-row">
+              <div class="outcome-icon"><svg viewBox="0 0 10 10" fill="none"><polyline points="1,5 4,8 9,2" stroke="#4B9EFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+              Fitment lookup UX audit and redesign
+            </div>
+            <div class="outcome-row">
+              <div class="outcome-icon"><svg viewBox="0 0 10 10" fill="none"><polyline points="1,5 4,8 9,2" stroke="#4B9EFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+              Product page conversion testing
+            </div>
+            <div class="outcome-row">
+              <div class="outcome-icon"><svg viewBox="0 0 10 10" fill="none"><polyline points="1,5 4,8 9,2" stroke="#4B9EFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+              Checkout funnel analysis and optimization
+            </div>
+            <div class="outcome-row">
+              <div class="outcome-icon"><svg viewBox="0 0 10 10" fill="none"><polyline points="1,5 4,8 9,2" stroke="#4B9EFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+              A/B and multivariate testing programs
+            </div>
+            <div class="outcome-row">
+              <div class="outcome-icon"><svg viewBox="0 0 10 10" fill="none"><polyline points="1,5 4,8 9,2" stroke="#4B9EFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+              Heat mapping, session recording, and user research
+            </div>
+          </div>
+          <a href="#" class="svc-cta-link">See how we improve conversion →</a>
+        </div>
+        <div class="svc-right">
+          <div class="svc-panel">
+            <div class="panel-label">Typical client results</div>
+            <div class="panel-metrics">
+              <div class="metric-card">
+                <div class="metric-num">+38%</div>
+                <div class="metric-label">Average lift in add-to-cart rate</div>
+              </div>
+              <div class="metric-card">
+                <div class="metric-num">−41%</div>
+                <div class="metric-label">Cart abandonment reduction after checkout optimization</div>
+              </div>
+              <div class="metric-card">
+                <div class="metric-num">2.2×</div>
+                <div class="metric-label">Revenue per session improvement</div>
+              </div>
+              <div class="metric-card">
+                <div class="metric-num">30 days</div>
+                <div class="metric-label">To first measurable conversion improvement</div>
+              </div>
+            </div>
+            <div class="panel-divider"></div>
+            <div class="panel-label">What's included</div>
+            <ul class="panel-checklist">
+              <li class="check-item"><div class="check-dot"><svg viewBox="0 0 8 8" fill="none"><polyline points="1,4 3,6.5 7,1.5" stroke="#4B9EFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>Full conversion funnel audit</li>
+              <li class="check-item"><div class="check-dot"><svg viewBox="0 0 8 8" fill="none"><polyline points="1,4 3,6.5 7,1.5" stroke="#4B9EFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>Heatmap and analytics deep dive</li>
+              <li class="check-item"><div class="check-dot"><svg viewBox="0 0 8 8" fill="none"><polyline points="1,4 3,6.5 7,1.5" stroke="#4B9EFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>Ongoing A/B testing roadmap</li>
+              <li class="check-item"><div class="check-dot"><svg viewBox="0 0 8 8" fill="none"><polyline points="1,4 3,6.5 7,1.5" stroke="#4B9EFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>Developer-ready design recommendations</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 05 EMAIL -->
+  <section class="svc-section" id="email">
+    <div class="wrap">
+      <div class="svc-layout">
+        <div class="svc-left">
+          <div class="svc-eyebrow">
+            <span class="svc-num">05</span>
+            <span class="svc-divider"></span>
+            <span class="svc-category">Email &amp; Retention Marketing</span>
+          </div>
+          <h2 class="svc-title">Parts buyers come back — if you give them a reason to</h2>
+          <p class="svc-desc">Auto parts buyers are repeat buyers. Brakes, filters, fluids, and accessories all have predictable replacement cycles. We build lifecycle email programs that stay ahead of those cycles and bring customers back before they go looking elsewhere.</p>
+          <div class="svc-outcomes">
+            <div class="outcome-row">
+              <div class="outcome-icon"><svg viewBox="0 0 10 10" fill="none"><polyline points="1,5 4,8 9,2" stroke="#4B9EFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+              Post-purchase and replenishment automation flows
+            </div>
+            <div class="outcome-row">
+              <div class="outcome-icon"><svg viewBox="0 0 10 10" fill="none"><polyline points="1,5 4,8 9,2" stroke="#4B9EFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+              Abandoned cart and browse abandonment recovery
+            </div>
+            <div class="outcome-row">
+              <div class="outcome-icon"><svg viewBox="0 0 10 10" fill="none"><polyline points="1,5 4,8 9,2" stroke="#4B9EFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+              Vehicle-based segmentation and personalization
+            </div>
+            <div class="outcome-row">
+              <div class="outcome-icon"><svg viewBox="0 0 10 10" fill="none"><polyline points="1,5 4,8 9,2" stroke="#4B9EFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+              Promotional and seasonal campaign management
+            </div>
+            <div class="outcome-row">
+              <div class="outcome-icon"><svg viewBox="0 0 10 10" fill="none"><polyline points="1,5 4,8 9,2" stroke="#4B9EFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+              Win-back campaigns for lapsed customers
+            </div>
+          </div>
+          <a href="#" class="svc-cta-link">See our retention approach →</a>
+        </div>
+        <div class="svc-right">
+          <div class="svc-panel dark">
+            <div class="panel-label">Typical client results</div>
+            <div class="panel-metrics">
+              <div class="metric-card">
+                <div class="metric-num">22%</div>
+                <div class="metric-label">Of total revenue attributed to email within 6 months</div>
+              </div>
+              <div class="metric-card">
+                <div class="metric-num">+55%</div>
+                <div class="metric-label">Repeat purchase rate improvement</div>
+              </div>
+              <div class="metric-card">
+                <div class="metric-num">4.8×</div>
+                <div class="metric-label">Average email marketing ROI</div>
+              </div>
+              <div class="metric-card">
+                <div class="metric-num">$0.42</div>
+                <div class="metric-label">Revenue per email sent (client average)</div>
+              </div>
+            </div>
+            <div class="panel-divider"></div>
+            <div class="panel-label">What's included</div>
+            <ul class="panel-checklist">
+              <li class="check-item"><div class="check-dot"><svg viewBox="0 0 8 8" fill="none"><polyline points="1,4 3,6.5 7,1.5" stroke="#4B9EFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>ESP setup or migration (Klaviyo, Salesforce, etc.)</li>
+              <li class="check-item"><div class="check-dot"><svg viewBox="0 0 8 8" fill="none"><polyline points="1,4 3,6.5 7,1.5" stroke="#4B9EFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>Flow and campaign strategy and design</li>
+              <li class="check-item"><div class="check-dot"><svg viewBox="0 0 8 8" fill="none"><polyline points="1,4 3,6.5 7,1.5" stroke="#4B9EFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>List segmentation and hygiene</li>
+              <li class="check-item"><div class="check-dot"><svg viewBox="0 0 8 8" fill="none"><polyline points="1,4 3,6.5 7,1.5" stroke="#4B9EFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>Monthly send calendar and performance reporting</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 06 DATA -->
+  <section class="svc-section" id="data">
+    <div class="wrap">
+      <div class="svc-layout reverse">
+        <div class="svc-left">
+          <div class="svc-eyebrow">
+            <span class="svc-num">06</span>
+            <span class="svc-divider"></span>
+            <span class="svc-category">Catalog &amp; Data Optimization</span>
+          </div>
+          <h2 class="svc-title">Bad data kills sales. Clean data compounds them.</h2>
+          <p class="svc-desc">ACES and PIES are the foundation everything else is built on. Incorrect fitment data, missing attributes, and poor descriptions suppress your listings across every channel. We clean, structure, and enrich your catalog so every part is findable, accurate, and compelling.</p>
+          <div class="svc-outcomes">
+            <div class="outcome-row">
+              <div class="outcome-icon"><svg viewBox="0 0 10 10" fill="none"><polyline points="1,5 4,8 9,2" stroke="#4B9EFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+              ACES fitment data audit, cleanup, and enrichment
+            </div>
+            <div class="outcome-row">
+              <div class="outcome-icon"><svg viewBox="0 0 10 10" fill="none"><polyline points="1,5 4,8 9,2" stroke="#4B9EFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+              PIES product data standardization and attribute completion
+            </div>
+            <div class="outcome-row">
+              <div class="outcome-icon"><svg viewBox="0 0 10 10" fill="none"><polyline points="1,5 4,8 9,2" stroke="#4B9EFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+              Marketplace feed optimization (Amazon, eBay, Google Shopping)
+            </div>
+            <div class="outcome-row">
+              <div class="outcome-icon"><svg viewBox="0 0 10 10" fill="none"><polyline points="1,5 4,8 9,2" stroke="#4B9EFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+              Product title, description, and bullet point optimization
+            </div>
+            <div class="outcome-row">
+              <div class="outcome-icon"><svg viewBox="0 0 10 10" fill="none"><polyline points="1,5 4,8 9,2" stroke="#4B9EFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+              Ongoing catalog maintenance and new SKU onboarding
+            </div>
+          </div>
+          <a href="#" class="svc-cta-link">Start with a catalog audit →</a>
+        </div>
+        <div class="svc-right">
+          <div class="svc-panel">
+            <div class="panel-label">Typical client results</div>
+            <div class="panel-metrics">
+              <div class="metric-card">
+                <div class="metric-num">+44%</div>
+                <div class="metric-label">Increase in catalog discoverability post-cleanup</div>
+              </div>
+              <div class="metric-card">
+                <div class="metric-num">−31%</div>
+                <div class="metric-label">Reduction in fitment-related returns</div>
+              </div>
+              <div class="metric-card">
+                <div class="metric-num">100K+</div>
+                <div class="metric-label">SKUs optimized across client base</div>
+              </div>
+              <div class="metric-card">
+                <div class="metric-num">3 feeds</div>
+                <div class="metric-label">Amazon, eBay, and Google Shopping — in sync</div>
+              </div>
+            </div>
+            <div class="panel-divider"></div>
+            <div class="panel-label">What's included</div>
+            <ul class="panel-checklist">
+              <li class="check-item"><div class="check-dot"><svg viewBox="0 0 8 8" fill="none"><polyline points="1,4 3,6.5 7,1.5" stroke="#4B9EFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>Full ACES/PIES data audit and gap report</li>
+              <li class="check-item"><div class="check-dot"><svg viewBox="0 0 8 8" fill="none"><polyline points="1,4 3,6.5 7,1.5" stroke="#4B9EFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>Bulk data remediation and enrichment</li>
+              <li class="check-item"><div class="check-dot"><svg viewBox="0 0 8 8" fill="none"><polyline points="1,4 3,6.5 7,1.5" stroke="#4B9EFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>Channel feed mapping and submission</li>
+              <li class="check-item"><div class="check-dot"><svg viewBox="0 0 8 8" fill="none"><polyline points="1,4 3,6.5 7,1.5" stroke="#4B9EFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>Ongoing maintenance and new SKU workflow</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BAND -->
+  <div class="wrap">
+    <div class="cta-band">
+      <h2>Not sure where to start? <span>Let's build your growth plan together.</span></h2>
+      <div class="cta-band-btns">
+        <button class="btn-blue">Talk to a parts growth expert →</button>
+        <button class="btn-ghost">See client results</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="wrap">
+      <div class="footer-inner">
+        <a href="revcommerce.html" class="logo">
+          <div class="logo-mark"><span>RPM</span></div>
+          <span class="logo-name">Rev<em>Commerce</em></span>
+        </a>
+        <div class="footer-links">
+          <a href="#">Services</a>
+          <a href="#">Solutions</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+        </div>
+        <span class="footer-copy">© 2026 RevCommerce. All rights reserved.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function scrollTo(id) {
+      document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+      document.querySelectorAll('.snav-item').forEach(b => b.classList.remove('active'));
+      event.target.classList.add('active');
+    }
+
+    // Highlight active nav pill on scroll
+    const sections = ['marketplace','sem','seo','cro','email','data'];
+    const pills = document.querySelectorAll('.snav-item');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const idx = sections.indexOf(entry.target.id);
+          if (idx > -1) {
+            pills.forEach(p => p.classList.remove('active'));
+            pills[idx].classList.add('active');
+          }
+        }
+      });
+    }, { rootMargin: '-40% 0px -50% 0px' });
+    sections.forEach(id => {
+      const el = document.getElementById(id);
+      if (el) observer.observe(el);
+    });
+  </script>
+</body>
+</html>

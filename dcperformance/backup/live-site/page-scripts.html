@@ -1,0 +1,498 @@
+<script>
+$(document).ready(function(){
+    //Slider
+    $('#hero').owlCarousel({
+        items:1,
+        loop:true,
+        margin:0,
+        dots: true,
+        nav: false,
+        autoplay:7000,
+        autoplayTimeout:6000,
+        smartSpeed: 1500,
+        autoplayHoverPause:false,
+    });
+    
+});
+</script>
+
+<script type="text/javascript"> 
+    
+    /* Link override for direct-connection-1200 product page */
+    document.addEventListener('DOMContentLoaded', function() {
+        if (window.location.pathname === '/p-direct-connection-1200-426-supercharged-hemi-crate-engine-dc1200') {
+            const contactLink = document.querySelector('.cannot-purchase .contact-link');
+
+            if (contactLink) {
+                contactLink.href = "https://engine.dsrperformance.com/dsr-crate-engine-consultation";
+            }
+        }
+    });
+    
+
+    
+    
+    /* production only - anchor in crate page */
+    document.addEventListener("DOMContentLoaded", function() {
+        if (window.location.pathname.includes('/crate-engine')) {
+            var targetDiv = document.querySelector(".product-image-col.col-md-2 a[href='https://www.dcperformance.com/p-hurricrate-cat-3-twin-turbo-crate-engine-68643793aa']");
+
+            if (targetDiv && targetDiv.href === 'https://www.dcperformance.com/p-hurricrate-cat-3-twin-turbo-crate-engine-68643793aa') {
+                var anchor = document.createElement("a");
+                anchor.name = "hurricrate";
+                targetDiv.parentNode.insertBefore(anchor, targetDiv.parentNode.firstChild);
+            }
+        }
+    });
+    
+    /* menu toggle */
+    jQuery(function($) {
+        
+        $('#themeFeaturedProdList').owlCarousel({
+            items:1,
+            loop:true,
+            dots: false,
+            margin: 10,
+            nav: true,
+            navText: ["<span class='theme_arrow theme_arrow_left'><svg xmlns='http://www.w3.org/2000/svg' height='1em' viewBox='0 0 320 512'><path d='M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z'/>","<span class='theme_arrow theme_arrow_right'><svg xmlns='http://www.w3.org/2000/svg' height='1em' viewBox='0 0 320 512'><path d='M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z'/>"],
+            autoplay: false,
+            center:true,
+            autoplayTimeout:6000,
+            smartSpeed: 1500,
+            autoplayHoverPause:false,
+        });
+        
+        /*var altValue = $('.product-manufacturer-data img').attr('alt');
+
+        if (altValue === "Licensed") {
+            $('.product-manufacturer-data img').attr('src', 'https://cdn.revolutionparts.io/968fb7a4242e855a91e9c9141892b67d/design/licensed-parts/dsr-logo.jpg');
+        }*/
+    
+        $('.mobile-nav-item.has-child .mobile-dropdown-toggle').click(function(e) {
+            e.preventDefault();
+            var dropDown = $(this).closest('.mobile-nav-item.has-child').find('.mobile-mega-menu.menu-child');
+
+            $(this).closest('.mobile-nav.main').find('.mobile-mega-menu.menu-child').not(dropDown).slideUp();
+
+            if($(this).hasClass('active')) {
+                $(this).removeClass('active');
+            } else {
+                $(this).closest('.mobile-nav.main').find('.mobile-nav-item.has-child .mobile-dropdown-toggle.active').removeClass('active');
+                $(this).addClass('active');
+            }
+
+            dropDown.stop(false, true).slideToggle();
+
+        })
+
+        $('.mobile-menu-wrap.has-child .mobile-dropdown-toggle-child').click(function(e) {
+            e.preventDefault();
+            var dropDown = $(this).closest('.mobile-menu-wrap.has-child').find('.menu-wrap');
+
+            $(this).closest('.mobile-nav.main').find('.menu-wrap').not(dropDown).slideUp();
+
+            if($(this).hasClass('active')) {
+                $(this).removeClass('active');
+            } else {
+                $(this).closest('.mobile-nav.main').find('.mobile-menu-wrap.has-child .mobile-dropdown-toggle-child.active').removeClass('active');
+                $(this).addClass('active');
+            }
+
+            dropDown.stop(false, true).slideToggle();
+
+        })
+        
+    })
+    
+   	/* Search Toggle */
+    $('.search-btn-desktop').click(function(e){
+        e.preventDefault();
+        $('#search-bar').slideToggle();
+        $('#main_search_1').focus();
+    });
+    $('.search-btn-mobile').click(function(e){
+        e.preventDefault();
+        $('#search-bar-mobile').slideToggle();
+        $('#search-bar-mobile input').focus();
+    });
+    /* mobile Toggle */
+    $('#mobile-toggle').click(function(e){
+		e.preventDefault();
+        $('#main-nav .nav-link').toggle();
+        $('#main-nav').toggleClass('mobile-visible');
+    });
+    $('#mobile-toggle-tablet').click(function(e){
+		e.preventDefault();
+        $('#main-nav .nav-link').toggle();
+        $('#main-nav').toggleClass('mobile-visible');
+    });
+    $('#mobile-close').click(function(e){
+		e.preventDefault();
+        $('#main-nav .nav-link').toggle();
+        $('#main-nav').toggleClass('mobile-visible');
+    });
+    
+    $('#main-nav.mobile-visible .has-child a').click(function(e) {
+		e.preventDefault();
+	}); 
+
+    /* Product page logo display */
+    const productLogo = document.querySelector('.product-details-module .part-manufacturer img');
+    if (productLogo) {
+        setTimeout(() => {
+            productLogo.style.opacity = 1;
+        }, 200);
+    };
+
+/* Catalog button/dropdown in header */
+const catalogBtn = document.getElementById('catalog-button');
+const catalogBtnLinks = document.getElementById('catalog-button_links');
+catalogBtn.addEventListener('click', () => {
+    console.log('clicked')
+    catalogBtn.classList.toggle('open');
+});
+
+document.addEventListener('click', (e) => {
+    const currentCatalogBtn = document.getElementById('catalog-button');
+    if(currentCatalogBtn.classList.contains('open') && e.target.getAttribute('id') != 'catalog-button' && e.target.getAttribute('id') != 'catalog-button_toggle'){
+        catalogBtn.classList.remove('open');
+    };
+});
+
+    /* Add warranty tab on product page */
+    window.onload = (event) => {
+        const tabNav = document.querySelector('#page-product .tab-nav-wrap');
+        
+        if (tabNav) {      
+            const warrantyTab = tabNav.querySelector('.product-warranty-button');
+            if (warrantyTab) {
+                const warrantyTabLink = warrantyTab.querySelector('a');
+                warrantyTab.style.display = 'inline-block';
+                if (warrantyTabLink) {
+					warrantyTabLink.innerHTML = 'WARRANTY DETAILS';	
+                }
+            }
+            
+            /* Change Disclaimer Title Text */
+            const disclaimer = document.querySelector('.disclaimer-text .list-label');
+            if (disclaimer) {
+                disclaimer.innerHTML = 'Disclosure:';
+            }
+        }
+       	
+        /* Update product page > fitment tab > engine & transmission */
+        const productFitmentModule = document.querySelector('.product-fitment-module');
+		if (productFitmentModule) {
+        	const engineRowHeader = productFitmentModule.querySelector('.fitment-engine');
+            engineRowHeader.innerHTML = "Engine"
+        }
+	};
+
+    /* Insert message into dealer select modal */
+    const selectBody = document.querySelector('.dealer-selection-modal .dealer-selection .body-heading');
+    const message = document.createElement('div');
+    const messageHeader = document.createElement('div')
+    const messageBody = document.createElement('p')
+    
+    message.classList.add('dealer-select-message');
+    messageHeader.innerHTML = 'A New Performance Experience';
+    messageBody.innerHTML = 'Dodge Power Brokers – Certified performance dealers factory trained to handle all of your performance sales, service and Direct Connection factory-tuned performance parts needs.';  
+    message.appendChild(messageHeader);
+    message.appendChild(messageBody);
+    selectBody.appendChild(message);
+
+    /* Add genuine logos to product page --> details tab */
+    const detailsList = document.querySelector('.product-details-module .field-list');
+    const genuine = document.createElement('li');
+    const listLabel = document.createElement('span');
+    const listValue = document.createElement('span');
+
+    genuine.classList.add('manufacturer');
+    listLabel.classList.add('list-label');
+    listLabel.innerHTML = "Genuine:";
+    listValue.classList.add('list-value');
+    
+    const productTitle = document.querySelector('#page-product .product-title');
+    let productStringInitial = '';
+    let productString = '';
+    
+    if (productTitle) {
+        productStringInitial = productTitle.innerHTML;
+    	productString = productStringInitial.toLowerCase();
+    }
+    
+	if (productString.includes("mopar")) {
+        const genuineMopar = document.createElement('img');
+        genuineMopar.classList.add('genuine-logo');
+        genuineMopar.setAttribute('alt', 'Small Mopar Logo Genuine Parts');
+        genuineMopar.setAttribute('src', 'https://cdn.revolutionparts.io/968fb7a4242e855a91e9c9141892b67d/design/genuine-mopar.png');
+		listValue.appendChild(genuineMopar);   
+    } else if (productString.includes("direct connection")) {
+        const genuineDc = document.createElement('img');
+        genuineDc.classList.add('genuine-logo');
+        genuineDc.setAttribute('alt', 'Small Direct Connection Logo Genuine Parts');
+        genuineDc.setAttribute('src', 'https://cdn.revolutionparts.io/968fb7a4242e855a91e9c9141892b67d/images/logo.png');
+        listValue.appendChild(genuineDc);
+    };
+    
+    genuine.appendChild(listLabel);
+    genuine.appendChild(listValue);
+    if (detailsList) {
+        detailsList.insertBefore(genuine, detailsList.firstChild);
+    }
+
+    /* MSRP/Sales Price/Dicsount global text update */
+window.addEventListener('load', function() {
+    var pageBody = document.querySelector('.main');
+    var pageId = pageBody.getAttribute('id');
+
+    switch(pageId) {
+        case "page-search":
+            updateSearchModule();
+            handleAka();
+            break;
+        case "page-dynamic-seo":
+            updateSearchModule();
+            updateReplaceLabel();
+            handleAka();
+            break;
+        case "page-product":
+            updateProductModule();
+            updateReplaceLabel();
+            break;
+        case "page-catalog":
+            updateSearchModule();
+            break;
+    }
+    
+    updateCartModule();
+});
+
+function updateSearchModule() {
+    const searchListingModule = document.querySelector('.search-listing-module');
+    const catalogProductsList = searchListingModule.querySelectorAll('.catalog-product')
+    
+    for (i = 0; i < catalogProductsList.length; i++) {
+        var product = catalogProductsList[i]
+        var MSRP = product.querySelector('.list-price-label')
+        MSRP.innerHTML = "MSRP<sup>*</sup>"
+    }
+
+    const paginator = document.querySelector('.paginator');
+    if (paginator) {
+        paginator.addEventListener('click', () => {
+            setTimeout(function() {
+                updateSearchModule()
+            }, 5000)
+        });
+    }
+};
+
+function updateProductModule() {
+    const productPurchaseModule = document.querySelector('.product-purchase-module');
+    const listPriceLabel = productPurchaseModule.querySelector('.list-price .list-label');
+    const youSaveLabel = productPurchaseModule.querySelector('.you-save .list-label');
+    const salePriceLabel = productPurchaseModule.querySelector('.sale-price .list-label');
+    const listPriceOnly = productPurchaseModule.querySelector('.list-price-only .list-price-label');
+
+    productPurchaseModule.style.opacity = 1;
+
+    if (listPriceLabel) {
+        listPriceLabel.innerHTML = 'MSRP<sup>*</sup>:'
+    }
+
+    if (youSaveLabel) {
+        youSaveLabel.innerText = "Dealer Discount:"
+    }
+
+    if (salePriceLabel) {
+        salePriceLabel.innerText = "Price:"
+    }
+
+    if (listPriceOnly) {
+        listPriceOnly.innerHTML = 'MSRP<sup>*</sup>:'
+    }
+};
+
+function updateCartModule() {
+    const addToCartModule = document.getElementById('rp_global_add_to_cart');
+    const observerConfig = { childList: true };
+    const observer = new MutationObserver(cartCallback);
+
+    if (addToCartModule) {
+        observer.observe(addToCartModule, observerConfig);
+    }
+
+    function cartCallback(mutationsList, observer) {
+        const listPriceLabel = addToCartModule.querySelector('.list_price label');
+        const salePriceLabel = addToCartModule.querySelector('.sale_price label');
+        
+        for(const mutation of mutationsList) {
+            if (mutation.type === 'childList') {
+                listPriceLabel.innerHTML = 'MSRP<sup>*</sup>'
+                salePriceLabel.innerText = "Price"
+                break;
+            }
+        }
+
+        observer.disconnect();
+        observer.observe(addToCartModule, {childList: true, subtree: true});
+    };
+};
+
+function updateReplaceLabel() {
+    // Swaps instances of "Other Names" for "Replaces"
+    const productAKA = document.querySelector('.also_known_as .list-label');
+    const  catalogAkaList= document.querySelectorAll('.catalog-also-known-as strong');
+
+    if (productAKA) {
+        productAKA.innerText = "Replaces:"
+        const akaValueElm = document.querySelector('.also_known_as .list-value');
+        if (akaValueElm) {
+            var akaValue = akaValueElm.innerHTML;
+            akaValue = akaValue.replace(", tuner", "");
+            akaValue = akaValue.replace("tuner, ", "");
+            akaValue = akaValue.replace("tuner", "");
+            akaValue = akaValue.replace(", pulley", "");
+            akaValue = akaValue.replace("pulley, ", "");
+            akaValue = akaValue.replace("pulley", "");
+            akaValueElm.innerHTML = akaValue;
+            if (akaValue.trim().length === 0) {
+                const productAKAParent = document.querySelector('.also_known_as');
+                productAKAParent.hidden = true;
+            }
+        }
+    }
+    
+    if (catalogAkaList) {
+        for (let i = 0; i < catalogAkaList.length; i++) {
+            var catalogItem = catalogAkaList[i];
+    
+            if (catalogItem.innerHTML === "Other Names:") {
+                catalogItem.innerHTML = "Replaces:"
+            }
+        }
+    }
+}
+    
+function handleAka()
+{
+    const akaElements = document.querySelectorAll('.catalog-also-known-as');
+    if (akaElements) {
+        for (let i = 0; i < akaElements.length; i++) {
+            var akaElm = akaElements[i];
+            var nameElm = akaElm.querySelector('strong');
+            if (nameElm) {
+                if (nameElm.innerHTML === "Other Names:" || nameElm.innerHTML === "Replaces:") {
+                    var akaValueElem = akaElm.querySelector('.info-row-content');
+                    if (akaValueElem) {
+                        var akaValue = akaValueElem.innerHTML;
+                        var buttonText = akaValue.match(/<button.*button>/);
+                        akaValue = akaValue.replace(/<button.*button>/, '');
+                        akaValue = akaValue.replace(/\s+/g, " ");
+                        akaValue = akaValue.trim();
+                        akaValue = akaValue.replace(", tuner", "");
+                        akaValue = akaValue.replace("tuner, ", "");
+                        akaValue = akaValue.replace("tuner", "");
+                        akaValue = akaValue.replace(", pulley", "");
+                        akaValue = akaValue.replace("pulley, ", "");
+                        akaValue = akaValue.replace("pulley", "");
+                        if (akaValue.trim().length > 0) {
+                            akaValueElem.innerHTML = akaValue + ' ' + buttonText;
+                            var buttonElm = akaValueElem.querySelector('button');
+                            if (buttonElm) {
+                                buttonElm.setAttribute('data-full-info', akaValue);
+                            }
+                        } else {
+                            akaElm.hidden = true;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+	const revR = document.querySelector('.powered-by img');
+    revR.setAttribute('height', '16px');
+    revR.setAttribute('width', '16px')
+                      
+</script>
+
+<script type="module" src="https://cdn.jsdelivr.net/npm/@justinribeiro/lite-youtube@1.3.1/lite-youtube.js"></script>
+
+<!-- Hotjar Tracking Code for https://dcperformance.com -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:2868094,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+<script>
+    <!-- Hide Warranty and Emissions on licensed products -->
+const specialLabels = document.querySelectorAll('.special-label-text');
+function deleteWarrantySection(){
+    for (var i = 0; i < specialLabels.length; i++) {
+        var text = specialLabels[i].innerText.toLowerCase();
+        if (text != undefined && text === "licensed part") {
+            const warranties = document.querySelectorAll('.product-details-module .product-warranty');
+            warranties.forEach(warranty => {
+                warranty.remove();
+            })
+        }
+    }
+}
+deleteWarrantySection()
+</script>
+
+<script>
+// List of strings to check for in the URL
+var partNumbers = [
+    '77072581ab',
+    '77073001aa',
+    '77072605aa',
+    '77072579ad',
+    '77072583ab',
+    '77072608aa',
+    '77072611aa',
+    '77072609aa'
+];
+
+// Check if the current URL includes any of the specified strings
+var urlString = window.location.href;
+var shouldAddDisclaimer = partNumbers.some(function(partNumber) {
+    return urlString.includes(partNumber);
+});
+
+// If the current URL includes one of the specified strings, add the li
+if (shouldAddDisclaimer) {
+    // Create new li element with your content
+    var disclaimer = document.createElement('li');
+    disclaimer.innerHTML = '<span class="list-label">Disclaimer:</span><span class="list-value">Direct Connection customers are responsible for ensuring that their use of their vehicle equipped with this part complies with applicable federal, state/provincial, and local laws, regulations, and ordinances.</span>';
+
+    // Find the ul with the class 'field-list' and add the new li to the end
+    var ulList = document.getElementsByClassName('field-list');
+    for (var i = 0; i < ulList.length; i++) {
+        //ulList[i].appendChild(disclaimer.cloneNode(true));
+    }
+}
+</script>
+
+<script>
+  // Vertically centers the product images on search pages
+  // Wait for the document to be fully loaded
+document.addEventListener("DOMContentLoaded", function() {
+  // Select elements that match the given CSS selector
+  const elements = document.querySelectorAll('.search-listing-module .catalog-product .product-image-col > a');
+
+  // Loop through each element and set its style
+  elements.forEach((element) => {
+    // Use setProperty with 'important' to override !important in external CSS
+    element.style.setProperty("display", "flex", "important");
+  });
+});
+</script>

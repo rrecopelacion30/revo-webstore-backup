@@ -1,0 +1,702 @@
+{
+  "pageId": "header",
+  "pageName": "Header",
+  "pageType": null,
+  "layoutEnabled": true,
+  "moduleCategories": [
+    "header",
+    "images",
+    "text",
+    "search",
+    "categories_products",
+    "forms",
+    "navigation",
+    "footer"
+  ],
+  "VFSPath": "layouts/header.json",
+  "requiredModules": [],
+  "scripts": null,
+  "sections": [
+    {
+      "sectionId": "section_21",
+      "htmlId": "",
+      "htmlClasses": "themeTopNavigationSection",
+      "contentWidth": "wide",
+      "backgroundColor": "#000000",
+      "backgroundImage": "",
+      "textColor": "dark",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_22",
+          "rowLayout": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "columns": [
+            {
+              "columnId": "column_23",
+              "columnWidth": 12,
+              "htmlId": null,
+              "htmlClasses": null,
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_24",
+                  "moduleType": "links_list",
+                  "title": "Top Navigation Menu",
+                  "options": {
+                    "links": {
+                      "name": "Links",
+                      "type": "object",
+                      "default_value": [],
+                      "value": [
+                        {
+                          "linkId": "link_34",
+                          "text": "Mopar eStore",
+                          "url": "https://store.mopar.com/",
+                          "target": "_blank",
+                          "icon": "",
+                          "type": "direct"
+                        },
+                        {
+                          "linkId": "link_35",
+                          "text": "Direct Connection",
+                          "url": "https://www.dcperformance.com/",
+                          "target": "",
+                          "icon": "",
+                          "type": "direct"
+                        }
+                      ]
+                    },
+                    "links_image": {
+                      "name": "List Image",
+                      "type": "image_upload",
+                      "default_value": null,
+                      "value": ""
+                    },
+                    "links_title": {
+                      "name": "List Title",
+                      "type": "string",
+                      "default_value": null,
+                      "value": ""
+                    },
+                    "links_title_url": {
+                      "name": "List Title Link",
+                      "type": "string",
+                      "default_value": null,
+                      "value": ""
+                    },
+                    "links_stock": {
+                      "name": "List Style",
+                      "type": "select",
+                      "default_value": "none",
+                      "value": "none",
+                      "possible_values": [
+                        {
+                          "value": "none",
+                          "label": "None"
+                        },
+                        {
+                          "value": "mobile_menu",
+                          "label": "Mobile Menu"
+                        },
+                        {
+                          "value": "policies",
+                          "label": "Policies"
+                        }
+                      ]
+                    },
+                    "header_tag": {
+                      "name": "Header Tag",
+                      "type": "select",
+                      "default_value": "strong",
+                      "value": "strong",
+                      "possible_values": [
+                        {
+                          "value": "strong",
+                          "label": "STRONG"
+                        },
+                        {
+                          "value": "h3",
+                          "label": "H3"
+                        }
+                      ]
+                    },
+                    "links_display": {
+                      "name": "List Display",
+                      "type": "select",
+                      "default_value": "block",
+                      "value": "block",
+                      "possible_values": [
+                        {
+                          "value": "inline",
+                          "label": "Inline"
+                        },
+                        {
+                          "value": "block",
+                          "label": "Block"
+                        },
+                        {
+                          "value": "dropdown",
+                          "label": "Drop Down"
+                        }
+                      ]
+                    },
+                    "list_style": {
+                      "name": "List Style",
+                      "type": "select",
+                      "default_value": "none",
+                      "value": "none",
+                      "possible_values": [
+                        {
+                          "value": "none",
+                          "label": "No Style"
+                        },
+                        {
+                          "value": "footer",
+                          "label": "Footer"
+                        },
+                        {
+                          "value": "header",
+                          "label": "Header"
+                        },
+                        {
+                          "value": "navigation",
+                          "label": "Navigation Bar"
+                        },
+                        {
+                          "value": "menu",
+                          "label": "Menu Bar"
+                        }
+                      ]
+                    },
+                    "footer_link": {
+                      "name": "Footer Link",
+                      "type": "string",
+                      "default_value": null,
+                      "value": ""
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": true,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_3",
+      "htmlId": "header-nav",
+      "htmlClasses": "header-nav",
+      "contentWidth": "wide",
+      "backgroundColor": "",
+      "backgroundImage": "https://rparts-sites.s3.amazonaws.com/6f87c75737bcc72b4674a498139b574d/design/dc-images.jpeg",
+      "textColor": "light",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_87",
+          "rowLayout": "6_6",
+          "htmlId": "",
+          "htmlClasses": "nav-width-control",
+          "columns": [
+            {
+              "columnId": "column_88",
+              "columnWidth": 6,
+              "htmlId": "",
+              "htmlClasses": "nav-left",
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_96",
+                  "moduleType": "contact_us",
+                  "title": "Contact Us",
+                  "options": {
+                    "contact_message": {
+                      "name": "Contact Message",
+                      "type": "string",
+                      "default_value": null,
+                      "value": ""
+                    },
+                    "layout": {
+                      "name": "Layout",
+                      "type": "select",
+                      "default_value": "inline",
+                      "value": "inline",
+                      "possible_values": [
+                        {
+                          "value": "inline",
+                          "label": "Inline"
+                        },
+                        {
+                          "value": "block",
+                          "label": "Inline"
+                        }
+                      ]
+                    },
+                    "display_phone": {
+                      "name": "Display Phone",
+                      "type": "boolean",
+                      "default_value": true,
+                      "value": false
+                    },
+                    "display_email": {
+                      "name": "Display Contact",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": true
+                    },
+                    "email_link": {
+                      "name": "Contact Link",
+                      "type": "string",
+                      "default_value": "[Support Email]",
+                      "value": "Contact Us ",
+                      "caption": "'[Support Email]' to display store email address"
+                    },
+                    "use_icons": {
+                      "name": "Use Icons",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": true
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "desktop-only"
+                },
+                {
+                  "moduleId": "module_13",
+                  "moduleType": "custom_html",
+                  "title": "Catalog Button / Dropdown",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<span id=\"catalog-button\">\n    <em class=\"fa fa-book\" aria-hidden=\"true\"></em>\n    <span class=\"catalog-header-item\" id=\"catalog-button_toggle\">\n        <a href=\"https://www.dodgegarage.com/direct-connection-catalog\" download=\"\" target=\"_blank\">Catalog</a>\n    </span>\n</span>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "desktop-only"
+                },
+                {
+                  "moduleId": "module_11",
+                  "moduleType": "dealer_selection_modal",
+                  "title": "Select Dealer",
+                  "options": {
+                    "layout": {
+                      "name": "Layout",
+                      "type": "select",
+                      "default_value": "inline",
+                      "value": "inline",
+                      "possible_values": [
+                        {
+                          "value": "inline",
+                          "label": "Inline"
+                        },
+                        {
+                          "value": "block",
+                          "label": "Block"
+                        }
+                      ]
+                    },
+                    "find_dealer_text": {
+                      "name": "Find Dealer Text",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "Select Dealer"
+                    },
+                    "custom_dealer_name": {
+                      "name": "Seller Name",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "Dodge Power Brokers"
+                    },
+                    "display_button_only": {
+                      "name": "Display Button Only",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false,
+                      "caption": "Set to true for possible second modal in page."
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "select-dealer-wrap",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            },
+            {
+              "columnId": "column_89",
+              "columnWidth": 6,
+              "htmlId": "",
+              "htmlClasses": "nav-right",
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_116",
+                  "moduleType": "account_login_message",
+                  "title": "Account Login Message",
+                  "options": {
+                    "use_simplified_layout": {
+                      "name": "Use Simplified Format",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": true
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "account-login",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_118",
+                  "moduleType": "car_selected",
+                  "title": "Current Car Selected",
+                  "options": {
+                    "not_selected_text": {
+                      "name": "No Vehicle Selected Text",
+                      "type": "string",
+                      "default_value": null,
+                      "value": "My Garage"
+                    },
+                    "use_svg_icons": {
+                      "name": "Use SVG Icons",
+                      "type": "select",
+                      "possible_values": [
+                        {
+                          "label": "Garage Icon",
+                          "value": "garage_icon"
+                        },
+                        {
+                          "label": "Car Icon",
+                          "value": "car_icon"
+                        }
+                      ],
+                      "default_value": "garage_icon",
+                      "value": "car_icon"
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "car-selected",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "section_6",
+      "htmlId": "main-nav",
+      "htmlClasses": "main-nav",
+      "contentWidth": "wide",
+      "backgroundColor": "#000000",
+      "backgroundImage": "",
+      "textColor": "light",
+      "display": "normal",
+      "rows": [
+        {
+          "rowId": "row_7",
+          "rowLayout": 12,
+          "htmlId": "",
+          "htmlClasses": "row-menu",
+          "columns": [
+            {
+              "columnId": "column_8",
+              "columnWidth": 12,
+              "htmlId": "",
+              "htmlClasses": "custom-nav",
+              "moduleArrangement": "block",
+              "textAlignment": "text-left",
+              "modules": [
+                {
+                  "moduleId": "module_5",
+                  "moduleType": "custom_html",
+                  "title": "Mobile Button - Mobile Size",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<button id=\"mobile-toggle\"><em class=\"fa fa-bars\"></em></button>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "mobile-toggle mobile-toggle-mobile",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_10",
+                  "moduleType": "store_logo",
+                  "title": "Store Logo - Desktop",
+                  "options": {
+                    "logo_dark_background": {
+                      "name": "Use Dark Background Logo",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    },
+                    "logo_height": {
+                      "name": "Logo Height (px)",
+                      "type": "string",
+                      "default_value": "",
+                      "value": "53"
+                    },
+                    "logo_width": {
+                      "name": "Logo Width (px)",
+                      "type": "string",
+                      "default_value": "",
+                      "value": "260"
+                    }
+                  },
+                  "htmlId": "store-logo",
+                  "htmlClasses": "store-logo",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "desktop-only"
+                },
+                {
+                  "moduleId": "module_14",
+                  "moduleType": "custom_html",
+                  "title": "Nav Mobile",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<div id=\"mobile-menu\">\n    <ul class=\"mobile-nav main\">\n        <li class=\"mobile-nav-item has-child\">\n            <a href=\"#\" class=\"mobile-dropdown-toggle\">Modern Performance <div class=\"fa fa-chevron-down\" role=\"presentation\"></div></a>\n            <div class=\"mobile-mega-menu menu-child\">\n                <ul class=\"mobile-mega-wrap\">\n                    <li class=\"mobile-nav-item mobile-menu-wrap\">\n                        <a href=\"/modern-performance/brakes\" class=\"mobile-dropdown-toggle-child\">Brake</a>\n                    </li>\n                    <li class=\"mobile-nav-item mobile-menu-wrap\">\n                        <a href=\"/modern-performance/drivetrain\" class=\"mobile-dropdown-toggle-child\">Drivetrain</a>\n                    </li>\n                    <li class=\"mobile-nav-item mobile-menu-wrap\">\n                        <a href=\"/modern-performance/engine-parts\" class=\"mobile-dropdown-toggle-child\">Engine Parts</a>\n                    </li>\n                    <li class=\"mobile-nav-item mobile-menu-wrap\">\n                        <a href=\"/modern-performance/exhaust\" class=\"mobile-dropdown-toggle-child\">Exhaust</a>\n                    </li>\n                    <li class=\"mobile-nav-item mobile-menu-wrap\">\n                        <a href=\"/modern-performance/exterior-accessories\" class=\"mobile-dropdown-toggle-child\">Exterior Accessories </a>\n                    </li>\n                    <li class=\"mobile-nav-item mobile-menu-wrap\">\n                        <a href=\"/modern-performance/intake-and-air\" class=\"mobile-dropdown-toggle-child\">Intake & Air</a>\n                    </li>\n                    <li class=\"mobile-nav-item mobile-menu-wrap\">\n                        <a href=\"/modern-performance/interior-accessories\" class=\"mobile-dropdown-toggle-child\">Interior Accessories </a>\n                    </li>\n                    <li class=\"mobile-nav-item mobile-menu-wrap\">\n                        <a href=\"/modern-performance/stage-kits\" class=\"mobile-dropdown-toggle-child\">Stage Kits</a>\n                    </li>\n                    <li class=\"mobile-nav-item mobile-menu-wrap\">\n                        <a href=\"/modern-performance/suspension\" class=\"mobile-dropdown-toggle-child\">Suspension</a>\n                    </li>\n                    <li class=\"mobile-nav-item mobile-menu-wrap\">\n                        <a href=\"/modern-performance/wheels\" class=\"mobile-dropdown-toggle-child\">Wheels</a>\n                    </li>\n                    <li class=\"mobile-nav-item mobile-menu-wrap\">\n                        <a href=\"/modern-performance-licensed-parts\" class=\"mobile-dropdown-toggle-child\">Licensed Parts</a>\n                    </li>\n                </ul>\n            </div>\n        </li>\n        <li class=\"mobile-nav-item\"><a href=\"/crate-engine\">Crate Engines</a></li>\n        <li class=\"mobile-nav-item has-child\">\n            <a href=\"#\" class=\"mobile-dropdown-toggle\">Race <div class=\"fa fa-chevron-down\" role=\"presentation\"></div></a>\n            <div class=\"mobile-mega-menu menu-child\">\n                <ul class=\"mobile-mega-wrap\">\n                    <li class=\"mobile-nav-item mobile-menu-wrap\">\n                        <a href=\"https://www.dcperformance.com/race/funny-cars\" class=\"mobile-dropdown-toggle-child\">Funny Car Kits</a>\n                    </li>\n                    <li class=\"mobile-nav-item mobile-menu-wrap\">\n                        <a href=\"/race/drag-pak-kits\" class=\"mobile-dropdown-toggle-child\">Drag Pak Kits</a>\n                    </li>\n                    <li class=\"mobile-nav-item mobile-menu-wrap\">\n                        <a href=\"/drag-pak-licensed-parts\" class=\"mobile-dropdown-toggle-child\">Licensed Parts</a>\n                    </li>\n                    <li class=\"mobile-nav-item mobile-menu-wrap\">\n                        <a href=\"https://www.dcperformance.com/2026-dodge-charger-hustle-stuff-drag-pak-by-direct-connection\" class=\"mobile-dropdown-toggle-child\">Hustle Stuff Drag Pak</a>\n                    </li>\n                </ul>\n            </div>\n        </li>\n        <li class=\"mobile-nav-item has-child\">\n            <a href=\"#\" class=\"mobile-dropdown-toggle\">Vintage Muscle <div class=\"fa fa-chevron-down\" role=\"presentation\"></div></a>\n            <div class=\"mobile-mega-menu menu-child\">\n                <ul class=\"mobile-mega-wrap\">\n                    <li class=\"mobile-nav-item mobile-menu-wrap\">\n                        <a href=\"/vintage-muscle/air-and-fuel\" class=\"mobile-dropdown-toggle-child\">Air & Fuel</a>\n                    </li>\n                    <li class=\"mobile-nav-item mobile-menu-wrap\">\n                        <a href=\"/vintage-muscle/brakes\" class=\"mobile-dropdown-toggle-child\">Brakes</a>\n                    </li>\n                    <li class=\"mobile-nav-item mobile-menu-wrap\">\n                        <a href=\"/vintage-muscle/drivetrain\" class=\"mobile-dropdown-toggle-child\">Drivetrain</a>\n                    </li>\n                    <li class=\"mobile-nav-item mobile-menu-wrap\">\n                        <a href=\"/vintage-muscle/engine-parts\" class=\"mobile-dropdown-toggle-child\">Engine Parts</a>\n                    </li>\n                    <li class=\"mobile-nav-item mobile-menu-wrap\">\n                        <a href=\"/vintage-muscle/exterior\" class=\"mobile-dropdown-toggle-child\">Exterior</a>\n                    </li>\n                    <li class=\"mobile-nav-item mobile-menu-wrap\">\n                        <a href=\"/vintage-muscle-licensed-parts\" class=\"mobile-dropdown-toggle-child\">Licensed Parts</a>\n                    </li>\n                    <li class=\"mobile-nav-item mobile-menu-wrap\">\n                        <a href=\"/vintage-muscle/suspension\" class=\"mobile-dropdown-toggle-child\">Suspension</a>\n                    </li>\n                </ul>\n            </div>\n        </li>\n        <li class=\"mobile-nav-item\"><a href=\"https://www.life.dodge.com/\" target=\"_blank\">Merchandise <em class=\"fa fa-external-link\"></em></a></li>\n        <li class=\"mobile-nav-item\"><a href=\"https://www.dodgegarage.com/\" target=\"_blank\">Dodge Garage <em class=\"fa fa-external-link\"></em></a></li>\n        <li class=\"mobile-nav-item\"><a href=\"https://www.dodgegarage.com/direct-connection-catalog/\" target=\"_blank\" download=\"\">Download Catalog <em class=\"fa fa-external-link\"></em></a></li>\n        <li class=\"mobile-nav-item\"><a href=\"contact-us\">Contact Us</a></li>\n    </ul>\n</div>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "nav-link ",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "mobile-only"
+                },
+                {
+                  "moduleId": "module_21",
+                  "moduleType": "custom_html",
+                  "title": "Nav",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<ul>\n    \n\t<li class=\"has-child primary-nav-item\">\n\t\t<a href=\"/modern-performance\">Modern Performance</a>\n\t\t<ul>\n\t\t\t<li class=\"secondary-nav-item\"><a href=\"/modern-performance/brakes\">Brakes</a></li>\n\t\t\t<li class=\"secondary-nav-item\"><a href=\"/modern-performance/drivetrain\">Drivetrain</a></li>\n\t\t\t<li class=\"secondary-nav-item\"><a href=\"/modern-performance/engine-parts\">Engine Parts</a></li>\n\t\t\t<li class=\"secondary-nav-item\"><a href=\"/modern-performance/exhaust\">Exhaust</a></li>\n            <li class=\"secondary-nav-item\"><a href=\"/modern-performance/exterior-accessories\">Exterior Accessories</a></li>\n\t\t\t<li class=\"secondary-nav-item\"><a href=\"/modern-performance/intake-and-air\">Intake & Air</a></li>\n\t\t\t<li class=\"secondary-nav-item\"><a href=\"/modern-performance/interior-accessories\">Interior Accessories</a></li>\n\t\t\t<li class=\"secondary-nav-item\"><a href=\"/modern-performance/stage-kits\">Stage Kits</a></li>\n            <li class=\"secondary-nav-item\"><a href=\"/modern-performance/suspension\">Suspension</a></li>\n\t\t\t<li class=\"secondary-nav-item\"><a href=\"/modern-performance/wheels\">Wheels</a></li>\n            <li class=\"secondary-nav-item\"><a href=\"/modern-performance-licensed-parts\">Licensed Parts</a></li>\n\t\t</ul>\n\t</li>\n\t<li class=\"primary-nav-item\">\n\t\t<a href=\"/crate-engine\">Crate Engine</a>\n\t</li>\n    <li class=\"has-child primary-nav-item\">\n        <a href=\"/drag-pak\">Race</a>\n    \t<ul>\n            <li class=\"secondary-nav-item\"><a href=\"/race/funny-cars\">Funny Car Kits</a></li>\n\t\t\t<li class=\"secondary-nav-item\"><a href=\"/race/drag-pak-kits\">Drag Pak Kits</a></li>\n\t\t\t<li class=\"secondary-nav-item\"><a href=\"/drag-pak-licensed-parts\">Licensed Parts</a></li>\n            <li class=\"secondary-nav-item\"><a href=\"https://www.dcperformance.com/2026-dodge-charger-hustle-stuff-drag-pak-by-direct-connection\">Hustle Stuff Drag Pak</a></li>\n\t\t</ul>\n    </li>\n\t<li class=\"has-child primary-nav-item\">\n        <a href=\"/vintage-muscle\">Vintage Muscle</a>\n    \t<ul>\n\t\t\t<li class=\"secondary-nav-item\"><a href=\"/vintage-muscle/air-and-fuel\">Air & Fuel</a></li>\n\t\t\t<li class=\"secondary-nav-item\"><a href=\"/vintage-muscle/brakes\">Brakes</a></li>\n\t\t\t<li class=\"secondary-nav-item\"><a href=\"/vintage-muscle/drivetrain\">Drivetrain</a></li>\n\t\t\t<li class=\"secondary-nav-item\"><a href=\"/vintage-muscle/engine-parts\">Engine Parts</a></li>\n\t\t\t<li class=\"secondary-nav-item\"><a href=\"/vintage-muscle/exterior\">Exterior</a></li>\n\t\t\t<li class=\"secondary-nav-item\"><a href=\"/vintage-muscle/suspension\">Suspension</a></li>\n\t\t\t<li class=\"secondary-nav-item\"><a href=\"/vintage-muscle-licensed-parts\">Licensed Parts</a></li>\n\t\t</ul>\n    </li>\n\t<li class=\"external-link primary-nav-item\"><a target=\"_blank\" href=\"https://www.life.dodge.com/\">Merchandise</a></li>\n\t<li class=\"external-link primary-nav-item\"><a target=\"_blank\" href=\"https://www.dodgegarage.com/\">Dodge Garage</a></li>\n    <li class=\"external-link primary-nav-item mobile-only-nav-item\">\n        <a href=\"https://www.dodgegarage.com/direct-connection-catalog/\" target=\"_blank\" download=\"\">\n            <span id=\"catalog-button_toggle\">Download Catalog</span>\n        </a>\n    </li>\n    <li class=\"secondary-nav-item mobile-only-nav-item\"><a href=\"contact-us\">Contact Us</a></li>\n    <li class=\"search-item primary-nav-item\"><a href=\"#\" class=\"search-btn-mobile\"><span class=\"sr-only\">Search</span><em class=\"fa fa-search\"></em></a></li>\n    <li id=\"mobile-close\"><em class=\"fa fa-times\" aria-hidden=\"true\"></em> Close Menu</li>\n</ul>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "nav-link",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "desktop-only"
+                },
+                {
+                  "moduleId": "module_35",
+                  "moduleType": "custom_html",
+                  "title": "Mobile Button - Tablet Size",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<button id=\"mobile-toggle-tablet\"><em class=\"fa fa-bars\"></em></button>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "mobile-toggle mobile-toggle-tablet",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_15",
+                  "moduleType": "store_logo",
+                  "title": "Store Logo - Mobile",
+                  "options": {
+                    "logo_dark_background": {
+                      "name": "Use Dark Background Logo",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    },
+                    "logo_height": {
+                      "name": "Logo Height (px)",
+                      "type": "string",
+                      "default_value": "",
+                      "value": "40"
+                    },
+                    "logo_width": {
+                      "name": "Logo Width (px)",
+                      "type": "string",
+                      "default_value": "",
+                      "value": "196"
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "mobile-logo-wrap",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "mobile-only"
+                },
+                {
+                  "moduleId": "module_37",
+                  "moduleType": "search_bar",
+                  "title": "Search Bar",
+                  "options": {
+                    "placeholder": {
+                      "name": "Placeholder Text",
+                      "type": "string",
+                      "default_value": "Part Number(s), Keywords, or VIN",
+                      "value": "Part Number(s), Keywords, or VIN"
+                    }
+                  },
+                  "htmlId": "search-bar",
+                  "htmlClasses": "search-bar",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "desktop-only"
+                },
+                {
+                  "moduleId": "module_18",
+                  "moduleType": "custom_html",
+                  "title": "Mobile Search Button",
+                  "options": {
+                    "html_content": {
+                      "name": "Custom HTML Content",
+                      "type": "html_content",
+                      "default_value": "",
+                      "value": "<a href=\"#\" class=\"search-btn search-btn-mobile\"><span class=\"sr-only\">Search</span><em class=\"fa fa-search\"></em></a>"
+                    },
+                    "force_lazy": {
+                      "name": "Lazy Load Images",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": false
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "mobile-only"
+                },
+                {
+                  "moduleId": "module_38",
+                  "moduleType": "cart_button",
+                  "title": "Cart Button",
+                  "options": {
+                    "cart_label": {
+                      "name": "Cart Label",
+                      "type": "string",
+                      "default_value": "Cart",
+                      "value": ""
+                    },
+                    "use_svg_icons": {
+                      "name": "Use SVG Icons",
+                      "type": "boolean",
+                      "default_value": false,
+                      "value": true
+                    }
+                  },
+                  "htmlId": "",
+                  "htmlClasses": "cart-link",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                },
+                {
+                  "moduleId": "module_7",
+                  "moduleType": "search_bar",
+                  "title": "Search Bar",
+                  "options": {
+                    "placeholder": {
+                      "name": "Placeholder Text",
+                      "type": "string",
+                      "default_value": "Part Number(s), Keywords, or VIN",
+                      "value": "Part Number(s), Keywords, or VIN"
+                    }
+                  },
+                  "htmlId": "search-bar-mobile",
+                  "htmlClasses": "search-bar",
+                  "minColumnWidth": 0,
+                  "customAdmin": false,
+                  "modulePadding": "padding-0",
+                  "display": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,273 @@
+{
+  "sectionId": "section_268",
+  "htmlId": "themeDIYMaintenanceSection no-padding",
+  "htmlClasses": "themeDIYMaintenanceSection no-padding d-none",
+  "contentWidth": "wide",
+  "backgroundColor": "",
+  "backgroundImage": "",
+  "textColor": "dark",
+  "display": "normal",
+  "rows": [
+    {
+      "rowId": "row_269",
+      "rowLayout": 12,
+      "htmlId": null,
+      "htmlClasses": null,
+      "columns": [
+        {
+          "columnId": "column_271",
+          "columnWidth": 12,
+          "htmlId": "",
+          "htmlClasses": "themeMaintenancePartsUsed",
+          "moduleArrangement": "block",
+          "textAlignment": "text-left",
+          "modules": [
+            {
+              "moduleId": "module_276",
+              "moduleType": "custom_html",
+              "title": "Maintenance Video",
+              "options": {
+                "html_content": {
+                  "name": "Custom HTML Content",
+                  "type": "html_content",
+                  "default_value": "",
+                  "value": "<div class=\"themeDIYMaintenanceWrapper\">\n    <div class=\"themeDIYTitle\">\n        <h3>DIY Maintenance</h3>\n    </div>\n    <ul class=\"latest_catalog_list\">\n        <li class=\"latest_catalog_item\">\n            <a href=\"#\" data-toggle-target=\".tab_content_chrysler\">\n                All Projects\n            </a>\n        </li>\n        <li class=\"latest_catalog_item\">\n            <a href=\"#\" data-toggle-target=\".tab_content_dodge\">\n                Battery Replacement\n            </a>\n        </li>\n        <li class=\"latest_catalog_item\">\n            <a href=\"#\" data-toggle-target=\".tab_content_jeep\">\n                Oil Change\n            </a>\n        </li>\n        <li class=\"latest_catalog_item\">\n            <a href=\"#\" data-toggle-target=\".tab_content_ram\">\n                Wiper Blades\n            </a>\n        </li>\n    </ul>\n</div>"
+                },
+                "force_lazy": {
+                  "name": "Lazy Load Images",
+                  "type": "boolean",
+                  "default_value": false,
+                  "value": false
+                }
+              },
+              "htmlId": "",
+              "htmlClasses": "",
+              "minColumnWidth": 0,
+              "customAdmin": false,
+              "modulePadding": "padding-20",
+              "display": "normal"
+            },
+            {
+              "moduleId": "module_296",
+              "moduleType": "custom_html",
+              "title": "Chrysler",
+              "options": {
+                "html_content": {
+                  "name": "Custom HTML Content",
+                  "type": "html_content",
+                  "default_value": "",
+                  "value": "<div class=\"themeDIYMaintenanceWrapper\">\n    <div class=\"themeDIYMaintenanceList\">\n        <div class=\"themeDIYMaintenanceItem\">\n            <div class=\"themeDIYMaintenanceCard\">\n                <div class=\"themeDIYMaintenanceVideo\">\n                    <iframe width=\"100%\" height=\"200\" src=\"https://www.youtube.com/embed/VqzSsSUXfMs\" title=\"Stow-n-Go-Fold seats for more cargo space in 2017 Chrysler Pacifica\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen=\"\"></iframe>\n                </div>\n            </div>\n        </div>\n        <div class=\"themeDIYMaintenanceItem\">\n            <div class=\"themeDIYMaintenanceCard\">\n                <div class=\"themeDIYMaintenanceVideo\">\n                    <iframe width=\"100%\" height=\"200\" src=\"https://www.youtube.com/embed/VqzSsSUXfMs\" title=\"Stow-n-Go-Fold seats for more cargo space in 2017 Chrysler Pacifica\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen=\"\"></iframe>\n                </div>\n            </div>\n        </div>\n        <div class=\"themeDIYMaintenanceItem\">\n            <div class=\"themeDIYMaintenanceCard\">\n                <div class=\"themeDIYMaintenanceVideo\">\n                    <iframe width=\"100%\" height=\"200\" src=\"https://www.youtube.com/embed/VqzSsSUXfMs\" title=\"Stow-n-Go-Fold seats for more cargo space in 2017 Chrysler Pacifica\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen=\"\"></iframe>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>"
+                },
+                "force_lazy": {
+                  "name": "Lazy Load Images",
+                  "type": "boolean",
+                  "default_value": false,
+                  "value": false
+                }
+              },
+              "htmlId": "",
+              "htmlClasses": "tab_content tab_content_chrysler",
+              "minColumnWidth": 0,
+              "customAdmin": false,
+              "modulePadding": "padding-0",
+              "display": "normal"
+            },
+            {
+              "moduleId": "module_299",
+              "moduleType": "custom_html",
+              "title": "Dodge",
+              "options": {
+                "html_content": {
+                  "name": "Custom HTML Content",
+                  "type": "html_content",
+                  "default_value": "",
+                  "value": "<div class=\"themeDIYMaintenanceWrapper\">\n    <div class=\"themeDIYMaintenanceList\">\n        <div class=\"themeDIYMaintenanceItem\">\n            <div class=\"themeDIYMaintenanceCard\">\n                <div class=\"themeDIYMaintenanceVideo\">\n                    <iframe width=\"100%\" height=\"200\" src=\"https://www.youtube.com/embed/9F7JiArud-g\" title=\"2015 Dodge Grand Caravan | Jacking and Tire Changing\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen=\"\"></iframe>\n                </div>\n            </div>\n        </div>\n        <div class=\"themeDIYMaintenanceItem\">\n            <div class=\"themeDIYMaintenanceCard\">\n                <div class=\"themeDIYMaintenanceVideo\">\n                    <iframe width=\"100%\" height=\"200\" src=\"https://www.youtube.com/embed/9F7JiArud-g\" title=\"2015 Dodge Grand Caravan | Jacking and Tire Changing\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen=\"\"></iframe>\n                </div>\n            </div>\n        </div>\n        <div class=\"themeDIYMaintenanceItem\">\n            <div class=\"themeDIYMaintenanceCard\">\n                <div class=\"themeDIYMaintenanceVideo\">\n                    <iframe width=\"100%\" height=\"200\" src=\"https://www.youtube.com/embed/9F7JiArud-g\" title=\"2015 Dodge Grand Caravan | Jacking and Tire Changing\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen=\"\"></iframe>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>"
+                },
+                "force_lazy": {
+                  "name": "Lazy Load Images",
+                  "type": "boolean",
+                  "default_value": false,
+                  "value": false
+                }
+              },
+              "htmlId": "",
+              "htmlClasses": "tab_content tab_content_dodge",
+              "minColumnWidth": 0,
+              "customAdmin": false,
+              "modulePadding": "padding-0",
+              "display": "normal"
+            },
+            {
+              "moduleId": "module_302",
+              "moduleType": "custom_html",
+              "title": "Jeep",
+              "options": {
+                "html_content": {
+                  "name": "Custom HTML Content",
+                  "type": "html_content",
+                  "default_value": "",
+                  "value": "<div class=\"themeDIYMaintenanceWrapper\">\n    <div class=\"themeDIYMaintenanceList\">\n        <div class=\"themeDIYMaintenanceItem\">\n            <div class=\"themeDIYMaintenanceCard\">\n                <div class=\"themeDIYMaintenanceVideo\">\n                    <iframe width=\"100%\" height=\"200\" src=\"https://www.youtube.com/embed/BYUvxzbV6TM\" title=\"2013 Jeep Wrangler | Freedom Top Modular Hard Top Removal\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen=\"\"></iframe>\n                </div>\n            </div>\n        </div>\n        <div class=\"themeDIYMaintenanceItem\">\n            <div class=\"themeDIYMaintenanceCard\">\n                <div class=\"themeDIYMaintenanceVideo\">\n                    <iframe width=\"100%\" height=\"200\" src=\"https://www.youtube.com/embed/BYUvxzbV6TM\" title=\"2013 Jeep Wrangler | Freedom Top Modular Hard Top Removal\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen=\"\"></iframe>\n                </div>\n            </div>\n        </div>\n        <div class=\"themeDIYMaintenanceItem\">\n            <div class=\"themeDIYMaintenanceCard\">\n                <div class=\"themeDIYMaintenanceVideo\">\n                    <iframe width=\"100%\" height=\"200\" src=\"https://www.youtube.com/embed/BYUvxzbV6TM\" title=\"2013 Jeep Wrangler | Freedom Top Modular Hard Top Removal\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen=\"\"></iframe>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>"
+                },
+                "force_lazy": {
+                  "name": "Lazy Load Images",
+                  "type": "boolean",
+                  "default_value": false,
+                  "value": false
+                }
+              },
+              "htmlId": "",
+              "htmlClasses": "tab_content tab_content_jeep",
+              "minColumnWidth": 0,
+              "customAdmin": false,
+              "modulePadding": "padding-0",
+              "display": "normal"
+            },
+            {
+              "moduleId": "module_305",
+              "moduleType": "custom_html",
+              "title": "RAM",
+              "options": {
+                "html_content": {
+                  "name": "Custom HTML Content",
+                  "type": "html_content",
+                  "default_value": "",
+                  "value": "<div class=\"themeDIYMaintenanceWrapper\">\n    <div class=\"themeDIYMaintenanceList\">\n        <div class=\"themeDIYMaintenanceItem\">\n            <div class=\"themeDIYMaintenanceCard\">\n                <div class=\"themeDIYMaintenanceVideo\">\n                    <iframe width=\"100%\" height=\"200\" src=\"https://www.youtube.com/embed/uyHY_63PhkQ\" title=\"Better is Best | Mopar | Original Manufactured Parts\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen=\"\"></iframe>\n                </div>\n            </div>\n        </div>\n        <div class=\"themeDIYMaintenanceItem\">\n            <div class=\"themeDIYMaintenanceCard\">\n                <div class=\"themeDIYMaintenanceVideo\">\n                    <iframe width=\"100%\" height=\"200\" src=\"https://www.youtube.com/embed/uyHY_63PhkQ\" title=\"Better is Best | Mopar | Original Manufactured Parts\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen=\"\"></iframe>\n                </div>\n            </div>\n        </div>\n        <div class=\"themeDIYMaintenanceItem\">\n            <div class=\"themeDIYMaintenanceCard\">\n                <div class=\"themeDIYMaintenanceVideo\">\n                    <iframe width=\"100%\" height=\"200\" src=\"https://www.youtube.com/embed/uyHY_63PhkQ\" title=\"Better is Best | Mopar | Original Manufactured Parts\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen=\"\"></iframe>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>"
+                },
+                "force_lazy": {
+                  "name": "Lazy Load Images",
+                  "type": "boolean",
+                  "default_value": false,
+                  "value": false
+                }
+              },
+              "htmlId": "",
+              "htmlClasses": "tab_content tab_content_ram",
+              "minColumnWidth": 0,
+              "customAdmin": false,
+              "modulePadding": "padding-0",
+              "display": "normal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rowId": "row_272",
+      "rowLayout": 12,
+      "htmlId": "",
+      "htmlClasses": "pb-3",
+      "columns": [
+        {
+          "columnId": "column_273",
+          "columnWidth": 12,
+          "htmlId": null,
+          "htmlClasses": null,
+          "moduleArrangement": "block",
+          "textAlignment": "text-left",
+          "modules": [
+            {
+              "moduleId": "module_282",
+              "moduleType": "custom_html",
+              "title": "Chrysler Parts",
+              "options": {
+                "html_content": {
+                  "name": "Custom HTML Content",
+                  "type": "html_content",
+                  "default_value": "",
+                  "value": "<div class=\"themeDIYPartsUsedWrapper\">\n    <div class=\"themeDIYPartsUsedTitle\">\n        <h3>Projects</h3>\n    </div>\n    <div class=\"themeDIYPartsUsedList\">\n        <div class=\"themeDIYPartsUsedItem\">\n            <div class=\"themeDIYPartsUsedCard\">\n                <div class=\"themeDIYPartsUsedImg\">\n                    <img src=\"https://cdn.revolutionparts.io/21ebc25a592052689288153b3e3fb858/design/new-home/tab-category/interior/floor_mats_.webp\" alt=\"Parts Used\">\n                </div>\n                <div class=\"themeDIYPartsUsedContent\">\n                    <h3>Batter Kit</h3>\n                    <p>$150.00</p>\n                </div>\n                <div class=\"themeDIYPartsUsedButton\">\n                    <a href=\"#\">View Item</a>\n                </div>\n            </div>\n        </div>\n        <div class=\"themeDIYPartsUsedItem\">\n            <div class=\"themeDIYPartsUsedCard\">\n                <div class=\"themeDIYPartsUsedImg\">\n                    <img src=\"https://cdn.revolutionparts.io/21ebc25a592052689288153b3e3fb858/design/new-home/tab-category/interior/floor_mats_.webp\" alt=\"Parts Used\">\n                </div>\n                <div class=\"themeDIYPartsUsedContent\">\n                    <h3>Batter Kit</h3>\n                    <p>$150.00</p>\n                </div>\n                <div class=\"themeDIYPartsUsedButton\">\n                    <a href=\"#\">View Item</a>\n                </div>\n            </div>\n        </div>\n        <div class=\"themeDIYPartsUsedItem\">\n            <div class=\"themeDIYPartsUsedCard\">\n                <div class=\"themeDIYPartsUsedImg\">\n                    <img src=\"https://cdn.revolutionparts.io/21ebc25a592052689288153b3e3fb858/design/new-home/tab-category/interior/floor_mats_.webp\" alt=\"Parts Used\">\n                </div>\n                <div class=\"themeDIYPartsUsedContent\">\n                    <h3>Batter Kit</h3>\n                    <p>$150.00</p>\n                </div>\n                <div class=\"themeDIYPartsUsedButton\">\n                    <a href=\"#\">View Item</a>\n                </div>\n            </div>\n        </div>\n    </div>\n    <div class=\"themeDIYPartsUsedCartButton\">\n        <a href=\"#\">View Cart</a>\n    </div>\n</div>"
+                },
+                "force_lazy": {
+                  "name": "Lazy Load Images",
+                  "type": "boolean",
+                  "default_value": false,
+                  "value": false
+                }
+              },
+              "htmlId": "",
+              "htmlClasses": "tab_content tab_content_chrysler",
+              "minColumnWidth": 0,
+              "customAdmin": false,
+              "modulePadding": "padding-0",
+              "display": "normal"
+            },
+            {
+              "moduleId": "module_285",
+              "moduleType": "custom_html",
+              "title": "Dodge Parts",
+              "options": {
+                "html_content": {
+                  "name": "Custom HTML Content",
+                  "type": "html_content",
+                  "default_value": "",
+                  "value": "<div class=\"themeDIYPartsUsedWrapper\">\n    <div class=\"themeDIYPartsUsedTitle\">\n        <h3>Battery Replacement</h3>\n    </div>\n    <div class=\"themeDIYPartsUsedList\">\n        <div class=\"themeDIYPartsUsedItem\">\n            <div class=\"themeDIYPartsUsedCard\">\n                <div class=\"themeDIYPartsUsedImg\">\n                    <img src=\"https://cdn.revolutionparts.io/21ebc25a592052689288153b3e3fb858/design/new-home/tab-category/interior/floor_mats_.webp\" alt=\"Parts Used\">\n                </div>\n                <div class=\"themeDIYPartsUsedContent\">\n                    <h3>Batter Kit</h3>\n                    <p>$150.00</p>\n                </div>\n                <div class=\"themeDIYPartsUsedButton\">\n                    <a href=\"#\">View Item</a>\n                </div>\n            </div>\n        </div>\n        <div class=\"themeDIYPartsUsedItem\">\n            <div class=\"themeDIYPartsUsedCard\">\n                <div class=\"themeDIYPartsUsedImg\">\n                    <img src=\"https://cdn.revolutionparts.io/21ebc25a592052689288153b3e3fb858/design/new-home/tab-category/interior/floor_mats_.webp\" alt=\"Parts Used\">\n                </div>\n                <div class=\"themeDIYPartsUsedContent\">\n                    <h3>Batter Kit</h3>\n                    <p>$150.00</p>\n                </div>\n                <div class=\"themeDIYPartsUsedButton\">\n                    <a href=\"#\">View Item</a>\n                </div>\n            </div>\n        </div>\n        <div class=\"themeDIYPartsUsedItem\">\n            <div class=\"themeDIYPartsUsedCard\">\n                <div class=\"themeDIYPartsUsedImg\">\n                    <img src=\"https://cdn.revolutionparts.io/21ebc25a592052689288153b3e3fb858/design/new-home/tab-category/interior/floor_mats_.webp\" alt=\"Parts Used\">\n                </div>\n                <div class=\"themeDIYPartsUsedContent\">\n                    <h3>Batter Kit</h3>\n                    <p>$150.00</p>\n                </div>\n                <div class=\"themeDIYPartsUsedButton\">\n                    <a href=\"#\">View Item</a>\n                </div>\n            </div>\n        </div>\n    </div>\n    <div class=\"themeDIYPartsUsedCartButton\">\n        <a href=\"#\">View Cart</a>\n    </div>\n</div>"
+                },
+                "force_lazy": {
+                  "name": "Lazy Load Images",
+                  "type": "boolean",
+                  "default_value": false,
+                  "value": false
+                }
+              },
+              "htmlId": "",
+              "htmlClasses": "tab_content tab_content_dodge",
+              "minColumnWidth": 0,
+              "customAdmin": false,
+              "modulePadding": "padding-0",
+              "display": "normal"
+            },
+            {
+              "moduleId": "module_288",
+              "moduleType": "custom_html",
+              "title": "Jeep Parts",
+              "options": {
+                "html_content": {
+                  "name": "Custom HTML Content",
+                  "type": "html_content",
+                  "default_value": "",
+                  "value": "<div class=\"themeDIYPartsUsedWrapper\">\n    <div class=\"themeDIYPartsUsedTitle\">\n        <h3>Oil Change</h3>\n    </div>\n    <div class=\"themeDIYPartsUsedList\">\n        <div class=\"themeDIYPartsUsedItem\">\n            <div class=\"themeDIYPartsUsedCard\">\n                <div class=\"themeDIYPartsUsedImg\">\n                    <img src=\"https://cdn.revolutionparts.io/21ebc25a592052689288153b3e3fb858/design/new-home/tab-category/interior/floor_mats_.webp\" alt=\"Parts Used\">\n                </div>\n                <div class=\"themeDIYPartsUsedContent\">\n                    <h3>Batter Kit</h3>\n                    <p>$150.00</p>\n                </div>\n                <div class=\"themeDIYPartsUsedButton\">\n                    <a href=\"#\">View Item</a>\n                </div>\n            </div>\n        </div>\n        <div class=\"themeDIYPartsUsedItem\">\n            <div class=\"themeDIYPartsUsedCard\">\n                <div class=\"themeDIYPartsUsedImg\">\n                    <img src=\"https://cdn.revolutionparts.io/21ebc25a592052689288153b3e3fb858/design/new-home/tab-category/interior/floor_mats_.webp\" alt=\"Parts Used\">\n                </div>\n                <div class=\"themeDIYPartsUsedContent\">\n                    <h3>Batter Kit</h3>\n                    <p>$150.00</p>\n                </div>\n                <div class=\"themeDIYPartsUsedButton\">\n                    <a href=\"#\">View Item</a>\n                </div>\n            </div>\n        </div>\n        <div class=\"themeDIYPartsUsedItem\">\n            <div class=\"themeDIYPartsUsedCard\">\n                <div class=\"themeDIYPartsUsedImg\">\n                    <img src=\"https://cdn.revolutionparts.io/21ebc25a592052689288153b3e3fb858/design/new-home/tab-category/interior/floor_mats_.webp\" alt=\"Parts Used\">\n                </div>\n                <div class=\"themeDIYPartsUsedContent\">\n                    <h3>Batter Kit</h3>\n                    <p>$150.00</p>\n                </div>\n                <div class=\"themeDIYPartsUsedButton\">\n                    <a href=\"#\">View Item</a>\n                </div>\n            </div>\n        </div>\n    </div>\n    <div class=\"themeDIYPartsUsedCartButton\">\n        <a href=\"#\">View Cart</a>\n    </div>\n</div>"
+                },
+                "force_lazy": {
+                  "name": "Lazy Load Images",
+                  "type": "boolean",
+                  "default_value": false,
+                  "value": false
+                }
+              },
+              "htmlId": "",
+              "htmlClasses": "tab_content tab_content_jeep",
+              "minColumnWidth": 0,
+              "customAdmin": false,
+              "modulePadding": "padding-0",
+              "display": "normal"
+            },
+            {
+              "moduleId": "module_291",
+              "moduleType": "custom_html",
+              "title": "RAM Parts",
+              "options": {
+                "html_content": {
+                  "name": "Custom HTML Content",
+                  "type": "html_content",
+                  "default_value": "",
+                  "value": "<div class=\"themeDIYPartsUsedWrapper\">\n    <div class=\"themeDIYPartsUsedTitle\">\n        <h3>Wiper Blades</h3>\n    </div>\n    <div class=\"themeDIYPartsUsedList\">\n        <div class=\"themeDIYPartsUsedItem\">\n            <div class=\"themeDIYPartsUsedCard\">\n                <div class=\"themeDIYPartsUsedImg\">\n                    <img src=\"https://cdn.revolutionparts.io/21ebc25a592052689288153b3e3fb858/design/new-home/tab-category/interior/floor_mats_.webp\" alt=\"Parts Used\">\n                </div>\n                <div class=\"themeDIYPartsUsedContent\">\n                    <h3>Batter Kit</h3>\n                    <p>$150.00</p>\n                </div>\n                <div class=\"themeDIYPartsUsedButton\">\n                    <a href=\"#\">View Item</a>\n                </div>\n            </div>\n        </div>\n        <div class=\"themeDIYPartsUsedItem\">\n            <div class=\"themeDIYPartsUsedCard\">\n                <div class=\"themeDIYPartsUsedImg\">\n                    <img src=\"https://cdn.revolutionparts.io/21ebc25a592052689288153b3e3fb858/design/new-home/tab-category/interior/floor_mats_.webp\" alt=\"Parts Used\">\n                </div>\n                <div class=\"themeDIYPartsUsedContent\">\n                    <h3>Batter Kit</h3>\n                    <p>$150.00</p>\n                </div>\n                <div class=\"themeDIYPartsUsedButton\">\n                    <a href=\"#\">View Item</a>\n                </div>\n            </div>\n        </div>\n        <div class=\"themeDIYPartsUsedItem\">\n            <div class=\"themeDIYPartsUsedCard\">\n                <div class=\"themeDIYPartsUsedImg\">\n                    <img src=\"https://cdn.revolutionparts.io/21ebc25a592052689288153b3e3fb858/design/new-home/tab-category/interior/floor_mats_.webp\" alt=\"Parts Used\">\n                </div>\n                <div class=\"themeDIYPartsUsedContent\">\n                    <h3>Batter Kit</h3>\n                    <p>$150.00</p>\n                </div>\n                <div class=\"themeDIYPartsUsedButton\">\n                    <a href=\"#\">View Item</a>\n                </div>\n            </div>\n        </div>\n    </div>\n    <div class=\"themeDIYPartsUsedCartButton\">\n        <a href=\"#\">View Cart</a>\n    </div>\n</div>"
+                },
+                "force_lazy": {
+                  "name": "Lazy Load Images",
+                  "type": "boolean",
+                  "default_value": false,
+                  "value": false
+                }
+              },
+              "htmlId": "",
+              "htmlClasses": "tab_content tab_content_ram",
+              "minColumnWidth": 0,
+              "customAdmin": false,
+              "modulePadding": "padding-0",
+              "display": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

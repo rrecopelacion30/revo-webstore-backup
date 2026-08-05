@@ -1,0 +1,236 @@
+<div class="themeBannerWrapper">
+  <ul id="themeBannerList" class="themeBannerList owl-carousel owl-theme">
+<li class="themeBannerItem">
+  <div class="themeBannerCard">
+    <div class="themeBannerImage v-pc">
+      <img src="https://rparts-sites.s3.amazonaws.com/223b3e40451187171b9a7229149b1553/design/2026promo/jun/nissan_june_ship_desktop_t1.webp" fetchpriority="high" alt="June Savings: Get up to $50 Off Qualifying Shipping">
+    </div>
+    <div class="themeBannerImage v-sp">
+      <img src="https://rparts-sites.s3.amazonaws.com/223b3e40451187171b9a7229149b1553/design/2026promo/jun/nissan_june_ship_mobile_all_new.webp" fetchpriority="high" alt="June Savings: Get up to $50 Off Qualifying Shipping">
+    </div>
+    <div class="themeBannerContent">
+      <div class="themeBannerContentBox">
+        <p class="h1">June Savings: Get up to $50 Off Qualifying Shipping</p>
+        <p>
+          Instantly save up to $50 on shipping when you spend $200 or more on online purchases from 06/01–07/06 at
+          <a href="https://parts.nissanusa.com" target="_blank">parts.nissanusa.com</a>
+          <span class="themeBannerTermWrap">
+            <a href="javascript:void(0);">[*]</a>
+            <span class="themeBannerTermBox">
+              <span style="font-family: var(--themeFontBold) !important;">ELIGIBILITY REQUIREMENTS:</span>
+              Not all Nissan Parts and Accessories sold on
+              <a href="https://parts.nissanusa.com" target="_blank" style="color:#000000;">parts.NissanUSA.com</a>
+              are shippable. Promotion valid only on online orders of shippable Nissan Parts and Accessories with a minimum order value of $200 or more, made from 06/01/2026 through 07/06/2026 and fulfilled by a participating U.S. Nissan Dealer. Offer code automatically applied at online checkout. Promotion covers up to $50 of the total shipping fee; any remaining shipping fee balance is the sole responsibility of the customer. No cash value. Void where prohibited. Other restrictions may apply. Contact participating U.S. Nissan Dealers for details.
+            </span>
+          </span>
+        </p>
+        <div class="themeBannerButton"> 
+          <a href="javascript:openVehiclePicker();" class="myVehicleButton">Select Vehicle</a> 
+          <a href="/c">Shop Category</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</li>
+<li class="themeBannerItem">
+  <div class="themeBannerCard">
+    <div class="themeBannerImage v-pc">
+      <img src="https://rparts-sites.s3.amazonaws.com/223b3e40451187171b9a7229149b1553/design/2026promo/jun/nissan_june_acc_desktop_t1d.webp" fetchpriority="high" alt="Nissan Summer Parts and Accessories Event: Save up to 15% on Qualifying Orders">
+    </div>
+    <div class="themeBannerImage v-sp">
+      <img src="https://rparts-sites.s3.amazonaws.com/223b3e40451187171b9a7229149b1553/design/2026promo/jun/nissan_june_acc_mobile_alld_new.webp" fetchpriority="high" alt="Nissan Summer Parts and Accessories Event: Save up to 15% on Qualifying Orders">
+    </div>
+    <div class="themeBannerContent">
+      <div class="themeBannerContentBox">
+        <p class="h1">Nissan Summer Parts and Accessories Event: Save up to 15% on Qualifying Orders</p>
+        <p>
+          Save up to 15% on select Nissan Parts, Genuine Accessories, and Value Advantage parts this Summer when you spend $150 or more online at
+          <a href="https://parts.nissanusa.com" target="_blank">parts.nissanusa.com</a>
+          with code <span style="font-family: var(--themeFontBold) !important;">SUN15NIS</span>
+          <span class="themeBannerTermWrap">
+            <a href="javascript:void(0);">[*]</a>
+            <span class="themeBannerTermBox">
+              <span style="font-family: var(--themeFontBold) !important;">ELIGIBILITY REQUIREMENTS:</span>
+              Offer valid only on select Nissan Parts, Genuine Accessories, and Value Advantage parts. Excludes Affiliated Yakima® Accessories, NISMO Parts and Accessories, Japan Domestic Market (JDM) parts, Catalytic Converters, Engines, Transmissions, Air Bags and Air Bag Components. Promotion valid only on online purchases made from 6/11/2026 through 7/6/2026 and fulfilled by a participating U.S. Nissan Dealer. Must apply offer code <span style="font-family: var(--themeFontBold) !important;">SUN15NIS</span> at time of online checkout. Maximum discount $500, must spend a minimum of $150. May not be combined with other offers, excluding any then-current free shipping offer. Installation, shipping, handling, and tax additional. No cash value. Void where prohibited. Other restrictions may apply. Contact participating U.S. Nissan Dealer for details.
+            </span>
+          </span>
+        </p>
+        <div class="themeBannerButton">
+          <a href="javascript:openVehiclePicker();" class="myVehicleButton">Select Vehicle</a>
+          <a href="/c">Shop Category</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</li>
+<li class="themeBannerItem">
+  <div class="themeBannerCard">
+    <div class="themeBannerImage v-pc">
+      <img src="https://rparts-sites.s3.amazonaws.com/223b3e40451187171b9a7229149b1553/design/2026promo/apr/nissan_apr_ship_desktop_t1.webp" fetchpriority="high" alt="Spring Into Savings - Get up to $50 Off Shipping All April">
+    </div>
+    <div class="themeBannerImage v-sp">
+      <img src="https://rparts-sites.s3.amazonaws.com/223b3e40451187171b9a7229149b1553/design/2026promo/apr/nissan_apr_ship_mobile_all.webp" fetchpriority="high" alt="Spring Into Savings - Get up to $50 Off Shipping All April">
+    </div>
+    <div class="themeBannerContent">
+      <div class="themeBannerContentBox">
+        <p class="h1">Car Care Month Savings: Get up to $50 Off Qualifying Shipping this April</p>
+        <p>
+          Instantly save up to $50 on shipping when you spend $150 or more on online purchases from 04/01–04/30 at
+          <a href="https://parts.nissanusa.com" target="_blank">parts.NissanUSA.com</a>
+          <span class="themeBannerTermWrap">
+            <a href="javascript:void(0);">[*]</a>
+            <span class="themeBannerTermBox">
+              <span style="font-family: var(--themeFontBold) !important;">ELIGIBILITY REQUIREMENTS:</span>
+              Not all Nissan Parts and Accessories sold on <a href="https://parts.nissanusa.com" target="_blank" style="color: #000000;">parts.NissanUSA.com</a>  are shippable. Promotion valid only on online orders of shippable Nissan Parts and Accessories with a minimum order value of $150 or more, made from 04/01/2026 through 04/30/2026 and fulfilled by a participating U.S. Nissan Dealer. Offer code automatically applied at online checkout. Promotion covers up to $50 of the total shipping fee; any remaining shipping fee balance is the sole responsibility of the customer. No cash value. Void where prohibited. Other restrictions may apply. Contact participating U.S. Nissan Dealers for details.
+            </span>
+          </span>
+        </p>
+        <div class="themeBannerButton">
+          <a href="javascript:openVehiclePicker();"><p>Shop Now</p></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</li>
+<li class="themeBannerItem">
+  <div class="themeBannerCard">
+    <div class="themeBannerImage v-pc">
+      <img src="https://rparts-sites.s3.amazonaws.com/223b3e40451187171b9a7229149b1553/design/2026promo/apr/nissan_apr_parts_desktop_t1.webp" fetchpriority="high" alt="April Nissan Parts Event - Save up to 10%">
+    </div>
+    <div class="themeBannerImage v-sp">
+      <img src="https://rparts-sites.s3.amazonaws.com/223b3e40451187171b9a7229149b1553/design/2026promo/apr/nissan_apr_parts_mobile_all.webp" fetchpriority="high" alt="April Nissan Parts Event - Save up to 10%">
+    </div>
+    <div class="themeBannerContent">
+      <div class="themeBannerContentBox">
+        <p class="h1">April Nissan Parts Event &mdash; Save up to 10% on Qualifying Orders</p>
+        <p>
+          Instantly save up to 10% on select Nissan Parts when you spend $200 or more online at 
+          <a href="https://parts.nissanusa.com" target="_blank" rel="noopener">parts.nissanusa.com</a> 
+          with code <span style="font-family: var(--themeFontBold) !important;">CARE10</span>
+          <span class="themeBannerTermWrap">
+            <a href="javascript:void(0);">[*]</a>
+            <span class="themeBannerTermBox">
+              <span style="font-family: var(--themeFontBold) !important;">ELIGIBILITY REQUIREMENTS:</span>
+              Offer valid only on select Genuine Nissan Parts and Value Advantage Parts. Excludes Nismo Parts and Accessories, Japan Domestic Market (JDM) parts, Catalytic Converters, Engines, Transmissions, Air Bags and Air Bag Components. Promotion valid only on online purchases made from 4/16/2026 through 4/30/2026 and fulfilled by a participating U.S. Nissan dealer. Must apply offer code CARE10 at time of online checkout. Maximum discount $500, must spend a minimum of $200. May not be combined with other offers, excluding any then-current free shipping offer. Installation, shipping, handling, and tax additional. No cash value. Void where prohibited. Other restrictions may apply. Contact participating U.S. Nissan dealer for details.
+            </span>
+          </span>
+        </p>
+        <div class="themeBannerButton">
+          <a href="javascript:openVehiclePicker();"><p>Shop Now</p></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</li>
+<li class="themeBannerItem">
+  <div class="themeBannerCard">
+    <div class="themeBannerImage v-pc">
+		<img src="https://rparts-sites.s3.amazonaws.com/223b3e40451187171b9a7229149b1553/design/2026promo/apr/nissan_apr_mat_desktop_t1.webp" fetchpriority="high" alt="Nissan US Banner Image">
+	</div>
+    <div class="themeBannerImage v-sp">
+		<img src="https://rparts-sites.s3.amazonaws.com/223b3e40451187171b9a7229149b1553/design/2026promo/apr/nissan_apr_mat_mobile_t1.webp" fetchpriority="high" alt="Nissan US Banner Image">
+	</div>
+    <div class="themeBannerContent">
+      <div class="themeBannerContentBox">
+        <p class="h1">April Service Event: Take 15% Off Maintenance Essentials</p>
+        <p>
+          Instantly save 15% on popular maintenance items like fluids, oil filters, air filters, and wiper blades all April long at <a href="https://parts.nissanusa.com">Parts.NissanUSA.com</a> <span class="themeBannerTermWrap">
+            <a href="javascript:void(0);">[*]</a>
+            <span class="themeBannerTermBox">
+              <span style="font-family: var(--themeFontBold) !important;">
+                ELIGIBILITY REQUIREMENTS: Offer valid only on select Genuine Nissan maintenance parts and accessories, including fluids, oil filters, air filters, and wiper blades, sold on <a href="https://parts.nissanusa.com">Parts.NissanUSA.com</a>. Promotion valid only on online orders made from 04/01/2026 through 04/30/2026 and fulfilled by a participating U.S. Nissan Dealer. Discount automatically applied at online checkout.
+              </span>
+              Installation, shipping, handling, and tax additional. No cash value. Void where prohibited. Other restrictions may apply. Contact participating U.S. Nissan Dealer for details.
+            </span>
+          </span>
+        </p>
+        <div class="themeBannerButton">
+          <a href="javascript:openVehiclePicker();"><p>Shop Now</p></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</li>
+<li class="themeBannerItem">
+  <div class="themeBannerCard">
+    <div class="themeBannerImage v-pc">
+		<img src="https://rparts-sites.s3.amazonaws.com/223b3e40451187171b9a7229149b1553/design/2026promo/apr/nissan_apr_light_desktop_t1.webp" fetchpriority="high" alt="Nissan US Banner Image">
+	</div>
+    <div class="themeBannerImage v-sp">
+		<img src="https://rparts-sites.s3.amazonaws.com/223b3e40451187171b9a7229149b1553/design/2026promo/apr/nissan_apr_light_mobile_t1.webp" fetchpriority="high" alt="Nissan US Banner Image">
+	</div>
+    <div class="themeBannerContent">
+      <div class="themeBannerContentBox">
+        <p class="h1">April Upgrade Event: Take 10% Off Tech & Lighting Accessories</p>
+        <p>
+          Instantly save 10% on select Genuine Nissan tech and lighting accessories all April long at <a href="https://parts.nissanusa.com">Parts.NissanUSA.com</a> <span class="themeBannerTermWrap">
+            <a href="javascript:void(0);">[*]</a>
+            <span class="themeBannerTermBox">
+              <span style="font-family: var(--themeFontBold) !important;">
+                ELIGIBILITY REQUIREMENTS: Offer valid only on select Genuine Nissan Tech and Lighting Accessories sold on <a href="https://parts.nissanusa.com">Parts.NissanUSA.com</a>. Promotion valid only on online orders made from 04/01/2026 through 04/30/2026 and fulfilled by a participating U.S. Nissan Dealer. Discount automatically applied at online checkout.
+              </span>
+              Installation, shipping, handling, and tax additional. No cash value. Void where prohibited. Other restrictions may apply. Contact participating U.S. Nissan Dealer for details.
+            </span>
+          </span>
+        </p>
+        <div class="themeBannerButton">
+          <a href="javascript:openVehiclePicker();"><p>Shop Now</p></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</li>
+<li class="themeBannerItem">
+  <div class="themeBannerCard">
+    <div class="themeBannerImage v-pc">
+		<img src="https://rparts-sites.s3.amazonaws.com/223b3e40451187171b9a7229149b1553/design/2026promo/mar/nissan_brake_mar_desktop_t1.webp" fetchpriority="high" alt="Nissan US Banner Image">
+	</div>
+    <div class="themeBannerImage v-sp">
+		<img src="https://rparts-sites.s3.amazonaws.com/223b3e40451187171b9a7229149b1553/design/2026promo/mar/nissan_brake_mar_mobile_t1.webp" fetchpriority="high" alt="Nissan US Banner Image">
+	</div>
+    <div class="themeBannerContent">
+      <div class="themeBannerContentBox">
+        <p class="h1">Save up to 10% off Nissan Brake Pads & Rotors</p>
+        <p>
+          Save up to 10% off select Nissan Brake Pads and Rotors purchased online from <a href="https://parts.nissanusa.com">parts.nissanusa.com</a> from 3/2 - 3/31 with code <span style="font-family: var(--themeFontBold) !important;">MARCH26BRAKE</span> <span class="themeBannerTermWrap">
+            <a href="javascript:void(0);">[*]</a>
+            <span class="themeBannerTermBox">
+              <span style="font-family: var(--themeFontBold) !important;">
+                ELIGIBILITY REQUIREMENTS: Offer valid only on Nissan Brake Pads and Brake Rotors. Promotion valid on online purchase made from 3/02/2026 through 03/31/2026 and fulfilled by participating U.S. Nissan dealer. Must apply offer code MARCH26BRAKE at time of online checkout. Max discount $500.
+			</span> 
+				Installation, shipping, handling, and tax additional. No cash value.  Void where prohibited. Other restrictions may apply. Contact participating U.S. Nissan dealer for details.
+            </span>
+          </span>
+        </p>
+        <div class="themeBannerButton">
+          <a href="javascript:openVehiclePicker();"><p>Shop Now</p></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</li>
+<li class="themeBannerItem">
+  <div class="themeBannerCard">
+    <div class="themeBannerImage v-pc">
+		<img src="https://rparts-sites.s3.amazonaws.com/223b3e40451187171b9a7229149b1553/design/2025promo/sept/nissan_sept_front_desktop_t1.webp" fetchpriority="high" alt="Nissan US Banner Image">
+	</div>
+    <div class="themeBannerImage v-sp">
+		<img src="https://rparts-sites.s3.amazonaws.com/223b3e40451187171b9a7229149b1553/design/2025promo/sept/nissan_sept_front_mobile_all.webp" fetchpriority="high" alt="Nissan US Banner Image">
+	</div>
+    <div class="themeBannerContent">
+      <div class="themeBannerContentBox">
+        <p class="h1">Gear Up Your 2025 Frontier</p>
+        <p>
+          Customize your truck with genuine Nissan accessories&mdash;built for performance, fit, and style.
+        </p>
+        <div class="themeBannerButton">
+          <a href="javascript:openVehiclePicker();">
+            <p>Shop Now</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</li>
+  </ul>
+</div>
